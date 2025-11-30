@@ -1,0 +1,118 @@
+{
+    "id": "0-authentication-factor-type",
+    "name": "BACnetAuthenticationFactorType",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "aba-track2",
+            "value": 7
+        },
+        {
+            "name": "cbeff-a",
+            "value": 21
+        },
+        {
+            "name": "cbeff-b",
+            "value": 22
+        },
+        {
+            "name": "cbeff-c",
+            "value": 23
+        },
+        {
+            "name": "chuid",
+            "value": 18
+        },
+        {
+            "name": "chuid-full",
+            "value": 19
+        },
+        {
+            "name": "custom",
+            "value": 2
+        },
+        {
+            "name": "error",
+            "value": 1
+        },
+        {
+            "name": "facility16-card32",
+            "value": 11
+        },
+        {
+            "name": "facility32-card32",
+            "value": 12
+        },
+        {
+            "name": "fasc-n",
+            "value": 13
+        },
+        {
+            "name": "fasc-n-bcd",
+            "value": 14
+        },
+        {
+            "name": "fasc-n-large",
+            "value": 15
+        },
+        {
+            "name": "fasc-n-large-bcd",
+            "value": 16
+        },
+        {
+            "name": "gsa75",
+            "value": 17
+        },
+        {
+            "name": "guid",
+            "value": 20
+        },
+        {
+            "name": "simple-alpha-numeric",
+            "value": 6
+        },
+        {
+            "name": "simple-number16",
+            "value": 3
+        },
+        {
+            "name": "simple-number32",
+            "value": 4
+        },
+        {
+            "name": "simple-number56",
+            "value": 5
+        },
+        {
+            "name": "undefined",
+            "value": 0
+        },
+        {
+            "name": "user-password",
+            "value": 24
+        },
+        {
+            "name": "wiegand26",
+            "value": 8
+        },
+        {
+            "name": "wiegand37",
+            "value": 9
+        },
+        {
+            "name": "wiegand37-facility",
+            "value": 10
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 24,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 24
+        }
+    ]
+}

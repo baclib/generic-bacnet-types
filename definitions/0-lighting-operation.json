@@ -1,0 +1,83 @@
+{
+    "id": "0-lighting-operation",
+    "name": "BACnetLightingOperation",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "default-on",
+            "value": 12
+        },
+        {
+            "name": "fade-to",
+            "value": 1
+        },
+        {
+            "name": "none",
+            "value": 0
+        },
+        {
+            "name": "ramp-to",
+            "value": 2
+        },
+        {
+            "name": "restore-on",
+            "value": 11
+        },
+        {
+            "name": "step-down",
+            "value": 4
+        },
+        {
+            "name": "step-off",
+            "value": 6
+        },
+        {
+            "name": "step-on",
+            "value": 5
+        },
+        {
+            "name": "step-up",
+            "value": 3
+        },
+        {
+            "name": "stop",
+            "value": 10
+        },
+        {
+            "name": "toggle-default",
+            "value": 14
+        },
+        {
+            "name": "toggle-restore",
+            "value": 13
+        },
+        {
+            "name": "warn",
+            "value": 7
+        },
+        {
+            "name": "warn-off",
+            "value": 8
+        },
+        {
+            "name": "warn-relinquish",
+            "value": 9
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 255
+        },
+        {
+            "custom": true,
+            "minimum": 256,
+            "maximum": 65535
+        }
+    ]
+}

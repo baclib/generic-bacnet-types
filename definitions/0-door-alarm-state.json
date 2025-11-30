@@ -1,0 +1,59 @@
+{
+    "id": "0-door-alarm-state",
+    "name": "BACnetDoorAlarmState",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "alarm",
+            "value": 1
+        },
+        {
+            "name": "door-fault",
+            "value": 5
+        },
+        {
+            "name": "door-open-too-long",
+            "value": 2
+        },
+        {
+            "name": "egress-open",
+            "value": 8
+        },
+        {
+            "name": "forced-open",
+            "value": 3
+        },
+        {
+            "name": "free-access",
+            "value": 7
+        },
+        {
+            "name": "lock-down",
+            "value": 6
+        },
+        {
+            "name": "normal",
+            "value": 0
+        },
+        {
+            "name": "tamper",
+            "value": 4
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 255
+        },
+        {
+            "custom": true,
+            "minimum": 256,
+            "maximum": 65535
+        }
+    ]
+}

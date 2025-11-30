@@ -1,0 +1,34 @@
+{
+    "id": "0-network-number-quality",
+    "name": "BACnetNetworkNumberQuality",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "configured",
+            "value": 3
+        },
+        {
+            "name": "learned",
+            "value": 1
+        },
+        {
+            "name": "learned-configured",
+            "value": 2
+        },
+        {
+            "name": "unknown",
+            "value": 0
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 3,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 3
+        }
+    ]
+}

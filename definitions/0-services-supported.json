@@ -1,0 +1,206 @@
+{
+    "id": "0-services-supported",
+    "name": "BACnetServicesSupported",
+    "base": "bit-string",
+    "vendor": 0,
+    "items": [
+        {
+            "bit": 0,
+            "name": "acknowledge-alarm"
+        },
+        {
+            "bit": 1,
+            "name": "confirmed-cov-notification"
+        },
+        {
+            "bit": 2,
+            "name": "confirmed-event-notification"
+        },
+        {
+            "bit": 3,
+            "name": "get-alarm-summary"
+        },
+        {
+            "bit": 4,
+            "name": "get-enrollment-summary"
+        },
+        {
+            "bit": 5,
+            "name": "subscribe-cov"
+        },
+        {
+            "bit": 6,
+            "name": "atomic-read-file"
+        },
+        {
+            "bit": 7,
+            "name": "atomic-write-file"
+        },
+        {
+            "bit": 8,
+            "name": "add-list-element"
+        },
+        {
+            "bit": 9,
+            "name": "remove-list-element"
+        },
+        {
+            "bit": 10,
+            "name": "create-object"
+        },
+        {
+            "bit": 11,
+            "name": "delete-object"
+        },
+        {
+            "bit": 12,
+            "name": "read-property"
+        },
+        {
+            "bit": 14,
+            "name": "read-property-multiple"
+        },
+        {
+            "bit": 15,
+            "name": "write-property"
+        },
+        {
+            "bit": 16,
+            "name": "write-property-multiple"
+        },
+        {
+            "bit": 17,
+            "name": "device-communication-control"
+        },
+        {
+            "bit": 18,
+            "name": "confirmed-private-transfer"
+        },
+        {
+            "bit": 19,
+            "name": "confirmed-text-message"
+        },
+        {
+            "bit": 20,
+            "name": "reinitialize-device"
+        },
+        {
+            "bit": 21,
+            "name": "vt-open"
+        },
+        {
+            "bit": 22,
+            "name": "vt-close"
+        },
+        {
+            "bit": 23,
+            "name": "vt-data"
+        },
+        {
+            "bit": 26,
+            "name": "i-am"
+        },
+        {
+            "bit": 27,
+            "name": "i-have"
+        },
+        {
+            "bit": 28,
+            "name": "unconfirmed-cov-notification"
+        },
+        {
+            "bit": 29,
+            "name": "unconfirmed-event-notification"
+        },
+        {
+            "bit": 30,
+            "name": "unconfirmed-private-transfer"
+        },
+        {
+            "bit": 31,
+            "name": "unconfirmed-text-message"
+        },
+        {
+            "bit": 32,
+            "name": "time-synchronization"
+        },
+        {
+            "bit": 33,
+            "name": "who-has"
+        },
+        {
+            "bit": 34,
+            "name": "who-is"
+        },
+        {
+            "bit": 35,
+            "name": "read-range"
+        },
+        {
+            "bit": 36,
+            "name": "utc-time-synchronization"
+        },
+        {
+            "bit": 37,
+            "name": "life-safety-operation"
+        },
+        {
+            "bit": 38,
+            "name": "subscribe-cov-property"
+        },
+        {
+            "bit": 39,
+            "name": "get-event-information"
+        },
+        {
+            "bit": 40,
+            "name": "write-group"
+        },
+        {
+            "bit": 41,
+            "name": "subscribe-cov-property-multiple"
+        },
+        {
+            "bit": 42,
+            "name": "confirmed-cov-notification-multiple"
+        },
+        {
+            "bit": 43,
+            "name": "unconfirmed-cov-notification-multiple"
+        },
+        {
+            "bit": 44,
+            "name": "confirmed-audit-notification"
+        },
+        {
+            "bit": 45,
+            "name": "audit-log-query"
+        },
+        {
+            "bit": 46,
+            "name": "unconfirmed-audit-notification"
+        },
+        {
+            "bit": 47,
+            "name": "who-am-i"
+        },
+        {
+            "bit": 48,
+            "name": "you-are"
+        },
+        {
+            "bit": 49,
+            "name": "auth-request"
+        }
+    ],
+    "extensible": false,
+    "minimum": 34,
+    "maximum": 511,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 511
+        }
+    ]
+}

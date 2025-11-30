@@ -1,0 +1,59 @@
+{
+    "id": "0-restart-reason",
+    "name": "BACnetRestartReason",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "activate-changes",
+            "value": 8
+        },
+        {
+            "name": "coldstart",
+            "value": 1
+        },
+        {
+            "name": "detected-power-lost",
+            "value": 3
+        },
+        {
+            "name": "detected-powered-off",
+            "value": 4
+        },
+        {
+            "name": "hardware-watchdog",
+            "value": 5
+        },
+        {
+            "name": "software-watchdog",
+            "value": 6
+        },
+        {
+            "name": "suspended",
+            "value": 7
+        },
+        {
+            "name": "unknown",
+            "value": 0
+        },
+        {
+            "name": "warmstart",
+            "value": 2
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 255,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 63
+        },
+        {
+            "custom": true,
+            "minimum": 64,
+            "maximum": 255
+        }
+    ]
+}

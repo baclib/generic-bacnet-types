@@ -1,0 +1,106 @@
+{
+    "id": "0-node-type",
+    "name": "BACnetNodeType",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "area",
+            "value": 5
+        },
+        {
+            "name": "building",
+            "value": 13
+        },
+        {
+            "name": "collection",
+            "value": 8
+        },
+        {
+            "name": "device",
+            "value": 3
+        },
+        {
+            "name": "equipment",
+            "value": 6
+        },
+        {
+            "name": "floor",
+            "value": 14
+        },
+        {
+            "name": "functional",
+            "value": 10
+        },
+        {
+            "name": "member",
+            "value": 18
+        },
+        {
+            "name": "module",
+            "value": 16
+        },
+        {
+            "name": "network",
+            "value": 2
+        },
+        {
+            "name": "organizational",
+            "value": 4
+        },
+        {
+            "name": "other",
+            "value": 11
+        },
+        {
+            "name": "point",
+            "value": 7
+        },
+        {
+            "name": "property",
+            "value": 9
+        },
+        {
+            "name": "protocol",
+            "value": 19
+        },
+        {
+            "name": "room",
+            "value": 20
+        },
+        {
+            "name": "section",
+            "value": 15
+        },
+        {
+            "name": "subsystem",
+            "value": 12
+        },
+        {
+            "name": "system",
+            "value": 1
+        },
+        {
+            "name": "tree",
+            "value": 17
+        },
+        {
+            "name": "unknown",
+            "value": 0
+        },
+        {
+            "name": "zone",
+            "value": 21
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 21,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 21
+        }
+    ]
+}

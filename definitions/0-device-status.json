@@ -1,0 +1,47 @@
+{
+    "id": "0-device-status",
+    "name": "BACnetDeviceStatus",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "backup-in-progress",
+            "value": 5
+        },
+        {
+            "name": "download-in-progress",
+            "value": 3
+        },
+        {
+            "name": "download-required",
+            "value": 2
+        },
+        {
+            "name": "non-operational",
+            "value": 4
+        },
+        {
+            "name": "operational",
+            "value": 0
+        },
+        {
+            "name": "operational-read-only",
+            "value": 1
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 63
+        },
+        {
+            "custom": true,
+            "minimum": 64,
+            "maximum": 65535
+        }
+    ]
+}

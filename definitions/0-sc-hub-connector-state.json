@@ -1,0 +1,30 @@
+{
+    "id": "0-sc-hub-connector-state",
+    "name": "BACnetSCHubConnectorState",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "connected-to-failover",
+            "value": 2
+        },
+        {
+            "name": "connected-to-primary",
+            "value": 1
+        },
+        {
+            "name": "no-hub-connection",
+            "value": 0
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 2,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 2
+        }
+    ]
+}

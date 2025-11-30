@@ -1,0 +1,63 @@
+{
+    "id": "0-door-status",
+    "name": "BACnetDoorStatus",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "closed",
+            "value": 0
+        },
+        {
+            "name": "closing",
+            "value": 6
+        },
+        {
+            "name": "door-fault",
+            "value": 3
+        },
+        {
+            "name": "limited-opened",
+            "value": 9
+        },
+        {
+            "name": "none",
+            "value": 5
+        },
+        {
+            "name": "opened",
+            "value": 1
+        },
+        {
+            "name": "opening",
+            "value": 7
+        },
+        {
+            "name": "safety-locked",
+            "value": 8
+        },
+        {
+            "name": "unknown",
+            "value": 2
+        },
+        {
+            "name": "unused",
+            "value": 4
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 1023
+        },
+        {
+            "custom": true,
+            "minimum": 1024,
+            "maximum": 65535
+        }
+    ]
+}

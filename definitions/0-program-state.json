@@ -1,0 +1,42 @@
+{
+    "id": "0-program-state",
+    "name": "BACnetProgramState",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "halted",
+            "value": 4
+        },
+        {
+            "name": "idle",
+            "value": 0
+        },
+        {
+            "name": "loading",
+            "value": 1
+        },
+        {
+            "name": "running",
+            "value": 2
+        },
+        {
+            "name": "unloading",
+            "value": 5
+        },
+        {
+            "name": "waiting",
+            "value": 3
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 5,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 5
+        }
+    ]
+}

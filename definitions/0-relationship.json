@@ -1,0 +1,143 @@
+{
+    "id": "0-relationship",
+    "name": "BACnetRelationship",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "adjusted-by",
+            "value": 9
+        },
+        {
+            "name": "adjusts",
+            "value": 8
+        },
+        {
+            "name": "commanded-by",
+            "value": 7
+        },
+        {
+            "name": "commands",
+            "value": 6
+        },
+        {
+            "name": "contained-by",
+            "value": 3
+        },
+        {
+            "name": "contains",
+            "value": 2
+        },
+        {
+            "name": "default",
+            "value": 1
+        },
+        {
+            "name": "egress",
+            "value": 11
+        },
+        {
+            "name": "ingress",
+            "value": 10
+        },
+        {
+            "name": "receives-air",
+            "value": 13
+        },
+        {
+            "name": "receives-cool-air",
+            "value": 17
+        },
+        {
+            "name": "receives-cool-water",
+            "value": 27
+        },
+        {
+            "name": "receives-gas",
+            "value": 21
+        },
+        {
+            "name": "receives-hot-air",
+            "value": 15
+        },
+        {
+            "name": "receives-hot-water",
+            "value": 25
+        },
+        {
+            "name": "receives-power",
+            "value": 19
+        },
+        {
+            "name": "receives-steam",
+            "value": 29
+        },
+        {
+            "name": "receives-water",
+            "value": 23
+        },
+        {
+            "name": "supplies-air",
+            "value": 12
+        },
+        {
+            "name": "supplies-cool-air",
+            "value": 16
+        },
+        {
+            "name": "supplies-cool-water",
+            "value": 26
+        },
+        {
+            "name": "supplies-gas",
+            "value": 20
+        },
+        {
+            "name": "supplies-hot-air",
+            "value": 14
+        },
+        {
+            "name": "supplies-hot-water",
+            "value": 24
+        },
+        {
+            "name": "supplies-power",
+            "value": 18
+        },
+        {
+            "name": "supplies-steam",
+            "value": 28
+        },
+        {
+            "name": "supplies-water",
+            "value": 22
+        },
+        {
+            "name": "unknown",
+            "value": 0
+        },
+        {
+            "name": "used-by",
+            "value": 5
+        },
+        {
+            "name": "uses",
+            "value": 4
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 1023
+        },
+        {
+            "custom": true,
+            "minimum": 1024,
+            "maximum": 65535
+        }
+    ]
+}

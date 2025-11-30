@@ -1,0 +1,38 @@
+{
+    "id": "0-color-operation-in-progress",
+    "name": "BACnetColorOperationInProgress",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "fade-active",
+            "value": 1
+        },
+        {
+            "name": "idle",
+            "value": 0
+        },
+        {
+            "name": "not-controlled",
+            "value": 3
+        },
+        {
+            "name": "other",
+            "value": 4
+        },
+        {
+            "name": "ramp-active",
+            "value": 2
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 4,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 4
+        }
+    ]
+}

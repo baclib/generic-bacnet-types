@@ -1,0 +1,47 @@
+{
+    "id": "0-event-state",
+    "name": "BACnetEventState",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "fault",
+            "value": 1
+        },
+        {
+            "name": "high-limit",
+            "value": 3
+        },
+        {
+            "name": "life-safety-alarm",
+            "value": 5
+        },
+        {
+            "name": "low-limit",
+            "value": 4
+        },
+        {
+            "name": "normal",
+            "value": 0
+        },
+        {
+            "name": "offnormal",
+            "value": 2
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 63
+        },
+        {
+            "custom": true,
+            "minimum": 64,
+            "maximum": 65535
+        }
+    ]
+}

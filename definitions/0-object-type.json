@@ -1,0 +1,279 @@
+{
+    "id": "0-object-type",
+    "name": "BACnetObjectType",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "access-credential",
+            "value": 32
+        },
+        {
+            "name": "access-door",
+            "value": 30
+        },
+        {
+            "name": "access-point",
+            "value": 33
+        },
+        {
+            "name": "access-rights",
+            "value": 34
+        },
+        {
+            "name": "access-user",
+            "value": 35
+        },
+        {
+            "name": "access-zone",
+            "value": 36
+        },
+        {
+            "name": "accumulator",
+            "value": 23
+        },
+        {
+            "name": "alert-enrollment",
+            "value": 52
+        },
+        {
+            "name": "analog-input",
+            "value": 0
+        },
+        {
+            "name": "analog-output",
+            "value": 1
+        },
+        {
+            "name": "analog-value",
+            "value": 2
+        },
+        {
+            "name": "audit-log",
+            "value": 61
+        },
+        {
+            "name": "audit-reporter",
+            "value": 62
+        },
+        {
+            "name": "averaging",
+            "value": 18
+        },
+        {
+            "name": "binary-input",
+            "value": 3
+        },
+        {
+            "name": "binary-lighting-output",
+            "value": 55
+        },
+        {
+            "name": "binary-output",
+            "value": 4
+        },
+        {
+            "name": "binary-value",
+            "value": 5
+        },
+        {
+            "name": "bitstring-value",
+            "value": 39
+        },
+        {
+            "name": "calendar",
+            "value": 6
+        },
+        {
+            "name": "channel",
+            "value": 53
+        },
+        {
+            "name": "characterstring-value",
+            "value": 40
+        },
+        {
+            "name": "color",
+            "value": 63
+        },
+        {
+            "name": "color-temperature",
+            "value": 64
+        },
+        {
+            "name": "command",
+            "value": 7
+        },
+        {
+            "name": "credential-data-input",
+            "value": 37
+        },
+        {
+            "name": "date-value",
+            "value": 42
+        },
+        {
+            "name": "datepattern-value",
+            "value": 41
+        },
+        {
+            "name": "datetime-value",
+            "value": 44
+        },
+        {
+            "name": "datetimepattern-value",
+            "value": 43
+        },
+        {
+            "name": "device",
+            "value": 8
+        },
+        {
+            "name": "elevator-group",
+            "value": 57
+        },
+        {
+            "name": "escalator",
+            "value": 58
+        },
+        {
+            "name": "event-enrollment",
+            "value": 9
+        },
+        {
+            "name": "event-log",
+            "value": 25
+        },
+        {
+            "name": "file",
+            "value": 10
+        },
+        {
+            "name": "global-group",
+            "value": 26
+        },
+        {
+            "name": "group",
+            "value": 11
+        },
+        {
+            "name": "integer-value",
+            "value": 45
+        },
+        {
+            "name": "large-analog-value",
+            "value": 46
+        },
+        {
+            "name": "life-safety-point",
+            "value": 21
+        },
+        {
+            "name": "life-safety-zone",
+            "value": 22
+        },
+        {
+            "name": "lift",
+            "value": 59
+        },
+        {
+            "name": "lighting-output",
+            "value": 54
+        },
+        {
+            "name": "load-control",
+            "value": 28
+        },
+        {
+            "name": "loop",
+            "value": 12
+        },
+        {
+            "name": "multi-state-input",
+            "value": 13
+        },
+        {
+            "name": "multi-state-output",
+            "value": 14
+        },
+        {
+            "name": "multi-state-value",
+            "value": 19
+        },
+        {
+            "name": "network-port",
+            "value": 56
+        },
+        {
+            "name": "notification-class",
+            "value": 15
+        },
+        {
+            "name": "notification-forwarder",
+            "value": 51
+        },
+        {
+            "name": "octetstring-value",
+            "value": 47
+        },
+        {
+            "name": "positive-integer-value",
+            "value": 48
+        },
+        {
+            "name": "program",
+            "value": 16
+        },
+        {
+            "name": "pulse-converter",
+            "value": 24
+        },
+        {
+            "name": "schedule",
+            "value": 17
+        },
+        {
+            "name": "staging",
+            "value": 60
+        },
+        {
+            "name": "structured-view",
+            "value": 29
+        },
+        {
+            "name": "time-value",
+            "value": 50
+        },
+        {
+            "name": "timepattern-value",
+            "value": 49
+        },
+        {
+            "name": "timer",
+            "value": 31
+        },
+        {
+            "name": "trend-log",
+            "value": 20
+        },
+        {
+            "name": "trend-log-multiple",
+            "value": 27
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 1023,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 127
+        },
+        {
+            "custom": true,
+            "minimum": 128,
+            "maximum": 1023
+        }
+    ]
+}

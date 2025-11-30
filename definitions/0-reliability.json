@@ -1,0 +1,123 @@
+{
+    "id": "0-reliability",
+    "name": "BACnetReliability",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "activation-failure",
+            "value": 17
+        },
+        {
+            "name": "communication-failure",
+            "value": 12
+        },
+        {
+            "name": "configuration-error",
+            "value": 10
+        },
+        {
+            "name": "faults-listed",
+            "value": 23
+        },
+        {
+            "name": "lamp-failure",
+            "value": 16
+        },
+        {
+            "name": "member-fault",
+            "value": 13
+        },
+        {
+            "name": "monitored-object-fault",
+            "value": 14
+        },
+        {
+            "name": "multi-state-fault",
+            "value": 9
+        },
+        {
+            "name": "multi-state-out-of-range",
+            "value": 25
+        },
+        {
+            "name": "no-fault-detected",
+            "value": 0
+        },
+        {
+            "name": "no-output",
+            "value": 6
+        },
+        {
+            "name": "no-sensor",
+            "value": 1
+        },
+        {
+            "name": "open-loop",
+            "value": 4
+        },
+        {
+            "name": "over-range",
+            "value": 2
+        },
+        {
+            "name": "process-error",
+            "value": 8
+        },
+        {
+            "name": "proprietary-command-failure",
+            "value": 22
+        },
+        {
+            "name": "referenced-object-fault",
+            "value": 24
+        },
+        {
+            "name": "renew-dhcp-failure",
+            "value": 18
+        },
+        {
+            "name": "renew-fd-registration-failure",
+            "value": 19
+        },
+        {
+            "name": "restart-auto-negotiation-failure",
+            "value": 20
+        },
+        {
+            "name": "restart-failure",
+            "value": 21
+        },
+        {
+            "name": "shorted-loop",
+            "value": 5
+        },
+        {
+            "name": "tripped",
+            "value": 15
+        },
+        {
+            "name": "under-range",
+            "value": 3
+        },
+        {
+            "name": "unreliable-other",
+            "value": 7
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 63
+        },
+        {
+            "custom": true,
+            "minimum": 64,
+            "maximum": 65535
+        }
+    ]
+}

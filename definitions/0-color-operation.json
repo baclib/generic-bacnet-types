@@ -1,0 +1,46 @@
+{
+    "id": "0-color-operation",
+    "name": "BACnetColorOperation",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "fade-to-cct",
+            "value": 2
+        },
+        {
+            "name": "fade-to-color",
+            "value": 1
+        },
+        {
+            "name": "none",
+            "value": 0
+        },
+        {
+            "name": "ramp-to-cct",
+            "value": 3
+        },
+        {
+            "name": "step-down-cct",
+            "value": 5
+        },
+        {
+            "name": "step-up-cct",
+            "value": 4
+        },
+        {
+            "name": "stop",
+            "value": 6
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 6,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 6
+        }
+    ]
+}

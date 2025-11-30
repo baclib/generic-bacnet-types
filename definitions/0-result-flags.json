@@ -1,0 +1,30 @@
+{
+    "id": "0-result-flags",
+    "name": "BACnetResultFlags",
+    "base": "bit-string",
+    "vendor": 0,
+    "items": [
+        {
+            "bit": 0,
+            "name": "first-item"
+        },
+        {
+            "bit": 1,
+            "name": "last-item"
+        },
+        {
+            "bit": 2,
+            "name": "more-items"
+        }
+    ],
+    "extensible": false,
+    "minimum": 2,
+    "maximum": 2,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 2,
+            "maximum": 2
+        }
+    ]
+}

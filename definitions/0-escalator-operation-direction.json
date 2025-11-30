@@ -1,0 +1,47 @@
+{
+    "id": "0-escalator-operation-direction",
+    "name": "BACnetEscalatorOperationDirection",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "down-rated-speed",
+            "value": 4
+        },
+        {
+            "name": "down-reduced-speed",
+            "value": 5
+        },
+        {
+            "name": "stopped",
+            "value": 1
+        },
+        {
+            "name": "unknown",
+            "value": 0
+        },
+        {
+            "name": "up-rated-speed",
+            "value": 2
+        },
+        {
+            "name": "up-reduced-speed",
+            "value": 3
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 1023
+        },
+        {
+            "custom": true,
+            "minimum": 1024,
+            "maximum": 65535
+        }
+    ]
+}

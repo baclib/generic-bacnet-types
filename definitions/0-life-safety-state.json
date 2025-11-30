@@ -1,0 +1,163 @@
+{
+    "id": "0-life-safety-state",
+    "name": "BACnetLifeSafetyState",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "abnormal",
+            "value": 16
+        },
+        {
+            "name": "active",
+            "value": 7
+        },
+        {
+            "name": "alarm",
+            "value": 2
+        },
+        {
+            "name": "blocked",
+            "value": 19
+        },
+        {
+            "name": "delayed",
+            "value": 18
+        },
+        {
+            "name": "duress",
+            "value": 14
+        },
+        {
+            "name": "emergency-power",
+            "value": 17
+        },
+        {
+            "name": "fault",
+            "value": 3
+        },
+        {
+            "name": "fault-alarm",
+            "value": 5
+        },
+        {
+            "name": "fault-pre-alarm",
+            "value": 4
+        },
+        {
+            "name": "general-alarm",
+            "value": 21
+        },
+        {
+            "name": "holdup",
+            "value": 13
+        },
+        {
+            "name": "local-alarm",
+            "value": 20
+        },
+        {
+            "name": "non-default-mode",
+            "value": 24
+        },
+        {
+            "name": "not-ready",
+            "value": 6
+        },
+        {
+            "name": "oeo-alarm",
+            "value": 26
+        },
+        {
+            "name": "oeo-evacuate",
+            "value": 28
+        },
+        {
+            "name": "oeo-phase1-recall",
+            "value": 27
+        },
+        {
+            "name": "oeo-unaffected",
+            "value": 29
+        },
+        {
+            "name": "oeo-unavailable",
+            "value": 25
+        },
+        {
+            "name": "pre-alarm",
+            "value": 1
+        },
+        {
+            "name": "quiet",
+            "value": 0
+        },
+        {
+            "name": "supervisory",
+            "value": 22
+        },
+        {
+            "name": "tamper",
+            "value": 8
+        },
+        {
+            "name": "tamper-alarm",
+            "value": 15
+        },
+        {
+            "name": "test-active",
+            "value": 10
+        },
+        {
+            "name": "test-alarm",
+            "value": 9
+        },
+        {
+            "name": "test-fault",
+            "value": 11
+        },
+        {
+            "name": "test-fault-alarm",
+            "value": 12
+        },
+        {
+            "name": "test-oeo-alarm",
+            "value": 31
+        },
+        {
+            "name": "test-oeo-evacuate",
+            "value": 33
+        },
+        {
+            "name": "test-oeo-phase1-recall",
+            "value": 32
+        },
+        {
+            "name": "test-oeo-unaffected",
+            "value": 34
+        },
+        {
+            "name": "test-oeo-unavailable",
+            "value": 30
+        },
+        {
+            "name": "test-supervisory",
+            "value": 23
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 255
+        },
+        {
+            "custom": true,
+            "minimum": 256,
+            "maximum": 65535
+        }
+    ]
+}

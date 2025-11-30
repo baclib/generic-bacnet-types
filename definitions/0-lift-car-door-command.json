@@ -1,0 +1,30 @@
+{
+    "id": "0-lift-car-door-command",
+    "name": "BACnetLiftCarDoorCommand",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "close",
+            "value": 2
+        },
+        {
+            "name": "none",
+            "value": 0
+        },
+        {
+            "name": "open",
+            "value": 1
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 2,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 2
+        }
+    ]
+}

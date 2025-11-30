@@ -1,0 +1,103 @@
+{
+    "id": "0-event-type",
+    "name": "BACnetEventType",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "access-event",
+            "value": 13
+        },
+        {
+            "name": "buffer-ready",
+            "value": 10
+        },
+        {
+            "name": "change-of-bitstring",
+            "value": 0
+        },
+        {
+            "name": "change-of-characterstring",
+            "value": 17
+        },
+        {
+            "name": "change-of-discrete-value",
+            "value": 21
+        },
+        {
+            "name": "change-of-life-safety",
+            "value": 8
+        },
+        {
+            "name": "change-of-reliability",
+            "value": 19
+        },
+        {
+            "name": "change-of-state",
+            "value": 1
+        },
+        {
+            "name": "change-of-status-flags",
+            "value": 18
+        },
+        {
+            "name": "change-of-timer",
+            "value": 22
+        },
+        {
+            "name": "change-of-value",
+            "value": 2
+        },
+        {
+            "name": "command-failure",
+            "value": 3
+        },
+        {
+            "name": "double-out-of-range",
+            "value": 14
+        },
+        {
+            "name": "extended",
+            "value": 9
+        },
+        {
+            "name": "floating-limit",
+            "value": 4
+        },
+        {
+            "name": "none",
+            "value": 20
+        },
+        {
+            "name": "out-of-range",
+            "value": 5
+        },
+        {
+            "name": "signed-out-of-range",
+            "value": 15
+        },
+        {
+            "name": "unsigned-out-of-range",
+            "value": 16
+        },
+        {
+            "name": "unsigned-range",
+            "value": 11
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 63
+        },
+        {
+            "custom": true,
+            "minimum": 64,
+            "maximum": 65535
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "id": "0-priority-filter",
+    "name": "BACnetPriorityFilter",
+    "base": "bit-string",
+    "vendor": 0,
+    "items": [
+        {
+            "bit": 0,
+            "name": "manual-life-safety"
+        },
+        {
+            "bit": 1,
+            "name": "automatic-life-safety"
+        },
+        {
+            "bit": 2,
+            "name": "priority-3"
+        },
+        {
+            "bit": 3,
+            "name": "priority-4"
+        },
+        {
+            "bit": 4,
+            "name": "critical-equipment-controls"
+        },
+        {
+            "bit": 5,
+            "name": "minimum-on-off"
+        },
+        {
+            "bit": 6,
+            "name": "priority-7"
+        },
+        {
+            "bit": 7,
+            "name": "manual-operator"
+        },
+        {
+            "bit": 8,
+            "name": "priority-9"
+        },
+        {
+            "bit": 9,
+            "name": "priority-10"
+        },
+        {
+            "bit": 10,
+            "name": "priority-11"
+        },
+        {
+            "bit": 11,
+            "name": "priority-12"
+        },
+        {
+            "bit": 12,
+            "name": "priority-13"
+        },
+        {
+            "bit": 13,
+            "name": "priority-14"
+        },
+        {
+            "bit": 14,
+            "name": "priority-15"
+        },
+        {
+            "bit": 15,
+            "name": "priority-16"
+        }
+    ],
+    "extensible": false,
+    "minimum": 15,
+    "maximum": 15,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 15,
+            "maximum": 15
+        }
+    ]
+}

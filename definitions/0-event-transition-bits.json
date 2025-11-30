@@ -1,0 +1,30 @@
+{
+    "id": "0-event-transition-bits",
+    "name": "BACnetEventTransitionBits",
+    "base": "bit-string",
+    "vendor": 0,
+    "items": [
+        {
+            "bit": 0,
+            "name": "to-offnormal"
+        },
+        {
+            "bit": 1,
+            "name": "to-fault"
+        },
+        {
+            "bit": 2,
+            "name": "to-normal"
+        }
+    ],
+    "extensible": false,
+    "minimum": 2,
+    "maximum": 2,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 2,
+            "maximum": 2
+        }
+    ]
+}

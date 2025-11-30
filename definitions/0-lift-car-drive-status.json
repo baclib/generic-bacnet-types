@@ -1,0 +1,63 @@
+{
+    "id": "0-lift-car-drive-status",
+    "name": "BACnetLiftCarDriveStatus",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "accelerate",
+            "value": 3
+        },
+        {
+            "name": "braking",
+            "value": 2
+        },
+        {
+            "name": "decelerate",
+            "value": 4
+        },
+        {
+            "name": "multi-floor-jump",
+            "value": 9
+        },
+        {
+            "name": "rated-speed",
+            "value": 5
+        },
+        {
+            "name": "single-floor-jump",
+            "value": 6
+        },
+        {
+            "name": "stationary",
+            "value": 1
+        },
+        {
+            "name": "three-floor-jump",
+            "value": 8
+        },
+        {
+            "name": "two-floor-jump",
+            "value": 7
+        },
+        {
+            "name": "unknown",
+            "value": 0
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 1023
+        },
+        {
+            "custom": true,
+            "minimum": 1024,
+            "maximum": 65535
+        }
+    ]
+}

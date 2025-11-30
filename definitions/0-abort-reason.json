@@ -1,0 +1,75 @@
+{
+    "id": "0-abort-reason",
+    "name": "BACnetAbortReason",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "apdu-too-long",
+            "value": 11
+        },
+        {
+            "name": "application-exceeded-reply-time",
+            "value": 8
+        },
+        {
+            "name": "buffer-overflow",
+            "value": 1
+        },
+        {
+            "name": "inconsistent-attributes",
+            "value": 12
+        },
+        {
+            "name": "insufficient-security",
+            "value": 6
+        },
+        {
+            "name": "invalid-apdu-in-this-state",
+            "value": 2
+        },
+        {
+            "name": "other",
+            "value": 0
+        },
+        {
+            "name": "out-of-resources",
+            "value": 9
+        },
+        {
+            "name": "preempted-by-higher-priority-task",
+            "value": 3
+        },
+        {
+            "name": "security-error",
+            "value": 5
+        },
+        {
+            "name": "segmentation-not-supported",
+            "value": 4
+        },
+        {
+            "name": "tsm-timeout",
+            "value": 10
+        },
+        {
+            "name": "window-size-out-of-range",
+            "value": 7
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 255,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 63
+        },
+        {
+            "custom": true,
+            "minimum": 64,
+            "maximum": 255
+        }
+    ]
+}

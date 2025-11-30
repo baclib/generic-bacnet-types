@@ -1,0 +1,79 @@
+{
+    "id": "0-lift-car-mode",
+    "name": "BACnetLiftCarMode",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "attendant-control",
+            "value": 5
+        },
+        {
+            "name": "cabinet-recall",
+            "value": 9
+        },
+        {
+            "name": "earthquake-operation",
+            "value": 10
+        },
+        {
+            "name": "emergency-power",
+            "value": 7
+        },
+        {
+            "name": "fire-operation",
+            "value": 11
+        },
+        {
+            "name": "firefighter-control",
+            "value": 6
+        },
+        {
+            "name": "homing",
+            "value": 3
+        },
+        {
+            "name": "inspection",
+            "value": 8
+        },
+        {
+            "name": "normal",
+            "value": 1
+        },
+        {
+            "name": "occupant-evacuation",
+            "value": 13
+        },
+        {
+            "name": "out-of-service",
+            "value": 12
+        },
+        {
+            "name": "parking",
+            "value": 4
+        },
+        {
+            "name": "unknown",
+            "value": 0
+        },
+        {
+            "name": "vip",
+            "value": 2
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 1023
+        },
+        {
+            "custom": true,
+            "minimum": 1024,
+            "maximum": 65535
+        }
+    ]
+}

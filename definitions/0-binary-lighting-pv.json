@@ -1,0 +1,51 @@
+{
+    "id": "0-binary-lighting-pv",
+    "name": "BACnetBinaryLightingPV",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "off",
+            "value": 0
+        },
+        {
+            "name": "on",
+            "value": 1
+        },
+        {
+            "name": "stop",
+            "value": 5
+        },
+        {
+            "name": "toggle",
+            "value": 6
+        },
+        {
+            "name": "warn",
+            "value": 2
+        },
+        {
+            "name": "warn-off",
+            "value": 3
+        },
+        {
+            "name": "warn-relinquish",
+            "value": 4
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 255,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 63
+        },
+        {
+            "custom": true,
+            "minimum": 64,
+            "maximum": 255
+        }
+    ]
+}

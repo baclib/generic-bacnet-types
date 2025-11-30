@@ -1,0 +1,46 @@
+{
+    "id": "0-backup-state",
+    "name": "BACnetBackupState",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "backup-failure",
+            "value": 5
+        },
+        {
+            "name": "idle",
+            "value": 0
+        },
+        {
+            "name": "performing-a-backup",
+            "value": 3
+        },
+        {
+            "name": "performing-a-restore",
+            "value": 4
+        },
+        {
+            "name": "preparing-for-backup",
+            "value": 1
+        },
+        {
+            "name": "preparing-for-restore",
+            "value": 2
+        },
+        {
+            "name": "restore-failure",
+            "value": 6
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 6,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 6
+        }
+    ]
+}

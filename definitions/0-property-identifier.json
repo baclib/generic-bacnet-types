@@ -1,0 +1,2076 @@
+{
+    "id": "0-property-identifier",
+    "name": "BACnetPropertyIdentifier",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "absentee-limit",
+            "value": 244
+        },
+        {
+            "name": "accepted-modes",
+            "value": 175
+        },
+        {
+            "name": "access-alarm-events",
+            "value": 245
+        },
+        {
+            "name": "access-doors",
+            "value": 246
+        },
+        {
+            "name": "access-event",
+            "value": 247
+        },
+        {
+            "name": "access-event-authentication-factor",
+            "value": 248
+        },
+        {
+            "name": "access-event-credential",
+            "value": 249
+        },
+        {
+            "name": "access-event-tag",
+            "value": 322
+        },
+        {
+            "name": "access-event-time",
+            "value": 250
+        },
+        {
+            "name": "access-transaction-events",
+            "value": 251
+        },
+        {
+            "name": "accompaniment",
+            "value": 252
+        },
+        {
+            "name": "accompaniment-time",
+            "value": 253
+        },
+        {
+            "name": "ack-required",
+            "value": 1
+        },
+        {
+            "name": "acked-transitions",
+            "value": 0
+        },
+        {
+            "name": "action",
+            "value": 2
+        },
+        {
+            "name": "action-text",
+            "value": 3
+        },
+        {
+            "name": "activation-time",
+            "value": 254
+        },
+        {
+            "name": "active-authentication-policy",
+            "value": 255
+        },
+        {
+            "name": "active-cov-multiple-subscriptions",
+            "value": 481
+        },
+        {
+            "name": "active-cov-subscriptions",
+            "value": 152
+        },
+        {
+            "name": "active-text",
+            "value": 4
+        },
+        {
+            "name": "active-vt-sessions",
+            "value": 5
+        },
+        {
+            "name": "actual-shed-level",
+            "value": 212
+        },
+        {
+            "name": "additional-reference-ports",
+            "value": 508
+        },
+        {
+            "name": "adjust-value",
+            "value": 176
+        },
+        {
+            "name": "alarm-value",
+            "value": 6
+        },
+        {
+            "name": "alarm-values",
+            "value": 7
+        },
+        {
+            "name": "align-intervals",
+            "value": 193
+        },
+        {
+            "name": "all",
+            "value": 8
+        },
+        {
+            "name": "all-writes-successful",
+            "value": 9
+        },
+        {
+            "name": "allow-group-delay-inhibit",
+            "value": 365
+        },
+        {
+            "name": "apdu-length",
+            "value": 399
+        },
+        {
+            "name": "apdu-segment-timeout",
+            "value": 10
+        },
+        {
+            "name": "apdu-timeout",
+            "value": 11
+        },
+        {
+            "name": "application-software-version",
+            "value": 12
+        },
+        {
+            "name": "archive",
+            "value": 13
+        },
+        {
+            "name": "assigned-access-rights",
+            "value": 256
+        },
+        {
+            "name": "assigned-landing-calls",
+            "value": 447
+        },
+        {
+            "name": "attempted-samples",
+            "value": 124
+        },
+        {
+            "name": "audit-level",
+            "value": 498
+        },
+        {
+            "name": "audit-notification-recipient",
+            "value": 499
+        },
+        {
+            "name": "audit-priority-filter",
+            "value": 500
+        },
+        {
+            "name": "audit-source-reporter",
+            "value": 497
+        },
+        {
+            "name": "auditable-operations",
+            "value": 501
+        },
+        {
+            "name": "authentication-factors",
+            "value": 257
+        },
+        {
+            "name": "authentication-policy-list",
+            "value": 258
+        },
+        {
+            "name": "authentication-policy-names",
+            "value": 259
+        },
+        {
+            "name": "authentication-status",
+            "value": 260
+        },
+        {
+            "name": "authorization-cache",
+            "value": 4194343
+        },
+        {
+            "name": "authorization-exemptions",
+            "value": 364
+        },
+        {
+            "name": "authorization-groups",
+            "value": 4194344
+        },
+        {
+            "name": "authorization-mode",
+            "value": 261
+        },
+        {
+            "name": "authorization-policy",
+            "value": 4194345
+        },
+        {
+            "name": "authorization-scope",
+            "value": 4194346
+        },
+        {
+            "name": "authorization-server",
+            "value": 4194347
+        },
+        {
+            "name": "authorization-status",
+            "value": 4194348
+        },
+        {
+            "name": "auto-subordinate-discovery",
+            "value": 169
+        },
+        {
+            "name": "average-value",
+            "value": 125
+        },
+        {
+            "name": "backup-and-restore-state",
+            "value": 338
+        },
+        {
+            "name": "backup-failure-timeout",
+            "value": 153
+        },
+        {
+            "name": "backup-preparation-time",
+            "value": 339
+        },
+        {
+            "name": "bacnet-ip-global-address",
+            "value": 407
+        },
+        {
+            "name": "bacnet-ip-mode",
+            "value": 408
+        },
+        {
+            "name": "bacnet-ip-multicast-address",
+            "value": 409
+        },
+        {
+            "name": "bacnet-ip-nat-traversal",
+            "value": 410
+        },
+        {
+            "name": "bacnet-ip-udp-port",
+            "value": 412
+        },
+        {
+            "name": "bacnet-ipv6-mode",
+            "value": 435
+        },
+        {
+            "name": "bacnet-ipv6-multicast-address",
+            "value": 440
+        },
+        {
+            "name": "bacnet-ipv6-udp-port",
+            "value": 438
+        },
+        {
+            "name": "bbmd-accept-fd-registrations",
+            "value": 413
+        },
+        {
+            "name": "bbmd-broadcast-distribution-table",
+            "value": 414
+        },
+        {
+            "name": "bbmd-foreign-device-table",
+            "value": 415
+        },
+        {
+            "name": "belongs-to",
+            "value": 262
+        },
+        {
+            "name": "bias",
+            "value": 14
+        },
+        {
+            "name": "bit-mask",
+            "value": 342
+        },
+        {
+            "name": "bit-text",
+            "value": 343
+        },
+        {
+            "name": "blink-warn-enable",
+            "value": 373
+        },
+        {
+            "name": "buffer-size",
+            "value": 126
+        },
+        {
+            "name": "car-assigned-direction",
+            "value": 448
+        },
+        {
+            "name": "car-door-command",
+            "value": 449
+        },
+        {
+            "name": "car-door-status",
+            "value": 450
+        },
+        {
+            "name": "car-door-text",
+            "value": 451
+        },
+        {
+            "name": "car-door-zone",
+            "value": 452
+        },
+        {
+            "name": "car-drive-status",
+            "value": 453
+        },
+        {
+            "name": "car-load",
+            "value": 454
+        },
+        {
+            "name": "car-load-units",
+            "value": 455
+        },
+        {
+            "name": "car-mode",
+            "value": 456
+        },
+        {
+            "name": "car-moving-direction",
+            "value": 457
+        },
+        {
+            "name": "car-position",
+            "value": 458
+        },
+        {
+            "name": "certificate-signing-request-file",
+            "value": 509
+        },
+        {
+            "name": "change-of-state-count",
+            "value": 15
+        },
+        {
+            "name": "change-of-state-time",
+            "value": 16
+        },
+        {
+            "name": "changes-pending",
+            "value": 416
+        },
+        {
+            "name": "channel-number",
+            "value": 366
+        },
+        {
+            "name": "client-cov-increment",
+            "value": 127
+        },
+        {
+            "name": "color-command",
+            "value": 4194334
+        },
+        {
+            "name": "color-override",
+            "value": 4194328
+        },
+        {
+            "name": "color-reference",
+            "value": 4194329
+        },
+        {
+            "name": "command",
+            "value": 417
+        },
+        {
+            "name": "command-time-array",
+            "value": 430
+        },
+        {
+            "name": "command-validation-result",
+            "value": 510
+        },
+        {
+            "name": "configuration-files",
+            "value": 154
+        },
+        {
+            "name": "control-groups",
+            "value": 367
+        },
+        {
+            "name": "controlled-variable-reference",
+            "value": 19
+        },
+        {
+            "name": "controlled-variable-units",
+            "value": 20
+        },
+        {
+            "name": "controlled-variable-value",
+            "value": 21
+        },
+        {
+            "name": "count",
+            "value": 177
+        },
+        {
+            "name": "count-before-change",
+            "value": 178
+        },
+        {
+            "name": "count-change-time",
+            "value": 179
+        },
+        {
+            "name": "cov-increment",
+            "value": 22
+        },
+        {
+            "name": "cov-period",
+            "value": 180
+        },
+        {
+            "name": "cov-resubscription-interval",
+            "value": 128
+        },
+        {
+            "name": "covu-period",
+            "value": 349
+        },
+        {
+            "name": "covu-recipients",
+            "value": 350
+        },
+        {
+            "name": "credential-disable",
+            "value": 263
+        },
+        {
+            "name": "credential-status",
+            "value": 264
+        },
+        {
+            "name": "credentials",
+            "value": 265
+        },
+        {
+            "name": "credentials-in-zone",
+            "value": 266
+        },
+        {
+            "name": "current-command-priority",
+            "value": 431
+        },
+        {
+            "name": "current-health",
+            "value": 4194307
+        },
+        {
+            "name": "database-revision",
+            "value": 155
+        },
+        {
+            "name": "date-list",
+            "value": 23
+        },
+        {
+            "name": "daylight-savings-status",
+            "value": 24
+        },
+        {
+            "name": "days-remaining",
+            "value": 267
+        },
+        {
+            "name": "deadband",
+            "value": 25
+        },
+        {
+            "name": "default-color",
+            "value": 4194330
+        },
+        {
+            "name": "default-color-temperature",
+            "value": 4194331
+        },
+        {
+            "name": "default-fade-time",
+            "value": 374
+        },
+        {
+            "name": "default-on-value",
+            "value": 4194341
+        },
+        {
+            "name": "default-present-value",
+            "value": 492
+        },
+        {
+            "name": "default-ramp-rate",
+            "value": 375
+        },
+        {
+            "name": "default-step-increment",
+            "value": 376
+        },
+        {
+            "name": "default-subordinate-relationship",
+            "value": 490
+        },
+        {
+            "name": "default-timeout",
+            "value": 393
+        },
+        {
+            "name": "delete-on-forward",
+            "value": 502
+        },
+        {
+            "name": "deployed-profile-location",
+            "value": 484
+        },
+        {
+            "name": "derivative-constant",
+            "value": 26
+        },
+        {
+            "name": "derivative-constant-units",
+            "value": 27
+        },
+        {
+            "name": "description",
+            "value": 28
+        },
+        {
+            "name": "description-of-halt",
+            "value": 29
+        },
+        {
+            "name": "device-address-binding",
+            "value": 30
+        },
+        {
+            "name": "device-address-proxy-enable",
+            "value": 4194338
+        },
+        {
+            "name": "device-address-proxy-table",
+            "value": 4194339
+        },
+        {
+            "name": "device-address-proxy-timeout",
+            "value": 4194340
+        },
+        {
+            "name": "device-type",
+            "value": 31
+        },
+        {
+            "name": "device-uuid",
+            "value": 507
+        },
+        {
+            "name": "direct-reading",
+            "value": 156
+        },
+        {
+            "name": "door-alarm-state",
+            "value": 226
+        },
+        {
+            "name": "door-extended-pulse-time",
+            "value": 227
+        },
+        {
+            "name": "door-members",
+            "value": 228
+        },
+        {
+            "name": "door-open-too-long-time",
+            "value": 229
+        },
+        {
+            "name": "door-pulse-time",
+            "value": 230
+        },
+        {
+            "name": "door-status",
+            "value": 231
+        },
+        {
+            "name": "door-unlock-delay-time",
+            "value": 232
+        },
+        {
+            "name": "duty-window",
+            "value": 213
+        },
+        {
+            "name": "effective-period",
+            "value": 32
+        },
+        {
+            "name": "egress-active",
+            "value": 386
+        },
+        {
+            "name": "egress-time",
+            "value": 377
+        },
+        {
+            "name": "elapsed-active-time",
+            "value": 33
+        },
+        {
+            "name": "elevator-group",
+            "value": 459
+        },
+        {
+            "name": "enable",
+            "value": 133
+        },
+        {
+            "name": "energy-meter",
+            "value": 460
+        },
+        {
+            "name": "energy-meter-ref",
+            "value": 461
+        },
+        {
+            "name": "entry-points",
+            "value": 268
+        },
+        {
+            "name": "error-limit",
+            "value": 34
+        },
+        {
+            "name": "escalator-mode",
+            "value": 462
+        },
+        {
+            "name": "event-algorithm-inhibit",
+            "value": 354
+        },
+        {
+            "name": "event-algorithm-inhibit-ref",
+            "value": 355
+        },
+        {
+            "name": "event-detection-enable",
+            "value": 353
+        },
+        {
+            "name": "event-enable",
+            "value": 35
+        },
+        {
+            "name": "event-message-texts",
+            "value": 351
+        },
+        {
+            "name": "event-message-texts-config",
+            "value": 352
+        },
+        {
+            "name": "event-parameters",
+            "value": 83
+        },
+        {
+            "name": "event-state",
+            "value": 36
+        },
+        {
+            "name": "event-time-stamps",
+            "value": 130
+        },
+        {
+            "name": "event-type",
+            "value": 37
+        },
+        {
+            "name": "exception-schedule",
+            "value": 38
+        },
+        {
+            "name": "execution-delay",
+            "value": 368
+        },
+        {
+            "name": "exit-points",
+            "value": 269
+        },
+        {
+            "name": "expected-shed-level",
+            "value": 214
+        },
+        {
+            "name": "expiration-time",
+            "value": 270
+        },
+        {
+            "name": "extended-time-enable",
+            "value": 271
+        },
+        {
+            "name": "failed-attempt-events",
+            "value": 272
+        },
+        {
+            "name": "failed-attempts",
+            "value": 273
+        },
+        {
+            "name": "failed-attempts-time",
+            "value": 274
+        },
+        {
+            "name": "fault-high-limit",
+            "value": 388
+        },
+        {
+            "name": "fault-low-limit",
+            "value": 389
+        },
+        {
+            "name": "fault-parameters",
+            "value": 358
+        },
+        {
+            "name": "fault-signals",
+            "value": 463
+        },
+        {
+            "name": "fault-type",
+            "value": 359
+        },
+        {
+            "name": "fault-values",
+            "value": 39
+        },
+        {
+            "name": "fd-bbmd-address",
+            "value": 418
+        },
+        {
+            "name": "fd-subscription-lifetime",
+            "value": 419
+        },
+        {
+            "name": "feedback-value",
+            "value": 40
+        },
+        {
+            "name": "file-access-method",
+            "value": 41
+        },
+        {
+            "name": "file-size",
+            "value": 42
+        },
+        {
+            "name": "file-type",
+            "value": 43
+        },
+        {
+            "name": "firmware-revision",
+            "value": 44
+        },
+        {
+            "name": "floor-number",
+            "value": 506
+        },
+        {
+            "name": "floor-text",
+            "value": 464
+        },
+        {
+            "name": "full-duty-baseline",
+            "value": 215
+        },
+        {
+            "name": "global-identifier",
+            "value": 323
+        },
+        {
+            "name": "group-id",
+            "value": 465
+        },
+        {
+            "name": "group-member-names",
+            "value": 346
+        },
+        {
+            "name": "group-members",
+            "value": 345
+        },
+        {
+            "name": "group-mode",
+            "value": 467
+        },
+        {
+            "name": "high-end-trim",
+            "value": 4194335
+        },
+        {
+            "name": "high-limit",
+            "value": 45
+        },
+        {
+            "name": "higher-deck",
+            "value": 468
+        },
+        {
+            "name": "in-process",
+            "value": 47
+        },
+        {
+            "name": "in-progress",
+            "value": 378
+        },
+        {
+            "name": "inactive-text",
+            "value": 46
+        },
+        {
+            "name": "initial-timeout",
+            "value": 394
+        },
+        {
+            "name": "input-reference",
+            "value": 181
+        },
+        {
+            "name": "installation-id",
+            "value": 469
+        },
+        {
+            "name": "instance-of",
+            "value": 48
+        },
+        {
+            "name": "instantaneous-power",
+            "value": 379
+        },
+        {
+            "name": "integral-constant",
+            "value": 49
+        },
+        {
+            "name": "integral-constant-units",
+            "value": 50
+        },
+        {
+            "name": "interface-value",
+            "value": 387
+        },
+        {
+            "name": "interval-offset",
+            "value": 195
+        },
+        {
+            "name": "ip-address",
+            "value": 400
+        },
+        {
+            "name": "ip-default-gateway",
+            "value": 401
+        },
+        {
+            "name": "ip-dhcp-enable",
+            "value": 402
+        },
+        {
+            "name": "ip-dhcp-lease-time",
+            "value": 403
+        },
+        {
+            "name": "ip-dhcp-lease-time-remaining",
+            "value": 404
+        },
+        {
+            "name": "ip-dhcp-server",
+            "value": 405
+        },
+        {
+            "name": "ip-dns-server",
+            "value": 406
+        },
+        {
+            "name": "ip-subnet-mask",
+            "value": 411
+        },
+        {
+            "name": "ipv6-address",
+            "value": 436
+        },
+        {
+            "name": "ipv6-auto-addressing-enable",
+            "value": 442
+        },
+        {
+            "name": "ipv6-default-gateway",
+            "value": 439
+        },
+        {
+            "name": "ipv6-dhcp-lease-time",
+            "value": 443
+        },
+        {
+            "name": "ipv6-dhcp-lease-time-remaining",
+            "value": 444
+        },
+        {
+            "name": "ipv6-dhcp-server",
+            "value": 445
+        },
+        {
+            "name": "ipv6-dns-server",
+            "value": 441
+        },
+        {
+            "name": "ipv6-prefix-length",
+            "value": 437
+        },
+        {
+            "name": "ipv6-zone-index",
+            "value": 446
+        },
+        {
+            "name": "is-utc",
+            "value": 344
+        },
+        {
+            "name": "issue-confirmed-notifications",
+            "value": 51
+        },
+        {
+            "name": "issuer-certificate-files",
+            "value": 511
+        },
+        {
+            "name": "landing-call-control",
+            "value": 471
+        },
+        {
+            "name": "landing-calls",
+            "value": 470
+        },
+        {
+            "name": "landing-door-status",
+            "value": 472
+        },
+        {
+            "name": "last-access-event",
+            "value": 275
+        },
+        {
+            "name": "last-access-point",
+            "value": 276
+        },
+        {
+            "name": "last-command-time",
+            "value": 432
+        },
+        {
+            "name": "last-credential-added",
+            "value": 277
+        },
+        {
+            "name": "last-credential-added-time",
+            "value": 278
+        },
+        {
+            "name": "last-credential-removed",
+            "value": 279
+        },
+        {
+            "name": "last-credential-removed-time",
+            "value": 280
+        },
+        {
+            "name": "last-notify-record",
+            "value": 173
+        },
+        {
+            "name": "last-on-value",
+            "value": 4194342
+        },
+        {
+            "name": "last-priority",
+            "value": 369
+        },
+        {
+            "name": "last-restart-reason",
+            "value": 196
+        },
+        {
+            "name": "last-restore-time",
+            "value": 157
+        },
+        {
+            "name": "last-state-change",
+            "value": 395
+        },
+        {
+            "name": "last-use-time",
+            "value": 281
+        },
+        {
+            "name": "life-safety-alarm-values",
+            "value": 166
+        },
+        {
+            "name": "lighting-command",
+            "value": 380
+        },
+        {
+            "name": "lighting-command-default-priority",
+            "value": 381
+        },
+        {
+            "name": "limit-enable",
+            "value": 52
+        },
+        {
+            "name": "limit-monitoring-interval",
+            "value": 182
+        },
+        {
+            "name": "link-speed",
+            "value": 420
+        },
+        {
+            "name": "link-speed-autonegotiate",
+            "value": 422
+        },
+        {
+            "name": "link-speeds",
+            "value": 421
+        },
+        {
+            "name": "list-of-group-members",
+            "value": 53
+        },
+        {
+            "name": "list-of-object-property-references",
+            "value": 54
+        },
+        {
+            "name": "local-date",
+            "value": 56
+        },
+        {
+            "name": "local-forwarding-only",
+            "value": 360
+        },
+        {
+            "name": "local-time",
+            "value": 57
+        },
+        {
+            "name": "location",
+            "value": 58
+        },
+        {
+            "name": "lock-status",
+            "value": 233
+        },
+        {
+            "name": "lockout",
+            "value": 282
+        },
+        {
+            "name": "lockout-relinquish-time",
+            "value": 283
+        },
+        {
+            "name": "log-buffer",
+            "value": 131
+        },
+        {
+            "name": "log-device-object-property",
+            "value": 132
+        },
+        {
+            "name": "log-interval",
+            "value": 134
+        },
+        {
+            "name": "logging-object",
+            "value": 183
+        },
+        {
+            "name": "logging-record",
+            "value": 184
+        },
+        {
+            "name": "logging-type",
+            "value": 197
+        },
+        {
+            "name": "low-diff-limit",
+            "value": 390
+        },
+        {
+            "name": "low-end-trim",
+            "value": 4194336
+        },
+        {
+            "name": "low-limit",
+            "value": 59
+        },
+        {
+            "name": "lower-deck",
+            "value": 473
+        },
+        {
+            "name": "mac-address",
+            "value": 423
+        },
+        {
+            "name": "machine-room-id",
+            "value": 474
+        },
+        {
+            "name": "maintenance-required",
+            "value": 158
+        },
+        {
+            "name": "making-car-call",
+            "value": 475
+        },
+        {
+            "name": "manipulated-variable-reference",
+            "value": 60
+        },
+        {
+            "name": "manual-subordinate-address-binding",
+            "value": 170
+        },
+        {
+            "name": "masked-alarm-values",
+            "value": 234
+        },
+        {
+            "name": "max-actual-value",
+            "value": 382
+        },
+        {
+            "name": "max-apdu-length-accepted",
+            "value": 62
+        },
+        {
+            "name": "max-bvlc-length-accepted",
+            "value": 4194304
+        },
+        {
+            "name": "max-failed-attempts",
+            "value": 285
+        },
+        {
+            "name": "max-info-frames",
+            "value": 63
+        },
+        {
+            "name": "max-manager",
+            "value": 64
+        },
+        {
+            "name": "max-npdu-length-accepted",
+            "value": 4194305
+        },
+        {
+            "name": "max-pres-value",
+            "value": 65
+        },
+        {
+            "name": "max-proxied-i-ams-per-second",
+            "value": 4194349
+        },
+        {
+            "name": "max-segments-accepted",
+            "value": 167
+        },
+        {
+            "name": "maximum-output",
+            "value": 61
+        },
+        {
+            "name": "maximum-send-delay",
+            "value": 503
+        },
+        {
+            "name": "maximum-value",
+            "value": 135
+        },
+        {
+            "name": "maximum-value-timestamp",
+            "value": 149
+        },
+        {
+            "name": "member-of",
+            "value": 159
+        },
+        {
+            "name": "member-status-flags",
+            "value": 347
+        },
+        {
+            "name": "members",
+            "value": 286
+        },
+        {
+            "name": "min-actual-value",
+            "value": 383
+        },
+        {
+            "name": "min-pres-value",
+            "value": 69
+        },
+        {
+            "name": "minimum-off-time",
+            "value": 66
+        },
+        {
+            "name": "minimum-on-time",
+            "value": 67
+        },
+        {
+            "name": "minimum-output",
+            "value": 68
+        },
+        {
+            "name": "minimum-value",
+            "value": 136
+        },
+        {
+            "name": "minimum-value-timestamp",
+            "value": 150
+        },
+        {
+            "name": "mode",
+            "value": 160
+        },
+        {
+            "name": "model-name",
+            "value": 70
+        },
+        {
+            "name": "modification-date",
+            "value": 71
+        },
+        {
+            "name": "monitored-objects",
+            "value": 504
+        },
+        {
+            "name": "muster-point",
+            "value": 287
+        },
+        {
+            "name": "negative-access-rules",
+            "value": 288
+        },
+        {
+            "name": "network-interface-name",
+            "value": 424
+        },
+        {
+            "name": "network-number",
+            "value": 425
+        },
+        {
+            "name": "network-number-quality",
+            "value": 426
+        },
+        {
+            "name": "network-type",
+            "value": 427
+        },
+        {
+            "name": "next-stopping-floor",
+            "value": 476
+        },
+        {
+            "name": "node-subtype",
+            "value": 207
+        },
+        {
+            "name": "node-type",
+            "value": 208
+        },
+        {
+            "name": "notification-class",
+            "value": 17
+        },
+        {
+            "name": "notification-threshold",
+            "value": 137
+        },
+        {
+            "name": "notify-type",
+            "value": 72
+        },
+        {
+            "name": "number-of-apdu-retries",
+            "value": 73
+        },
+        {
+            "name": "number-of-authentication-policies",
+            "value": 289
+        },
+        {
+            "name": "number-of-states",
+            "value": 74
+        },
+        {
+            "name": "object-identifier",
+            "value": 75
+        },
+        {
+            "name": "object-list",
+            "value": 76
+        },
+        {
+            "name": "object-name",
+            "value": 77
+        },
+        {
+            "name": "object-property-reference",
+            "value": 78
+        },
+        {
+            "name": "object-type",
+            "value": 79
+        },
+        {
+            "name": "occupancy-count",
+            "value": 290
+        },
+        {
+            "name": "occupancy-count-adjust",
+            "value": 291
+        },
+        {
+            "name": "occupancy-count-enable",
+            "value": 292
+        },
+        {
+            "name": "occupancy-lower-limit",
+            "value": 294
+        },
+        {
+            "name": "occupancy-lower-limit-enforced",
+            "value": 295
+        },
+        {
+            "name": "occupancy-state",
+            "value": 296
+        },
+        {
+            "name": "occupancy-upper-limit",
+            "value": 297
+        },
+        {
+            "name": "occupancy-upper-limit-enforced",
+            "value": 298
+        },
+        {
+            "name": "operation-direction",
+            "value": 477
+        },
+        {
+            "name": "operation-expected",
+            "value": 161
+        },
+        {
+            "name": "operational-certificate-file",
+            "value": 4194306
+        },
+        {
+            "name": "optional",
+            "value": 80
+        },
+        {
+            "name": "out-of-service",
+            "value": 81
+        },
+        {
+            "name": "output-units",
+            "value": 82
+        },
+        {
+            "name": "override-color-reference",
+            "value": 4194332
+        },
+        {
+            "name": "passback-mode",
+            "value": 300
+        },
+        {
+            "name": "passback-timeout",
+            "value": 301
+        },
+        {
+            "name": "passenger-alarm",
+            "value": 478
+        },
+        {
+            "name": "polarity",
+            "value": 84
+        },
+        {
+            "name": "port-filter",
+            "value": 363
+        },
+        {
+            "name": "positive-access-rules",
+            "value": 302
+        },
+        {
+            "name": "power",
+            "value": 384
+        },
+        {
+            "name": "power-mode",
+            "value": 479
+        },
+        {
+            "name": "prescale",
+            "value": 185
+        },
+        {
+            "name": "present-stage",
+            "value": 493
+        },
+        {
+            "name": "present-value",
+            "value": 85
+        },
+        {
+            "name": "priority",
+            "value": 86
+        },
+        {
+            "name": "priority-array",
+            "value": 87
+        },
+        {
+            "name": "priority-for-writing",
+            "value": 88
+        },
+        {
+            "name": "process-identifier",
+            "value": 89
+        },
+        {
+            "name": "process-identifier-filter",
+            "value": 361
+        },
+        {
+            "name": "profile-location",
+            "value": 485
+        },
+        {
+            "name": "profile-name",
+            "value": 168
+        },
+        {
+            "name": "program-change",
+            "value": 90
+        },
+        {
+            "name": "program-location",
+            "value": 91
+        },
+        {
+            "name": "program-state",
+            "value": 92
+        },
+        {
+            "name": "property-list",
+            "value": 371
+        },
+        {
+            "name": "proportional-constant",
+            "value": 93
+        },
+        {
+            "name": "proportional-constant-units",
+            "value": 94
+        },
+        {
+            "name": "protocol-level",
+            "value": 482
+        },
+        {
+            "name": "protocol-object-types-supported",
+            "value": 96
+        },
+        {
+            "name": "protocol-revision",
+            "value": 139
+        },
+        {
+            "name": "protocol-services-supported",
+            "value": 97
+        },
+        {
+            "name": "protocol-version",
+            "value": 98
+        },
+        {
+            "name": "pulse-rate",
+            "value": 186
+        },
+        {
+            "name": "read-only",
+            "value": 99
+        },
+        {
+            "name": "reason-for-disable",
+            "value": 303
+        },
+        {
+            "name": "reason-for-halt",
+            "value": 100
+        },
+        {
+            "name": "recipient-list",
+            "value": 102
+        },
+        {
+            "name": "record-count",
+            "value": 141
+        },
+        {
+            "name": "records-since-notification",
+            "value": 140
+        },
+        {
+            "name": "reference-port",
+            "value": 483
+        },
+        {
+            "name": "registered-car-call",
+            "value": 480
+        },
+        {
+            "name": "reliability",
+            "value": 103
+        },
+        {
+            "name": "reliability-evaluation-inhibit",
+            "value": 357
+        },
+        {
+            "name": "relinquish-default",
+            "value": 104
+        },
+        {
+            "name": "represents",
+            "value": 491
+        },
+        {
+            "name": "requested-shed-level",
+            "value": 218
+        },
+        {
+            "name": "requested-update-interval",
+            "value": 348
+        },
+        {
+            "name": "required",
+            "value": 105
+        },
+        {
+            "name": "resolution",
+            "value": 106
+        },
+        {
+            "name": "restart-notification-recipients",
+            "value": 202
+        },
+        {
+            "name": "restore-completion-time",
+            "value": 340
+        },
+        {
+            "name": "restore-preparation-time",
+            "value": 341
+        },
+        {
+            "name": "routing-table",
+            "value": 428
+        },
+        {
+            "name": "sc-connect-wait-timeout",
+            "value": 4194308
+        },
+        {
+            "name": "sc-direct-connect-accept-enable",
+            "value": 4194309
+        },
+        {
+            "name": "sc-direct-connect-accept-uris",
+            "value": 4194310
+        },
+        {
+            "name": "sc-direct-connect-binding",
+            "value": 4194311
+        },
+        {
+            "name": "sc-direct-connect-connection-status",
+            "value": 4194312
+        },
+        {
+            "name": "sc-direct-connect-initiate-enable",
+            "value": 4194313
+        },
+        {
+            "name": "sc-disconnect-wait-timeout",
+            "value": 4194314
+        },
+        {
+            "name": "sc-failed-connection-requests",
+            "value": 4194315
+        },
+        {
+            "name": "sc-failover-hub-connection-status",
+            "value": 4194316
+        },
+        {
+            "name": "sc-failover-hub-uri",
+            "value": 4194317
+        },
+        {
+            "name": "sc-heartbeat-timeout",
+            "value": 4194323
+        },
+        {
+            "name": "sc-hub-connector-state",
+            "value": 4194318
+        },
+        {
+            "name": "sc-hub-function-accept-uris",
+            "value": 4194319
+        },
+        {
+            "name": "sc-hub-function-binding",
+            "value": 4194320
+        },
+        {
+            "name": "sc-hub-function-connection-status",
+            "value": 4194321
+        },
+        {
+            "name": "sc-hub-function-enable",
+            "value": 4194322
+        },
+        {
+            "name": "sc-maximum-reconnect-time",
+            "value": 4194326
+        },
+        {
+            "name": "sc-minimum-reconnect-time",
+            "value": 4194327
+        },
+        {
+            "name": "sc-primary-hub-connection-status",
+            "value": 4194324
+        },
+        {
+            "name": "sc-primary-hub-uri",
+            "value": 4194325
+        },
+        {
+            "name": "scale",
+            "value": 187
+        },
+        {
+            "name": "scale-factor",
+            "value": 188
+        },
+        {
+            "name": "schedule-default",
+            "value": 174
+        },
+        {
+            "name": "secured-status",
+            "value": 235
+        },
+        {
+            "name": "segmentation-supported",
+            "value": 107
+        },
+        {
+            "name": "send-now",
+            "value": 505
+        },
+        {
+            "name": "serial-number",
+            "value": 372
+        },
+        {
+            "name": "setpoint",
+            "value": 108
+        },
+        {
+            "name": "setpoint-reference",
+            "value": 109
+        },
+        {
+            "name": "setting",
+            "value": 162
+        },
+        {
+            "name": "shed-duration",
+            "value": 219
+        },
+        {
+            "name": "shed-level-descriptions",
+            "value": 220
+        },
+        {
+            "name": "shed-levels",
+            "value": 221
+        },
+        {
+            "name": "silenced",
+            "value": 163
+        },
+        {
+            "name": "stage-names",
+            "value": 495
+        },
+        {
+            "name": "stages",
+            "value": 494
+        },
+        {
+            "name": "start-time",
+            "value": 142
+        },
+        {
+            "name": "state-change-values",
+            "value": 396
+        },
+        {
+            "name": "state-description",
+            "value": 222
+        },
+        {
+            "name": "state-text",
+            "value": 110
+        },
+        {
+            "name": "status-flags",
+            "value": 111
+        },
+        {
+            "name": "stop-time",
+            "value": 143
+        },
+        {
+            "name": "stop-when-full",
+            "value": 144
+        },
+        {
+            "name": "strike-count",
+            "value": 391
+        },
+        {
+            "name": "structured-object-list",
+            "value": 209
+        },
+        {
+            "name": "subordinate-address-binding",
+            "value": 171
+        },
+        {
+            "name": "subordinate-annotations",
+            "value": 210
+        },
+        {
+            "name": "subordinate-list",
+            "value": 211
+        },
+        {
+            "name": "subordinate-node-types",
+            "value": 487
+        },
+        {
+            "name": "subordinate-proxy-enable",
+            "value": 172
+        },
+        {
+            "name": "subordinate-relationships",
+            "value": 489
+        },
+        {
+            "name": "subordinate-tags",
+            "value": 488
+        },
+        {
+            "name": "subscribed-recipients",
+            "value": 362
+        },
+        {
+            "name": "supported-format-classes",
+            "value": 305
+        },
+        {
+            "name": "supported-formats",
+            "value": 304
+        },
+        {
+            "name": "system-status",
+            "value": 112
+        },
+        {
+            "name": "tags",
+            "value": 486
+        },
+        {
+            "name": "target-references",
+            "value": 496
+        },
+        {
+            "name": "threat-authority",
+            "value": 306
+        },
+        {
+            "name": "threat-level",
+            "value": 307
+        },
+        {
+            "name": "time-delay",
+            "value": 113
+        },
+        {
+            "name": "time-delay-normal",
+            "value": 356
+        },
+        {
+            "name": "time-of-active-time-reset",
+            "value": 114
+        },
+        {
+            "name": "time-of-device-restart",
+            "value": 203
+        },
+        {
+            "name": "time-of-state-count-reset",
+            "value": 115
+        },
+        {
+            "name": "time-of-strike-count-reset",
+            "value": 392
+        },
+        {
+            "name": "time-synchronization-interval",
+            "value": 204
+        },
+        {
+            "name": "time-synchronization-recipients",
+            "value": 116
+        },
+        {
+            "name": "timer-running",
+            "value": 397
+        },
+        {
+            "name": "timer-state",
+            "value": 398
+        },
+        {
+            "name": "total-record-count",
+            "value": 145
+        },
+        {
+            "name": "trace-flag",
+            "value": 308
+        },
+        {
+            "name": "tracking-value",
+            "value": 164
+        },
+        {
+            "name": "transaction-notification-class",
+            "value": 309
+        },
+        {
+            "name": "transition",
+            "value": 385
+        },
+        {
+            "name": "trigger",
+            "value": 205
+        },
+        {
+            "name": "trim-fade-time",
+            "value": 4194337
+        },
+        {
+            "name": "units",
+            "value": 117
+        },
+        {
+            "name": "update-interval",
+            "value": 118
+        },
+        {
+            "name": "update-time",
+            "value": 189
+        },
+        {
+            "name": "user-external-identifier",
+            "value": 310
+        },
+        {
+            "name": "user-information-reference",
+            "value": 311
+        },
+        {
+            "name": "user-name",
+            "value": 317
+        },
+        {
+            "name": "user-type",
+            "value": 318
+        },
+        {
+            "name": "uses-remaining",
+            "value": 319
+        },
+        {
+            "name": "utc-offset",
+            "value": 119
+        },
+        {
+            "name": "utc-time-synchronization-recipients",
+            "value": 206
+        },
+        {
+            "name": "valid-samples",
+            "value": 146
+        },
+        {
+            "name": "value-before-change",
+            "value": 190
+        },
+        {
+            "name": "value-change-time",
+            "value": 192
+        },
+        {
+            "name": "value-set",
+            "value": 191
+        },
+        {
+            "name": "value-source",
+            "value": 433
+        },
+        {
+            "name": "value-source-array",
+            "value": 434
+        },
+        {
+            "name": "variance-value",
+            "value": 151
+        },
+        {
+            "name": "vendor-identifier",
+            "value": 120
+        },
+        {
+            "name": "vendor-name",
+            "value": 121
+        },
+        {
+            "name": "verification-time",
+            "value": 326
+        },
+        {
+            "name": "virtual-mac-address-table",
+            "value": 429
+        },
+        {
+            "name": "vt-classes-supported",
+            "value": 122
+        },
+        {
+            "name": "weekly-schedule",
+            "value": 123
+        },
+        {
+            "name": "window-interval",
+            "value": 147
+        },
+        {
+            "name": "window-samples",
+            "value": 148
+        },
+        {
+            "name": "write-every-scheduled-action",
+            "value": 4194333
+        },
+        {
+            "name": "write-status",
+            "value": 370
+        },
+        {
+            "name": "zone-from",
+            "value": 320
+        },
+        {
+            "name": "zone-members",
+            "value": 165
+        },
+        {
+            "name": "zone-to",
+            "value": 321
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 4294967295,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 511
+        },
+        {
+            "custom": true,
+            "minimum": 512,
+            "maximum": 4194303
+        },
+        {
+            "custom": false,
+            "minimum": 4194304,
+            "maximum": 4294967295
+        }
+    ]
+}

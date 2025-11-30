@@ -1,0 +1,279 @@
+{
+    "id": "0-object-types-supported",
+    "name": "BACnetObjectTypesSupported",
+    "base": "bit-string",
+    "vendor": 0,
+    "items": [
+        {
+            "bit": 0,
+            "name": "analog-input"
+        },
+        {
+            "bit": 1,
+            "name": "analog-output"
+        },
+        {
+            "bit": 2,
+            "name": "analog-value"
+        },
+        {
+            "bit": 3,
+            "name": "binary-input"
+        },
+        {
+            "bit": 4,
+            "name": "binary-output"
+        },
+        {
+            "bit": 5,
+            "name": "binary-value"
+        },
+        {
+            "bit": 6,
+            "name": "calendar"
+        },
+        {
+            "bit": 7,
+            "name": "command"
+        },
+        {
+            "bit": 8,
+            "name": "device"
+        },
+        {
+            "bit": 9,
+            "name": "event-enrollment"
+        },
+        {
+            "bit": 10,
+            "name": "file"
+        },
+        {
+            "bit": 11,
+            "name": "group"
+        },
+        {
+            "bit": 12,
+            "name": "loop"
+        },
+        {
+            "bit": 13,
+            "name": "multi-state-input"
+        },
+        {
+            "bit": 14,
+            "name": "multi-state-output"
+        },
+        {
+            "bit": 15,
+            "name": "notification-class"
+        },
+        {
+            "bit": 16,
+            "name": "program"
+        },
+        {
+            "bit": 17,
+            "name": "schedule"
+        },
+        {
+            "bit": 18,
+            "name": "averaging"
+        },
+        {
+            "bit": 19,
+            "name": "multi-state-value"
+        },
+        {
+            "bit": 20,
+            "name": "trend-log"
+        },
+        {
+            "bit": 21,
+            "name": "life-safety-point"
+        },
+        {
+            "bit": 22,
+            "name": "life-safety-zone"
+        },
+        {
+            "bit": 23,
+            "name": "accumulator"
+        },
+        {
+            "bit": 24,
+            "name": "pulse-converter"
+        },
+        {
+            "bit": 25,
+            "name": "event-log"
+        },
+        {
+            "bit": 26,
+            "name": "global-group"
+        },
+        {
+            "bit": 27,
+            "name": "trend-log-multiple"
+        },
+        {
+            "bit": 28,
+            "name": "load-control"
+        },
+        {
+            "bit": 29,
+            "name": "structured-view"
+        },
+        {
+            "bit": 30,
+            "name": "access-door"
+        },
+        {
+            "bit": 31,
+            "name": "timer"
+        },
+        {
+            "bit": 32,
+            "name": "access-credential"
+        },
+        {
+            "bit": 33,
+            "name": "access-point"
+        },
+        {
+            "bit": 34,
+            "name": "access-rights"
+        },
+        {
+            "bit": 35,
+            "name": "access-user"
+        },
+        {
+            "bit": 36,
+            "name": "access-zone"
+        },
+        {
+            "bit": 37,
+            "name": "credential-data-input"
+        },
+        {
+            "bit": 39,
+            "name": "bitstring-value"
+        },
+        {
+            "bit": 40,
+            "name": "characterstring-value"
+        },
+        {
+            "bit": 41,
+            "name": "datepattern-value"
+        },
+        {
+            "bit": 42,
+            "name": "date-value"
+        },
+        {
+            "bit": 43,
+            "name": "datetimepattern-value"
+        },
+        {
+            "bit": 44,
+            "name": "datetime-value"
+        },
+        {
+            "bit": 45,
+            "name": "integer-value"
+        },
+        {
+            "bit": 46,
+            "name": "large-analog-value"
+        },
+        {
+            "bit": 47,
+            "name": "octetstring-value"
+        },
+        {
+            "bit": 48,
+            "name": "positive-integer-value"
+        },
+        {
+            "bit": 49,
+            "name": "timepattern-value"
+        },
+        {
+            "bit": 50,
+            "name": "time-value"
+        },
+        {
+            "bit": 51,
+            "name": "notification-forwarder"
+        },
+        {
+            "bit": 52,
+            "name": "alert-enrollment"
+        },
+        {
+            "bit": 53,
+            "name": "channel"
+        },
+        {
+            "bit": 54,
+            "name": "lighting-output"
+        },
+        {
+            "bit": 55,
+            "name": "binary-lighting-output"
+        },
+        {
+            "bit": 56,
+            "name": "network-port"
+        },
+        {
+            "bit": 57,
+            "name": "elevator-group"
+        },
+        {
+            "bit": 58,
+            "name": "escalator"
+        },
+        {
+            "bit": 59,
+            "name": "lift"
+        },
+        {
+            "bit": 60,
+            "name": "staging"
+        },
+        {
+            "bit": 61,
+            "name": "audit-log"
+        },
+        {
+            "bit": 62,
+            "name": "audit-reporter"
+        },
+        {
+            "bit": 63,
+            "name": "color"
+        },
+        {
+            "bit": 64,
+            "name": "color-temperature"
+        }
+    ],
+    "extensible": false,
+    "minimum": 17,
+    "maximum": 1023,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 127
+        },
+        {
+            "custom": true,
+            "minimum": 128,
+            "maximum": 1023
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "id": "0-unconfirmed-service-choice",
+    "name": "BACnetUnconfirmedServiceChoice",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "i-am",
+            "value": 0
+        },
+        {
+            "name": "i-have",
+            "value": 1
+        },
+        {
+            "name": "time-synchronization",
+            "value": 6
+        },
+        {
+            "name": "unconfirmed-audit-notification",
+            "value": 12
+        },
+        {
+            "name": "unconfirmed-cov-notification",
+            "value": 2
+        },
+        {
+            "name": "unconfirmed-cov-notification-multiple",
+            "value": 11
+        },
+        {
+            "name": "unconfirmed-event-notification",
+            "value": 3
+        },
+        {
+            "name": "unconfirmed-private-transfer",
+            "value": 4
+        },
+        {
+            "name": "unconfirmed-text-message",
+            "value": 5
+        },
+        {
+            "name": "utc-time-synchronization",
+            "value": 9
+        },
+        {
+            "name": "who-am-i",
+            "value": 13
+        },
+        {
+            "name": "who-has",
+            "value": 7
+        },
+        {
+            "name": "who-is",
+            "value": 8
+        },
+        {
+            "name": "write-group",
+            "value": 10
+        },
+        {
+            "name": "you-are",
+            "value": 14
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 14,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 14
+        }
+    ]
+}

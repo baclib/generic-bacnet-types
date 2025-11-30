@@ -1,0 +1,87 @@
+{
+    "id": "0-audit-operation",
+    "name": "BACnetAuditOperation",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "acknowledge-alarm",
+            "value": 5
+        },
+        {
+            "name": "auditing-failure",
+            "value": 13
+        },
+        {
+            "name": "create",
+            "value": 2
+        },
+        {
+            "name": "delete",
+            "value": 3
+        },
+        {
+            "name": "device-backup",
+            "value": 9
+        },
+        {
+            "name": "device-disable-comm",
+            "value": 6
+        },
+        {
+            "name": "device-enable-comm",
+            "value": 7
+        },
+        {
+            "name": "device-reset",
+            "value": 8
+        },
+        {
+            "name": "device-restore",
+            "value": 10
+        },
+        {
+            "name": "general",
+            "value": 15
+        },
+        {
+            "name": "life-safety",
+            "value": 4
+        },
+        {
+            "name": "network-changes",
+            "value": 14
+        },
+        {
+            "name": "notification",
+            "value": 12
+        },
+        {
+            "name": "read",
+            "value": 0
+        },
+        {
+            "name": "subscription",
+            "value": 11
+        },
+        {
+            "name": "write",
+            "value": 1
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 63,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 31
+        },
+        {
+            "custom": true,
+            "minimum": 32,
+            "maximum": 63
+        }
+    ]
+}

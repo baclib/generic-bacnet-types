@@ -1,0 +1,47 @@
+{
+    "id": "0-lift-car-direction",
+    "name": "BACnetLiftCarDirection",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "down",
+            "value": 4
+        },
+        {
+            "name": "none",
+            "value": 1
+        },
+        {
+            "name": "stopped",
+            "value": 2
+        },
+        {
+            "name": "unknown",
+            "value": 0
+        },
+        {
+            "name": "up",
+            "value": 3
+        },
+        {
+            "name": "up-and-down",
+            "value": 5
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 1023
+        },
+        {
+            "custom": true,
+            "minimum": 1024,
+            "maximum": 65535
+        }
+    ]
+}

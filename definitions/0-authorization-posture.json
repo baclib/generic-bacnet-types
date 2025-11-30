@@ -1,0 +1,38 @@
+{
+    "id": "0-authorization-posture",
+    "name": "BACnetAuthorizationPosture",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "configured",
+            "value": 2
+        },
+        {
+            "name": "misconfigured-partial",
+            "value": 3
+        },
+        {
+            "name": "misconfigured-total",
+            "value": 4
+        },
+        {
+            "name": "open",
+            "value": 0
+        },
+        {
+            "name": "proprietary",
+            "value": 1
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 4,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 4
+        }
+    ]
+}

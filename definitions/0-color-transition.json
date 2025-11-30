@@ -1,0 +1,30 @@
+{
+    "id": "0-color-transition",
+    "name": "BACnetColorTransition",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "fade",
+            "value": 1
+        },
+        {
+            "name": "none",
+            "value": 0
+        },
+        {
+            "name": "ramp",
+            "value": 2
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 2,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 2
+        }
+    ]
+}

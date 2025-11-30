@@ -1,0 +1,59 @@
+{
+    "id": "0-escalator-fault",
+    "name": "BACnetEscalatorFault",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "comb-plate-fault",
+            "value": 8
+        },
+        {
+            "name": "controller-fault",
+            "value": 0
+        },
+        {
+            "name": "controller-supply-fault",
+            "value": 6
+        },
+        {
+            "name": "drive-and-motor-fault",
+            "value": 1
+        },
+        {
+            "name": "drive-temperature-exceeded",
+            "value": 7
+        },
+        {
+            "name": "mechanical-component-fault",
+            "value": 2
+        },
+        {
+            "name": "overspeed-fault",
+            "value": 3
+        },
+        {
+            "name": "power-supply-fault",
+            "value": 4
+        },
+        {
+            "name": "safety-device-fault",
+            "value": 5
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 1023
+        },
+        {
+            "custom": true,
+            "minimum": 1024,
+            "maximum": 65535
+        }
+    ]
+}

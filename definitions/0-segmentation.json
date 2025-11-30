@@ -1,0 +1,34 @@
+{
+    "id": "0-segmentation",
+    "name": "BACnetSegmentation",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "no-segmentation",
+            "value": 3
+        },
+        {
+            "name": "segmented-both",
+            "value": 0
+        },
+        {
+            "name": "segmented-receive",
+            "value": 2
+        },
+        {
+            "name": "segmented-transmit",
+            "value": 1
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 3,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 3
+        }
+    ]
+}

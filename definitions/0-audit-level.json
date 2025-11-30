@@ -1,0 +1,39 @@
+{
+    "id": "0-audit-level",
+    "name": "BACnetAuditLevel",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "audit-all",
+            "value": 1
+        },
+        {
+            "name": "audit-config",
+            "value": 2
+        },
+        {
+            "name": "default",
+            "value": 3
+        },
+        {
+            "name": "none",
+            "value": 0
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 255,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 127
+        },
+        {
+            "custom": true,
+            "minimum": 128,
+            "maximum": 255
+        }
+    ]
+}

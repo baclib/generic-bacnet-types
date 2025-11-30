@@ -1,0 +1,46 @@
+{
+    "id": "0-lift-group-mode",
+    "name": "BACnetLiftGroupMode",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "down-peak",
+            "value": 2
+        },
+        {
+            "name": "emergency-power",
+            "value": 5
+        },
+        {
+            "name": "four-way",
+            "value": 4
+        },
+        {
+            "name": "normal",
+            "value": 1
+        },
+        {
+            "name": "two-way",
+            "value": 3
+        },
+        {
+            "name": "unknown",
+            "value": 0
+        },
+        {
+            "name": "up-peak",
+            "value": 6
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 6,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 6
+        }
+    ]
+}

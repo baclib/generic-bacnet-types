@@ -1,0 +1,50 @@
+{
+    "id": "0-timer-transition",
+    "name": "BACnetTimerTransition",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "expired-to-idle",
+            "value": 6
+        },
+        {
+            "name": "expired-to-running",
+            "value": 7
+        },
+        {
+            "name": "forced-to-expired",
+            "value": 5
+        },
+        {
+            "name": "idle-to-running",
+            "value": 1
+        },
+        {
+            "name": "none",
+            "value": 0
+        },
+        {
+            "name": "running-to-expired",
+            "value": 4
+        },
+        {
+            "name": "running-to-idle",
+            "value": 2
+        },
+        {
+            "name": "running-to-running",
+            "value": 3
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 7,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 7
+        }
+    ]
+}

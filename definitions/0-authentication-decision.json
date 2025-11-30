@@ -1,0 +1,30 @@
+{
+    "id": "0-authentication-decision",
+    "name": "BACnetAuthenticationDecision",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "allow-match",
+            "value": 0
+        },
+        {
+            "name": "deny-mismatch",
+            "value": 1
+        },
+        {
+            "name": "deny-non-relay",
+            "value": 2
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 2,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 2
+        }
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "id": "0-life-safety-mode",
+    "name": "BACnetLifeSafetyMode",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "activated-oeo-alarm",
+            "value": 15
+        },
+        {
+            "name": "activated-oeo-evacuate",
+            "value": 16
+        },
+        {
+            "name": "activated-oeo-phase1-recall",
+            "value": 17
+        },
+        {
+            "name": "activated-oeo-unavailable",
+            "value": 18
+        },
+        {
+            "name": "armed",
+            "value": 5
+        },
+        {
+            "name": "automatic-release-disabled",
+            "value": 13
+        },
+        {
+            "name": "deactivated",
+            "value": 19
+        },
+        {
+            "name": "default",
+            "value": 14
+        },
+        {
+            "name": "disabled",
+            "value": 12
+        },
+        {
+            "name": "disarmed",
+            "value": 6
+        },
+        {
+            "name": "disconnected",
+            "value": 10
+        },
+        {
+            "name": "enabled",
+            "value": 11
+        },
+        {
+            "name": "fast",
+            "value": 9
+        },
+        {
+            "name": "manned",
+            "value": 3
+        },
+        {
+            "name": "off",
+            "value": 0
+        },
+        {
+            "name": "on",
+            "value": 1
+        },
+        {
+            "name": "prearmed",
+            "value": 7
+        },
+        {
+            "name": "slow",
+            "value": 8
+        },
+        {
+            "name": "test",
+            "value": 2
+        },
+        {
+            "name": "unmanned",
+            "value": 4
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 255
+        },
+        {
+            "custom": true,
+            "minimum": 256,
+            "maximum": 65535
+        }
+    ]
+}

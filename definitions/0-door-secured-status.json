@@ -1,0 +1,30 @@
+{
+    "id": "0-door-secured-status",
+    "name": "BACnetDoorSecuredStatus",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "secured",
+            "value": 0
+        },
+        {
+            "name": "unknown",
+            "value": 2
+        },
+        {
+            "name": "unsecured",
+            "value": 1
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 2,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 2
+        }
+    ]
+}

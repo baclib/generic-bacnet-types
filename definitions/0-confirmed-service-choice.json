@@ -1,0 +1,146 @@
+{
+    "id": "0-confirmed-service-choice",
+    "name": "BACnetConfirmedServiceChoice",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "acknowledge-alarm",
+            "value": 0
+        },
+        {
+            "name": "add-list-element",
+            "value": 8
+        },
+        {
+            "name": "atomic-read-file",
+            "value": 6
+        },
+        {
+            "name": "atomic-write-file",
+            "value": 7
+        },
+        {
+            "name": "audit-log-query",
+            "value": 33
+        },
+        {
+            "name": "auth-request",
+            "value": 34
+        },
+        {
+            "name": "confirmed-audit-notification",
+            "value": 32
+        },
+        {
+            "name": "confirmed-cov-notification",
+            "value": 1
+        },
+        {
+            "name": "confirmed-cov-notification-multiple",
+            "value": 31
+        },
+        {
+            "name": "confirmed-event-notification",
+            "value": 2
+        },
+        {
+            "name": "confirmed-private-transfer",
+            "value": 18
+        },
+        {
+            "name": "confirmed-text-message",
+            "value": 19
+        },
+        {
+            "name": "create-object",
+            "value": 10
+        },
+        {
+            "name": "delete-object",
+            "value": 11
+        },
+        {
+            "name": "device-communication-control",
+            "value": 17
+        },
+        {
+            "name": "get-alarm-summary",
+            "value": 3
+        },
+        {
+            "name": "get-enrollment-summary",
+            "value": 4
+        },
+        {
+            "name": "get-event-information",
+            "value": 29
+        },
+        {
+            "name": "life-safety-operation",
+            "value": 27
+        },
+        {
+            "name": "read-property",
+            "value": 12
+        },
+        {
+            "name": "read-property-multiple",
+            "value": 14
+        },
+        {
+            "name": "read-range",
+            "value": 26
+        },
+        {
+            "name": "reinitialize-device",
+            "value": 20
+        },
+        {
+            "name": "remove-list-element",
+            "value": 9
+        },
+        {
+            "name": "subscribe-cov",
+            "value": 5
+        },
+        {
+            "name": "subscribe-cov-property",
+            "value": 28
+        },
+        {
+            "name": "subscribe-cov-property-multiple",
+            "value": 30
+        },
+        {
+            "name": "vt-close",
+            "value": 22
+        },
+        {
+            "name": "vt-data",
+            "value": 23
+        },
+        {
+            "name": "vt-open",
+            "value": 21
+        },
+        {
+            "name": "write-property",
+            "value": 15
+        },
+        {
+            "name": "write-property-multiple",
+            "value": 16
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 34,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 34
+        }
+    ]
+}

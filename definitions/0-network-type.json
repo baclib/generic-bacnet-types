@@ -1,0 +1,67 @@
+{
+    "id": "0-network-type",
+    "name": "BACnetNetworkType",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "arcnet",
+            "value": 1
+        },
+        {
+            "name": "ethernet",
+            "value": 0
+        },
+        {
+            "name": "ipv4",
+            "value": 5
+        },
+        {
+            "name": "ipv6",
+            "value": 9
+        },
+        {
+            "name": "lontalk",
+            "value": 4
+        },
+        {
+            "name": "mstp",
+            "value": 2
+        },
+        {
+            "name": "ptp",
+            "value": 3
+        },
+        {
+            "name": "secure-connect",
+            "value": 11
+        },
+        {
+            "name": "serial",
+            "value": 10
+        },
+        {
+            "name": "virtual",
+            "value": 7
+        },
+        {
+            "name": "zigbee",
+            "value": 6
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 255,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 63
+        },
+        {
+            "custom": true,
+            "minimum": 64,
+            "maximum": 255
+        }
+    ]
+}

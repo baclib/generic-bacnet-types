@@ -1,0 +1,39 @@
+{
+    "id": "0-maintenance",
+    "name": "BACnetMaintenance",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "need-service-inoperative",
+            "value": 3
+        },
+        {
+            "name": "need-service-operational",
+            "value": 2
+        },
+        {
+            "name": "none",
+            "value": 0
+        },
+        {
+            "name": "periodic-test",
+            "value": 1
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 255
+        },
+        {
+            "custom": true,
+            "minimum": 256,
+            "maximum": 65535
+        }
+    ]
+}

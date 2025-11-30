@@ -1,0 +1,51 @@
+{
+    "id": "0-access-zone-occupancy-state",
+    "name": "BACnetAccessZoneOccupancyState",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "above-upper-limit",
+            "value": 4
+        },
+        {
+            "name": "at-lower-limit",
+            "value": 2
+        },
+        {
+            "name": "at-upper-limit",
+            "value": 3
+        },
+        {
+            "name": "below-lower-limit",
+            "value": 1
+        },
+        {
+            "name": "disabled",
+            "value": 5
+        },
+        {
+            "name": "normal",
+            "value": 0
+        },
+        {
+            "name": "not-supported",
+            "value": 6
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 63
+        },
+        {
+            "custom": true,
+            "minimum": 64,
+            "maximum": 65535
+        }
+    ]
+}

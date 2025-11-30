@@ -1,0 +1,51 @@
+{
+    "id": "0-authorization-exemption",
+    "name": "BACnetAuthorizationExemption",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "access-rights",
+            "value": 2
+        },
+        {
+            "name": "authorization-delay",
+            "value": 6
+        },
+        {
+            "name": "deny",
+            "value": 4
+        },
+        {
+            "name": "lockout",
+            "value": 3
+        },
+        {
+            "name": "occupancy-check",
+            "value": 1
+        },
+        {
+            "name": "passback",
+            "value": 0
+        },
+        {
+            "name": "verification",
+            "value": 5
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 255,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 63
+        },
+        {
+            "custom": true,
+            "minimum": 64,
+            "maximum": 255
+        }
+    ]
+}

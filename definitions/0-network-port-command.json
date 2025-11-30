@@ -1,0 +1,67 @@
+{
+    "id": "0-network-port-command",
+    "name": "BACnetNetworkPortCommand",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "discard-changes",
+            "value": 1
+        },
+        {
+            "name": "disconnect",
+            "value": 6
+        },
+        {
+            "name": "generate-csr-file",
+            "value": 9
+        },
+        {
+            "name": "idle",
+            "value": 0
+        },
+        {
+            "name": "renew-dhcp",
+            "value": 4
+        },
+        {
+            "name": "renew-fd-registration",
+            "value": 2
+        },
+        {
+            "name": "restart-autonegotiation",
+            "value": 5
+        },
+        {
+            "name": "restart-device-discovery",
+            "value": 8
+        },
+        {
+            "name": "restart-port",
+            "value": 7
+        },
+        {
+            "name": "restart-subordinate-discovery",
+            "value": 3
+        },
+        {
+            "name": "validate-changes",
+            "value": 10
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 255,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 127
+        },
+        {
+            "custom": true,
+            "minimum": 128,
+            "maximum": 255
+        }
+    ]
+}

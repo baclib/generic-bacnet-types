@@ -1,0 +1,46 @@
+{
+    "id": "0-days-of-week",
+    "name": "BACnetDaysOfWeek",
+    "base": "bit-string",
+    "vendor": 0,
+    "items": [
+        {
+            "bit": 0,
+            "name": "monday"
+        },
+        {
+            "bit": 1,
+            "name": "tuesday"
+        },
+        {
+            "bit": 2,
+            "name": "wednesday"
+        },
+        {
+            "bit": 3,
+            "name": "thursday"
+        },
+        {
+            "bit": 4,
+            "name": "friday"
+        },
+        {
+            "bit": 5,
+            "name": "saturday"
+        },
+        {
+            "bit": 6,
+            "name": "sunday"
+        }
+    ],
+    "extensible": false,
+    "minimum": 6,
+    "maximum": 6,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 6,
+            "maximum": 6
+        }
+    ]
+}

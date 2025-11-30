@@ -1,0 +1,67 @@
+{
+    "id": "0-reject-reason",
+    "name": "BACnetRejectReason",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "buffer-overflow",
+            "value": 1
+        },
+        {
+            "name": "inconsistent-parameters",
+            "value": 2
+        },
+        {
+            "name": "invalid-data-encoding",
+            "value": 10
+        },
+        {
+            "name": "invalid-parameter-data-type",
+            "value": 3
+        },
+        {
+            "name": "invalid-tag",
+            "value": 4
+        },
+        {
+            "name": "missing-required-parameter",
+            "value": 5
+        },
+        {
+            "name": "other",
+            "value": 0
+        },
+        {
+            "name": "parameter-out-of-range",
+            "value": 6
+        },
+        {
+            "name": "too-many-arguments",
+            "value": 7
+        },
+        {
+            "name": "undefined-enumeration",
+            "value": 8
+        },
+        {
+            "name": "unrecognized-service",
+            "value": 9
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 255,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 63
+        },
+        {
+            "custom": true,
+            "minimum": 64,
+            "maximum": 255
+        }
+    ]
+}

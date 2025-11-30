@@ -1,0 +1,47 @@
+{
+    "id": "0-access-authentication-factor-disable",
+    "name": "BACnetAccessAuthenticationFactorDisable",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "disabled",
+            "value": 1
+        },
+        {
+            "name": "disabled-damaged",
+            "value": 4
+        },
+        {
+            "name": "disabled-destroyed",
+            "value": 5
+        },
+        {
+            "name": "disabled-lost",
+            "value": 2
+        },
+        {
+            "name": "disabled-stolen",
+            "value": 3
+        },
+        {
+            "name": "none",
+            "value": 0
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 63
+        },
+        {
+            "custom": true,
+            "minimum": 64,
+            "maximum": 65535
+        }
+    ]
+}

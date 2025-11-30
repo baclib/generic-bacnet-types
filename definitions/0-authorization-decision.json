@@ -1,0 +1,74 @@
+{
+    "id": "0-authorization-decision",
+    "name": "BACnetAuthorizationDecision",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "allow-by-local-policy",
+            "value": 1
+        },
+        {
+            "name": "allow-by-token",
+            "value": 0
+        },
+        {
+            "name": "deny-client-device",
+            "value": 7
+        },
+        {
+            "name": "deny-client-method",
+            "value": 8
+        },
+        {
+            "name": "deny-issuer",
+            "value": 10
+        },
+        {
+            "name": "deny-no-token-or-policy",
+            "value": 2
+        },
+        {
+            "name": "deny-not-after",
+            "value": 4
+        },
+        {
+            "name": "deny-not-before",
+            "value": 3
+        },
+        {
+            "name": "deny-other",
+            "value": 13
+        },
+        {
+            "name": "deny-revoked",
+            "value": 11
+        },
+        {
+            "name": "deny-scope",
+            "value": 9
+        },
+        {
+            "name": "deny-signature",
+            "value": 12
+        },
+        {
+            "name": "deny-target-device",
+            "value": 5
+        },
+        {
+            "name": "deny-target-group",
+            "value": 6
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 13,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 13
+        }
+    ]
+}

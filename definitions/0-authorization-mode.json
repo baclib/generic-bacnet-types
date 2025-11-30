@@ -1,0 +1,47 @@
+{
+    "id": "0-authorization-mode",
+    "name": "BACnetAuthorizationMode",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "authorization-delayed",
+            "value": 4
+        },
+        {
+            "name": "authorize",
+            "value": 0
+        },
+        {
+            "name": "deny-all",
+            "value": 2
+        },
+        {
+            "name": "grant-active",
+            "value": 1
+        },
+        {
+            "name": "none",
+            "value": 5
+        },
+        {
+            "name": "verification-required",
+            "value": 3
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 63
+        },
+        {
+            "custom": true,
+            "minimum": 64,
+            "maximum": 65535
+        }
+    ]
+}

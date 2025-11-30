@@ -1,0 +1,39 @@
+{
+    "id": "0-silenced-state",
+    "name": "BACnetSilencedState",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "all-silenced",
+            "value": 3
+        },
+        {
+            "name": "audible-silenced",
+            "value": 1
+        },
+        {
+            "name": "unsilenced",
+            "value": 0
+        },
+        {
+            "name": "visible-silenced",
+            "value": 2
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 63
+        },
+        {
+            "custom": true,
+            "minimum": 64,
+            "maximum": 65535
+        }
+    ]
+}

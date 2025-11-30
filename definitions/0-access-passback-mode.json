@@ -1,0 +1,30 @@
+{
+    "id": "0-access-passback-mode",
+    "name": "BACnetAccessPassbackMode",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "hard-passback",
+            "value": 1
+        },
+        {
+            "name": "passback-off",
+            "value": 0
+        },
+        {
+            "name": "soft-passback",
+            "value": 2
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 2,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 2
+        }
+    ]
+}

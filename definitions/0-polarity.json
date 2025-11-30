@@ -1,0 +1,26 @@
+{
+    "id": "0-polarity",
+    "name": "BACnetPolarity",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "normal",
+            "value": 0
+        },
+        {
+            "name": "reverse",
+            "value": 1
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 1,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 1
+        }
+    ]
+}

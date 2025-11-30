@@ -1,0 +1,87 @@
+{
+    "id": "0-audit-operation-flags",
+    "name": "BACnetAuditOperationFlags",
+    "base": "bit-string",
+    "vendor": 0,
+    "items": [
+        {
+            "bit": 0,
+            "name": "read"
+        },
+        {
+            "bit": 1,
+            "name": "write"
+        },
+        {
+            "bit": 2,
+            "name": "create"
+        },
+        {
+            "bit": 3,
+            "name": "delete"
+        },
+        {
+            "bit": 4,
+            "name": "life-safety"
+        },
+        {
+            "bit": 5,
+            "name": "acknowledge-alarm"
+        },
+        {
+            "bit": 6,
+            "name": "device-disable-comm"
+        },
+        {
+            "bit": 7,
+            "name": "device-enable-comm"
+        },
+        {
+            "bit": 8,
+            "name": "device-reset"
+        },
+        {
+            "bit": 9,
+            "name": "device-backup"
+        },
+        {
+            "bit": 10,
+            "name": "device-restore"
+        },
+        {
+            "bit": 11,
+            "name": "subscription"
+        },
+        {
+            "bit": 12,
+            "name": "notification"
+        },
+        {
+            "bit": 13,
+            "name": "auditing-failure"
+        },
+        {
+            "bit": 14,
+            "name": "network-changes"
+        },
+        {
+            "bit": 15,
+            "name": "general"
+        }
+    ],
+    "extensible": true,
+    "minimum": 15,
+    "maximum": 63,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 31
+        },
+        {
+            "custom": true,
+            "minimum": 32,
+            "maximum": 63
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "id": "0-log-status",
+    "name": "BACnetLogStatus",
+    "base": "bit-string",
+    "vendor": 0,
+    "items": [
+        {
+            "bit": 0,
+            "name": "log-disabled"
+        },
+        {
+            "bit": 1,
+            "name": "buffer-purged"
+        },
+        {
+            "bit": 2,
+            "name": "log-interrupted"
+        }
+    ],
+    "extensible": false,
+    "minimum": 2,
+    "maximum": 2,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 2,
+            "maximum": 2
+        }
+    ]
+}

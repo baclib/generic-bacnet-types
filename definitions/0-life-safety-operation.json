@@ -1,0 +1,63 @@
+{
+    "id": "0-life-safety-operation",
+    "name": "BACnetLifeSafetyOperation",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "none",
+            "value": 0
+        },
+        {
+            "name": "reset",
+            "value": 4
+        },
+        {
+            "name": "reset-alarm",
+            "value": 5
+        },
+        {
+            "name": "reset-fault",
+            "value": 6
+        },
+        {
+            "name": "silence",
+            "value": 1
+        },
+        {
+            "name": "silence-audible",
+            "value": 2
+        },
+        {
+            "name": "silence-visual",
+            "value": 3
+        },
+        {
+            "name": "unsilence",
+            "value": 7
+        },
+        {
+            "name": "unsilence-audible",
+            "value": 8
+        },
+        {
+            "name": "unsilence-visual",
+            "value": 9
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 63
+        },
+        {
+            "custom": true,
+            "minimum": 64,
+            "maximum": 65535
+        }
+    ]
+}

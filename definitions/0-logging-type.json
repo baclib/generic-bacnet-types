@@ -1,0 +1,35 @@
+{
+    "id": "0-logging-type",
+    "name": "BACnetLoggingType",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "cov",
+            "value": 1
+        },
+        {
+            "name": "polled",
+            "value": 0
+        },
+        {
+            "name": "triggered",
+            "value": 2
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 255,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 63
+        },
+        {
+            "custom": true,
+            "minimum": 64,
+            "maximum": 255
+        }
+    ]
+}

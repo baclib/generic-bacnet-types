@@ -1,0 +1,30 @@
+{
+    "id": "0-notify-type",
+    "name": "BACnetNotifyType",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "ack-notification",
+            "value": 2
+        },
+        {
+            "name": "alarm",
+            "value": 0
+        },
+        {
+            "name": "event",
+            "value": 1
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 2,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 2
+        }
+    ]
+}

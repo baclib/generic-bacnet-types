@@ -1,0 +1,1689 @@
+{
+    "id": "0-engineering-units",
+    "name": "BACnetEngineeringUnits",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "active-energy-pulse-value",
+            "value": 47910
+        },
+        {
+            "name": "alcohol-by-volume",
+            "value": 47817
+        },
+        {
+            "name": "ampere-seconds",
+            "value": 238
+        },
+        {
+            "name": "ampere-square-hours",
+            "value": 246
+        },
+        {
+            "name": "ampere-square-meters",
+            "value": 169
+        },
+        {
+            "name": "ampere-squared-hour-pulse-value",
+            "value": 47922
+        },
+        {
+            "name": "amperes",
+            "value": 3
+        },
+        {
+            "name": "amperes-per-meter",
+            "value": 167
+        },
+        {
+            "name": "amperes-per-square-meter",
+            "value": 168
+        },
+        {
+            "name": "apparent-energy-pulse-value",
+            "value": 47920
+        },
+        {
+            "name": "bars",
+            "value": 55
+        },
+        {
+            "name": "becquerels",
+            "value": 222
+        },
+        {
+            "name": "becquerels-per-cubic-meter",
+            "value": 47971
+        },
+        {
+            "name": "bits-per-second",
+            "value": 47929
+        },
+        {
+            "name": "btu-per-hour-per-watt",
+            "value": 47898
+        },
+        {
+            "name": "btu-per-watt-hour-seasonal",
+            "value": 47899
+        },
+        {
+            "name": "btus",
+            "value": 20
+        },
+        {
+            "name": "btus-per-day",
+            "value": 47850
+        },
+        {
+            "name": "btus-per-hour",
+            "value": 50
+        },
+        {
+            "name": "btus-per-minute",
+            "value": 47849
+        },
+        {
+            "name": "btus-per-pound",
+            "value": 117
+        },
+        {
+            "name": "btus-per-pound-dry-air",
+            "value": 24
+        },
+        {
+            "name": "btus-per-second",
+            "value": 47848
+        },
+        {
+            "name": "bytes-per-second",
+            "value": 47933
+        },
+        {
+            "name": "candelas",
+            "value": 179
+        },
+        {
+            "name": "candelas-per-square-meter",
+            "value": 180
+        },
+        {
+            "name": "centimeters",
+            "value": 118
+        },
+        {
+            "name": "centimeters-of-mercury",
+            "value": 60
+        },
+        {
+            "name": "centimeters-of-water",
+            "value": 57
+        },
+        {
+            "name": "coefficient-of-performance",
+            "value": 47900
+        },
+        {
+            "name": "coefficient-of-performance-seasonal",
+            "value": 47901
+        },
+        {
+            "name": "cubic-feet",
+            "value": 79
+        },
+        {
+            "name": "cubic-feet-per-day",
+            "value": 248
+        },
+        {
+            "name": "cubic-feet-per-hour",
+            "value": 191
+        },
+        {
+            "name": "cubic-feet-per-minute",
+            "value": 84
+        },
+        {
+            "name": "cubic-feet-per-second",
+            "value": 142
+        },
+        {
+            "name": "cubic-meter-pulse-value",
+            "value": 47923
+        },
+        {
+            "name": "cubic-meters",
+            "value": 80
+        },
+        {
+            "name": "cubic-meters-per-day",
+            "value": 249
+        },
+        {
+            "name": "cubic-meters-per-hour",
+            "value": 135
+        },
+        {
+            "name": "cubic-meters-per-minute",
+            "value": 165
+        },
+        {
+            "name": "cubic-meters-per-second",
+            "value": 85
+        },
+        {
+            "name": "currency1",
+            "value": 105
+        },
+        {
+            "name": "currency10",
+            "value": 114
+        },
+        {
+            "name": "currency2",
+            "value": 106
+        },
+        {
+            "name": "currency3",
+            "value": 107
+        },
+        {
+            "name": "currency4",
+            "value": 108
+        },
+        {
+            "name": "currency5",
+            "value": 109
+        },
+        {
+            "name": "currency6",
+            "value": 110
+        },
+        {
+            "name": "currency7",
+            "value": 111
+        },
+        {
+            "name": "currency8",
+            "value": 112
+        },
+        {
+            "name": "currency9",
+            "value": 113
+        },
+        {
+            "name": "cycles-per-hour",
+            "value": 25
+        },
+        {
+            "name": "cycles-per-minute",
+            "value": 26
+        },
+        {
+            "name": "days",
+            "value": 70
+        },
+        {
+            "name": "decibels",
+            "value": 199
+        },
+        {
+            "name": "decibels-a",
+            "value": 232
+        },
+        {
+            "name": "decibels-millivolt",
+            "value": 200
+        },
+        {
+            "name": "decibels-volt",
+            "value": 201
+        },
+        {
+            "name": "degree-days-celsius",
+            "value": 65
+        },
+        {
+            "name": "degree-days-fahrenheit",
+            "value": 66
+        },
+        {
+            "name": "degree-hours-celsius",
+            "value": 47973
+        },
+        {
+            "name": "degree-hours-fahrenheit",
+            "value": 47974
+        },
+        {
+            "name": "degree-minutes-celsius",
+            "value": 47975
+        },
+        {
+            "name": "degree-minutes-fahrenheit",
+            "value": 47976
+        },
+        {
+            "name": "degree-seconds-celsius",
+            "value": 47977
+        },
+        {
+            "name": "degree-seconds-fahrenheit",
+            "value": 47978
+        },
+        {
+            "name": "degrees-angular",
+            "value": 90
+        },
+        {
+            "name": "degrees-celsius",
+            "value": 62
+        },
+        {
+            "name": "degrees-celsius-per-day",
+            "value": 47869
+        },
+        {
+            "name": "degrees-celsius-per-hour",
+            "value": 91
+        },
+        {
+            "name": "degrees-celsius-per-minute",
+            "value": 92
+        },
+        {
+            "name": "degrees-fahrenheit",
+            "value": 64
+        },
+        {
+            "name": "degrees-fahrenheit-per-day",
+            "value": 47871
+        },
+        {
+            "name": "degrees-fahrenheit-per-hour",
+            "value": 93
+        },
+        {
+            "name": "degrees-fahrenheit-per-minute",
+            "value": 94
+        },
+        {
+            "name": "degrees-lovibond",
+            "value": 47816
+        },
+        {
+            "name": "degrees-phase",
+            "value": 14
+        },
+        {
+            "name": "degrees-plato",
+            "value": 47820
+        },
+        {
+            "name": "delta-degrees-celsius",
+            "value": 47872
+        },
+        {
+            "name": "delta-degrees-fahrenheit",
+            "value": 120
+        },
+        {
+            "name": "delta-kelvin",
+            "value": 121
+        },
+        {
+            "name": "european-bitterness-units",
+            "value": 47819
+        },
+        {
+            "name": "european-brewing-convention",
+            "value": 47822
+        },
+        {
+            "name": "farads",
+            "value": 170
+        },
+        {
+            "name": "feet",
+            "value": 33
+        },
+        {
+            "name": "feet-per-minute",
+            "value": 77
+        },
+        {
+            "name": "feet-per-second",
+            "value": 76
+        },
+        {
+            "name": "foot-candles",
+            "value": 38
+        },
+        {
+            "name": "gigabits-per-second",
+            "value": 47932
+        },
+        {
+            "name": "gigabytes-per-second",
+            "value": 47936
+        },
+        {
+            "name": "gigawatts",
+            "value": 47924
+        },
+        {
+            "name": "grains-of-water-per-pound-dry-air",
+            "value": 47972
+        },
+        {
+            "name": "grams",
+            "value": 195
+        },
+        {
+            "name": "grams-of-water-per-kilogram-dry-air",
+            "value": 28
+        },
+        {
+            "name": "grams-per-cubic-centimeter",
+            "value": 221
+        },
+        {
+            "name": "grams-per-cubic-meter",
+            "value": 217
+        },
+        {
+            "name": "grams-per-day",
+            "value": 47834
+        },
+        {
+            "name": "grams-per-gram",
+            "value": 208
+        },
+        {
+            "name": "grams-per-hour",
+            "value": 47833
+        },
+        {
+            "name": "grams-per-kilogram",
+            "value": 210
+        },
+        {
+            "name": "grams-per-liter",
+            "value": 214
+        },
+        {
+            "name": "grams-per-milliliter",
+            "value": 213
+        },
+        {
+            "name": "grams-per-minute",
+            "value": 155
+        },
+        {
+            "name": "grams-per-second",
+            "value": 154
+        },
+        {
+            "name": "grams-per-square-meter",
+            "value": 235
+        },
+        {
+            "name": "gray",
+            "value": 225
+        },
+        {
+            "name": "hectopascals",
+            "value": 133
+        },
+        {
+            "name": "henrys",
+            "value": 171
+        },
+        {
+            "name": "hertz",
+            "value": 27
+        },
+        {
+            "name": "horsepower",
+            "value": 51
+        },
+        {
+            "name": "hours",
+            "value": 71
+        },
+        {
+            "name": "hundredths-seconds",
+            "value": 158
+        },
+        {
+            "name": "imperial-gallons",
+            "value": 81
+        },
+        {
+            "name": "imperial-gallons-per-minute",
+            "value": 86
+        },
+        {
+            "name": "imperial-gallons-per-second",
+            "value": 47875
+        },
+        {
+            "name": "inches",
+            "value": 32
+        },
+        {
+            "name": "inches-of-mercury",
+            "value": 61
+        },
+        {
+            "name": "inches-of-water",
+            "value": 58
+        },
+        {
+            "name": "international-bittering-units",
+            "value": 47818
+        },
+        {
+            "name": "joule-seconds",
+            "value": 183
+        },
+        {
+            "name": "joules",
+            "value": 16
+        },
+        {
+            "name": "joules-per-cubic-meter",
+            "value": 251
+        },
+        {
+            "name": "joules-per-day",
+            "value": 47860
+        },
+        {
+            "name": "joules-per-hour",
+            "value": 247
+        },
+        {
+            "name": "joules-per-kelvin",
+            "value": 127
+        },
+        {
+            "name": "joules-per-kilogram-dry-air",
+            "value": 23
+        },
+        {
+            "name": "joules-per-kilogram-kelvin",
+            "value": 128
+        },
+        {
+            "name": "joules-per-minute",
+            "value": 47859
+        },
+        {
+            "name": "joules-per-second",
+            "value": 47858
+        },
+        {
+            "name": "kelvin",
+            "value": 63
+        },
+        {
+            "name": "kelvin-per-hour",
+            "value": 181
+        },
+        {
+            "name": "kelvin-per-minute",
+            "value": 182
+        },
+        {
+            "name": "kilo-btus",
+            "value": 147
+        },
+        {
+            "name": "kilo-btus-per-day",
+            "value": 47853
+        },
+        {
+            "name": "kilo-btus-per-hour",
+            "value": 157
+        },
+        {
+            "name": "kilo-btus-per-minute",
+            "value": 47852
+        },
+        {
+            "name": "kilo-btus-per-second",
+            "value": 47851
+        },
+        {
+            "name": "kilobecquerels",
+            "value": 223
+        },
+        {
+            "name": "kilobits-per-second",
+            "value": 47930
+        },
+        {
+            "name": "kilobytes-per-second",
+            "value": 47934
+        },
+        {
+            "name": "kilograms",
+            "value": 39
+        },
+        {
+            "name": "kilograms-per-cubic-meter",
+            "value": 186
+        },
+        {
+            "name": "kilograms-per-day",
+            "value": 47835
+        },
+        {
+            "name": "kilograms-per-hour",
+            "value": 44
+        },
+        {
+            "name": "kilograms-per-kilogram",
+            "value": 209
+        },
+        {
+            "name": "kilograms-per-liter",
+            "value": 47893
+        },
+        {
+            "name": "kilograms-per-minute",
+            "value": 43
+        },
+        {
+            "name": "kilograms-per-second",
+            "value": 42
+        },
+        {
+            "name": "kilohertz",
+            "value": 129
+        },
+        {
+            "name": "kilojoules",
+            "value": 17
+        },
+        {
+            "name": "kilojoules-per-day",
+            "value": 47864
+        },
+        {
+            "name": "kilojoules-per-hour",
+            "value": 47863
+        },
+        {
+            "name": "kilojoules-per-kelvin",
+            "value": 151
+        },
+        {
+            "name": "kilojoules-per-kilogram",
+            "value": 125
+        },
+        {
+            "name": "kilojoules-per-kilogram-dry-air",
+            "value": 149
+        },
+        {
+            "name": "kilojoules-per-minute",
+            "value": 47862
+        },
+        {
+            "name": "kilojoules-per-second",
+            "value": 47861
+        },
+        {
+            "name": "kilometers",
+            "value": 193
+        },
+        {
+            "name": "kilometers-per-hour",
+            "value": 75
+        },
+        {
+            "name": "kiloohms",
+            "value": 122
+        },
+        {
+            "name": "kilopascals",
+            "value": 54
+        },
+        {
+            "name": "kilovolt-ampere-hours",
+            "value": 240
+        },
+        {
+            "name": "kilovolt-ampere-hours-reactive",
+            "value": 243
+        },
+        {
+            "name": "kilovolt-amperes",
+            "value": 9
+        },
+        {
+            "name": "kilovolt-amperes-reactive",
+            "value": 12
+        },
+        {
+            "name": "kilovolts",
+            "value": 6
+        },
+        {
+            "name": "kilowatt-hours",
+            "value": 19
+        },
+        {
+            "name": "kilowatt-hours-per-square-foot",
+            "value": 138
+        },
+        {
+            "name": "kilowatt-hours-per-square-meter",
+            "value": 137
+        },
+        {
+            "name": "kilowatt-hours-reactive",
+            "value": 204
+        },
+        {
+            "name": "kilowatt-per-ton-refrigeration",
+            "value": 47902
+        },
+        {
+            "name": "kilowatts",
+            "value": 48
+        },
+        {
+            "name": "liters",
+            "value": 82
+        },
+        {
+            "name": "liters-per-day",
+            "value": 47878
+        },
+        {
+            "name": "liters-per-hour",
+            "value": 136
+        },
+        {
+            "name": "liters-per-minute",
+            "value": 88
+        },
+        {
+            "name": "liters-per-second",
+            "value": 87
+        },
+        {
+            "name": "long-tons",
+            "value": 47832
+        },
+        {
+            "name": "long-tons-per-day",
+            "value": 47847
+        },
+        {
+            "name": "long-tons-per-hour",
+            "value": 47846
+        },
+        {
+            "name": "long-tons-per-minute",
+            "value": 47845
+        },
+        {
+            "name": "long-tons-per-second",
+            "value": 47844
+        },
+        {
+            "name": "lumens",
+            "value": 36
+        },
+        {
+            "name": "lumens-per-watt",
+            "value": 47903
+        },
+        {
+            "name": "luxes",
+            "value": 37
+        },
+        {
+            "name": "mega-btus",
+            "value": 148
+        },
+        {
+            "name": "mega-btus-per-day",
+            "value": 47857
+        },
+        {
+            "name": "mega-btus-per-hour",
+            "value": 47856
+        },
+        {
+            "name": "mega-btus-per-minute",
+            "value": 47855
+        },
+        {
+            "name": "mega-btus-per-second",
+            "value": 47854
+        },
+        {
+            "name": "megabecquerels",
+            "value": 224
+        },
+        {
+            "name": "megabits-per-second",
+            "value": 47931
+        },
+        {
+            "name": "megabytes-per-second",
+            "value": 47935
+        },
+        {
+            "name": "megahertz",
+            "value": 130
+        },
+        {
+            "name": "megajoules",
+            "value": 126
+        },
+        {
+            "name": "megajoules-per-day",
+            "value": 47868
+        },
+        {
+            "name": "megajoules-per-hour",
+            "value": 47867
+        },
+        {
+            "name": "megajoules-per-kelvin",
+            "value": 152
+        },
+        {
+            "name": "megajoules-per-kilogram-dry-air",
+            "value": 150
+        },
+        {
+            "name": "megajoules-per-minute",
+            "value": 47866
+        },
+        {
+            "name": "megajoules-per-second",
+            "value": 47865
+        },
+        {
+            "name": "megajoules-per-square-foot",
+            "value": 140
+        },
+        {
+            "name": "megajoules-per-square-meter",
+            "value": 139
+        },
+        {
+            "name": "megaohms",
+            "value": 123
+        },
+        {
+            "name": "megavolt-ampere-hours",
+            "value": 241
+        },
+        {
+            "name": "megavolt-ampere-hours-reactive",
+            "value": 244
+        },
+        {
+            "name": "megavolt-amperes",
+            "value": 10
+        },
+        {
+            "name": "megavolt-amperes-reactive",
+            "value": 13
+        },
+        {
+            "name": "megavolts",
+            "value": 7
+        },
+        {
+            "name": "megawatt-hours",
+            "value": 146
+        },
+        {
+            "name": "megawatt-hours-reactive",
+            "value": 205
+        },
+        {
+            "name": "megawatts",
+            "value": 49
+        },
+        {
+            "name": "meters",
+            "value": 31
+        },
+        {
+            "name": "meters-per-hour",
+            "value": 164
+        },
+        {
+            "name": "meters-per-minute",
+            "value": 163
+        },
+        {
+            "name": "meters-per-second",
+            "value": 74
+        },
+        {
+            "name": "meters-per-second-per-second",
+            "value": 166
+        },
+        {
+            "name": "metric-tonnes",
+            "value": 47830
+        },
+        {
+            "name": "metric-tonnes-per-day",
+            "value": 47843
+        },
+        {
+            "name": "metric-tonnes-per-hour",
+            "value": 47842
+        },
+        {
+            "name": "metric-tonnes-per-minute",
+            "value": 47841
+        },
+        {
+            "name": "metric-tonnes-per-second",
+            "value": 47840
+        },
+        {
+            "name": "micrograms-per-cubic-centimeter",
+            "value": 47896
+        },
+        {
+            "name": "micrograms-per-cubic-meter",
+            "value": 219
+        },
+        {
+            "name": "micrograms-per-kilogram",
+            "value": 47888
+        },
+        {
+            "name": "micrograms-per-liter",
+            "value": 216
+        },
+        {
+            "name": "micrograms-per-milliliter",
+            "value": 47891
+        },
+        {
+            "name": "microgray",
+            "value": 227
+        },
+        {
+            "name": "micrometers",
+            "value": 194
+        },
+        {
+            "name": "microseconds",
+            "value": 47979
+        },
+        {
+            "name": "microsiemens",
+            "value": 190
+        },
+        {
+            "name": "microsiemens-per-centimeter",
+            "value": 47909
+        },
+        {
+            "name": "microsieverts",
+            "value": 230
+        },
+        {
+            "name": "microsieverts-per-hour",
+            "value": 231
+        },
+        {
+            "name": "miles",
+            "value": 47826
+        },
+        {
+            "name": "miles-per-hour",
+            "value": 78
+        },
+        {
+            "name": "milliamperes",
+            "value": 2
+        },
+        {
+            "name": "millibars",
+            "value": 134
+        },
+        {
+            "name": "milligrams",
+            "value": 196
+        },
+        {
+            "name": "milligrams-per-cubic-centimeter",
+            "value": 47895
+        },
+        {
+            "name": "milligrams-per-cubic-meter",
+            "value": 218
+        },
+        {
+            "name": "milligrams-per-gram",
+            "value": 211
+        },
+        {
+            "name": "milligrams-per-kilogram",
+            "value": 212
+        },
+        {
+            "name": "milligrams-per-liter",
+            "value": 215
+        },
+        {
+            "name": "milligrams-per-milliliter",
+            "value": 47890
+        },
+        {
+            "name": "milligray",
+            "value": 226
+        },
+        {
+            "name": "milliliters",
+            "value": 197
+        },
+        {
+            "name": "milliliters-per-minute",
+            "value": 47914
+        },
+        {
+            "name": "milliliters-per-second",
+            "value": 198
+        },
+        {
+            "name": "millimeters",
+            "value": 30
+        },
+        {
+            "name": "millimeters-of-mercury",
+            "value": 59
+        },
+        {
+            "name": "millimeters-of-water",
+            "value": 206
+        },
+        {
+            "name": "millimeters-per-minute",
+            "value": 162
+        },
+        {
+            "name": "millimeters-per-second",
+            "value": 161
+        },
+        {
+            "name": "millimeters-per-year",
+            "value": 47916
+        },
+        {
+            "name": "milliohms",
+            "value": 145
+        },
+        {
+            "name": "million-cubic-feet-per-day",
+            "value": 47874
+        },
+        {
+            "name": "million-cubic-feet-per-minute",
+            "value": 47873
+        },
+        {
+            "name": "million-standard-cubic-feet-per-day",
+            "value": 47809
+        },
+        {
+            "name": "million-standard-cubic-feet-per-minute",
+            "value": 254
+        },
+        {
+            "name": "millions-of-imperial-gallons",
+            "value": 47913
+        },
+        {
+            "name": "millions-of-us-gallons",
+            "value": 47912
+        },
+        {
+            "name": "millirems",
+            "value": 47814
+        },
+        {
+            "name": "millirems-per-hour",
+            "value": 47815
+        },
+        {
+            "name": "milliseconds",
+            "value": 159
+        },
+        {
+            "name": "millisiemens",
+            "value": 202
+        },
+        {
+            "name": "millisiemens-per-centimeter",
+            "value": 47910
+        },
+        {
+            "name": "millisiemens-per-meter",
+            "value": 47911
+        },
+        {
+            "name": "millisieverts",
+            "value": 229
+        },
+        {
+            "name": "millivolts",
+            "value": 124
+        },
+        {
+            "name": "milliwatts",
+            "value": 132
+        },
+        {
+            "name": "mils-per-year",
+            "value": 47915
+        },
+        {
+            "name": "minutes",
+            "value": 72
+        },
+        {
+            "name": "minutes-per-kelvin",
+            "value": 236
+        },
+        {
+            "name": "mole-percent",
+            "value": 252
+        },
+        {
+            "name": "months",
+            "value": 68
+        },
+        {
+            "name": "nanograms-per-cubic-centimeter",
+            "value": 47897
+        },
+        {
+            "name": "nanograms-per-cubic-meter",
+            "value": 220
+        },
+        {
+            "name": "nanograms-per-kilogram",
+            "value": 47889
+        },
+        {
+            "name": "nanograms-per-liter",
+            "value": 47894
+        },
+        {
+            "name": "nanograms-per-milliliter",
+            "value": 47892
+        },
+        {
+            "name": "nanoseconds",
+            "value": 47980
+        },
+        {
+            "name": "nautical-miles",
+            "value": 47827
+        },
+        {
+            "name": "nephelometric-turbidity-unit",
+            "value": 233
+        },
+        {
+            "name": "newton",
+            "value": 153
+        },
+        {
+            "name": "newton-meters",
+            "value": 160
+        },
+        {
+            "name": "newton-seconds",
+            "value": 187
+        },
+        {
+            "name": "newtons-per-meter",
+            "value": 188
+        },
+        {
+            "name": "no-units",
+            "value": 95
+        },
+        {
+            "name": "ohm-meter-squared-per-meter",
+            "value": 237
+        },
+        {
+            "name": "ohm-meters",
+            "value": 172
+        },
+        {
+            "name": "ohms",
+            "value": 4
+        },
+        {
+            "name": "ounce-force-inches",
+            "value": 47906
+        },
+        {
+            "name": "particles-per-cubic-foot",
+            "value": 47968
+        },
+        {
+            "name": "particles-per-cubic-meter",
+            "value": 47969
+        },
+        {
+            "name": "parts-per-billion",
+            "value": 97
+        },
+        {
+            "name": "parts-per-million",
+            "value": 96
+        },
+        {
+            "name": "pascal-seconds",
+            "value": 253
+        },
+        {
+            "name": "pascals",
+            "value": 53
+        },
+        {
+            "name": "per-billion",
+            "value": 47885
+        },
+        {
+            "name": "per-day",
+            "value": 47823
+        },
+        {
+            "name": "per-hour",
+            "value": 131
+        },
+        {
+            "name": "per-mille",
+            "value": 207
+        },
+        {
+            "name": "per-million",
+            "value": 47884
+        },
+        {
+            "name": "per-millisecond",
+            "value": 47824
+        },
+        {
+            "name": "percent",
+            "value": 98
+        },
+        {
+            "name": "percent-obscuration-per-foot",
+            "value": 143
+        },
+        {
+            "name": "percent-obscuration-per-meter",
+            "value": 144
+        },
+        {
+            "name": "percent-per-day",
+            "value": 47883
+        },
+        {
+            "name": "percent-per-hour",
+            "value": 47882
+        },
+        {
+            "name": "percent-per-minute",
+            "value": 47881
+        },
+        {
+            "name": "percent-per-second",
+            "value": 99
+        },
+        {
+            "name": "percent-relative-humidity",
+            "value": 29
+        },
+        {
+            "name": "ph",
+            "value": 234
+        },
+        {
+            "name": "picocuries-per-liter",
+            "value": 47970
+        },
+        {
+            "name": "picoseconds",
+            "value": 47981
+        },
+        {
+            "name": "pound-force-feet",
+            "value": 47904
+        },
+        {
+            "name": "pound-force-inches",
+            "value": 47905
+        },
+        {
+            "name": "pounds-force-per-square-inch",
+            "value": 56
+        },
+        {
+            "name": "pounds-force-per-square-inch-absolute",
+            "value": 47907
+        },
+        {
+            "name": "pounds-force-per-square-inch-gauge",
+            "value": 47908
+        },
+        {
+            "name": "pounds-mass",
+            "value": 40
+        },
+        {
+            "name": "pounds-mass-per-day",
+            "value": 47812
+        },
+        {
+            "name": "pounds-mass-per-hour",
+            "value": 46
+        },
+        {
+            "name": "pounds-mass-per-minute",
+            "value": 45
+        },
+        {
+            "name": "pounds-mass-per-second",
+            "value": 119
+        },
+        {
+            "name": "power-factor",
+            "value": 15
+        },
+        {
+            "name": "psi-per-degree-fahrenheit",
+            "value": 102
+        },
+        {
+            "name": "pulses-per-minute",
+            "value": 47917
+        },
+        {
+            "name": "radians",
+            "value": 103
+        },
+        {
+            "name": "radians-per-second",
+            "value": 184
+        },
+        {
+            "name": "reactive-energy-pulse-value",
+            "value": 47919
+        },
+        {
+            "name": "revolutions-per-minute",
+            "value": 104
+        },
+        {
+            "name": "seconds",
+            "value": 73
+        },
+        {
+            "name": "short-tons",
+            "value": 47831
+        },
+        {
+            "name": "short-tons-per-day",
+            "value": 47839
+        },
+        {
+            "name": "short-tons-per-hour",
+            "value": 47838
+        },
+        {
+            "name": "short-tons-per-minute",
+            "value": 47837
+        },
+        {
+            "name": "short-tons-per-second",
+            "value": 47836
+        },
+        {
+            "name": "siemens",
+            "value": 173
+        },
+        {
+            "name": "siemens-per-meter",
+            "value": 174
+        },
+        {
+            "name": "sieverts",
+            "value": 228
+        },
+        {
+            "name": "site-unit1",
+            "value": 47958
+        },
+        {
+            "name": "site-unit10",
+            "value": 47967
+        },
+        {
+            "name": "site-unit2",
+            "value": 47959
+        },
+        {
+            "name": "site-unit3",
+            "value": 47960
+        },
+        {
+            "name": "site-unit4",
+            "value": 47961
+        },
+        {
+            "name": "site-unit5",
+            "value": 47962
+        },
+        {
+            "name": "site-unit6",
+            "value": 47963
+        },
+        {
+            "name": "site-unit7",
+            "value": 47964
+        },
+        {
+            "name": "site-unit8",
+            "value": 47965
+        },
+        {
+            "name": "site-unit9",
+            "value": 47966
+        },
+        {
+            "name": "specific-gravity",
+            "value": 47821
+        },
+        {
+            "name": "square-centimeters",
+            "value": 116
+        },
+        {
+            "name": "square-feet",
+            "value": 1
+        },
+        {
+            "name": "square-inches",
+            "value": 115
+        },
+        {
+            "name": "square-meters",
+            "value": 0
+        },
+        {
+            "name": "square-meters-per-newton",
+            "value": 185
+        },
+        {
+            "name": "standard-cubic-feet-per-day",
+            "value": 47808
+        },
+        {
+            "name": "teslas",
+            "value": 175
+        },
+        {
+            "name": "therms",
+            "value": 21
+        },
+        {
+            "name": "thousand-cubic-feet-per-day",
+            "value": 47810
+        },
+        {
+            "name": "thousand-standard-cubic-feet-per-day",
+            "value": 47811
+        },
+        {
+            "name": "ton-hours",
+            "value": 22
+        },
+        {
+            "name": "tons",
+            "value": 41
+        },
+        {
+            "name": "tons-per-hour",
+            "value": 156
+        },
+        {
+            "name": "tons-refrigeration",
+            "value": 52
+        },
+        {
+            "name": "us-gallons",
+            "value": 83
+        },
+        {
+            "name": "us-gallons-per-day",
+            "value": 47880
+        },
+        {
+            "name": "us-gallons-per-hour",
+            "value": 192
+        },
+        {
+            "name": "us-gallons-per-minute",
+            "value": 89
+        },
+        {
+            "name": "us-gallons-per-second",
+            "value": 47879
+        },
+        {
+            "name": "volt-ampere-hours",
+            "value": 239
+        },
+        {
+            "name": "volt-ampere-hours-reactive",
+            "value": 242
+        },
+        {
+            "name": "volt-amperes",
+            "value": 8
+        },
+        {
+            "name": "volt-amperes-reactive",
+            "value": 11
+        },
+        {
+            "name": "volt-square-hours",
+            "value": 245
+        },
+        {
+            "name": "volt-squared-hour-pulse-value",
+            "value": 47921
+        },
+        {
+            "name": "volts",
+            "value": 5
+        },
+        {
+            "name": "volts-per-kelvin",
+            "value": 176
+        },
+        {
+            "name": "volts-per-meter",
+            "value": 177
+        },
+        {
+            "name": "volume1",
+            "value": 47937
+        },
+        {
+            "name": "volume10",
+            "value": 47946
+        },
+        {
+            "name": "volume2",
+            "value": 47938
+        },
+        {
+            "name": "volume3",
+            "value": 47939
+        },
+        {
+            "name": "volume4",
+            "value": 47940
+        },
+        {
+            "name": "volume5",
+            "value": 47941
+        },
+        {
+            "name": "volume6",
+            "value": 47942
+        },
+        {
+            "name": "volume7",
+            "value": 47943
+        },
+        {
+            "name": "volume8",
+            "value": 47944
+        },
+        {
+            "name": "volume9",
+            "value": 47945
+        },
+        {
+            "name": "volumetric-flow1",
+            "value": 47947
+        },
+        {
+            "name": "volumetric-flow10",
+            "value": 47956
+        },
+        {
+            "name": "volumetric-flow2",
+            "value": 47948
+        },
+        {
+            "name": "volumetric-flow3",
+            "value": 47949
+        },
+        {
+            "name": "volumetric-flow4",
+            "value": 47950
+        },
+        {
+            "name": "volumetric-flow5",
+            "value": 47951
+        },
+        {
+            "name": "volumetric-flow6",
+            "value": 47952
+        },
+        {
+            "name": "volumetric-flow7",
+            "value": 47953
+        },
+        {
+            "name": "volumetric-flow8",
+            "value": 47954
+        },
+        {
+            "name": "volumetric-flow9",
+            "value": 47955
+        },
+        {
+            "name": "watt-hours",
+            "value": 18
+        },
+        {
+            "name": "watt-hours-per-cubic-meter",
+            "value": 250
+        },
+        {
+            "name": "watt-hours-reactive",
+            "value": 203
+        },
+        {
+            "name": "watts",
+            "value": 47
+        },
+        {
+            "name": "watts-per-meter-per-kelvin",
+            "value": 189
+        },
+        {
+            "name": "watts-per-square-foot",
+            "value": 34
+        },
+        {
+            "name": "watts-per-square-meter",
+            "value": 35
+        },
+        {
+            "name": "watts-per-square-meter-per-kelvin",
+            "value": 141
+        },
+        {
+            "name": "webers",
+            "value": 178
+        },
+        {
+            "name": "weeks",
+            "value": 69
+        },
+        {
+            "name": "yards",
+            "value": 47825
+        },
+        {
+            "name": "years",
+            "value": 67
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 255
+        },
+        {
+            "custom": false,
+            "minimum": 47808,
+            "maximum": 49999
+        },
+        {
+            "custom": true,
+            "minimum": 256,
+            "maximum": 47807
+        },
+        {
+            "custom": true,
+            "minimum": 50000,
+            "maximum": 65535
+        }
+    ]
+}

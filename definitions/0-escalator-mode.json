@@ -1,0 +1,47 @@
+{
+    "id": "0-escalator-mode",
+    "name": "BACnetEscalatorMode",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "down",
+            "value": 3
+        },
+        {
+            "name": "inspection",
+            "value": 4
+        },
+        {
+            "name": "out-of-service",
+            "value": 5
+        },
+        {
+            "name": "stop",
+            "value": 1
+        },
+        {
+            "name": "unknown",
+            "value": 0
+        },
+        {
+            "name": "up",
+            "value": 2
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 1023
+        },
+        {
+            "custom": true,
+            "minimum": 1024,
+            "maximum": 65535
+        }
+    ]
+}

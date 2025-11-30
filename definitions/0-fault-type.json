@@ -1,0 +1,50 @@
+{
+    "id": "0-fault-type",
+    "name": "BACnetFaultType",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "fault-characterstring",
+            "value": 1
+        },
+        {
+            "name": "fault-extended",
+            "value": 2
+        },
+        {
+            "name": "fault-life-safety",
+            "value": 3
+        },
+        {
+            "name": "fault-listed",
+            "value": 7
+        },
+        {
+            "name": "fault-out-of-range",
+            "value": 6
+        },
+        {
+            "name": "fault-state",
+            "value": 4
+        },
+        {
+            "name": "fault-status-flags",
+            "value": 5
+        },
+        {
+            "name": "none",
+            "value": 0
+        }
+    ],
+    "extensible": false,
+    "minimum": 0,
+    "maximum": 7,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 7
+        }
+    ]
+}

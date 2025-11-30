@@ -1,0 +1,239 @@
+{
+    "id": "0-access-event",
+    "name": "BACnetAccessEvent",
+    "base": "enumerated",
+    "vendor": 0,
+    "items": [
+        {
+            "name": "accompaniment-by",
+            "value": 12
+        },
+        {
+            "name": "authentication-factor-read",
+            "value": 13
+        },
+        {
+            "name": "authorization-delayed",
+            "value": 14
+        },
+        {
+            "name": "denied-authentication-factor-damaged",
+            "value": 145
+        },
+        {
+            "name": "denied-authentication-factor-destroyed",
+            "value": 146
+        },
+        {
+            "name": "denied-authentication-factor-disabled",
+            "value": 147
+        },
+        {
+            "name": "denied-authentication-factor-error",
+            "value": 148
+        },
+        {
+            "name": "denied-authentication-factor-lost",
+            "value": 143
+        },
+        {
+            "name": "denied-authentication-factor-stolen",
+            "value": 144
+        },
+        {
+            "name": "denied-authentication-factor-timeout",
+            "value": 131
+        },
+        {
+            "name": "denied-authentication-unavailable",
+            "value": 130
+        },
+        {
+            "name": "denied-credential-disabled",
+            "value": 158
+        },
+        {
+            "name": "denied-credential-expired",
+            "value": 152
+        },
+        {
+            "name": "denied-credential-inactivity",
+            "value": 157
+        },
+        {
+            "name": "denied-credential-lockout",
+            "value": 154
+        },
+        {
+            "name": "denied-credential-manual-disable",
+            "value": 153
+        },
+        {
+            "name": "denied-credential-max-days",
+            "value": 155
+        },
+        {
+            "name": "denied-credential-max-uses",
+            "value": 156
+        },
+        {
+            "name": "denied-credential-not-provisioned",
+            "value": 150
+        },
+        {
+            "name": "denied-credential-not-yet-active",
+            "value": 151
+        },
+        {
+            "name": "denied-credential-unassigned",
+            "value": 149
+        },
+        {
+            "name": "denied-deny-all",
+            "value": 128
+        },
+        {
+            "name": "denied-incorrect-accompaniment",
+            "value": 160
+        },
+        {
+            "name": "denied-incorrect-authentication-factor",
+            "value": 132
+        },
+        {
+            "name": "denied-lockout",
+            "value": 161
+        },
+        {
+            "name": "denied-lower-occupancy-limit",
+            "value": 141
+        },
+        {
+            "name": "denied-max-attempts",
+            "value": 140
+        },
+        {
+            "name": "denied-no-access-rights",
+            "value": 135
+        },
+        {
+            "name": "denied-no-accompaniment",
+            "value": 159
+        },
+        {
+            "name": "denied-other",
+            "value": 164
+        },
+        {
+            "name": "denied-out-of-time-range",
+            "value": 136
+        },
+        {
+            "name": "denied-passback",
+            "value": 138
+        },
+        {
+            "name": "denied-point-no-access-rights",
+            "value": 134
+        },
+        {
+            "name": "denied-threat-level",
+            "value": 137
+        },
+        {
+            "name": "denied-unexpected-location-usage",
+            "value": 139
+        },
+        {
+            "name": "denied-unknown-credential",
+            "value": 129
+        },
+        {
+            "name": "denied-upper-occupancy-limit",
+            "value": 142
+        },
+        {
+            "name": "denied-verification-failed",
+            "value": 162
+        },
+        {
+            "name": "denied-verification-timeout",
+            "value": 163
+        },
+        {
+            "name": "denied-zone-no-access-rights",
+            "value": 133
+        },
+        {
+            "name": "duress",
+            "value": 4
+        },
+        {
+            "name": "granted",
+            "value": 1
+        },
+        {
+            "name": "locked-by-higher-priority",
+            "value": 9
+        },
+        {
+            "name": "lockout-max-attempts",
+            "value": 6
+        },
+        {
+            "name": "lockout-other",
+            "value": 7
+        },
+        {
+            "name": "lockout-relinquished",
+            "value": 8
+        },
+        {
+            "name": "muster",
+            "value": 2
+        },
+        {
+            "name": "no-entry-after-granted",
+            "value": 16
+        },
+        {
+            "name": "none",
+            "value": 0
+        },
+        {
+            "name": "out-of-service",
+            "value": 10
+        },
+        {
+            "name": "out-of-service-relinquished",
+            "value": 11
+        },
+        {
+            "name": "passback-detected",
+            "value": 3
+        },
+        {
+            "name": "trace",
+            "value": 5
+        },
+        {
+            "name": "verification-required",
+            "value": 15
+        }
+    ],
+    "extensible": true,
+    "minimum": 0,
+    "maximum": 65535,
+    "ranges": [
+        {
+            "custom": false,
+            "minimum": 0,
+            "maximum": 511
+        },
+        {
+            "custom": true,
+            "minimum": 512,
+            "maximum": 65535
+        }
+    ]
+}
