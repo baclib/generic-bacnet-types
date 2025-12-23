@@ -6,15 +6,18 @@
     "items": [
         {
             "bit": 0,
-            "name": "to-offnormal"
+            "name": "to-offnormal",
+            "description": "Transition to offnormal state."
         },
         {
             "bit": 1,
-            "name": "to-fault"
+            "name": "to-fault",
+            "description": "Transition to fault state."
         },
         {
             "bit": 2,
-            "name": "to-normal"
+            "name": "to-normal",
+            "description": "Transition to normal state."
         }
     ],
     "extensible": false,

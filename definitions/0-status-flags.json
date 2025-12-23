@@ -6,19 +6,23 @@
     "items": [
         {
             "bit": 0,
-            "name": "in-alarm"
+            "name": "in-alarm",
+            "description": "Object is in alarm."
         },
         {
             "bit": 1,
-            "name": "fault"
+            "name": "fault",
+            "description": "Object is in fault condition."
         },
         {
             "bit": 2,
-            "name": "overridden"
+            "name": "overridden",
+            "description": "Object is overridden."
         },
         {
             "bit": 3,
-            "name": "out-of-service"
+            "name": "out-of-service",
+            "description": "Object is out of service."
         }
     ],
     "extensible": false,

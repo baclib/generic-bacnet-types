@@ -6,11 +6,13 @@
     "items": [
         {
             "bit": 0,
-            "name": "low-limit-enable"
+            "name": "low-limit-enable",
+            "description": "Enable low limit."
         },
         {
             "bit": 1,
-            "name": "high-limit-enable"
+            "name": "high-limit-enable",
+            "description": "Enable high limit."
         }
     ],
     "extensible": false,

@@ -6,191 +6,238 @@
     "items": [
         {
             "bit": 0,
-            "name": "acknowledge-alarm"
+            "name": "acknowledge-alarm",
+            "description": "Acknowledge alarm service."
         },
         {
             "bit": 1,
-            "name": "confirmed-cov-notification"
+            "name": "confirmed-cov-notification",
+            "description": "Confirmed COV notification service."
         },
         {
             "bit": 2,
-            "name": "confirmed-event-notification"
+            "name": "confirmed-event-notification",
+            "description": "Confirmed event notification service."
         },
         {
             "bit": 3,
-            "name": "get-alarm-summary"
+            "name": "get-alarm-summary",
+            "description": "Get alarm summary service."
         },
         {
             "bit": 4,
-            "name": "get-enrollment-summary"
+            "name": "get-enrollment-summary",
+            "description": "Get enrollment summary service."
         },
         {
             "bit": 5,
-            "name": "subscribe-cov"
+            "name": "subscribe-cov",
+            "description": "Subscribe COV service."
         },
         {
             "bit": 6,
-            "name": "atomic-read-file"
+            "name": "atomic-read-file",
+            "description": "Atomic read file service."
         },
         {
             "bit": 7,
-            "name": "atomic-write-file"
+            "name": "atomic-write-file",
+            "description": "Atomic write file service."
         },
         {
             "bit": 8,
-            "name": "add-list-element"
+            "name": "add-list-element",
+            "description": "Add list element service."
         },
         {
             "bit": 9,
-            "name": "remove-list-element"
+            "name": "remove-list-element",
+            "description": "Remove list element service."
         },
         {
             "bit": 10,
-            "name": "create-object"
+            "name": "create-object",
+            "description": "Create object service."
         },
         {
             "bit": 11,
-            "name": "delete-object"
+            "name": "delete-object",
+            "description": "Delete object service."
         },
         {
             "bit": 12,
-            "name": "read-property"
+            "name": "read-property",
+            "description": "Read property service."
         },
         {
             "bit": 14,
-            "name": "read-property-multiple"
+            "name": "read-property-multiple",
+            "description": "Read property multiple service."
         },
         {
             "bit": 15,
-            "name": "write-property"
+            "name": "write-property",
+            "description": "Write property service."
         },
         {
             "bit": 16,
-            "name": "write-property-multiple"
+            "name": "write-property-multiple",
+            "description": "Write property multiple service."
         },
         {
             "bit": 17,
-            "name": "device-communication-control"
+            "name": "device-communication-control",
+            "description": "Device communication control service."
         },
         {
             "bit": 18,
-            "name": "confirmed-private-transfer"
+            "name": "confirmed-private-transfer",
+            "description": "Confirmed private transfer service."
         },
         {
             "bit": 19,
-            "name": "confirmed-text-message"
+            "name": "confirmed-text-message",
+            "description": "Confirmed text message service."
         },
         {
             "bit": 20,
-            "name": "reinitialize-device"
+            "name": "reinitialize-device",
+            "description": "Reinitialize device service."
         },
         {
             "bit": 21,
-            "name": "vt-open"
+            "name": "vt-open",
+            "description": "VT open service."
         },
         {
             "bit": 22,
-            "name": "vt-close"
+            "name": "vt-close",
+            "description": "VT close service."
         },
         {
             "bit": 23,
-            "name": "vt-data"
+            "name": "vt-data",
+            "description": "VT data service."
         },
         {
             "bit": 26,
-            "name": "i-am"
+            "name": "i-am",
+            "description": "I-Am service."
         },
         {
             "bit": 27,
-            "name": "i-have"
+            "name": "i-have",
+            "description": "I-Have service."
         },
         {
             "bit": 28,
-            "name": "unconfirmed-cov-notification"
+            "name": "unconfirmed-cov-notification",
+            "description": "Unconfirmed COV notification service."
         },
         {
             "bit": 29,
-            "name": "unconfirmed-event-notification"
+            "name": "unconfirmed-event-notification",
+            "description": "Unconfirmed event notification service."
         },
         {
             "bit": 30,
-            "name": "unconfirmed-private-transfer"
+            "name": "unconfirmed-private-transfer",
+            "description": "Unconfirmed private transfer service."
         },
         {
             "bit": 31,
-            "name": "unconfirmed-text-message"
+            "name": "unconfirmed-text-message",
+            "description": "Unconfirmed text message service."
         },
         {
             "bit": 32,
-            "name": "time-synchronization"
+            "name": "time-synchronization",
+            "description": "Time synchronization service."
         },
         {
             "bit": 33,
-            "name": "who-has"
+            "name": "who-has",
+            "description": "Who-Has service."
         },
         {
             "bit": 34,
-            "name": "who-is"
+            "name": "who-is",
+            "description": "Who-Is service."
         },
         {
             "bit": 35,
-            "name": "read-range"
+            "name": "read-range",
+            "description": "Read range service."
         },
         {
             "bit": 36,
-            "name": "utc-time-synchronization"
+            "name": "utc-time-synchronization",
+            "description": "UTC time synchronization service."
         },
         {
             "bit": 37,
-            "name": "life-safety-operation"
+            "name": "life-safety-operation",
+            "description": "Life safety operation service."
         },
         {
             "bit": 38,
-            "name": "subscribe-cov-property"
+            "name": "subscribe-cov-property",
+            "description": "Subscribe COV property service."
         },
         {
             "bit": 39,
-            "name": "get-event-information"
+            "name": "get-event-information",
+            "description": "Get event information service."
         },
         {
             "bit": 40,
-            "name": "write-group"
+            "name": "write-group",
+            "description": "Write group service."
         },
         {
             "bit": 41,
-            "name": "subscribe-cov-property-multiple"
+            "name": "subscribe-cov-property-multiple",
+            "description": "Subscribe COV property multiple service."
         },
         {
             "bit": 42,
-            "name": "confirmed-cov-notification-multiple"
+            "name": "confirmed-cov-notification-multiple",
+            "description": "Confirmed COV notification multiple service."
         },
         {
             "bit": 43,
-            "name": "unconfirmed-cov-notification-multiple"
+            "name": "unconfirmed-cov-notification-multiple",
+            "description": "Unconfirmed COV notification multiple service."
         },
         {
             "bit": 44,
-            "name": "confirmed-audit-notification"
+            "name": "confirmed-audit-notification",
+            "description": "Confirmed audit notification service."
         },
         {
             "bit": 45,
-            "name": "audit-log-query"
+            "name": "audit-log-query",
+            "description": "Audit log query service."
         },
         {
             "bit": 46,
-            "name": "unconfirmed-audit-notification"
+            "name": "unconfirmed-audit-notification",
+            "description": "Unconfirmed audit notification service."
         },
         {
             "bit": 47,
-            "name": "who-am-i"
+            "name": "who-am-i",
+            "description": "Who-Am-I service."
         },
         {
             "bit": 48,
-            "name": "you-are"
+            "name": "you-are",
+            "description": "You-Are service."
         },
         {
             "bit": 49,
-            "name": "auth-request"
+            "name": "auth-request",
+            "description": "Auth request service."
         }
     ],
     "extensible": false,

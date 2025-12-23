@@ -6,31 +6,38 @@
     "items": [
         {
             "bit": 0,
-            "name": "monday"
+            "name": "monday",
+            "description": "Monday."
         },
         {
             "bit": 1,
-            "name": "tuesday"
+            "name": "tuesday",
+            "description": "Tuesday."
         },
         {
             "bit": 2,
-            "name": "wednesday"
+            "name": "wednesday",
+            "description": "Wednesday."
         },
         {
             "bit": 3,
-            "name": "thursday"
+            "name": "thursday",
+            "description": "Thursday."
         },
         {
             "bit": 4,
-            "name": "friday"
+            "name": "friday",
+            "description": "Friday."
         },
         {
             "bit": 5,
-            "name": "saturday"
+            "name": "saturday",
+            "description": "Saturday."
         },
         {
             "bit": 6,
-            "name": "sunday"
+            "name": "sunday",
+            "description": "Sunday."
         }
     ],
     "extensible": false,

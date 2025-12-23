@@ -6,15 +6,18 @@
     "items": [
         {
             "bit": 0,
-            "name": "log-disabled"
+            "name": "log-disabled",
+            "description": "Log is disabled."
         },
         {
             "bit": 1,
-            "name": "buffer-purged"
+            "name": "buffer-purged",
+            "description": "Log buffer has been purged."
         },
         {
             "bit": 2,
-            "name": "log-interrupted"
+            "name": "log-interrupted",
+            "description": "Log was interrupted."
         }
     ],
     "extensible": false,

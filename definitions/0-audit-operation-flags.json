@@ -6,67 +6,83 @@
     "items": [
         {
             "bit": 0,
-            "name": "read"
+            "name": "read",
+            "description": "Read operation."
         },
         {
             "bit": 1,
-            "name": "write"
+            "name": "write",
+            "description": "Write operation."
         },
         {
             "bit": 2,
-            "name": "create"
+            "name": "create",
+            "description": "Create operation."
         },
         {
             "bit": 3,
-            "name": "delete"
+            "name": "delete",
+            "description": "Delete operation."
         },
         {
             "bit": 4,
-            "name": "life-safety"
+            "name": "life-safety",
+            "description": "Life safety operation."
         },
         {
             "bit": 5,
-            "name": "acknowledge-alarm"
+            "name": "acknowledge-alarm",
+            "description": "Acknowledge alarm operation."
         },
         {
             "bit": 6,
-            "name": "device-disable-comm"
+            "name": "device-disable-comm",
+            "description": "Device disable communication operation."
         },
         {
             "bit": 7,
-            "name": "device-enable-comm"
+            "name": "device-enable-comm",
+            "description": "Device enable communication operation."
         },
         {
             "bit": 8,
-            "name": "device-reset"
+            "name": "device-reset",
+            "description": "Device reset operation."
         },
         {
             "bit": 9,
-            "name": "device-backup"
+            "name": "device-backup",
+            "description": "Device backup operation."
         },
         {
             "bit": 10,
-            "name": "device-restore"
+            "name": "device-restore",
+            "description": "Device restore operation."
         },
         {
             "bit": 11,
-            "name": "subscription"
+            "name": "subscription",
+            "description": "Subscription operation."
         },
         {
             "bit": 12,
-            "name": "notification"
+            "name": "notification",
+            "description": "Notification operation."
         },
         {
             "bit": 13,
-            "name": "auditing-failure"
+            "name": "auditing-failure",
+            "description": "Auditing failure operation."
         },
         {
             "bit": 14,
-            "name": "network-changes"
+            "name": "network-changes",
+            "description": "Network changes operation."
         },
         {
             "bit": 15,
-            "name": "general"
+            "name": "general",
+            "description": "General operation."
         }
     ],
     "extensible": true,

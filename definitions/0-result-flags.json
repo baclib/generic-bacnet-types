@@ -6,15 +6,18 @@
     "items": [
         {
             "bit": 0,
-            "name": "first-item"
+            "name": "first-item",
+            "description": "This is the first item."
         },
         {
             "bit": 1,
-            "name": "last-item"
+            "name": "last-item",
+            "description": "This is the last item."
         },
         {
             "bit": 2,
-            "name": "more-items"
+            "name": "more-items",
+            "description": "There are more items available."
         }
     ],
     "extensible": false,

@@ -6,67 +6,83 @@
     "items": [
         {
             "bit": 0,
-            "name": "manual-life-safety"
+            "name": "manual-life-safety",
+            "description": "Manual life safety priority."
         },
         {
             "bit": 1,
-            "name": "automatic-life-safety"
+            "name": "automatic-life-safety",
+            "description": "Automatic life safety priority."
         },
         {
             "bit": 2,
-            "name": "priority-3"
+            "name": "priority-3",
+            "description": "Priority 3."
         },
         {
             "bit": 3,
-            "name": "priority-4"
+            "name": "priority-4",
+            "description": "Priority 4."
         },
         {
             "bit": 4,
-            "name": "critical-equipment-controls"
+            "name": "critical-equipment-controls",
+            "description": "Critical equipment controls priority."
         },
         {
             "bit": 5,
-            "name": "minimum-on-off"
+            "name": "minimum-on-off",
+            "description": "Minimum on/off priority."
         },
         {
             "bit": 6,
-            "name": "priority-7"
+            "name": "priority-7",
+            "description": "Priority 7."
         },
         {
             "bit": 7,
-            "name": "manual-operator"
+            "name": "manual-operator",
+            "description": "Manual operator priority."
         },
         {
             "bit": 8,
-            "name": "priority-9"
+            "name": "priority-9",
+            "description": "Priority 9."
         },
         {
             "bit": 9,
-            "name": "priority-10"
+            "name": "priority-10",
+            "description": "Priority 10."
         },
         {
             "bit": 10,
-            "name": "priority-11"
+            "name": "priority-11",
+            "description": "Priority 11."
         },
         {
             "bit": 11,
-            "name": "priority-12"
+            "name": "priority-12",
+            "description": "Priority 12."
         },
         {
             "bit": 12,
-            "name": "priority-13"
+            "name": "priority-13",
+            "description": "Priority 13."
         },
         {
             "bit": 13,
-            "name": "priority-14"
+            "name": "priority-14",
+            "description": "Priority 14."
         },
         {
             "bit": 14,
-            "name": "priority-15"
+            "name": "priority-15",
+            "description": "Priority 15."
         },
         {
             "bit": 15,
-            "name": "priority-16"
+            "name": "priority-16",
+            "description": "Priority 16."
         }
     ],
     "extensible": false,
