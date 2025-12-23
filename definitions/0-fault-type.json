@@ -6,35 +6,43 @@
     "items": [
         {
             "name": "fault-characterstring",
-            "value": 1
+            "value": 1,
+            "description": "Fault in characterstring."
         },
         {
             "name": "fault-extended",
-            "value": 2
+            "value": 2,
+            "description": "Extended fault."
         },
         {
             "name": "fault-life-safety",
-            "value": 3
+            "value": 3,
+            "description": "Life safety fault."
         },
         {
             "name": "fault-listed",
-            "value": 7
+            "value": 7,
+            "description": "Listed fault."
         },
         {
             "name": "fault-out-of-range",
-            "value": 6
+            "value": 6,
+            "description": "Out of range fault."
         },
         {
             "name": "fault-state",
-            "value": 4
+            "value": 4,
+            "description": "State fault."
         },
         {
             "name": "fault-status-flags",
-            "value": 5
+            "value": 5,
+            "description": "Status flags fault."
         },
         {
             "name": "none",
-            "value": 0
+            "value": 0,
+            "description": "No fault."
         }
     ],
     "extensible": false,

@@ -6,15 +6,18 @@
     "items": [
         {
             "name": "ack-notification",
-            "value": 2
+            "value": 2,
+            "description": "Acknowledgment notification type."
         },
         {
             "name": "alarm",
-            "value": 0
+            "value": 0,
+            "description": "Alarm notification type."
         },
         {
             "name": "event",
-            "value": 1
+            "value": 1,
+            "description": "Event notification type."
         }
     ],
     "extensible": false,

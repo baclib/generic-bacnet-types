@@ -6,15 +6,18 @@
     "items": [
         {
             "name": "expired",
-            "value": 2
+            "value": 2,
+            "description": "Indicates that the timer has expired and completed its countdown."
         },
         {
             "name": "idle",
-            "value": 0
+            "value": 0,
+            "description": "Indicates that the timer is idle and not currently running."
         },
         {
             "name": "running",
-            "value": 1
+            "value": 1,
+            "description": "Indicates that the timer is currently running and counting down."
         }
     ],
     "extensible": false,

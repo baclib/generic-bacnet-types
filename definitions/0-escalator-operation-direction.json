@@ -6,27 +6,33 @@
     "items": [
         {
             "name": "down-rated-speed",
-            "value": 4
+            "value": 4,
+            "description": "Escalator is moving down at rated speed."
         },
         {
             "name": "down-reduced-speed",
-            "value": 5
+            "value": 5,
+            "description": "Escalator is moving down at reduced speed."
         },
         {
             "name": "stopped",
-            "value": 1
+            "value": 1,
+            "description": "Escalator is stopped."
         },
         {
             "name": "unknown",
-            "value": 0
+            "value": 0,
+            "description": "Escalator direction is unknown."
         },
         {
             "name": "up-rated-speed",
-            "value": 2
+            "value": 2,
+            "description": "Escalator is moving up at rated speed."
         },
         {
             "name": "up-reduced-speed",
-            "value": 3
+            "value": 3,
+            "description": "Escalator is moving up at reduced speed."
         }
     ],
     "extensible": true,

@@ -6,43 +6,53 @@
     "items": [
         {
             "name": "closed",
-            "value": 0
+            "value": 0,
+            "description": "Door is closed."
         },
         {
             "name": "closing",
-            "value": 6
+            "value": 6,
+            "description": "Door is closing."
         },
         {
             "name": "door-fault",
-            "value": 3
+            "value": 3,
+            "description": "Door fault detected."
         },
         {
             "name": "limited-opened",
-            "value": 9
+            "value": 9,
+            "description": "Door is limited opened."
         },
         {
             "name": "none",
-            "value": 5
+            "value": 5,
+            "description": "No door status."
         },
         {
             "name": "opened",
-            "value": 1
+            "value": 1,
+            "description": "Door is opened."
         },
         {
             "name": "opening",
-            "value": 7
+            "value": 7,
+            "description": "Door is opening."
         },
         {
             "name": "safety-locked",
-            "value": 8
+            "value": 8,
+            "description": "Door is safety locked."
         },
         {
             "name": "unknown",
-            "value": 2
+            "value": 2,
+            "description": "Door status is unknown."
         },
         {
             "name": "unused",
-            "value": 4
+            "value": 4,
+            "description": "Door status is unused."
         }
     ],
     "extensible": true,

@@ -6,19 +6,23 @@
     "items": [
         {
             "name": "shed-compliant",
-            "value": 2
+            "value": 2,
+            "description": "The device is compliant with the shed request."
         },
         {
             "name": "shed-inactive",
-            "value": 0
+            "value": 0,
+            "description": "No shed request is active."
         },
         {
             "name": "shed-non-compliant",
-            "value": 3
+            "value": 3,
+            "description": "The device is not compliant with the shed request."
         },
         {
             "name": "shed-request-pending",
-            "value": 1
+            "value": 1,
+            "description": "A shed request is pending."
         }
     ],
     "extensible": false,

@@ -6,19 +6,23 @@
     "items": [
         {
             "name": "connected",
-            "value": 1
+            "value": 1,
+            "description": "The device is currently connected."
         },
         {
             "name": "disconnected-with-errors",
-            "value": 2
+            "value": 2,
+            "description": "The device is disconnected due to errors."
         },
         {
             "name": "failed-to-connect",
-            "value": 3
+            "value": 3,
+            "description": "The device failed to establish a connection."
         },
         {
             "name": "not-connected",
-            "value": 0
+            "value": 0,
+            "description": "The device is not currently connected."
         }
     ],
     "extensible": false,

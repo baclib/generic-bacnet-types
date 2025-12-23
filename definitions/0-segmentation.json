@@ -6,19 +6,23 @@
     "items": [
         {
             "name": "no-segmentation",
-            "value": 3
+            "value": 3,
+            "description": "Does not support segmentation."
         },
         {
             "name": "segmented-both",
-            "value": 0
+            "value": 0,
+            "description": "Supports both segmented transmission and reception."
         },
         {
             "name": "segmented-receive",
-            "value": 2
+            "value": 2,
+            "description": "Supports only segmented reception."
         },
         {
             "name": "segmented-transmit",
-            "value": 1
+            "value": 1,
+            "description": "Supports only segmented transmission."
         }
     ],
     "extensible": false,

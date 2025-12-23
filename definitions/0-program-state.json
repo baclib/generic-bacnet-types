@@ -6,27 +6,33 @@
     "items": [
         {
             "name": "halted",
-            "value": 4
+            "value": 4,
+            "description": "Program is halted."
         },
         {
             "name": "idle",
-            "value": 0
+            "value": 0,
+            "description": "Program is idle."
         },
         {
             "name": "loading",
-            "value": 1
+            "value": 1,
+            "description": "Program is loading."
         },
         {
             "name": "running",
-            "value": 2
+            "value": 2,
+            "description": "Program is running."
         },
         {
             "name": "unloading",
-            "value": 5
+            "value": 5,
+            "description": "Program is unloading."
         },
         {
             "name": "waiting",
-            "value": 3
+            "value": 3,
+            "description": "Program is waiting."
         }
     ],
     "extensible": false,

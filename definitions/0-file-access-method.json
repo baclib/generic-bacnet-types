@@ -6,11 +6,13 @@
     "items": [
         {
             "name": "record-access",
-            "value": 0
+            "value": 0,
+            "description": "File access by record."
         },
         {
             "name": "stream-access",
-            "value": 1
+            "value": 1,
+            "description": "File access by stream."
         }
     ],
     "extensible": false,

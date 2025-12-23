@@ -6,39 +6,48 @@
     "items": [
         {
             "name": "alarm",
-            "value": 1
+            "value": 1,
+            "description": "Door is in alarm state."
         },
         {
             "name": "door-fault",
-            "value": 5
+            "value": 5,
+            "description": "Door fault detected."
         },
         {
             "name": "door-open-too-long",
-            "value": 2
+            "value": 2,
+            "description": "Door has been open too long."
         },
         {
             "name": "egress-open",
-            "value": 8
+            "value": 8,
+            "description": "Door is open for egress."
         },
         {
             "name": "forced-open",
-            "value": 3
+            "value": 3,
+            "description": "Door was forced open."
         },
         {
             "name": "free-access",
-            "value": 7
+            "value": 7,
+            "description": "Door is in free access state."
         },
         {
             "name": "lock-down",
-            "value": 6
+            "value": 6,
+            "description": "Door is in lockdown state."
         },
         {
             "name": "normal",
-            "value": 0
+            "value": 0,
+            "description": "Door is in normal state."
         },
         {
             "name": "tamper",
-            "value": 4
+            "value": 4,
+            "description": "Door tamper detected."
         }
     ],
     "extensible": true,

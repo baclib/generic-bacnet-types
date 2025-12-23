@@ -6,39 +6,48 @@
     "items": [
         {
             "name": "activate-changes",
-            "value": 8
+            "value": 8,
+            "description": "Activate changes restart reason."
         },
         {
             "name": "coldstart",
-            "value": 1
+            "value": 1,
+            "description": "Coldstart restart reason."
         },
         {
             "name": "detected-power-lost",
-            "value": 3
+            "value": 3,
+            "description": "Detected power lost restart reason."
         },
         {
             "name": "detected-powered-off",
-            "value": 4
+            "value": 4,
+            "description": "Detected powered off restart reason."
         },
         {
             "name": "hardware-watchdog",
-            "value": 5
+            "value": 5,
+            "description": "Hardware watchdog restart reason."
         },
         {
             "name": "software-watchdog",
-            "value": 6
+            "value": 6,
+            "description": "Software watchdog restart reason."
         },
         {
             "name": "suspended",
-            "value": 7
+            "value": 7,
+            "description": "Suspended restart reason."
         },
         {
             "name": "unknown",
-            "value": 0
+            "value": 0,
+            "description": "Restart reason is unknown."
         },
         {
             "name": "warmstart",
-            "value": 2
+            "value": 2,
+            "description": "Warmstart restart reason."
         }
     ],
     "extensible": true,

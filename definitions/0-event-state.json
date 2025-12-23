@@ -6,27 +6,33 @@
     "items": [
         {
             "name": "fault",
-            "value": 1
+            "value": 1,
+            "description": "Event is in fault state."
         },
         {
             "name": "high-limit",
-            "value": 3
+            "value": 3,
+            "description": "Event is in high limit state."
         },
         {
             "name": "life-safety-alarm",
-            "value": 5
+            "value": 5,
+            "description": "Event is in life safety alarm state."
         },
         {
             "name": "low-limit",
-            "value": 4
+            "value": 4,
+            "description": "Event is in low limit state."
         },
         {
             "name": "normal",
-            "value": 0
+            "value": 0,
+            "description": "Event is in normal state."
         },
         {
             "name": "offnormal",
-            "value": 2
+            "value": 2,
+            "description": "Event is in offnormal state."
         }
     ],
     "extensible": true,

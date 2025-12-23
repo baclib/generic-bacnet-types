@@ -6,15 +6,18 @@
     "items": [
         {
             "name": "cov",
-            "value": 1
+            "value": 1,
+            "description": "Change of value (COV) logging type."
         },
         {
             "name": "polled",
-            "value": 0
+            "value": 0,
+            "description": "Polled logging type."
         },
         {
             "name": "triggered",
-            "value": 2
+            "value": 2,
+            "description": "Triggered logging type."
         }
     ],
     "extensible": true,

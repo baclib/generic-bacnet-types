@@ -6,47 +6,58 @@
     "items": [
         {
             "name": "discard-changes",
-            "value": 1
+            "value": 1,
+            "description": "Discard changes command."
         },
         {
             "name": "disconnect",
-            "value": 6
+            "value": 6,
+            "description": "Disconnect command."
         },
         {
             "name": "generate-csr-file",
-            "value": 9
+            "value": 9,
+            "description": "Generate CSR file command."
         },
         {
             "name": "idle",
-            "value": 0
+            "value": 0,
+            "description": "Idle command."
         },
         {
             "name": "renew-dhcp",
-            "value": 4
+            "value": 4,
+            "description": "Renew DHCP command."
         },
         {
             "name": "renew-fd-registration",
-            "value": 2
+            "value": 2,
+            "description": "Renew FD registration command."
         },
         {
             "name": "restart-autonegotiation",
-            "value": 5
+            "value": 5,
+            "description": "Restart autonegotiation command."
         },
         {
             "name": "restart-device-discovery",
-            "value": 8
+            "value": 8,
+            "description": "Restart device discovery command."
         },
         {
             "name": "restart-port",
-            "value": 7
+            "value": 7,
+            "description": "Restart port command."
         },
         {
             "name": "restart-subordinate-discovery",
-            "value": 3
+            "value": 3,
+            "description": "Restart subordinate discovery command."
         },
         {
             "name": "validate-changes",
-            "value": 10
+            "value": 10,
+            "description": "Validate changes command."
         }
     ],
     "extensible": true,

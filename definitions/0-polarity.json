@@ -6,11 +6,13 @@
     "items": [
         {
             "name": "normal",
-            "value": 0
+            "value": 0,
+            "description": "Normal polarity."
         },
         {
             "name": "reverse",
-            "value": 1
+            "value": 1,
+            "description": "Reverse polarity."
         }
     ],
     "extensible": false,

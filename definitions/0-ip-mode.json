@@ -6,15 +6,18 @@
     "items": [
         {
             "name": "bbmd",
-            "value": 2
+            "value": 2,
+            "description": "BBMD (BACnet Broadcast Management Device) IP mode."
         },
         {
             "name": "foreign",
-            "value": 1
+            "value": 1,
+            "description": "Foreign device IP mode."
         },
         {
             "name": "normal",
-            "value": 0
+            "value": 0,
+            "description": "Normal IP mode."
         }
     ],
     "extensible": false,

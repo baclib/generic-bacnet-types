@@ -6,27 +6,33 @@
     "items": [
         {
             "name": "down",
-            "value": 3
+            "value": 3,
+            "description": "Escalator is moving down."
         },
         {
             "name": "inspection",
-            "value": 4
+            "value": 4,
+            "description": "Escalator is in inspection mode."
         },
         {
             "name": "out-of-service",
-            "value": 5
+            "value": 5,
+            "description": "Escalator is out of service."
         },
         {
             "name": "stop",
-            "value": 1
+            "value": 1,
+            "description": "Escalator is stopped."
         },
         {
             "name": "unknown",
-            "value": 0
+            "value": 0,
+            "description": "Escalator mode is unknown."
         },
         {
             "name": "up",
-            "value": 2
+            "value": 2,
+            "description": "Escalator is moving up."
         }
     ],
     "extensible": true,

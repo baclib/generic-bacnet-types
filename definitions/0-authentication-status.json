@@ -6,31 +6,38 @@
     "items": [
         {
             "name": "disabled",
-            "value": 2
+            "value": 2,
+            "description": "Authentication is disabled."
         },
         {
             "name": "in-progress",
-            "value": 6
+            "value": 6,
+            "description": "Authentication is in progress."
         },
         {
             "name": "not-ready",
-            "value": 0
+            "value": 0,
+            "description": "Authentication is not ready."
         },
         {
             "name": "ready",
-            "value": 1
+            "value": 1,
+            "description": "Authentication is ready."
         },
         {
             "name": "waiting-for-accompaniment",
-            "value": 4
+            "value": 4,
+            "description": "Waiting for accompaniment."
         },
         {
             "name": "waiting-for-authentication-factor",
-            "value": 3
+            "value": 3,
+            "description": "Waiting for authentication factor."
         },
         {
             "name": "waiting-for-verification",
-            "value": 5
+            "value": 5,
+            "description": "Waiting for verification."
         }
     ],
     "extensible": false,

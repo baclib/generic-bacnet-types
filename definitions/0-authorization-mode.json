@@ -6,27 +6,33 @@
     "items": [
         {
             "name": "authorization-delayed",
-            "value": 4
+            "value": 4,
+            "description": "Authorization mode: authorization delayed."
         },
         {
             "name": "authorize",
-            "value": 0
+            "value": 0,
+            "description": "Authorization mode: authorize."
         },
         {
             "name": "deny-all",
-            "value": 2
+            "value": 2,
+            "description": "Authorization mode: deny all."
         },
         {
             "name": "grant-active",
-            "value": 1
+            "value": 1,
+            "description": "Authorization mode: grant active."
         },
         {
             "name": "none",
-            "value": 5
+            "value": 5,
+            "description": "Authorization mode: none."
         },
         {
             "name": "verification-required",
-            "value": 3
+            "value": 3,
+            "description": "Authorization mode: verification required."
         }
     ],
     "extensible": true,

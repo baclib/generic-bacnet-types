@@ -6,67 +6,83 @@
     "items": [
         {
             "name": "acknowledge-alarm",
-            "value": 5
+            "value": 5,
+            "description": "Acknowledge alarm operation."
         },
         {
             "name": "auditing-failure",
-            "value": 13
+            "value": 13,
+            "description": "Auditing failure operation."
         },
         {
             "name": "create",
-            "value": 2
+            "value": 2,
+            "description": "Create operation."
         },
         {
             "name": "delete",
-            "value": 3
+            "value": 3,
+            "description": "Delete operation."
         },
         {
             "name": "device-backup",
-            "value": 9
+            "value": 9,
+            "description": "Device backup operation."
         },
         {
             "name": "device-disable-comm",
-            "value": 6
+            "value": 6,
+            "description": "Device disable communication operation."
         },
         {
             "name": "device-enable-comm",
-            "value": 7
+            "value": 7,
+            "description": "Device enable communication operation."
         },
         {
             "name": "device-reset",
-            "value": 8
+            "value": 8,
+            "description": "Device reset operation."
         },
         {
             "name": "device-restore",
-            "value": 10
+            "value": 10,
+            "description": "Device restore operation."
         },
         {
             "name": "general",
-            "value": 15
+            "value": 15,
+            "description": "General operation."
         },
         {
             "name": "life-safety",
-            "value": 4
+            "value": 4,
+            "description": "Life safety operation."
         },
         {
             "name": "network-changes",
-            "value": 14
+            "value": 14,
+            "description": "Network changes operation."
         },
         {
             "name": "notification",
-            "value": 12
+            "value": 12,
+            "description": "Notification operation."
         },
         {
             "name": "read",
-            "value": 0
+            "value": 0,
+            "description": "Read operation."
         },
         {
             "name": "subscription",
-            "value": 11
+            "value": 11,
+            "description": "Subscription operation."
         },
         {
             "name": "write",
-            "value": 1
+            "value": 1,
+            "description": "Write operation."
         }
     ],
     "extensible": true,

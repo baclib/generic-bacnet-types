@@ -6,43 +6,53 @@
     "items": [
         {
             "name": "none",
-            "value": 0
+            "value": 0,
+            "description": "No operation."
         },
         {
             "name": "reset",
-            "value": 4
+            "value": 4,
+            "description": "Reset operation."
         },
         {
             "name": "reset-alarm",
-            "value": 5
+            "value": 5,
+            "description": "Reset alarm operation."
         },
         {
             "name": "reset-fault",
-            "value": 6
+            "value": 6,
+            "description": "Reset fault operation."
         },
         {
             "name": "silence",
-            "value": 1
+            "value": 1,
+            "description": "Silence operation."
         },
         {
             "name": "silence-audible",
-            "value": 2
+            "value": 2,
+            "description": "Silence audible operation."
         },
         {
             "name": "silence-visual",
-            "value": 3
+            "value": 3,
+            "description": "Silence visual operation."
         },
         {
             "name": "unsilence",
-            "value": 7
+            "value": 7,
+            "description": "Unsilence operation."
         },
         {
             "name": "unsilence-audible",
-            "value": 8
+            "value": 8,
+            "description": "Unsilence audible operation."
         },
         {
             "name": "unsilence-visual",
-            "value": 9
+            "value": 9,
+            "description": "Unsilence visual operation."
         }
     ],
     "extensible": true,

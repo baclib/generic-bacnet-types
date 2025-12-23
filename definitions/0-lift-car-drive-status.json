@@ -6,43 +6,53 @@
     "items": [
         {
             "name": "accelerate",
-            "value": 3
+            "value": 3,
+            "description": "Lift car is accelerating."
         },
         {
             "name": "braking",
-            "value": 2
+            "value": 2,
+            "description": "Lift car is braking."
         },
         {
             "name": "decelerate",
-            "value": 4
+            "value": 4,
+            "description": "Lift car is decelerating."
         },
         {
             "name": "multi-floor-jump",
-            "value": 9
+            "value": 9,
+            "description": "Multi-floor jump."
         },
         {
             "name": "rated-speed",
-            "value": 5
+            "value": 5,
+            "description": "Lift car is at rated speed."
         },
         {
             "name": "single-floor-jump",
-            "value": 6
+            "value": 6,
+            "description": "Single floor jump."
         },
         {
             "name": "stationary",
-            "value": 1
+            "value": 1,
+            "description": "Lift car is stationary."
         },
         {
             "name": "three-floor-jump",
-            "value": 8
+            "value": 8,
+            "description": "Three floor jump."
         },
         {
             "name": "two-floor-jump",
-            "value": 7
+            "value": 7,
+            "description": "Two floor jump."
         },
         {
             "name": "unknown",
-            "value": 0
+            "value": 0,
+            "description": "Drive status is unknown."
         }
     ],
     "extensible": true,

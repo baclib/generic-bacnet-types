@@ -6,15 +6,18 @@
     "items": [
         {
             "name": "allow-match",
-            "value": 0
+            "value": 0,
+            "description": "Authentication allowed due to a match."
         },
         {
             "name": "deny-mismatch",
-            "value": 1
+            "value": 1,
+            "description": "Authentication denied due to mismatch."
         },
         {
             "name": "deny-non-relay",
-            "value": 2
+            "value": 2,
+            "description": "Authentication denied due to non-relay."
         }
     ],
     "extensible": false,

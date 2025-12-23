@@ -6,15 +6,18 @@
     "items": [
         {
             "name": "hard-passback",
-            "value": 1
+            "value": 1,
+            "description": "Hard passback enforcement."
         },
         {
             "name": "passback-off",
-            "value": 0
+            "value": 0,
+            "description": "Passback is not enforced."
         },
         {
             "name": "soft-passback",
-            "value": 2
+            "value": 2,
+            "description": "Soft passback enforcement."
         }
     ],
     "extensible": false,

@@ -6,71 +6,88 @@
     "items": [
         {
             "name": "call-button-stuck",
-            "value": 9
+            "value": 9,
+            "description": "Call button stuck."
         },
         {
             "name": "car-stopped-outside-landing-zone",
-            "value": 8
+            "value": 8,
+            "description": "Car stopped outside landing zone."
         },
         {
             "name": "controller-fault",
-            "value": 0
+            "value": 0,
+            "description": "Controller fault detected."
         },
         {
             "name": "controller-supply-fault",
-            "value": 11
+            "value": 11,
+            "description": "Controller supply fault detected."
         },
         {
             "name": "door-closing-fault",
-            "value": 6
+            "value": 6,
+            "description": "Door closing fault detected."
         },
         {
             "name": "door-opening-fault",
-            "value": 7
+            "value": 7,
+            "description": "Door opening fault detected."
         },
         {
             "name": "drive-and-motor-fault",
-            "value": 1
+            "value": 1,
+            "description": "Drive and motor fault detected."
         },
         {
             "name": "drive-temperature-exceeded",
-            "value": 15
+            "value": 15,
+            "description": "Drive temperature exceeded."
         },
         {
             "name": "governor-and-safety-gear-fault",
-            "value": 2
+            "value": 2,
+            "description": "Governor and safety gear fault detected."
         },
         {
             "name": "lift-shaft-device-fault",
-            "value": 3
+            "value": 3,
+            "description": "Lift shaft device fault detected."
         },
         {
             "name": "load-measurement-fault",
-            "value": 16
+            "value": 16,
+            "description": "Load measurement fault detected."
         },
         {
             "name": "position-lost",
-            "value": 14
+            "value": 14,
+            "description": "Position lost."
         },
         {
             "name": "power-supply-fault",
-            "value": 4
+            "value": 4,
+            "description": "Power supply fault detected."
         },
         {
             "name": "runtime-limit-exceeded",
-            "value": 13
+            "value": 13,
+            "description": "Runtime limit exceeded."
         },
         {
             "name": "safety-interlock-fault",
-            "value": 5
+            "value": 5,
+            "description": "Safety interlock fault detected."
         },
         {
             "name": "self-test-failure",
-            "value": 12
+            "value": 12,
+            "description": "Self-test failure detected."
         },
         {
             "name": "start-failure",
-            "value": 10
+            "value": 10,
+            "description": "Start failure detected."
         }
     ],
     "extensible": true,

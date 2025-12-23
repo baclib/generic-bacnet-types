@@ -6,15 +6,18 @@
     "items": [
         {
             "name": "all",
-            "value": 0
+            "value": 0,
+            "description": "Include all results, both successes and failures."
         },
         {
             "name": "failures-only",
-            "value": 2
+            "value": 2,
+            "description": "Include only failed results."
         },
         {
             "name": "successes-only",
-            "value": 1
+            "value": 1,
+            "description": "Include only successful results."
         }
     ],
     "extensible": false,

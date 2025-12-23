@@ -6,19 +6,23 @@
     "items": [
         {
             "name": "need-service-inoperative",
-            "value": 3
+            "value": 3,
+            "description": "Service needed while inoperative."
         },
         {
             "name": "need-service-operational",
-            "value": 2
+            "value": 2,
+            "description": "Service needed while operational."
         },
         {
             "name": "none",
-            "value": 0
+            "value": 0,
+            "description": "No maintenance required."
         },
         {
             "name": "periodic-test",
-            "value": 1
+            "value": 1,
+            "description": "Periodic test required."
         }
     ],
     "extensible": true,

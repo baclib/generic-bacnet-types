@@ -6,63 +6,78 @@
     "items": [
         {
             "name": "i-am",
-            "value": 0
+            "value": 0,
+            "description": "I-Am service - used to respond to Who-Is requests with device identification information."
         },
         {
             "name": "i-have",
-            "value": 1
+            "value": 1,
+            "description": "I-Have service - used to respond to Who-Has requests indicating possession of a specific object."
         },
         {
             "name": "time-synchronization",
-            "value": 6
+            "value": 6,
+            "description": "Time Synchronization service - used to synchronize time across BACnet devices."
         },
         {
             "name": "unconfirmed-audit-notification",
-            "value": 12
+            "value": 12,
+            "description": "Unconfirmed Audit Notification service - used to report audit log entries."
         },
         {
             "name": "unconfirmed-cov-notification",
-            "value": 2
+            "value": 2,
+            "description": "Unconfirmed COV (Change of Value) Notification service - used to report property value changes."
         },
         {
             "name": "unconfirmed-cov-notification-multiple",
-            "value": 11
+            "value": 11,
+            "description": "Unconfirmed COV Notification Multiple service - used to report multiple property value changes."
         },
         {
             "name": "unconfirmed-event-notification",
-            "value": 3
+            "value": 3,
+            "description": "Unconfirmed Event Notification service - used to report alarm and event information."
         },
         {
             "name": "unconfirmed-private-transfer",
-            "value": 4
+            "value": 4,
+            "description": "Unconfirmed Private Transfer service - used for proprietary or vendor-specific services."
         },
         {
             "name": "unconfirmed-text-message",
-            "value": 5
+            "value": 5,
+            "description": "Unconfirmed Text Message service - used to send text messages to operator displays."
         },
         {
             "name": "utc-time-synchronization",
-            "value": 9
+            "value": 9,
+            "description": "UTC Time Synchronization service - used to synchronize UTC time across BACnet devices."
         },
         {
             "name": "who-am-i",
-            "value": 13
+            "value": 13,
+            "description": "Who-Am-I service - used to request identification of the local device."
         },
         {
             "name": "who-has",
-            "value": 7
+            "value": 7,
+            "description": "Who-Has service - used to discover which device has a specific object."
         },
         {
             "name": "who-is",
-            "value": 8
+            "value": 8,
+            "description": "Who-Is service - used to discover BACnet devices on the network."
         },
         {
             "name": "write-group",
-            "value": 10
+            "value": 10,
+            "description": "Write Group service - used to write to multiple properties in a single operation."
         },
         {
             "name": "you-are",
-            "value": 14
+            "value": 14,
+            "description": "You-Are service - used to respond to Who-Am-I requests with device identification."
         }
     ],
     "extensible": false,

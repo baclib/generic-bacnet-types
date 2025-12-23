@@ -6,23 +6,28 @@
     "items": [
         {
             "name": "configured",
-            "value": 2
+            "value": 2,
+            "description": "Configured authorization posture."
         },
         {
             "name": "misconfigured-partial",
-            "value": 3
+            "value": 3,
+            "description": "Partially misconfigured authorization posture."
         },
         {
             "name": "misconfigured-total",
-            "value": 4
+            "value": 4,
+            "description": "Totally misconfigured authorization posture."
         },
         {
             "name": "open",
-            "value": 0
+            "value": 0,
+            "description": "Open authorization posture."
         },
         {
             "name": "proprietary",
-            "value": 1
+            "value": 1,
+            "description": "Proprietary authorization posture."
         }
     ],
     "extensible": false,

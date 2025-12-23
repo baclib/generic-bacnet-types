@@ -6,27 +6,33 @@
     "items": [
         {
             "name": "down",
-            "value": 4
+            "value": 4,
+            "description": "Lift car is moving down."
         },
         {
             "name": "none",
-            "value": 1
+            "value": 1,
+            "description": "No direction."
         },
         {
             "name": "stopped",
-            "value": 2
+            "value": 2,
+            "description": "Lift car is stopped."
         },
         {
             "name": "unknown",
-            "value": 0
+            "value": 0,
+            "description": "Direction is unknown."
         },
         {
             "name": "up",
-            "value": 3
+            "value": 3,
+            "description": "Lift car is moving up."
         },
         {
             "name": "up-and-down",
-            "value": 5
+            "value": 5,
+            "description": "Lift car is moving up and down."
         }
     ],
     "extensible": true,

@@ -6,23 +6,28 @@
     "items": [
         {
             "name": "fade-active",
-            "value": 1
+            "value": 1,
+            "description": "A fade operation is active."
         },
         {
             "name": "idle",
-            "value": 0
+            "value": 0,
+            "description": "No color operation is in progress."
         },
         {
             "name": "not-controlled",
-            "value": 3
+            "value": 3,
+            "description": "The color operation is not controlled."
         },
         {
             "name": "other",
-            "value": 4
+            "value": 4,
+            "description": "Other color operation in progress."
         },
         {
             "name": "ramp-active",
-            "value": 2
+            "value": 2,
+            "description": "A ramp operation is active."
         }
     ],
     "extensible": false,

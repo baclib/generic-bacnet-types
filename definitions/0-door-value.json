@@ -6,19 +6,23 @@
     "items": [
         {
             "name": "extended-pulse-unlock",
-            "value": 3
+            "value": 3,
+            "description": "Extended pulse unlock the door."
         },
         {
             "name": "lock",
-            "value": 0
+            "value": 0,
+            "description": "Lock the door."
         },
         {
             "name": "pulse-unlock",
-            "value": 2
+            "value": 2,
+            "description": "Pulse unlock the door."
         },
         {
             "name": "unlock",
-            "value": 1
+            "value": 1,
+            "description": "Unlock the door."
         }
     ],
     "extensible": false,

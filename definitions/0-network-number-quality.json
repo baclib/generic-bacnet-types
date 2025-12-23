@@ -6,19 +6,23 @@
     "items": [
         {
             "name": "configured",
-            "value": 3
+            "value": 3,
+            "description": "Network number is configured."
         },
         {
             "name": "learned",
-            "value": 1
+            "value": 1,
+            "description": "Network number is learned."
         },
         {
             "name": "learned-configured",
-            "value": 2
+            "value": 2,
+            "description": "Network number is learned and configured."
         },
         {
             "name": "unknown",
-            "value": 0
+            "value": 0,
+            "description": "Network number quality is unknown."
         }
     ],
     "extensible": false,

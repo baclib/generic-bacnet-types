@@ -6,83 +6,103 @@
     "items": [
         {
             "name": "activated-oeo-alarm",
-            "value": 15
+            "value": 15,
+            "description": "Activated OEO alarm."
         },
         {
             "name": "activated-oeo-evacuate",
-            "value": 16
+            "value": 16,
+            "description": "Activated OEO evacuate."
         },
         {
             "name": "activated-oeo-phase1-recall",
-            "value": 17
+            "value": 17,
+            "description": "Activated OEO phase 1 recall."
         },
         {
             "name": "activated-oeo-unavailable",
-            "value": 18
+            "value": 18,
+            "description": "Activated OEO unavailable."
         },
         {
             "name": "armed",
-            "value": 5
+            "value": 5,
+            "description": "Armed mode."
         },
         {
             "name": "automatic-release-disabled",
-            "value": 13
+            "value": 13,
+            "description": "Automatic release disabled."
         },
         {
             "name": "deactivated",
-            "value": 19
+            "value": 19,
+            "description": "Deactivated mode."
         },
         {
             "name": "default",
-            "value": 14
+            "value": 14,
+            "description": "Default mode."
         },
         {
             "name": "disabled",
-            "value": 12
+            "value": 12,
+            "description": "Disabled mode."
         },
         {
             "name": "disarmed",
-            "value": 6
+            "value": 6,
+            "description": "Disarmed mode."
         },
         {
             "name": "disconnected",
-            "value": 10
+            "value": 10,
+            "description": "Disconnected mode."
         },
         {
             "name": "enabled",
-            "value": 11
+            "value": 11,
+            "description": "Enabled mode."
         },
         {
             "name": "fast",
-            "value": 9
+            "value": 9,
+            "description": "Fast mode."
         },
         {
             "name": "manned",
-            "value": 3
+            "value": 3,
+            "description": "Manned mode."
         },
         {
             "name": "off",
-            "value": 0
+            "value": 0,
+            "description": "Life safety mode is off."
         },
         {
             "name": "on",
-            "value": 1
+            "value": 1,
+            "description": "Life safety mode is on."
         },
         {
             "name": "prearmed",
-            "value": 7
+            "value": 7,
+            "description": "Prearmed mode."
         },
         {
             "name": "slow",
-            "value": 8
+            "value": 8,
+            "description": "Slow mode."
         },
         {
             "name": "test",
-            "value": 2
+            "value": 2,
+            "description": "Test mode."
         },
         {
             "name": "unmanned",
-            "value": 4
+            "value": 4,
+            "description": "Unmanned mode."
         }
     ],
     "extensible": true,

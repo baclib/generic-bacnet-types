@@ -6,55 +6,68 @@
     "items": [
         {
             "name": "apdu-too-long",
-            "value": 11
+            "value": 11,
+            "description": "APDU is too long to process."
         },
         {
             "name": "application-exceeded-reply-time",
-            "value": 8
+            "value": 8,
+            "description": "Application exceeded the allowed reply time."
         },
         {
             "name": "buffer-overflow",
-            "value": 1
+            "value": 1,
+            "description": "Buffer overflow occurred during processing."
         },
         {
             "name": "inconsistent-attributes",
-            "value": 12
+            "value": 12,
+            "description": "Inconsistent attributes detected."
         },
         {
             "name": "insufficient-security",
-            "value": 6
+            "value": 6,
+            "description": "Insufficient security level for the requested operation."
         },
         {
             "name": "invalid-apdu-in-this-state",
-            "value": 2
+            "value": 2,
+            "description": "Invalid APDU received in the current state."
         },
         {
             "name": "other",
-            "value": 0
+            "value": 0,
+            "description": "Other reason not covered by the enumerated values."
         },
         {
             "name": "out-of-resources",
-            "value": 9
+            "value": 9,
+            "description": "Out of resources to complete the operation."
         },
         {
             "name": "preempted-by-higher-priority-task",
-            "value": 3
+            "value": 3,
+            "description": "Operation was preempted by a higher priority task."
         },
         {
             "name": "security-error",
-            "value": 5
+            "value": 5,
+            "description": "A security error occurred."
         },
         {
             "name": "segmentation-not-supported",
-            "value": 4
+            "value": 4,
+            "description": "Segmentation is not supported by the device."
         },
         {
             "name": "tsm-timeout",
-            "value": 10
+            "value": 10,
+            "description": "Transaction State Machine (TSM) timeout occurred."
         },
         {
             "name": "window-size-out-of-range",
-            "value": 7
+            "value": 7,
+            "description": "Window size is out of the acceptable range."
         }
     ],
     "extensible": true,

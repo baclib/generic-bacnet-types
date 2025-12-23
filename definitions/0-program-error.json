@@ -6,23 +6,28 @@
     "items": [
         {
             "name": "internal",
-            "value": 2
+            "value": 2,
+            "description": "Internal program error."
         },
         {
             "name": "load-failed",
-            "value": 1
+            "value": 1,
+            "description": "Program load failed."
         },
         {
             "name": "normal",
-            "value": 0
+            "value": 0,
+            "description": "No program error."
         },
         {
             "name": "other",
-            "value": 4
+            "value": 4,
+            "description": "Other program error."
         },
         {
             "name": "program",
-            "value": 3
+            "value": 3,
+            "description": "Program error."
         }
     ],
     "extensible": true,

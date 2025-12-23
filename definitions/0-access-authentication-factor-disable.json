@@ -6,27 +6,33 @@
     "items": [
         {
             "name": "disabled",
-            "value": 1
+            "value": 1,
+            "description": "Specifies that the authentication factor is disabled."
         },
         {
             "name": "disabled-damaged",
-            "value": 4
+            "value": 4,
+            "description": "Specifies that the authentication factor is disabled due to being damaged."
         },
         {
             "name": "disabled-destroyed",
-            "value": 5
+            "value": 5,
+            "description": "Specifies that the authentication factor is disabled due to being destroyed."
         },
         {
             "name": "disabled-lost",
-            "value": 2
+            "value": 2,
+            "description": "Specifies that the authentication factor is disabled due to being lost."
         },
         {
             "name": "disabled-stolen",
-            "value": 3
+            "value": 3,
+            "description": "Specifies that the authentication factor is disabled due to being stolen."
         },
         {
             "name": "none",
-            "value": 0
+            "value": 0,
+            "description": "Specifies that no disablement is present."
         }
     ],
     "extensible": true,

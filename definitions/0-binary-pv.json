@@ -6,11 +6,13 @@
     "items": [
         {
             "name": "active",
-            "value": 1
+            "value": 1,
+            "description": "The value is ACTIVE."
         },
         {
             "name": "inactive",
-            "value": 0
+            "value": 0,
+            "description": "The value is INACTIVE."
         }
     ],
     "extensible": false,

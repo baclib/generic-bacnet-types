@@ -6,27 +6,33 @@
     "items": [
         {
             "name": "halt",
-            "value": 3
+            "value": 3,
+            "description": "Halt program request."
         },
         {
             "name": "load",
-            "value": 1
+            "value": 1,
+            "description": "Load program request."
         },
         {
             "name": "ready",
-            "value": 0
+            "value": 0,
+            "description": "Program is ready."
         },
         {
             "name": "restart",
-            "value": 4
+            "value": 4,
+            "description": "Restart program request."
         },
         {
             "name": "run",
-            "value": 2
+            "value": 2,
+            "description": "Run program request."
         },
         {
             "name": "unload",
-            "value": 5
+            "value": 5,
+            "description": "Unload program request."
         }
     ],
     "extensible": false,

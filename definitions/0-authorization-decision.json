@@ -6,59 +6,73 @@
     "items": [
         {
             "name": "allow-by-local-policy",
-            "value": 1
+            "value": 1,
+            "description": "Authorization allowed by local policy."
         },
         {
             "name": "allow-by-token",
-            "value": 0
+            "value": 0,
+            "description": "Authorization allowed by token."
         },
         {
             "name": "deny-client-device",
-            "value": 7
+            "value": 7,
+            "description": "Authorization denied: client device."
         },
         {
             "name": "deny-client-method",
-            "value": 8
+            "value": 8,
+            "description": "Authorization denied: client method."
         },
         {
             "name": "deny-issuer",
-            "value": 10
+            "value": 10,
+            "description": "Authorization denied: issuer."
         },
         {
             "name": "deny-no-token-or-policy",
-            "value": 2
+            "value": 2,
+            "description": "Authorization denied: no token or policy."
         },
         {
             "name": "deny-not-after",
-            "value": 4
+            "value": 4,
+            "description": "Authorization denied: not after time."
         },
         {
             "name": "deny-not-before",
-            "value": 3
+            "value": 3,
+            "description": "Authorization denied: not before time."
         },
         {
             "name": "deny-other",
-            "value": 13
+            "value": 13,
+            "description": "Authorization denied: other reason."
         },
         {
             "name": "deny-revoked",
-            "value": 11
+            "value": 11,
+            "description": "Authorization denied: revoked."
         },
         {
             "name": "deny-scope",
-            "value": 9
+            "value": 9,
+            "description": "Authorization denied: scope."
         },
         {
             "name": "deny-signature",
-            "value": 12
+            "value": 12,
+            "description": "Authorization denied: signature."
         },
         {
             "name": "deny-target-device",
-            "value": 5
+            "value": 5,
+            "description": "Authorization denied: target device."
         },
         {
             "name": "deny-target-group",
-            "value": 6
+            "value": 6,
+            "description": "Authorization denied: target group."
         }
     ],
     "extensible": false,

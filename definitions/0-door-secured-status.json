@@ -6,15 +6,18 @@
     "items": [
         {
             "name": "secured",
-            "value": 0
+            "value": 0,
+            "description": "Door is secured."
         },
         {
             "name": "unknown",
-            "value": 2
+            "value": 2,
+            "description": "Door secured status is unknown."
         },
         {
             "name": "unsecured",
-            "value": 1
+            "value": 1,
+            "description": "Door is unsecured."
         }
     ],
     "extensible": false,

@@ -6,47 +6,58 @@
     "items": [
         {
             "name": "arcnet",
-            "value": 1
+            "value": 1,
+            "description": "ARCNET network type."
         },
         {
             "name": "ethernet",
-            "value": 0
+            "value": 0,
+            "description": "Ethernet network type."
         },
         {
             "name": "ipv4",
-            "value": 5
+            "value": 5,
+            "description": "IPv4 network type."
         },
         {
             "name": "ipv6",
-            "value": 9
+            "value": 9,
+            "description": "IPv6 network type."
         },
         {
             "name": "lontalk",
-            "value": 4
+            "value": 4,
+            "description": "LonTalk network type."
         },
         {
             "name": "mstp",
-            "value": 2
+            "value": 2,
+            "description": "MS/TP network type."
         },
         {
             "name": "ptp",
-            "value": 3
+            "value": 3,
+            "description": "Point-to-point (PTP) network type."
         },
         {
             "name": "secure-connect",
-            "value": 11
+            "value": 11,
+            "description": "Secure Connect network type."
         },
         {
             "name": "serial",
-            "value": 10
+            "value": 10,
+            "description": "Serial network type."
         },
         {
             "name": "virtual",
-            "value": 7
+            "value": 7,
+            "description": "Virtual network type."
         },
         {
             "name": "zigbee",
-            "value": 6
+            "value": 6,
+            "description": "Zigbee network type."
         }
     ],
     "extensible": true,

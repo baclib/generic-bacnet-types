@@ -6,59 +6,73 @@
     "items": [
         {
             "name": "attendant-control",
-            "value": 5
+            "value": 5,
+            "description": "Attendant control mode."
         },
         {
             "name": "cabinet-recall",
-            "value": 9
+            "value": 9,
+            "description": "Cabinet recall mode."
         },
         {
             "name": "earthquake-operation",
-            "value": 10
+            "value": 10,
+            "description": "Earthquake operation mode."
         },
         {
             "name": "emergency-power",
-            "value": 7
+            "value": 7,
+            "description": "Emergency power mode."
         },
         {
             "name": "fire-operation",
-            "value": 11
+            "value": 11,
+            "description": "Fire operation mode."
         },
         {
             "name": "firefighter-control",
-            "value": 6
+            "value": 6,
+            "description": "Firefighter control mode."
         },
         {
             "name": "homing",
-            "value": 3
+            "value": 3,
+            "description": "Homing mode."
         },
         {
             "name": "inspection",
-            "value": 8
+            "value": 8,
+            "description": "Inspection mode."
         },
         {
             "name": "normal",
-            "value": 1
+            "value": 1,
+            "description": "Normal mode."
         },
         {
             "name": "occupant-evacuation",
-            "value": 13
+            "value": 13,
+            "description": "Occupant evacuation mode."
         },
         {
             "name": "out-of-service",
-            "value": 12
+            "value": 12,
+            "description": "Out of service mode."
         },
         {
             "name": "parking",
-            "value": 4
+            "value": 4,
+            "description": "Parking mode."
         },
         {
             "name": "unknown",
-            "value": 0
+            "value": 0,
+            "description": "Mode is unknown."
         },
         {
             "name": "vip",
-            "value": 2
+            "value": 2,
+            "description": "VIP mode."
         }
     ],
     "extensible": true,

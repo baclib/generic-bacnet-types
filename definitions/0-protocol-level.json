@@ -6,19 +6,23 @@
     "items": [
         {
             "name": "bacnet-application",
-            "value": 2
+            "value": 2,
+            "description": "BACnet application protocol level."
         },
         {
             "name": "non-bacnet-application",
-            "value": 3
+            "value": 3,
+            "description": "Non-BACnet application protocol level."
         },
         {
             "name": "physical",
-            "value": 0
+            "value": 0,
+            "description": "Physical protocol level."
         },
         {
             "name": "protocol",
-            "value": 1
+            "value": 1,
+            "description": "Protocol level."
         }
     ],
     "extensible": false,

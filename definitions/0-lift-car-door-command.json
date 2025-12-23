@@ -6,15 +6,18 @@
     "items": [
         {
             "name": "close",
-            "value": 2
+            "value": 2,
+            "description": "Close the lift car door."
         },
         {
             "name": "none",
-            "value": 0
+            "value": 0,
+            "description": "No door command."
         },
         {
             "name": "open",
-            "value": 1
+            "value": 1,
+            "description": "Open the lift car door."
         }
     ],
     "extensible": false,

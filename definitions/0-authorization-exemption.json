@@ -6,31 +6,38 @@
     "items": [
         {
             "name": "access-rights",
-            "value": 2
+            "value": 2,
+            "description": "Access rights exemption."
         },
         {
             "name": "authorization-delay",
-            "value": 6
+            "value": 6,
+            "description": "Authorization delay exemption."
         },
         {
             "name": "deny",
-            "value": 4
+            "value": 4,
+            "description": "Deny exemption."
         },
         {
             "name": "lockout",
-            "value": 3
+            "value": 3,
+            "description": "Lockout exemption."
         },
         {
             "name": "occupancy-check",
-            "value": 1
+            "value": 1,
+            "description": "Occupancy check exemption."
         },
         {
             "name": "passback",
-            "value": 0
+            "value": 0,
+            "description": "Passback exemption."
         },
         {
             "name": "verification",
-            "value": 5
+            "value": 5,
+            "description": "Verification exemption."
         }
     ],
     "extensible": true,

@@ -6,31 +6,38 @@
     "items": [
         {
             "name": "off",
-            "value": 0
+            "value": 0,
+            "description": "The value is OFF."
         },
         {
             "name": "on",
-            "value": 1
+            "value": 1,
+            "description": "The value is ON."
         },
         {
             "name": "stop",
-            "value": 5
+            "value": 5,
+            "description": "The value is STOP."
         },
         {
             "name": "toggle",
-            "value": 6
+            "value": 6,
+            "description": "The value is TOGGLE."
         },
         {
             "name": "warn",
-            "value": 2
+            "value": 2,
+            "description": "The value is WARN."
         },
         {
             "name": "warn-off",
-            "value": 3
+            "value": 3,
+            "description": "The value is WARN_OFF."
         },
         {
             "name": "warn-relinquish",
-            "value": 4
+            "value": 4,
+            "description": "The value is WARN_RELINQUISH."
         }
     ],
     "extensible": true,

@@ -6,15 +6,18 @@
     "items": [
         {
             "name": "fade",
-            "value": 1
+            "value": 1,
+            "description": "Fade color transition."
         },
         {
             "name": "none",
-            "value": 0
+            "value": 0,
+            "description": "No color transition."
         },
         {
             "name": "ramp",
-            "value": 2
+            "value": 2,
+            "description": "Ramp color transition."
         }
     ],
     "extensible": false,

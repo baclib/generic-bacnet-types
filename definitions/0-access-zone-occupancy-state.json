@@ -6,31 +6,38 @@
     "items": [
         {
             "name": "above-upper-limit",
-            "value": 4
+            "value": 4,
+            "description": "Zone occupancy is above the upper limit."
         },
         {
             "name": "at-lower-limit",
-            "value": 2
+            "value": 2,
+            "description": "Zone occupancy is at the lower limit."
         },
         {
             "name": "at-upper-limit",
-            "value": 3
+            "value": 3,
+            "description": "Zone occupancy is at the upper limit."
         },
         {
             "name": "below-lower-limit",
-            "value": 1
+            "value": 1,
+            "description": "Zone occupancy is below the lower limit."
         },
         {
             "name": "disabled",
-            "value": 5
+            "value": 5,
+            "description": "Zone occupancy is disabled."
         },
         {
             "name": "normal",
-            "value": 0
+            "value": 0,
+            "description": "Zone occupancy is normal."
         },
         {
             "name": "not-supported",
-            "value": 6
+            "value": 6,
+            "description": "Zone occupancy is not supported."
         }
     ],
     "extensible": true,

@@ -6,131 +6,163 @@
     "items": [
         {
             "name": "acknowledge-alarm",
-            "value": 0
+            "value": 0,
+            "description": "Acknowledge alarm service."
         },
         {
             "name": "add-list-element",
-            "value": 8
+            "value": 8,
+            "description": "Add list element service."
         },
         {
             "name": "atomic-read-file",
-            "value": 6
+            "value": 6,
+            "description": "Atomic read file service."
         },
         {
             "name": "atomic-write-file",
-            "value": 7
+            "value": 7,
+            "description": "Atomic write file service."
         },
         {
             "name": "audit-log-query",
-            "value": 33
+            "value": 33,
+            "description": "Audit log query service."
         },
         {
             "name": "auth-request",
-            "value": 34
+            "value": 34,
+            "description": "Authentication request service."
         },
         {
             "name": "confirmed-audit-notification",
-            "value": 32
+            "value": 32,
+            "description": "Confirmed audit notification service."
         },
         {
             "name": "confirmed-cov-notification",
-            "value": 1
+            "value": 1,
+            "description": "Confirmed COV notification service."
         },
         {
             "name": "confirmed-cov-notification-multiple",
-            "value": 31
+            "value": 31,
+            "description": "Confirmed COV notification multiple service."
         },
         {
             "name": "confirmed-event-notification",
-            "value": 2
+            "value": 2,
+            "description": "Confirmed event notification service."
         },
         {
             "name": "confirmed-private-transfer",
-            "value": 18
+            "value": 18,
+            "description": "Confirmed private transfer service."
         },
         {
             "name": "confirmed-text-message",
-            "value": 19
+            "value": 19,
+            "description": "Confirmed text message service."
         },
         {
             "name": "create-object",
-            "value": 10
+            "value": 10,
+            "description": "Create object service."
         },
         {
             "name": "delete-object",
-            "value": 11
+            "value": 11,
+            "description": "Delete object service."
         },
         {
             "name": "device-communication-control",
-            "value": 17
+            "value": 17,
+            "description": "Device communication control service."
         },
         {
             "name": "get-alarm-summary",
-            "value": 3
+            "value": 3,
+            "description": "Get alarm summary service."
         },
         {
             "name": "get-enrollment-summary",
-            "value": 4
+            "value": 4,
+            "description": "Get enrollment summary service."
         },
         {
             "name": "get-event-information",
-            "value": 29
+            "value": 29,
+            "description": "Get event information service."
         },
         {
             "name": "life-safety-operation",
-            "value": 27
+            "value": 27,
+            "description": "Life safety operation service."
         },
         {
             "name": "read-property",
-            "value": 12
+            "value": 12,
+            "description": "Read property service."
         },
         {
             "name": "read-property-multiple",
-            "value": 14
+            "value": 14,
+            "description": "Read property multiple service."
         },
         {
             "name": "read-range",
-            "value": 26
+            "value": 26,
+            "description": "Read range service."
         },
         {
             "name": "reinitialize-device",
-            "value": 20
+            "value": 20,
+            "description": "Reinitialize device service."
         },
         {
             "name": "remove-list-element",
-            "value": 9
+            "value": 9,
+            "description": "Remove list element service."
         },
         {
             "name": "subscribe-cov",
-            "value": 5
+            "value": 5,
+            "description": "Subscribe COV service."
         },
         {
             "name": "subscribe-cov-property",
-            "value": 28
+            "value": 28,
+            "description": "Subscribe COV property service."
         },
         {
             "name": "subscribe-cov-property-multiple",
-            "value": 30
+            "value": 30,
+            "description": "Subscribe COV property multiple service."
         },
         {
             "name": "vt-close",
-            "value": 22
+            "value": 22,
+            "description": "VT close service."
         },
         {
             "name": "vt-data",
-            "value": 23
+            "value": 23,
+            "description": "VT data service."
         },
         {
             "name": "vt-open",
-            "value": 21
+            "value": 21,
+            "description": "VT open service."
         },
         {
             "name": "write-property",
-            "value": 15
+            "value": 15,
+            "description": "Write property service."
         },
         {
             "name": "write-property-multiple",
-            "value": 16
+            "value": 16,
+            "description": "Write property multiple service."
         }
     ],
     "extensible": false,

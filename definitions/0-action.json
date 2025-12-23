@@ -6,11 +6,13 @@
     "items": [
         {
             "name": "direct",
-            "value": 0
+            "value": 0,
+            "description": "Direct action."
         },
         {
             "name": "reverse",
-            "value": 1
+            "value": 1,
+            "description": "Reverse action."
         }
     ],
     "extensible": false,

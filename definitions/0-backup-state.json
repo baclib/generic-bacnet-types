@@ -6,31 +6,38 @@
     "items": [
         {
             "name": "backup-failure",
-            "value": 5
+            "value": 5,
+            "description": "Backup failure state."
         },
         {
             "name": "idle",
-            "value": 0
+            "value": 0,
+            "description": "Idle state."
         },
         {
             "name": "performing-a-backup",
-            "value": 3
+            "value": 3,
+            "description": "Performing a backup state."
         },
         {
             "name": "performing-a-restore",
-            "value": 4
+            "value": 4,
+            "description": "Performing a restore state."
         },
         {
             "name": "preparing-for-backup",
-            "value": 1
+            "value": 1,
+            "description": "Preparing for backup state."
         },
         {
             "name": "preparing-for-restore",
-            "value": 2
+            "value": 2,
+            "description": "Preparing for restore state."
         },
         {
             "name": "restore-failure",
-            "value": 6
+            "value": 6,
+            "description": "Restore failure state."
         }
     ],
     "extensible": false,

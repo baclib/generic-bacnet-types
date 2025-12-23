@@ -6,39 +6,48 @@
     "items": [
         {
             "name": "comb-plate-fault",
-            "value": 8
+            "value": 8,
+            "description": "Comb plate fault detected."
         },
         {
             "name": "controller-fault",
-            "value": 0
+            "value": 0,
+            "description": "Controller fault detected."
         },
         {
             "name": "controller-supply-fault",
-            "value": 6
+            "value": 6,
+            "description": "Controller supply fault detected."
         },
         {
             "name": "drive-and-motor-fault",
-            "value": 1
+            "value": 1,
+            "description": "Drive and motor fault detected."
         },
         {
             "name": "drive-temperature-exceeded",
-            "value": 7
+            "value": 7,
+            "description": "Drive temperature exceeded."
         },
         {
             "name": "mechanical-component-fault",
-            "value": 2
+            "value": 2,
+            "description": "Mechanical component fault detected."
         },
         {
             "name": "overspeed-fault",
-            "value": 3
+            "value": 3,
+            "description": "Overspeed fault detected."
         },
         {
             "name": "power-supply-fault",
-            "value": 4
+            "value": 4,
+            "description": "Power supply fault detected."
         },
         {
             "name": "safety-device-fault",
-            "value": 5
+            "value": 5,
+            "description": "Safety device fault detected."
         }
     ],
     "extensible": true,

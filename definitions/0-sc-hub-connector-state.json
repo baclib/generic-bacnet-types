@@ -6,15 +6,18 @@
     "items": [
         {
             "name": "connected-to-failover",
-            "value": 2
+            "value": 2,
+            "description": "Connected to the failover hub."
         },
         {
             "name": "connected-to-primary",
-            "value": 1
+            "value": 1,
+            "description": "Connected to the primary hub."
         },
         {
             "name": "no-hub-connection",
-            "value": 0
+            "value": 0,
+            "description": "No connection to any hub is established."
         }
     ],
     "extensible": false,

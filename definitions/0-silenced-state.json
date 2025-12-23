@@ -6,19 +6,23 @@
     "items": [
         {
             "name": "all-silenced",
-            "value": 3
+            "value": 3,
+            "description": "Both audible and visible alarms are silenced."
         },
         {
             "name": "audible-silenced",
-            "value": 1
+            "value": 1,
+            "description": "Audible alarms are silenced."
         },
         {
             "name": "unsilenced",
-            "value": 0
+            "value": 0,
+            "description": "Neither audible nor visible alarms are silenced."
         },
         {
             "name": "visible-silenced",
-            "value": 2
+            "value": 2,
+            "description": "Visible alarms are silenced."
         }
     ],
     "extensible": true,

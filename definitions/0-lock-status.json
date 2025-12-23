@@ -6,23 +6,28 @@
     "items": [
         {
             "name": "lock-fault",
-            "value": 2
+            "value": 2,
+            "description": "Lock fault detected."
         },
         {
             "name": "locked",
-            "value": 0
+            "value": 0,
+            "description": "Lock is engaged."
         },
         {
             "name": "unknown",
-            "value": 4
+            "value": 4,
+            "description": "Lock status is unknown."
         },
         {
             "name": "unlocked",
-            "value": 1
+            "value": 1,
+            "description": "Lock is disengaged."
         },
         {
             "name": "unused",
-            "value": 3
+            "value": 3,
+            "description": "Lock status is unused."
         }
     ],
     "extensible": false,

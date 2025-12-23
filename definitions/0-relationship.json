@@ -6,123 +6,153 @@
     "items": [
         {
             "name": "adjusted-by",
-            "value": 9
+            "value": 9,
+            "description": "Adjusted by relationship."
         },
         {
             "name": "adjusts",
-            "value": 8
+            "value": 8,
+            "description": "Adjusts relationship."
         },
         {
             "name": "commanded-by",
-            "value": 7
+            "value": 7,
+            "description": "Commanded by relationship."
         },
         {
             "name": "commands",
-            "value": 6
+            "value": 6,
+            "description": "Commands relationship."
         },
         {
             "name": "contained-by",
-            "value": 3
+            "value": 3,
+            "description": "Contained by relationship."
         },
         {
             "name": "contains",
-            "value": 2
+            "value": 2,
+            "description": "Contains relationship."
         },
         {
             "name": "default",
-            "value": 1
+            "value": 1,
+            "description": "Default relationship."
         },
         {
             "name": "egress",
-            "value": 11
+            "value": 11,
+            "description": "Egress relationship."
         },
         {
             "name": "ingress",
-            "value": 10
+            "value": 10,
+            "description": "Ingress relationship."
         },
         {
             "name": "receives-air",
-            "value": 13
+            "value": 13,
+            "description": "Receives air relationship."
         },
         {
             "name": "receives-cool-air",
-            "value": 17
+            "value": 17,
+            "description": "Receives cool air relationship."
         },
         {
             "name": "receives-cool-water",
-            "value": 27
+            "value": 27,
+            "description": "Receives cool water relationship."
         },
         {
             "name": "receives-gas",
-            "value": 21
+            "value": 21,
+            "description": "Receives gas relationship."
         },
         {
             "name": "receives-hot-air",
-            "value": 15
+            "value": 15,
+            "description": "Receives hot air relationship."
         },
         {
             "name": "receives-hot-water",
-            "value": 25
+            "value": 25,
+            "description": "Receives hot water relationship."
         },
         {
             "name": "receives-power",
-            "value": 19
+            "value": 19,
+            "description": "Receives power relationship."
         },
         {
             "name": "receives-steam",
-            "value": 29
+            "value": 29,
+            "description": "Receives steam relationship."
         },
         {
             "name": "receives-water",
-            "value": 23
+            "value": 23,
+            "description": "Receives water relationship."
         },
         {
             "name": "supplies-air",
-            "value": 12
+            "value": 12,
+            "description": "Supplies air relationship."
         },
         {
             "name": "supplies-cool-air",
-            "value": 16
+            "value": 16,
+            "description": "Supplies cool air relationship."
         },
         {
             "name": "supplies-cool-water",
-            "value": 26
+            "value": 26,
+            "description": "Supplies cool water relationship."
         },
         {
             "name": "supplies-gas",
-            "value": 20
+            "value": 20,
+            "description": "Supplies gas relationship."
         },
         {
             "name": "supplies-hot-air",
-            "value": 14
+            "value": 14,
+            "description": "Supplies hot air relationship."
         },
         {
             "name": "supplies-hot-water",
-            "value": 24
+            "value": 24,
+            "description": "Supplies hot water relationship."
         },
         {
             "name": "supplies-power",
-            "value": 18
+            "value": 18,
+            "description": "Supplies power relationship."
         },
         {
             "name": "supplies-steam",
-            "value": 28
+            "value": 28,
+            "description": "Supplies steam relationship."
         },
         {
             "name": "supplies-water",
-            "value": 22
+            "value": 22,
+            "description": "Supplies water relationship."
         },
         {
             "name": "unknown",
-            "value": 0
+            "value": 0,
+            "description": "Relationship is unknown."
         },
         {
             "name": "used-by",
-            "value": 5
+            "value": 5,
+            "description": "Used by relationship."
         },
         {
             "name": "uses",
-            "value": 4
+            "value": 4,
+            "description": "Uses relationship."
         }
     ],
     "extensible": true,

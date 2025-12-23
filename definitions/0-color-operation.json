@@ -6,31 +6,38 @@
     "items": [
         {
             "name": "fade-to-cct",
-            "value": 2
+            "value": 2,
+            "description": "Fade to a specific correlated color temperature (CCT)."
         },
         {
             "name": "fade-to-color",
-            "value": 1
+            "value": 1,
+            "description": "Fade to a specific color."
         },
         {
             "name": "none",
-            "value": 0
+            "value": 0,
+            "description": "No color operation."
         },
         {
             "name": "ramp-to-cct",
-            "value": 3
+            "value": 3,
+            "description": "Ramp to a specific correlated color temperature (CCT)."
         },
         {
             "name": "step-down-cct",
-            "value": 5
+            "value": 5,
+            "description": "Step down the correlated color temperature (CCT)."
         },
         {
             "name": "step-up-cct",
-            "value": 4
+            "value": 4,
+            "description": "Step up the correlated color temperature (CCT)."
         },
         {
             "name": "stop",
-            "value": 6
+            "value": 6,
+            "description": "Stop the color operation."
         }
     ],
     "extensible": false,

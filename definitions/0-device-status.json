@@ -6,27 +6,33 @@
     "items": [
         {
             "name": "backup-in-progress",
-            "value": 5
+            "value": 5,
+            "description": "Backup is in progress."
         },
         {
             "name": "download-in-progress",
-            "value": 3
+            "value": 3,
+            "description": "Download is in progress."
         },
         {
             "name": "download-required",
-            "value": 2
+            "value": 2,
+            "description": "Device requires a download."
         },
         {
             "name": "non-operational",
-            "value": 4
+            "value": 4,
+            "description": "Device is non-operational."
         },
         {
             "name": "operational",
-            "value": 0
+            "value": 0,
+            "description": "Device is operational."
         },
         {
             "name": "operational-read-only",
-            "value": 1
+            "value": 1,
+            "description": "Device is operational but read-only."
         }
     ],
     "extensible": true,

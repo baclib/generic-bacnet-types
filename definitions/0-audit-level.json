@@ -6,19 +6,23 @@
     "items": [
         {
             "name": "audit-all",
-            "value": 1
+            "value": 1,
+            "description": "Audit all actions."
         },
         {
             "name": "audit-config",
-            "value": 2
+            "value": 2,
+            "description": "Audit configuration changes."
         },
         {
             "name": "default",
-            "value": 3
+            "value": 3,
+            "description": "Default audit level."
         },
         {
             "name": "none",
-            "value": 0
+            "value": 0,
+            "description": "No auditing."
         }
     ],
     "extensible": true,

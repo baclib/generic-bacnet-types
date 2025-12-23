@@ -6,15 +6,18 @@
     "items": [
         {
             "name": "asset",
-            "value": 0
+            "value": 0,
+            "description": "User type is an asset."
         },
         {
             "name": "group",
-            "value": 1
+            "value": 1,
+            "description": "User type is a group."
         },
         {
             "name": "person",
-            "value": 2
+            "value": 2,
+            "description": "User type is a person."
         }
     ],
     "extensible": true,

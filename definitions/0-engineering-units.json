@@ -6,1659 +6,2073 @@
     "items": [
         {
             "name": "active-energy-pulse-value",
-            "value": 47910
+            "value": 47910,
+            "description": "Millisiemens per centimeter (mS/cm)."
         },
         {
             "name": "alcohol-by-volume",
-            "value": 47817
+            "value": 47817,
+            "description": "Alcohol by volume (ABV)."
         },
         {
             "name": "ampere-seconds",
-            "value": 238
+            "value": 238,
+            "description": "Ampere-seconds (A·s)."
         },
         {
             "name": "ampere-square-hours",
-            "value": 246
+            "value": 246,
+            "description": "Ampere-square hours (A²·h)."
         },
         {
             "name": "ampere-square-meters",
-            "value": 169
+            "value": 169,
+            "description": "Ampere-square meters (A·m²)."
         },
         {
             "name": "ampere-squared-hour-pulse-value",
-            "value": 47922
+            "value": 47922,
+            "description": "Ampere-squared hour pulse value (pulse)."
         },
         {
             "name": "amperes",
-            "value": 3
+            "value": 3,
+            "description": "Amperes (A)."
         },
         {
             "name": "amperes-per-meter",
-            "value": 167
+            "value": 167,
+            "description": "Amperes per meter (A/m)."
         },
         {
             "name": "amperes-per-square-meter",
-            "value": 168
+            "value": 168,
+            "description": "Amperes per square meter (A/m²)."
         },
         {
             "name": "apparent-energy-pulse-value",
-            "value": 47920
+            "value": 47920,
+            "description": "Apparent energy pulse value (pulse)."
         },
         {
             "name": "bars",
-            "value": 55
+            "value": 55,
+            "description": "Bars (bar)."
         },
         {
             "name": "becquerels",
-            "value": 222
+            "value": 222,
+            "description": "Becquerels (Bq)."
         },
         {
             "name": "becquerels-per-cubic-meter",
-            "value": 47971
+            "value": 47971,
+            "description": "Becquerels per cubic meter (Bq/m³)."
         },
         {
             "name": "bits-per-second",
-            "value": 47929
+            "value": 47929,
+            "description": "Bits per second (bps)."
         },
         {
             "name": "btu-per-hour-per-watt",
-            "value": 47898
+            "value": 47898,
+            "description": "BTU per hour per watt (BTU/(h·W))."
         },
         {
             "name": "btu-per-watt-hour-seasonal",
-            "value": 47899
+            "value": 47899,
+            "description": "BTU per watt-hour seasonal (BTU/(W·h))."
         },
         {
             "name": "btus",
-            "value": 20
+            "value": 20,
+            "description": "BTUs (BTU)."
         },
         {
             "name": "btus-per-day",
-            "value": 47850
+            "value": 47850,
+            "description": "BTUs per day (BTU/d)."
         },
         {
             "name": "btus-per-hour",
-            "value": 50
+            "value": 50,
+            "description": "BTUs per hour (BTU/h)."
         },
         {
             "name": "btus-per-minute",
-            "value": 47849
+            "value": 47849,
+            "description": "BTUs per minute (BTU/min)."
         },
         {
             "name": "btus-per-pound",
-            "value": 117
+            "value": 117,
+            "description": "BTUs per pound (BTU/lb)."
         },
         {
             "name": "btus-per-pound-dry-air",
-            "value": 24
+            "value": 24,
+            "description": "BTUs per pound dry air (BTU/lb)."
         },
         {
             "name": "btus-per-second",
-            "value": 47848
+            "value": 47848,
+            "description": "BTUs per second (BTU/s)."
         },
         {
             "name": "bytes-per-second",
-            "value": 47933
+            "value": 47933,
+            "description": "Bytes per second (B/s)."
         },
         {
             "name": "candelas",
-            "value": 179
+            "value": 179,
+            "description": "Candelas (cd)."
         },
         {
             "name": "candelas-per-square-meter",
-            "value": 180
+            "value": 180,
+            "description": "Candelas per square meter (cd/m²)."
         },
         {
             "name": "centimeters",
-            "value": 118
+            "value": 118,
+            "description": "Centimeters (cm)."
         },
         {
             "name": "centimeters-of-mercury",
-            "value": 60
+            "value": 60,
+            "description": "Centimeters of mercury (cmHg)."
         },
         {
             "name": "centimeters-of-water",
-            "value": 57
+            "value": 57,
+            "description": "Centimeters of water (cmH₂O)."
         },
         {
             "name": "coefficient-of-performance",
-            "value": 47900
+            "value": 47900,
+            "description": "Coefficient of performance (COP)."
         },
         {
             "name": "coefficient-of-performance-seasonal",
-            "value": 47901
+            "value": 47901,
+            "description": "Coefficient of performance seasonal (SCOP)."
         },
         {
             "name": "cubic-feet",
-            "value": 79
+            "value": 79,
+            "description": "Cubic feet (ft³)."
         },
         {
             "name": "cubic-feet-per-day",
-            "value": 248
+            "value": 248,
+            "description": "Cubic feet per day (ft³/d)."
         },
         {
             "name": "cubic-feet-per-hour",
-            "value": 191
+            "value": 191,
+            "description": "Cubic feet per hour (ft³/h)."
         },
         {
             "name": "cubic-feet-per-minute",
-            "value": 84
+            "value": 84,
+            "description": "Cubic feet per minute (CFM)."
         },
         {
             "name": "cubic-feet-per-second",
-            "value": 142
+            "value": 142,
+            "description": "Cubic feet per second (ft³/s)."
         },
         {
             "name": "cubic-meter-pulse-value",
-            "value": 47923
+            "value": 47923,
+            "description": "Cubic meter pulse value (pulse)."
         },
         {
             "name": "cubic-meters",
-            "value": 80
+            "value": 80,
+            "description": "Cubic meters (m³)."
         },
         {
             "name": "cubic-meters-per-day",
-            "value": 249
+            "value": 249,
+            "description": "Cubic meters per day (m³/d)."
         },
         {
             "name": "cubic-meters-per-hour",
-            "value": 135
+            "value": 135,
+            "description": "Cubic meters per hour (m³/h)."
         },
         {
             "name": "cubic-meters-per-minute",
-            "value": 165
+            "value": 165,
+            "description": "Cubic meters per minute (m³/min)."
         },
         {
             "name": "cubic-meters-per-second",
-            "value": 85
+            "value": 85,
+            "description": "Cubic meters per second (m³/s)."
         },
         {
             "name": "currency1",
-            "value": 105
+            "value": 105,
+            "description": "Currency 1 (site-specific)."
         },
         {
             "name": "currency10",
-            "value": 114
+            "value": 114,
+            "description": "Currency 10 (site-specific)."
         },
         {
             "name": "currency2",
-            "value": 106
+            "value": 106,
+            "description": "Currency 2 (site-specific)."
         },
         {
             "name": "currency3",
-            "value": 107
+            "value": 107,
+            "description": "Currency 3 (site-specific)."
         },
         {
             "name": "currency4",
-            "value": 108
+            "value": 108,
+            "description": "Currency 4 (site-specific)."
         },
         {
             "name": "currency5",
-            "value": 109
+            "value": 109,
+            "description": "Currency 5 (site-specific)."
         },
         {
             "name": "currency6",
-            "value": 110
+            "value": 110,
+            "description": "Currency 6 (site-specific)."
         },
         {
             "name": "currency7",
-            "value": 111
+            "value": 111,
+            "description": "Currency 7 (site-specific)."
         },
         {
             "name": "currency8",
-            "value": 112
+            "value": 112,
+            "description": "Currency 8 (site-specific)."
         },
         {
             "name": "currency9",
-            "value": 113
+            "value": 113,
+            "description": "Currency 9 (site-specific)."
         },
         {
             "name": "cycles-per-hour",
-            "value": 25
+            "value": 25,
+            "description": "Cycles per hour (cph)."
         },
         {
             "name": "cycles-per-minute",
-            "value": 26
+            "value": 26,
+            "description": "Cycles per minute (cpm)."
         },
         {
             "name": "days",
-            "value": 70
+            "value": 70,
+            "description": "Days (d)."
         },
         {
             "name": "decibels",
-            "value": 199
+            "value": 199,
+            "description": "Decibels (dB)."
         },
         {
             "name": "decibels-a",
-            "value": 232
+            "value": 232,
+            "description": "Decibels A-weighted (dB(A))."
         },
         {
             "name": "decibels-millivolt",
-            "value": 200
+            "value": 200,
+            "description": "Decibels millivolt (dBmV)."
         },
         {
             "name": "decibels-volt",
-            "value": 201
+            "value": 201,
+            "description": "Decibels volt (dBV)."
         },
         {
             "name": "degree-days-celsius",
-            "value": 65
+            "value": 65,
+            "description": "Degree-days Celsius (°C·d)."
         },
         {
             "name": "degree-days-fahrenheit",
-            "value": 66
+            "value": 66,
+            "description": "Degree-days Fahrenheit (°F·d)."
         },
         {
             "name": "degree-hours-celsius",
-            "value": 47973
+            "value": 47973,
+            "description": "Degree-hours Celsius (°C·h)."
         },
         {
             "name": "degree-hours-fahrenheit",
-            "value": 47974
+            "value": 47974,
+            "description": "Degree-hours Fahrenheit (°F·h)."
         },
         {
             "name": "degree-minutes-celsius",
-            "value": 47975
+            "value": 47975,
+            "description": "Degree-minutes Celsius (°C·min)."
         },
         {
             "name": "degree-minutes-fahrenheit",
-            "value": 47976
+            "value": 47976,
+            "description": "Degree-minutes Fahrenheit (°F·min)."
         },
         {
             "name": "degree-seconds-celsius",
-            "value": 47977
+            "value": 47977,
+            "description": "Degree-seconds Celsius (°C·s)."
         },
         {
             "name": "degree-seconds-fahrenheit",
-            "value": 47978
+            "value": 47978,
+            "description": "Degree-seconds Fahrenheit (°F·s)."
         },
         {
             "name": "degrees-angular",
-            "value": 90
+            "value": 90,
+            "description": "Degrees angular (°)."
         },
         {
             "name": "degrees-celsius",
-            "value": 62
+            "value": 62,
+            "description": "Degrees Celsius (°C)."
         },
         {
             "name": "degrees-celsius-per-day",
-            "value": 47869
+            "value": 47869,
+            "description": "Degrees Celsius per day (°C/d)."
         },
         {
             "name": "degrees-celsius-per-hour",
-            "value": 91
+            "value": 91,
+            "description": "Degrees Celsius per hour (°C/h)."
         },
         {
             "name": "degrees-celsius-per-minute",
-            "value": 92
+            "value": 92,
+            "description": "Degrees Celsius per minute (°C/min)."
         },
         {
             "name": "degrees-fahrenheit",
-            "value": 64
+            "value": 64,
+            "description": "Degrees Fahrenheit (°F)."
         },
         {
             "name": "degrees-fahrenheit-per-day",
-            "value": 47871
+            "value": 47871,
+            "description": "Degrees Fahrenheit per day (°F/d)."
         },
         {
             "name": "degrees-fahrenheit-per-hour",
-            "value": 93
+            "value": 93,
+            "description": "Degrees Fahrenheit per hour (°F/h)."
         },
         {
             "name": "degrees-fahrenheit-per-minute",
-            "value": 94
+            "value": 94,
+            "description": "Degrees Fahrenheit per minute (°F/min)."
         },
         {
             "name": "degrees-lovibond",
-            "value": 47816
+            "value": 47816,
+            "description": "Degrees Lovibond (°L)."
         },
         {
             "name": "degrees-phase",
-            "value": 14
+            "value": 14,
+            "description": "Degrees phase (°)."
         },
         {
             "name": "degrees-plato",
-            "value": 47820
+            "value": 47820,
+            "description": "Degrees Plato (°P)."
         },
         {
             "name": "delta-degrees-celsius",
-            "value": 47872
+            "value": 47872,
+            "description": "Delta degrees Celsius (Δ°C)."
         },
         {
             "name": "delta-degrees-fahrenheit",
-            "value": 120
+            "value": 120,
+            "description": "Delta degrees Fahrenheit (Δ°F)."
         },
         {
             "name": "delta-kelvin",
-            "value": 121
+            "value": 121,
+            "description": "Delta Kelvin (ΔK)."
         },
         {
             "name": "european-bitterness-units",
-            "value": 47819
+            "value": 47819,
+            "description": "European bitterness units (EBU)."
         },
         {
             "name": "european-brewing-convention",
-            "value": 47822
+            "value": 47822,
+            "description": "European Brewing Convention (EBC)."
         },
         {
             "name": "farads",
-            "value": 170
+            "value": 170,
+            "description": "Farads (F)."
         },
         {
             "name": "feet",
-            "value": 33
+            "value": 33,
+            "description": "Feet (ft)."
         },
         {
             "name": "feet-per-minute",
-            "value": 77
+            "value": 77,
+            "description": "Feet per minute (ft/min)."
         },
         {
             "name": "feet-per-second",
-            "value": 76
+            "value": 76,
+            "description": "Feet per second (ft/s)."
         },
         {
             "name": "foot-candles",
-            "value": 38
+            "value": 38,
+            "description": "Foot-candles (fc)."
         },
         {
             "name": "gigabits-per-second",
-            "value": 47932
+            "value": 47932,
+            "description": "Gigabits per second (Gbps)."
         },
         {
             "name": "gigabytes-per-second",
-            "value": 47936
+            "value": 47936,
+            "description": "Gigabytes per second (GB/s)."
         },
         {
             "name": "gigawatts",
-            "value": 47924
+            "value": 47924,
+            "description": "Gigawatts (GW)."
         },
         {
             "name": "grains-of-water-per-pound-dry-air",
-            "value": 47972
+            "value": 47972,
+            "description": "Grains of water per pound dry air (gr/lb)."
         },
         {
             "name": "grams",
-            "value": 195
+            "value": 195,
+            "description": "Grams (g)."
         },
         {
             "name": "grams-of-water-per-kilogram-dry-air",
-            "value": 28
+            "value": 28,
+            "description": "Grams of water per kilogram dry air (g/kg)."
         },
         {
             "name": "grams-per-cubic-centimeter",
-            "value": 221
+            "value": 221,
+            "description": "Grams per cubic centimeter (g/cm³)."
         },
         {
             "name": "grams-per-cubic-meter",
-            "value": 217
+            "value": 217,
+            "description": "Grams per cubic meter (g/m³)."
         },
         {
             "name": "grams-per-day",
-            "value": 47834
+            "value": 47834,
+            "description": "Grams per day (g/d)."
         },
         {
             "name": "grams-per-gram",
-            "value": 208
+            "value": 208,
+            "description": "Grams per gram (g/g)."
         },
         {
             "name": "grams-per-hour",
-            "value": 47833
+            "value": 47833,
+            "description": "Grams per hour (g/h)."
         },
         {
             "name": "grams-per-kilogram",
-            "value": 210
+            "value": 210,
+            "description": "Grams per kilogram (g/kg)."
         },
         {
             "name": "grams-per-liter",
-            "value": 214
+            "value": 214,
+            "description": "Grams per liter (g/L)."
         },
         {
             "name": "grams-per-milliliter",
-            "value": 213
+            "value": 213,
+            "description": "Grams per milliliter (g/mL)."
         },
         {
             "name": "grams-per-minute",
-            "value": 155
+            "value": 155,
+            "description": "Grams per minute (g/min)."
         },
         {
             "name": "grams-per-second",
-            "value": 154
+            "value": 154,
+            "description": "Grams per second (g/s)."
         },
         {
             "name": "grams-per-square-meter",
-            "value": 235
+            "value": 235,
+            "description": "Grams per square meter (g/m²)."
         },
         {
             "name": "gray",
-            "value": 225
+            "value": 225,
+            "description": "Gray (Gy)."
         },
         {
             "name": "hectopascals",
-            "value": 133
+            "value": 133,
+            "description": "Hectopascals (hPa)."
         },
         {
             "name": "henrys",
-            "value": 171
+            "value": 171,
+            "description": "Henrys (H)."
         },
         {
             "name": "hertz",
-            "value": 27
+            "value": 27,
+            "description": "Hertz (Hz)."
         },
         {
             "name": "horsepower",
-            "value": 51
+            "value": 51,
+            "description": "Horsepower (hp)."
         },
         {
             "name": "hours",
-            "value": 71
+            "value": 71,
+            "description": "Hours (h)."
         },
         {
             "name": "hundredths-seconds",
-            "value": 158
+            "value": 158,
+            "description": "Hundredths seconds (cs)."
         },
         {
             "name": "imperial-gallons",
-            "value": 81
+            "value": 81,
+            "description": "Imperial gallons (imp gal)."
         },
         {
             "name": "imperial-gallons-per-minute",
-            "value": 86
+            "value": 86,
+            "description": "Imperial gallons per minute (imp gal/min)."
         },
         {
             "name": "imperial-gallons-per-second",
-            "value": 47875
+            "value": 47875,
+            "description": "Imperial gallons per second (imp gal/s)."
         },
         {
             "name": "inches",
-            "value": 32
+            "value": 32,
+            "description": "Inches (in)."
         },
         {
             "name": "inches-of-mercury",
-            "value": 61
+            "value": 61,
+            "description": "Inches of mercury (inHg)."
         },
         {
             "name": "inches-of-water",
-            "value": 58
+            "value": 58,
+            "description": "Inches of water (inH₂O)."
         },
         {
             "name": "international-bittering-units",
-            "value": 47818
+            "value": 47818,
+            "description": "International bittering units (IBU)."
         },
         {
             "name": "joule-seconds",
-            "value": 183
+            "value": 183,
+            "description": "Joule-seconds (J·s)."
         },
         {
             "name": "joules",
-            "value": 16
+            "value": 16,
+            "description": "Joules (J)."
         },
         {
             "name": "joules-per-cubic-meter",
-            "value": 251
+            "value": 251,
+            "description": "Joules per cubic meter (J/m³)."
         },
         {
             "name": "joules-per-day",
-            "value": 47860
+            "value": 47860,
+            "description": "Joules per day (J/d)."
         },
         {
             "name": "joules-per-hour",
-            "value": 247
+            "value": 247,
+            "description": "Joules per hour (J/h)."
         },
         {
             "name": "joules-per-kelvin",
-            "value": 127
+            "value": 127,
+            "description": "Joules per Kelvin (J/K)."
         },
         {
             "name": "joules-per-kilogram-dry-air",
-            "value": 23
+            "value": 23,
+            "description": "Joules per kilogram dry air (J/kg)."
         },
         {
             "name": "joules-per-kilogram-kelvin",
-            "value": 128
+            "value": 128,
+            "description": "Joules per kilogram Kelvin (J/(kg·K))."
         },
         {
             "name": "joules-per-minute",
-            "value": 47859
+            "value": 47859,
+            "description": "Joules per minute (J/min)."
         },
         {
             "name": "joules-per-second",
-            "value": 47858
+            "value": 47858,
+            "description": "Joules per second (J/s)."
         },
         {
             "name": "kelvin",
-            "value": 63
+            "value": 63,
+            "description": "Kelvin (K)."
         },
         {
             "name": "kelvin-per-hour",
-            "value": 181
+            "value": 181,
+            "description": "Kelvin per hour (K/h)."
         },
         {
             "name": "kelvin-per-minute",
-            "value": 182
+            "value": 182,
+            "description": "Kelvin per minute (K/min)."
         },
         {
             "name": "kilo-btus",
-            "value": 147
+            "value": 147,
+            "description": "Kilo-BTUs (kBTU)."
         },
         {
             "name": "kilo-btus-per-day",
-            "value": 47853
+            "value": 47853,
+            "description": "Kilo-BTUs per day (kBTU/d)."
         },
         {
             "name": "kilo-btus-per-hour",
-            "value": 157
+            "value": 157,
+            "description": "Kilo-BTUs per hour (kBTU/h)."
         },
         {
             "name": "kilo-btus-per-minute",
-            "value": 47852
+            "value": 47852,
+            "description": "Kilo-BTUs per minute (kBTU/min)."
         },
         {
             "name": "kilo-btus-per-second",
-            "value": 47851
+            "value": 47851,
+            "description": "Kilo-BTUs per second (kBTU/s)."
         },
         {
             "name": "kilobecquerels",
-            "value": 223
+            "value": 223,
+            "description": "Kilobecquerels (kBq)."
         },
         {
             "name": "kilobits-per-second",
-            "value": 47930
+            "value": 47930,
+            "description": "Kilobits per second (kbps)."
         },
         {
             "name": "kilobytes-per-second",
-            "value": 47934
+            "value": 47934,
+            "description": "Kilobytes per second (KB/s)."
         },
         {
             "name": "kilograms",
-            "value": 39
+            "value": 39,
+            "description": "Kilograms (kg)."
         },
         {
             "name": "kilograms-per-cubic-meter",
-            "value": 186
+            "value": 186,
+            "description": "Kilograms per cubic meter (kg/m³)."
         },
         {
             "name": "kilograms-per-day",
-            "value": 47835
+            "value": 47835,
+            "description": "Kilograms per day (kg/d)."
         },
         {
             "name": "kilograms-per-hour",
-            "value": 44
+            "value": 44,
+            "description": "Kilograms per hour (kg/h)."
         },
         {
             "name": "kilograms-per-kilogram",
-            "value": 209
+            "value": 209,
+            "description": "Kilograms per kilogram (kg/kg)."
         },
         {
             "name": "kilograms-per-liter",
-            "value": 47893
+            "value": 47893,
+            "description": "Kilograms per liter (kg/L)."
         },
         {
             "name": "kilograms-per-minute",
-            "value": 43
+            "value": 43,
+            "description": "Kilograms per minute (kg/min)."
         },
         {
             "name": "kilograms-per-second",
-            "value": 42
+            "value": 42,
+            "description": "Kilograms per second (kg/s)."
         },
         {
             "name": "kilohertz",
-            "value": 129
+            "value": 129,
+            "description": "Kilohertz (kHz)."
         },
         {
             "name": "kilojoules",
-            "value": 17
+            "value": 17,
+            "description": "Kilojoules (kJ)."
         },
         {
             "name": "kilojoules-per-day",
-            "value": 47864
+            "value": 47864,
+            "description": "Kilojoules per day (kJ/d)."
         },
         {
             "name": "kilojoules-per-hour",
-            "value": 47863
+            "value": 47863,
+            "description": "Kilojoules per hour (kJ/h)."
         },
         {
             "name": "kilojoules-per-kelvin",
-            "value": 151
+            "value": 151,
+            "description": "Kilojoules per Kelvin (kJ/K)."
         },
         {
             "name": "kilojoules-per-kilogram",
-            "value": 125
+            "value": 125,
+            "description": "Kilojoules per kilogram (kJ/kg)."
         },
         {
             "name": "kilojoules-per-kilogram-dry-air",
-            "value": 149
+            "value": 149,
+            "description": "Kilojoules per kilogram dry air (kJ/kg)."
         },
         {
             "name": "kilojoules-per-minute",
-            "value": 47862
+            "value": 47862,
+            "description": "Kilojoules per minute (kJ/min)."
         },
         {
             "name": "kilojoules-per-second",
-            "value": 47861
+            "value": 47861,
+            "description": "Kilojoules per second (kJ/s)."
         },
         {
             "name": "kilometers",
-            "value": 193
+            "value": 193,
+            "description": "Kilometers (km)."
         },
         {
             "name": "kilometers-per-hour",
-            "value": 75
+            "value": 75,
+            "description": "Kilometers per hour (km/h)."
         },
         {
             "name": "kiloohms",
-            "value": 122
+            "value": 122,
+            "description": "Kiloohms (kΩ)."
         },
         {
             "name": "kilopascals",
-            "value": 54
+            "value": 54,
+            "description": "Kilopascals (kPa)."
         },
         {
             "name": "kilovolt-ampere-hours",
-            "value": 240
+            "value": 240,
+            "description": "Kilovolt-ampere-hours (kVA·h)."
         },
         {
             "name": "kilovolt-ampere-hours-reactive",
-            "value": 243
+            "value": 243,
+            "description": "Kilovolt-ampere-hours reactive (kvarh)."
         },
         {
             "name": "kilovolt-amperes",
-            "value": 9
+            "value": 9,
+            "description": "Kilovolt-amperes (kVA)."
         },
         {
             "name": "kilovolt-amperes-reactive",
-            "value": 12
+            "value": 12,
+            "description": "Kilovolt-amperes reactive (kvar)."
         },
         {
             "name": "kilovolts",
-            "value": 6
+            "value": 6,
+            "description": "Kilovolts (kV)."
         },
         {
             "name": "kilowatt-hours",
-            "value": 19
+            "value": 19,
+            "description": "Kilowatt-hours (kWh)."
         },
         {
             "name": "kilowatt-hours-per-square-foot",
-            "value": 138
+            "value": 138,
+            "description": "Kilowatt-hours per square foot (kWh/ft²)."
         },
         {
             "name": "kilowatt-hours-per-square-meter",
-            "value": 137
+            "value": 137,
+            "description": "Kilowatt-hours per square meter (kWh/m²)."
         },
         {
             "name": "kilowatt-hours-reactive",
-            "value": 204
+            "value": 204,
+            "description": "Kilowatt-hours reactive (kvarh)."
         },
         {
             "name": "kilowatt-per-ton-refrigeration",
-            "value": 47902
+            "value": 47902,
+            "description": "Kilowatt per ton refrigeration (kW/TR)."
         },
         {
             "name": "kilowatts",
-            "value": 48
+            "value": 48,
+            "description": "Kilowatts (kW)."
         },
         {
             "name": "liters",
-            "value": 82
+            "value": 82,
+            "description": "Liters (L)."
         },
         {
             "name": "liters-per-day",
-            "value": 47878
+            "value": 47878,
+            "description": "Liters per day (L/d)."
         },
         {
             "name": "liters-per-hour",
-            "value": 136
+            "value": 136,
+            "description": "Liters per hour (L/h)."
         },
         {
             "name": "liters-per-minute",
-            "value": 88
+            "value": 88,
+            "description": "Liters per minute (L/min)."
         },
         {
             "name": "liters-per-second",
-            "value": 87
+            "value": 87,
+            "description": "Liters per second (L/s)."
         },
         {
             "name": "long-tons",
-            "value": 47832
+            "value": 47832,
+            "description": "Long tons (long ton)."
         },
         {
             "name": "long-tons-per-day",
-            "value": 47847
+            "value": 47847,
+            "description": "Long tons per day (long ton/d)."
         },
         {
             "name": "long-tons-per-hour",
-            "value": 47846
+            "value": 47846,
+            "description": "Long tons per hour (long ton/h)."
         },
         {
             "name": "long-tons-per-minute",
-            "value": 47845
+            "value": 47845,
+            "description": "Long tons per minute (long ton/min)."
         },
         {
             "name": "long-tons-per-second",
-            "value": 47844
+            "value": 47844,
+            "description": "Long tons per second (long ton/s)."
         },
         {
             "name": "lumens",
-            "value": 36
+            "value": 36,
+            "description": "Lumens (lm)."
         },
         {
             "name": "lumens-per-watt",
-            "value": 47903
+            "value": 47903,
+            "description": "Lumens per watt (lm/W)."
         },
         {
             "name": "luxes",
-            "value": 37
+            "value": 37,
+            "description": "Luxes (lx)."
         },
         {
             "name": "mega-btus",
-            "value": 148
+            "value": 148,
+            "description": "Mega-BTUs (MBTU)."
         },
         {
             "name": "mega-btus-per-day",
-            "value": 47857
+            "value": 47857,
+            "description": "Mega-BTUs per day (MBTU/d)."
         },
         {
             "name": "mega-btus-per-hour",
-            "value": 47856
+            "value": 47856,
+            "description": "Mega-BTUs per hour (MBTU/h)."
         },
         {
             "name": "mega-btus-per-minute",
-            "value": 47855
+            "value": 47855,
+            "description": "Mega-BTUs per minute (MBTU/min)."
         },
         {
             "name": "mega-btus-per-second",
-            "value": 47854
+            "value": 47854,
+            "description": "Mega-BTUs per second (MBTU/s)."
         },
         {
             "name": "megabecquerels",
-            "value": 224
+            "value": 224,
+            "description": "Megabecquerels (MBq)."
         },
         {
             "name": "megabits-per-second",
-            "value": 47931
+            "value": 47931,
+            "description": "Megabits per second (Mbps)."
         },
         {
             "name": "megabytes-per-second",
-            "value": 47935
+            "value": 47935,
+            "description": "Megabytes per second (MB/s)."
         },
         {
             "name": "megahertz",
-            "value": 130
+            "value": 130,
+            "description": "Megahertz (MHz)."
         },
         {
             "name": "megajoules",
-            "value": 126
+            "value": 126,
+            "description": "Megajoules (MJ)."
         },
         {
             "name": "megajoules-per-day",
-            "value": 47868
+            "value": 47868,
+            "description": "Megajoules per day (MJ/d)."
         },
         {
             "name": "megajoules-per-hour",
-            "value": 47867
+            "value": 47867,
+            "description": "Megajoules per hour (MJ/h)."
         },
         {
             "name": "megajoules-per-kelvin",
-            "value": 152
+            "value": 152,
+            "description": "Megajoules per Kelvin (MJ/K)."
         },
         {
             "name": "megajoules-per-kilogram-dry-air",
-            "value": 150
+            "value": 150,
+            "description": "Megajoules per kilogram dry air (MJ/kg)."
         },
         {
             "name": "megajoules-per-minute",
-            "value": 47866
+            "value": 47866,
+            "description": "Megajoules per minute (MJ/min)."
         },
         {
             "name": "megajoules-per-second",
-            "value": 47865
+            "value": 47865,
+            "description": "Megajoules per second (MJ/s)."
         },
         {
             "name": "megajoules-per-square-foot",
-            "value": 140
+            "value": 140,
+            "description": "Megajoules per square foot (MJ/ft²)."
         },
         {
             "name": "megajoules-per-square-meter",
-            "value": 139
+            "value": 139,
+            "description": "Megajoules per square meter (MJ/m²)."
         },
         {
             "name": "megaohms",
-            "value": 123
+            "value": 123,
+            "description": "Megaohms (MΩ)."
         },
         {
             "name": "megavolt-ampere-hours",
-            "value": 241
+            "value": 241,
+            "description": "Megavolt-ampere-hours (MVA·h)."
         },
         {
             "name": "megavolt-ampere-hours-reactive",
-            "value": 244
+            "value": 244,
+            "description": "Megavolt-ampere-hours reactive (Mvarh)."
         },
         {
             "name": "megavolt-amperes",
-            "value": 10
+            "value": 10,
+            "description": "Megavolt-amperes (MVA)."
         },
         {
             "name": "megavolt-amperes-reactive",
-            "value": 13
+            "value": 13,
+            "description": "Megavolt-amperes reactive (Mvar)."
         },
         {
             "name": "megavolts",
-            "value": 7
+            "value": 7,
+            "description": "Megavolts (MV)."
         },
         {
             "name": "megawatt-hours",
-            "value": 146
+            "value": 146,
+            "description": "Megawatt-hours (MWh)."
         },
         {
             "name": "megawatt-hours-reactive",
-            "value": 205
+            "value": 205,
+            "description": "Megawatt-hours reactive (Mvarh)."
         },
         {
             "name": "megawatts",
-            "value": 49
+            "value": 49,
+            "description": "Megawatts (MW)."
         },
         {
             "name": "meters",
-            "value": 31
+            "value": 31,
+            "description": "Meters (m)."
         },
         {
             "name": "meters-per-hour",
-            "value": 164
+            "value": 164,
+            "description": "Meters per hour (m/h)."
         },
         {
             "name": "meters-per-minute",
-            "value": 163
+            "value": 163,
+            "description": "Meters per minute (m/min)."
         },
         {
             "name": "meters-per-second",
-            "value": 74
+            "value": 74,
+            "description": "Meters per second (m/s)."
         },
         {
             "name": "meters-per-second-per-second",
-            "value": 166
+            "value": 166,
+            "description": "Meters per second per second (m/s²)."
         },
         {
             "name": "metric-tonnes",
-            "value": 47830
+            "value": 47830,
+            "description": "Metric tonnes (t)."
         },
         {
             "name": "metric-tonnes-per-day",
-            "value": 47843
+            "value": 47843,
+            "description": "Metric tonnes per day (t/d)."
         },
         {
             "name": "metric-tonnes-per-hour",
-            "value": 47842
+            "value": 47842,
+            "description": "Metric tonnes per hour (t/h)."
         },
         {
             "name": "metric-tonnes-per-minute",
-            "value": 47841
+            "value": 47841,
+            "description": "Metric tonnes per minute (t/min)."
         },
         {
             "name": "metric-tonnes-per-second",
-            "value": 47840
+            "value": 47840,
+            "description": "Metric tonnes per second (t/s)."
         },
         {
             "name": "micrograms-per-cubic-centimeter",
-            "value": 47896
+            "value": 47896,
+            "description": "Micrograms per cubic centimeter (µg/cm³)."
         },
         {
             "name": "micrograms-per-cubic-meter",
-            "value": 219
+            "value": 219,
+            "description": "Micrograms per cubic meter (µg/m³)."
         },
         {
             "name": "micrograms-per-kilogram",
-            "value": 47888
+            "value": 47888,
+            "description": "Micrograms per kilogram (µg/kg)."
         },
         {
             "name": "micrograms-per-liter",
-            "value": 216
+            "value": 216,
+            "description": "Micrograms per liter (µg/L)."
         },
         {
             "name": "micrograms-per-milliliter",
-            "value": 47891
+            "value": 47891,
+            "description": "Micrograms per milliliter (µg/mL)."
         },
         {
             "name": "microgray",
-            "value": 227
+            "value": 227,
+            "description": "Microgray (µGy)."
         },
         {
             "name": "micrometers",
-            "value": 194
+            "value": 194,
+            "description": "Micrometers (µm)."
         },
         {
             "name": "microseconds",
-            "value": 47979
+            "value": 47979,
+            "description": "Microseconds (µs)."
         },
         {
             "name": "microsiemens",
-            "value": 190
+            "value": 190,
+            "description": "Microsiemens (µS)."
         },
         {
             "name": "microsiemens-per-centimeter",
-            "value": 47909
+            "value": 47909,
+            "description": "Microsiemens per centimeter (µS/cm)."
         },
         {
             "name": "microsieverts",
-            "value": 230
+            "value": 230,
+            "description": "Microsieverts (µSv)."
         },
         {
             "name": "microsieverts-per-hour",
-            "value": 231
+            "value": 231,
+            "description": "Microsieverts per hour (µSv/h)."
         },
         {
             "name": "miles",
-            "value": 47826
+            "value": 47826,
+            "description": "Miles (mi)."
         },
         {
             "name": "miles-per-hour",
-            "value": 78
+            "value": 78,
+            "description": "Miles per hour (mph)."
         },
         {
             "name": "milliamperes",
-            "value": 2
+            "value": 2,
+            "description": "Milliamperes (mA)."
         },
         {
             "name": "millibars",
-            "value": 134
+            "value": 134,
+            "description": "Millibars (mbar)."
         },
         {
             "name": "milligrams",
-            "value": 196
+            "value": 196,
+            "description": "Milligrams (mg)."
         },
         {
             "name": "milligrams-per-cubic-centimeter",
-            "value": 47895
+            "value": 47895,
+            "description": "Milligrams per cubic centimeter (mg/cm³)."
         },
         {
             "name": "milligrams-per-cubic-meter",
-            "value": 218
+            "value": 218,
+            "description": "Milligrams per cubic meter (mg/m³)."
         },
         {
             "name": "milligrams-per-gram",
-            "value": 211
+            "value": 211,
+            "description": "Milligrams per gram (mg/g)."
         },
         {
             "name": "milligrams-per-kilogram",
-            "value": 212
+            "value": 212,
+            "description": "Milligrams per kilogram (mg/kg)."
         },
         {
             "name": "milligrams-per-liter",
-            "value": 215
+            "value": 215,
+            "description": "Milligrams per liter (mg/L)."
         },
         {
             "name": "milligrams-per-milliliter",
-            "value": 47890
+            "value": 47890,
+            "description": "Milligrams per milliliter (mg/mL)."
         },
         {
             "name": "milligray",
-            "value": 226
+            "value": 226,
+            "description": "Milligray (mGy)."
         },
         {
             "name": "milliliters",
-            "value": 197
+            "value": 197,
+            "description": "Milliliters (mL)."
         },
         {
             "name": "milliliters-per-minute",
-            "value": 47914
+            "value": 47914,
+            "description": "Milliliters per minute (mL/min)."
         },
         {
             "name": "milliliters-per-second",
-            "value": 198
+            "value": 198,
+            "description": "Milliliters per second (mL/s)."
         },
         {
             "name": "millimeters",
-            "value": 30
+            "value": 30,
+            "description": "Millimeters (mm)."
         },
         {
             "name": "millimeters-of-mercury",
-            "value": 59
+            "value": 59,
+            "description": "Millimeters of mercury (mmHg)."
         },
         {
             "name": "millimeters-of-water",
-            "value": 206
+            "value": 206,
+            "description": "Millimeters of water (mmH₂O)."
         },
         {
             "name": "millimeters-per-minute",
-            "value": 162
+            "value": 162,
+            "description": "Millimeters per minute (mm/min)."
         },
         {
             "name": "millimeters-per-second",
-            "value": 161
+            "value": 161,
+            "description": "Millimeters per second (mm/s)."
         },
         {
             "name": "millimeters-per-year",
-            "value": 47916
+            "value": 47916,
+            "description": "Millimeters per year (mm/yr)."
         },
         {
             "name": "milliohms",
-            "value": 145
+            "value": 145,
+            "description": "Milliohms (mΩ)."
         },
         {
             "name": "million-cubic-feet-per-day",
-            "value": 47874
+            "value": 47874,
+            "description": "Million cubic feet per day (MMCFD)."
         },
         {
             "name": "million-cubic-feet-per-minute",
-            "value": 47873
+            "value": 47873,
+            "description": "Million cubic feet per minute (MMCFM)."
         },
         {
             "name": "million-standard-cubic-feet-per-day",
-            "value": 47809
+            "value": 47809,
+            "description": "Million standard cubic feet per day (MMSCFD)."
         },
         {
             "name": "million-standard-cubic-feet-per-minute",
-            "value": 254
+            "value": 254,
+            "description": "Million standard cubic feet per minute (MMSCFM)."
         },
         {
             "name": "millions-of-imperial-gallons",
-            "value": 47913
+            "value": 47913,
+            "description": "Millions of imperial gallons (Mimp gal)."
         },
         {
             "name": "millions-of-us-gallons",
-            "value": 47912
+            "value": 47912,
+            "description": "Millions of US gallons (Mgal)."
         },
         {
             "name": "millirems",
-            "value": 47814
+            "value": 47814,
+            "description": "Millirems (mrem)."
         },
         {
             "name": "millirems-per-hour",
-            "value": 47815
+            "value": 47815,
+            "description": "Millirems per hour (mrem/h)."
         },
         {
             "name": "milliseconds",
-            "value": 159
+            "value": 159,
+            "description": "Milliseconds (ms)."
         },
         {
             "name": "millisiemens",
-            "value": 202
+            "value": 202,
+            "description": "Millisiemens (mS)."
         },
         {
             "name": "millisiemens-per-centimeter",
-            "value": 47910
+            "value": 47910,
+            "description": "Millisiemens per centimeter (mS/cm)."
         },
         {
             "name": "millisiemens-per-meter",
-            "value": 47911
+            "value": 47911,
+            "description": "Millisiemens per meter (mS/m)."
         },
         {
             "name": "millisieverts",
-            "value": 229
+            "value": 229,
+            "description": "Millisieverts (mSv)."
         },
         {
             "name": "millivolts",
-            "value": 124
+            "value": 124,
+            "description": "Millivolts (mV)."
         },
         {
             "name": "milliwatts",
-            "value": 132
+            "value": 132,
+            "description": "Milliwatts (mW)."
         },
         {
             "name": "mils-per-year",
-            "value": 47915
+            "value": 47915,
+            "description": "Mils per year (mpy)."
         },
         {
             "name": "minutes",
-            "value": 72
+            "value": 72,
+            "description": "Minutes (min)."
         },
         {
             "name": "minutes-per-kelvin",
-            "value": 236
+            "value": 236,
+            "description": "Minutes per Kelvin (min/K)."
         },
         {
             "name": "mole-percent",
-            "value": 252
+            "value": 252,
+            "description": "Mole percent (mol%)."
         },
         {
             "name": "months",
-            "value": 68
+            "value": 68,
+            "description": "Months (mo)."
         },
         {
             "name": "nanograms-per-cubic-centimeter",
-            "value": 47897
+            "value": 47897,
+            "description": "Nanograms per cubic centimeter (ng/cm³)."
         },
         {
             "name": "nanograms-per-cubic-meter",
-            "value": 220
+            "value": 220,
+            "description": "Nanograms per cubic meter (ng/m³)."
         },
         {
             "name": "nanograms-per-kilogram",
-            "value": 47889
+            "value": 47889,
+            "description": "Nanograms per kilogram (ng/kg)."
         },
         {
             "name": "nanograms-per-liter",
-            "value": 47894
+            "value": 47894,
+            "description": "Nanograms per liter (ng/L)."
         },
         {
             "name": "nanograms-per-milliliter",
-            "value": 47892
+            "value": 47892,
+            "description": "Nanograms per milliliter (ng/mL)."
         },
         {
             "name": "nanoseconds",
-            "value": 47980
+            "value": 47980,
+            "description": "Nanoseconds (ns)."
         },
         {
             "name": "nautical-miles",
-            "value": 47827
+            "value": 47827,
+            "description": "Nautical miles (nmi)."
         },
         {
             "name": "nephelometric-turbidity-unit",
-            "value": 233
+            "value": 233,
+            "description": "Nephelometric turbidity unit (NTU)."
         },
         {
             "name": "newton",
-            "value": 153
+            "value": 153,
+            "description": "Newton (N)."
         },
         {
             "name": "newton-meters",
-            "value": 160
+            "value": 160,
+            "description": "Newton-meters (N·m)."
         },
         {
             "name": "newton-seconds",
-            "value": 187
+            "value": 187,
+            "description": "Newton-seconds (N·s)."
         },
         {
             "name": "newtons-per-meter",
-            "value": 188
+            "value": 188,
+            "description": "Newtons per meter (N/m)."
         },
         {
             "name": "no-units",
-            "value": 95
+            "value": 95,
+            "description": "No units (unitless)."
         },
         {
             "name": "ohm-meter-squared-per-meter",
-            "value": 237
+            "value": 237,
+            "description": "Ohm-meter squared per meter (Ω·m²/m)."
         },
         {
             "name": "ohm-meters",
-            "value": 172
+            "value": 172,
+            "description": "Ohm-meters (Ω·m)."
         },
         {
             "name": "ohms",
-            "value": 4
+            "value": 4,
+            "description": "Ohms (Ω)."
         },
         {
             "name": "ounce-force-inches",
-            "value": 47906
+            "value": 47906,
+            "description": "Ounce-force inches (ozf·in)."
         },
         {
             "name": "particles-per-cubic-foot",
-            "value": 47968
+            "value": 47968,
+            "description": "Particles per cubic foot (particles/ft³)."
         },
         {
             "name": "particles-per-cubic-meter",
-            "value": 47969
+            "value": 47969,
+            "description": "Particles per cubic meter (particles/m³)."
         },
         {
             "name": "parts-per-billion",
-            "value": 97
+            "value": 97,
+            "description": "Parts per billion (ppb)."
         },
         {
             "name": "parts-per-million",
-            "value": 96
+            "value": 96,
+            "description": "Parts per million (ppm)."
         },
         {
             "name": "pascal-seconds",
-            "value": 253
+            "value": 253,
+            "description": "Pascal-seconds (Pa·s)."
         },
         {
             "name": "pascals",
-            "value": 53
+            "value": 53,
+            "description": "Pascals (Pa)."
         },
         {
             "name": "per-billion",
-            "value": 47885
+            "value": 47885,
+            "description": "Per billion (1/10⁹)."
         },
         {
             "name": "per-day",
-            "value": 47823
+            "value": 47823,
+            "description": "Per day (1/d)."
         },
         {
             "name": "per-hour",
-            "value": 131
+            "value": 131,
+            "description": "Per hour (1/h)."
         },
         {
             "name": "per-mille",
-            "value": 207
+            "value": 207,
+            "description": "Per mille (‰)."
         },
         {
             "name": "per-million",
-            "value": 47884
+            "value": 47884,
+            "description": "Per million (1/10⁶)."
         },
         {
             "name": "per-millisecond",
-            "value": 47824
+            "value": 47824,
+            "description": "Per millisecond (1/ms)."
         },
         {
             "name": "percent",
-            "value": 98
+            "value": 98,
+            "description": "Percent (%)."
         },
         {
             "name": "percent-obscuration-per-foot",
-            "value": 143
+            "value": 143,
+            "description": "Percent obscuration per foot (%/ft)."
         },
         {
             "name": "percent-obscuration-per-meter",
-            "value": 144
+            "value": 144,
+            "description": "Percent obscuration per meter (%/m)."
         },
         {
             "name": "percent-per-day",
-            "value": 47883
+            "value": 47883,
+            "description": "Percent per day (%/d)."
         },
         {
             "name": "percent-per-hour",
-            "value": 47882
+            "value": 47882,
+            "description": "Percent per hour (%/h)."
         },
         {
             "name": "percent-per-minute",
-            "value": 47881
+            "value": 47881,
+            "description": "Percent per minute (%/min)."
         },
         {
             "name": "percent-per-second",
-            "value": 99
+            "value": 99,
+            "description": "Percent per second (%/s)."
         },
         {
             "name": "percent-relative-humidity",
-            "value": 29
+            "value": 29,
+            "description": "Percent relative humidity (%RH)."
         },
         {
             "name": "ph",
-            "value": 234
+            "value": 234,
+            "description": "pH (pH)."
         },
         {
             "name": "picocuries-per-liter",
-            "value": 47970
+            "value": 47970,
+            "description": "Picocuries per liter (pCi/L)."
         },
         {
             "name": "picoseconds",
-            "value": 47981
+            "value": 47981,
+            "description": "Picoseconds (ps)."
         },
         {
             "name": "pound-force-feet",
-            "value": 47904
+            "value": 47904,
+            "description": "Pound-force feet (lbf·ft)."
         },
         {
             "name": "pound-force-inches",
-            "value": 47905
+            "value": 47905,
+            "description": "Pound-force inches (lbf·in)."
         },
         {
             "name": "pounds-force-per-square-inch",
-            "value": 56
+            "value": 56,
+            "description": "Pounds-force per square inch (psi)."
         },
         {
             "name": "pounds-force-per-square-inch-absolute",
-            "value": 47907
+            "value": 47907,
+            "description": "Pounds-force per square inch absolute (psia)."
         },
         {
             "name": "pounds-force-per-square-inch-gauge",
-            "value": 47908
+            "value": 47908,
+            "description": "Pounds-force per square inch gauge (psig)."
         },
         {
             "name": "pounds-mass",
-            "value": 40
+            "value": 40,
+            "description": "Pounds mass (lb)."
         },
         {
             "name": "pounds-mass-per-day",
-            "value": 47812
+            "value": 47812,
+            "description": "Pounds mass per day (lb/d)."
         },
         {
             "name": "pounds-mass-per-hour",
-            "value": 46
+            "value": 46,
+            "description": "Pounds mass per hour (lb/h)."
         },
         {
             "name": "pounds-mass-per-minute",
-            "value": 45
+            "value": 45,
+            "description": "Pounds mass per minute (lb/min)."
         },
         {
             "name": "pounds-mass-per-second",
-            "value": 119
+            "value": 119,
+            "description": "Pounds mass per second (lb/s)."
         },
         {
             "name": "power-factor",
-            "value": 15
+            "value": 15,
+            "description": "Power factor (unitless)."
         },
         {
             "name": "psi-per-degree-fahrenheit",
-            "value": 102
+            "value": 102,
+            "description": "PSI per degree Fahrenheit (psi/°F)."
         },
         {
             "name": "pulses-per-minute",
-            "value": 47917
+            "value": 47917,
+            "description": "Pulses per minute (pulse/min)."
         },
         {
             "name": "radians",
-            "value": 103
+            "value": 103,
+            "description": "Radians (rad)."
         },
         {
             "name": "radians-per-second",
-            "value": 184
+            "value": 184,
+            "description": "Radians per second (rad/s)."
         },
         {
             "name": "reactive-energy-pulse-value",
-            "value": 47919
+            "value": 47919,
+            "description": "Reactive energy pulse value (pulse)."
         },
         {
             "name": "revolutions-per-minute",
-            "value": 104
+            "value": 104,
+            "description": "Revolutions per minute (RPM)."
         },
         {
             "name": "seconds",
-            "value": 73
+            "value": 73,
+            "description": "Seconds (s)."
         },
         {
             "name": "short-tons",
-            "value": 47831
+            "value": 47831,
+            "description": "Short tons (ton)."
         },
         {
             "name": "short-tons-per-day",
-            "value": 47839
+            "value": 47839,
+            "description": "Short tons per day (ton/d)."
         },
         {
             "name": "short-tons-per-hour",
-            "value": 47838
+            "value": 47838,
+            "description": "Short tons per hour (ton/h)."
         },
         {
             "name": "short-tons-per-minute",
-            "value": 47837
+            "value": 47837,
+            "description": "Short tons per minute (ton/min)."
         },
         {
             "name": "short-tons-per-second",
-            "value": 47836
+            "value": 47836,
+            "description": "Short tons per second (ton/s)."
         },
         {
             "name": "siemens",
-            "value": 173
+            "value": 173,
+            "description": "Siemens (S)."
         },
         {
             "name": "siemens-per-meter",
-            "value": 174
+            "value": 174,
+            "description": "Siemens per meter (S/m)."
         },
         {
             "name": "sieverts",
-            "value": 228
+            "value": 228,
+            "description": "Sieverts (Sv)."
         },
         {
             "name": "site-unit1",
-            "value": 47958
+            "value": 47958,
+            "description": "Site unit 1 (site-specific)."
         },
         {
             "name": "site-unit10",
-            "value": 47967
+            "value": 47967,
+            "description": "Site unit 10 (site-specific)."
         },
         {
             "name": "site-unit2",
-            "value": 47959
+            "value": 47959,
+            "description": "Site unit 2 (site-specific)."
         },
         {
             "name": "site-unit3",
-            "value": 47960
+            "value": 47960,
+            "description": "Site unit 3 (site-specific)."
         },
         {
             "name": "site-unit4",
-            "value": 47961
+            "value": 47961,
+            "description": "Site unit 4 (site-specific)."
         },
         {
             "name": "site-unit5",
-            "value": 47962
+            "value": 47962,
+            "description": "Site unit 5 (site-specific)."
         },
         {
             "name": "site-unit6",
-            "value": 47963
+            "value": 47963,
+            "description": "Site unit 6 (site-specific)."
         },
         {
             "name": "site-unit7",
-            "value": 47964
+            "value": 47964,
+            "description": "Site unit 7 (site-specific)."
         },
         {
             "name": "site-unit8",
-            "value": 47965
+            "value": 47965,
+            "description": "Site unit 8 (site-specific)."
         },
         {
             "name": "site-unit9",
-            "value": 47966
+            "value": 47966,
+            "description": "Site unit 9 (site-specific)."
         },
         {
             "name": "specific-gravity",
-            "value": 47821
+            "value": 47821,
+            "description": "Specific gravity (SG)."
         },
         {
             "name": "square-centimeters",
-            "value": 116
+            "value": 116,
+            "description": "Square centimeters (cm²)."
         },
         {
             "name": "square-feet",
-            "value": 1
+            "value": 1,
+            "description": "Square feet (ft²)."
         },
         {
             "name": "square-inches",
-            "value": 115
+            "value": 115,
+            "description": "Square inches (in²)."
         },
         {
             "name": "square-meters",
-            "value": 0
+            "value": 0,
+            "description": "Square meters (m²)."
         },
         {
             "name": "square-meters-per-newton",
-            "value": 185
+            "value": 185,
+            "description": "Square meters per Newton (m²/N)."
         },
         {
             "name": "standard-cubic-feet-per-day",
-            "value": 47808
+            "value": 47808,
+            "description": "Standard cubic feet per day (SCFD)."
         },
         {
             "name": "teslas",
-            "value": 175
+            "value": 175,
+            "description": "Teslas (T)."
         },
         {
             "name": "therms",
-            "value": 21
+            "value": 21,
+            "description": "Therms (thm)."
         },
         {
             "name": "thousand-cubic-feet-per-day",
-            "value": 47810
+            "value": 47810,
+            "description": "Thousand cubic feet per day (MCF/d)."
         },
         {
             "name": "thousand-standard-cubic-feet-per-day",
-            "value": 47811
+            "value": 47811,
+            "description": "Thousand standard cubic feet per day (MSCFD)."
         },
         {
             "name": "ton-hours",
-            "value": 22
+            "value": 22,
+            "description": "Ton-hours (ton·h)."
         },
         {
             "name": "tons",
-            "value": 41
+            "value": 41,
+            "description": "Tons (ton)."
         },
         {
             "name": "tons-per-hour",
-            "value": 156
+            "value": 156,
+            "description": "Tons per hour (ton/h)."
         },
         {
             "name": "tons-refrigeration",
-            "value": 52
+            "value": 52,
+            "description": "Tons refrigeration (TR)."
         },
         {
             "name": "us-gallons",
-            "value": 83
+            "value": 83,
+            "description": "US gallons (gal)."
         },
         {
             "name": "us-gallons-per-day",
-            "value": 47880
+            "value": 47880,
+            "description": "US gallons per day (gal/d)."
         },
         {
             "name": "us-gallons-per-hour",
-            "value": 192
+            "value": 192,
+            "description": "US gallons per hour (gal/h)."
         },
         {
             "name": "us-gallons-per-minute",
-            "value": 89
+            "value": 89,
+            "description": "US gallons per minute (GPM)."
         },
         {
             "name": "us-gallons-per-second",
-            "value": 47879
+            "value": 47879,
+            "description": "US gallons per second (gal/s)."
         },
         {
             "name": "volt-ampere-hours",
-            "value": 239
+            "value": 239,
+            "description": "Volt-ampere-hours (VA·h)."
         },
         {
             "name": "volt-ampere-hours-reactive",
-            "value": 242
+            "value": 242,
+            "description": "Volt-ampere-hours reactive (varh)."
         },
         {
             "name": "volt-amperes",
-            "value": 8
+            "value": 8,
+            "description": "Volt-amperes (VA)."
         },
         {
             "name": "volt-amperes-reactive",
-            "value": 11
+            "value": 11,
+            "description": "Volt-amperes reactive (var)."
         },
         {
             "name": "volt-square-hours",
-            "value": 245
+            "value": 245,
+            "description": "Volt-square hours (V²·h)."
         },
         {
             "name": "volt-squared-hour-pulse-value",
-            "value": 47921
+            "value": 47921,
+            "description": "Volt-squared hour pulse value (pulse)."
         },
         {
             "name": "volts",
-            "value": 5
+            "value": 5,
+            "description": "Volts (V)."
         },
         {
             "name": "volts-per-kelvin",
-            "value": 176
+            "value": 176,
+            "description": "Volts per Kelvin (V/K)."
         },
         {
             "name": "volts-per-meter",
-            "value": 177
+            "value": 177,
+            "description": "Volts per meter (V/m)."
         },
         {
             "name": "volume1",
-            "value": 47937
+            "value": 47937,
+            "description": "Volume 1 (site-specific)."
         },
         {
             "name": "volume10",
-            "value": 47946
+            "value": 47946,
+            "description": "Volume 10 (site-specific)."
         },
         {
             "name": "volume2",
-            "value": 47938
+            "value": 47938,
+            "description": "Volume 2 (site-specific)."
         },
         {
             "name": "volume3",
-            "value": 47939
+            "value": 47939,
+            "description": "Volume 3 (site-specific)."
         },
         {
             "name": "volume4",
-            "value": 47940
+            "value": 47940,
+            "description": "Volume 4 (site-specific)."
         },
         {
             "name": "volume5",
-            "value": 47941
+            "value": 47941,
+            "description": "Volume 5 (site-specific)."
         },
         {
             "name": "volume6",
-            "value": 47942
+            "value": 47942,
+            "description": "Volume 6 (site-specific)."
         },
         {
             "name": "volume7",
-            "value": 47943
+            "value": 47943,
+            "description": "Volume 7 (site-specific)."
         },
         {
             "name": "volume8",
-            "value": 47944
+            "value": 47944,
+            "description": "Volume 8 (site-specific)."
         },
         {
             "name": "volume9",
-            "value": 47945
+            "value": 47945,
+            "description": "Volume 9 (site-specific)."
         },
         {
             "name": "volumetric-flow1",
-            "value": 47947
+            "value": 47947,
+            "description": "Volumetric flow 1 (site-specific)."
         },
         {
             "name": "volumetric-flow10",
-            "value": 47956
+            "value": 47956,
+            "description": "Volumetric flow 10 (site-specific)."
         },
         {
             "name": "volumetric-flow2",
-            "value": 47948
+            "value": 47948,
+            "description": "Volumetric flow 2 (site-specific)."
         },
         {
             "name": "volumetric-flow3",
-            "value": 47949
+            "value": 47949,
+            "description": "Volumetric flow 3 (site-specific)."
         },
         {
             "name": "volumetric-flow4",
-            "value": 47950
+            "value": 47950,
+            "description": "Volumetric flow 4 (site-specific)."
         },
         {
             "name": "volumetric-flow5",
-            "value": 47951
+            "value": 47951,
+            "description": "Volumetric flow 5 (site-specific)."
         },
         {
             "name": "volumetric-flow6",
-            "value": 47952
+            "value": 47952,
+            "description": "Volumetric flow 6 (site-specific)."
         },
         {
             "name": "volumetric-flow7",
-            "value": 47953
+            "value": 47953,
+            "description": "Volumetric flow 7 (site-specific)."
         },
         {
             "name": "volumetric-flow8",
-            "value": 47954
+            "value": 47954,
+            "description": "Volumetric flow 8 (site-specific)."
         },
         {
             "name": "volumetric-flow9",
-            "value": 47955
+            "value": 47955,
+            "description": "Volumetric flow 9 (site-specific)."
         },
         {
             "name": "watt-hours",
-            "value": 18
+            "value": 18,
+            "description": "Watt-hours (Wh)."
         },
         {
             "name": "watt-hours-per-cubic-meter",
-            "value": 250
+            "value": 250,
+            "description": "Watt-hours per cubic meter (Wh/m³)."
         },
         {
             "name": "watt-hours-reactive",
-            "value": 203
+            "value": 203,
+            "description": "Watt-hours reactive (varh)."
         },
         {
             "name": "watts",
-            "value": 47
+            "value": 47,
+            "description": "Watts (W)."
         },
         {
             "name": "watts-per-meter-per-kelvin",
-            "value": 189
+            "value": 189,
+            "description": "Watts per meter per Kelvin (W/(m·K))."
         },
         {
             "name": "watts-per-square-foot",
-            "value": 34
+            "value": 34,
+            "description": "Watts per square foot (W/ft²)."
         },
         {
             "name": "watts-per-square-meter",
-            "value": 35
+            "value": 35,
+            "description": "Watts per square meter (W/m²)."
         },
         {
             "name": "watts-per-square-meter-per-kelvin",
-            "value": 141
+            "value": 141,
+            "description": "Watts per square meter per Kelvin (W/(m²·K))."
         },
         {
             "name": "webers",
-            "value": 178
+            "value": 178,
+            "description": "Webers (Wb)."
         },
         {
             "name": "weeks",
-            "value": 69
+            "value": 69,
+            "description": "Weeks (wk)."
         },
         {
             "name": "yards",
-            "value": 47825
+            "value": 47825,
+            "description": "Yards (yd)."
         },
         {
             "name": "years",
-            "value": 67
+            "value": 67,
+            "description": "Years (yr)."
         }
     ],
     "extensible": true,
