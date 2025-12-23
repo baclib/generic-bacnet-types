@@ -7,7 +7,7 @@
         {
             "name": "active-energy-pulse-value",
             "value": 47910,
-            "description": "Millisiemens per centimeter (mS/cm)."
+            "description": "Active energy pulse value (pulse)."
         },
         {
             "name": "alcohol-by-volume",
