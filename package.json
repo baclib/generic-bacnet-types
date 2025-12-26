@@ -1,0 +1,30 @@
+{
+    "name": "@baclib/generic-bacnet-types",
+    "version": "0.1.0",
+    "description": "A project for maintaining BACnet data types in a generic way, with tools to generate source code for different programming languages.",
+    "type": "module",
+    "main": "src/index.js",
+    "scripts": {
+    },
+    "keywords": [
+        "bacnet",
+        "building-automation",
+        "code-generation"
+    ],
+    "author": "The BAClib Initiative <baclib@mailbox.org> (https://github.com/baclib)",
+    "license": "EPL-2.0",
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/baclib/generic-bacnet-types.git"
+    },
+    "bugs": {
+        "url": "https://github.com/baclib/generic-bacnet-types/issues"
+    },
+    "homepage": "https://github.com/baclib/generic-bacnet-types#readme",
+    "engines": {
+        "node": ">=24.0.0"
+    }
+}

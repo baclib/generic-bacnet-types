@@ -1,6 +1,6 @@
 # Generic BACnet Types
 
-A repository for the generic maintenance of BACnet data types.
+A project for maintaining BACnet data types in a generic way, with tools to generate source code for different programming languages.
 
 > [!IMPORTANT]
 > **Note:** This project is under active development. APIs may change as the project evolves.
