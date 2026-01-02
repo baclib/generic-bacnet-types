@@ -1,0 +1,18 @@
+{
+    "base": "bitstring",
+    "length": 8,
+    "bits": [
+        {
+            "name": "active",
+            "position": 0
+        },
+        {
+            "name": "inactive",
+            "position": 1
+        },
+        {
+            "name": "error",
+            "position": 2
+        }
+    ]
+}

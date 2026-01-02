@@ -1,0 +1,18 @@
+{
+    "base": "enumerated",
+    "values": [
+        {
+            "name": "A",
+            "constant": 0
+        },
+        {
+            "name": "B",
+            "constant": 1
+        },
+        {
+            "name": "C",
+            "constant": 2
+        }
+    ],
+    "value": 5
+}

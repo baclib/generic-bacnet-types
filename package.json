@@ -4,7 +4,9 @@
     "description": "A project for maintaining BACnet data types in a generic way, with tools to generate source code for different programming languages.",
     "type": "module",
     "main": "src/index.js",
-    "scripts": {},
+    "scripts": {
+        "test": "node test/run-tests.js"
+    },
     "keywords": [
         "bacnet",
         "building-automation",

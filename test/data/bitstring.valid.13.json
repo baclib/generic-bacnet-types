@@ -1,0 +1,15 @@
+{
+    "base": "bitstring",
+    "bits": [
+        {
+            "name": "on",
+            "position": 0,
+            "description": "Indicates ON state"
+        },
+        {
+            "name": "off",
+            "position": 1,
+            "alias": "disabled"
+        }
+    ]
+}

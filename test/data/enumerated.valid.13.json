@@ -1,0 +1,7 @@
+{
+  "base": "enumerated",
+  "values": [
+    { "name": "false", "constant": 0 },
+    { "name": "true", "constant": 1 }
+  ]
+}

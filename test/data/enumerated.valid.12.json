@@ -1,0 +1,9 @@
+{
+  "base": "enumerated",
+  "values": [
+    { "name": "one", "constant": 1 },
+    { "name": "two", "constant": 2 },
+    { "name": "three", "constant": 3 },
+    { "name": "four", "constant": 4 }
+  ]
+}
