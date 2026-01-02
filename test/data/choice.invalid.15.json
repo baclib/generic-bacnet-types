@@ -1,0 +1,12 @@
+{
+    "base": "choice",
+    "options": [
+        {
+            "name": "ok",
+            "type": "unsigned"
+        },
+        {
+            "name": "bad"
+        }
+    ]
+}

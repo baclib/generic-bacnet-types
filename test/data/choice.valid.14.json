@@ -1,0 +1,14 @@
+{
+    "base": "choice",
+    "options": [
+        {
+            "name": "x",
+            "type": "signed"
+        },
+        {
+            "name": "y",
+            "type": "unsigned"
+        }
+    ],
+    "description": "A choice between signed and unsigned."
+}

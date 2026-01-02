@@ -1,0 +1,17 @@
+{
+    "base": "choice",
+    "options": [
+        {
+            "name": "first",
+            "type": "float"
+        },
+        {
+            "name": "second",
+            "type": "double"
+        },
+        {
+            "name": "third",
+            "type": "octetstring"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "base": "choice",
+    "options": [
+        {
+            "name": "optionA",
+            "type": "unsigned"
+        },
+        {
+            "name": "optionB",
+            "type": "boolean"
+        }
+    ]
+}

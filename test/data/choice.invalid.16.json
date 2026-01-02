@@ -1,0 +1,11 @@
+{
+    "base": "choice",
+    "options": [
+        {
+            "name": "extra",
+            "type": "unsigned",
+            "extra": true
+        }
+    ],
+    "extra": true
+}

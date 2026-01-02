@@ -1,0 +1,14 @@
+{
+    "base": "choice",
+    "options": [
+        {
+            "name": "alpha",
+            "type": "charstring"
+        },
+        {
+            "name": "beta",
+            "context": 2,
+            "type": "charstring"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "base": "choice",
+    "options": [
+        {
+            "name": "dup",
+            "type": "unsigned"
+        },
+        {
+            "type": "signed"
+        }
+    ]
+}
