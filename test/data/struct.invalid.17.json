@@ -1,0 +1,13 @@
+{
+    "base": "struct",
+    "fields": [
+        {
+            "name": "id",
+            "type": "unsigned"
+        },
+        {
+            "alias": "foobar",
+            "type": "float"
+        }
+    ]
+}

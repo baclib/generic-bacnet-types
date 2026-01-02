@@ -1,0 +1,20 @@
+{
+    "base": "struct",
+    "fields": [
+        {
+            "name": "first",
+            "context": 0,
+            "type": "octetstring"
+        },
+        {
+            "name": "second",
+            "context": 1,
+            "type": "charstring"
+        },
+        {
+            "name": "third",
+            "context": 2,
+            "type": "signed"
+        }
+    ]
+}

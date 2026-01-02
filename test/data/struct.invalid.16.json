@@ -1,0 +1,11 @@
+{
+    "base": "struct",
+    "fields": [
+        {
+            "name": "extra",
+            "type": "unsigned",
+            "extra": true
+        }
+    ],
+    "extra": true
+}

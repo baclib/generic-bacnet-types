@@ -1,0 +1,9 @@
+{
+    "base": "struct",
+    "fields": [
+        {
+            "name": "status",
+            "type": "boolean"
+        }
+    ]
+}

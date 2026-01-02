@@ -1,0 +1,12 @@
+{
+    "base": "struct",
+    "fields": [
+        {
+            "name": "ok",
+            "type": "unsigned"
+        },
+        {
+            "name": "bad"
+        }
+    ]
+}

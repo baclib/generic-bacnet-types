@@ -1,0 +1,12 @@
+{
+    "base": "struct",
+    "fields": [
+        {
+            "type": "unsigned"
+        },
+        {
+            "name": "dup",
+            "type": "signed"
+        }
+    ]
+}
