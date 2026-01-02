@@ -1,0 +1,98 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://baclib.github.io/enumerated-type.json",
+    "title": "Enumerated Type",
+    "description": "Defines a BACnet Enumerated type with an optional set of named values, each assigned to a unique integer constant. Optionally constrains the allowed range of values.",
+    "allOf": [
+        {
+            "$ref": "./common-type.json"
+        },
+        {
+            "type": "object",
+            "properties": {
+                "base": {
+                    "const": "enumerated",
+                    "description": "The base type. Must always be `enumerated` for this schema."
+                },
+                "range": {
+                    "type": "object",
+                    "description": "Optional integer range constraint for allowed enumerated values.",
+                    "properties": {
+                        "minimum": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "description": "The minimum allowed integer value (must be >= 0). If maximum is present, minimum must be less than or equal to maximum."
+                        },
+                        "maximum": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "description": "The maximum allowed integer value (must be >= 0). If minimum is present, maximum must be greater than or equal to minimum."
+                        }
+                    },
+                    "anyOf": [
+                        {
+                            "required": [
+                                "minimum"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "maximum"
+                            ]
+                        }
+                    ],
+                    "additionalProperties": false
+                },
+                "values": {
+                    "type": "array",
+                    "description": "Array of enumerated values. Each entry must have a unique name and a corresponding integer constant (must be >= 0).",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "alias": {
+                                "type": "string",
+                                "description": "An optional unique alias for the enumerated value."
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "The unique name of the enumerated value."
+                            },
+                            "description": {
+                                "type": "string",
+                                "description": "An optional human-readable description for the enumerated value."
+                            },
+                            "constant": {
+                                "type": "integer",
+                                "minimum": 0,
+                                "description": "The integer constant (must be >= 0) assigned to this enumerated value. Must be unique within the set."
+                            }
+                        },
+                        "required": [
+                            "name",
+                            "constant"
+                        ]
+                    }
+                }
+            },
+            "additionalProperties": false
+        }
+    ],
+    "examples": [
+        {
+            "base": "enumerated",
+            "values": [
+                { "name": "off", "constant": 0 },
+                { "name": "on", "constant": 1 }
+            ]
+        },
+        {
+            "base": "enumerated",
+            "range": { "minimum": 0, "maximum": 2 },
+            "values": [
+                { "name": "low", "constant": 0 },
+                { "name": "medium", "constant": 1 },
+                { "name": "high", "constant": 2 }
+            ]
+        }
+    ]
+}

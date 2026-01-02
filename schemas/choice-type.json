@@ -1,0 +1,63 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://baclib.github.io/choice-type.json",
+    "title": "Choice Type",
+    "description": "Defines a BACnet Choice type with a set of options.",
+    "allOf": [
+        {
+            "$ref": "./common-type.json"
+        },
+        {
+            "type": "object",
+            "properties": {
+                "base": {
+                    "const": "choice",
+                    "description": "The base type must always be `choice` for this schema."
+                },
+                "options": {
+                    "type": "array",
+                    "description": "An array of possible options for this choice.",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "alias": {
+                                "type": "string",
+                                "description": "An optional unique alias for the option."
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "The unique name of the option."
+                            },
+                            "context": {
+                                "type": "integer",
+                                "minimum": 0,
+                                "description": "The context number of the option. Must be unique within the set."
+                            },
+                            "description": {
+                                "type": "string",
+                                "description": "An optional human-readable description for the option."
+                            },
+                            "type": {
+                                "description": "The type of the choice option, either a type name or a reference to type traits.",
+                                "oneOf": [
+                                    {
+                                        "$ref": "./type-name.json"
+                                    },
+                                    {
+                                        "$ref": "./type-traits.json"
+                                    }
+                                ]
+                            }
+                        },
+                        "required": [
+                            "type"
+                        ]
+                    }
+                }
+            },
+            "required": [
+                "options"
+            ]
+        }
+    ]
+}

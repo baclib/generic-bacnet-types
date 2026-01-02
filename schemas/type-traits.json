@@ -1,0 +1,40 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://baclib.github.io/type.json",
+    "title": "BAClib Type Traits",
+    "oneOf": [
+        {
+            "$ref": "./common-type.json"
+        },
+        {
+            "$ref": "./unsigned-type.json"
+        },
+        {
+            "$ref": "./signed-type.json"
+        },
+        {
+            "$ref": "./float-type.json"
+        },
+        {
+            "$ref": "./double-type.json"
+        },
+        {
+            "$ref": "./octetstring-type.json"
+        },
+        {
+            "$ref": "./charstring-type.json"
+        },
+        {
+            "$ref": "./bitstring-type.json"
+        },
+        {
+            "$ref": "./enumerated-type.json"
+        },
+        {
+            "$ref": "./struct-type.json"
+        },
+        {
+            "$ref": "./choice-type.json"
+        }
+    ]
+}

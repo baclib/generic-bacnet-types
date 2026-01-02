@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://baclib.github.io/octetstring-type.json",
+    "title": "BAClib Octet String Type",
+    "description": "Defines a BAClib Octet String type with an optional length constraint.",
+    "allOf": [
+        {
+            "$ref": "./common-type.json"
+        },
+        {
+            "type": "object",
+            "properties": {
+                "base": {
+                    "const": "octetstring",
+                    "description": "The base type. Must always be `octetstring` for this schema."
+                },
+                "length": {
+                    "$ref": "./length-constraint.json",
+                    "description": "Optional length constraint for the octet string."
+                }
+            }
+        }
+    ]
+}

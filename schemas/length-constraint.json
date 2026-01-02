@@ -1,0 +1,42 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://baclib.github.io/length-constraint.json.json",
+    "title": "Length Constraint",
+    "description": "Specifies a length constraint as either a fixed non-negative integer or an object defining a minimum and/or maximum length.",
+    "oneOf": [
+        {
+            "type": "integer",
+            "minimum": 0,
+            "description": "A fixed non-negative integer representing the exact length."
+        },
+        {
+            "type": "object",
+            "description": "An object specifying a range with minimum and/or maximum non-negative integer values.",
+            "properties": {
+                "minimum": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "The minimum non-negative integer length. Must be less than or equal to maximum if maximum is present."
+                },
+                "maximum": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "The maximum non-negative integer length. Must be greater than or equal to minimum if minimum is present."
+                }
+            },
+            "anyOf": [
+                {
+                    "required": [
+                        "minimum"
+                    ]
+                },
+                {
+                    "required": [
+                        "maximum"
+                    ]
+                }
+            ],
+            "additionalProperties": false
+        }
+    ]
+}

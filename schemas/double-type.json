@@ -1,0 +1,47 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://baclib.github.io/double-type.json",
+    "title": "BAClib Double Type",
+    "description": "Defines a BAClib Double type with an optional constrains the allowed range of values.",
+    "allOf": [
+        {
+            "$ref": "./common-type.json"
+        },
+        {
+            "type": "object",
+            "properties": {
+                "base": {
+                    "const": "double",
+                    "description": "The base type. Must always be `double` for this schema."
+                },
+                "range": {
+                    "type": "object",
+                    "description": "Optional range constraint for allowed double values.",
+                    "properties": {
+                        "minimum": {
+                            "type": "number",
+                            "description": "The minimum allowed value. If maximum is present, minimum must be less than or equal to maximum."
+                        },
+                        "maximum": {
+                            "type": "number",
+                            "description": "The maximum allowed value. If minimum is present, maximum must be greater than or equal to minimum."
+                        }
+                    },
+                    "anyOf": [
+                        {
+                            "required": [
+                                "minimum"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "maximum"
+                            ]
+                        }
+                    ],
+                    "additionalProperties": false
+                }
+            }
+        }
+    ]
+}

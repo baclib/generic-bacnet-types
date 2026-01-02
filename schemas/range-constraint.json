@@ -1,0 +1,28 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://baclib.github.io/range-constraint.json.json",
+    "title": "Range Constraint",
+    "description": "Specifies a value range as an object with optional minimum and/or maximum values.",
+    "properties": {
+        "minimum": {
+            "type": "number",
+            "description": "The minimum value allowed. Must be less than or equal to maximum if maximum is present."
+        },
+        "maximum": {
+            "type": "number",
+            "description": "The maximum value allowed. Must be greater than or equal to minimum if minimum is present."
+        }
+    },
+    "anyOf": [
+        {
+            "required": [
+                "minimum"
+            ]
+        },
+        {
+            "required": [
+                "maximum"
+            ]
+        }
+    ]
+}

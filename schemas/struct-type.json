@@ -1,0 +1,69 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://baclib.github.io/struct-type.json",
+    "title": "BAClib Struct Type",
+    "description": "Defines a BAClib Struct type with a set of fields, each with a context number, type, and optionality.",
+    "allOf": [
+        {
+            "$ref": "./common-type.json"
+        },
+        {
+            "type": "object",
+            "properties": {
+                "base": {
+                    "const": "struct",
+                    "description": "The base type must always be `struct` for this schema."
+                },
+                "fields": {
+                    "type": "array",
+                    "description": "Array of struct fields. Each entry must have a name and a type.",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "alias": {
+                                "type": "string",
+                                "description": "An optional unique alias for the field."
+                            },
+                            "name": {
+                                "type": "string",
+                                "description": "The unique name of the field."
+                            },
+                            "context": {
+                                "type": "integer",
+                                "minimum": 0,
+                                "description": "The context number of the field. Must be unique within the set."
+                            },
+                            "description": {
+                                "type": "string",
+                                "description": "An optional human-readable description for the field."
+                            },
+                            "type": {
+                                "description": "The type of the field, either a type name or a reference to type traits.",
+                                "oneOf": [
+                                    {
+                                        "$ref": "./type-name.json"
+                                    },
+                                    {
+                                        "$ref": "./type-traits.json"
+                                    }
+                                ]
+                            },
+                            "optional": {
+                                "type": "boolean",
+                                "default": false,
+                                "description": "Indicates if the field is optional. Defaults to false."
+                            }
+                        },
+                        "required": [
+                            "name",
+                            "type"
+                        ]
+                    }
+                }
+            },
+            "required": [
+                "fields"
+            ]
+        }
+    ]
+}

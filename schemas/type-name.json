@@ -1,0 +1,54 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://baclib.github.io/type-name.json",
+    "title": "Type Name",
+    "description": "The name of a type, either a predefined base type or a user-defined type.",
+    "anyOf": [
+        {
+            "type": "string",
+            "enum": [
+                "any",
+                "bitstring",
+                "bitstring16",
+                "bitstring32",
+                "bitstring64",
+                "bitstring8",
+                "boolean",
+                "charstring",
+                "choice",
+                "date",
+                "datepattern",
+                "datetime",
+                "datetimepattern",
+                "double",
+                "enumerated",
+                "enumerated16",
+                "enumerated32",
+                "enumerated64",
+                "enumerated8",
+                "float",
+                "objectid",
+                "octetstring",
+                "null",
+                "signed",
+                "signed16",
+                "signed32",
+                "signed64",
+                "signed8",
+                "struct",
+                "time",
+                "timepattern",
+                "unsigned",
+                "unsigned16",
+                "unsigned32",
+                "unsigned64",
+                "unsigned8",
+                "weeknday"
+            ]
+        },
+        {
+            "type": "string",
+            "pattern": "^(?:0|[1-9][0-9]*)-[a-z][0-9a-z]*(?:-[0-9a-z]+)*$"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://baclib.github.io/signed-type.json",
+    "title": "BAClib Signed Type",
+    "description": "Defines a BAClib Signed type with an optional constrains the allowed range of values.",
+    "allOf": [
+        {
+            "$ref": "./common-type.json"
+        },
+        {
+            "type": "object",
+            "properties": {
+                "base": {
+                    "const": "signed",
+                    "description": "The base type. Must always be `signed` for this schema."
+                },
+                "range": {
+                    "type": "object",
+                    "description": "Optional range constraint for allowed signed values.",
+                    "properties": {
+                        "minimum": {
+                            "type": "integer",
+                            "description": "The minimum allowed value. If maximum is present, minimum must be less than or equal to maximum."
+                        },
+                        "maximum": {
+                            "type": "integer",
+                            "description": "The maximum allowed value. If minimum is present, maximum must be greater than or equal to minimum."
+                        }
+                    },
+                    "anyOf": [
+                        {
+                            "required": [
+                                "minimum"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "maximum"
+                            ]
+                        }
+                    ],
+                    "additionalProperties": false
+                }
+            }
+        }
+    ]
+}
