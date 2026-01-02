@@ -17,6 +17,7 @@
                 "fields": {
                     "type": "array",
                     "description": "Array of struct fields. Each entry must have a name and a type.",
+                    "minItems": 1,
                     "items": {
                         "type": "object",
                         "properties": {
@@ -57,7 +58,8 @@
                         "required": [
                             "name",
                             "type"
-                        ]
+                        ],
+                        "additionalProperties": false
                     }
                 }
             },
