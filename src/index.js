@@ -14,6 +14,9 @@ const definitions = new Map();
 
 const bitStringSet = new Set();
 const enumeratedSet = new Set();
+const sequenceSet = new Set();
+const choiceSet = new Set();
+
 
 for (const file of definitionsFiles) {
     if (file.endsWith('.json')) {
@@ -29,6 +32,12 @@ for (const file of definitionsFiles) {
                 break;
             case 'enumerated':
                 enumeratedSet.add(definition);
+                break;
+            case 'sequence':
+                sequenceSet.add(definition);
+                break;
+            case 'choice':
+                choiceSet.add(definition);
                 break;
             default:
                 break;
@@ -230,5 +239,7 @@ async function generateCode(outputDirectoryPath, definition, language) {
 export {
     bitStringSet,
     enumeratedSet,
+    sequenceSet,
+    choiceSet,
     generateCode,
 };
