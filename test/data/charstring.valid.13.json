@@ -1,0 +1,4 @@
+{
+  "base": "charstring",
+  "length": { "minimum": 1, "maximum": 255 }
+}

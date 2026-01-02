@@ -1,0 +1,4 @@
+{
+  "base": "octetstring",
+  "length": { "minimum": 0, "maximum": 0, "extra": 1 }
+}

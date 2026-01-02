@@ -1,0 +1,7 @@
+{
+    "base": "CharacterString",
+    "length": {
+        "minimum": 1,
+        "maximum": 20
+    }
+}
