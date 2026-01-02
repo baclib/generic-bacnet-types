@@ -1,0 +1,4 @@
+{
+  "base": "REAL",
+  "range": { "minimum": 10.0, "maximum": 50.0 }
+}

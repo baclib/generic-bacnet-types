@@ -1,0 +1,5 @@
+{
+  "base": "signed",
+  "range": { "minimum": -10, "maximum": 10 },
+  "extra": true
+}

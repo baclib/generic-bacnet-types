@@ -1,0 +1,4 @@
+{
+  "base": "signed",
+  "range": { "minimum": -32768 }
+}

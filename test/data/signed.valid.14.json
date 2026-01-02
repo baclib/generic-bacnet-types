@@ -1,0 +1,4 @@
+{
+  "base": "signed",
+  "range": { "maximum": 32767 }
+}

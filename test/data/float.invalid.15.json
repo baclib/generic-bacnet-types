@@ -1,0 +1,5 @@
+{
+  "base": "float",
+  "range": { "minimum": -10.0, "maximum": 10.0 },
+  "extra": true
+}

@@ -1,0 +1,4 @@
+{
+  "base": "unsigned",
+  "range": { "maximum": -10 }
+}

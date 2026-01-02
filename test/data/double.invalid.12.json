@@ -1,0 +1,4 @@
+{
+  "base": "double",
+  "range": { "minimum": 0.0, "maximum": 0.0, "extra": 1 }
+}

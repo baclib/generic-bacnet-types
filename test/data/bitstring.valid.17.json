@@ -1,0 +1,8 @@
+{
+  "base": "bitstring",
+  "bits": [
+    { "name": "enable", "position": 0 },
+    { "name": "disable", "position": 1 },
+    { "name": "test", "position": 2, "alias": "tst", "description": "Test mode" }
+  ]
+}

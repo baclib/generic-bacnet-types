@@ -1,0 +1,8 @@
+{
+  "base": "bitstring",
+  "bits": [
+    { "name": "alarm", "position": 0 },
+    { "name": "fault", "position": 1 },
+    { "name": "override", "position": 2 }
+  ]
+}

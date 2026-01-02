@@ -1,0 +1,4 @@
+{
+  "base": "INTEGER",
+  "range": { "minimum": -100, "maximum": 1024 }
+}

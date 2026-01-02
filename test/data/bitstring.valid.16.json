@@ -1,0 +1,8 @@
+{
+  "base": "bitstring",
+  "length": 8,
+  "bits": [
+    { "name": "bit0", "position": 0 },
+    { "name": "bit7", "position": 7 }
+  ]
+}

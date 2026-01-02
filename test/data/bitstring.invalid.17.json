@@ -1,0 +1,13 @@
+{
+    "base": "BIT STRING",
+    "bits": [
+        {
+            "name": "ok",
+            "position": 0
+        },
+        {
+            "name": "bad",
+            "position": 1
+        }
+    ]
+}
