@@ -1,0 +1,28 @@
+{
+    "alias": "BACnetCalendarEntry",
+    "name": "calendar-entry",
+    "description": "A date, date range, or week and day pattern for determining when a calendar date matches the entry criteria",
+    "traits": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "date",
+                "type": "date-pattern",
+                "context": 0,
+                "description": "A specific date or date pattern."
+            },
+            {
+                "name": "date-range",
+                "type": "date-range",
+                "context": 1,
+                "description": "A range of dates."
+            },
+            {
+                "name": "weeknday",
+                "type": "weeknday",
+                "context": 2,
+                "description": "A month, week-of-month, and day-of-week specification."
+            }
+        ]
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "alias": "BACnetDeviceObjectPropertyValue",
+    "name": "device-object-property-value",
+    "traits": {
+        "base": "struct",
+        "fields": [
+            {
+                "name": "device-identifier",
+                "type": "objectid",
+                "context": 0
+            },
+            {
+                "name": "object-identifier",
+                "type": "objectid",
+                "context": 1
+            },
+            {
+                "name": "property-identifier",
+                "type": "property-identifier",
+                "context": 2
+            },
+            {
+                "name": "property-array-index",
+                "type": "unsigned",
+                "context": 3,
+                "optional": true,
+                "description": "Used only with array datatype; if omitted with an array then the entire array is referenced."
+            },
+            {
+                "name": "property-value",
+                "type": "any",
+                "context": 4
+            }
+        ]
+    }
+}

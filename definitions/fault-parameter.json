@@ -1,0 +1,242 @@
+{
+    "alias": "BACnetFaultParameter",
+    "name": "fault-parameter",
+    "traits": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "none",
+                "type": "null",
+                "context": 0
+            },
+            {
+                "name": "fault-characterstring",
+                "type": {
+                    "base": "struct",
+                    "fields": [
+                        {
+                            "name": "list-of-fault-values",
+                            "type": {
+                                "base": "charstring",
+                                "series": true
+                            },
+                            "context": 0
+                        }
+                    ]
+                },
+                "context": 1
+            },
+            {
+                "name": "fault-extended",
+                "type": {
+                    "base": "struct",
+                    "fields": [
+                        {
+                            "name": "vendor-id",
+                            "type": "unsigned16",
+                            "context": 0
+                        },
+                        {
+                            "name": "extended-fault-type",
+                            "type": "unsigned",
+                            "context": 1
+                        },
+                        {
+                            "name": "parameters",
+                            "type": {
+                                "base": "choice",
+                                "options": [
+                                    {
+                                        "name": "null",
+                                        "type": "null"
+                                    },
+                                    {
+                                        "name": "real",
+                                        "type": "float"
+                                    },
+                                    {
+                                        "name": "unsigned",
+                                        "type": "unsigned"
+                                    },
+                                    {
+                                        "name": "boolean",
+                                        "type": "boolean"
+                                    },
+                                    {
+                                        "name": "integer",
+                                        "type": "signed"
+                                    },
+                                    {
+                                        "name": "double",
+                                        "type": "double"
+                                    },
+                                    {
+                                        "name": "octetstring",
+                                        "type": "octetstring"
+                                    },
+                                    {
+                                        "name": "characterstring",
+                                        "type": "charstring"
+                                    },
+                                    {
+                                        "name": "bitstring",
+                                        "type": "bitstring"
+                                    },
+                                    {
+                                        "name": "enumerated",
+                                        "type": "enumerated"
+                                    },
+                                    {
+                                        "name": "date",
+                                        "type": "date"
+                                    },
+                                    {
+                                        "name": "time",
+                                        "type": "time"
+                                    },
+                                    {
+                                        "name": "objectidentifier",
+                                        "type": "objectid"
+                                    },
+                                    {
+                                        "name": "reference",
+                                        "type": "device-object-property-reference",
+                                        "context": 0
+                                    }
+                                ]
+                            },
+                            "context": 2
+                        }
+                    ]
+                },
+                "context": 2
+            },
+            {
+                "name": "fault-life-safety",
+                "type": {
+                    "base": "struct",
+                    "fields": [
+                        {
+                            "name": "list-of-fault-values",
+                            "type": {
+                                "base": "life-safety-state",
+                                "series": true
+                            },
+                            "context": 0
+                        },
+                        {
+                            "name": "mode-property-reference",
+                            "type": "device-object-property-reference",
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 3
+            },
+            {
+                "name": "fault-state",
+                "type": {
+                    "base": "struct",
+                    "fields": [
+                        {
+                            "name": "list-of-fault-values",
+                            "type": {
+                                "base": "property-states",
+                                "series": true
+                            },
+                            "context": 0
+                        }
+                    ]
+                },
+                "context": 4
+            },
+            {
+                "name": "fault-status-flags",
+                "type": {
+                    "base": "struct",
+                    "fields": [
+                        {
+                            "name": "status-flags-reference",
+                            "type": "device-object-property-reference",
+                            "context": 0
+                        }
+                    ]
+                },
+                "context": 5
+            },
+            {
+                "name": "fault-out-of-range",
+                "type": {
+                    "base": "struct",
+                    "fields": [
+                        {
+                            "name": "min-normal-value",
+                            "type": {
+                                "base": "choice",
+                                "options": [
+                                    {
+                                        "name": "real",
+                                        "type": "float"
+                                    },
+                                    {
+                                        "name": "unsigned",
+                                        "type": "unsigned"
+                                    },
+                                    {
+                                        "name": "double",
+                                        "type": "double"
+                                    },
+                                    {
+                                        "name": "integer",
+                                        "type": "signed"
+                                    }
+                                ]
+                            },
+                            "context": 0
+                        },
+                        {
+                            "name": "max-normal-value",
+                            "type": {
+                                "base": "choice",
+                                "options": [
+                                    {
+                                        "name": "real",
+                                        "type": "float"
+                                    },
+                                    {
+                                        "name": "unsigned",
+                                        "type": "unsigned"
+                                    },
+                                    {
+                                        "name": "double",
+                                        "type": "double"
+                                    },
+                                    {
+                                        "name": "integer",
+                                        "type": "signed"
+                                    }
+                                ]
+                            },
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 6
+            },
+            {
+                "name": "fault-listed",
+                "type": {
+                    "base": "struct",
+                    "fields": [
+                        {
+                            "name": "fault-list-reference",
+                            "type": "device-object-property-reference",
+                            "context": 0
+                        }
+                    ]
+                },
+                "context": 7
+            }
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "alias": "BACnetDeviceObjectReference",
+    "name": "device-object-reference",
+    "traits": {
+        "base": "struct",
+        "fields": [
+            {
+                "name": "device-identifier",
+                "type": "objectid",
+                "context": 0,
+                "optional": true
+            },
+            {
+                "name": "object-identifier",
+                "type": "objectid",
+                "context": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "alias": "BAClibAnyPrimitive",
+    "name": "any-primitive",
+    "description": "",
+    "traits": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "null-value",
+                "type": "null"
+            },
+            {
+                "name": "boolean-value",
+                "type": "boolean"
+            },
+            {
+                "name": "unsigned-value",
+                "type": "unsigned"
+            },
+            {
+                "name": "signed-value",
+                "type": "signed"
+            },
+            {
+                "name": "real-value",
+                "type": "float"
+            },
+            {
+                "name": "double-value",
+                "type": "double"
+            },
+            {
+                "name": "octet-string",
+                "type": "octetstring"
+            },
+            {
+                "name": "character-string",
+                "type": "charstring"
+            },
+            {
+                "name": "bit-string",
+                "type": "bitstring"
+            },
+            {
+                "name": "enumerated-value",
+                "type": "enumerated"
+            },
+            {
+                "name": "date",
+                "type": "datepattern"
+            },
+            {
+                "name": "time",
+                "type": "timepattern"
+            },
+            {
+                "name": "object-identifier",
+                "type": "objectid"
+            }
+        ]
+    }
+}

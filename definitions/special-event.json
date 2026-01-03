@@ -1,0 +1,41 @@
+{
+    "alias": "BAClibSpecialEvent",
+    "name": "special-event",
+    "traits": {
+        "base": "struct",
+        "fields": [
+            {
+                "name": "period",
+                "type": {
+                    "base": "choice",
+                    "options": [
+                        {
+                            "name": "calendar-entry",
+                            "type": "calendar-entry",
+                            "context": 0
+                        },
+                        {
+                            "name": "calendar-reference",
+                            "type": "objectid",
+                            "context": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "alias": "list-of-time-values",
+                "name": "time-values",
+                "context": 2,
+                "type": {
+                    "base": "time-value",
+                    "series": true
+                }
+            },
+            {
+                "name": "event-priority",
+                "context": 3,
+                "type": "command-priority"
+            }
+        ]
+    }
+}
