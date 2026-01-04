@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://baclib.github.io/schemas/type-reference.json",
+    "title": "BAClib Type Reference",
+    "description": "A reference to a type, either as a type name or as a set of type traits.",
+    "oneOf": [
+        {
+            "$ref": "./type-name.json"
+        },
+        {
+            "$ref": "./type-traits.json"
+        }
+    ],
+    "unevaluatedItems": false
+}
