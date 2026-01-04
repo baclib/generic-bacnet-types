@@ -2,7 +2,7 @@
     "alias": "BACnetGetEnrollmentSummaryRequest",
     "name": "get-enrollment-summary-request",
     "type": {
-        "base": "struct",
+        "base": "sequence",
         "fields": [
             {
                 "name": "acknowledgment-filter",
@@ -47,7 +47,7 @@
                 "name": "priority-filter",
                 "context": 4,
                 "type": {
-                    "base": "struct",
+                    "base": "sequence",
                     "fields": [
                         {
                             "name": "min-priority",

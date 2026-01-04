@@ -44,7 +44,7 @@
                     "object-identifier",
                     "any",
                     "choice",
-                    "struct"
+                    "sequence"
                 ]
             }
         }

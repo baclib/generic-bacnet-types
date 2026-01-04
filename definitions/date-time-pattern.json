@@ -2,7 +2,7 @@
     "alias": "BACnetDateTimePattern",
     "name": "date-time-pattern",
     "type": {
-        "base": "struct",
+        "base": "sequence",
         "fields": [
             {
                 "name": "date",

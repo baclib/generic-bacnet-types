@@ -2,7 +2,7 @@
     "alias": "BAClibTimeValue",
     "name": "time-value",
     "type": {
-        "base": "struct",
+        "base": "sequence",
         "fields": [
             {
                 "name": "time",

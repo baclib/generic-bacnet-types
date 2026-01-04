@@ -2,7 +2,7 @@
     "alias": "BACnetDateTime",
     "name": "date-time",
     "type": {
-        "base": "struct",
+        "base": "sequence",
         "fields": [
             {
                 "name": "date",

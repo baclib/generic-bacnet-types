@@ -2,7 +2,7 @@
     "alias": "BAClibSpecialEvent",
     "name": "special-event",
     "type": {
-        "base": "struct",
+        "base": "sequence",
         "fields": [
             {
                 "name": "period",

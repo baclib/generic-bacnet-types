@@ -12,7 +12,7 @@
             {
                 "name": "fault-characterstring",
                 "type": {
-                    "base": "struct",
+                    "base": "sequence",
                     "fields": [
                         {
                             "name": "list-of-fault-values",
@@ -29,7 +29,7 @@
             {
                 "name": "fault-extended",
                 "type": {
-                    "base": "struct",
+                    "base": "sequence",
                     "fields": [
                         {
                             "name": "vendor-id",
@@ -114,7 +114,7 @@
             {
                 "name": "fault-life-safety",
                 "type": {
-                    "base": "struct",
+                    "base": "sequence",
                     "fields": [
                         {
                             "name": "list-of-fault-values",
@@ -136,7 +136,7 @@
             {
                 "name": "fault-state",
                 "type": {
-                    "base": "struct",
+                    "base": "sequence",
                     "fields": [
                         {
                             "name": "list-of-fault-values",
@@ -153,7 +153,7 @@
             {
                 "name": "fault-status-flags",
                 "type": {
-                    "base": "struct",
+                    "base": "sequence",
                     "fields": [
                         {
                             "name": "status-flags-reference",
@@ -167,7 +167,7 @@
             {
                 "name": "fault-out-of-range",
                 "type": {
-                    "base": "struct",
+                    "base": "sequence",
                     "fields": [
                         {
                             "name": "min-normal-value",
@@ -226,7 +226,7 @@
             {
                 "name": "fault-listed",
                 "type": {
-                    "base": "struct",
+                    "base": "sequence",
                     "fields": [
                         {
                             "name": "fault-list-reference",

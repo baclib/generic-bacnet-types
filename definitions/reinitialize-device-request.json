@@ -2,7 +2,7 @@
     "alias": "ReinitializeDevice-Request",
     "name": "reinitialize-device-request",
     "type": {
-        "base": "struct",
+        "base": "sequence",
         "fields": [
             {
                 "alias": "reinitialized-state-of-device",
