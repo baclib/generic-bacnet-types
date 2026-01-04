@@ -1,0 +1,61 @@
+{
+    "alias": "BACnetVTClass",
+    "name": "vt-class",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "ansi-x3-64",
+                "constant": 1,
+                "description": "ANSI X3.64 terminal emulation."
+            },
+            {
+                "name": "dec-vt100",
+                "constant": 3,
+                "description": "DEC VT100 terminal emulation."
+            },
+            {
+                "name": "dec-vt220",
+                "constant": 4,
+                "description": "DEC VT220 terminal emulation."
+            },
+            {
+                "name": "dec-vt52",
+                "constant": 2,
+                "description": "DEC VT52 terminal emulation."
+            },
+            {
+                "name": "default-terminal",
+                "constant": 0,
+                "description": "Default terminal type with no specific emulation."
+            },
+            {
+                "name": "hp-700-94",
+                "constant": 5,
+                "description": "HP 700/94 terminal emulation."
+            },
+            {
+                "name": "ibm-3130",
+                "constant": 6,
+                "description": "IBM 3130 terminal emulation."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 63
+            },
+            {
+                "custom": true,
+                "minimum": 64,
+                "maximum": 65535
+            }
+        ]
+    }
+}
