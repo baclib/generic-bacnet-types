@@ -1,0 +1,106 @@
+{
+    "alias": "BACnetAuditOperationFlags",
+    "name": "audit-operation-flags",
+    "traits": {
+        "base": "bitstring",
+        "bits": [
+            {
+                "position": 0,
+                "name": "read",
+                "description": "Read operation."
+            },
+            {
+                "position": 1,
+                "name": "write",
+                "description": "Write operation."
+            },
+            {
+                "position": 2,
+                "name": "create",
+                "description": "Create operation."
+            },
+            {
+                "position": 3,
+                "name": "delete",
+                "description": "Delete operation."
+            },
+            {
+                "position": 4,
+                "name": "life-safety",
+                "description": "Life safety operation."
+            },
+            {
+                "position": 5,
+                "name": "acknowledge-alarm",
+                "description": "Acknowledge alarm operation."
+            },
+            {
+                "position": 6,
+                "name": "device-disable-comm",
+                "description": "Device disable communication operation."
+            },
+            {
+                "position": 7,
+                "name": "device-enable-comm",
+                "description": "Device enable communication operation."
+            },
+            {
+                "position": 8,
+                "name": "device-reset",
+                "description": "Device reset operation."
+            },
+            {
+                "position": 9,
+                "name": "device-backup",
+                "description": "Device backup operation."
+            },
+            {
+                "position": 10,
+                "name": "device-restore",
+                "description": "Device restore operation."
+            },
+            {
+                "position": 11,
+                "name": "subscription",
+                "description": "Subscription operation."
+            },
+            {
+                "position": 12,
+                "name": "notification",
+                "description": "Notification operation."
+            },
+            {
+                "position": 13,
+                "name": "auditing-failure",
+                "description": "Auditing failure operation."
+            },
+            {
+                "position": 14,
+                "name": "network-changes",
+                "description": "Network changes operation."
+            },
+            {
+                "position": 15,
+                "name": "general",
+                "description": "General operation."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 15,
+            "maximum": 63
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 31
+            },
+            {
+                "custom": true,
+                "minimum": 32,
+                "maximum": 63
+            }
+        ]
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "alias": "BACnetResultFlags",
+    "name": "result-flags",
+    "traits": {
+        "base": "bitstring",
+        "bits": [
+            {
+                "position": 0,
+                "name": "first-item",
+                "description": "This is the first item."
+            },
+            {
+                "position": 1,
+                "name": "last-item",
+                "description": "This is the last item."
+            },
+            {
+                "position": 2,
+                "name": "more-items",
+                "description": "There are more items available."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 2,
+            "maximum": 2
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 2,
+                "maximum": 2
+            }
+        ]
+    }
+}

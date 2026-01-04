@@ -1,0 +1,74 @@
+{
+    "alias": "BACnetGetEnrollmentSummaryRequest",
+    "name": "get-enrollment-summary-request",
+    "traits": {
+        "base": "struct",
+        "fields": [
+            {
+                "name": "acknowledgment-filter",
+                "context": 0,
+                "type": {
+                    "base": "enumerated",
+                    "values": [
+                        { "name": "all", "constant": 0 },
+                        { "name": "acked", "constant": 1 },
+                        { "name": "not-acked", "constant": 2 }
+                    ]
+                }
+            },
+            {
+                "name": "enrollment-filter",
+                "context": 1,
+                "type": "recipient-process",
+                "optional": true
+            },
+            {
+                "name": "event-state-filter",
+                "context": 2,
+                "type": {
+                    "base": "enumerated",
+                    "values": [
+                        { "name": "offnormal", "constant": 0 },
+                        { "name": "fault", "constant": 1 },
+                        { "name": "normal", "constant": 2 },
+                        { "name": "all", "constant": 3 },
+                        { "name": "active", "constant": 4 }
+                    ]
+                },
+                "optional": true
+            },
+            {
+                "name": "event-type-filter",
+                "context": 3,
+                "type": "event-type",
+                "optional": true
+            },
+            {
+                "name": "priority-filter",
+                "context": 4,
+                "type": {
+                    "base": "struct",
+                    "fields": [
+                        {
+                            "name": "min-priority",
+                            "context": 0,
+                            "type": "unsigned8"
+                        },
+                        {
+                            "name": "max-priority",
+                            "context": 1,
+                            "type": "unsigned8"
+                        }
+                    ]
+                },
+                "optional": true
+            },
+            {
+                "name": "notification-class-filter",
+                "context": 5,
+                "type": "unsigned",
+                "optional": true
+            }
+        ]
+    }
+}

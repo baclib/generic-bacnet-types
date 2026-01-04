@@ -1,0 +1,11 @@
+{
+    "alias": "BACnetAccessThreatLevel",
+    "name": "access-threat-level",
+    "traits": {
+        "base": "unsigned",
+        "range": {
+            "minimum": 0,
+            "maximum": 100
+        }
+    }
+}

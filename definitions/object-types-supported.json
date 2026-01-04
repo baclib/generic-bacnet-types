@@ -1,0 +1,346 @@
+{
+    "alias": "BACnetObjectTypesSupported",
+    "name": "object-types-supported",
+    "traits": {
+        "base": "bitstring",
+        "bits": [
+            {
+                "position": 0,
+                "name": "analog-input",
+                "description": "Analog input object."
+            },
+            {
+                "position": 1,
+                "name": "analog-output",
+                "description": "Analog output object."
+            },
+            {
+                "position": 2,
+                "name": "analog-value",
+                "description": "Analog value object."
+            },
+            {
+                "position": 3,
+                "name": "binary-input",
+                "description": "Binary input object."
+            },
+            {
+                "position": 4,
+                "name": "binary-output",
+                "description": "Binary output object."
+            },
+            {
+                "position": 5,
+                "name": "binary-value",
+                "description": "Binary value object."
+            },
+            {
+                "position": 6,
+                "name": "calendar",
+                "description": "Calendar object."
+            },
+            {
+                "position": 7,
+                "name": "command",
+                "description": "Command object."
+            },
+            {
+                "position": 8,
+                "name": "device",
+                "description": "Device object."
+            },
+            {
+                "position": 9,
+                "name": "event-enrollment",
+                "description": "Event enrollment object."
+            },
+            {
+                "position": 10,
+                "name": "file",
+                "description": "File object."
+            },
+            {
+                "position": 11,
+                "name": "group",
+                "description": "Group object."
+            },
+            {
+                "position": 12,
+                "name": "loop",
+                "description": "Loop object."
+            },
+            {
+                "position": 13,
+                "name": "multi-state-input",
+                "description": "Multi-state input object."
+            },
+            {
+                "position": 14,
+                "name": "multi-state-output",
+                "description": "Multi-state output object."
+            },
+            {
+                "position": 15,
+                "name": "notification-class",
+                "description": "Notification class object."
+            },
+            {
+                "position": 16,
+                "name": "program",
+                "description": "Program object."
+            },
+            {
+                "position": 17,
+                "name": "schedule",
+                "description": "Schedule object."
+            },
+            {
+                "position": 18,
+                "name": "averaging",
+                "description": "Averaging object."
+            },
+            {
+                "position": 19,
+                "name": "multi-state-value",
+                "description": "Multi-state value object."
+            },
+            {
+                "position": 20,
+                "name": "trend-log",
+                "description": "Trend log object."
+            },
+            {
+                "position": 21,
+                "name": "life-safety-point",
+                "description": "Life safety point object."
+            },
+            {
+                "position": 22,
+                "name": "life-safety-zone",
+                "description": "Life safety zone object."
+            },
+            {
+                "position": 23,
+                "name": "accumulator",
+                "description": "Accumulator object."
+            },
+            {
+                "position": 24,
+                "name": "pulse-converter",
+                "description": "Pulse converter object."
+            },
+            {
+                "position": 25,
+                "name": "event-log",
+                "description": "Event log object."
+            },
+            {
+                "position": 26,
+                "name": "global-group",
+                "description": "Global group object."
+            },
+            {
+                "position": 27,
+                "name": "trend-log-multiple",
+                "description": "Trend log multiple object."
+            },
+            {
+                "position": 28,
+                "name": "load-control",
+                "description": "Load control object."
+            },
+            {
+                "position": 29,
+                "name": "structured-view",
+                "description": "Structured view object."
+            },
+            {
+                "position": 30,
+                "name": "access-door",
+                "description": "Access door object."
+            },
+            {
+                "position": 31,
+                "name": "timer",
+                "description": "Timer object."
+            },
+            {
+                "position": 32,
+                "name": "access-credential",
+                "description": "Access credential object."
+            },
+            {
+                "position": 33,
+                "name": "access-point",
+                "description": "Access point object."
+            },
+            {
+                "position": 34,
+                "name": "access-rights",
+                "description": "Access rights object."
+            },
+            {
+                "position": 35,
+                "name": "access-user",
+                "description": "Access user object."
+            },
+            {
+                "position": 36,
+                "name": "access-zone",
+                "description": "Access zone object."
+            },
+            {
+                "position": 37,
+                "name": "credential-data-input",
+                "description": "Credential data input object."
+            },
+            {
+                "position": 39,
+                "name": "bitstring-value",
+                "description": "Bitstring value object."
+            },
+            {
+                "position": 40,
+                "name": "characterstring-value",
+                "description": "Characterstring value object."
+            },
+            {
+                "position": 41,
+                "name": "datepattern-value",
+                "description": "Datepattern value object."
+            },
+            {
+                "position": 42,
+                "name": "date-value",
+                "description": "Date value object."
+            },
+            {
+                "position": 43,
+                "name": "datetimepattern-value",
+                "description": "Datetimepattern value object."
+            },
+            {
+                "position": 44,
+                "name": "datetime-value",
+                "description": "Datetime value object."
+            },
+            {
+                "position": 45,
+                "name": "integer-value",
+                "description": "Integer value object."
+            },
+            {
+                "position": 46,
+                "name": "large-analog-value",
+                "description": "Large analog value object."
+            },
+            {
+                "position": 47,
+                "name": "octetstring-value",
+                "description": "Octetstring value object."
+            },
+            {
+                "position": 48,
+                "name": "positive-integer-value",
+                "description": "Positive integer value object."
+            },
+            {
+                "position": 49,
+                "name": "timepattern-value",
+                "description": "Timepattern value object."
+            },
+            {
+                "position": 50,
+                "name": "time-value",
+                "description": "Time value object."
+            },
+            {
+                "position": 51,
+                "name": "notification-forwarder",
+                "description": "Notification forwarder object."
+            },
+            {
+                "position": 52,
+                "name": "alert-enrollment",
+                "description": "Alert enrollment object."
+            },
+            {
+                "position": 53,
+                "name": "channel",
+                "description": "Channel object."
+            },
+            {
+                "position": 54,
+                "name": "lighting-output",
+                "description": "Lighting output object."
+            },
+            {
+                "position": 55,
+                "name": "binary-lighting-output",
+                "description": "Binary lighting output object."
+            },
+            {
+                "position": 56,
+                "name": "network-port",
+                "description": "Network port object."
+            },
+            {
+                "position": 57,
+                "name": "elevator-group",
+                "description": "Elevator group object."
+            },
+            {
+                "position": 58,
+                "name": "escalator",
+                "description": "Escalator object."
+            },
+            {
+                "position": 59,
+                "name": "lift",
+                "description": "Lift object."
+            },
+            {
+                "position": 60,
+                "name": "staging",
+                "description": "Staging object."
+            },
+            {
+                "position": 61,
+                "name": "audit-log",
+                "description": "Audit log object."
+            },
+            {
+                "position": 62,
+                "name": "audit-reporter",
+                "description": "Audit reporter object."
+            },
+            {
+                "position": 63,
+                "name": "color",
+                "description": "Color object."
+            },
+            {
+                "position": 64,
+                "name": "color-temperature",
+                "description": "Color temperature object."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 17,
+            "maximum": 1023
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 127
+            },
+            {
+                "custom": true,
+                "minimum": 128,
+                "maximum": 1023
+            }
+        ]
+    }
+}

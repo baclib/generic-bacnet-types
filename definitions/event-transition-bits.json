@@ -1,0 +1,36 @@
+{
+    "alias": "BACnetEventTransitionBits",
+    "name": "event-transition-bits",
+    "traits": {
+        "base": "bitstring",
+        "bits": [
+            {
+                "position": 0,
+                "name": "to-offnormal",
+                "description": "Transition to offnormal state."
+            },
+            {
+                "position": 1,
+                "name": "to-fault",
+                "description": "Transition to fault state."
+            },
+            {
+                "position": 2,
+                "name": "to-normal",
+                "description": "Transition to normal state."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 2,
+            "maximum": 2
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 2,
+                "maximum": 2
+            }
+        ]
+    }
+}

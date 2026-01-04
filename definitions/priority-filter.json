@@ -1,0 +1,101 @@
+{
+    "alias": "BACnetPriorityFilter",
+    "name": "priority-filter",
+    "traits": {
+        "base": "bitstring",
+        "bits": [
+            {
+                "position": 0,
+                "name": "manual-life-safety",
+                "description": "Manual life safety priority."
+            },
+            {
+                "position": 1,
+                "name": "automatic-life-safety",
+                "description": "Automatic life safety priority."
+            },
+            {
+                "position": 2,
+                "name": "priority-3",
+                "description": "Priority 3."
+            },
+            {
+                "position": 3,
+                "name": "priority-4",
+                "description": "Priority 4."
+            },
+            {
+                "position": 4,
+                "name": "critical-equipment-controls",
+                "description": "Critical equipment controls priority."
+            },
+            {
+                "position": 5,
+                "name": "minimum-on-off",
+                "description": "Minimum on/off priority."
+            },
+            {
+                "position": 6,
+                "name": "priority-7",
+                "description": "Priority 7."
+            },
+            {
+                "position": 7,
+                "name": "manual-operator",
+                "description": "Manual operator priority."
+            },
+            {
+                "position": 8,
+                "name": "priority-9",
+                "description": "Priority 9."
+            },
+            {
+                "position": 9,
+                "name": "priority-10",
+                "description": "Priority 10."
+            },
+            {
+                "position": 10,
+                "name": "priority-11",
+                "description": "Priority 11."
+            },
+            {
+                "position": 11,
+                "name": "priority-12",
+                "description": "Priority 12."
+            },
+            {
+                "position": 12,
+                "name": "priority-13",
+                "description": "Priority 13."
+            },
+            {
+                "position": 13,
+                "name": "priority-14",
+                "description": "Priority 14."
+            },
+            {
+                "position": 14,
+                "name": "priority-15",
+                "description": "Priority 15."
+            },
+            {
+                "position": 15,
+                "name": "priority-16",
+                "description": "Priority 16."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 15,
+            "maximum": 15
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 15,
+                "maximum": 15
+            }
+        ]
+    }
+}
