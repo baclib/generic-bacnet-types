@@ -9,7 +9,7 @@
         },
         "series": {
             "description": "Indicates if this is an array or list. If absent, it should be interpreted as false.",
-            "oneOf": [
+            "anyOf": [
                 {
                     "type": "boolean"
                 },
