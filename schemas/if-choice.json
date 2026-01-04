@@ -2,6 +2,7 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://baclib.github.io/if-choice.json",
     "title": "BAClib If-Choice Applicator",
+    "description": "Conditional schema that applies when the base type is 'choice'. Defines the 'options' property which contains at least two named options, each with a unique context number and type.",
     "type": "object",
     "if": {
         "properties": {

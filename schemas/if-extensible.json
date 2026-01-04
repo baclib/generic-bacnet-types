@@ -1,7 +1,8 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://baclib.github.io/if-is-extensible.json",
-    "title": "BAClib If-Is-Extensible Applicator",
+    "$id": "https://baclib.github.io/if-extensible.json",
+    "title": "BAClib If-Extensible Applicator",
+    "description": "Conditional schema that applies when the base type is 'bitstring', 'enumerated', or 'choice'. Defines properties for extensibility including the 'extensible' flag, valid value ranges, and custom value ranges.",
     "if": {
         "properties": {
             "base": {
@@ -47,7 +48,8 @@
                         "custom",
                         "minimum",
                         "maximum"
-                    ]
+                    ],
+                    "additionalProperties": false
                 }
             }
         }

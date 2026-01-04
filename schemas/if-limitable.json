@@ -2,6 +2,7 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://baclib.github.io/if-limitable.json",
     "title": "BAClib If-Limitable Applicator",
+    "description": "Conditional schema that applies constraints based on the base type. Supports range constraints for unsigned/enumerated, min/max for signed/float/double, and length constraints for octetstring/charstring/bitstring.",
     "allOf": [
         {
             "if": {

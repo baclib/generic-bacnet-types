@@ -2,7 +2,7 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://baclib.github.io/type-name.json",
     "title": "Type Name",
-    "description": "The name of a type, either a predefined base type or a user-defined type.",
+    "description": "The name of a type, either a predefined base type or a user-defined type. Custom types follow the pattern: optional vendor ID (0 or positive integer) followed by a hyphen, then lowercase alphanumeric segments separated by hyphens, starting with a letter.",
     "anyOf": [
         {
             "type": "string",
