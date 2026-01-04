@@ -50,13 +50,15 @@
         }
     },
     "then": {
-        "not": {
-            "required": [
-                "type"
-            ]
+        "type": "object",
+        "properties": {
+            "type": {
+                "not": {}
+            }
         }
     },
     "else": {
+        "type": "object",
         "required": [
             "type"
         ]

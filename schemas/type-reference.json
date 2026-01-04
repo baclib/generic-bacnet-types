@@ -10,6 +10,5 @@
         {
             "$ref": "./type-traits.json"
         }
-    ],
-    "unevaluatedItems": false
+    ]
 }

@@ -3,6 +3,7 @@
     "$id": "https://baclib.github.io/schemas/if-limitable.json",
     "title": "BAClib If-Limitable Applicator",
     "description": "Conditional schema that applies constraints based on the base type. Supports range constraints for unsigned/enumerated, min/max for signed/float/double, and length constraints for octetstring/charstring/bitstring.",
+    "type": "object",
     "allOf": [
         {
             "if": {
@@ -89,19 +90,27 @@
     ],
     "$defs": {
         "any-of-properties": {
+            "type": "object",
             "anyOf": [
                 {
+                    "type": "object",
+                    "properties": {
+                        "minimum": true
+                    },
                     "required": [
                         "minimum"
                     ]
                 },
                 {
+                    "type": "object",
+                    "properties": {
+                        "maximum": true
+                    },
                     "required": [
                         "maximum"
                     ]
                 }
-            ],
-            "unevaluatedProperties": false
+            ]
         }
     }
 }

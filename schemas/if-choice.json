@@ -16,7 +16,7 @@
             "options": {
                 "type": "array",
                 "description": "An array of possible options for this choice.",
-                "minItems": 2,
+                "minItems": 1,
                 "items": {
                     "type": "object",
                     "properties": {

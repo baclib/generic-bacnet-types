@@ -7,7 +7,7 @@
     "if": {
         "properties": {
             "base": {
-                "const": "struct"
+                "enum": ["struct", "sequence"]
             }
         }
     },

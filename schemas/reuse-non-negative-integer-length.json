@@ -12,6 +12,5 @@
         {
             "$ref": "./reuse-non-negative-integer-range.json"
         }
-    ],
-    "unevaluatedProperties": false
+    ]
 }

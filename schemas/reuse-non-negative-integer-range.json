@@ -3,6 +3,7 @@
     "$id": "https://baclib.github.io/schemas/reuse-non-negative-integer-range.json",
     "title": "Reuse Non-negative Integer Range",
     "description": "Specifies a non-negative integer range with minimum and/or maximum values.",
+    "type": "object",
     "properties": {
         "minimum": {
             "type": "integer",
@@ -17,11 +18,19 @@
     },
     "anyOf": [
         {
+            "type": "object",
+            "properties": {
+                "minimum": true
+            },
             "required": [
                 "minimum"
             ]
         },
         {
+            "type": "object",
+            "properties": {
+                "maximum": true
+            },
             "required": [
                 "maximum"
             ]

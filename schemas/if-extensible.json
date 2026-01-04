@@ -3,6 +3,7 @@
     "$id": "https://baclib.github.io/schemas/if-extensible.json",
     "title": "BAClib If-Extensible Applicator",
     "description": "Conditional schema that applies when the base type is 'bitstring', 'enumerated', or 'choice'. Defines properties for extensibility including the 'extensible' flag, valid value ranges, and custom value ranges.",
+    "type": "object",
     "if": {
         "properties": {
             "base": {
@@ -51,6 +52,54 @@
                     ],
                     "additionalProperties": false
                 }
+            },
+            "proprietary": {
+                "description": "Defines the range(s) of values reserved for proprietary use.",
+                "oneOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "from": {
+                                "type": "integer",
+                                "minimum": 0,
+                                "description": "The starting value of the proprietary range (inclusive)."
+                            },
+                            "to": {
+                                "type": "integer",
+                                "minimum": 0,
+                                "description": "The ending value of the proprietary range (inclusive)."
+                            }
+                        },
+                        "required": ["from", "to"],
+                        "additionalProperties": false
+                    },
+                    {
+                        "type": "array",
+                        "description": "Array of proprietary ranges.",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "from": {
+                                    "type": "integer",
+                                    "minimum": 0,
+                                    "description": "The starting value of the proprietary range (inclusive)."
+                                },
+                                "to": {
+                                    "type": "integer",
+                                    "minimum": 0,
+                                    "description": "The ending value of the proprietary range (inclusive)."
+                                }
+                            },
+                            "required": ["from", "to"],
+                            "additionalProperties": false
+                        }
+                    }
+                ]
+            },
+            "maximum": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "The maximum value allowed for this type."
             }
         }
     }
