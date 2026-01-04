@@ -1,0 +1,46 @@
+{
+    "alias": "BACnetLockStatus",
+    "name": "0-lock-status",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "lock-fault",
+                "constant": 2,
+                "description": "Lock fault detected."
+            },
+            {
+                "name": "locked",
+                "constant": 0,
+                "description": "Lock is engaged."
+            },
+            {
+                "name": "unknown",
+                "constant": 4,
+                "description": "Lock status is unknown."
+            },
+            {
+                "name": "unlocked",
+                "constant": 1,
+                "description": "Lock is disengaged."
+            },
+            {
+                "name": "unused",
+                "constant": 3,
+                "description": "Lock status is unused."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 4
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 4
+            }
+        ]
+    }
+}

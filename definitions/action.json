@@ -1,0 +1,31 @@
+{
+    "alias": "BACnetAction",
+    "name": "0-action",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "direct",
+                "constant": 0,
+                "description": "Direct action."
+            },
+            {
+                "name": "reverse",
+                "constant": 1,
+                "description": "Reverse action."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 1
+            }
+        ]
+    }
+}

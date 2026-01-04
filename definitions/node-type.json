@@ -1,0 +1,131 @@
+{
+    "alias": "BACnetNodeType",
+    "name": "0-node-type",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "area",
+                "constant": 5,
+                "description": "Area node type."
+            },
+            {
+                "name": "building",
+                "constant": 13,
+                "description": "Building node type."
+            },
+            {
+                "name": "collection",
+                "constant": 8,
+                "description": "Collection node type."
+            },
+            {
+                "name": "device",
+                "constant": 3,
+                "description": "Device node type."
+            },
+            {
+                "name": "equipment",
+                "constant": 6,
+                "description": "Equipment node type."
+            },
+            {
+                "name": "floor",
+                "constant": 14,
+                "description": "Floor node type."
+            },
+            {
+                "name": "functional",
+                "constant": 10,
+                "description": "Functional node type."
+            },
+            {
+                "name": "member",
+                "constant": 18,
+                "description": "Member node type."
+            },
+            {
+                "name": "module",
+                "constant": 16,
+                "description": "Module node type."
+            },
+            {
+                "name": "network",
+                "constant": 2,
+                "description": "Network node type."
+            },
+            {
+                "name": "organizational",
+                "constant": 4,
+                "description": "Organizational node type."
+            },
+            {
+                "name": "other",
+                "constant": 11,
+                "description": "Other node type."
+            },
+            {
+                "name": "point",
+                "constant": 7,
+                "description": "Point node type."
+            },
+            {
+                "name": "property",
+                "constant": 9,
+                "description": "Property node type."
+            },
+            {
+                "name": "protocol",
+                "constant": 19,
+                "description": "Protocol node type."
+            },
+            {
+                "name": "room",
+                "constant": 20,
+                "description": "Room node type."
+            },
+            {
+                "name": "section",
+                "constant": 15,
+                "description": "Section node type."
+            },
+            {
+                "name": "subsystem",
+                "constant": 12,
+                "description": "Subsystem node type."
+            },
+            {
+                "name": "system",
+                "constant": 1,
+                "description": "System node type."
+            },
+            {
+                "name": "tree",
+                "constant": 17,
+                "description": "Tree node type."
+            },
+            {
+                "name": "unknown",
+                "constant": 0,
+                "description": "Node type is unknown."
+            },
+            {
+                "name": "zone",
+                "constant": 21,
+                "description": "Zone node type."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 21
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 21
+            }
+        ]
+    }
+}

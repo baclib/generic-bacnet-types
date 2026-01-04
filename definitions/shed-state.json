@@ -1,0 +1,41 @@
+{
+    "alias": "BACnetShedState",
+    "name": "0-shed-state",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "shed-compliant",
+                "constant": 2,
+                "description": "The device is compliant with the shed request."
+            },
+            {
+                "name": "shed-inactive",
+                "constant": 0,
+                "description": "No shed request is active."
+            },
+            {
+                "name": "shed-non-compliant",
+                "constant": 3,
+                "description": "The device is not compliant with the shed request."
+            },
+            {
+                "name": "shed-request-pending",
+                "constant": 1,
+                "description": "A shed request is pending."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 3
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 3
+            }
+        ]
+    }
+}

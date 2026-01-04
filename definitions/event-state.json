@@ -1,0 +1,56 @@
+{
+    "alias": "BACnetEventState",
+    "name": "0-event-state",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "fault",
+                "constant": 1,
+                "description": "Event is in fault state."
+            },
+            {
+                "name": "high-limit",
+                "constant": 3,
+                "description": "Event is in high limit state."
+            },
+            {
+                "name": "life-safety-alarm",
+                "constant": 5,
+                "description": "Event is in life safety alarm state."
+            },
+            {
+                "name": "low-limit",
+                "constant": 4,
+                "description": "Event is in low limit state."
+            },
+            {
+                "name": "normal",
+                "constant": 0,
+                "description": "Event is in normal state."
+            },
+            {
+                "name": "offnormal",
+                "constant": 2,
+                "description": "Event is in offnormal state."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 63
+            },
+            {
+                "custom": true,
+                "minimum": 64,
+                "maximum": 65535
+            }
+        ]
+    }
+}

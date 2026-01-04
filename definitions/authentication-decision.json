@@ -1,0 +1,36 @@
+{
+    "alias": "BACnetAuthenticationDecision",
+    "name": "0-authentication-decision",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "allow-match",
+                "constant": 0,
+                "description": "Authentication allowed due to a match."
+            },
+            {
+                "name": "deny-mismatch",
+                "constant": 1,
+                "description": "Authentication denied due to mismatch."
+            },
+            {
+                "name": "deny-non-relay",
+                "constant": 2,
+                "description": "Authentication denied due to non-relay."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 2
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 2
+            }
+        ]
+    }
+}

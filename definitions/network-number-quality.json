@@ -1,0 +1,41 @@
+{
+    "alias": "BACnetNetworkNumberQuality",
+    "name": "0-network-number-quality",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "configured",
+                "constant": 3,
+                "description": "Network number is configured."
+            },
+            {
+                "name": "learned",
+                "constant": 1,
+                "description": "Network number is learned."
+            },
+            {
+                "name": "learned-configured",
+                "constant": 2,
+                "description": "Network number is learned and configured."
+            },
+            {
+                "name": "unknown",
+                "constant": 0,
+                "description": "Network number quality is unknown."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 3
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 3
+            }
+        ]
+    }
+}

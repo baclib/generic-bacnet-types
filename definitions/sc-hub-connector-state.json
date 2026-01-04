@@ -1,0 +1,36 @@
+{
+    "alias": "BACnetSCHubConnectorState",
+    "name": "0-sc-hub-connector-state",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "connected-to-failover",
+                "constant": 2,
+                "description": "Connected to the failover hub."
+            },
+            {
+                "name": "connected-to-primary",
+                "constant": 1,
+                "description": "Connected to the primary hub."
+            },
+            {
+                "name": "no-hub-connection",
+                "constant": 0,
+                "description": "No connection to any hub is established."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 2
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 2
+            }
+        ]
+    }
+}

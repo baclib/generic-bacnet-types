@@ -1,0 +1,61 @@
+{
+    "alias": "BACnetFaultType",
+    "name": "0-fault-type",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "fault-characterstring",
+                "constant": 1,
+                "description": "Fault in characterstring."
+            },
+            {
+                "name": "fault-extended",
+                "constant": 2,
+                "description": "Extended fault."
+            },
+            {
+                "name": "fault-life-safety",
+                "constant": 3,
+                "description": "Life safety fault."
+            },
+            {
+                "name": "fault-listed",
+                "constant": 7,
+                "description": "Listed fault."
+            },
+            {
+                "name": "fault-out-of-range",
+                "constant": 6,
+                "description": "Out of range fault."
+            },
+            {
+                "name": "fault-state",
+                "constant": 4,
+                "description": "State fault."
+            },
+            {
+                "name": "fault-status-flags",
+                "constant": 5,
+                "description": "Status flags fault."
+            },
+            {
+                "name": "none",
+                "constant": 0,
+                "description": "No fault."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 7
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 7
+            }
+        ]
+    }
+}

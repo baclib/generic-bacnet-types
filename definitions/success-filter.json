@@ -1,0 +1,36 @@
+{
+    "alias": "BACnetSuccessFilter",
+    "name": "0-success-filter",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "all",
+                "constant": 0,
+                "description": "Include all results, both successes and failures."
+            },
+            {
+                "name": "failures-only",
+                "constant": 2,
+                "description": "Include only failed results."
+            },
+            {
+                "name": "successes-only",
+                "constant": 1,
+                "description": "Include only successful results."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 2
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 2
+            }
+        ]
+    }
+}

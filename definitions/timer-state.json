@@ -1,0 +1,36 @@
+{
+    "alias": "BACnetTimerState",
+    "name": "0-timer-state",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "expired",
+                "constant": 2,
+                "description": "Indicates that the timer has expired and completed its countdown."
+            },
+            {
+                "name": "idle",
+                "constant": 0,
+                "description": "Indicates that the timer is idle and not currently running."
+            },
+            {
+                "name": "running",
+                "constant": 1,
+                "description": "Indicates that the timer is currently running and counting down."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 2
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 2
+            }
+        ]
+    }
+}

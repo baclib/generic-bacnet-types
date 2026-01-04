@@ -1,0 +1,2591 @@
+{
+    "alias": "BACnetPropertyIdentifier",
+    "name": "0-property-identifier",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "absentee-limit",
+                "constant": 244,
+                "description": "Absentee limit (244)"
+            },
+            {
+                "name": "accepted-modes",
+                "constant": 175,
+                "description": "Accepted modes (175)"
+            },
+            {
+                "name": "access-alarm-events",
+                "constant": 245,
+                "description": "Access alarm events (245)"
+            },
+            {
+                "name": "access-doors",
+                "constant": 246,
+                "description": "Access doors (246)"
+            },
+            {
+                "name": "access-event",
+                "constant": 247,
+                "description": "Access event (247)"
+            },
+            {
+                "name": "access-event-authentication-factor",
+                "constant": 248,
+                "description": "Access event authentication factor (248)"
+            },
+            {
+                "name": "access-event-credential",
+                "constant": 249,
+                "description": "Access event credential (249)"
+            },
+            {
+                "name": "access-event-tag",
+                "constant": 322,
+                "description": "Access event tag (322)"
+            },
+            {
+                "name": "access-event-time",
+                "constant": 250,
+                "description": "Access event time (250)"
+            },
+            {
+                "name": "access-transaction-events",
+                "constant": 251,
+                "description": "Access transaction events (251)"
+            },
+            {
+                "name": "accompaniment",
+                "constant": 252,
+                "description": "Accompaniment (252)"
+            },
+            {
+                "name": "accompaniment-time",
+                "constant": 253,
+                "description": "Accompaniment time (253)"
+            },
+            {
+                "name": "ack-required",
+                "constant": 1,
+                "description": "BACnetEventTransitionBits indicating which transitions require acknowledgement (1)"
+            },
+            {
+                "name": "acked-transitions",
+                "constant": 0,
+                "description": "BACnetEventTransitionBits indicating acknowledged transitions (0)"
+            },
+            {
+                "name": "action",
+                "constant": 2,
+                "description": "Action to be performed (2)"
+            },
+            {
+                "name": "action-text",
+                "constant": 3,
+                "description": "Text description of action (3)"
+            },
+            {
+                "name": "activation-time",
+                "constant": 254,
+                "description": "Activation time (254)"
+            },
+            {
+                "name": "active-authentication-policy",
+                "constant": 255,
+                "description": "Active authentication policy (255)"
+            },
+            {
+                "name": "active-cov-multiple-subscriptions",
+                "constant": 481,
+                "description": "Active COV multiple subscriptions (481)"
+            },
+            {
+                "name": "active-cov-subscriptions",
+                "constant": 152,
+                "description": "Active COV subscriptions (152)"
+            },
+            {
+                "name": "active-text",
+                "constant": 4,
+                "description": "Text displayed when binary value is active (4)"
+            },
+            {
+                "name": "active-vt-sessions",
+                "constant": 5,
+                "description": "List of active virtual terminal sessions (5)"
+            },
+            {
+                "name": "actual-shed-level",
+                "constant": 212,
+                "description": "Actual shed level (212)"
+            },
+            {
+                "name": "additional-reference-ports",
+                "constant": 508,
+                "description": "Additional reference ports (508)"
+            },
+            {
+                "name": "adjust-value",
+                "constant": 176,
+                "description": "Adjust value (176)"
+            },
+            {
+                "name": "alarm-value",
+                "constant": 6,
+                "description": "Alarm value for analog inputs (6)"
+            },
+            {
+                "name": "alarm-values",
+                "constant": 7,
+                "description": "List of alarm values (7)"
+            },
+            {
+                "name": "align-intervals",
+                "constant": 193,
+                "description": "Align intervals flag (193)"
+            },
+            {
+                "name": "all",
+                "constant": 8,
+                "description": "Indicates all properties (8)"
+            },
+            {
+                "name": "all-writes-successful",
+                "constant": 9,
+                "description": "Indicates if all writes were successful (9)"
+            },
+            {
+                "name": "allow-group-delay-inhibit",
+                "constant": 365,
+                "description": "Allow group delay inhibit (365)"
+            },
+            {
+                "name": "apdu-length",
+                "constant": 399,
+                "description": "APDU length (399)"
+            },
+            {
+                "name": "apdu-segment-timeout",
+                "constant": 10,
+                "description": "Timeout for APDU segment transmission (10)"
+            },
+            {
+                "name": "apdu-timeout",
+                "constant": 11,
+                "description": "Timeout for APDU response (11)"
+            },
+            {
+                "name": "application-software-version",
+                "constant": 12,
+                "description": "Version of application software (12)"
+            },
+            {
+                "name": "archive",
+                "constant": 13,
+                "description": "Archive flag (13)"
+            },
+            {
+                "name": "assigned-access-rights",
+                "constant": 256,
+                "description": "Assigned access rights (256)"
+            },
+            {
+                "name": "assigned-landing-calls",
+                "constant": 447,
+                "description": "Assigned landing calls (447)"
+            },
+            {
+                "name": "attempted-samples",
+                "constant": 124,
+                "description": "Number of attempted samples (124)"
+            },
+            {
+                "name": "audit-level",
+                "constant": 498,
+                "description": "Audit level (498)"
+            },
+            {
+                "name": "audit-notification-recipient",
+                "constant": 499,
+                "description": "Audit notification recipient (499)"
+            },
+            {
+                "name": "audit-priority-filter",
+                "constant": 500,
+                "description": "Audit priority filter (500)"
+            },
+            {
+                "name": "audit-source-reporter",
+                "constant": 497,
+                "description": "Audit source reporter (497)"
+            },
+            {
+                "name": "auditable-operations",
+                "constant": 501,
+                "description": "Auditable operations (501)"
+            },
+            {
+                "name": "authentication-factors",
+                "constant": 257,
+                "description": "Authentication factors (257)"
+            },
+            {
+                "name": "authentication-policy-list",
+                "constant": 258,
+                "description": "Authentication policy list (258)"
+            },
+            {
+                "name": "authentication-policy-names",
+                "constant": 259,
+                "description": "Authentication policy names (259)"
+            },
+            {
+                "name": "authentication-status",
+                "constant": 260,
+                "description": "Authentication status (260)"
+            },
+            {
+                "name": "authorization-cache",
+                "constant": 4194343,
+                "description": "Authorization cache (4194343)"
+            },
+            {
+                "name": "authorization-exemptions",
+                "constant": 364,
+                "description": "Authorization exemptions (364)"
+            },
+            {
+                "name": "authorization-groups",
+                "constant": 4194344,
+                "description": "Authorization groups (4194344)"
+            },
+            {
+                "name": "authorization-mode",
+                "constant": 261,
+                "description": "Authorization mode (261)"
+            },
+            {
+                "name": "authorization-policy",
+                "constant": 4194345,
+                "description": "Authorization policy (4194345)"
+            },
+            {
+                "name": "authorization-scope",
+                "constant": 4194346,
+                "description": "Authorization scope (4194346)"
+            },
+            {
+                "name": "authorization-server",
+                "constant": 4194347,
+                "description": "Authorization server (4194347)"
+            },
+            {
+                "name": "authorization-status",
+                "constant": 4194348,
+                "description": "Authorization status (4194348)"
+            },
+            {
+                "name": "auto-subordinate-discovery",
+                "constant": 169,
+                "description": "Auto subordinate discovery flag (169)"
+            },
+            {
+                "name": "average-value",
+                "constant": 125,
+                "description": "Average value (125)"
+            },
+            {
+                "name": "backup-and-restore-state",
+                "constant": 338,
+                "description": "Backup and restore state (338)"
+            },
+            {
+                "name": "backup-failure-timeout",
+                "constant": 153,
+                "description": "Backup failure timeout (153)"
+            },
+            {
+                "name": "backup-preparation-time",
+                "constant": 339,
+                "description": "Backup preparation time (339)"
+            },
+            {
+                "name": "bacnet-ip-global-address",
+                "constant": 407,
+                "description": "BACnet IP global address (407)"
+            },
+            {
+                "name": "bacnet-ip-mode",
+                "constant": 408,
+                "description": "BACnet IP mode (408)"
+            },
+            {
+                "name": "bacnet-ip-multicast-address",
+                "constant": 409,
+                "description": "BACnet IP multicast address (409)"
+            },
+            {
+                "name": "bacnet-ip-nat-traversal",
+                "constant": 410,
+                "description": "BACnet IP NAT traversal (410)"
+            },
+            {
+                "name": "bacnet-ip-udp-port",
+                "constant": 412,
+                "description": "BACnet IP UDP port (412)"
+            },
+            {
+                "name": "bacnet-ipv6-mode",
+                "constant": 435,
+                "description": "BACnet IPv6 mode (435)"
+            },
+            {
+                "name": "bacnet-ipv6-multicast-address",
+                "constant": 440,
+                "description": "BACnet IPv6 multicast address (440)"
+            },
+            {
+                "name": "bacnet-ipv6-udp-port",
+                "constant": 438,
+                "description": "BACnet IPv6 UDP port (438)"
+            },
+            {
+                "name": "bbmd-accept-fd-registrations",
+                "constant": 413,
+                "description": "BBMD accept FD registrations (413)"
+            },
+            {
+                "name": "bbmd-broadcast-distribution-table",
+                "constant": 414,
+                "description": "BBMD broadcast distribution table (414)"
+            },
+            {
+                "name": "bbmd-foreign-device-table",
+                "constant": 415,
+                "description": "BBMD foreign device table (415)"
+            },
+            {
+                "name": "belongs-to",
+                "constant": 262,
+                "description": "Belongs to (262)"
+            },
+            {
+                "name": "bias",
+                "constant": 14,
+                "description": "Bias value (14)"
+            },
+            {
+                "name": "bit-mask",
+                "constant": 342,
+                "description": "Bit mask (342)"
+            },
+            {
+                "name": "bit-text",
+                "constant": 343,
+                "description": "Bit text (343)"
+            },
+            {
+                "name": "blink-warn-enable",
+                "constant": 373,
+                "description": "Blink warn enable (373)"
+            },
+            {
+                "name": "buffer-size",
+                "constant": 126,
+                "description": "Buffer size (126)"
+            },
+            {
+                "name": "car-assigned-direction",
+                "constant": 448,
+                "description": "Car assigned direction (448)"
+            },
+            {
+                "name": "car-door-command",
+                "constant": 449,
+                "description": "Car door command (449)"
+            },
+            {
+                "name": "car-door-status",
+                "constant": 450,
+                "description": "Car door status (450)"
+            },
+            {
+                "name": "car-door-text",
+                "constant": 451,
+                "description": "Car door text (451)"
+            },
+            {
+                "name": "car-door-zone",
+                "constant": 452,
+                "description": "Car door zone (452)"
+            },
+            {
+                "name": "car-drive-status",
+                "constant": 453,
+                "description": "Car drive status (453)"
+            },
+            {
+                "name": "car-load",
+                "constant": 454,
+                "description": "Car load (454)"
+            },
+            {
+                "name": "car-load-units",
+                "constant": 455,
+                "description": "Car load units (455)"
+            },
+            {
+                "name": "car-mode",
+                "constant": 456,
+                "description": "Car mode (456)"
+            },
+            {
+                "name": "car-moving-direction",
+                "constant": 457,
+                "description": "Car moving direction (457)"
+            },
+            {
+                "name": "car-position",
+                "constant": 458,
+                "description": "Car position (458)"
+            },
+            {
+                "name": "certificate-signing-request-file",
+                "constant": 509,
+                "description": "Certificate signing request file (509)"
+            },
+            {
+                "name": "change-of-state-count",
+                "constant": 15,
+                "description": "Number of change of state occurrences (15)"
+            },
+            {
+                "name": "change-of-state-time",
+                "constant": 16,
+                "description": "Time of last change of state (16)"
+            },
+            {
+                "name": "changes-pending",
+                "constant": 416,
+                "description": "Changes pending (416)"
+            },
+            {
+                "name": "channel-number",
+                "constant": 366,
+                "description": "Channel number (366)"
+            },
+            {
+                "name": "client-cov-increment",
+                "constant": 127,
+                "description": "Client COV increment (127)"
+            },
+            {
+                "name": "color-command",
+                "constant": 4194334,
+                "description": "Color command (4194334)"
+            },
+            {
+                "name": "color-override",
+                "constant": 4194328,
+                "description": "Color override (4194328)"
+            },
+            {
+                "name": "color-reference",
+                "constant": 4194329,
+                "description": "Color reference (4194329)"
+            },
+            {
+                "name": "command",
+                "constant": 417,
+                "description": "Command (417)"
+            },
+            {
+                "name": "command-time-array",
+                "constant": 430,
+                "description": "Command time array (430)"
+            },
+            {
+                "name": "command-validation-result",
+                "constant": 510,
+                "description": "Command validation result (510)"
+            },
+            {
+                "name": "configuration-files",
+                "constant": 154,
+                "description": "Configuration files (154)"
+            },
+            {
+                "name": "control-groups",
+                "constant": 367,
+                "description": "Control groups (367)"
+            },
+            {
+                "name": "controlled-variable-reference",
+                "constant": 19,
+                "description": "Reference to controlled variable (19)"
+            },
+            {
+                "name": "controlled-variable-units",
+                "constant": 20,
+                "description": "Engineering units of controlled variable (20)"
+            },
+            {
+                "name": "controlled-variable-value",
+                "constant": 21,
+                "description": "Current value of controlled variable (21)"
+            },
+            {
+                "name": "count",
+                "constant": 177,
+                "description": "Count value (177)"
+            },
+            {
+                "name": "count-before-change",
+                "constant": 178,
+                "description": "Count before change (178)"
+            },
+            {
+                "name": "count-change-time",
+                "constant": 179,
+                "description": "Count change time (179)"
+            },
+            {
+                "name": "cov-increment",
+                "constant": 22,
+                "description": "Change of value increment (22)"
+            },
+            {
+                "name": "cov-period",
+                "constant": 180,
+                "description": "COV period (180)"
+            },
+            {
+                "name": "cov-resubscription-interval",
+                "constant": 128,
+                "description": "COV resubscription interval (128)"
+            },
+            {
+                "name": "covu-period",
+                "constant": 349,
+                "description": "COVU period (349)"
+            },
+            {
+                "name": "covu-recipients",
+                "constant": 350,
+                "description": "COVU recipients (350)"
+            },
+            {
+                "name": "credential-disable",
+                "constant": 263,
+                "description": "Credential disable (263)"
+            },
+            {
+                "name": "credential-status",
+                "constant": 264,
+                "description": "Credential status (264)"
+            },
+            {
+                "name": "credentials",
+                "constant": 265,
+                "description": "Credentials (265)"
+            },
+            {
+                "name": "credentials-in-zone",
+                "constant": 266,
+                "description": "Credentials in zone (266)"
+            },
+            {
+                "name": "current-command-priority",
+                "constant": 431,
+                "description": "Current command priority (431)"
+            },
+            {
+                "name": "current-health",
+                "constant": 4194307,
+                "description": "Current health (4194307)"
+            },
+            {
+                "name": "database-revision",
+                "constant": 155,
+                "description": "Database revision (155)"
+            },
+            {
+                "name": "date-list",
+                "constant": 23,
+                "description": "List of dates (23)"
+            },
+            {
+                "name": "daylight-savings-status",
+                "constant": 24,
+                "description": "Indicates daylight savings time status (24)"
+            },
+            {
+                "name": "days-remaining",
+                "constant": 267,
+                "description": "Days remaining (267)"
+            },
+            {
+                "name": "deadband",
+                "constant": 25,
+                "description": "Deadband value (25)"
+            },
+            {
+                "name": "default-color",
+                "constant": 4194330,
+                "description": "Default color (4194330)"
+            },
+            {
+                "name": "default-color-temperature",
+                "constant": 4194331,
+                "description": "Default color temperature (4194331)"
+            },
+            {
+                "name": "default-fade-time",
+                "constant": 374,
+                "description": "Default fade time (374)"
+            },
+            {
+                "name": "default-on-value",
+                "constant": 4194341,
+                "description": "Default on value (4194341)"
+            },
+            {
+                "name": "default-present-value",
+                "constant": 492,
+                "description": "Default present value (492)"
+            },
+            {
+                "name": "default-ramp-rate",
+                "constant": 375,
+                "description": "Default ramp rate (375)"
+            },
+            {
+                "name": "default-step-increment",
+                "constant": 376,
+                "description": "Default step increment (376)"
+            },
+            {
+                "name": "default-subordinate-relationship",
+                "constant": 490,
+                "description": "Default subordinate relationship (490)"
+            },
+            {
+                "name": "default-timeout",
+                "constant": 393,
+                "description": "Default timeout (393)"
+            },
+            {
+                "name": "delete-on-forward",
+                "constant": 502,
+                "description": "Delete on forward (502)"
+            },
+            {
+                "name": "deployed-profile-location",
+                "constant": 484,
+                "description": "Deployed profile location (484)"
+            },
+            {
+                "name": "derivative-constant",
+                "constant": 26,
+                "description": "Derivative constant for PID control (26)"
+            },
+            {
+                "name": "derivative-constant-units",
+                "constant": 27,
+                "description": "Engineering units for derivative constant (27)"
+            },
+            {
+                "name": "description",
+                "constant": 28,
+                "description": "Textual description (28)"
+            },
+            {
+                "name": "description-of-halt",
+                "constant": 29,
+                "description": "Description of halt condition (29)"
+            },
+            {
+                "name": "device-address-binding",
+                "constant": 30,
+                "description": "Device address binding table (30)"
+            },
+            {
+                "name": "device-address-proxy-enable",
+                "constant": 4194338,
+                "description": "Device address proxy enable (4194338)"
+            },
+            {
+                "name": "device-address-proxy-table",
+                "constant": 4194339,
+                "description": "Device address proxy table (4194339)"
+            },
+            {
+                "name": "device-address-proxy-timeout",
+                "constant": 4194340,
+                "description": "Device address proxy timeout (4194340)"
+            },
+            {
+                "name": "device-type",
+                "constant": 31,
+                "description": "Type of device (31)"
+            },
+            {
+                "name": "device-uuid",
+                "constant": 507,
+                "description": "Device UUID (507)"
+            },
+            {
+                "name": "direct-reading",
+                "constant": 156,
+                "description": "Direct reading (156)"
+            },
+            {
+                "name": "door-alarm-state",
+                "constant": 226,
+                "description": "Door alarm state (226)"
+            },
+            {
+                "name": "door-extended-pulse-time",
+                "constant": 227,
+                "description": "Door extended pulse time (227)"
+            },
+            {
+                "name": "door-members",
+                "constant": 228,
+                "description": "Door members (228)"
+            },
+            {
+                "name": "door-open-too-long-time",
+                "constant": 229,
+                "description": "Door open too long time (229)"
+            },
+            {
+                "name": "door-pulse-time",
+                "constant": 230,
+                "description": "Door pulse time (230)"
+            },
+            {
+                "name": "door-status",
+                "constant": 231,
+                "description": "Door status (231)"
+            },
+            {
+                "name": "door-unlock-delay-time",
+                "constant": 232,
+                "description": "Door unlock delay time (232)"
+            },
+            {
+                "name": "duty-window",
+                "constant": 213,
+                "description": "Duty window (213)"
+            },
+            {
+                "name": "effective-period",
+                "constant": 32,
+                "description": "Effective period for schedule (32)"
+            },
+            {
+                "name": "egress-active",
+                "constant": 386,
+                "description": "Egress active (386)"
+            },
+            {
+                "name": "egress-time",
+                "constant": 377,
+                "description": "Egress time (377)"
+            },
+            {
+                "name": "elapsed-active-time",
+                "constant": 33,
+                "description": "Accumulated active time (33)"
+            },
+            {
+                "name": "elevator-group",
+                "constant": 459,
+                "description": "Elevator group (459)"
+            },
+            {
+                "name": "enable",
+                "constant": 133,
+                "description": "Enable flag (133)"
+            },
+            {
+                "name": "energy-meter",
+                "constant": 460,
+                "description": "Energy meter (460)"
+            },
+            {
+                "name": "energy-meter-ref",
+                "constant": 461,
+                "description": "Energy meter reference (461)"
+            },
+            {
+                "name": "entry-points",
+                "constant": 268,
+                "description": "Entry points (268)"
+            },
+            {
+                "name": "error-limit",
+                "constant": 34,
+                "description": "Error limit threshold (34)"
+            },
+            {
+                "name": "escalator-mode",
+                "constant": 462,
+                "description": "Escalator mode (462)"
+            },
+            {
+                "name": "event-algorithm-inhibit",
+                "constant": 354,
+                "description": "Event algorithm inhibit (354)"
+            },
+            {
+                "name": "event-algorithm-inhibit-ref",
+                "constant": 355,
+                "description": "Event algorithm inhibit reference (355)"
+            },
+            {
+                "name": "event-detection-enable",
+                "constant": 353,
+                "description": "Event detection enable (353)"
+            },
+            {
+                "name": "event-enable",
+                "constant": 35,
+                "description": "Event notification enable flags (35)"
+            },
+            {
+                "name": "event-message-texts",
+                "constant": 351,
+                "description": "Event message texts (351)"
+            },
+            {
+                "name": "event-message-texts-config",
+                "constant": 352,
+                "description": "Event message texts config (352)"
+            },
+            {
+                "name": "event-parameters",
+                "constant": 83,
+                "description": "Event algorithm parameters (83)"
+            },
+            {
+                "name": "event-state",
+                "constant": 36,
+                "description": "Current event state (36)"
+            },
+            {
+                "name": "event-time-stamps",
+                "constant": 130,
+                "description": "Event timestamps (130)"
+            },
+            {
+                "name": "event-type",
+                "constant": 37,
+                "description": "Type of event (37)"
+            },
+            {
+                "name": "exception-schedule",
+                "constant": 38,
+                "description": "Exception schedule entries (38)"
+            },
+            {
+                "name": "execution-delay",
+                "constant": 368,
+                "description": "Execution delay (368)"
+            },
+            {
+                "name": "exit-points",
+                "constant": 269,
+                "description": "Exit points (269)"
+            },
+            {
+                "name": "expected-shed-level",
+                "constant": 214,
+                "description": "Expected shed level (214)"
+            },
+            {
+                "name": "expiration-time",
+                "constant": 270,
+                "description": "Expiration time (270)"
+            },
+            {
+                "name": "extended-time-enable",
+                "constant": 271,
+                "description": "Extended time enable (271)"
+            },
+            {
+                "name": "failed-attempt-events",
+                "constant": 272,
+                "description": "Failed attempt events (272)"
+            },
+            {
+                "name": "failed-attempts",
+                "constant": 273,
+                "description": "Failed attempts (273)"
+            },
+            {
+                "name": "failed-attempts-time",
+                "constant": 274,
+                "description": "Failed attempts time (274)"
+            },
+            {
+                "name": "fault-high-limit",
+                "constant": 388,
+                "description": "Fault high limit (388)"
+            },
+            {
+                "name": "fault-low-limit",
+                "constant": 389,
+                "description": "Fault low limit (389)"
+            },
+            {
+                "name": "fault-parameters",
+                "constant": 358,
+                "description": "Fault parameters (358)"
+            },
+            {
+                "name": "fault-signals",
+                "constant": 463,
+                "description": "Fault signals (463)"
+            },
+            {
+                "name": "fault-type",
+                "constant": 359,
+                "description": "Fault type (359)"
+            },
+            {
+                "name": "fault-values",
+                "constant": 39,
+                "description": "Fault condition values (39)"
+            },
+            {
+                "name": "fd-bbmd-address",
+                "constant": 418,
+                "description": "FD BBMD address (418)"
+            },
+            {
+                "name": "fd-subscription-lifetime",
+                "constant": 419,
+                "description": "FD subscription lifetime (419)"
+            },
+            {
+                "name": "feedback-value",
+                "constant": 40,
+                "description": "Feedback value in control loop (40)"
+            },
+            {
+                "name": "file-access-method",
+                "constant": 41,
+                "description": "File access method (41)"
+            },
+            {
+                "name": "file-size",
+                "constant": 42,
+                "description": "Size of file in octets (42)"
+            },
+            {
+                "name": "file-type",
+                "constant": 43,
+                "description": "Type of file (43)"
+            },
+            {
+                "name": "firmware-revision",
+                "constant": 44,
+                "description": "Firmware revision string (44)"
+            },
+            {
+                "name": "floor-number",
+                "constant": 506,
+                "description": "Floor number (506)"
+            },
+            {
+                "name": "floor-text",
+                "constant": 464,
+                "description": "Floor text (464)"
+            },
+            {
+                "name": "full-duty-baseline",
+                "constant": 215,
+                "description": "Full duty baseline (215)"
+            },
+            {
+                "name": "global-identifier",
+                "constant": 323,
+                "description": "Global identifier (323)"
+            },
+            {
+                "name": "group-id",
+                "constant": 465,
+                "description": "Group ID (465)"
+            },
+            {
+                "name": "group-member-names",
+                "constant": 346,
+                "description": "Group member names (346)"
+            },
+            {
+                "name": "group-members",
+                "constant": 345,
+                "description": "Group members (345)"
+            },
+            {
+                "name": "group-mode",
+                "constant": 467,
+                "description": "Group mode (467)"
+            },
+            {
+                "name": "high-end-trim",
+                "constant": 4194335,
+                "description": "High end trim (4194335)"
+            },
+            {
+                "name": "high-limit",
+                "constant": 45,
+                "description": "High limit for analog value (45)"
+            },
+            {
+                "name": "higher-deck",
+                "constant": 468,
+                "description": "Higher deck (468)"
+            },
+            {
+                "name": "in-process",
+                "constant": 47,
+                "description": "Indicates command in process (47)"
+            },
+            {
+                "name": "in-progress",
+                "constant": 378,
+                "description": "In progress (378)"
+            },
+            {
+                "name": "inactive-text",
+                "constant": 46,
+                "description": "Text displayed when binary value is inactive (46)"
+            },
+            {
+                "name": "initial-timeout",
+                "constant": 394,
+                "description": "Initial timeout (394)"
+            },
+            {
+                "name": "input-reference",
+                "constant": 181,
+                "description": "Input reference (181)"
+            },
+            {
+                "name": "installation-id",
+                "constant": 469,
+                "description": "Installation ID (469)"
+            },
+            {
+                "name": "instance-of",
+                "constant": 48,
+                "description": "Object identifier of which this is an instance (48)"
+            },
+            {
+                "name": "instantaneous-power",
+                "constant": 379,
+                "description": "Instantaneous power (379)"
+            },
+            {
+                "name": "integral-constant",
+                "constant": 49,
+                "description": "Integral constant for PID control (49)"
+            },
+            {
+                "name": "integral-constant-units",
+                "constant": 50,
+                "description": "Engineering units for integral constant (50)"
+            },
+            {
+                "name": "interface-value",
+                "constant": 387,
+                "description": "Interface value (387)"
+            },
+            {
+                "name": "interval-offset",
+                "constant": 195,
+                "description": "Interval offset (195)"
+            },
+            {
+                "name": "ip-address",
+                "constant": 400,
+                "description": "IP address (400)"
+            },
+            {
+                "name": "ip-default-gateway",
+                "constant": 401,
+                "description": "IP default gateway (401)"
+            },
+            {
+                "name": "ip-dhcp-enable",
+                "constant": 402,
+                "description": "IP DHCP enable (402)"
+            },
+            {
+                "name": "ip-dhcp-lease-time",
+                "constant": 403,
+                "description": "IP DHCP lease time (403)"
+            },
+            {
+                "name": "ip-dhcp-lease-time-remaining",
+                "constant": 404,
+                "description": "IP DHCP lease time remaining (404)"
+            },
+            {
+                "name": "ip-dhcp-server",
+                "constant": 405,
+                "description": "IP DHCP server (405)"
+            },
+            {
+                "name": "ip-dns-server",
+                "constant": 406,
+                "description": "IP DNS server (406)"
+            },
+            {
+                "name": "ip-subnet-mask",
+                "constant": 411,
+                "description": "IP subnet mask (411)"
+            },
+            {
+                "name": "ipv6-address",
+                "constant": 436,
+                "description": "IPv6 address (436)"
+            },
+            {
+                "name": "ipv6-auto-addressing-enable",
+                "constant": 442,
+                "description": "IPv6 auto addressing enable (442)"
+            },
+            {
+                "name": "ipv6-default-gateway",
+                "constant": 439,
+                "description": "IPv6 default gateway (439)"
+            },
+            {
+                "name": "ipv6-dhcp-lease-time",
+                "constant": 443,
+                "description": "IPv6 DHCP lease time (443)"
+            },
+            {
+                "name": "ipv6-dhcp-lease-time-remaining",
+                "constant": 444,
+                "description": "IPv6 DHCP lease time remaining (444)"
+            },
+            {
+                "name": "ipv6-dhcp-server",
+                "constant": 445,
+                "description": "IPv6 DHCP server (445)"
+            },
+            {
+                "name": "ipv6-dns-server",
+                "constant": 441,
+                "description": "IPv6 DNS server (441)"
+            },
+            {
+                "name": "ipv6-prefix-length",
+                "constant": 437,
+                "description": "IPv6 prefix length (437)"
+            },
+            {
+                "name": "ipv6-zone-index",
+                "constant": 446,
+                "description": "IPv6 zone index (446)"
+            },
+            {
+                "name": "is-utc",
+                "constant": 344,
+                "description": "Is UTC (344)"
+            },
+            {
+                "name": "issue-confirmed-notifications",
+                "constant": 51,
+                "description": "Indicates if confirmed notifications are issued (51)"
+            },
+            {
+                "name": "issuer-certificate-files",
+                "constant": 511,
+                "description": "Issuer certificate files (511)"
+            },
+            {
+                "name": "landing-call-control",
+                "constant": 471,
+                "description": "Landing call control (471)"
+            },
+            {
+                "name": "landing-calls",
+                "constant": 470,
+                "description": "Landing calls (470)"
+            },
+            {
+                "name": "landing-door-status",
+                "constant": 472,
+                "description": "Landing door status (472)"
+            },
+            {
+                "name": "last-access-event",
+                "constant": 275,
+                "description": "Last access event (275)"
+            },
+            {
+                "name": "last-access-point",
+                "constant": 276,
+                "description": "Last access point (276)"
+            },
+            {
+                "name": "last-command-time",
+                "constant": 432,
+                "description": "Last command time (432)"
+            },
+            {
+                "name": "last-credential-added",
+                "constant": 277,
+                "description": "Last credential added (277)"
+            },
+            {
+                "name": "last-credential-added-time",
+                "constant": 278,
+                "description": "Last credential added time (278)"
+            },
+            {
+                "name": "last-credential-removed",
+                "constant": 279,
+                "description": "Last credential removed (279)"
+            },
+            {
+                "name": "last-credential-removed-time",
+                "constant": 280,
+                "description": "Last credential removed time (280)"
+            },
+            {
+                "name": "last-notify-record",
+                "constant": 173,
+                "description": "Last notify record (173)"
+            },
+            {
+                "name": "last-on-value",
+                "constant": 4194342,
+                "description": "Last on value (4194342)"
+            },
+            {
+                "name": "last-priority",
+                "constant": 369,
+                "description": "Last priority (369)"
+            },
+            {
+                "name": "last-restart-reason",
+                "constant": 196,
+                "description": "Last restart reason (196)"
+            },
+            {
+                "name": "last-restore-time",
+                "constant": 157,
+                "description": "Last restore time (157)"
+            },
+            {
+                "name": "last-state-change",
+                "constant": 395,
+                "description": "Last state change (395)"
+            },
+            {
+                "name": "last-use-time",
+                "constant": 281,
+                "description": "Last use time (281)"
+            },
+            {
+                "name": "life-safety-alarm-values",
+                "constant": 166,
+                "description": "Life safety alarm values (166)"
+            },
+            {
+                "name": "lighting-command",
+                "constant": 380,
+                "description": "Lighting command (380)"
+            },
+            {
+                "name": "lighting-command-default-priority",
+                "constant": 381,
+                "description": "Lighting command default priority (381)"
+            },
+            {
+                "name": "limit-enable",
+                "constant": 52,
+                "description": "Limit enable flags (52)"
+            },
+            {
+                "name": "limit-monitoring-interval",
+                "constant": 182,
+                "description": "Limit monitoring interval (182)"
+            },
+            {
+                "name": "link-speed",
+                "constant": 420,
+                "description": "Link speed (420)"
+            },
+            {
+                "name": "link-speed-autonegotiate",
+                "constant": 422,
+                "description": "Link speed autonegotiate (422)"
+            },
+            {
+                "name": "link-speeds",
+                "constant": 421,
+                "description": "Link speeds (421)"
+            },
+            {
+                "name": "list-of-group-members",
+                "constant": 53,
+                "description": "List of group member references (53)"
+            },
+            {
+                "name": "list-of-object-property-references",
+                "constant": 54,
+                "description": "List of object property references (54)"
+            },
+            {
+                "name": "local-date",
+                "constant": 56,
+                "description": "Local date (56)"
+            },
+            {
+                "name": "local-forwarding-only",
+                "constant": 360,
+                "description": "Local forwarding only (360)"
+            },
+            {
+                "name": "local-time",
+                "constant": 57,
+                "description": "Local time (57)"
+            },
+            {
+                "name": "location",
+                "constant": 58,
+                "description": "Physical location description (58)"
+            },
+            {
+                "name": "lock-status",
+                "constant": 233,
+                "description": "Lock status (233)"
+            },
+            {
+                "name": "lockout",
+                "constant": 282,
+                "description": "Lockout (282)"
+            },
+            {
+                "name": "lockout-relinquish-time",
+                "constant": 283,
+                "description": "Lockout relinquish time (283)"
+            },
+            {
+                "name": "log-buffer",
+                "constant": 131,
+                "description": "Log buffer (131)"
+            },
+            {
+                "name": "log-device-object-property",
+                "constant": 132,
+                "description": "Log device object property reference (132)"
+            },
+            {
+                "name": "log-interval",
+                "constant": 134,
+                "description": "Log interval (134)"
+            },
+            {
+                "name": "logging-object",
+                "constant": 183,
+                "description": "Logging object (183)"
+            },
+            {
+                "name": "logging-record",
+                "constant": 184,
+                "description": "Logging record (184)"
+            },
+            {
+                "name": "logging-type",
+                "constant": 197,
+                "description": "Logging type (197)"
+            },
+            {
+                "name": "low-diff-limit",
+                "constant": 390,
+                "description": "Low diff limit (390)"
+            },
+            {
+                "name": "low-end-trim",
+                "constant": 4194336,
+                "description": "Low end trim (4194336)"
+            },
+            {
+                "name": "low-limit",
+                "constant": 59,
+                "description": "Low limit for analog value (59)"
+            },
+            {
+                "name": "lower-deck",
+                "constant": 473,
+                "description": "Lower deck (473)"
+            },
+            {
+                "name": "mac-address",
+                "constant": 423,
+                "description": "MAC address (423)"
+            },
+            {
+                "name": "machine-room-id",
+                "constant": 474,
+                "description": "Machine room ID (474)"
+            },
+            {
+                "name": "maintenance-required",
+                "constant": 158,
+                "description": "Maintenance required flag (158)"
+            },
+            {
+                "name": "making-car-call",
+                "constant": 475,
+                "description": "Making car call (475)"
+            },
+            {
+                "name": "manipulated-variable-reference",
+                "constant": 60,
+                "description": "Reference to manipulated variable (60)"
+            },
+            {
+                "name": "manual-subordinate-address-binding",
+                "constant": 170,
+                "description": "Manual subordinate address binding (170)"
+            },
+            {
+                "name": "masked-alarm-values",
+                "constant": 234,
+                "description": "Masked alarm values (234)"
+            },
+            {
+                "name": "max-actual-value",
+                "constant": 382,
+                "description": "Maximum actual value (382)"
+            },
+            {
+                "name": "max-apdu-length-accepted",
+                "constant": 62,
+                "description": "Maximum APDU length accepted (62)"
+            },
+            {
+                "name": "max-bvlc-length-accepted",
+                "constant": 4194304,
+                "description": "Maximum BVLC length accepted (4194304)"
+            },
+            {
+                "name": "max-failed-attempts",
+                "constant": 285,
+                "description": "Maximum failed attempts (285)"
+            },
+            {
+                "name": "max-info-frames",
+                "constant": 63,
+                "description": "Maximum information frames (63)"
+            },
+            {
+                "name": "max-manager",
+                "constant": 64,
+                "description": "Maximum master address (64)"
+            },
+            {
+                "name": "max-npdu-length-accepted",
+                "constant": 4194305,
+                "description": "Maximum NPDU length accepted (4194305)"
+            },
+            {
+                "name": "max-pres-value",
+                "constant": 65,
+                "description": "Maximum present value (65)"
+            },
+            {
+                "name": "max-proxied-i-ams-per-second",
+                "constant": 4194349,
+                "description": "Maximum proxied I-Ams per second (4194349)"
+            },
+            {
+                "name": "max-segments-accepted",
+                "constant": 167,
+                "description": "Maximum segments accepted (167)"
+            },
+            {
+                "name": "maximum-output",
+                "constant": 61,
+                "description": "Maximum output value (61)"
+            },
+            {
+                "name": "maximum-send-delay",
+                "constant": 503,
+                "description": "Maximum send delay (503)"
+            },
+            {
+                "name": "maximum-value",
+                "constant": 135,
+                "description": "Maximum value (135)"
+            },
+            {
+                "name": "maximum-value-timestamp",
+                "constant": 149,
+                "description": "Maximum value timestamp (149)"
+            },
+            {
+                "name": "member-of",
+                "constant": 159,
+                "description": "Member of list (159)"
+            },
+            {
+                "name": "member-status-flags",
+                "constant": 347,
+                "description": "Member status flags (347)"
+            },
+            {
+                "name": "members",
+                "constant": 286,
+                "description": "Members (286)"
+            },
+            {
+                "name": "min-actual-value",
+                "constant": 383,
+                "description": "Minimum actual value (383)"
+            },
+            {
+                "name": "min-pres-value",
+                "constant": 69,
+                "description": "Minimum present value (69)"
+            },
+            {
+                "name": "minimum-off-time",
+                "constant": 66,
+                "description": "Minimum off time (66)"
+            },
+            {
+                "name": "minimum-on-time",
+                "constant": 67,
+                "description": "Minimum on time (67)"
+            },
+            {
+                "name": "minimum-output",
+                "constant": 68,
+                "description": "Minimum output value (68)"
+            },
+            {
+                "name": "minimum-value",
+                "constant": 136,
+                "description": "Minimum value (136)"
+            },
+            {
+                "name": "minimum-value-timestamp",
+                "constant": 150,
+                "description": "Minimum value timestamp (150)"
+            },
+            {
+                "name": "mode",
+                "constant": 160,
+                "description": "Mode (160)"
+            },
+            {
+                "name": "model-name",
+                "constant": 70,
+                "description": "Model name of device (70)"
+            },
+            {
+                "name": "modification-date",
+                "constant": 71,
+                "description": "Date of last modification (71)"
+            },
+            {
+                "name": "monitored-objects",
+                "constant": 504,
+                "description": "Monitored objects (504)"
+            },
+            {
+                "name": "muster-point",
+                "constant": 287,
+                "description": "Muster point (287)"
+            },
+            {
+                "name": "negative-access-rules",
+                "constant": 288,
+                "description": "Negative access rules (288)"
+            },
+            {
+                "name": "network-interface-name",
+                "constant": 424,
+                "description": "Network interface name (424)"
+            },
+            {
+                "name": "network-number",
+                "constant": 425,
+                "description": "Network number (425)"
+            },
+            {
+                "name": "network-number-quality",
+                "constant": 426,
+                "description": "Network number quality (426)"
+            },
+            {
+                "name": "network-type",
+                "constant": 427,
+                "description": "Network type (427)"
+            },
+            {
+                "name": "next-stopping-floor",
+                "constant": 476,
+                "description": "Next stopping floor (476)"
+            },
+            {
+                "name": "node-subtype",
+                "constant": 207,
+                "description": "Node subtype (207)"
+            },
+            {
+                "name": "node-type",
+                "constant": 208,
+                "description": "Node type (208)"
+            },
+            {
+                "name": "notification-class",
+                "constant": 17,
+                "description": "Notification class for event reporting (17)"
+            },
+            {
+                "name": "notification-threshold",
+                "constant": 137,
+                "description": "Notification threshold (137)"
+            },
+            {
+                "name": "notify-type",
+                "constant": 72,
+                "description": "Type of notification (72)"
+            },
+            {
+                "name": "number-of-apdu-retries",
+                "constant": 73,
+                "description": "Number of APDU retries (73)"
+            },
+            {
+                "name": "number-of-authentication-policies",
+                "constant": 289,
+                "description": "Number of authentication policies (289)"
+            },
+            {
+                "name": "number-of-states",
+                "constant": 74,
+                "description": "Number of states for multistate value (74)"
+            },
+            {
+                "name": "object-identifier",
+                "constant": 75,
+                "description": "Object identifier (75)"
+            },
+            {
+                "name": "object-list",
+                "constant": 76,
+                "description": "List of objects in device (76)"
+            },
+            {
+                "name": "object-name",
+                "constant": 77,
+                "description": "Name of object (77)"
+            },
+            {
+                "name": "object-property-reference",
+                "constant": 78,
+                "description": "Object property reference (78)"
+            },
+            {
+                "name": "object-type",
+                "constant": 79,
+                "description": "Type of object (79)"
+            },
+            {
+                "name": "occupancy-count",
+                "constant": 290,
+                "description": "Occupancy count (290)"
+            },
+            {
+                "name": "occupancy-count-adjust",
+                "constant": 291,
+                "description": "Occupancy count adjust (291)"
+            },
+            {
+                "name": "occupancy-count-enable",
+                "constant": 292,
+                "description": "Occupancy count enable (292)"
+            },
+            {
+                "name": "occupancy-lower-limit",
+                "constant": 294,
+                "description": "Occupancy lower limit (294)"
+            },
+            {
+                "name": "occupancy-lower-limit-enforced",
+                "constant": 295,
+                "description": "Occupancy lower limit enforced (295)"
+            },
+            {
+                "name": "occupancy-state",
+                "constant": 296,
+                "description": "Occupancy state (296)"
+            },
+            {
+                "name": "occupancy-upper-limit",
+                "constant": 297,
+                "description": "Occupancy upper limit (297)"
+            },
+            {
+                "name": "occupancy-upper-limit-enforced",
+                "constant": 298,
+                "description": "Occupancy upper limit enforced (298)"
+            },
+            {
+                "name": "operation-direction",
+                "constant": 477,
+                "description": "Operation direction (477)"
+            },
+            {
+                "name": "operation-expected",
+                "constant": 161,
+                "description": "Operation expected (161)"
+            },
+            {
+                "name": "operational-certificate-file",
+                "constant": 4194306,
+                "description": "Operational certificate file (4194306)"
+            },
+            {
+                "name": "optional",
+                "constant": 80,
+                "description": "Optional property indicator (80)"
+            },
+            {
+                "name": "out-of-service",
+                "constant": 81,
+                "description": "Out of service indicator (81)"
+            },
+            {
+                "name": "output-units",
+                "constant": 82,
+                "description": "Output engineering units (82)"
+            },
+            {
+                "name": "override-color-reference",
+                "constant": 4194332,
+                "description": "Override color reference (4194332)"
+            },
+            {
+                "name": "passback-mode",
+                "constant": 300,
+                "description": "Passback mode (300)"
+            },
+            {
+                "name": "passback-timeout",
+                "constant": 301,
+                "description": "Passback timeout (301)"
+            },
+            {
+                "name": "passenger-alarm",
+                "constant": 478,
+                "description": "Passenger alarm (478)"
+            },
+            {
+                "name": "polarity",
+                "constant": 84,
+                "description": "Polarity of binary input (84)"
+            },
+            {
+                "name": "port-filter",
+                "constant": 363,
+                "description": "Port filter (363)"
+            },
+            {
+                "name": "positive-access-rules",
+                "constant": 302,
+                "description": "Positive access rules (302)"
+            },
+            {
+                "name": "power",
+                "constant": 384,
+                "description": "Power (384)"
+            },
+            {
+                "name": "power-mode",
+                "constant": 479,
+                "description": "Power mode (479)"
+            },
+            {
+                "name": "prescale",
+                "constant": 185,
+                "description": "Prescale value (185)"
+            },
+            {
+                "name": "present-stage",
+                "constant": 493,
+                "description": "Present stage (493)"
+            },
+            {
+                "name": "present-value",
+                "constant": 85,
+                "description": "Present value of object (85)"
+            },
+            {
+                "name": "priority",
+                "constant": 86,
+                "description": "Priority level (86)"
+            },
+            {
+                "name": "priority-array",
+                "constant": 87,
+                "description": "Array of priority values (87)"
+            },
+            {
+                "name": "priority-for-writing",
+                "constant": 88,
+                "description": "Priority for writing (88)"
+            },
+            {
+                "name": "process-identifier",
+                "constant": 89,
+                "description": "Process identifier (89)"
+            },
+            {
+                "name": "process-identifier-filter",
+                "constant": 361,
+                "description": "Process identifier filter (361)"
+            },
+            {
+                "name": "profile-location",
+                "constant": 485,
+                "description": "Profile location (485)"
+            },
+            {
+                "name": "profile-name",
+                "constant": 168,
+                "description": "Profile name (168)"
+            },
+            {
+                "name": "program-change",
+                "constant": 90,
+                "description": "Program change indicator (90)"
+            },
+            {
+                "name": "program-location",
+                "constant": 91,
+                "description": "Location of program (91)"
+            },
+            {
+                "name": "program-state",
+                "constant": 92,
+                "description": "State of program execution (92)"
+            },
+            {
+                "name": "property-list",
+                "constant": 371,
+                "description": "Property list (371)"
+            },
+            {
+                "name": "proportional-constant",
+                "constant": 93,
+                "description": "Proportional constant for PID control (93)"
+            },
+            {
+                "name": "proportional-constant-units",
+                "constant": 94,
+                "description": "Engineering units for proportional constant (94)"
+            },
+            {
+                "name": "protocol-level",
+                "constant": 482,
+                "description": "Protocol level (482)"
+            },
+            {
+                "name": "protocol-object-types-supported",
+                "constant": 96,
+                "description": "Protocol object types supported (96)"
+            },
+            {
+                "name": "protocol-revision",
+                "constant": 139,
+                "description": "Protocol revision number (139)"
+            },
+            {
+                "name": "protocol-services-supported",
+                "constant": 97,
+                "description": "Protocol services supported (97)"
+            },
+            {
+                "name": "protocol-version",
+                "constant": 98,
+                "description": "Protocol version number (98)"
+            },
+            {
+                "name": "pulse-rate",
+                "constant": 186,
+                "description": "Pulse rate (186)"
+            },
+            {
+                "name": "read-only",
+                "constant": 99,
+                "description": "Read-only indicator (99)"
+            },
+            {
+                "name": "reason-for-disable",
+                "constant": 303,
+                "description": "Reason for disable (303)"
+            },
+            {
+                "name": "reason-for-halt",
+                "constant": 100,
+                "description": "Reason for program halt (100)"
+            },
+            {
+                "name": "recipient-list",
+                "constant": 102,
+                "description": "List of event notification recipients (102)"
+            },
+            {
+                "name": "record-count",
+                "constant": 141,
+                "description": "Record count (141)"
+            },
+            {
+                "name": "records-since-notification",
+                "constant": 140,
+                "description": "Records since notification (140)"
+            },
+            {
+                "name": "reference-port",
+                "constant": 483,
+                "description": "Reference port (483)"
+            },
+            {
+                "name": "registered-car-call",
+                "constant": 480,
+                "description": "Registered car call (480)"
+            },
+            {
+                "name": "reliability",
+                "constant": 103,
+                "description": "Reliability indicator (103)"
+            },
+            {
+                "name": "reliability-evaluation-inhibit",
+                "constant": 357,
+                "description": "Reliability evaluation inhibit (357)"
+            },
+            {
+                "name": "relinquish-default",
+                "constant": 104,
+                "description": "Default value when all priorities relinquished (104)"
+            },
+            {
+                "name": "represents",
+                "constant": 491,
+                "description": "Represents (491)"
+            },
+            {
+                "name": "requested-shed-level",
+                "constant": 218,
+                "description": "Requested shed level (218)"
+            },
+            {
+                "name": "requested-update-interval",
+                "constant": 348,
+                "description": "Requested update interval (348)"
+            },
+            {
+                "name": "required",
+                "constant": 105,
+                "description": "Required property indicator (105)"
+            },
+            {
+                "name": "resolution",
+                "constant": 106,
+                "description": "Resolution of value (106)"
+            },
+            {
+                "name": "restart-notification-recipients",
+                "constant": 202,
+                "description": "Restart notification recipients (202)"
+            },
+            {
+                "name": "restore-completion-time",
+                "constant": 340,
+                "description": "Restore completion time (340)"
+            },
+            {
+                "name": "restore-preparation-time",
+                "constant": 341,
+                "description": "Restore preparation time (341)"
+            },
+            {
+                "name": "routing-table",
+                "constant": 428,
+                "description": "Routing table (428)"
+            },
+            {
+                "name": "sc-connect-wait-timeout",
+                "constant": 4194308,
+                "description": "SC connect wait timeout (4194308)"
+            },
+            {
+                "name": "sc-direct-connect-accept-enable",
+                "constant": 4194309,
+                "description": "SC direct connect accept enable (4194309)"
+            },
+            {
+                "name": "sc-direct-connect-accept-uris",
+                "constant": 4194310,
+                "description": "SC direct connect accept URIs (4194310)"
+            },
+            {
+                "name": "sc-direct-connect-binding",
+                "constant": 4194311,
+                "description": "SC direct connect binding (4194311)"
+            },
+            {
+                "name": "sc-direct-connect-connection-status",
+                "constant": 4194312,
+                "description": "SC direct connect connection status (4194312)"
+            },
+            {
+                "name": "sc-direct-connect-initiate-enable",
+                "constant": 4194313,
+                "description": "SC direct connect initiate enable (4194313)"
+            },
+            {
+                "name": "sc-disconnect-wait-timeout",
+                "constant": 4194314,
+                "description": "SC disconnect wait timeout (4194314)"
+            },
+            {
+                "name": "sc-failed-connection-requests",
+                "constant": 4194315,
+                "description": "SC failed connection requests (4194315)"
+            },
+            {
+                "name": "sc-failover-hub-connection-status",
+                "constant": 4194316,
+                "description": "SC failover hub connection status (4194316)"
+            },
+            {
+                "name": "sc-failover-hub-uri",
+                "constant": 4194317,
+                "description": "SC failover hub URI (4194317)"
+            },
+            {
+                "name": "sc-heartbeat-timeout",
+                "constant": 4194323,
+                "description": "SC heartbeat timeout (4194323)"
+            },
+            {
+                "name": "sc-hub-connector-state",
+                "constant": 4194318,
+                "description": "SC hub connector state (4194318)"
+            },
+            {
+                "name": "sc-hub-function-accept-uris",
+                "constant": 4194319,
+                "description": "SC hub function accept URIs (4194319)"
+            },
+            {
+                "name": "sc-hub-function-binding",
+                "constant": 4194320,
+                "description": "SC hub function binding (4194320)"
+            },
+            {
+                "name": "sc-hub-function-connection-status",
+                "constant": 4194321,
+                "description": "SC hub function connection status (4194321)"
+            },
+            {
+                "name": "sc-hub-function-enable",
+                "constant": 4194322,
+                "description": "SC hub function enable (4194322)"
+            },
+            {
+                "name": "sc-maximum-reconnect-time",
+                "constant": 4194326,
+                "description": "SC maximum reconnect time (4194326)"
+            },
+            {
+                "name": "sc-minimum-reconnect-time",
+                "constant": 4194327,
+                "description": "SC minimum reconnect time (4194327)"
+            },
+            {
+                "name": "sc-primary-hub-connection-status",
+                "constant": 4194324,
+                "description": "SC primary hub connection status (4194324)"
+            },
+            {
+                "name": "sc-primary-hub-uri",
+                "constant": 4194325,
+                "description": "SC primary hub URI (4194325)"
+            },
+            {
+                "name": "scale",
+                "constant": 187,
+                "description": "Scale value (187)"
+            },
+            {
+                "name": "scale-factor",
+                "constant": 188,
+                "description": "Scale factor (188)"
+            },
+            {
+                "name": "schedule-default",
+                "constant": 174,
+                "description": "Schedule default value (174)"
+            },
+            {
+                "name": "secured-status",
+                "constant": 235,
+                "description": "Secured status (235)"
+            },
+            {
+                "name": "segmentation-supported",
+                "constant": 107,
+                "description": "Segmentation support level (107)"
+            },
+            {
+                "name": "send-now",
+                "constant": 505,
+                "description": "Send now (505)"
+            },
+            {
+                "name": "serial-number",
+                "constant": 372,
+                "description": "Serial number (372)"
+            },
+            {
+                "name": "setpoint",
+                "constant": 108,
+                "description": "Setpoint value (108)"
+            },
+            {
+                "name": "setpoint-reference",
+                "constant": 109,
+                "description": "Reference to setpoint (109)"
+            },
+            {
+                "name": "setting",
+                "constant": 162,
+                "description": "Setting value (162)"
+            },
+            {
+                "name": "shed-duration",
+                "constant": 219,
+                "description": "Shed duration (219)"
+            },
+            {
+                "name": "shed-level-descriptions",
+                "constant": 220,
+                "description": "Shed level descriptions (220)"
+            },
+            {
+                "name": "shed-levels",
+                "constant": 221,
+                "description": "Shed levels (221)"
+            },
+            {
+                "name": "silenced",
+                "constant": 163,
+                "description": "Silenced flag (163)"
+            },
+            {
+                "name": "stage-names",
+                "constant": 495,
+                "description": "Stage names (495)"
+            },
+            {
+                "name": "stages",
+                "constant": 494,
+                "description": "Stages (494)"
+            },
+            {
+                "name": "start-time",
+                "constant": 142,
+                "description": "Start time (142)"
+            },
+            {
+                "name": "state-change-values",
+                "constant": 396,
+                "description": "State change values (396)"
+            },
+            {
+                "name": "state-description",
+                "constant": 222,
+                "description": "State description (222)"
+            },
+            {
+                "name": "state-text",
+                "constant": 110,
+                "description": "Text array for multistate values (110)"
+            },
+            {
+                "name": "status-flags",
+                "constant": 111,
+                "description": "Status flags (111)"
+            },
+            {
+                "name": "stop-time",
+                "constant": 143,
+                "description": "Stop time (143)"
+            },
+            {
+                "name": "stop-when-full",
+                "constant": 144,
+                "description": "Stop when full flag (144)"
+            },
+            {
+                "name": "strike-count",
+                "constant": 391,
+                "description": "Strike count (391)"
+            },
+            {
+                "name": "structured-object-list",
+                "constant": 209,
+                "description": "Structured object list (209)"
+            },
+            {
+                "name": "subordinate-address-binding",
+                "constant": 171,
+                "description": "Subordinate address binding (171)"
+            },
+            {
+                "name": "subordinate-annotations",
+                "constant": 210,
+                "description": "Subordinate annotations (210)"
+            },
+            {
+                "name": "subordinate-list",
+                "constant": 211,
+                "description": "Subordinate list (211)"
+            },
+            {
+                "name": "subordinate-node-types",
+                "constant": 487,
+                "description": "Subordinate node types (487)"
+            },
+            {
+                "name": "subordinate-proxy-enable",
+                "constant": 172,
+                "description": "Subordinate proxy enable flag (172)"
+            },
+            {
+                "name": "subordinate-relationships",
+                "constant": 489,
+                "description": "Subordinate relationships (489)"
+            },
+            {
+                "name": "subordinate-tags",
+                "constant": 488,
+                "description": "Subordinate tags (488)"
+            },
+            {
+                "name": "subscribed-recipients",
+                "constant": 362,
+                "description": "Subscribed recipients (362)"
+            },
+            {
+                "name": "supported-format-classes",
+                "constant": 305,
+                "description": "Supported format classes (305)"
+            },
+            {
+                "name": "supported-formats",
+                "constant": 304,
+                "description": "Supported formats (304)"
+            },
+            {
+                "name": "system-status",
+                "constant": 112,
+                "description": "System status (112)"
+            },
+            {
+                "name": "tags",
+                "constant": 486,
+                "description": "Tags (486)"
+            },
+            {
+                "name": "target-references",
+                "constant": 496,
+                "description": "Target references (496)"
+            },
+            {
+                "name": "threat-authority",
+                "constant": 306,
+                "description": "Threat authority (306)"
+            },
+            {
+                "name": "threat-level",
+                "constant": 307,
+                "description": "Threat level (307)"
+            },
+            {
+                "name": "time-delay",
+                "constant": 113,
+                "description": "Time delay for event detection (113)"
+            },
+            {
+                "name": "time-delay-normal",
+                "constant": 356,
+                "description": "Time delay normal (356)"
+            },
+            {
+                "name": "time-of-active-time-reset",
+                "constant": 114,
+                "description": "Time of active time reset (114)"
+            },
+            {
+                "name": "time-of-device-restart",
+                "constant": 203,
+                "description": "Time of device restart (203)"
+            },
+            {
+                "name": "time-of-state-count-reset",
+                "constant": 115,
+                "description": "Time of state count reset (115)"
+            },
+            {
+                "name": "time-of-strike-count-reset",
+                "constant": 392,
+                "description": "Time of strike count reset (392)"
+            },
+            {
+                "name": "time-synchronization-interval",
+                "constant": 204,
+                "description": "Time synchronization interval (204)"
+            },
+            {
+                "name": "time-synchronization-recipients",
+                "constant": 116,
+                "description": "List of time synchronization recipients (116)"
+            },
+            {
+                "name": "timer-running",
+                "constant": 397,
+                "description": "Timer running (397)"
+            },
+            {
+                "name": "timer-state",
+                "constant": 398,
+                "description": "Timer state (398)"
+            },
+            {
+                "name": "total-record-count",
+                "constant": 145,
+                "description": "Total record count (145)"
+            },
+            {
+                "name": "trace-flag",
+                "constant": 308,
+                "description": "Trace flag (308)"
+            },
+            {
+                "name": "tracking-value",
+                "constant": 164,
+                "description": "Tracking value (164)"
+            },
+            {
+                "name": "transaction-notification-class",
+                "constant": 309,
+                "description": "Transaction notification class (309)"
+            },
+            {
+                "name": "transition",
+                "constant": 385,
+                "description": "Transition (385)"
+            },
+            {
+                "name": "trigger",
+                "constant": 205,
+                "description": "Trigger (205)"
+            },
+            {
+                "name": "trim-fade-time",
+                "constant": 4194337,
+                "description": "Trim fade time (4194337)"
+            },
+            {
+                "name": "units",
+                "constant": 117,
+                "description": "Engineering units (117)"
+            },
+            {
+                "name": "update-interval",
+                "constant": 118,
+                "description": "Update interval (118)"
+            },
+            {
+                "name": "update-time",
+                "constant": 189,
+                "description": "Update time (189)"
+            },
+            {
+                "name": "user-external-identifier",
+                "constant": 310,
+                "description": "User external identifier (310)"
+            },
+            {
+                "name": "user-information-reference",
+                "constant": 311,
+                "description": "User information reference (311)"
+            },
+            {
+                "name": "user-name",
+                "constant": 317,
+                "description": "User name (317)"
+            },
+            {
+                "name": "user-type",
+                "constant": 318,
+                "description": "User type (318)"
+            },
+            {
+                "name": "uses-remaining",
+                "constant": 319,
+                "description": "Uses remaining (319)"
+            },
+            {
+                "name": "utc-offset",
+                "constant": 119,
+                "description": "UTC offset in minutes (119)"
+            },
+            {
+                "name": "utc-time-synchronization-recipients",
+                "constant": 206,
+                "description": "UTC time synchronization recipients (206)"
+            },
+            {
+                "name": "valid-samples",
+                "constant": 146,
+                "description": "Number of valid samples (146)"
+            },
+            {
+                "name": "value-before-change",
+                "constant": 190,
+                "description": "Value before change (190)"
+            },
+            {
+                "name": "value-change-time",
+                "constant": 192,
+                "description": "Value change time (192)"
+            },
+            {
+                "name": "value-set",
+                "constant": 191,
+                "description": "Value set (191)"
+            },
+            {
+                "name": "value-source",
+                "constant": 433,
+                "description": "Value source (433)"
+            },
+            {
+                "name": "value-source-array",
+                "constant": 434,
+                "description": "Value source array (434)"
+            },
+            {
+                "name": "variance-value",
+                "constant": 151,
+                "description": "Variance value (151)"
+            },
+            {
+                "name": "vendor-identifier",
+                "constant": 120,
+                "description": "Vendor identifier (120)"
+            },
+            {
+                "name": "vendor-name",
+                "constant": 121,
+                "description": "Vendor name (121)"
+            },
+            {
+                "name": "verification-time",
+                "constant": 326,
+                "description": "Verification time (326)"
+            },
+            {
+                "name": "virtual-mac-address-table",
+                "constant": 429,
+                "description": "Virtual MAC address table (429)"
+            },
+            {
+                "name": "vt-classes-supported",
+                "constant": 122,
+                "description": "Virtual terminal classes supported (122)"
+            },
+            {
+                "name": "weekly-schedule",
+                "constant": 123,
+                "description": "Weekly schedule (123)"
+            },
+            {
+                "name": "window-interval",
+                "constant": 147,
+                "description": "Window interval (147)"
+            },
+            {
+                "name": "window-samples",
+                "constant": 148,
+                "description": "Window samples (148)"
+            },
+            {
+                "name": "write-every-scheduled-action",
+                "constant": 4194333,
+                "description": "Write every scheduled action (4194333)"
+            },
+            {
+                "name": "write-status",
+                "constant": 370,
+                "description": "Write status (370)"
+            },
+            {
+                "name": "zone-from",
+                "constant": 320,
+                "description": "Zone from (320)"
+            },
+            {
+                "name": "zone-members",
+                "constant": 165,
+                "description": "Zone members (165)"
+            },
+            {
+                "name": "zone-to",
+                "constant": 321,
+                "description": "Zone to (321)"
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 4294967295
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 511
+            },
+            {
+                "custom": true,
+                "minimum": 512,
+                "maximum": 4194303
+            },
+            {
+                "custom": false,
+                "minimum": 4194304,
+                "maximum": 4294967295
+            }
+        ]
+    }
+}

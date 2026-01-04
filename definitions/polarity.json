@@ -1,0 +1,31 @@
+{
+    "alias": "BACnetPolarity",
+    "name": "0-polarity",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "normal",
+                "constant": 0,
+                "description": "Normal polarity."
+            },
+            {
+                "name": "reverse",
+                "constant": 1,
+                "description": "Reverse polarity."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "alias": "BACnetLightingInProgress",
+    "name": "0-lighting-in-progress",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "fade-active",
+                "constant": 1,
+                "description": "Fade operation is active."
+            },
+            {
+                "name": "idle",
+                "constant": 0,
+                "description": "No lighting operation in progress."
+            },
+            {
+                "name": "not-controlled",
+                "constant": 3,
+                "description": "Lighting is not controlled."
+            },
+            {
+                "name": "other",
+                "constant": 4,
+                "description": "Other lighting operation in progress."
+            },
+            {
+                "name": "ramp-active",
+                "constant": 2,
+                "description": "Ramp operation is active."
+            },
+            {
+                "name": "trim-active",
+                "constant": 5,
+                "description": "Trim operation is active."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 5
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 5
+            }
+        ]
+    }
+}

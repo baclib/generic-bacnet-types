@@ -1,0 +1,76 @@
+{
+    "alias": "BACnetLiftCarDriveStatus",
+    "name": "0-lift-car-drive-status",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "accelerate",
+                "constant": 3,
+                "description": "Lift car is accelerating."
+            },
+            {
+                "name": "braking",
+                "constant": 2,
+                "description": "Lift car is braking."
+            },
+            {
+                "name": "decelerate",
+                "constant": 4,
+                "description": "Lift car is decelerating."
+            },
+            {
+                "name": "multi-floor-jump",
+                "constant": 9,
+                "description": "Multi-floor jump."
+            },
+            {
+                "name": "rated-speed",
+                "constant": 5,
+                "description": "Lift car is at rated speed."
+            },
+            {
+                "name": "single-floor-jump",
+                "constant": 6,
+                "description": "Single floor jump."
+            },
+            {
+                "name": "stationary",
+                "constant": 1,
+                "description": "Lift car is stationary."
+            },
+            {
+                "name": "three-floor-jump",
+                "constant": 8,
+                "description": "Three floor jump."
+            },
+            {
+                "name": "two-floor-jump",
+                "constant": 7,
+                "description": "Two floor jump."
+            },
+            {
+                "name": "unknown",
+                "constant": 0,
+                "description": "Drive status is unknown."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 1023
+            },
+            {
+                "custom": true,
+                "minimum": 1024,
+                "maximum": 65535
+            }
+        ]
+    }
+}

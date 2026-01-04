@@ -1,0 +1,106 @@
+{
+    "alias": "BACnetAuditOperation",
+    "name": "0-audit-operation",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "acknowledge-alarm",
+                "constant": 5,
+                "description": "Acknowledge alarm operation."
+            },
+            {
+                "name": "auditing-failure",
+                "constant": 13,
+                "description": "Auditing failure operation."
+            },
+            {
+                "name": "create",
+                "constant": 2,
+                "description": "Create operation."
+            },
+            {
+                "name": "delete",
+                "constant": 3,
+                "description": "Delete operation."
+            },
+            {
+                "name": "device-backup",
+                "constant": 9,
+                "description": "Device backup operation."
+            },
+            {
+                "name": "device-disable-comm",
+                "constant": 6,
+                "description": "Device disable communication operation."
+            },
+            {
+                "name": "device-enable-comm",
+                "constant": 7,
+                "description": "Device enable communication operation."
+            },
+            {
+                "name": "device-reset",
+                "constant": 8,
+                "description": "Device reset operation."
+            },
+            {
+                "name": "device-restore",
+                "constant": 10,
+                "description": "Device restore operation."
+            },
+            {
+                "name": "general",
+                "constant": 15,
+                "description": "General operation."
+            },
+            {
+                "name": "life-safety",
+                "constant": 4,
+                "description": "Life safety operation."
+            },
+            {
+                "name": "network-changes",
+                "constant": 14,
+                "description": "Network changes operation."
+            },
+            {
+                "name": "notification",
+                "constant": 12,
+                "description": "Notification operation."
+            },
+            {
+                "name": "read",
+                "constant": 0,
+                "description": "Read operation."
+            },
+            {
+                "name": "subscription",
+                "constant": 11,
+                "description": "Subscription operation."
+            },
+            {
+                "name": "write",
+                "constant": 1,
+                "description": "Write operation."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 63
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 31
+            },
+            {
+                "custom": true,
+                "minimum": 32,
+                "maximum": 63
+            }
+        ]
+    }
+}

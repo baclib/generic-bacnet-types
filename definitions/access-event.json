@@ -1,0 +1,296 @@
+{
+    "alias": "BACnetAccessEvent",
+    "name": "0-access-event",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "accompaniment-by",
+                "constant": 12,
+                "description": "Accompaniment by event."
+            },
+            {
+                "name": "authentication-factor-read",
+                "constant": 13,
+                "description": "Authentication factor read event."
+            },
+            {
+                "name": "authorization-delayed",
+                "constant": 14,
+                "description": "Authorization delayed event."
+            },
+            {
+                "name": "denied-authentication-factor-damaged",
+                "constant": 145,
+                "description": "Access denied: authentication factor damaged."
+            },
+            {
+                "name": "denied-authentication-factor-destroyed",
+                "constant": 146,
+                "description": "Access denied: authentication factor destroyed."
+            },
+            {
+                "name": "denied-authentication-factor-disabled",
+                "constant": 147,
+                "description": "Access denied: authentication factor disabled."
+            },
+            {
+                "name": "denied-authentication-factor-error",
+                "constant": 148,
+                "description": "Access denied: authentication factor error."
+            },
+            {
+                "name": "denied-authentication-factor-lost",
+                "constant": 143,
+                "description": "Access denied: authentication factor lost."
+            },
+            {
+                "name": "denied-authentication-factor-stolen",
+                "constant": 144,
+                "description": "Access denied: authentication factor stolen."
+            },
+            {
+                "name": "denied-authentication-factor-timeout",
+                "constant": 131,
+                "description": "Access denied: authentication factor timeout."
+            },
+            {
+                "name": "denied-authentication-unavailable",
+                "constant": 130,
+                "description": "Access denied: authentication unavailable."
+            },
+            {
+                "name": "denied-credential-disabled",
+                "constant": 158,
+                "description": "Access denied: credential disabled."
+            },
+            {
+                "name": "denied-credential-expired",
+                "constant": 152,
+                "description": "Access denied: credential expired."
+            },
+            {
+                "name": "denied-credential-inactivity",
+                "constant": 157,
+                "description": "Access denied: credential inactivity."
+            },
+            {
+                "name": "denied-credential-lockout",
+                "constant": 154,
+                "description": "Access denied: credential lockout."
+            },
+            {
+                "name": "denied-credential-manual-disable",
+                "constant": 153,
+                "description": "Access denied: credential manually disabled."
+            },
+            {
+                "name": "denied-credential-max-days",
+                "constant": 155,
+                "description": "Access denied: credential max days exceeded."
+            },
+            {
+                "name": "denied-credential-max-uses",
+                "constant": 156,
+                "description": "Access denied: credential max uses exceeded."
+            },
+            {
+                "name": "denied-credential-not-provisioned",
+                "constant": 150,
+                "description": "Access denied: credential not provisioned."
+            },
+            {
+                "name": "denied-credential-not-yet-active",
+                "constant": 151,
+                "description": "Access denied: credential not yet active."
+            },
+            {
+                "name": "denied-credential-unassigned",
+                "constant": 149,
+                "description": "Access denied: credential unassigned."
+            },
+            {
+                "name": "denied-deny-all",
+                "constant": 128,
+                "description": "Access denied: deny all."
+            },
+            {
+                "name": "denied-incorrect-accompaniment",
+                "constant": 160,
+                "description": "Access denied: incorrect accompaniment."
+            },
+            {
+                "name": "denied-incorrect-authentication-factor",
+                "constant": 132,
+                "description": "Access denied: incorrect authentication factor."
+            },
+            {
+                "name": "denied-lockout",
+                "constant": 161,
+                "description": "Access denied: lockout."
+            },
+            {
+                "name": "denied-lower-occupancy-limit",
+                "constant": 141,
+                "description": "Access denied: lower occupancy limit."
+            },
+            {
+                "name": "denied-max-attempts",
+                "constant": 140,
+                "description": "Access denied: maximum attempts."
+            },
+            {
+                "name": "denied-no-access-rights",
+                "constant": 135,
+                "description": "Access denied: no access rights."
+            },
+            {
+                "name": "denied-no-accompaniment",
+                "constant": 159,
+                "description": "Access denied: no accompaniment."
+            },
+            {
+                "name": "denied-other",
+                "constant": 164,
+                "description": "Access denied: other reason."
+            },
+            {
+                "name": "denied-out-of-time-range",
+                "constant": 136,
+                "description": "Access denied: out of time range."
+            },
+            {
+                "name": "denied-passback",
+                "constant": 138,
+                "description": "Access denied: passback."
+            },
+            {
+                "name": "denied-point-no-access-rights",
+                "constant": 134,
+                "description": "Access denied: point no access rights."
+            },
+            {
+                "name": "denied-threat-level",
+                "constant": 137,
+                "description": "Access denied: threat level."
+            },
+            {
+                "name": "denied-unexpected-location-usage",
+                "constant": 139,
+                "description": "Access denied: unexpected location usage."
+            },
+            {
+                "name": "denied-unknown-credential",
+                "constant": 129,
+                "description": "Access denied: unknown credential."
+            },
+            {
+                "name": "denied-upper-occupancy-limit",
+                "constant": 142,
+                "description": "Access denied: upper occupancy limit."
+            },
+            {
+                "name": "denied-verification-failed",
+                "constant": 162,
+                "description": "Access denied: verification failed."
+            },
+            {
+                "name": "denied-verification-timeout",
+                "constant": 163,
+                "description": "Access denied: verification timeout."
+            },
+            {
+                "name": "denied-zone-no-access-rights",
+                "constant": 133,
+                "description": "Access denied: zone no access rights."
+            },
+            {
+                "name": "duress",
+                "constant": 4,
+                "description": "Duress event."
+            },
+            {
+                "name": "granted",
+                "constant": 1,
+                "description": "Access granted event."
+            },
+            {
+                "name": "locked-by-higher-priority",
+                "constant": 9,
+                "description": "Locked by higher priority event."
+            },
+            {
+                "name": "lockout-max-attempts",
+                "constant": 6,
+                "description": "Lockout due to maximum attempts event."
+            },
+            {
+                "name": "lockout-other",
+                "constant": 7,
+                "description": "Lockout due to other reasons event."
+            },
+            {
+                "name": "lockout-relinquished",
+                "constant": 8,
+                "description": "Lockout relinquished event."
+            },
+            {
+                "name": "muster",
+                "constant": 2,
+                "description": "Muster event."
+            },
+            {
+                "name": "no-entry-after-granted",
+                "constant": 16,
+                "description": "No entry after granted event."
+            },
+            {
+                "name": "none",
+                "constant": 0,
+                "description": "No access event."
+            },
+            {
+                "name": "out-of-service",
+                "constant": 10,
+                "description": "Out of service event."
+            },
+            {
+                "name": "out-of-service-relinquished",
+                "constant": 11,
+                "description": "Out of service relinquished event."
+            },
+            {
+                "name": "passback-detected",
+                "constant": 3,
+                "description": "Passback detected event."
+            },
+            {
+                "name": "trace",
+                "constant": 5,
+                "description": "Trace event."
+            },
+            {
+                "name": "verification-required",
+                "constant": 15,
+                "description": "Verification required event."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 511
+            },
+            {
+                "custom": true,
+                "minimum": 512,
+                "maximum": 65535
+            }
+        ]
+    }
+}

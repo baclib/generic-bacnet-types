@@ -1,0 +1,61 @@
+{
+    "alias": "BACnetBinaryLightingPV",
+    "name": "0-binary-lighting-pv",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "off",
+                "constant": 0,
+                "description": "The value is OFF."
+            },
+            {
+                "name": "on",
+                "constant": 1,
+                "description": "The value is ON."
+            },
+            {
+                "name": "stop",
+                "constant": 5,
+                "description": "The value is STOP."
+            },
+            {
+                "name": "toggle",
+                "constant": 6,
+                "description": "The value is TOGGLE."
+            },
+            {
+                "name": "warn",
+                "constant": 2,
+                "description": "The value is WARN."
+            },
+            {
+                "name": "warn-off",
+                "constant": 3,
+                "description": "The value is WARN_OFF."
+            },
+            {
+                "name": "warn-relinquish",
+                "constant": 4,
+                "description": "The value is WARN_RELINQUISH."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 63
+            },
+            {
+                "custom": true,
+                "minimum": 64,
+                "maximum": 255
+            }
+        ]
+    }
+}

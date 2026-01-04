@@ -1,0 +1,61 @@
+{
+    "alias": "BACnetAccessZoneOccupancyState",
+    "name": "0-access-zone-occupancy-state",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "above-upper-limit",
+                "constant": 4,
+                "description": "Zone occupancy is above the upper limit."
+            },
+            {
+                "name": "at-lower-limit",
+                "constant": 2,
+                "description": "Zone occupancy is at the lower limit."
+            },
+            {
+                "name": "at-upper-limit",
+                "constant": 3,
+                "description": "Zone occupancy is at the upper limit."
+            },
+            {
+                "name": "below-lower-limit",
+                "constant": 1,
+                "description": "Zone occupancy is below the lower limit."
+            },
+            {
+                "name": "disabled",
+                "constant": 5,
+                "description": "Zone occupancy is disabled."
+            },
+            {
+                "name": "normal",
+                "constant": 0,
+                "description": "Zone occupancy is normal."
+            },
+            {
+                "name": "not-supported",
+                "constant": 6,
+                "description": "Zone occupancy is not supported."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 63
+            },
+            {
+                "custom": true,
+                "minimum": 64,
+                "maximum": 65535
+            }
+        ]
+    }
+}

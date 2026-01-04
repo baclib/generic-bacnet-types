@@ -1,0 +1,41 @@
+{
+    "alias": "BACnetDoorValue",
+    "name": "0-door-value",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "extended-pulse-unlock",
+                "constant": 3,
+                "description": "Extended pulse unlock the door."
+            },
+            {
+                "name": "lock",
+                "constant": 0,
+                "description": "Lock the door."
+            },
+            {
+                "name": "pulse-unlock",
+                "constant": 2,
+                "description": "Pulse unlock the door."
+            },
+            {
+                "name": "unlock",
+                "constant": 1,
+                "description": "Unlock the door."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 3
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 3
+            }
+        ]
+    }
+}

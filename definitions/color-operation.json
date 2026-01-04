@@ -1,0 +1,56 @@
+{
+    "alias": "BACnetColorOperation",
+    "name": "0-color-operation",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "fade-to-cct",
+                "constant": 2,
+                "description": "Fade to a specific correlated color temperature (CCT)."
+            },
+            {
+                "name": "fade-to-color",
+                "constant": 1,
+                "description": "Fade to a specific color."
+            },
+            {
+                "name": "none",
+                "constant": 0,
+                "description": "No color operation."
+            },
+            {
+                "name": "ramp-to-cct",
+                "constant": 3,
+                "description": "Ramp to a specific correlated color temperature (CCT)."
+            },
+            {
+                "name": "step-down-cct",
+                "constant": 5,
+                "description": "Step down the correlated color temperature (CCT)."
+            },
+            {
+                "name": "step-up-cct",
+                "constant": 4,
+                "description": "Step up the correlated color temperature (CCT)."
+            },
+            {
+                "name": "stop",
+                "constant": 6,
+                "description": "Stop the color operation."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 6
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 6
+            }
+        ]
+    }
+}

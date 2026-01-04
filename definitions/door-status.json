@@ -1,0 +1,76 @@
+{
+    "alias": "BACnetDoorStatus",
+    "name": "0-door-status",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "closed",
+                "constant": 0,
+                "description": "Door is closed."
+            },
+            {
+                "name": "closing",
+                "constant": 6,
+                "description": "Door is closing."
+            },
+            {
+                "name": "door-fault",
+                "constant": 3,
+                "description": "Door fault detected."
+            },
+            {
+                "name": "limited-opened",
+                "constant": 9,
+                "description": "Door is limited opened."
+            },
+            {
+                "name": "none",
+                "constant": 5,
+                "description": "No door status."
+            },
+            {
+                "name": "opened",
+                "constant": 1,
+                "description": "Door is opened."
+            },
+            {
+                "name": "opening",
+                "constant": 7,
+                "description": "Door is opening."
+            },
+            {
+                "name": "safety-locked",
+                "constant": 8,
+                "description": "Door is safety locked."
+            },
+            {
+                "name": "unknown",
+                "constant": 2,
+                "description": "Door status is unknown."
+            },
+            {
+                "name": "unused",
+                "constant": 4,
+                "description": "Door status is unused."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 1023
+            },
+            {
+                "custom": true,
+                "minimum": 1024,
+                "maximum": 65535
+            }
+        ]
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "alias": "BACnetAccessUserType",
+    "name": "0-access-user-type",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "asset",
+                "constant": 0,
+                "description": "User type is an asset."
+            },
+            {
+                "name": "group",
+                "constant": 1,
+                "description": "User type is a group."
+            },
+            {
+                "name": "person",
+                "constant": 2,
+                "description": "User type is a person."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 63
+            },
+            {
+                "custom": true,
+                "minimum": 64,
+                "maximum": 65535
+            }
+        ]
+    }
+}

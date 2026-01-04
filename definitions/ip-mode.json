@@ -1,0 +1,36 @@
+{
+    "alias": "BACnetIPMode",
+    "name": "0-ip-mode",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "bbmd",
+                "constant": 2,
+                "description": "BBMD (BACnet Broadcast Management Device) IP mode."
+            },
+            {
+                "name": "foreign",
+                "constant": 1,
+                "description": "Foreign device IP mode."
+            },
+            {
+                "name": "normal",
+                "constant": 0,
+                "description": "Normal IP mode."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 2
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 2
+            }
+        ]
+    }
+}

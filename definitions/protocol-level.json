@@ -1,0 +1,41 @@
+{
+    "alias": "BACnetProtocolLevel",
+    "name": "0-protocol-level",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "bacnet-application",
+                "constant": 2,
+                "description": "BACnet application protocol level."
+            },
+            {
+                "name": "non-bacnet-application",
+                "constant": 3,
+                "description": "Non-BACnet application protocol level."
+            },
+            {
+                "name": "physical",
+                "constant": 0,
+                "description": "Physical protocol level."
+            },
+            {
+                "name": "protocol",
+                "constant": 1,
+                "description": "Protocol level."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 3
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 3
+            }
+        ]
+    }
+}

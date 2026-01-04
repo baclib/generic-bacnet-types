@@ -1,0 +1,41 @@
+{
+    "alias": "BACnetLoggingType",
+    "name": "0-logging-type",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "cov",
+                "constant": 1,
+                "description": "Change of value (COV) logging type."
+            },
+            {
+                "name": "polled",
+                "constant": 0,
+                "description": "Polled logging type."
+            },
+            {
+                "name": "triggered",
+                "constant": 2,
+                "description": "Triggered logging type."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 63
+            },
+            {
+                "custom": true,
+                "minimum": 64,
+                "maximum": 255
+            }
+        ]
+    }
+}

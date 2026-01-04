@@ -1,0 +1,71 @@
+{
+    "alias": "BACnetDoorAlarmState",
+    "name": "0-door-alarm-state",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "alarm",
+                "constant": 1,
+                "description": "Door is in alarm state."
+            },
+            {
+                "name": "door-fault",
+                "constant": 5,
+                "description": "Door fault detected."
+            },
+            {
+                "name": "door-open-too-long",
+                "constant": 2,
+                "description": "Door has been open too long."
+            },
+            {
+                "name": "egress-open",
+                "constant": 8,
+                "description": "Door is open for egress."
+            },
+            {
+                "name": "forced-open",
+                "constant": 3,
+                "description": "Door was forced open."
+            },
+            {
+                "name": "free-access",
+                "constant": 7,
+                "description": "Door is in free access state."
+            },
+            {
+                "name": "lock-down",
+                "constant": 6,
+                "description": "Door is in lockdown state."
+            },
+            {
+                "name": "normal",
+                "constant": 0,
+                "description": "Door is in normal state."
+            },
+            {
+                "name": "tamper",
+                "constant": 4,
+                "description": "Door tamper detected."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 255
+            },
+            {
+                "custom": true,
+                "minimum": 256,
+                "maximum": 65535
+            }
+        ]
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "alias": "BACnetAccessPassbackMode",
+    "name": "0-access-passback-mode",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "hard-passback",
+                "constant": 1,
+                "description": "Hard passback enforcement."
+            },
+            {
+                "name": "passback-off",
+                "constant": 0,
+                "description": "Passback is not enforced."
+            },
+            {
+                "name": "soft-passback",
+                "constant": 2,
+                "description": "Soft passback enforcement."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 2
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 2
+            }
+        ]
+    }
+}

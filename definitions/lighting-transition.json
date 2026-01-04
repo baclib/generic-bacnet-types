@@ -1,0 +1,41 @@
+{
+    "alias": "BACnetLightingTransition",
+    "name": "0-lighting-transition",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "fade",
+                "constant": 1,
+                "description": "Fade transition."
+            },
+            {
+                "name": "none",
+                "constant": 0,
+                "description": "No lighting transition."
+            },
+            {
+                "name": "ramp",
+                "constant": 2,
+                "description": "Ramp transition."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 63
+            },
+            {
+                "custom": true,
+                "minimum": 64,
+                "maximum": 255
+            }
+        ]
+    }
+}

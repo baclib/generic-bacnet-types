@@ -1,0 +1,126 @@
+{
+    "alias": "BACnetEventType",
+    "name": "0-event-type",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "access-event",
+                "constant": 13,
+                "description": "Access event."
+            },
+            {
+                "name": "buffer-ready",
+                "constant": 10,
+                "description": "Buffer ready event."
+            },
+            {
+                "name": "change-of-bitstring",
+                "constant": 0,
+                "description": "Change of bitstring event."
+            },
+            {
+                "name": "change-of-characterstring",
+                "constant": 17,
+                "description": "Change of characterstring event."
+            },
+            {
+                "name": "change-of-discrete-value",
+                "constant": 21,
+                "description": "Change of discrete value event."
+            },
+            {
+                "name": "change-of-life-safety",
+                "constant": 8,
+                "description": "Change of life safety event."
+            },
+            {
+                "name": "change-of-reliability",
+                "constant": 19,
+                "description": "Change of reliability event."
+            },
+            {
+                "name": "change-of-state",
+                "constant": 1,
+                "description": "Change of state event."
+            },
+            {
+                "name": "change-of-status-flags",
+                "constant": 18,
+                "description": "Change of status flags event."
+            },
+            {
+                "name": "change-of-timer",
+                "constant": 22,
+                "description": "Change of timer event."
+            },
+            {
+                "name": "change-of-value",
+                "constant": 2,
+                "description": "Change of value event."
+            },
+            {
+                "name": "command-failure",
+                "constant": 3,
+                "description": "Command failure event."
+            },
+            {
+                "name": "double-out-of-range",
+                "constant": 14,
+                "description": "Double out of range event."
+            },
+            {
+                "name": "extended",
+                "constant": 9,
+                "description": "Extended event type."
+            },
+            {
+                "name": "floating-limit",
+                "constant": 4,
+                "description": "Floating limit event."
+            },
+            {
+                "name": "none",
+                "constant": 20,
+                "description": "No event type."
+            },
+            {
+                "name": "out-of-range",
+                "constant": 5,
+                "description": "Out of range event."
+            },
+            {
+                "name": "signed-out-of-range",
+                "constant": 15,
+                "description": "Signed out of range event."
+            },
+            {
+                "name": "unsigned-out-of-range",
+                "constant": 16,
+                "description": "Unsigned out of range event."
+            },
+            {
+                "name": "unsigned-range",
+                "constant": 11,
+                "description": "Unsigned range event."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 63
+            },
+            {
+                "custom": true,
+                "minimum": 64,
+                "maximum": 65535
+            }
+        ]
+    }
+}

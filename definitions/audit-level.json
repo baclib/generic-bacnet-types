@@ -1,0 +1,46 @@
+{
+    "alias": "BACnetAuditLevel",
+    "name": "0-audit-level",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "audit-all",
+                "constant": 1,
+                "description": "Audit all actions."
+            },
+            {
+                "name": "audit-config",
+                "constant": 2,
+                "description": "Audit configuration changes."
+            },
+            {
+                "name": "default",
+                "constant": 3,
+                "description": "Default audit level."
+            },
+            {
+                "name": "none",
+                "constant": 0,
+                "description": "No auditing."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 127
+            },
+            {
+                "custom": true,
+                "minimum": 128,
+                "maximum": 255
+            }
+        ]
+    }
+}

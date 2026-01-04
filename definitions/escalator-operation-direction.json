@@ -1,0 +1,56 @@
+{
+    "alias": "BACnetEscalatorOperationDirection",
+    "name": "0-escalator-operation-direction",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "down-rated-speed",
+                "constant": 4,
+                "description": "Escalator is moving down at rated speed."
+            },
+            {
+                "name": "down-reduced-speed",
+                "constant": 5,
+                "description": "Escalator is moving down at reduced speed."
+            },
+            {
+                "name": "stopped",
+                "constant": 1,
+                "description": "Escalator is stopped."
+            },
+            {
+                "name": "unknown",
+                "constant": 0,
+                "description": "Escalator direction is unknown."
+            },
+            {
+                "name": "up-rated-speed",
+                "constant": 2,
+                "description": "Escalator is moving up at rated speed."
+            },
+            {
+                "name": "up-reduced-speed",
+                "constant": 3,
+                "description": "Escalator is moving up at reduced speed."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 1023
+            },
+            {
+                "custom": true,
+                "minimum": 1024,
+                "maximum": 65535
+            }
+        ]
+    }
+}

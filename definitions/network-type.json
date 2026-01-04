@@ -1,0 +1,81 @@
+{
+    "alias": "BACnetNetworkType",
+    "name": "0-network-type",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "arcnet",
+                "constant": 1,
+                "description": "ARCNET network type."
+            },
+            {
+                "name": "ethernet",
+                "constant": 0,
+                "description": "Ethernet network type."
+            },
+            {
+                "name": "ipv4",
+                "constant": 5,
+                "description": "IPv4 network type."
+            },
+            {
+                "name": "ipv6",
+                "constant": 9,
+                "description": "IPv6 network type."
+            },
+            {
+                "name": "lontalk",
+                "constant": 4,
+                "description": "LonTalk network type."
+            },
+            {
+                "name": "mstp",
+                "constant": 2,
+                "description": "MS/TP network type."
+            },
+            {
+                "name": "ptp",
+                "constant": 3,
+                "description": "Point-to-point (PTP) network type."
+            },
+            {
+                "name": "secure-connect",
+                "constant": 11,
+                "description": "Secure Connect network type."
+            },
+            {
+                "name": "serial",
+                "constant": 10,
+                "description": "Serial network type."
+            },
+            {
+                "name": "virtual",
+                "constant": 7,
+                "description": "Virtual network type."
+            },
+            {
+                "name": "zigbee",
+                "constant": 6,
+                "description": "Zigbee network type."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 63
+            },
+            {
+                "custom": true,
+                "minimum": 64,
+                "maximum": 255
+            }
+        ]
+    }
+}

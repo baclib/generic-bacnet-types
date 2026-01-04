@@ -1,0 +1,36 @@
+{
+    "alias": "BACnetLiftCarDoorCommand",
+    "name": "0-lift-car-door-command",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "close",
+                "constant": 2,
+                "description": "Close the lift car door."
+            },
+            {
+                "name": "none",
+                "constant": 0,
+                "description": "No door command."
+            },
+            {
+                "name": "open",
+                "constant": 1,
+                "description": "Open the lift car door."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 2
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 2
+            }
+        ]
+    }
+}

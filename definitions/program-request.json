@@ -1,0 +1,51 @@
+{
+    "alias": "BACnetProgramRequest",
+    "name": "0-program-request",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "halt",
+                "constant": 3,
+                "description": "Halt program request."
+            },
+            {
+                "name": "load",
+                "constant": 1,
+                "description": "Load program request."
+            },
+            {
+                "name": "ready",
+                "constant": 0,
+                "description": "Program is ready."
+            },
+            {
+                "name": "restart",
+                "constant": 4,
+                "description": "Restart program request."
+            },
+            {
+                "name": "run",
+                "constant": 2,
+                "description": "Run program request."
+            },
+            {
+                "name": "unload",
+                "constant": 5,
+                "description": "Unload program request."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 5
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 5
+            }
+        ]
+    }
+}

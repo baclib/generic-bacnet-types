@@ -1,0 +1,46 @@
+{
+    "alias": "BACnetColorOperationInProgress",
+    "name": "0-color-operation-in-progress",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "fade-active",
+                "constant": 1,
+                "description": "A fade operation is active."
+            },
+            {
+                "name": "idle",
+                "constant": 0,
+                "description": "No color operation is in progress."
+            },
+            {
+                "name": "not-controlled",
+                "constant": 3,
+                "description": "The color operation is not controlled."
+            },
+            {
+                "name": "other",
+                "constant": 4,
+                "description": "Other color operation in progress."
+            },
+            {
+                "name": "ramp-active",
+                "constant": 2,
+                "description": "A ramp operation is active."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 4
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 4
+            }
+        ]
+    }
+}

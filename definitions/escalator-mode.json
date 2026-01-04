@@ -1,0 +1,56 @@
+{
+    "alias": "BACnetEscalatorMode",
+    "name": "0-escalator-mode",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "down",
+                "constant": 3,
+                "description": "Escalator is moving down."
+            },
+            {
+                "name": "inspection",
+                "constant": 4,
+                "description": "Escalator is in inspection mode."
+            },
+            {
+                "name": "out-of-service",
+                "constant": 5,
+                "description": "Escalator is out of service."
+            },
+            {
+                "name": "stop",
+                "constant": 1,
+                "description": "Escalator is stopped."
+            },
+            {
+                "name": "unknown",
+                "constant": 0,
+                "description": "Escalator mode is unknown."
+            },
+            {
+                "name": "up",
+                "constant": 2,
+                "description": "Escalator is moving up."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 1023
+            },
+            {
+                "custom": true,
+                "minimum": 1024,
+                "maximum": 65535
+            }
+        ]
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "alias": "BACnetProgramState",
+    "name": "0-program-state",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "halted",
+                "constant": 4,
+                "description": "Program is halted."
+            },
+            {
+                "name": "idle",
+                "constant": 0,
+                "description": "Program is idle."
+            },
+            {
+                "name": "loading",
+                "constant": 1,
+                "description": "Program is loading."
+            },
+            {
+                "name": "running",
+                "constant": 2,
+                "description": "Program is running."
+            },
+            {
+                "name": "unloading",
+                "constant": 5,
+                "description": "Program is unloading."
+            },
+            {
+                "name": "waiting",
+                "constant": 3,
+                "description": "Program is waiting."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 5
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 5
+            }
+        ]
+    }
+}

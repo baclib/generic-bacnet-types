@@ -1,0 +1,31 @@
+{
+    "alias": "BACnetFileAccessMethod",
+    "name": "0-file-access-method",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "record-access",
+                "constant": 0,
+                "description": "File access by record."
+            },
+            {
+                "name": "stream-access",
+                "constant": 1,
+                "description": "File access by stream."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 1
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 1
+            }
+        ]
+    }
+}

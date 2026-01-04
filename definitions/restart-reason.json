@@ -1,0 +1,71 @@
+{
+    "alias": "BACnetRestartReason",
+    "name": "0-restart-reason",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "activate-changes",
+                "constant": 8,
+                "description": "Activate changes restart reason."
+            },
+            {
+                "name": "coldstart",
+                "constant": 1,
+                "description": "Coldstart restart reason."
+            },
+            {
+                "name": "detected-power-lost",
+                "constant": 3,
+                "description": "Detected power lost restart reason."
+            },
+            {
+                "name": "detected-powered-off",
+                "constant": 4,
+                "description": "Detected powered off restart reason."
+            },
+            {
+                "name": "hardware-watchdog",
+                "constant": 5,
+                "description": "Hardware watchdog restart reason."
+            },
+            {
+                "name": "software-watchdog",
+                "constant": 6,
+                "description": "Software watchdog restart reason."
+            },
+            {
+                "name": "suspended",
+                "constant": 7,
+                "description": "Suspended restart reason."
+            },
+            {
+                "name": "unknown",
+                "constant": 0,
+                "description": "Restart reason is unknown."
+            },
+            {
+                "name": "warmstart",
+                "constant": 2,
+                "description": "Warmstart restart reason."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 255
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 63
+            },
+            {
+                "custom": true,
+                "minimum": 64,
+                "maximum": 255
+            }
+        ]
+    }
+}

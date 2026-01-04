@@ -1,0 +1,36 @@
+{
+    "alias": "BACnetNotifyType",
+    "name": "0-notify-type",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "ack-notification",
+                "constant": 2,
+                "description": "Acknowledgment notification type."
+            },
+            {
+                "name": "alarm",
+                "constant": 0,
+                "description": "Alarm notification type."
+            },
+            {
+                "name": "event",
+                "constant": 1,
+                "description": "Event notification type."
+            }
+        ],
+        "extensible": false,
+        "range": {
+            "minimum": 0,
+            "maximum": 2
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 2
+            }
+        ]
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "alias": "BACnetAuthorizationMode",
+    "name": "0-authorization-mode",
+    "traits": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "authorization-delayed",
+                "constant": 4,
+                "description": "Authorization mode: authorization delayed."
+            },
+            {
+                "name": "authorize",
+                "constant": 0,
+                "description": "Authorization mode: authorize."
+            },
+            {
+                "name": "deny-all",
+                "constant": 2,
+                "description": "Authorization mode: deny all."
+            },
+            {
+                "name": "grant-active",
+                "constant": 1,
+                "description": "Authorization mode: grant active."
+            },
+            {
+                "name": "none",
+                "constant": 5,
+                "description": "Authorization mode: none."
+            },
+            {
+                "name": "verification-required",
+                "constant": 3,
+                "description": "Authorization mode: verification required."
+            }
+        ],
+        "extensible": true,
+        "range": {
+            "minimum": 0,
+            "maximum": 65535
+        },
+        "ranges": [
+            {
+                "custom": false,
+                "minimum": 0,
+                "maximum": 63
+            },
+            {
+                "custom": true,
+                "minimum": 64,
+                "maximum": 65535
+            }
+        ]
+    }
+}
