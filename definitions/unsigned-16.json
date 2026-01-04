@@ -3,9 +3,7 @@
     "name": "unsigned-16",
     "type": {
         "base": "unsigned",
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        }
+        "minimum": 0,
+        "maximum": 65535
     }
 }

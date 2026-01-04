@@ -1,4 +1,5 @@
 {
     "alias": "CHOICE",
-    "name": "choice"
+    "name": "choice",
+    "primitive": -2
 }

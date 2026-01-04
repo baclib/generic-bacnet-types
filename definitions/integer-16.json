@@ -3,9 +3,7 @@
     "name": "integer-16",
     "type": {
         "base": "integer",
-        "constraints": {
-            "minimum": -32768,
-            "maximum": 32767
-        }
+        "minimum": -32768,
+        "maximum": 32767
     }
 }

@@ -1,4 +1,5 @@
 {
     "alias": "BACnetObjectIdentifier",
-    "name": "object-identifier"
+    "name": "object-identifier",
+    "primitive": 12
 }

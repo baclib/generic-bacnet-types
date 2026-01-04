@@ -1,4 +1,5 @@
 {
     "alias": "OctetString",
-    "name": "octet-string"
+    "name": "octet-string",
+    "primitive": 6
 }

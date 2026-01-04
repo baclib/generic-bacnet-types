@@ -3,9 +3,7 @@
     "name": "enumerated-64",
     "type": {
         "base": "enumerated",
-        "range": {
-            "minimum": 0,
-            "maximum": 18446744073709551615
-        }
+        "minimum": 0,
+        "maximum": "18446744073709551615"
     }
 }

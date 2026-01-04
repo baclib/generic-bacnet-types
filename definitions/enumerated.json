@@ -1,4 +1,5 @@
 {
-    "alias": "ENUMERATED",
-    "name": "enumerated"
+    "alias": "Enumerated",
+    "name": "enumerated",
+    "primitive": 9
 }

@@ -1,11 +1,9 @@
 {
-    "alias": "BAClibCommandPriority",
+    "alias": "CommandPriority",
     "name": "command-priority",
     "type": {
         "base": "unsigned",
-        "range": {
-            "minimum": 1,
-            "maximum": 16
-        }
+        "minimum": 1,
+        "maximum": 16
     }
 }

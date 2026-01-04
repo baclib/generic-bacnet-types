@@ -1,4 +1,5 @@
 {
     "alias": "Real",
-    "name": "real"
+    "name": "real",
+    "primitive": 4
 }

@@ -3,9 +3,7 @@
     "name": "enumerated-16",
     "type": {
         "base": "enumerated",
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        }
+        "minimum": 0,
+        "maximum": 65535
     }
 }

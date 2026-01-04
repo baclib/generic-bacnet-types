@@ -3,9 +3,7 @@
     "name": "integer-8",
     "type": {
         "base": "integer",
-        "constraints": {
-            "minimum": -128,
-            "maximum": 127
-        }
+        "minimum": -128,
+        "maximum": 127
     }
 }

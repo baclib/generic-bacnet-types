@@ -1,4 +1,5 @@
 {
     "alias": "DatePattern",
-    "name": "date-pattern"
+    "name": "date-pattern",
+    "primitive": 10
 }

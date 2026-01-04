@@ -1,4 +1,5 @@
 {
     "alias": "Null",
-    "name": "null"
+    "name": "null",
+    "primitive": 0
 }

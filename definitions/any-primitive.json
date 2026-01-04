@@ -1,61 +1,61 @@
 {
-    "alias": "BAClibAnyPrimitive",
+    "alias": "AnyPrimitive",
     "name": "any-primitive",
     "description": "",
     "type": {
         "base": "choice",
         "options": [
             {
-                "name": "null-value",
+                "name": "null",
                 "type": "null"
             },
             {
-                "name": "boolean-value",
+                "name": "boolean",
                 "type": "boolean"
             },
             {
-                "name": "unsigned-value",
+                "name": "unsigned",
                 "type": "unsigned"
             },
             {
-                "name": "signed-value",
-                "type": "signed"
+                "name": "integer",
+                "type": "integer"
             },
             {
-                "name": "real-value",
-                "type": "float"
+                "name": "real",
+                "type": "real"
             },
             {
-                "name": "double-value",
+                "name": "double",
                 "type": "double"
             },
             {
                 "name": "octet-string",
-                "type": "octetstring"
+                "type": "octet-string"
             },
             {
                 "name": "character-string",
-                "type": "charstring"
+                "type": "character-string",
             },
             {
                 "name": "bit-string",
-                "type": "bitstring"
+                "type": "bit-string"
             },
             {
-                "name": "enumerated-value",
+                "name": "enumerated",
                 "type": "enumerated"
             },
             {
-                "name": "date",
-                "type": "datepattern"
+                "name": "date-pattern",
+                "type": "date-pattern"
             },
             {
-                "name": "time",
-                "type": "timepattern"
+                "name": "time-pattern",
+                "type": "time-pattern"
             },
             {
                 "name": "object-identifier",
-                "type": "objectid"
+                "type": "object-identifier"
             }
         ]
     }

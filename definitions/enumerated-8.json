@@ -3,9 +3,7 @@
     "name": "enumerated-8",
     "type": {
         "base": "enumerated",
-        "range": {
-            "minimum": 0,
-            "maximum": 255
-        }
+        "minimum": 0,
+        "maximum": 255
     }
 }

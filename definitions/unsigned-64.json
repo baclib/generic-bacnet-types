@@ -3,9 +3,7 @@
     "name": "unsigned-64",
     "type": {
         "base": "unsigned",
-        "length": {
-            "minimum": 0,
-            "maximum": 18446744073709551615
-        }
+        "minimum": 0,
+        "maximum": "18446744073709551615"
     }
 }

@@ -1,4 +1,5 @@
 {
     "alias": "TimePattern",
-    "name": "time-pattern"
+    "name": "time-pattern",
+    "primitive": 11
 }

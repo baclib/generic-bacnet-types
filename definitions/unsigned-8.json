@@ -3,9 +3,7 @@
     "name": "unsigned-8",
     "type": {
         "base": "unsigned",
-        "range": {
-            "minimum": 0,
-            "maximum": 255
-        }
+        "minimum": 0,
+        "maximum": 255
     }
 }

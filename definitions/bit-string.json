@@ -1,4 +1,5 @@
 {
     "alias": "BitString",
-    "name": "bit-string"
+    "name": "bit-string",
+    "primitive": 8
 }

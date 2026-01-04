@@ -1,4 +1,5 @@
 {
     "alias": "Unsigned",
-    "name": "unsigned"
+    "name": "unsigned",
+    "primitive": 1
 }

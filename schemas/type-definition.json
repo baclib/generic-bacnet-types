@@ -20,48 +20,14 @@
         "type": {
             "$ref": "./type-reference.json",
             "description": "A reference to a type, either as a type name or as a set of type traits."
+        },
+        "primitive": {
+            "type": "integer",
+            "description": "A primitive type code."
         }
     },
     "required": [
         "name"
     ],
-    "if": {
-        "properties": {
-            "name": {
-                "enum": [
-                    "null",
-                    "boolean",
-                    "unsigned",
-                    "integer",
-                    "real",
-                    "double",
-                    "octet-string",
-                    "character-string",
-                    "bit-string",
-                    "enumerated",
-                    "date-pattern",
-                    "time-pattern",
-                    "object-identifier",
-                    "any",
-                    "choice",
-                    "sequence"
-                ]
-            }
-        }
-    },
-    "then": {
-        "type": "object",
-        "properties": {
-            "type": {
-                "not": {}
-            }
-        }
-    },
-    "else": {
-        "type": "object",
-        "required": [
-            "type"
-        ]
-    },
     "additionalProperties": false
 }
