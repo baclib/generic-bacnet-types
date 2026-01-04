@@ -1,5 +1,17 @@
 {
     "alias": "BACnetDateTimePattern",
     "name": "date-time-pattern",
-    "predefined": true
+    "type": {
+        "base": "struct",
+        "fields": [
+            {
+                "name": "date",
+                "type": "date-pattern"
+            },
+            {
+                "name": "time",
+                "type": "time-pattern"
+            }
+        ]
+    }
 }

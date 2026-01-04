@@ -1,7 +1,7 @@
 {
     "alias": "BACnetPriorityFilter",
     "name": "priority-filter",
-    "traits": {
+    "type": {
         "base": "bitstring",
         "bits": [
             {

@@ -1,7 +1,7 @@
 {
     "alias": "BACnetRejectReason",
     "name": "reject-reason",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

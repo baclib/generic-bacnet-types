@@ -1,7 +1,7 @@
 {
     "alias": "BACnetLightingInProgress",
     "name": "lighting-in-progress",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

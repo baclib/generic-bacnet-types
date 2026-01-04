@@ -1,7 +1,7 @@
 {
     "alias": "BACnetFaultParameter",
     "name": "fault-parameter",
-    "traits": {
+    "type": {
         "base": "choice",
         "options": [
             {

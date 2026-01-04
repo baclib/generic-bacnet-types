@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://baclib.github.io/if-struct.json",
+    "$id": "https://baclib.github.io/schemas/if-struct.json",
     "title": "BAClib If-Struct Applicator",
     "description": "Conditional schema that applies when the base type is 'struct'. Defines the 'fields' property which contains at least one named field, each with a type and optional context number.",
     "type": "object",

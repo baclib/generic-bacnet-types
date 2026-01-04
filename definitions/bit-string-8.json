@@ -1,5 +1,11 @@
 {
     "alias": "BitString8",
     "name": "bit-string-8",
-    "predefined": true
+    "type": {
+        "base": "bit-string",
+        "length": {
+            "minimum": 0,
+            "maximum": 8
+        }
+    }
 }

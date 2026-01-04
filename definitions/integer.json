@@ -1,5 +1,4 @@
 {
     "alias": "Integer",
-    "name": "signed",
-    "predefined": true
+    "name": "integer"
 }

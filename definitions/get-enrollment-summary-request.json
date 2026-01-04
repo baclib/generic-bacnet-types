@@ -1,7 +1,7 @@
 {
     "alias": "BACnetGetEnrollmentSummaryRequest",
     "name": "get-enrollment-summary-request",
-    "traits": {
+    "type": {
         "base": "struct",
         "fields": [
             {

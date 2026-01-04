@@ -1,7 +1,7 @@
 {
     "alias": "BACnetStatusFlags",
     "name": "status-flags",
-    "traits": {
+    "type": {
         "base": "bitstring",
         "bits": [
             {

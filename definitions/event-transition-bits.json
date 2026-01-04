@@ -1,7 +1,7 @@
 {
     "alias": "BACnetEventTransitionBits",
     "name": "event-transition-bits",
-    "traits": {
+    "type": {
         "base": "bitstring",
         "bits": [
             {

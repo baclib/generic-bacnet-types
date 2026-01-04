@@ -13,6 +13,7 @@ const definitionDirectoryPath = path.resolve(testDirectoryPath, '../definitions'
 
 import Ajv2020 from 'ajv/dist/2020.js';
 import test from 'node:test';
+import { count } from 'node:console';
 const ajv = new Ajv2020({ allErrors: true, strict: false });
 
 const testData = new Map();
@@ -74,6 +75,7 @@ async function runTestsForDefinitions(directoryPath) {
         throw new Error(`Could not get schema: ${schemaId}`);
     }
 
+    let counter = 0;
     const fileNames = (await fs.readdir(directoryPath)).filter(file => file.endsWith('.json') && !file.startsWith('0'));
     for (const fileName of fileNames) {
         const filePath = path.join(directoryPath, fileName);

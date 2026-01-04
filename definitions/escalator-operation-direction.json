@@ -1,7 +1,7 @@
 {
     "alias": "BACnetEscalatorOperationDirection",
     "name": "escalator-operation-direction",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

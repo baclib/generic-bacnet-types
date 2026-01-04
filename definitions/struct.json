@@ -1,5 +1,4 @@
 {
     "alias": "SEQUENCE",
-    "name": "struct",
-    "predefined": true
+    "name": "struct"
 }

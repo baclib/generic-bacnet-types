@@ -1,7 +1,7 @@
 {
     "alias": "BACnetAccessAuthenticationFactorDisable",
     "name": "access-authentication-factor-disable",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

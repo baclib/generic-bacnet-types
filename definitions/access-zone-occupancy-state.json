@@ -1,7 +1,7 @@
 {
     "alias": "BACnetAccessZoneOccupancyState",
     "name": "access-zone-occupancy-state",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

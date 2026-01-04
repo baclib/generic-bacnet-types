@@ -1,5 +1,11 @@
 {
     "alias": "Integer32",
-    "name": "signed-32",
-    "predefined": true
+    "name": "integer-32",
+    "type": {
+        "base": "integer",
+        "constraints": {
+            "minimum": -2147483648,
+            "maximum": 2147483647
+        }
+    }
 }

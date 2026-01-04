@@ -1,7 +1,7 @@
 {
     "alias": "BACnetLimitEnable",
     "name": "limit-enable",
-    "traits": {
+    "type": {
         "base": "bitstring",
         "bits": [
             {

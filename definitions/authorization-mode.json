@@ -1,7 +1,7 @@
 {
     "alias": "BACnetAuthorizationMode",
     "name": "authorization-mode",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

@@ -1,7 +1,7 @@
 {
     "alias": "BACnetAuditLevel",
     "name": "audit-level",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

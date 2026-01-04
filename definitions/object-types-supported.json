@@ -1,7 +1,7 @@
 {
     "alias": "BACnetObjectTypesSupported",
     "name": "object-types-supported",
-    "traits": {
+    "type": {
         "base": "bitstring",
         "bits": [
             {

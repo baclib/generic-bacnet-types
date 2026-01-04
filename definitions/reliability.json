@@ -1,7 +1,7 @@
 {
     "alias": "BACnetReliability",
     "name": "reliability",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

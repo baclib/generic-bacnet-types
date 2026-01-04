@@ -1,7 +1,7 @@
 {
     "alias": "BACnetEventState",
     "name": "event-state",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

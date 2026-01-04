@@ -1,5 +1,11 @@
 {
     "alias": "Unsigned32",
     "name": "unsigned-32",
-    "predefined": true
+    "type": {
+        "base": "unsigned",
+        "range": {
+            "minimum": 0,
+            "maximum": 4294967295
+        }
+    }
 }

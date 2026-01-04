@@ -1,7 +1,7 @@
 {
     "alias": "BACnetLiftGroupMode",
     "name": "lift-group-mode",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

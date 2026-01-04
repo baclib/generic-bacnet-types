@@ -1,7 +1,7 @@
 {
     "alias": "ReinitializeDevice-Request",
     "name": "reinitialize-device-request",
-    "traits": {
+    "type": {
         "base": "struct",
         "fields": [
             {

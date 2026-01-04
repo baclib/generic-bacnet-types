@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://baclib.github.io/reuse-non-negative-integer-length.json",
+    "$id": "https://baclib.github.io/schemas/reuse-non-negative-integer-length.json",
     "title": "Reuse Non-negative Integer Length",
     "description": "Specifies a length constraint that can be a fixed non-negative integer or an object defining a minimum and/or maximum allowed length.",
     "oneOf": [

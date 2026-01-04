@@ -1,5 +1,11 @@
 {
     "alias": "BitString32",
     "name": "bit-string-32",
-    "predefined": true
+    "type": {
+        "base": "bit-string",
+        "length": {
+            "minimum": 0,
+            "maximum": 32
+        }
+    }
 }

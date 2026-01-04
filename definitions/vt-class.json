@@ -1,7 +1,7 @@
 {
     "alias": "BACnetVTClass",
     "name": "vt-class",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

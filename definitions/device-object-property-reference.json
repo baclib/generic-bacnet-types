@@ -1,7 +1,7 @@
 {
     "alias": "BACnetDeviceObjectPropertyReference",
     "name": "device-object-property-reference",
-    "traits": {
+    "type": {
         "base": "struct",
         "fields": [
             {

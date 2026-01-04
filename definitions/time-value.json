@@ -1,7 +1,7 @@
 {
     "alias": "BAClibTimeValue",
     "name": "time-value",
-    "traits": {
+    "type": {
         "base": "struct",
         "fields": [
             {

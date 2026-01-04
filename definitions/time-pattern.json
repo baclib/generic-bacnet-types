@@ -1,5 +1,4 @@
 {
     "alias": "TimePattern",
-    "name": "time-pattern",
-    "predefined": true
+    "name": "time-pattern"
 }

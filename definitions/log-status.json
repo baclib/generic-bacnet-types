@@ -1,7 +1,7 @@
 {
     "alias": "BACnetLogStatus",
     "name": "log-status",
-    "traits": {
+    "type": {
         "base": "bitstring",
         "bits": [
             {

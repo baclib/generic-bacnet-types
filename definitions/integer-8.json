@@ -1,5 +1,11 @@
 {
     "alias": "Integer8",
-    "name": "signed-8",
-    "predefined": true
+    "name": "integer-8",
+    "type": {
+        "base": "integer",
+        "constraints": {
+            "minimum": -128,
+            "maximum": 127
+        }
+    }
 }

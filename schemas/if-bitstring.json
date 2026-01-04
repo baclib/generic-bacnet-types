@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://baclib.github.io/if-bitstring.json",
+    "$id": "https://baclib.github.io/schemas/if-bitstring.json",
     "title": "BAClib If-Bitstring Applicator",
     "description": "Conditional schema that applies when the base type is 'bitstring'. Defines the 'bits' property which contains named bit elements with unique positions.",
     "type": "object",

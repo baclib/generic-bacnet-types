@@ -1,7 +1,7 @@
 {
     "alias": "BACnetSCHubConnectorState",
     "name": "sc-hub-connector-state",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

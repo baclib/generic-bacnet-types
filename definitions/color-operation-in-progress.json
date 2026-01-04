@@ -1,7 +1,7 @@
 {
     "alias": "BACnetColorOperationInProgress",
     "name": "color-operation-in-progress",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

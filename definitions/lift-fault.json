@@ -1,7 +1,7 @@
 {
     "alias": "BACnetLiftFault",
     "name": "lift-fault",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

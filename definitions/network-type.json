@@ -1,7 +1,7 @@
 {
     "alias": "BACnetNetworkType",
     "name": "network-type",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

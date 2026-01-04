@@ -1,5 +1,4 @@
 {
     "alias": "BACnetCharacterString",
-    "name": "character-string",
-    "predefined": true
+    "name": "character-string"
 }

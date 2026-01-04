@@ -1,5 +1,11 @@
 {
     "alias": "Enumerated64",
     "name": "enumerated-64",
-    "predefined": true
+    "type": {
+        "base": "enumerated",
+        "range": {
+            "minimum": 0,
+            "maximum": 18446744073709551615
+        }
+    }
 }

@@ -1,7 +1,7 @@
 {
     "alias": "BACnetSuccessFilter",
     "name": "success-filter",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

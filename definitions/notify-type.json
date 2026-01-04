@@ -1,7 +1,7 @@
 {
     "alias": "BACnetNotifyType",
     "name": "notify-type",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

@@ -1,7 +1,7 @@
 {
     "alias": "BACnetColorTransition",
     "name": "color-transition",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

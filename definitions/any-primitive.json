@@ -2,7 +2,7 @@
     "alias": "BAClibAnyPrimitive",
     "name": "any-primitive",
     "description": "",
-    "traits": {
+    "type": {
         "base": "choice",
         "options": [
             {

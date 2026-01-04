@@ -1,7 +1,7 @@
 {
     "alias": "BACnetProtocolLevel",
     "name": "protocol-level",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

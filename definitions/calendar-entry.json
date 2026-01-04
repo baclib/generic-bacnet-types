@@ -2,7 +2,7 @@
     "alias": "BACnetCalendarEntry",
     "name": "calendar-entry",
     "description": "A date, date range, or week and day pattern for determining when a calendar date matches the entry criteria",
-    "traits": {
+    "type": {
         "base": "choice",
         "options": [
             {

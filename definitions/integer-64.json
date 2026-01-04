@@ -1,5 +1,11 @@
 {
     "alias": "Integer64",
-    "name": "signed-64",
-    "predefined": true
+    "name": "integer-64",
+    "type": {
+        "base": "integer",
+        "constraints": {
+            "minimum": -9223372036854775808,
+            "maximum": 9223372036854775807
+        }
+    }
 }

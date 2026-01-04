@@ -1,5 +1,8 @@
 {
     "alias": "BACnetWeekNDay",
     "name": "week-n-day",
-    "predefined": true
+    "type": {
+        "base": "octet-string",
+        "length": 3
+    }
 }

@@ -1,7 +1,7 @@
 {
     "alias": "BACnetAuthenticationStatus",
     "name": "authentication-status",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

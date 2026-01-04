@@ -1,5 +1,5 @@
 {
     "alias": "Date",
     "name": "date",
-    "predefined": true
+    "type": "date-pattern"
 }

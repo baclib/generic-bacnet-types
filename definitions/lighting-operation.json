@@ -1,7 +1,7 @@
 {
     "alias": "BACnetLightingOperation",
     "name": "lighting-operation",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

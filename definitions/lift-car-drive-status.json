@@ -1,7 +1,7 @@
 {
     "alias": "BACnetLiftCarDriveStatus",
     "name": "lift-car-drive-status",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

@@ -1,5 +1,11 @@
 {
     "alias": "Enumerated8",
     "name": "enumerated-8",
-    "predefined": true
+    "type": {
+        "base": "enumerated",
+        "range": {
+            "minimum": 0,
+            "maximum": 255
+        }
+    }
 }

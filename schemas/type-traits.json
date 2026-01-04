@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://baclib.github.io/type-traits.json",
+    "$id": "https://baclib.github.io/schemas/type-traits.json",
     "title": "BAClib Type Traits",
     "description": "Defines the characteristics and constraints of a BACnet data type. Traits include the base type, array/series information, and type-specific properties like enumerated values, bitstring elements, struct fields, or choice options.",
     "type": "object",

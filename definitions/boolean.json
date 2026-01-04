@@ -1,5 +1,4 @@
 {
     "alias": "Boolean",
-    "name": "boolean",
-    "predefined": true
+    "name": "boolean"
 }

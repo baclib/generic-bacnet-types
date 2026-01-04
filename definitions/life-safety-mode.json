@@ -1,7 +1,7 @@
 {
     "alias": "BACnetLifeSafetyMode",
     "name": "life-safety-mode",
-    "traits": {
+    "type": {
         "base": "enumerated",
         "values": [
             {

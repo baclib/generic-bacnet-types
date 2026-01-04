@@ -1,5 +1,5 @@
 {
     "alias": "Time",
     "name": "time",
-    "predefined": true
+    "type": "time-pattern"
 }

@@ -1,5 +1,17 @@
 {
     "alias": "BACnetDateTime",
     "name": "date-time",
-    "predefined": true
+    "type": {
+        "base": "struct",
+        "fields": [
+            {
+                "name": "date",
+                "type": "date"
+            },
+            {
+                "name": "time",
+                "type": "time"
+            }
+        ]
+    }
 }

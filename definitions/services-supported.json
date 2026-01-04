@@ -1,7 +1,7 @@
 {
     "alias": "BACnetServicesSupported",
     "name": "services-supported",
-    "traits": {
+    "type": {
         "base": "bitstring",
         "bits": [
             {
