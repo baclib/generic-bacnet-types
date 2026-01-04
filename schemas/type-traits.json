@@ -41,6 +41,5 @@
         {
             "$ref": "./if-struct.json"
         }
-    ],
-    "unevaluatedProperties": false
+    ]
 }

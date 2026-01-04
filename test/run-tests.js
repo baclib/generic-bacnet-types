@@ -8,10 +8,12 @@ const testDirectoryPath = import.meta.dirname;
 const testDataDirectoryPath = path.join(testDirectoryPath, 'data');
 
 const schemaDirectoryPath = path.resolve(testDirectoryPath, '../schemas');
+const definitionDirectoryPath = path.resolve(testDirectoryPath, '../definitions');
+
 
 import Ajv2020 from 'ajv/dist/2020.js';
 import test from 'node:test';
-const ajv = new Ajv2020({ allErrors: false, strict: false });
+const ajv = new Ajv2020({ allErrors: true, strict: false });
 
 const testData = new Map();
 
@@ -65,9 +67,33 @@ async function runTests(type, validate) {
     }
 }
 
+async function runTestsForDefinitions(directoryPath) {
+    const schemaId = "https://baclib.github.io/type-definition.json";
+    const validate = ajv.getSchema(schemaId);
+    if (!validate) {
+        throw new Error(`Could not get schema: ${schemaId}`);
+    }
+
+    const fileNames = (await fs.readdir(directoryPath)).filter(file => file.endsWith('.json') && !file.startsWith('0'));
+    for (const fileName of fileNames) {
+        const filePath = path.join(directoryPath, fileName);
+        const fileContent = await fs.readFile(filePath, 'utf-8');
+        const data = JSON.parse(fileContent);
+
+        test(`definition ${fileName} should be valid`, () => {
+            const valid = validate(data);
+            if (!valid) {
+                console.error(validate.errors);
+                throw new Error(`Definition ${fileName} is invalid.`);
+            }
+        });
+    }
+}
+
 async function main() {
     await loadSchemas(schemaDirectoryPath);
     await loadTestData(testDataDirectoryPath);
+    /*
     for (const [id, schemaObj] of Object.entries(ajv.schemas)) {
         const match = id.match(/([a-z]+)-type\.json$/);
         if (!match) {
@@ -79,6 +105,9 @@ async function main() {
         }
         await runTests(match[1], validate);
     }
+    */
+
+    await runTestsForDefinitions(definitionDirectoryPath);
 }
 
 await main();
