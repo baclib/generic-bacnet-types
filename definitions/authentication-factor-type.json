@@ -1,6 +1,6 @@
 {
     "alias": "BACnetAuthenticationFactorType",
-    "name": "0-authentication-factor-type",
+    "name": "authentication-factor-type",
     "traits": {
         "base": "enumerated",
         "values": [

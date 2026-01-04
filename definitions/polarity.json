@@ -1,6 +1,6 @@
 {
     "alias": "BACnetPolarity",
-    "name": "0-polarity",
+    "name": "polarity",
     "traits": {
         "base": "enumerated",
         "values": [

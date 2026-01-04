@@ -1,6 +1,6 @@
 {
     "alias": "BACnetRelationship",
-    "name": "0-relationship",
+    "name": "relationship",
     "traits": {
         "base": "enumerated",
         "values": [

@@ -1,6 +1,6 @@
 {
     "alias": "BACnetNetworkPortCommand",
-    "name": "0-network-port-command",
+    "name": "network-port-command",
     "traits": {
         "base": "enumerated",
         "values": [

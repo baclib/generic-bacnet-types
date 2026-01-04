@@ -1,6 +1,6 @@
 {
     "alias": "BACnetConfirmedServiceChoice",
-    "name": "0-confirmed-service-choice",
+    "name": "confirmed-service-choice",
     "traits": {
         "base": "enumerated",
         "values": [

@@ -1,6 +1,6 @@
 {
     "alias": "BACnetAccessEvent",
-    "name": "0-access-event",
+    "name": "access-event",
     "traits": {
         "base": "enumerated",
         "values": [

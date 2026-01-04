@@ -1,6 +1,6 @@
 {
     "alias": "BACnetAuthorizationPosture",
-    "name": "0-authorization-posture",
+    "name": "authorization-posture",
     "traits": {
         "base": "enumerated",
         "values": [

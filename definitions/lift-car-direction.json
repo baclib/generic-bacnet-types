@@ -1,6 +1,6 @@
 {
     "alias": "BACnetLiftCarDirection",
-    "name": "0-lift-car-direction",
+    "name": "lift-car-direction",
     "traits": {
         "base": "enumerated",
         "values": [

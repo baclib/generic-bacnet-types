@@ -1,6 +1,6 @@
 {
     "alias": "BACnetFileAccessMethod",
-    "name": "0-file-access-method",
+    "name": "file-access-method",
     "traits": {
         "base": "enumerated",
         "values": [

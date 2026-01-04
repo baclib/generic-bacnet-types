@@ -1,6 +1,6 @@
 {
     "alias": "BACnetFaultType",
-    "name": "0-fault-type",
+    "name": "fault-type",
     "traits": {
         "base": "enumerated",
         "values": [

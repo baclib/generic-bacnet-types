@@ -1,6 +1,6 @@
 {
     "alias": "BACnetShedState",
-    "name": "0-shed-state",
+    "name": "shed-state",
     "traits": {
         "base": "enumerated",
         "values": [

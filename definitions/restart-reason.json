@@ -1,6 +1,6 @@
 {
     "alias": "BACnetRestartReason",
-    "name": "0-restart-reason",
+    "name": "restart-reason",
     "traits": {
         "base": "enumerated",
         "values": [

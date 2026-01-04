@@ -1,6 +1,6 @@
 {
     "alias": "BACnetMaintenance",
-    "name": "0-maintenance",
+    "name": "maintenance",
     "traits": {
         "base": "enumerated",
         "values": [

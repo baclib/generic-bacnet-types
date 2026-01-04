@@ -1,6 +1,6 @@
 {
     "alias": "BACnetSegmentation",
-    "name": "0-segmentation",
+    "name": "segmentation",
     "traits": {
         "base": "enumerated",
         "values": [

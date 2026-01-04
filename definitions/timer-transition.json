@@ -1,6 +1,6 @@
 {
     "alias": "BACnetTimerTransition",
-    "name": "0-timer-transition",
+    "name": "timer-transition",
     "traits": {
         "base": "enumerated",
         "values": [

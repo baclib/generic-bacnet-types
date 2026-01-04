@@ -1,6 +1,6 @@
 {
     "alias": "BACnetAbortReason",
-    "name": "0-abort-reason",
+    "name": "abort-reason",
     "traits": {
         "base": "enumerated",
         "values": [

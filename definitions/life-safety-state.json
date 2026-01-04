@@ -1,6 +1,6 @@
 {
     "alias": "BACnetLifeSafetyState",
-    "name": "0-life-safety-state",
+    "name": "life-safety-state",
     "traits": {
         "base": "enumerated",
         "values": [

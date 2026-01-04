@@ -1,6 +1,6 @@
 {
     "alias": "BACnetProgramState",
-    "name": "0-program-state",
+    "name": "program-state",
     "traits": {
         "base": "enumerated",
         "values": [

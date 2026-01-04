@@ -1,6 +1,6 @@
 {
     "alias": "BACnetAction",
-    "name": "0-action",
+    "name": "action",
     "traits": {
         "base": "enumerated",
         "values": [

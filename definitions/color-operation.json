@@ -1,6 +1,6 @@
 {
     "alias": "BACnetColorOperation",
-    "name": "0-color-operation",
+    "name": "color-operation",
     "traits": {
         "base": "enumerated",
         "values": [

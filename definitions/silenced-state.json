@@ -1,6 +1,6 @@
 {
     "alias": "BACnetSilencedState",
-    "name": "0-silenced-state",
+    "name": "silenced-state",
     "traits": {
         "base": "enumerated",
         "values": [

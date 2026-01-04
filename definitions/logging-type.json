@@ -1,6 +1,6 @@
 {
     "alias": "BACnetLoggingType",
-    "name": "0-logging-type",
+    "name": "logging-type",
     "traits": {
         "base": "enumerated",
         "values": [

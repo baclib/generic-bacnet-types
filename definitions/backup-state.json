@@ -1,6 +1,6 @@
 {
     "alias": "BACnetBackupState",
-    "name": "0-backup-state",
+    "name": "backup-state",
     "traits": {
         "base": "enumerated",
         "values": [

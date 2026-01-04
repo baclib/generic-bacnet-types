@@ -1,6 +1,6 @@
 {
     "alias": "BACnetLifeSafetyOperation",
-    "name": "0-life-safety-operation",
+    "name": "life-safety-operation",
     "traits": {
         "base": "enumerated",
         "values": [

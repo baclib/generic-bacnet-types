@@ -1,6 +1,6 @@
 {
     "alias": "BACnetNodeType",
-    "name": "0-node-type",
+    "name": "node-type",
     "traits": {
         "base": "enumerated",
         "values": [

@@ -1,6 +1,6 @@
 {
     "alias": "BACnetPropertyIdentifier",
-    "name": "0-property-identifier",
+    "name": "property-identifier",
     "traits": {
         "base": "enumerated",
         "values": [

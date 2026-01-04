@@ -1,6 +1,6 @@
 {
     "alias": "BACnetEscalatorMode",
-    "name": "0-escalator-mode",
+    "name": "escalator-mode",
     "traits": {
         "base": "enumerated",
         "values": [

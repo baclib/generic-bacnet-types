@@ -1,6 +1,6 @@
 {
     "alias": "BACnetSCHubConnectorState",
-    "name": "0-sc-hub-connector-state",
+    "name": "sc-hub-connector-state",
     "traits": {
         "base": "enumerated",
         "values": [

@@ -1,6 +1,6 @@
 {
     "alias": "BACnetProgramError",
-    "name": "0-program-error",
+    "name": "program-error",
     "traits": {
         "base": "enumerated",
         "values": [

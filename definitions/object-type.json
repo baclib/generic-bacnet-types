@@ -1,6 +1,6 @@
 {
     "alias": "BACnetObjectType",
-    "name": "0-object-type",
+    "name": "object-type",
     "traits": {
         "base": "enumerated",
         "values": [

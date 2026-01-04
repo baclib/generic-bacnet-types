@@ -1,6 +1,6 @@
 {
     "alias": "BACnetTimerState",
-    "name": "0-timer-state",
+    "name": "timer-state",
     "traits": {
         "base": "enumerated",
         "values": [

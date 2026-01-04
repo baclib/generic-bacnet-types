@@ -1,6 +1,6 @@
 {
     "alias": "BACnetLiftCarMode",
-    "name": "0-lift-car-mode",
+    "name": "lift-car-mode",
     "traits": {
         "base": "enumerated",
         "values": [

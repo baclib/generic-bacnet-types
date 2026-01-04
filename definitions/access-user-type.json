@@ -1,6 +1,6 @@
 {
     "alias": "BACnetAccessUserType",
-    "name": "0-access-user-type",
+    "name": "access-user-type",
     "traits": {
         "base": "enumerated",
         "values": [

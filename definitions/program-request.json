@@ -1,6 +1,6 @@
 {
     "alias": "BACnetProgramRequest",
-    "name": "0-program-request",
+    "name": "program-request",
     "traits": {
         "base": "enumerated",
         "values": [

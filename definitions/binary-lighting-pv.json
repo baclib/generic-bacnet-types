@@ -1,6 +1,6 @@
 {
     "alias": "BACnetBinaryLightingPV",
-    "name": "0-binary-lighting-pv",
+    "name": "binary-lighting-pv",
     "traits": {
         "base": "enumerated",
         "values": [

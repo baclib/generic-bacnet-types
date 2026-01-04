@@ -1,6 +1,6 @@
 {
     "alias": "BACnetBinaryPV",
-    "name": "0-binary-pv",
+    "name": "binary-pv",
     "traits": {
         "base": "enumerated",
         "values": [

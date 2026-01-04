@@ -1,6 +1,6 @@
 {
     "alias": "BACnetEngineeringUnits",
-    "name": "0-engineering-units",
+    "name": "engineering-units",
     "traits": {
         "base": "enumerated",
         "values": [

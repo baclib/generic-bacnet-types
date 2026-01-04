@@ -1,6 +1,6 @@
 {
     "alias": "BACnetLiftCarDoorCommand",
-    "name": "0-lift-car-door-command",
+    "name": "lift-car-door-command",
     "traits": {
         "base": "enumerated",
         "values": [

@@ -1,6 +1,6 @@
 {
     "alias": "BACnetAccessPassbackMode",
-    "name": "0-access-passback-mode",
+    "name": "access-passback-mode",
     "traits": {
         "base": "enumerated",
         "values": [

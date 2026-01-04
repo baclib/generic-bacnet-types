@@ -1,6 +1,6 @@
 {
     "alias": "BACnetAuthorizationExemption",
-    "name": "0-authorization-exemption",
+    "name": "authorization-exemption",
     "traits": {
         "base": "enumerated",
         "values": [

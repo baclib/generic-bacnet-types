@@ -1,6 +1,6 @@
 {
     "alias": "BACnetDoorAlarmState",
-    "name": "0-door-alarm-state",
+    "name": "door-alarm-state",
     "traits": {
         "base": "enumerated",
         "values": [

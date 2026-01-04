@@ -1,6 +1,6 @@
 {
     "alias": "BACnetSCConnectionState",
-    "name": "0-sc-connection-state",
+    "name": "sc-connection-state",
     "traits": {
         "base": "enumerated",
         "values": [

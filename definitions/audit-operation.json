@@ -1,6 +1,6 @@
 {
     "alias": "BACnetAuditOperation",
-    "name": "0-audit-operation",
+    "name": "audit-operation",
     "traits": {
         "base": "enumerated",
         "values": [

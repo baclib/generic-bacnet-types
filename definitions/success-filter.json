@@ -1,6 +1,6 @@
 {
     "alias": "BACnetSuccessFilter",
-    "name": "0-success-filter",
+    "name": "success-filter",
     "traits": {
         "base": "enumerated",
         "values": [

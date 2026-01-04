@@ -1,6 +1,6 @@
 {
     "alias": "BACnetEscalatorFault",
-    "name": "0-escalator-fault",
+    "name": "escalator-fault",
     "traits": {
         "base": "enumerated",
         "values": [

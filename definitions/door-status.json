@@ -1,6 +1,6 @@
 {
     "alias": "BACnetDoorStatus",
-    "name": "0-door-status",
+    "name": "door-status",
     "traits": {
         "base": "enumerated",
         "values": [

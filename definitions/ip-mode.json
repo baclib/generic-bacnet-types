@@ -1,6 +1,6 @@
 {
     "alias": "BACnetIPMode",
-    "name": "0-ip-mode",
+    "name": "ip-mode",
     "traits": {
         "base": "enumerated",
         "values": [

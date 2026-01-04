@@ -1,6 +1,6 @@
 {
     "alias": "BACnetLockStatus",
-    "name": "0-lock-status",
+    "name": "lock-status",
     "traits": {
         "base": "enumerated",
         "values": [

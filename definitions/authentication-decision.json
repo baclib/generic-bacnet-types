@@ -1,6 +1,6 @@
 {
     "alias": "BACnetAuthenticationDecision",
-    "name": "0-authentication-decision",
+    "name": "authentication-decision",
     "traits": {
         "base": "enumerated",
         "values": [

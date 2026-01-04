@@ -1,6 +1,6 @@
 {
     "alias": "BACnetNetworkNumberQuality",
-    "name": "0-network-number-quality",
+    "name": "network-number-quality",
     "traits": {
         "base": "enumerated",
         "values": [

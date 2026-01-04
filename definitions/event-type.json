@@ -1,6 +1,6 @@
 {
     "alias": "BACnetEventType",
-    "name": "0-event-type",
+    "name": "event-type",
     "traits": {
         "base": "enumerated",
         "values": [

@@ -1,6 +1,6 @@
 {
     "alias": "BACnetLightingTransition",
-    "name": "0-lighting-transition",
+    "name": "lighting-transition",
     "traits": {
         "base": "enumerated",
         "values": [

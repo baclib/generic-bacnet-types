@@ -1,6 +1,6 @@
 {
     "alias": "BACnetDoorValue",
-    "name": "0-door-value",
+    "name": "door-value",
     "traits": {
         "base": "enumerated",
         "values": [

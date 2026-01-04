@@ -1,6 +1,6 @@
 {
     "alias": "BACnetDeviceStatus",
-    "name": "0-device-status",
+    "name": "device-status",
     "traits": {
         "base": "enumerated",
         "values": [
