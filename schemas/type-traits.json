@@ -14,7 +14,7 @@
                     "type": "boolean"
                 },
                 {
-                    "$ref": "./length-constraint.json"
+                    "$ref": "./fixed-length-or-range.json"
                 }
             ]
         }
@@ -24,7 +24,10 @@
     ],
     "allOf": [
         {
-            "$ref": "./if-unsigned.json"
+            "$ref": "./if-limitable.json"
+        },
+        {
+            "$ref": "./if-extensible.json"
         },
         {
             "$ref": "./if-bitstring.json"

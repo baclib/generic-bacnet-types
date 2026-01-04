@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://baclib.github.io/non-negative-integer-range.json",
+    "title": "Non-negative Integer Range",
+    "description": "Specifies a non-negative integer range with minimum and/or maximum values.",
+    "properties": {
+        "minimum": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "The minimum value of the range which must be less than or equal to maximum if maximum is present."
+        },
+        "maximum": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "The maximum value of the range which must be greater than or equal to minimum if minimum is present."
+        }
+    },
+    "anyOf": [
+        {
+            "required": [
+                "minimum"
+            ]
+        },
+        {
+            "required": [
+                "maximum"
+            ]
+        }
+    ],
+    "unevaluatedProperties": false
+}

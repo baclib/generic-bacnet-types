@@ -1,0 +1,17 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://baclib.github.io/fixed-length-or-length-range.json",
+    "title": "Fixed Length or Length Range",
+    "description": "Specifies a length constraint that can be either: (1) a fixed non-negative integer for an exact length, or (2) an object defining a minimum and/or maximum allowed length.",
+    "oneOf": [
+        {
+            "type": "integer",
+            "minimum": 0,
+            "description": "A fixed non-negative integer representing the exact length."
+        },
+        {
+            "$ref": "./non-negative-integer-range.json"
+        }
+    ],
+    "unevaluatedProperties": false
+}

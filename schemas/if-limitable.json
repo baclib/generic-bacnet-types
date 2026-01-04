@@ -1,0 +1,106 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://baclib.github.io/if-limitable.json",
+    "title": "BAClib If-Limitable Applicator",
+    "allOf": [
+        {
+            "if": {
+                "properties": {
+                    "base": {
+                        "enum": [
+                            "unsigned",
+                            "enumerated"
+                        ]
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "range": {
+                        "$ref": "./non-negative-integer-range.json"
+                    }
+                }
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "base": {
+                        "const": "signed"
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "minimum": {
+                        "type": "integer"
+                    },
+                    "maximum": {
+                        "type": "integer"
+                    }
+                },
+                "$ref": "#/$defs/any-of-properties"
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "base": {
+                        "enum": [
+                            "float",
+                            "double"
+                        ]
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "minimum": {
+                        "type": "number"
+                    },
+                    "maximum": {
+                        "type": "number"
+                    }
+                },
+                "$ref": "#/$defs/any-of-properties"
+            }
+        },
+        {
+            "if": {
+                "properties": {
+                    "base": {
+                        "enum": [
+                            "octetstring",
+                            "charstring",
+                            "bitstring"
+                        ]
+                    }
+                }
+            },
+            "then": {
+                "properties": {
+                    "length": {
+                        "$ref": "./fixed-length-or-range.json"
+                    }
+                }
+            }
+        }
+    ],
+    "$defs": {
+        "any-of-properties": {
+            "anyOf": [
+                {
+                    "required": [
+                        "minimum"
+                    ]
+                },
+                {
+                    "required": [
+                        "maximum"
+                    ]
+                }
+            ],
+            "unevaluatedProperties": false
+        }
+    }
+}
