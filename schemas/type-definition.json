@@ -1,8 +1,8 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://baclib.github.io/type-definition.json",
-    "title": "Type Definition",
-    "description": "This schema defines the top-level structure for a type definition. Types defined here can be referenced and reused in other schemas or components.",
+    "title": "BAClib Type Definition",
+    "description": "This schema defines the top-level data type. Types defined here can be referenced and reused in other schemas.",
     "type": "object",
     "properties": {
         "alias": {
@@ -19,7 +19,7 @@
         },
         "traits": {
             "$ref": "./type-traits.json",
-            "description": "The structure and constraints of the type."
+            "description": "The traits of the type."
         }
     },
     "required": [

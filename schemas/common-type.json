@@ -5,6 +5,10 @@
     "type": "object",
     "properties": {
         "base": {
+            "type": "string",
+            "description": "The name of the base type."
+        },
+        "xyz-base": {
             "$ref": "./type-name.json",
             "description": "The name of the type which is the base for this definition."
         },
@@ -19,11 +23,11 @@
                 }
             ]
         },
-        "length": {
+        "xyz-length": {
             "$ref": "./length-constraint.json",
             "description": "Optional length constraint for string types."
         },
-        "range": {
+        "xyz-range": {
             "$ref": "./range-constraint.json",
             "description": "Optional range constraint for numeric types."
         }

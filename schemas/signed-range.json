@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Signed Range Constraint",
+    "type": "object",
+    "properties": {
+        "range": {
+            "type": "object",
+            "properties": {
+                "minimum": { "type": "integer" },
+                "maximum": { "type": "integer" }
+            },
+            "anyOf": [
+                { "required": ["minimum"] },
+                { "required": ["maximum"] }
+            ],
+            "additionalProperties": false
+        }
+    }
+}

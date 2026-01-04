@@ -1,0 +1,103 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://baclib.github.io/if-bitstring.json",
+    "title": "BAClib If-Bitstring Applicator",
+    "type": "object",
+    "if": {
+        "properties": {
+            "base": {
+                "const": "bitstring"
+            }
+        }
+    },
+    "then": {
+        "properties": {
+            "length": {
+                "$ref": "./length-constraint.json",
+                "description": "Optional length constraint for the bit string type."
+            },
+            "bits": {
+                "type": "array",
+                "description": "Array of bit elements. Each entry must have a unique name and a zero-based position.",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "alias": {
+                            "type": "string",
+                            "description": "An optional unique alias for the bit element."
+                        },
+                        "name": {
+                            "type": "string",
+                            "description": "The unique name of the bit element."
+                        },
+                        "description": {
+                            "type": "string",
+                            "description": "An optional human-readable description for the bit element."
+                        },
+                        "position": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "description": "Zero-based position of the bit element. Must be unique within the set."
+                        }
+                    },
+                    "required": [
+                        "name",
+                        "position"
+                    ],
+                    "additionalProperties": false
+                }
+            },
+            "extensible": {
+                "type": "boolean",
+                "description": "Indicates whether the enumerated type is extensible, allowing for additional values beyond those explicitly defined."
+            },
+            "range": {
+                "description": "Optional range constraint.",
+                "properties": {
+                    "minimum": {
+                        "type": "integer",
+                        "minimum": 0
+                    },
+                    "maximum": {
+                        "type": "integer",
+                        "minimum": 0
+                    }
+                },
+                "required": [
+                    "minimum",
+                    "maximum"
+                ],
+                "additionalProperties": false
+            },
+            "ranges": {
+                "type": "array",
+                "description": "Optional array of ranges defining valid value segments for the enumerated type.",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "custom": {
+                            "type": "boolean",
+                            "description": "Indicates if this range is for custom (user-defined) values."
+                        },
+                        "minimum": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "description": "The minimum value of the range (inclusive)."
+                        },
+                        "maximum": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "description": "The maximum value of the range (inclusive)."
+                        }
+                    },
+                    "required": [
+                        "custom",
+                        "minimum",
+                        "maximum"
+                    ],
+                    "additionalProperties": false
+                }
+            }
+        }
+    }
+}

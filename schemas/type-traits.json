@@ -1,40 +1,43 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://baclib.github.io/type.json",
+    "$id": "https://baclib.github.io/type-traits.json",
     "title": "BAClib Type Traits",
-    "oneOf": [
-        {
-            "$ref": "./common-type.json"
+    "properties": {
+        "base": {
+            "$ref": "./type-name.json",
+            "description": "The name of a type which is the base for this definition."
         },
-        {
-            "$ref": "./unsigned-type.json"
-        },
-        {
-            "$ref": "./signed-type.json"
-        },
-        {
-            "$ref": "./float-type.json"
-        },
-        {
-            "$ref": "./double-type.json"
-        },
-        {
-            "$ref": "./octetstring-type.json"
-        },
-        {
-            "$ref": "./charstring-type.json"
-        },
-        {
-            "$ref": "./bitstring-type.json"
-        },
-        {
-            "$ref": "./enumerated-type.json"
-        },
-        {
-            "$ref": "./struct-type.json"
-        },
-        {
-            "$ref": "./choice-type.json"
+        "series": {
+            "description": "Indicates if this is an array or list. If absent, it should be interpreted as false.",
+            "oneOf": [
+                {
+                    "type": "boolean"
+                },
+                {
+                    "$ref": "./length-constraint.json"
+                }
+            ]
         }
-    ]
+    },
+    "required": [
+        "base"
+    ],
+    "allOf": [
+        {
+            "$ref": "./if-unsigned.json"
+        },
+        {
+            "$ref": "./if-bitstring.json"
+        },
+        {
+            "$ref": "./if-enumerated.json"
+        },
+        {
+            "$ref": "./if-choice.json"
+        },
+        {
+            "$ref": "./if-struct.json"
+        }
+    ],
+    "unevaluatedProperties": false
 }
