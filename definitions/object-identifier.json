@@ -1,0 +1,5 @@
+{
+    "alias": "BACnetObjectIdentifier",
+    "name": "object-identifier",
+    "predefined": true
+}

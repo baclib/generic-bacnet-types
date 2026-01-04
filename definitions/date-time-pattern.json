@@ -1,0 +1,5 @@
+{
+    "alias": "BACnetDateTimePattern",
+    "name": "date-time-pattern",
+    "predefined": true
+}
