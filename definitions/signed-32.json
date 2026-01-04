@@ -1,0 +1,5 @@
+{
+    "alias": "Integer32",
+    "name": "signed-32",
+    "predefined": true
+}

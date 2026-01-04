@@ -1,0 +1,5 @@
+{
+    "alias": "Integer64",
+    "name": "signed-64",
+    "predefined": true
+}
