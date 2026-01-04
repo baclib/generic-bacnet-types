@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetOptionalDouble",
+    "name": "optional-double",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "null",
+                "type": "null"
+            },
+            {
+                "name": "double",
+                "type": "double"
+            }
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "alias": "BACnetPropertyReference",
+    "name": "property-reference",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "property-identifier",
+                "type": "property-identifier",
+                "context": 0
+            },
+            {
+                "name": "property-array-index",
+                "type": "unsigned",
+                "context": 1,
+                "optional": true
+            }
+        ]
+    }
+}

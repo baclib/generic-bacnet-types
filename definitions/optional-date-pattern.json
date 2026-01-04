@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetOptionalDatePattern",
+    "name": "optional-date-pattern",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "null",
+                "type": "null"
+            },
+            {
+                "name": "datepattern",
+                "type": "date-pattern"
+            }
+        ]
+    }
+}

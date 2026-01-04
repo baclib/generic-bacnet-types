@@ -1,0 +1,60 @@
+{
+    "alias": "BACnetAccessRule",
+    "name": "access-rule",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "time-range-specifier",
+                "type": {
+                    "base": "enumerated",
+                    "values": [
+                        {
+                            "name": "specified",
+                            "constant": 0
+                        },
+                        {
+                            "name": "always",
+                            "constant": 1
+                        }
+                    ]
+                },
+                "context": 0
+            },
+            {
+                "name": "time-range",
+                "type": "device-object-property-reference",
+                "context": 1,
+                "optional": true
+            },
+            {
+                "name": "location-specifier",
+                "type": {
+                    "base": "enumerated",
+                    "values": [
+                        {
+                            "name": "specified",
+                            "constant": 0
+                        },
+                        {
+                            "name": "all",
+                            "constant": 1
+                        }
+                    ]
+                },
+                "context": 2
+            },
+            {
+                "name": "location",
+                "type": "device-object-reference",
+                "context": 3,
+                "optional": true
+            },
+            {
+                "name": "enable",
+                "type": "boolean",
+                "context": 4
+            }
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "alias": "BACnetLifeSafetyOperationInfo",
+    "name": "life-safety-operation-info",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "requesting-process-identifier",
+                "type": "unsigned-32",
+                "context": 0
+            },
+            {
+                "name": "request",
+                "type": "life-safety-operation",
+                "context": 1
+            }
+        ]
+    }
+}

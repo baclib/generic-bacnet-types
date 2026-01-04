@@ -1,0 +1,19 @@
+{
+    "alias": "BACnetNameValue",
+    "name": "name-value",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "name",
+                "type": "character-string",
+                "context": 0
+            },
+            {
+                "name": "value",
+                "type": "any",
+                "optional": true
+            }
+        ]
+    }
+}

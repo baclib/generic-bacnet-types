@@ -1,0 +1,24 @@
+{
+    "alias": "BACnetValueSource",
+    "name": "value-source",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "none",
+                "type": "null",
+                "context": 0
+            },
+            {
+                "name": "object",
+                "type": "device-object-reference",
+                "context": 1
+            },
+            {
+                "name": "address",
+                "type": "address",
+                "context": 2
+            }
+        ]
+    }
+}

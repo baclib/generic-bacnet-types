@@ -1,0 +1,57 @@
+{
+    "alias": "BACnetSCHubFunctionConnection",
+    "name": "sc-hub-function-connection",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "connection-state",
+                "type": "sc-connection-state",
+                "context": 0
+            },
+            {
+                "name": "connect-timestamp",
+                "type": "date-time",
+                "context": 1
+            },
+            {
+                "name": "disconnect-timestamp",
+                "type": "date-time",
+                "context": 2
+            },
+            {
+                "name": "peer-address",
+                "type": "host-n-port",
+                "context": 3
+            },
+            {
+                "name": "peer-vmac",
+                "type": {
+                    "base": "octet-string",
+                    "length": 6
+                },
+                "context": 4
+            },
+            {
+                "name": "peer-uuid",
+                "type": {
+                    "base": "octet-string",
+                    "length": 16
+                },
+                "context": 5
+            },
+            {
+                "name": "error",
+                "type": "error",
+                "context": 6,
+                "optional": true
+            },
+            {
+                "name": "error-details",
+                "type": "character-string",
+                "context": 7,
+                "optional": true
+            }
+        ]
+    }
+}

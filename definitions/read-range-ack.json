@@ -1,0 +1,49 @@
+{
+    "alias": "ReadRange-ACK",
+    "name": "read-range-ack",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "object-identifier",
+                "type": "object-identifier",
+                "context": 0
+            },
+            {
+                "name": "property-identifier",
+                "type": "property-identifier",
+                "context": 1
+            },
+            {
+                "name": "property-array-index",
+                "type": "unsigned",
+                "context": 2,
+                "optional": true
+            },
+            {
+                "name": "result-flags",
+                "type": "result-flags",
+                "context": 3
+            },
+            {
+                "name": "item-count",
+                "type": "unsigned",
+                "context": 4
+            },
+            {
+                "name": "item-data",
+                "type": {
+                    "base": "any",
+                    "series": true
+                },
+                "context": 5
+            },
+            {
+                "name": "first-sequence-number",
+                "type": "unsigned-32",
+                "context": 6,
+                "optional": true
+            }
+        ]
+    }
+}

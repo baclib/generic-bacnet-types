@@ -1,0 +1,16 @@
+{
+    "alias": "ReadPropertyMultiple-ACK",
+    "name": "read-property-multiple-ack",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "list-of-read-access-results",
+                "type": {
+                    "base": "read-access-result",
+                    "series": true
+                }
+            }
+        ]
+    }
+}

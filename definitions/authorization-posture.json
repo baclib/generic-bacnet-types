@@ -5,6 +5,16 @@
         "base": "enumerated",
         "values": [
             {
+                "name": "open",
+                "constant": 0,
+                "description": "Open authorization posture."
+            },
+            {
+                "name": "proprietary",
+                "constant": 1,
+                "description": "Proprietary authorization posture."
+            },
+            {
                 "name": "configured",
                 "constant": 2,
                 "description": "Configured authorization posture."
@@ -18,28 +28,6 @@
                 "name": "misconfigured-total",
                 "constant": 4,
                 "description": "Totally misconfigured authorization posture."
-            },
-            {
-                "name": "open",
-                "constant": 0,
-                "description": "Open authorization posture."
-            },
-            {
-                "name": "proprietary",
-                "constant": 1,
-                "description": "Proprietary authorization posture."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 4
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 4
             }
         ]
     }

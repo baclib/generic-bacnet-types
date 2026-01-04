@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetProcessIdSelection",
+    "name": "process-id-selection",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "process-identifier",
+                "type": "unsigned-32"
+            },
+            {
+                "name": "null-value",
+                "type": "null"
+            }
+        ]
+    }
+}

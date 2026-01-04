@@ -5,9 +5,9 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "all-silenced",
-                "constant": 3,
-                "description": "Both audible and visible alarms are silenced."
+                "name": "unsilenced",
+                "constant": 0,
+                "description": "Neither audible nor visible alarms are silenced."
             },
             {
                 "name": "audible-silenced",
@@ -15,32 +15,20 @@
                 "description": "Audible alarms are silenced."
             },
             {
-                "name": "unsilenced",
-                "constant": 0,
-                "description": "Neither audible nor visible alarms are silenced."
-            },
-            {
                 "name": "visible-silenced",
                 "constant": 2,
                 "description": "Visible alarms are silenced."
-            }
-        ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 63
             },
             {
-                "custom": true,
-                "minimum": 64,
-                "maximum": 65535
+                "name": "all-silenced",
+                "constant": 3,
+                "description": "Both audible and visible alarms are silenced."
             }
-        ]
+        ],
+        "maximum": 65535,
+        "proprietary": {
+            "from": 64,
+            "to": 65535
+        }
     }
 }

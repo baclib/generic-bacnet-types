@@ -1,0 +1,30 @@
+{
+    "alias": "AuditLogQuery-Request",
+    "name": "audit-log-query-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "audit-log",
+                "type": "object-identifier",
+                "context": 0
+            },
+            {
+                "name": "query-parameters",
+                "type": "audit-log-query-parameters",
+                "context": 1
+            },
+            {
+                "name": "start-at-sequence-number",
+                "type": "unsigned-64",
+                "context": 2,
+                "optional": true
+            },
+            {
+                "name": "requested-count",
+                "type": "unsigned-16",
+                "context": 3
+            }
+        ]
+    }
+}

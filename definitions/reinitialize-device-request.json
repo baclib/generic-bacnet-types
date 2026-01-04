@@ -5,30 +5,56 @@
         "base": "sequence",
         "fields": [
             {
-                "alias": "reinitialized-state-of-device",
-                "name": "state",
-                "context": 0,
+                "name": "reinitialized-state-of-device",
                 "type": {
                     "base": "enumerated",
                     "values": [
-                        { "name": "coldstart", "constant": 0 },
-                        { "name": "warmstart", "constant": 1 },
-                        { "name": "start-backup", "constant": 2 },
-                        { "name": "end-backup", "constant": 3 },
-                        { "name": "start-restore", "constant": 4 },
-                        { "name": "end-restore", "constant": 5 },
-                        { "name": "abort-restore", "constant": 6 },
-                        { "name": "activate-changes", "constant": 7 }
+                        {
+                            "name": "coldstart",
+                            "constant": 0
+                        },
+                        {
+                            "name": "warmstart",
+                            "constant": 1
+                        },
+                        {
+                            "name": "start-backup",
+                            "constant": 2
+                        },
+                        {
+                            "name": "end-backup",
+                            "constant": 3
+                        },
+                        {
+                            "name": "start-restore",
+                            "constant": 4
+                        },
+                        {
+                            "name": "end-restore",
+                            "constant": 5
+                        },
+                        {
+                            "name": "abort-restore",
+                            "constant": 6
+                        },
+                        {
+                            "name": "activate-changes",
+                            "constant": 7
+                        }
                     ]
-                }
+                },
+                "context": 0
             },
             {
                 "name": "password",
-                "context": 1,
                 "type": {
-                    "base": "characterstring",
-                    "size": { "minimum": 1, "maximum": 20 }
+                    "base": "character-string",
+                    "length": {
+                        "minimum": 1,
+                        "maximum": 20
+                    }
                 },
+                "context": 1,
                 "optional": true
             }
         ]

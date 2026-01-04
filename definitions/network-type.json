@@ -5,29 +5,14 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "arcnet",
-                "constant": 1,
-                "description": "ARCNET network type."
-            },
-            {
                 "name": "ethernet",
                 "constant": 0,
                 "description": "Ethernet network type."
             },
             {
-                "name": "ipv4",
-                "constant": 5,
-                "description": "IPv4 network type."
-            },
-            {
-                "name": "ipv6",
-                "constant": 9,
-                "description": "IPv6 network type."
-            },
-            {
-                "name": "lontalk",
-                "constant": 4,
-                "description": "LonTalk network type."
+                "name": "arcnet",
+                "constant": 1,
+                "description": "ARCNET network type."
             },
             {
                 "name": "mstp",
@@ -40,14 +25,19 @@
                 "description": "Point-to-point (PTP) network type."
             },
             {
-                "name": "secure-connect",
-                "constant": 11,
-                "description": "Secure Connect network type."
+                "name": "lontalk",
+                "constant": 4,
+                "description": "LonTalk network type."
             },
             {
-                "name": "serial",
-                "constant": 10,
-                "description": "Serial network type."
+                "name": "ipv4",
+                "constant": 5,
+                "description": "IPv4 network type."
+            },
+            {
+                "name": "zigbee",
+                "constant": 6,
+                "description": "Zigbee network type."
             },
             {
                 "name": "virtual",
@@ -55,27 +45,25 @@
                 "description": "Virtual network type."
             },
             {
-                "name": "zigbee",
-                "constant": 6,
-                "description": "Zigbee network type."
-            }
-        ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 255
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 63
+                "name": "ipv6",
+                "constant": 9,
+                "description": "IPv6 network type."
             },
             {
-                "custom": true,
-                "minimum": 64,
-                "maximum": 255
+                "name": "serial",
+                "constant": 10,
+                "description": "Serial network type."
+            },
+            {
+                "name": "secure-connect",
+                "constant": 11,
+                "description": "Secure Connect network type."
             }
-        ]
+        ],
+        "maximum": 255,
+        "proprietary": {
+            "from": 64,
+            "to": 255
+        }
     }
 }

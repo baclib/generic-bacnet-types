@@ -5,14 +5,14 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "extended-pulse-unlock",
-                "constant": 3,
-                "description": "Extended pulse unlock the door."
-            },
-            {
                 "name": "lock",
                 "constant": 0,
                 "description": "Lock the door."
+            },
+            {
+                "name": "unlock",
+                "constant": 1,
+                "description": "Unlock the door."
             },
             {
                 "name": "pulse-unlock",
@@ -20,21 +20,9 @@
                 "description": "Pulse unlock the door."
             },
             {
-                "name": "unlock",
-                "constant": 1,
-                "description": "Unlock the door."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 3
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 3
+                "name": "extended-pulse-unlock",
+                "constant": 3,
+                "description": "Extended pulse unlock the door."
             }
         ]
     }

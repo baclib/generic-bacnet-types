@@ -1,0 +1,164 @@
+{
+    "alias": "BACnet-Confirmed-Service-Request",
+    "name": "confirmed-service-request",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "acknowledge-alarm",
+                "type": "acknowledge-alarm-request",
+                "context": 0
+            },
+            {
+                "name": "confirmed-cov-notification",
+                "type": "confirmed-cov-notification-request",
+                "context": 1
+            },
+            {
+                "name": "confirmed-cov-notification-multiple",
+                "type": "confirmed-cov-notification-multiple-request",
+                "context": 31
+            },
+            {
+                "name": "confirmed-event-notification",
+                "type": "confirmed-event-notification-request",
+                "context": 2
+            },
+            {
+                "name": "get-enrollment-summary",
+                "type": "get-enrollment-summary-request",
+                "context": 4
+            },
+            {
+                "name": "get-event-information",
+                "type": "get-event-information-request",
+                "context": 29
+            },
+            {
+                "name": "life-safety-operation",
+                "type": "life-safety-operation-request",
+                "context": 27
+            },
+            {
+                "name": "subscribe-cov",
+                "type": "subscribe-cov-request",
+                "context": 5
+            },
+            {
+                "name": "subscribe-cov-property",
+                "type": "subscribe-cov-property-request",
+                "context": 28
+            },
+            {
+                "name": "subscribe-cov-property-multiple",
+                "type": "subscribe-cov-property-multiple-request",
+                "context": 30
+            },
+            {
+                "name": "confirmed-audit-notification",
+                "type": "confirmed-audit-notification-request",
+                "context": 32
+            },
+            {
+                "name": "atomic-read-file",
+                "type": "atomic-read-file-request",
+                "context": 6
+            },
+            {
+                "name": "atomic-write-file",
+                "type": "atomic-write-file-request",
+                "context": 7
+            },
+            {
+                "name": "add-list-element",
+                "type": "add-list-element-request",
+                "context": 8
+            },
+            {
+                "name": "remove-list-element",
+                "type": "remove-list-element-request",
+                "context": 9
+            },
+            {
+                "name": "create-object",
+                "type": "create-object-request",
+                "context": 10
+            },
+            {
+                "name": "delete-object",
+                "type": "delete-object-request",
+                "context": 11
+            },
+            {
+                "name": "read-property",
+                "type": "read-property-request",
+                "context": 12
+            },
+            {
+                "name": "read-property-multiple",
+                "type": "read-property-multiple-request",
+                "context": 14
+            },
+            {
+                "name": "read-range",
+                "type": "read-range-request",
+                "context": 26
+            },
+            {
+                "name": "write-property",
+                "type": "write-property-request",
+                "context": 15
+            },
+            {
+                "name": "write-property-multiple",
+                "type": "write-property-multiple-request",
+                "context": 16
+            },
+            {
+                "name": "audit-log-query",
+                "type": "audit-log-query-request",
+                "context": 33
+            },
+            {
+                "name": "device-communication-control",
+                "type": "device-communication-control-request",
+                "context": 17
+            },
+            {
+                "name": "confirmed-private-transfer",
+                "type": "confirmed-private-transfer-request",
+                "context": 18
+            },
+            {
+                "name": "confirmed-text-message",
+                "type": "confirmed-text-message-request",
+                "context": 19
+            },
+            {
+                "name": "reinitialize-device",
+                "type": "reinitialize-device-request",
+                "context": 20
+            },
+            {
+                "name": "auth-request",
+                "type": "auth-request-request",
+                "context": 34
+            },
+            {
+                "name": "vt-open",
+                "type": "vt-open-request",
+                "context": 21
+            },
+            {
+                "name": "vt-close",
+                "type": "vt-close-request",
+                "context": 22
+            },
+            {
+                "name": "vt-data",
+                "type": "vt-data-request",
+                "context": 23
+            }
+        ]
+    }
+}

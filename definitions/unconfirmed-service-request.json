@@ -1,0 +1,84 @@
+{
+    "alias": "BACnet-Unconfirmed-Service-Request",
+    "name": "unconfirmed-service-request",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "i-am",
+                "type": "i-am-request",
+                "context": 0
+            },
+            {
+                "name": "i-have",
+                "type": "i-have-request",
+                "context": 1
+            },
+            {
+                "name": "unconfirmed-cov-notification",
+                "type": "unconfirmed-cov-notification-request",
+                "context": 2
+            },
+            {
+                "name": "unconfirmed-event-notification",
+                "type": "unconfirmed-event-notification-request",
+                "context": 3
+            },
+            {
+                "name": "unconfirmed-private-transfer",
+                "type": "unconfirmed-private-transfer-request",
+                "context": 4
+            },
+            {
+                "name": "unconfirmed-text-message",
+                "type": "unconfirmed-text-message-request",
+                "context": 5
+            },
+            {
+                "name": "time-synchronization",
+                "type": "time-synchronization-request",
+                "context": 6
+            },
+            {
+                "name": "who-has",
+                "type": "who-has-request",
+                "context": 7
+            },
+            {
+                "name": "who-is",
+                "type": "who-is-request",
+                "context": 8
+            },
+            {
+                "name": "utc-time-synchronization",
+                "type": "utc-time-synchronization-request",
+                "context": 9
+            },
+            {
+                "name": "write-group",
+                "type": "write-group-request",
+                "context": 10
+            },
+            {
+                "name": "unconfirmed-cov-notification-multiple",
+                "type": "unconfirmed-cov-notification-multiple-request",
+                "context": 11
+            },
+            {
+                "name": "unconfirmed-audit-notification",
+                "type": "unconfirmed-audit-notification-request",
+                "context": 12
+            },
+            {
+                "name": "who-am-i",
+                "type": "who-am-i-request",
+                "context": 13
+            },
+            {
+                "name": "you-are",
+                "type": "you-are-request",
+                "context": 14
+            }
+        ]
+    }
+}

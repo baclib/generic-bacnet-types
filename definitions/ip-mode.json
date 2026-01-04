@@ -5,9 +5,9 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "bbmd",
-                "constant": 2,
-                "description": "BBMD (BACnet Broadcast Management Device) IP mode."
+                "name": "normal",
+                "constant": 0,
+                "description": "Normal IP mode."
             },
             {
                 "name": "foreign",
@@ -15,21 +15,9 @@
                 "description": "Foreign device IP mode."
             },
             {
-                "name": "normal",
-                "constant": 0,
-                "description": "Normal IP mode."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 2
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 2
+                "name": "bbmd",
+                "constant": 2,
+                "description": "BBMD (BACnet Broadcast Management Device) IP mode."
             }
         ]
     }

@@ -1,0 +1,19 @@
+{
+    "alias": "BACnetRecipient",
+    "name": "recipient",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "device",
+                "type": "object-identifier",
+                "context": 0
+            },
+            {
+                "name": "address",
+                "type": "address",
+                "context": 1
+            }
+        ]
+    }
+}

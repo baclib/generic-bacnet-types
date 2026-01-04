@@ -1,0 +1,38 @@
+{
+    "alias": "BACnetAuthenticationPolicy",
+    "name": "authentication-policy",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "policy",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "credential-data-input",
+                            "type": "device-object-reference",
+                            "context": 0
+                        },
+                        {
+                            "name": "index",
+                            "type": "unsigned",
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 0
+            },
+            {
+                "name": "order-enforced",
+                "type": "boolean",
+                "context": 1
+            },
+            {
+                "name": "timeout",
+                "type": "unsigned",
+                "context": 2
+            }
+        ]
+    }
+}

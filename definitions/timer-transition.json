@@ -5,34 +5,14 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "expired-to-idle",
-                "constant": 6,
-                "description": "Transition from Expired state to Idle state."
-            },
-            {
-                "name": "expired-to-running",
-                "constant": 7,
-                "description": "Transition from Expired state to Running state (restart after expiration)."
-            },
-            {
-                "name": "forced-to-expired",
-                "constant": 5,
-                "description": "Transition to Expired state due to forced expiration."
-            },
-            {
-                "name": "idle-to-running",
-                "constant": 1,
-                "description": "Transition from Idle state to Running state."
-            },
-            {
                 "name": "none",
                 "constant": 0,
                 "description": "No transition has occurred."
             },
             {
-                "name": "running-to-expired",
-                "constant": 4,
-                "description": "Transition from Running state to Expired state (timer elapsed)."
+                "name": "idle-to-running",
+                "constant": 1,
+                "description": "Transition from Idle state to Running state."
             },
             {
                 "name": "running-to-idle",
@@ -43,18 +23,26 @@
                 "name": "running-to-running",
                 "constant": 3,
                 "description": "Transition from Running state to Running state (restart)."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 7
-        },
-        "ranges": [
+            },
             {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 7
+                "name": "running-to-expired",
+                "constant": 4,
+                "description": "Transition from Running state to Expired state (timer elapsed)."
+            },
+            {
+                "name": "forced-to-expired",
+                "constant": 5,
+                "description": "Transition to Expired state due to forced expiration."
+            },
+            {
+                "name": "expired-to-idle",
+                "constant": 6,
+                "description": "Transition from Expired state to Idle state."
+            },
+            {
+                "name": "expired-to-running",
+                "constant": 7,
+                "description": "Transition from Expired state to Running state (restart after expiration)."
             }
         ]
     }

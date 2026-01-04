@@ -20,22 +20,10 @@
                 "description": "User type is a person."
             }
         ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 63
-            },
-            {
-                "custom": true,
-                "minimum": 64,
-                "maximum": 65535
-            }
-        ]
+        "maximum": 65535,
+        "proprietary": {
+            "from": 64,
+            "to": 65535
+        }
     }
 }

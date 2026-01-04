@@ -1,0 +1,19 @@
+{
+    "alias": "WritePropertyMultiple-Error",
+    "name": "write-property-multiple-error",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "error-type",
+                "type": "error",
+                "context": 0
+            },
+            {
+                "name": "first-failed-write-attempt",
+                "type": "object-property-reference",
+                "context": 1
+            }
+        ]
+    }
+}

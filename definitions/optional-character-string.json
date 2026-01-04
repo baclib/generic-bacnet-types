@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetOptionalCharacterString",
+    "name": "optional-character-string",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "null",
+                "type": "null"
+            },
+            {
+                "name": "characterstring",
+                "type": "character-string"
+            }
+        ]
+    }
+}

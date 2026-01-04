@@ -1,0 +1,21 @@
+{
+    "alias": "BACnetObjectSelector",
+    "name": "object-selector",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "none",
+                "type": "null"
+            },
+            {
+                "name": "object",
+                "type": "object-identifier"
+            },
+            {
+                "name": "object-type",
+                "type": "object-type"
+            }
+        ]
+    }
+}

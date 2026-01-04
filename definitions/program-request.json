@@ -5,9 +5,9 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "halt",
-                "constant": 3,
-                "description": "Halt program request."
+                "name": "ready",
+                "constant": 0,
+                "description": "Program is ready."
             },
             {
                 "name": "load",
@@ -15,9 +15,14 @@
                 "description": "Load program request."
             },
             {
-                "name": "ready",
-                "constant": 0,
-                "description": "Program is ready."
+                "name": "run",
+                "constant": 2,
+                "description": "Run program request."
+            },
+            {
+                "name": "halt",
+                "constant": 3,
+                "description": "Halt program request."
             },
             {
                 "name": "restart",
@@ -25,26 +30,9 @@
                 "description": "Restart program request."
             },
             {
-                "name": "run",
-                "constant": 2,
-                "description": "Run program request."
-            },
-            {
                 "name": "unload",
                 "constant": 5,
                 "description": "Unload program request."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 5
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 5
             }
         ]
     }

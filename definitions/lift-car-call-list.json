@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetLiftCarCallList",
+    "name": "lift-car-call-list",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "floor-numbers",
+                "type": {
+                    "base": "unsigned-8",
+                    "series": true
+                },
+                "context": 0
+            }
+        ]
+    }
+}

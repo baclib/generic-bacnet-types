@@ -5,31 +5,19 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "fade",
-                "constant": 1,
-                "description": "Fade color transition."
-            },
-            {
                 "name": "none",
                 "constant": 0,
                 "description": "No color transition."
             },
             {
+                "name": "fade",
+                "constant": 1,
+                "description": "Fade color transition."
+            },
+            {
                 "name": "ramp",
                 "constant": 2,
                 "description": "Ramp color transition."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 2
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 2
             }
         ]
     }

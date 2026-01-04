@@ -1,0 +1,25 @@
+{
+    "alias": "ConfirmedPrivateTransfer-Request",
+    "name": "confirmed-private-transfer-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "vendor-id",
+                "type": "unsigned-16",
+                "context": 0
+            },
+            {
+                "name": "service-number",
+                "type": "unsigned",
+                "context": 1
+            },
+            {
+                "name": "service-parameters",
+                "type": "any",
+                "context": 2,
+                "optional": true
+            }
+        ]
+    }
+}

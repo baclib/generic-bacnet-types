@@ -1,0 +1,14 @@
+{
+    "alias": "AuthRequest-ACK",
+    "name": "auth-request-ack",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "token-response",
+                "type": "access-token",
+                "context": 0
+            }
+        ]
+    }
+}

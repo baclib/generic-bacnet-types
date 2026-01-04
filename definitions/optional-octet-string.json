@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetOptionalOctetString",
+    "name": "optional-octet-string",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "null",
+                "type": "null"
+            },
+            {
+                "name": "octetstring",
+                "type": "octet-string"
+            }
+        ]
+    }
+}

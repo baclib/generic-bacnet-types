@@ -5,24 +5,9 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "backup-failure",
-                "constant": 5,
-                "description": "Backup failure state."
-            },
-            {
                 "name": "idle",
                 "constant": 0,
                 "description": "Idle state."
-            },
-            {
-                "name": "performing-a-backup",
-                "constant": 3,
-                "description": "Performing a backup state."
-            },
-            {
-                "name": "performing-a-restore",
-                "constant": 4,
-                "description": "Performing a restore state."
             },
             {
                 "name": "preparing-for-backup",
@@ -35,21 +20,24 @@
                 "description": "Preparing for restore state."
             },
             {
+                "name": "performing-a-backup",
+                "constant": 3,
+                "description": "Performing a backup state."
+            },
+            {
+                "name": "performing-a-restore",
+                "constant": 4,
+                "description": "Performing a restore state."
+            },
+            {
+                "name": "backup-failure",
+                "constant": 5,
+                "description": "Backup failure state."
+            },
+            {
                 "name": "restore-failure",
                 "constant": 6,
                 "description": "Restore failure state."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 6
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 6
             }
         ]
     }

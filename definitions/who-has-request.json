@@ -1,0 +1,54 @@
+{
+    "alias": "Who-Has-Request",
+    "name": "who-has-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "limits",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "device-instance-range-low-limit",
+                            "type": {
+                                "base": "unsigned",
+                                "minimum": 0,
+                                "maximum": 4194303
+                            },
+                            "context": 0
+                        },
+                        {
+                            "name": "device-instance-range-high-limit",
+                            "type": {
+                                "base": "unsigned",
+                                "minimum": 0,
+                                "maximum": 4194303
+                            },
+                            "context": 1
+                        }
+                    ]
+                },
+                "optional": true
+            },
+            {
+                "name": "object",
+                "type": {
+                    "base": "choice",
+                    "options": [
+                        {
+                            "name": "object-identifier",
+                            "type": "object-identifier",
+                            "context": 2
+                        },
+                        {
+                            "name": "object-name",
+                            "type": "character-string",
+                            "context": 3
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

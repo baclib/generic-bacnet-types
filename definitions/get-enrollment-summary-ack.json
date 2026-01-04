@@ -1,0 +1,30 @@
+{
+    "alias": "GetEnrollmentSummary-ACK",
+    "name": "get-enrollment-summary-ack",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "object-identifier",
+                "type": "object-identifier"
+            },
+            {
+                "name": "event-type",
+                "type": "event-type"
+            },
+            {
+                "name": "event-state",
+                "type": "event-state"
+            },
+            {
+                "name": "priority",
+                "type": "unsigned-8"
+            },
+            {
+                "name": "notification-class",
+                "type": "unsigned",
+                "optional": true
+            }
+        ]
+    }
+}

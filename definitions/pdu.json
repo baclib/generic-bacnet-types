@@ -1,0 +1,49 @@
+{
+    "alias": "BACnetPDU",
+    "name": "pdu",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "confirmed-request-pdu",
+                "type": "confirmed-request-pdu",
+                "context": 0
+            },
+            {
+                "name": "unconfirmed-request-pdu",
+                "type": "unconfirmed-request-pdu",
+                "context": 1
+            },
+            {
+                "name": "simple-ack-pdu",
+                "type": "simple-ack-pdu",
+                "context": 2
+            },
+            {
+                "name": "complex-ack-pdu",
+                "type": "complex-ack-pdu",
+                "context": 3
+            },
+            {
+                "name": "segment-ack-pdu",
+                "type": "segment-ack-pdu",
+                "context": 4
+            },
+            {
+                "name": "error-pdu",
+                "type": "error-pdu",
+                "context": 5
+            },
+            {
+                "name": "reject-pdu",
+                "type": "reject-pdu",
+                "context": 6
+            },
+            {
+                "name": "abort-pdu",
+                "type": "abort-pdu",
+                "context": 7
+            }
+        ]
+    }
+}

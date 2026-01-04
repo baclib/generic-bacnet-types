@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetDateRange",
+    "name": "date-range",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "start-date",
+                "type": "date"
+            },
+            {
+                "name": "end-date",
+                "type": "date"
+            }
+        ]
+    }
+}

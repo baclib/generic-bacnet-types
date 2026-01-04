@@ -5,14 +5,9 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "apdu-too-long",
-                "constant": 11,
-                "description": "APDU is too long to process."
-            },
-            {
-                "name": "application-exceeded-reply-time",
-                "constant": 8,
-                "description": "Application exceeded the allowed reply time."
+                "name": "other",
+                "constant": 0,
+                "description": "Other reason not covered by the enumerated values."
             },
             {
                 "name": "buffer-overflow",
@@ -20,29 +15,9 @@
                 "description": "Buffer overflow occurred during processing."
             },
             {
-                "name": "inconsistent-attributes",
-                "constant": 12,
-                "description": "Inconsistent attributes detected."
-            },
-            {
-                "name": "insufficient-security",
-                "constant": 6,
-                "description": "Insufficient security level for the requested operation."
-            },
-            {
                 "name": "invalid-apdu-in-this-state",
                 "constant": 2,
                 "description": "Invalid APDU received in the current state."
-            },
-            {
-                "name": "other",
-                "constant": 0,
-                "description": "Other reason not covered by the enumerated values."
-            },
-            {
-                "name": "out-of-resources",
-                "constant": 9,
-                "description": "Out of resources to complete the operation."
             },
             {
                 "name": "preempted-by-higher-priority-task",
@@ -50,14 +25,34 @@
                 "description": "Operation was preempted by a higher priority task."
             },
             {
+                "name": "segmentation-not-supported",
+                "constant": 4,
+                "description": "Segmentation is not supported by the device."
+            },
+            {
                 "name": "security-error",
                 "constant": 5,
                 "description": "A security error occurred."
             },
             {
-                "name": "segmentation-not-supported",
-                "constant": 4,
-                "description": "Segmentation is not supported by the device."
+                "name": "insufficient-security",
+                "constant": 6,
+                "description": "Insufficient security level for the requested operation."
+            },
+            {
+                "name": "window-size-out-of-range",
+                "constant": 7,
+                "description": "Window size is out of the acceptable range."
+            },
+            {
+                "name": "application-exceeded-reply-time",
+                "constant": 8,
+                "description": "Application exceeded the allowed reply time."
+            },
+            {
+                "name": "out-of-resources",
+                "constant": 9,
+                "description": "Out of resources to complete the operation."
             },
             {
                 "name": "tsm-timeout",
@@ -65,27 +60,20 @@
                 "description": "Transaction State Machine (TSM) timeout occurred."
             },
             {
-                "name": "window-size-out-of-range",
-                "constant": 7,
-                "description": "Window size is out of the acceptable range."
-            }
-        ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 255
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 63
+                "name": "apdu-too-long",
+                "constant": 11,
+                "description": "APDU is too long to process."
             },
             {
-                "custom": true,
-                "minimum": 64,
-                "maximum": 255
+                "name": "inconsistent-attributes",
+                "constant": 12,
+                "description": "Inconsistent attributes detected."
             }
-        ]
+        ],
+        "maximum": 255,
+        "proprietary": {
+            "from": 64,
+            "to": 255
+        }
     }
 }

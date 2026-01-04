@@ -1,0 +1,30 @@
+{
+    "alias": "ReadProperty-ACK",
+    "name": "read-property-ack",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "object-identifier",
+                "type": "object-identifier",
+                "context": 0
+            },
+            {
+                "name": "property-identifier",
+                "type": "property-identifier",
+                "context": 1
+            },
+            {
+                "name": "property-array-index",
+                "type": "unsigned",
+                "context": 2,
+                "optional": true
+            },
+            {
+                "name": "property-value",
+                "type": "any",
+                "context": 3
+            }
+        ]
+    }
+}

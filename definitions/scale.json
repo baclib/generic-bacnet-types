@@ -1,0 +1,19 @@
+{
+    "alias": "BACnetScale",
+    "name": "scale",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "float-scale",
+                "type": "real",
+                "context": 0
+            },
+            {
+                "name": "integer-scale",
+                "type": "integer",
+                "context": 1
+            }
+        ]
+    }
+}

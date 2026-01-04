@@ -1,0 +1,31 @@
+{
+    "alias": "BACnetHealth",
+    "name": "health",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "timestamp",
+                "type": "date-time",
+                "context": 0
+            },
+            {
+                "name": "result",
+                "type": "error",
+                "context": 1
+            },
+            {
+                "name": "property",
+                "type": "property-identifier",
+                "context": 2,
+                "optional": true
+            },
+            {
+                "name": "details",
+                "type": "character-string",
+                "context": 3,
+                "optional": true
+            }
+        ]
+    }
+}

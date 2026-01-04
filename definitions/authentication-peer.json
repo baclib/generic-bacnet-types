@@ -1,0 +1,29 @@
+{
+    "alias": "BACnetAuthenticationPeer",
+    "name": "authentication-peer",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "host",
+                "type": "host-n-port"
+            },
+            {
+                "name": "device",
+                "type": "unsigned-32"
+            },
+            {
+                "name": "auth-aware",
+                "type": "boolean"
+            },
+            {
+                "name": "router",
+                "type": "boolean"
+            },
+            {
+                "name": "hub",
+                "type": "boolean"
+            }
+        ]
+    }
+}

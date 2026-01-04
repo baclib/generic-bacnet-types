@@ -2,105 +2,96 @@
     "alias": "BACnetAuditOperationFlags",
     "name": "audit-operation-flags",
     "type": {
-        "base": "bitstring",
+        "base": "bit-string",
         "bits": [
             {
-                "position": 0,
                 "name": "read",
+                "position": 0,
                 "description": "Read operation."
             },
             {
-                "position": 1,
                 "name": "write",
+                "position": 1,
                 "description": "Write operation."
             },
             {
-                "position": 2,
                 "name": "create",
+                "position": 2,
                 "description": "Create operation."
             },
             {
-                "position": 3,
                 "name": "delete",
+                "position": 3,
                 "description": "Delete operation."
             },
             {
-                "position": 4,
                 "name": "life-safety",
+                "position": 4,
                 "description": "Life safety operation."
             },
             {
-                "position": 5,
                 "name": "acknowledge-alarm",
+                "position": 5,
                 "description": "Acknowledge alarm operation."
             },
             {
-                "position": 6,
                 "name": "device-disable-comm",
+                "position": 6,
                 "description": "Device disable communication operation."
             },
             {
-                "position": 7,
                 "name": "device-enable-comm",
+                "position": 7,
                 "description": "Device enable communication operation."
             },
             {
-                "position": 8,
                 "name": "device-reset",
+                "position": 8,
                 "description": "Device reset operation."
             },
             {
-                "position": 9,
                 "name": "device-backup",
+                "position": 9,
                 "description": "Device backup operation."
             },
             {
-                "position": 10,
                 "name": "device-restore",
+                "position": 10,
                 "description": "Device restore operation."
             },
             {
-                "position": 11,
                 "name": "subscription",
+                "position": 11,
                 "description": "Subscription operation."
             },
             {
-                "position": 12,
                 "name": "notification",
+                "position": 12,
                 "description": "Notification operation."
             },
             {
-                "position": 13,
                 "name": "auditing-failure",
+                "position": 13,
                 "description": "Auditing failure operation."
             },
             {
-                "position": 14,
                 "name": "network-changes",
+                "position": 14,
                 "description": "Network changes operation."
             },
             {
-                "position": 15,
                 "name": "general",
+                "position": 15,
                 "description": "General operation."
             }
         ],
-        "extensible": true,
-        "range": {
-            "minimum": 15,
-            "maximum": 63
+        "length": {
+            "minimum": 16,
+            "maximum": 64
         },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 31
-            },
-            {
-                "custom": true,
-                "minimum": 32,
-                "maximum": 63
-            }
-        ]
+        "proprietary": {
+            "from": 32,
+            "to": 63
+        }
     }
 }

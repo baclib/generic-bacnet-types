@@ -1,0 +1,62 @@
+{
+    "alias": "BACnetActionCommand",
+    "name": "action-command",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "device-identifier",
+                "type": "object-identifier",
+                "context": 0,
+                "optional": true
+            },
+            {
+                "name": "object-identifier",
+                "type": "object-identifier",
+                "context": 1
+            },
+            {
+                "name": "property-identifier",
+                "type": "property-identifier",
+                "context": 2
+            },
+            {
+                "name": "property-array-index",
+                "type": "unsigned",
+                "context": 3,
+                "optional": true
+            },
+            {
+                "name": "property-value",
+                "type": "any",
+                "context": 4
+            },
+            {
+                "name": "priority",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 1,
+                    "maximum": 16
+                },
+                "context": 5,
+                "optional": true
+            },
+            {
+                "name": "post-delay",
+                "type": "unsigned",
+                "context": 6,
+                "optional": true
+            },
+            {
+                "name": "quit-on-failure",
+                "type": "boolean",
+                "context": 7
+            },
+            {
+                "name": "write-successful",
+                "type": "boolean",
+                "context": 8
+            }
+        ]
+    }
+}

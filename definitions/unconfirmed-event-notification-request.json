@@ -1,0 +1,78 @@
+{
+    "alias": "UnconfirmedEventNotification-Request",
+    "name": "unconfirmed-event-notification-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "process-identifier",
+                "type": "unsigned-32",
+                "context": 0
+            },
+            {
+                "name": "initiating-device-identifier",
+                "type": "object-identifier",
+                "context": 1
+            },
+            {
+                "name": "event-object-identifier",
+                "type": "object-identifier",
+                "context": 2
+            },
+            {
+                "name": "timestamp",
+                "type": "time-stamp",
+                "context": 3
+            },
+            {
+                "name": "notification-class",
+                "type": "unsigned",
+                "context": 4
+            },
+            {
+                "name": "priority",
+                "type": "unsigned-8",
+                "context": 5
+            },
+            {
+                "name": "event-type",
+                "type": "event-type",
+                "context": 6
+            },
+            {
+                "name": "message-text",
+                "type": "character-string",
+                "context": 7,
+                "optional": true
+            },
+            {
+                "name": "notify-type",
+                "type": "notify-type",
+                "context": 8
+            },
+            {
+                "name": "ack-required",
+                "type": "boolean",
+                "context": 9,
+                "optional": true
+            },
+            {
+                "name": "from-state",
+                "type": "event-state",
+                "context": 10,
+                "optional": true
+            },
+            {
+                "name": "to-state",
+                "type": "event-state",
+                "context": 11
+            },
+            {
+                "name": "event-values",
+                "type": "notification-parameters",
+                "context": 12,
+                "optional": true
+            }
+        ]
+    }
+}

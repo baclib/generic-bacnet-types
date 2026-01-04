@@ -1,0 +1,16 @@
+{
+    "alias": "ReadPropertyMultiple-Request",
+    "name": "read-property-multiple-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "list-of-read-access-specifications",
+                "type": {
+                    "base": "read-access-specification",
+                    "series": true
+                }
+            }
+        ]
+    }
+}

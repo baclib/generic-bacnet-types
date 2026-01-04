@@ -1,0 +1,20 @@
+{
+    "alias": "BACnetBDTEntry",
+    "name": "bdt-entry",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "bbmd-address",
+                "type": "host-n-port",
+                "context": 0
+            },
+            {
+                "name": "broadcast-mask",
+                "type": "octet-string",
+                "context": 1,
+                "optional": true
+            }
+        ]
+    }
+}

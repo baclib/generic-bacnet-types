@@ -1,0 +1,29 @@
+{
+    "alias": "BACnetEventNotificationSubscription",
+    "name": "event-notification-subscription",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "recipient",
+                "type": "recipient",
+                "context": 0
+            },
+            {
+                "name": "process-identifier",
+                "type": "unsigned-32",
+                "context": 1
+            },
+            {
+                "name": "issue-confirmed-notifications",
+                "type": "boolean",
+                "context": 2
+            },
+            {
+                "name": "time-remaining",
+                "type": "unsigned",
+                "context": 3
+            }
+        ]
+    }
+}

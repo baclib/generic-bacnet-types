@@ -1,0 +1,84 @@
+{
+    "alias": "BACnetLogRecord",
+    "name": "log-record",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "timestamp",
+                "type": "date-time",
+                "context": 0
+            },
+            {
+                "name": "log-datum",
+                "type": {
+                    "base": "choice",
+                    "options": [
+                        {
+                            "name": "log-status",
+                            "type": "log-status",
+                            "context": 0
+                        },
+                        {
+                            "name": "boolean-value",
+                            "type": "boolean",
+                            "context": 1
+                        },
+                        {
+                            "name": "real-value",
+                            "type": "real",
+                            "context": 2
+                        },
+                        {
+                            "name": "enumerated-value",
+                            "type": "enumerated",
+                            "context": 3
+                        },
+                        {
+                            "name": "unsigned-value",
+                            "type": "unsigned",
+                            "context": 4
+                        },
+                        {
+                            "name": "integer-value",
+                            "type": "integer",
+                            "context": 5
+                        },
+                        {
+                            "name": "bitstring-value",
+                            "type": "bit-string",
+                            "context": 6
+                        },
+                        {
+                            "name": "null-value",
+                            "type": "null",
+                            "context": 7
+                        },
+                        {
+                            "name": "failure",
+                            "type": "error",
+                            "context": 8
+                        },
+                        {
+                            "name": "time-change",
+                            "type": "real",
+                            "context": 9
+                        },
+                        {
+                            "name": "any-value",
+                            "type": "any",
+                            "context": 10
+                        }
+                    ]
+                },
+                "context": 1
+            },
+            {
+                "name": "status-flags",
+                "type": "status-flags",
+                "context": 2,
+                "optional": true
+            }
+        ]
+    }
+}

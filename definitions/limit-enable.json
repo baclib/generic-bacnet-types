@@ -2,29 +2,17 @@
     "alias": "BACnetLimitEnable",
     "name": "limit-enable",
     "type": {
-        "base": "bitstring",
+        "base": "bit-string",
         "bits": [
             {
-                "position": 0,
                 "name": "low-limit-enable",
+                "position": 0,
                 "description": "Enable low limit."
             },
             {
-                "position": 1,
                 "name": "high-limit-enable",
+                "position": 1,
                 "description": "Enable high limit."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 1,
-            "maximum": 1
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 1,
-                "maximum": 1
             }
         ]
     }

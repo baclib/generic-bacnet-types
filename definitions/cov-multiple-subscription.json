@@ -1,0 +1,68 @@
+{
+    "alias": "BACnetCOVMultipleSubscription",
+    "name": "cov-multiple-subscription",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "recipient",
+                "type": "recipient-process",
+                "context": 0
+            },
+            {
+                "name": "issue-confirmed-notifications",
+                "type": "boolean",
+                "context": 1
+            },
+            {
+                "name": "time-remaining",
+                "type": "unsigned",
+                "context": 2
+            },
+            {
+                "name": "max-notification-delay",
+                "type": "unsigned",
+                "context": 3
+            },
+            {
+                "name": "list-of-cov-subscription-specifications",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "monitored-object-identifier",
+                            "type": "object-identifier",
+                            "context": 0
+                        },
+                        {
+                            "name": "list-of-cov-references",
+                            "type": {
+                                "base": "sequence",
+                                "fields": [
+                                    {
+                                        "name": "monitored-property",
+                                        "type": "property-reference",
+                                        "context": 0
+                                    },
+                                    {
+                                        "name": "cov-increment",
+                                        "type": "real",
+                                        "context": 1,
+                                        "optional": true
+                                    },
+                                    {
+                                        "name": "timestamped",
+                                        "type": "boolean",
+                                        "context": 2
+                                    }
+                                ]
+                            },
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 4
+            }
+        ]
+    }
+}

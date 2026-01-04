@@ -5,9 +5,14 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "accelerate",
-                "constant": 3,
-                "description": "Lift car is accelerating."
+                "name": "unknown",
+                "constant": 0,
+                "description": "Drive status is unknown."
+            },
+            {
+                "name": "stationary",
+                "constant": 1,
+                "description": "Lift car is stationary."
             },
             {
                 "name": "braking",
@@ -15,14 +20,14 @@
                 "description": "Lift car is braking."
             },
             {
+                "name": "accelerate",
+                "constant": 3,
+                "description": "Lift car is accelerating."
+            },
+            {
                 "name": "decelerate",
                 "constant": 4,
                 "description": "Lift car is decelerating."
-            },
-            {
-                "name": "multi-floor-jump",
-                "constant": 9,
-                "description": "Multi-floor jump."
             },
             {
                 "name": "rated-speed",
@@ -35,9 +40,9 @@
                 "description": "Single floor jump."
             },
             {
-                "name": "stationary",
-                "constant": 1,
-                "description": "Lift car is stationary."
+                "name": "two-floor-jump",
+                "constant": 7,
+                "description": "Two floor jump."
             },
             {
                 "name": "three-floor-jump",
@@ -45,32 +50,15 @@
                 "description": "Three floor jump."
             },
             {
-                "name": "two-floor-jump",
-                "constant": 7,
-                "description": "Two floor jump."
-            },
-            {
-                "name": "unknown",
-                "constant": 0,
-                "description": "Drive status is unknown."
+                "name": "multi-floor-jump",
+                "constant": 9,
+                "description": "Multi-floor jump."
             }
         ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 1023
-            },
-            {
-                "custom": true,
-                "minimum": 1024,
-                "maximum": 65535
-            }
-        ]
+        "maximum": 65535,
+        "proprietary": {
+            "from": 1024,
+            "to": 65535
+        }
     }
 }

@@ -5,19 +5,9 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "down-peak",
-                "constant": 2,
-                "description": "Down peak group mode."
-            },
-            {
-                "name": "emergency-power",
-                "constant": 5,
-                "description": "Emergency power group mode."
-            },
-            {
-                "name": "four-way",
-                "constant": 4,
-                "description": "Four-way group mode."
+                "name": "unknown",
+                "constant": 0,
+                "description": "Group mode is unknown."
             },
             {
                 "name": "normal",
@@ -25,31 +15,29 @@
                 "description": "Normal group mode."
             },
             {
+                "name": "down-peak",
+                "constant": 2,
+                "description": "Down peak group mode."
+            },
+            {
                 "name": "two-way",
                 "constant": 3,
                 "description": "Two-way group mode."
             },
             {
-                "name": "unknown",
-                "constant": 0,
-                "description": "Group mode is unknown."
+                "name": "four-way",
+                "constant": 4,
+                "description": "Four-way group mode."
+            },
+            {
+                "name": "emergency-power",
+                "constant": 5,
+                "description": "Emergency power group mode."
             },
             {
                 "name": "up-peak",
                 "constant": 6,
                 "description": "Up peak group mode."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 6
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 6
             }
         ]
     }

@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetOptionalBitString",
+    "name": "optional-bit-string",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "null",
+                "type": "null"
+            },
+            {
+                "name": "bitstring",
+                "type": "bit-string"
+            }
+        ]
+    }
+}

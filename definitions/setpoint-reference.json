@@ -1,0 +1,15 @@
+{
+    "alias": "BACnetSetpointReference",
+    "name": "setpoint-reference",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "setpoint-reference",
+                "type": "object-property-reference",
+                "context": 0,
+                "optional": true
+            }
+        ]
+    }
+}

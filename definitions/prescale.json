@@ -1,0 +1,19 @@
+{
+    "alias": "BACnetPrescale",
+    "name": "prescale",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "multiplier",
+                "type": "unsigned",
+                "context": 0
+            },
+            {
+                "name": "modulo-divide",
+                "type": "unsigned",
+                "context": 1
+            }
+        ]
+    }
+}

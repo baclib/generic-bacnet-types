@@ -1,0 +1,122 @@
+{
+    "alias": "BACnetAuthorizationScope",
+    "name": "authorization-scope",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "standard",
+                "type": {
+                    "base": "bit-string",
+                    "bits": [
+                        {
+                            "name": "view",
+                            "position": 0
+                        },
+                        {
+                            "name": "adjust",
+                            "position": 1
+                        },
+                        {
+                            "name": "control",
+                            "position": 2
+                        },
+                        {
+                            "name": "override",
+                            "position": 3
+                        },
+                        {
+                            "name": "config",
+                            "position": 4
+                        },
+                        {
+                            "name": "bind",
+                            "position": 5
+                        },
+                        {
+                            "name": "install",
+                            "position": 6
+                        },
+                        {
+                            "name": "auth",
+                            "position": 7
+                        },
+                        {
+                            "name": "infrastructure",
+                            "position": 8
+                        },
+                        {
+                            "name": "reserved-9",
+                            "position": 9
+                        },
+                        {
+                            "name": "reserved-10",
+                            "position": 10
+                        },
+                        {
+                            "name": "reserved-11",
+                            "position": 11
+                        },
+                        {
+                            "name": "reserved-12",
+                            "position": 12
+                        },
+                        {
+                            "name": "reserved-13",
+                            "position": 13
+                        },
+                        {
+                            "name": "reserved-14",
+                            "position": 14
+                        },
+                        {
+                            "name": "reserved-15",
+                            "position": 15
+                        },
+                        {
+                            "name": "reserved-16",
+                            "position": 16
+                        },
+                        {
+                            "name": "reserved-17",
+                            "position": 17
+                        },
+                        {
+                            "name": "reserved-18",
+                            "position": 18
+                        },
+                        {
+                            "name": "reserved-19",
+                            "position": 19
+                        },
+                        {
+                            "name": "reserved-20",
+                            "position": 20
+                        },
+                        {
+                            "name": "reserved-21",
+                            "position": 21
+                        },
+                        {
+                            "name": "reserved-22",
+                            "position": 22
+                        },
+                        {
+                            "name": "reserved-23",
+                            "position": 23
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "extended",
+                "type": {
+                    "base": "character-string",
+                    "series": true
+                },
+                "context": 0,
+                "optional": true
+            }
+        ]
+    }
+}

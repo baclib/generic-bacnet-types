@@ -1,0 +1,46 @@
+{
+    "alias": "BACnetRouterEntry",
+    "name": "router-entry",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "network-number",
+                "type": "unsigned-16",
+                "context": 0
+            },
+            {
+                "name": "mac-address",
+                "type": "octet-string",
+                "context": 1
+            },
+            {
+                "name": "status",
+                "type": {
+                    "base": "enumerated",
+                    "values": [
+                        {
+                            "name": "available",
+                            "constant": 0
+                        },
+                        {
+                            "name": "busy",
+                            "constant": 1
+                        },
+                        {
+                            "name": "disconnected",
+                            "constant": 2
+                        }
+                    ]
+                },
+                "context": 2
+            },
+            {
+                "name": "performance-index",
+                "type": "unsigned-8",
+                "context": 3,
+                "optional": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetOptionalReal",
+    "name": "optional-real",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "null",
+                "type": "null"
+            },
+            {
+                "name": "real",
+                "type": "real"
+            }
+        ]
+    }
+}

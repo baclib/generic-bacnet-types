@@ -1,0 +1,48 @@
+{
+    "alias": "BACnetSCFailedConnectionRequest",
+    "name": "sc-failed-connection-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "timestamp",
+                "type": "date-time",
+                "context": 0
+            },
+            {
+                "name": "peer-address",
+                "type": "host-n-port",
+                "context": 1
+            },
+            {
+                "name": "peer-vmac",
+                "type": {
+                    "base": "octet-string",
+                    "length": 6
+                },
+                "context": 2,
+                "optional": true
+            },
+            {
+                "name": "peer-uuid",
+                "type": {
+                    "base": "octet-string",
+                    "length": 16
+                },
+                "context": 3,
+                "optional": true
+            },
+            {
+                "name": "error",
+                "type": "error",
+                "context": 4
+            },
+            {
+                "name": "error-details",
+                "type": "character-string",
+                "context": 5,
+                "optional": true
+            }
+        ]
+    }
+}

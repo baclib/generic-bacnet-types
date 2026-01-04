@@ -5,14 +5,19 @@
         "base": "enumerated",
         "values": [
             {
+                "name": "idle",
+                "constant": 0,
+                "description": "No color operation is in progress."
+            },
+            {
                 "name": "fade-active",
                 "constant": 1,
                 "description": "A fade operation is active."
             },
             {
-                "name": "idle",
-                "constant": 0,
-                "description": "No color operation is in progress."
+                "name": "ramp-active",
+                "constant": 2,
+                "description": "A ramp operation is active."
             },
             {
                 "name": "not-controlled",
@@ -23,23 +28,6 @@
                 "name": "other",
                 "constant": 4,
                 "description": "Other color operation in progress."
-            },
-            {
-                "name": "ramp-active",
-                "constant": 2,
-                "description": "A ramp operation is active."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 4
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 4
             }
         ]
     }

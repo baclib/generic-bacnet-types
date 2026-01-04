@@ -1,0 +1,13 @@
+{
+    "alias": "Enumeration",
+    "name": "enumeration",
+    "type": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "not-used",
+                "constant": 0
+            }
+        ]
+    }
+}

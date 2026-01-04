@@ -1,0 +1,64 @@
+{
+    "alias": "GetEventInformation-ACK",
+    "name": "get-event-information-ack",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "list-of-event-summaries",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "object-identifier",
+                            "type": "object-identifier",
+                            "context": 0
+                        },
+                        {
+                            "name": "event-state",
+                            "type": "event-state",
+                            "context": 1
+                        },
+                        {
+                            "name": "acknowledged-transitions",
+                            "type": "event-transition-bits",
+                            "context": 2
+                        },
+                        {
+                            "name": "event-timestamps",
+                            "type": {
+                                "base": "time-stamp",
+                                "series": 3
+                            },
+                            "context": 3
+                        },
+                        {
+                            "name": "notify-type",
+                            "type": "notify-type",
+                            "context": 4
+                        },
+                        {
+                            "name": "event-enable",
+                            "type": "event-transition-bits",
+                            "context": 5
+                        },
+                        {
+                            "name": "event-priorities",
+                            "type": {
+                                "base": "unsigned",
+                                "series": 3
+                            },
+                            "context": 6
+                        }
+                    ]
+                },
+                "context": 0
+            },
+            {
+                "name": "more-events",
+                "type": "boolean",
+                "context": 1
+            }
+        ]
+    }
+}

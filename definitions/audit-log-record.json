@@ -1,0 +1,38 @@
+{
+    "alias": "BACnetAuditLogRecord",
+    "name": "audit-log-record",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "timestamp",
+                "type": "date-time",
+                "context": 0
+            },
+            {
+                "name": "log-datum",
+                "type": {
+                    "base": "choice",
+                    "options": [
+                        {
+                            "name": "log-status",
+                            "type": "log-status",
+                            "context": 0
+                        },
+                        {
+                            "name": "audit-notification",
+                            "type": "audit-notification",
+                            "context": 1
+                        },
+                        {
+                            "name": "time-change",
+                            "type": "real",
+                            "context": 2
+                        }
+                    ]
+                },
+                "context": 1
+            }
+        ]
+    }
+}

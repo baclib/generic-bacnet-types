@@ -5,14 +5,14 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "no-segmentation",
-                "constant": 3,
-                "description": "Does not support segmentation."
-            },
-            {
                 "name": "segmented-both",
                 "constant": 0,
                 "description": "Supports both segmented transmission and reception."
+            },
+            {
+                "name": "segmented-transmit",
+                "constant": 1,
+                "description": "Supports only segmented transmission."
             },
             {
                 "name": "segmented-receive",
@@ -20,21 +20,9 @@
                 "description": "Supports only segmented reception."
             },
             {
-                "name": "segmented-transmit",
-                "constant": 1,
-                "description": "Supports only segmented transmission."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 3
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 3
+                "name": "no-segmentation",
+                "constant": 3,
+                "description": "Does not support segmentation."
             }
         ]
     }

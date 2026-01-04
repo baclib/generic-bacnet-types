@@ -1,0 +1,21 @@
+{
+    "alias": "BACnetVTSession",
+    "name": "vt-session",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "local-vt-session-id",
+                "type": "unsigned-8"
+            },
+            {
+                "name": "remote-vt-session-id",
+                "type": "unsigned-8"
+            },
+            {
+                "name": "remote-vt-address",
+                "type": "address"
+            }
+        ]
+    }
+}

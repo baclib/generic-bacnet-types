@@ -1,0 +1,21 @@
+{
+    "alias": "I-Have-Request",
+    "name": "i-have-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "device-identifier",
+                "type": "object-identifier"
+            },
+            {
+                "name": "object-identifier",
+                "type": "object-identifier"
+            },
+            {
+                "name": "object-name",
+                "type": "character-string"
+            }
+        ]
+    }
+}

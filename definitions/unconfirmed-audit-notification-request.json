@@ -1,0 +1,17 @@
+{
+    "alias": "UnconfirmedAuditNotification-Request",
+    "name": "unconfirmed-audit-notification-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "notifications",
+                "type": {
+                    "base": "audit-notification",
+                    "series": true
+                },
+                "context": 0
+            }
+        ]
+    }
+}

@@ -5,14 +5,169 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "access-credential",
-                "constant": 32,
-                "description": "Represents an access credential object."
+                "name": "analog-input",
+                "constant": 0,
+                "description": "Represents an analog input object."
+            },
+            {
+                "name": "analog-output",
+                "constant": 1,
+                "description": "Represents an analog output object."
+            },
+            {
+                "name": "analog-value",
+                "constant": 2,
+                "description": "Represents an analog value object."
+            },
+            {
+                "name": "binary-input",
+                "constant": 3,
+                "description": "Represents a binary input object."
+            },
+            {
+                "name": "binary-output",
+                "constant": 4,
+                "description": "Represents a binary output object."
+            },
+            {
+                "name": "binary-value",
+                "constant": 5,
+                "description": "Represents a binary value object."
+            },
+            {
+                "name": "calendar",
+                "constant": 6,
+                "description": "Represents a calendar object."
+            },
+            {
+                "name": "command",
+                "constant": 7,
+                "description": "Represents a command object."
+            },
+            {
+                "name": "device",
+                "constant": 8,
+                "description": "Represents a device object."
+            },
+            {
+                "name": "event-enrollment",
+                "constant": 9,
+                "description": "Represents an event enrollment object."
+            },
+            {
+                "name": "file",
+                "constant": 10,
+                "description": "Represents a file object."
+            },
+            {
+                "name": "group",
+                "constant": 11,
+                "description": "Represents a group object."
+            },
+            {
+                "name": "loop",
+                "constant": 12,
+                "description": "Represents a loop object."
+            },
+            {
+                "name": "multi-state-input",
+                "constant": 13,
+                "description": "Represents a multi-state input object."
+            },
+            {
+                "name": "multi-state-output",
+                "constant": 14,
+                "description": "Represents a multi-state output object."
+            },
+            {
+                "name": "notification-class",
+                "constant": 15,
+                "description": "Represents a notification class object."
+            },
+            {
+                "name": "program",
+                "constant": 16,
+                "description": "Represents a program object."
+            },
+            {
+                "name": "schedule",
+                "constant": 17,
+                "description": "Represents a schedule object."
+            },
+            {
+                "name": "averaging",
+                "constant": 18,
+                "description": "Represents an averaging object."
+            },
+            {
+                "name": "multi-state-value",
+                "constant": 19,
+                "description": "Represents a multi-state value object."
+            },
+            {
+                "name": "trend-log",
+                "constant": 20,
+                "description": "Represents a trend log object."
+            },
+            {
+                "name": "life-safety-point",
+                "constant": 21,
+                "description": "Represents a life safety point object."
+            },
+            {
+                "name": "life-safety-zone",
+                "constant": 22,
+                "description": "Represents a life safety zone object."
+            },
+            {
+                "name": "accumulator",
+                "constant": 23,
+                "description": "Represents an accumulator object."
+            },
+            {
+                "name": "pulse-converter",
+                "constant": 24,
+                "description": "Represents a pulse converter object."
+            },
+            {
+                "name": "event-log",
+                "constant": 25,
+                "description": "Represents an event log object."
+            },
+            {
+                "name": "global-group",
+                "constant": 26,
+                "description": "Represents a global group object."
+            },
+            {
+                "name": "trend-log-multiple",
+                "constant": 27,
+                "description": "Represents a trend log multiple object."
+            },
+            {
+                "name": "load-control",
+                "constant": 28,
+                "description": "Represents a load control object."
+            },
+            {
+                "name": "structured-view",
+                "constant": 29,
+                "description": "Represents a structured view object."
             },
             {
                 "name": "access-door",
                 "constant": 30,
                 "description": "Represents an access door object."
+            },
+            {
+                "name": "timer",
+                "constant": 31,
+                "description": "Represents a timer object."
+            },
+            {
+                "name": "access-credential",
+                "constant": 32,
+                "description": "Represents an access credential object."
             },
             {
                 "name": "access-point",
@@ -35,64 +190,9 @@
                 "description": "Represents an access zone object."
             },
             {
-                "name": "accumulator",
-                "constant": 23,
-                "description": "Represents an accumulator object."
-            },
-            {
-                "name": "alert-enrollment",
-                "constant": 52,
-                "description": "Represents an alert enrollment object."
-            },
-            {
-                "name": "analog-input",
-                "constant": 0,
-                "description": "Represents an analog input object."
-            },
-            {
-                "name": "analog-output",
-                "constant": 1,
-                "description": "Represents an analog output object."
-            },
-            {
-                "name": "analog-value",
-                "constant": 2,
-                "description": "Represents an analog value object."
-            },
-            {
-                "name": "audit-log",
-                "constant": 61,
-                "description": "Represents an audit log object."
-            },
-            {
-                "name": "audit-reporter",
-                "constant": 62,
-                "description": "Represents an audit reporter object."
-            },
-            {
-                "name": "averaging",
-                "constant": 18,
-                "description": "Represents an averaging object."
-            },
-            {
-                "name": "binary-input",
-                "constant": 3,
-                "description": "Represents a binary input object."
-            },
-            {
-                "name": "binary-lighting-output",
-                "constant": 55,
-                "description": "Represents a binary lighting output object."
-            },
-            {
-                "name": "binary-output",
-                "constant": 4,
-                "description": "Represents a binary output object."
-            },
-            {
-                "name": "binary-value",
-                "constant": 5,
-                "description": "Represents a binary value object."
+                "name": "credential-data-input",
+                "constant": 37,
+                "description": "Represents a credential data input object."
             },
             {
                 "name": "bitstring-value",
@@ -100,44 +200,9 @@
                 "description": "Represents a bit string value object."
             },
             {
-                "name": "calendar",
-                "constant": 6,
-                "description": "Represents a calendar object."
-            },
-            {
-                "name": "channel",
-                "constant": 53,
-                "description": "Represents a channel object."
-            },
-            {
                 "name": "characterstring-value",
                 "constant": 40,
                 "description": "Represents a character string value object."
-            },
-            {
-                "name": "color",
-                "constant": 63,
-                "description": "Represents a color object."
-            },
-            {
-                "name": "color-temperature",
-                "constant": 64,
-                "description": "Represents a color temperature object."
-            },
-            {
-                "name": "command",
-                "constant": 7,
-                "description": "Represents a command object."
-            },
-            {
-                "name": "credential-data-input",
-                "constant": 37,
-                "description": "Represents a credential data input object."
-            },
-            {
-                "name": "date-value",
-                "constant": 42,
-                "description": "Represents a date value object."
             },
             {
                 "name": "datepattern-value",
@@ -145,9 +210,9 @@
                 "description": "Represents a date pattern value object."
             },
             {
-                "name": "datetime-value",
-                "constant": 44,
-                "description": "Represents a datetime value object."
+                "name": "date-value",
+                "constant": 42,
+                "description": "Represents a date value object."
             },
             {
                 "name": "datetimepattern-value",
@@ -155,44 +220,9 @@
                 "description": "Represents a datetime pattern value object."
             },
             {
-                "name": "device",
-                "constant": 8,
-                "description": "Represents a device object."
-            },
-            {
-                "name": "elevator-group",
-                "constant": 57,
-                "description": "Represents an elevator group object."
-            },
-            {
-                "name": "escalator",
-                "constant": 58,
-                "description": "Represents an escalator object."
-            },
-            {
-                "name": "event-enrollment",
-                "constant": 9,
-                "description": "Represents an event enrollment object."
-            },
-            {
-                "name": "event-log",
-                "constant": 25,
-                "description": "Represents an event log object."
-            },
-            {
-                "name": "file",
-                "constant": 10,
-                "description": "Represents a file object."
-            },
-            {
-                "name": "global-group",
-                "constant": 26,
-                "description": "Represents a global group object."
-            },
-            {
-                "name": "group",
-                "constant": 11,
-                "description": "Represents a group object."
+                "name": "datetime-value",
+                "constant": 44,
+                "description": "Represents a datetime value object."
             },
             {
                 "name": "integer-value",
@@ -205,66 +235,6 @@
                 "description": "Represents a large analog value object."
             },
             {
-                "name": "life-safety-point",
-                "constant": 21,
-                "description": "Represents a life safety point object."
-            },
-            {
-                "name": "life-safety-zone",
-                "constant": 22,
-                "description": "Represents a life safety zone object."
-            },
-            {
-                "name": "lift",
-                "constant": 59,
-                "description": "Represents a lift object."
-            },
-            {
-                "name": "lighting-output",
-                "constant": 54,
-                "description": "Represents a lighting output object."
-            },
-            {
-                "name": "load-control",
-                "constant": 28,
-                "description": "Represents a load control object."
-            },
-            {
-                "name": "loop",
-                "constant": 12,
-                "description": "Represents a loop object."
-            },
-            {
-                "name": "multi-state-input",
-                "constant": 13,
-                "description": "Represents a multi-state input object."
-            },
-            {
-                "name": "multi-state-output",
-                "constant": 14,
-                "description": "Represents a multi-state output object."
-            },
-            {
-                "name": "multi-state-value",
-                "constant": 19,
-                "description": "Represents a multi-state value object."
-            },
-            {
-                "name": "network-port",
-                "constant": 56,
-                "description": "Represents a network port object."
-            },
-            {
-                "name": "notification-class",
-                "constant": 15,
-                "description": "Represents a notification class object."
-            },
-            {
-                "name": "notification-forwarder",
-                "constant": 51,
-                "description": "Represents a notification forwarder object."
-            },
-            {
                 "name": "octetstring-value",
                 "constant": 47,
                 "description": "Represents an octet string value object."
@@ -275,29 +245,9 @@
                 "description": "Represents a positive integer value object."
             },
             {
-                "name": "program",
-                "constant": 16,
-                "description": "Represents a program object."
-            },
-            {
-                "name": "pulse-converter",
-                "constant": 24,
-                "description": "Represents a pulse converter object."
-            },
-            {
-                "name": "schedule",
-                "constant": 17,
-                "description": "Represents a schedule object."
-            },
-            {
-                "name": "staging",
-                "constant": 60,
-                "description": "Represents a staging object."
-            },
-            {
-                "name": "structured-view",
-                "constant": 29,
-                "description": "Represents a structured view object."
+                "name": "timepattern-value",
+                "constant": 49,
+                "description": "Represents a time pattern value object."
             },
             {
                 "name": "time-value",
@@ -305,42 +255,80 @@
                 "description": "Represents a time value object."
             },
             {
-                "name": "timepattern-value",
-                "constant": 49,
-                "description": "Represents a time pattern value object."
+                "name": "notification-forwarder",
+                "constant": 51,
+                "description": "Represents a notification forwarder object."
             },
             {
-                "name": "timer",
-                "constant": 31,
-                "description": "Represents a timer object."
+                "name": "alert-enrollment",
+                "constant": 52,
+                "description": "Represents an alert enrollment object."
             },
             {
-                "name": "trend-log",
-                "constant": 20,
-                "description": "Represents a trend log object."
+                "name": "channel",
+                "constant": 53,
+                "description": "Represents a channel object."
             },
             {
-                "name": "trend-log-multiple",
-                "constant": 27,
-                "description": "Represents a trend log multiple object."
+                "name": "lighting-output",
+                "constant": 54,
+                "description": "Represents a lighting output object."
+            },
+            {
+                "name": "binary-lighting-output",
+                "constant": 55,
+                "description": "Represents a binary lighting output object."
+            },
+            {
+                "name": "network-port",
+                "constant": 56,
+                "description": "Represents a network port object."
+            },
+            {
+                "name": "elevator-group",
+                "constant": 57,
+                "description": "Represents an elevator group object."
+            },
+            {
+                "name": "escalator",
+                "constant": 58,
+                "description": "Represents an escalator object."
+            },
+            {
+                "name": "lift",
+                "constant": 59,
+                "description": "Represents a lift object."
+            },
+            {
+                "name": "staging",
+                "constant": 60,
+                "description": "Represents a staging object."
+            },
+            {
+                "name": "audit-log",
+                "constant": 61,
+                "description": "Represents an audit log object."
+            },
+            {
+                "name": "audit-reporter",
+                "constant": 62,
+                "description": "Represents an audit reporter object."
+            },
+            {
+                "name": "color",
+                "constant": 63,
+                "description": "Represents a color object."
+            },
+            {
+                "name": "color-temperature",
+                "constant": 64,
+                "description": "Represents a color temperature object."
             }
         ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 1023
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 127
-            },
-            {
-                "custom": true,
-                "minimum": 128,
-                "maximum": 1023
-            }
-        ]
+        "maximum": 1023,
+        "proprietary": {
+            "from": 128,
+            "to": 1023
+        }
     }
 }

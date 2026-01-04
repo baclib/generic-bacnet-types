@@ -5,29 +5,14 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "discard-changes",
-                "constant": 1,
-                "description": "Discard changes command."
-            },
-            {
-                "name": "disconnect",
-                "constant": 6,
-                "description": "Disconnect command."
-            },
-            {
-                "name": "generate-csr-file",
-                "constant": 9,
-                "description": "Generate CSR file command."
-            },
-            {
                 "name": "idle",
                 "constant": 0,
                 "description": "Idle command."
             },
             {
-                "name": "renew-dhcp",
-                "constant": 4,
-                "description": "Renew DHCP command."
+                "name": "discard-changes",
+                "constant": 1,
+                "description": "Discard changes command."
             },
             {
                 "name": "renew-fd-registration",
@@ -35,14 +20,24 @@
                 "description": "Renew FD registration command."
             },
             {
+                "name": "restart-subordinate-discovery",
+                "constant": 3,
+                "description": "Restart subordinate discovery command."
+            },
+            {
+                "name": "renew-dhcp",
+                "constant": 4,
+                "description": "Renew DHCP command."
+            },
+            {
                 "name": "restart-autonegotiation",
                 "constant": 5,
                 "description": "Restart autonegotiation command."
             },
             {
-                "name": "restart-device-discovery",
-                "constant": 8,
-                "description": "Restart device discovery command."
+                "name": "disconnect",
+                "constant": 6,
+                "description": "Disconnect command."
             },
             {
                 "name": "restart-port",
@@ -50,9 +45,14 @@
                 "description": "Restart port command."
             },
             {
-                "name": "restart-subordinate-discovery",
-                "constant": 3,
-                "description": "Restart subordinate discovery command."
+                "name": "restart-device-discovery",
+                "constant": 8,
+                "description": "Restart device discovery command."
+            },
+            {
+                "name": "generate-csr-file",
+                "constant": 9,
+                "description": "Generate CSR file command."
             },
             {
                 "name": "validate-changes",
@@ -60,22 +60,10 @@
                 "description": "Validate changes command."
             }
         ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 255
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 127
-            },
-            {
-                "custom": true,
-                "minimum": 128,
-                "maximum": 255
-            }
-        ]
+        "maximum": 255,
+        "proprietary": {
+            "from": 128,
+            "to": 255
+        }
     }
 }

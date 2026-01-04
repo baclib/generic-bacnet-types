@@ -1,0 +1,19 @@
+{
+    "alias": "BACnetRecipientProcess",
+    "name": "recipient-process",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "recipient",
+                "type": "recipient",
+                "context": 0
+            },
+            {
+                "name": "process-identifier",
+                "type": "unsigned-32",
+                "context": 1
+            }
+        ]
+    }
+}

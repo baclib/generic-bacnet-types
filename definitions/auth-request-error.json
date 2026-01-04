@@ -1,0 +1,20 @@
+{
+    "alias": "AuthRequest-Error",
+    "name": "auth-request-error",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "error-type",
+                "type": "error",
+                "context": 0
+            },
+            {
+                "name": "error-details",
+                "type": "character-string",
+                "context": 1,
+                "optional": true
+            }
+        ]
+    }
+}

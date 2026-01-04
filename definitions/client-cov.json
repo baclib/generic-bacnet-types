@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetClientCOV",
+    "name": "client-cov",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "real-increment",
+                "type": "real"
+            },
+            {
+                "name": "default-increment",
+                "type": "null"
+            }
+        ]
+    }
+}

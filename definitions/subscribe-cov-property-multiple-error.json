@@ -1,0 +1,38 @@
+{
+    "alias": "SubscribeCOVPropertyMultiple-Error",
+    "name": "subscribe-cov-property-multiple-error",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "error-type",
+                "type": "error",
+                "context": 0
+            },
+            {
+                "name": "first-failed-subscription",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "monitored-object-identifier",
+                            "type": "object-identifier",
+                            "context": 0
+                        },
+                        {
+                            "name": "monitored-property-reference",
+                            "type": "property-reference",
+                            "context": 1
+                        },
+                        {
+                            "name": "error-type",
+                            "type": "error",
+                            "context": 2
+                        }
+                    ]
+                },
+                "context": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "alias": "ConfirmedPrivateTransfer-Error",
+    "name": "confirmed-private-transfer-error",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "error-type",
+                "type": "error",
+                "context": 0
+            },
+            {
+                "name": "vendor-id",
+                "type": "unsigned-16",
+                "context": 1
+            },
+            {
+                "name": "service-number",
+                "type": "unsigned",
+                "context": 2
+            },
+            {
+                "name": "error-parameters",
+                "type": "any",
+                "context": 3,
+                "optional": true
+            }
+        ]
+    }
+}

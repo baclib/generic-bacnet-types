@@ -1,0 +1,24 @@
+{
+    "alias": "BACnetAuthenticationFactor",
+    "name": "authentication-factor",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "format-type",
+                "type": "authentication-factor-type",
+                "context": 0
+            },
+            {
+                "name": "format-class",
+                "type": "unsigned",
+                "context": 1
+            },
+            {
+                "name": "value",
+                "type": "octet-string",
+                "context": 2
+            }
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "alias": "BACnetFDTEntry",
+    "name": "fdt-entry",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "bacnetip-address",
+                "type": "octet-string",
+                "context": 0
+            },
+            {
+                "name": "time-to-live",
+                "type": "unsigned-16",
+                "context": 1
+            },
+            {
+                "name": "remaining-time-to-live",
+                "type": "unsigned-16",
+                "context": 2
+            }
+        ]
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "alias": "AtomicReadFile-Request",
+    "name": "atomic-read-file-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "file-identifier",
+                "type": "object-identifier"
+            },
+            {
+                "name": "access-method",
+                "type": {
+                    "base": "choice",
+                    "options": [
+                        {
+                            "name": "stream-access",
+                            "type": {
+                                "base": "sequence",
+                                "fields": [
+                                    {
+                                        "name": "file-start-position",
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "name": "requested-octet-count",
+                                        "type": "unsigned"
+                                    }
+                                ]
+                            },
+                            "context": 0
+                        },
+                        {
+                            "name": "record-access",
+                            "type": {
+                                "base": "sequence",
+                                "fields": [
+                                    {
+                                        "name": "file-start-record",
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "name": "requested-record-count",
+                                        "type": "unsigned"
+                                    }
+                                ]
+                            },
+                            "context": 1
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

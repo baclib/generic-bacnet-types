@@ -5,34 +5,14 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "aba-track2",
-                "constant": 7,
-                "description": "ABA Track 2 authentication factor."
+                "name": "undefined",
+                "constant": 0,
+                "description": "Undefined authentication factor type."
             },
             {
-                "name": "cbeff-a",
-                "constant": 21,
-                "description": "CBEFF-A authentication factor."
-            },
-            {
-                "name": "cbeff-b",
-                "constant": 22,
-                "description": "CBEFF-B authentication factor."
-            },
-            {
-                "name": "cbeff-c",
-                "constant": 23,
-                "description": "CBEFF-C authentication factor."
-            },
-            {
-                "name": "chuid",
-                "constant": 18,
-                "description": "CHUID authentication factor."
-            },
-            {
-                "name": "chuid-full",
-                "constant": 19,
-                "description": "Full CHUID authentication factor."
+                "name": "error",
+                "constant": 1,
+                "description": "Error in authentication factor type."
             },
             {
                 "name": "custom",
@@ -40,9 +20,44 @@
                 "description": "Custom authentication factor type."
             },
             {
-                "name": "error",
-                "constant": 1,
-                "description": "Error in authentication factor type."
+                "name": "simple-number16",
+                "constant": 3,
+                "description": "Simple number (16-bit) authentication factor."
+            },
+            {
+                "name": "simple-number32",
+                "constant": 4,
+                "description": "Simple number (32-bit) authentication factor."
+            },
+            {
+                "name": "simple-number56",
+                "constant": 5,
+                "description": "Simple number (56-bit) authentication factor."
+            },
+            {
+                "name": "simple-alpha-numeric",
+                "constant": 6,
+                "description": "Simple alphanumeric authentication factor."
+            },
+            {
+                "name": "aba-track2",
+                "constant": 7,
+                "description": "ABA Track 2 authentication factor."
+            },
+            {
+                "name": "wiegand26",
+                "constant": 8,
+                "description": "Wiegand 26 authentication factor."
+            },
+            {
+                "name": "wiegand37",
+                "constant": 9,
+                "description": "Wiegand 37 authentication factor."
+            },
+            {
+                "name": "wiegand37-facility",
+                "constant": 10,
+                "description": "Wiegand 37 facility authentication factor."
             },
             {
                 "name": "facility16-card32",
@@ -80,66 +95,39 @@
                 "description": "GSA 75 authentication factor."
             },
             {
+                "name": "chuid",
+                "constant": 18,
+                "description": "CHUID authentication factor."
+            },
+            {
+                "name": "chuid-full",
+                "constant": 19,
+                "description": "Full CHUID authentication factor."
+            },
+            {
                 "name": "guid",
                 "constant": 20,
                 "description": "GUID authentication factor."
             },
             {
-                "name": "simple-alpha-numeric",
-                "constant": 6,
-                "description": "Simple alphanumeric authentication factor."
+                "name": "cbeff-a",
+                "constant": 21,
+                "description": "CBEFF-A authentication factor."
             },
             {
-                "name": "simple-number16",
-                "constant": 3,
-                "description": "Simple number (16-bit) authentication factor."
+                "name": "cbeff-b",
+                "constant": 22,
+                "description": "CBEFF-B authentication factor."
             },
             {
-                "name": "simple-number32",
-                "constant": 4,
-                "description": "Simple number (32-bit) authentication factor."
-            },
-            {
-                "name": "simple-number56",
-                "constant": 5,
-                "description": "Simple number (56-bit) authentication factor."
-            },
-            {
-                "name": "undefined",
-                "constant": 0,
-                "description": "Undefined authentication factor type."
+                "name": "cbeff-c",
+                "constant": 23,
+                "description": "CBEFF-C authentication factor."
             },
             {
                 "name": "user-password",
                 "constant": 24,
                 "description": "User password authentication factor."
-            },
-            {
-                "name": "wiegand26",
-                "constant": 8,
-                "description": "Wiegand 26 authentication factor."
-            },
-            {
-                "name": "wiegand37",
-                "constant": 9,
-                "description": "Wiegand 37 authentication factor."
-            },
-            {
-                "name": "wiegand37-facility",
-                "constant": 10,
-                "description": "Wiegand 37 facility authentication factor."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 24
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 24
             }
         ]
     }

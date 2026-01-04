@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetOptionalInteger",
+    "name": "optional-integer",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "null",
+                "type": "null"
+            },
+            {
+                "name": "integer",
+                "type": "integer"
+            }
+        ]
+    }
+}

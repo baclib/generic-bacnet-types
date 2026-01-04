@@ -5,6 +5,11 @@
         "base": "enumerated",
         "values": [
             {
+                "name": "not-connected",
+                "constant": 0,
+                "description": "The device is not currently connected."
+            },
+            {
                 "name": "connected",
                 "constant": 1,
                 "description": "The device is currently connected."
@@ -18,23 +23,6 @@
                 "name": "failed-to-connect",
                 "constant": 3,
                 "description": "The device failed to establish a connection."
-            },
-            {
-                "name": "not-connected",
-                "constant": 0,
-                "description": "The device is not currently connected."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 3
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 3
             }
         ]
     }

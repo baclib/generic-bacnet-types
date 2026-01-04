@@ -1,0 +1,24 @@
+{
+    "alias": "BACnetShedLevel",
+    "name": "shed-level",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "percent",
+                "type": "unsigned",
+                "context": 0
+            },
+            {
+                "name": "level",
+                "type": "unsigned",
+                "context": 1
+            },
+            {
+                "name": "amount",
+                "type": "real",
+                "context": 2
+            }
+        ]
+    }
+}

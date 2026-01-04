@@ -1,0 +1,636 @@
+{
+    "alias": "BACnetNotificationParameters",
+    "name": "notification-parameters",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "change-of-bitstring",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "referenced-bitstring",
+                            "type": "bit-string",
+                            "context": 0
+                        },
+                        {
+                            "name": "status-flags",
+                            "type": "status-flags",
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 0
+            },
+            {
+                "name": "change-of-state",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "new-state",
+                            "type": "property-states",
+                            "context": 0
+                        },
+                        {
+                            "name": "status-flags",
+                            "type": "status-flags",
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 1
+            },
+            {
+                "name": "change-of-value",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "new-value",
+                            "type": {
+                                "base": "choice",
+                                "options": [
+                                    {
+                                        "name": "changed-bits",
+                                        "type": "bit-string",
+                                        "context": 0
+                                    },
+                                    {
+                                        "name": "changed-value",
+                                        "type": "real",
+                                        "context": 1
+                                    }
+                                ]
+                            },
+                            "context": 0
+                        },
+                        {
+                            "name": "status-flags",
+                            "type": "status-flags",
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 2
+            },
+            {
+                "name": "command-failure",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "command-value",
+                            "type": "any",
+                            "context": 0
+                        },
+                        {
+                            "name": "status-flags",
+                            "type": "status-flags",
+                            "context": 1
+                        },
+                        {
+                            "name": "feedback-value",
+                            "type": "any",
+                            "context": 2
+                        }
+                    ]
+                },
+                "context": 3
+            },
+            {
+                "name": "floating-limit",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "reference-value",
+                            "type": "real",
+                            "context": 0
+                        },
+                        {
+                            "name": "status-flags",
+                            "type": "status-flags",
+                            "context": 1
+                        },
+                        {
+                            "name": "setpoint-value",
+                            "type": "real",
+                            "context": 2
+                        },
+                        {
+                            "name": "error-limit",
+                            "type": "real",
+                            "context": 3
+                        }
+                    ]
+                },
+                "context": 4
+            },
+            {
+                "name": "out-of-range",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "exceeding-value",
+                            "type": "real",
+                            "context": 0
+                        },
+                        {
+                            "name": "status-flags",
+                            "type": "status-flags",
+                            "context": 1
+                        },
+                        {
+                            "name": "deadband",
+                            "type": "real",
+                            "context": 2
+                        },
+                        {
+                            "name": "exceeded-limit",
+                            "type": "real",
+                            "context": 3
+                        }
+                    ]
+                },
+                "context": 5
+            },
+            {
+                "name": "complex-event-type",
+                "type": {
+                    "base": "property-value",
+                    "series": true
+                },
+                "context": 6
+            },
+            {
+                "name": "change-of-life-safety",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "new-state",
+                            "type": "life-safety-state",
+                            "context": 0
+                        },
+                        {
+                            "name": "new-mode",
+                            "type": "life-safety-mode",
+                            "context": 1
+                        },
+                        {
+                            "name": "status-flags",
+                            "type": "status-flags",
+                            "context": 2
+                        },
+                        {
+                            "name": "operation-expected",
+                            "type": "life-safety-operation",
+                            "context": 3
+                        }
+                    ]
+                },
+                "context": 8
+            },
+            {
+                "name": "extended",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "vendor-id",
+                            "type": "unsigned-16",
+                            "context": 0
+                        },
+                        {
+                            "name": "extended-event-type",
+                            "type": "unsigned",
+                            "context": 1
+                        },
+                        {
+                            "name": "parameters",
+                            "type": {
+                                "base": "choice",
+                                "options": [
+                                    {
+                                        "name": "null",
+                                        "type": "null"
+                                    },
+                                    {
+                                        "name": "real",
+                                        "type": "real"
+                                    },
+                                    {
+                                        "name": "unsigned",
+                                        "type": "unsigned"
+                                    },
+                                    {
+                                        "name": "boolean",
+                                        "type": "boolean"
+                                    },
+                                    {
+                                        "name": "integer",
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "name": "double",
+                                        "type": "double"
+                                    },
+                                    {
+                                        "name": "octetstring",
+                                        "type": "octet-string"
+                                    },
+                                    {
+                                        "name": "characterstring",
+                                        "type": "character-string"
+                                    },
+                                    {
+                                        "name": "bitstring",
+                                        "type": "bit-string"
+                                    },
+                                    {
+                                        "name": "enumerated",
+                                        "type": "enumerated"
+                                    },
+                                    {
+                                        "name": "date",
+                                        "type": "date"
+                                    },
+                                    {
+                                        "name": "time",
+                                        "type": "time"
+                                    },
+                                    {
+                                        "name": "objectidentifier",
+                                        "type": "object-identifier"
+                                    },
+                                    {
+                                        "name": "property-value",
+                                        "type": "device-object-property-value",
+                                        "context": 0
+                                    }
+                                ]
+                            },
+                            "context": 2
+                        }
+                    ]
+                },
+                "context": 9
+            },
+            {
+                "name": "buffer-ready",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "buffer-property",
+                            "type": "device-object-property-reference",
+                            "context": 0
+                        },
+                        {
+                            "name": "previous-notification",
+                            "type": "unsigned-32",
+                            "context": 1
+                        },
+                        {
+                            "name": "current-notification",
+                            "type": "unsigned-32",
+                            "context": 2
+                        }
+                    ]
+                },
+                "context": 10
+            },
+            {
+                "name": "unsigned-range",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "exceeding-value",
+                            "type": "unsigned",
+                            "context": 0
+                        },
+                        {
+                            "name": "status-flags",
+                            "type": "status-flags",
+                            "context": 1
+                        },
+                        {
+                            "name": "exceeded-limit",
+                            "type": "unsigned",
+                            "context": 2
+                        }
+                    ]
+                },
+                "context": 11
+            },
+            {
+                "name": "access-event",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "access-event",
+                            "type": "access-event",
+                            "context": 0
+                        },
+                        {
+                            "name": "status-flags",
+                            "type": "status-flags",
+                            "context": 1
+                        },
+                        {
+                            "name": "access-event-tag",
+                            "type": "unsigned",
+                            "context": 2
+                        },
+                        {
+                            "name": "access-event-time",
+                            "type": "time-stamp",
+                            "context": 3
+                        },
+                        {
+                            "name": "access-credential",
+                            "type": "device-object-reference",
+                            "context": 4
+                        },
+                        {
+                            "name": "authentication-factor",
+                            "type": "authentication-factor",
+                            "context": 5,
+                            "optional": true
+                        }
+                    ]
+                },
+                "context": 13
+            },
+            {
+                "name": "double-out-of-range",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "exceeding-value",
+                            "type": "double",
+                            "context": 0
+                        },
+                        {
+                            "name": "status-flags",
+                            "type": "status-flags",
+                            "context": 1
+                        },
+                        {
+                            "name": "deadband",
+                            "type": "double",
+                            "context": 2
+                        },
+                        {
+                            "name": "exceeded-limit",
+                            "type": "double",
+                            "context": 3
+                        }
+                    ]
+                },
+                "context": 14
+            },
+            {
+                "name": "signed-out-of-range",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "exceeding-value",
+                            "type": "integer",
+                            "context": 0
+                        },
+                        {
+                            "name": "status-flags",
+                            "type": "status-flags",
+                            "context": 1
+                        },
+                        {
+                            "name": "deadband",
+                            "type": "unsigned",
+                            "context": 2
+                        },
+                        {
+                            "name": "exceeded-limit",
+                            "type": "integer",
+                            "context": 3
+                        }
+                    ]
+                },
+                "context": 15
+            },
+            {
+                "name": "unsigned-out-of-range",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "exceeding-value",
+                            "type": "unsigned",
+                            "context": 0
+                        },
+                        {
+                            "name": "status-flags",
+                            "type": "status-flags",
+                            "context": 1
+                        },
+                        {
+                            "name": "deadband",
+                            "type": "unsigned",
+                            "context": 2
+                        },
+                        {
+                            "name": "exceeded-limit",
+                            "type": "unsigned",
+                            "context": 3
+                        }
+                    ]
+                },
+                "context": 16
+            },
+            {
+                "name": "change-of-characterstring",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "changed-value",
+                            "type": "character-string",
+                            "context": 0
+                        },
+                        {
+                            "name": "status-flags",
+                            "type": "status-flags",
+                            "context": 1
+                        },
+                        {
+                            "name": "alarm-value",
+                            "type": "character-string",
+                            "context": 2
+                        }
+                    ]
+                },
+                "context": 17
+            },
+            {
+                "name": "change-of-status-flags",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "present-value",
+                            "type": "any",
+                            "context": 0,
+                            "optional": true
+                        },
+                        {
+                            "name": "referenced-flags",
+                            "type": "status-flags",
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 18
+            },
+            {
+                "name": "change-of-reliability",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "reliability",
+                            "type": "reliability",
+                            "context": 0
+                        },
+                        {
+                            "name": "status-flags",
+                            "type": "status-flags",
+                            "context": 1
+                        },
+                        {
+                            "name": "property-values",
+                            "type": {
+                                "base": "property-value",
+                                "series": true
+                            },
+                            "context": 2
+                        }
+                    ]
+                },
+                "context": 19
+            },
+            {
+                "name": "change-of-discrete-value",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "new-value",
+                            "type": {
+                                "base": "choice",
+                                "options": [
+                                    {
+                                        "name": "boolean",
+                                        "type": "boolean"
+                                    },
+                                    {
+                                        "name": "unsigned",
+                                        "type": "unsigned"
+                                    },
+                                    {
+                                        "name": "integer",
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "name": "enumerated",
+                                        "type": "enumerated"
+                                    },
+                                    {
+                                        "name": "characterstring",
+                                        "type": "character-string"
+                                    },
+                                    {
+                                        "name": "octetstring",
+                                        "type": "octet-string"
+                                    },
+                                    {
+                                        "name": "date",
+                                        "type": "date"
+                                    },
+                                    {
+                                        "name": "time",
+                                        "type": "time"
+                                    },
+                                    {
+                                        "name": "objectidentifier",
+                                        "type": "object-identifier"
+                                    },
+                                    {
+                                        "name": "datetime",
+                                        "type": "date-time",
+                                        "context": 0
+                                    }
+                                ]
+                            },
+                            "context": 0
+                        },
+                        {
+                            "name": "status-flags",
+                            "type": "status-flags",
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 21
+            },
+            {
+                "name": "change-of-timer",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "new-state",
+                            "type": "timer-state",
+                            "context": 0
+                        },
+                        {
+                            "name": "status-flags",
+                            "type": "status-flags",
+                            "context": 1
+                        },
+                        {
+                            "name": "update-time",
+                            "type": "date-time",
+                            "context": 2
+                        },
+                        {
+                            "name": "last-state-change",
+                            "type": "timer-transition",
+                            "context": 3,
+                            "optional": true
+                        },
+                        {
+                            "name": "initial-timeout",
+                            "type": "unsigned",
+                            "context": 4,
+                            "optional": true
+                        },
+                        {
+                            "name": "expiration-time",
+                            "type": "date-time",
+                            "context": 5,
+                            "optional": true
+                        }
+                    ]
+                },
+                "context": 22
+            }
+        ]
+    }
+}

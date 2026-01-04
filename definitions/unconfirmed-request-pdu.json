@@ -1,0 +1,37 @@
+{
+    "alias": "BACnet-Unconfirmed-Request-PDU",
+    "name": "unconfirmed-request-pdu",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "pdu-type",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 0,
+                    "maximum": 15
+                },
+                "context": 0
+            },
+            {
+                "name": "reserved",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 0,
+                    "maximum": 15
+                },
+                "context": 1
+            },
+            {
+                "name": "service-choice",
+                "type": "unconfirmed-service-choice",
+                "context": 2
+            },
+            {
+                "name": "service-request",
+                "type": "unconfirmed-service-request",
+                "context": 3
+            }
+        ]
+    }
+}

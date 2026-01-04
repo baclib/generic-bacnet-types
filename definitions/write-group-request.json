@@ -1,0 +1,37 @@
+{
+    "alias": "WriteGroup-Request",
+    "name": "write-group-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "group-number",
+                "type": "unsigned-32",
+                "context": 0
+            },
+            {
+                "name": "write-priority",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 1,
+                    "maximum": 16
+                },
+                "context": 1
+            },
+            {
+                "name": "change-list",
+                "type": {
+                    "base": "group-channel-value",
+                    "series": true
+                },
+                "context": 2
+            },
+            {
+                "name": "inhibit-delay",
+                "type": "boolean",
+                "context": 3,
+                "optional": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "alias": "I-Am-Request",
+    "name": "i-am-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "i-am-device-identifier",
+                "type": "object-identifier"
+            },
+            {
+                "name": "max-apdu-length-accepted",
+                "type": "unsigned"
+            },
+            {
+                "name": "segmentation-supported",
+                "type": "segmentation"
+            },
+            {
+                "name": "vendor-id",
+                "type": "unsigned-16"
+            }
+        ]
+    }
+}

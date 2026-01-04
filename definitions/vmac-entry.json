@@ -1,0 +1,19 @@
+{
+    "alias": "BACnetVMACEntry",
+    "name": "vmac-entry",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "virtual-mac-address",
+                "type": "octet-string",
+                "context": 0
+            },
+            {
+                "name": "native-mac-address",
+                "type": "octet-string",
+                "context": 1
+            }
+        ]
+    }
+}

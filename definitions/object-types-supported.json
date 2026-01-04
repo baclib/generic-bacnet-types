@@ -2,345 +2,336 @@
     "alias": "BACnetObjectTypesSupported",
     "name": "object-types-supported",
     "type": {
-        "base": "bitstring",
+        "base": "bit-string",
         "bits": [
             {
-                "position": 0,
                 "name": "analog-input",
+                "position": 0,
                 "description": "Analog input object."
             },
             {
-                "position": 1,
                 "name": "analog-output",
+                "position": 1,
                 "description": "Analog output object."
             },
             {
-                "position": 2,
                 "name": "analog-value",
+                "position": 2,
                 "description": "Analog value object."
             },
             {
-                "position": 3,
                 "name": "binary-input",
+                "position": 3,
                 "description": "Binary input object."
             },
             {
-                "position": 4,
                 "name": "binary-output",
+                "position": 4,
                 "description": "Binary output object."
             },
             {
-                "position": 5,
                 "name": "binary-value",
+                "position": 5,
                 "description": "Binary value object."
             },
             {
-                "position": 6,
                 "name": "calendar",
+                "position": 6,
                 "description": "Calendar object."
             },
             {
-                "position": 7,
                 "name": "command",
+                "position": 7,
                 "description": "Command object."
             },
             {
-                "position": 8,
                 "name": "device",
+                "position": 8,
                 "description": "Device object."
             },
             {
-                "position": 9,
                 "name": "event-enrollment",
+                "position": 9,
                 "description": "Event enrollment object."
             },
             {
-                "position": 10,
                 "name": "file",
+                "position": 10,
                 "description": "File object."
             },
             {
-                "position": 11,
                 "name": "group",
+                "position": 11,
                 "description": "Group object."
             },
             {
-                "position": 12,
                 "name": "loop",
+                "position": 12,
                 "description": "Loop object."
             },
             {
-                "position": 13,
                 "name": "multi-state-input",
+                "position": 13,
                 "description": "Multi-state input object."
             },
             {
-                "position": 14,
                 "name": "multi-state-output",
+                "position": 14,
                 "description": "Multi-state output object."
             },
             {
-                "position": 15,
                 "name": "notification-class",
+                "position": 15,
                 "description": "Notification class object."
             },
             {
-                "position": 16,
                 "name": "program",
+                "position": 16,
                 "description": "Program object."
             },
             {
-                "position": 17,
                 "name": "schedule",
+                "position": 17,
                 "description": "Schedule object."
             },
             {
-                "position": 18,
                 "name": "averaging",
+                "position": 18,
                 "description": "Averaging object."
             },
             {
-                "position": 19,
                 "name": "multi-state-value",
+                "position": 19,
                 "description": "Multi-state value object."
             },
             {
-                "position": 20,
                 "name": "trend-log",
+                "position": 20,
                 "description": "Trend log object."
             },
             {
-                "position": 21,
                 "name": "life-safety-point",
+                "position": 21,
                 "description": "Life safety point object."
             },
             {
-                "position": 22,
                 "name": "life-safety-zone",
+                "position": 22,
                 "description": "Life safety zone object."
             },
             {
-                "position": 23,
                 "name": "accumulator",
+                "position": 23,
                 "description": "Accumulator object."
             },
             {
-                "position": 24,
                 "name": "pulse-converter",
+                "position": 24,
                 "description": "Pulse converter object."
             },
             {
-                "position": 25,
                 "name": "event-log",
+                "position": 25,
                 "description": "Event log object."
             },
             {
-                "position": 26,
                 "name": "global-group",
+                "position": 26,
                 "description": "Global group object."
             },
             {
-                "position": 27,
                 "name": "trend-log-multiple",
+                "position": 27,
                 "description": "Trend log multiple object."
             },
             {
-                "position": 28,
                 "name": "load-control",
+                "position": 28,
                 "description": "Load control object."
             },
             {
-                "position": 29,
                 "name": "structured-view",
+                "position": 29,
                 "description": "Structured view object."
             },
             {
-                "position": 30,
                 "name": "access-door",
+                "position": 30,
                 "description": "Access door object."
             },
             {
-                "position": 31,
                 "name": "timer",
+                "position": 31,
                 "description": "Timer object."
             },
             {
-                "position": 32,
                 "name": "access-credential",
+                "position": 32,
                 "description": "Access credential object."
             },
             {
-                "position": 33,
                 "name": "access-point",
+                "position": 33,
                 "description": "Access point object."
             },
             {
-                "position": 34,
                 "name": "access-rights",
+                "position": 34,
                 "description": "Access rights object."
             },
             {
-                "position": 35,
                 "name": "access-user",
+                "position": 35,
                 "description": "Access user object."
             },
             {
-                "position": 36,
                 "name": "access-zone",
+                "position": 36,
                 "description": "Access zone object."
             },
             {
-                "position": 37,
                 "name": "credential-data-input",
+                "position": 37,
                 "description": "Credential data input object."
             },
             {
-                "position": 39,
                 "name": "bitstring-value",
+                "position": 39,
                 "description": "Bitstring value object."
             },
             {
-                "position": 40,
                 "name": "characterstring-value",
+                "position": 40,
                 "description": "Characterstring value object."
             },
             {
-                "position": 41,
                 "name": "datepattern-value",
+                "position": 41,
                 "description": "Datepattern value object."
             },
             {
-                "position": 42,
                 "name": "date-value",
+                "position": 42,
                 "description": "Date value object."
             },
             {
-                "position": 43,
                 "name": "datetimepattern-value",
+                "position": 43,
                 "description": "Datetimepattern value object."
             },
             {
-                "position": 44,
                 "name": "datetime-value",
+                "position": 44,
                 "description": "Datetime value object."
             },
             {
-                "position": 45,
                 "name": "integer-value",
+                "position": 45,
                 "description": "Integer value object."
             },
             {
-                "position": 46,
                 "name": "large-analog-value",
+                "position": 46,
                 "description": "Large analog value object."
             },
             {
-                "position": 47,
                 "name": "octetstring-value",
+                "position": 47,
                 "description": "Octetstring value object."
             },
             {
-                "position": 48,
                 "name": "positive-integer-value",
+                "position": 48,
                 "description": "Positive integer value object."
             },
             {
-                "position": 49,
                 "name": "timepattern-value",
+                "position": 49,
                 "description": "Timepattern value object."
             },
             {
-                "position": 50,
                 "name": "time-value",
+                "position": 50,
                 "description": "Time value object."
             },
             {
-                "position": 51,
                 "name": "notification-forwarder",
+                "position": 51,
                 "description": "Notification forwarder object."
             },
             {
-                "position": 52,
                 "name": "alert-enrollment",
+                "position": 52,
                 "description": "Alert enrollment object."
             },
             {
-                "position": 53,
                 "name": "channel",
+                "position": 53,
                 "description": "Channel object."
             },
             {
-                "position": 54,
                 "name": "lighting-output",
+                "position": 54,
                 "description": "Lighting output object."
             },
             {
-                "position": 55,
                 "name": "binary-lighting-output",
+                "position": 55,
                 "description": "Binary lighting output object."
             },
             {
-                "position": 56,
                 "name": "network-port",
+                "position": 56,
                 "description": "Network port object."
             },
             {
-                "position": 57,
                 "name": "elevator-group",
+                "position": 57,
                 "description": "Elevator group object."
             },
             {
-                "position": 58,
                 "name": "escalator",
+                "position": 58,
                 "description": "Escalator object."
             },
             {
-                "position": 59,
                 "name": "lift",
+                "position": 59,
                 "description": "Lift object."
             },
             {
-                "position": 60,
                 "name": "staging",
+                "position": 60,
                 "description": "Staging object."
             },
             {
-                "position": 61,
                 "name": "audit-log",
+                "position": 61,
                 "description": "Audit log object."
             },
             {
-                "position": 62,
                 "name": "audit-reporter",
+                "position": 62,
                 "description": "Audit reporter object."
             },
             {
-                "position": 63,
                 "name": "color",
+                "position": 63,
                 "description": "Color object."
             },
             {
-                "position": 64,
                 "name": "color-temperature",
+                "position": 64,
                 "description": "Color temperature object."
             }
         ],
-        "extensible": false,
-        "range": {
-            "minimum": 17,
-            "maximum": 1023
+        "length": {
+            "minimum": 18,
+            "maximum": 1024
         },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 127
-            },
-            {
-                "custom": true,
-                "minimum": 128,
-                "maximum": 1023
-            }
-        ]
+        "proprietary": {
+            "from": 128,
+            "to": 1023
+        }
     }
 }

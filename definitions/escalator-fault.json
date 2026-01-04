@@ -5,29 +5,14 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "comb-plate-fault",
-                "constant": 8,
-                "description": "Comb plate fault detected."
-            },
-            {
                 "name": "controller-fault",
                 "constant": 0,
                 "description": "Controller fault detected."
             },
             {
-                "name": "controller-supply-fault",
-                "constant": 6,
-                "description": "Controller supply fault detected."
-            },
-            {
                 "name": "drive-and-motor-fault",
                 "constant": 1,
                 "description": "Drive and motor fault detected."
-            },
-            {
-                "name": "drive-temperature-exceeded",
-                "constant": 7,
-                "description": "Drive temperature exceeded."
             },
             {
                 "name": "mechanical-component-fault",
@@ -48,24 +33,27 @@
                 "name": "safety-device-fault",
                 "constant": 5,
                 "description": "Safety device fault detected."
-            }
-        ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 1023
             },
             {
-                "custom": true,
-                "minimum": 1024,
-                "maximum": 65535
+                "name": "controller-supply-fault",
+                "constant": 6,
+                "description": "Controller supply fault detected."
+            },
+            {
+                "name": "drive-temperature-exceeded",
+                "constant": 7,
+                "description": "Drive temperature exceeded."
+            },
+            {
+                "name": "comb-plate-fault",
+                "constant": 8,
+                "description": "Comb plate fault detected."
             }
-        ]
+        ],
+        "maximum": 65535,
+        "proprietary": {
+            "from": 1024,
+            "to": 65535
+        }
     }
 }

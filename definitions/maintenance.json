@@ -5,16 +5,6 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "need-service-inoperative",
-                "constant": 3,
-                "description": "Service needed while inoperative."
-            },
-            {
-                "name": "need-service-operational",
-                "constant": 2,
-                "description": "Service needed while operational."
-            },
-            {
                 "name": "none",
                 "constant": 0,
                 "description": "No maintenance required."
@@ -23,24 +13,22 @@
                 "name": "periodic-test",
                 "constant": 1,
                 "description": "Periodic test required."
-            }
-        ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 255
             },
             {
-                "custom": true,
-                "minimum": 256,
-                "maximum": 65535
+                "name": "need-service-operational",
+                "constant": 2,
+                "description": "Service needed while operational."
+            },
+            {
+                "name": "need-service-inoperative",
+                "constant": 3,
+                "description": "Service needed while inoperative."
             }
-        ]
+        ],
+        "maximum": 65535,
+        "proprietary": {
+            "from": 256,
+            "to": 65535
+        }
     }
 }

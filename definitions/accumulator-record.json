@@ -1,0 +1,53 @@
+{
+    "alias": "BACnetAccumulatorRecord",
+    "name": "accumulator-record",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "timestamp",
+                "type": "date-time",
+                "context": 0
+            },
+            {
+                "name": "present-value",
+                "type": "unsigned",
+                "context": 1
+            },
+            {
+                "name": "accumulated-value",
+                "type": "unsigned",
+                "context": 2
+            },
+            {
+                "name": "accumulator-status",
+                "type": {
+                    "base": "enumerated",
+                    "values": [
+                        {
+                            "name": "normal",
+                            "constant": 0
+                        },
+                        {
+                            "name": "starting",
+                            "constant": 1
+                        },
+                        {
+                            "name": "recovered",
+                            "constant": 2
+                        },
+                        {
+                            "name": "abnormal",
+                            "constant": 3
+                        },
+                        {
+                            "name": "failed",
+                            "constant": 4
+                        }
+                    ]
+                },
+                "context": 3
+            }
+        ]
+    }
+}

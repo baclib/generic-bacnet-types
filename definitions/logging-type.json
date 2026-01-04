@@ -5,14 +5,14 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "cov",
-                "constant": 1,
-                "description": "Change of value (COV) logging type."
-            },
-            {
                 "name": "polled",
                 "constant": 0,
                 "description": "Polled logging type."
+            },
+            {
+                "name": "cov",
+                "constant": 1,
+                "description": "Change of value (COV) logging type."
             },
             {
                 "name": "triggered",
@@ -20,22 +20,10 @@
                 "description": "Triggered logging type."
             }
         ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 255
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 63
-            },
-            {
-                "custom": true,
-                "minimum": 64,
-                "maximum": 255
-            }
-        ]
+        "maximum": 255,
+        "proprietary": {
+            "from": 64,
+            "to": 255
+        }
     }
 }

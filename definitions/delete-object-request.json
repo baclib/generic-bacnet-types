@@ -1,0 +1,13 @@
+{
+    "alias": "DeleteObject-Request",
+    "name": "delete-object-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "object-identifier",
+                "type": "object-identifier"
+            }
+        ]
+    }
+}

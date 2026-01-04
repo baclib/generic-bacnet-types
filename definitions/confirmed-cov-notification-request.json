@@ -1,0 +1,37 @@
+{
+    "alias": "ConfirmedCOVNotification-Request",
+    "name": "confirmed-cov-notification-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "subscriber-process-identifier",
+                "type": "unsigned-32",
+                "context": 0
+            },
+            {
+                "name": "initiating-device-identifier",
+                "type": "object-identifier",
+                "context": 1
+            },
+            {
+                "name": "monitored-object-identifier",
+                "type": "object-identifier",
+                "context": 2
+            },
+            {
+                "name": "time-remaining",
+                "type": "unsigned",
+                "context": 3
+            },
+            {
+                "name": "list-of-values",
+                "type": {
+                    "base": "property-value",
+                    "series": true
+                },
+                "context": 4
+            }
+        ]
+    }
+}

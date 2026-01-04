@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetAddressBinding",
+    "name": "address-binding",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "device-identifier",
+                "type": "object-identifier"
+            },
+            {
+                "name": "device-address",
+                "type": "address"
+            }
+        ]
+    }
+}

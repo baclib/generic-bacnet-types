@@ -5,6 +5,81 @@
         "base": "enumerated",
         "values": [
             {
+                "name": "off",
+                "constant": 0,
+                "description": "Life safety mode is off."
+            },
+            {
+                "name": "on",
+                "constant": 1,
+                "description": "Life safety mode is on."
+            },
+            {
+                "name": "test",
+                "constant": 2,
+                "description": "Test mode."
+            },
+            {
+                "name": "manned",
+                "constant": 3,
+                "description": "Manned mode."
+            },
+            {
+                "name": "unmanned",
+                "constant": 4,
+                "description": "Unmanned mode."
+            },
+            {
+                "name": "armed",
+                "constant": 5,
+                "description": "Armed mode."
+            },
+            {
+                "name": "disarmed",
+                "constant": 6,
+                "description": "Disarmed mode."
+            },
+            {
+                "name": "prearmed",
+                "constant": 7,
+                "description": "Prearmed mode."
+            },
+            {
+                "name": "slow",
+                "constant": 8,
+                "description": "Slow mode."
+            },
+            {
+                "name": "fast",
+                "constant": 9,
+                "description": "Fast mode."
+            },
+            {
+                "name": "disconnected",
+                "constant": 10,
+                "description": "Disconnected mode."
+            },
+            {
+                "name": "enabled",
+                "constant": 11,
+                "description": "Enabled mode."
+            },
+            {
+                "name": "disabled",
+                "constant": 12,
+                "description": "Disabled mode."
+            },
+            {
+                "name": "automatic-release-disabled",
+                "constant": 13,
+                "description": "Automatic release disabled."
+            },
+            {
+                "name": "default",
+                "constant": 14,
+                "description": "Default mode."
+            },
+            {
                 "name": "activated-oeo-alarm",
                 "constant": 15,
                 "description": "Activated OEO alarm."
@@ -25,102 +100,15 @@
                 "description": "Activated OEO unavailable."
             },
             {
-                "name": "armed",
-                "constant": 5,
-                "description": "Armed mode."
-            },
-            {
-                "name": "automatic-release-disabled",
-                "constant": 13,
-                "description": "Automatic release disabled."
-            },
-            {
                 "name": "deactivated",
                 "constant": 19,
                 "description": "Deactivated mode."
-            },
-            {
-                "name": "default",
-                "constant": 14,
-                "description": "Default mode."
-            },
-            {
-                "name": "disabled",
-                "constant": 12,
-                "description": "Disabled mode."
-            },
-            {
-                "name": "disarmed",
-                "constant": 6,
-                "description": "Disarmed mode."
-            },
-            {
-                "name": "disconnected",
-                "constant": 10,
-                "description": "Disconnected mode."
-            },
-            {
-                "name": "enabled",
-                "constant": 11,
-                "description": "Enabled mode."
-            },
-            {
-                "name": "fast",
-                "constant": 9,
-                "description": "Fast mode."
-            },
-            {
-                "name": "manned",
-                "constant": 3,
-                "description": "Manned mode."
-            },
-            {
-                "name": "off",
-                "constant": 0,
-                "description": "Life safety mode is off."
-            },
-            {
-                "name": "on",
-                "constant": 1,
-                "description": "Life safety mode is on."
-            },
-            {
-                "name": "prearmed",
-                "constant": 7,
-                "description": "Prearmed mode."
-            },
-            {
-                "name": "slow",
-                "constant": 8,
-                "description": "Slow mode."
-            },
-            {
-                "name": "test",
-                "constant": 2,
-                "description": "Test mode."
-            },
-            {
-                "name": "unmanned",
-                "constant": 4,
-                "description": "Unmanned mode."
             }
         ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 255
-            },
-            {
-                "custom": true,
-                "minimum": 256,
-                "maximum": 65535
-            }
-        ]
+        "maximum": 65535,
+        "proprietary": {
+            "from": 256,
+            "to": 65535
+        }
     }
 }

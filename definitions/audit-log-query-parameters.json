@@ -1,0 +1,105 @@
+{
+    "alias": "BACnetAuditLogQueryParameters",
+    "name": "audit-log-query-parameters",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "by-target",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "target-device-identifier",
+                            "type": "object-identifier",
+                            "context": 0
+                        },
+                        {
+                            "name": "target-device-address",
+                            "type": "address",
+                            "context": 1,
+                            "optional": true
+                        },
+                        {
+                            "name": "target-object-identifier",
+                            "type": "object-identifier",
+                            "context": 2,
+                            "optional": true
+                        },
+                        {
+                            "name": "target-property-identifier",
+                            "type": "property-identifier",
+                            "context": 3,
+                            "optional": true
+                        },
+                        {
+                            "name": "target-array-index",
+                            "type": "unsigned",
+                            "context": 4,
+                            "optional": true
+                        },
+                        {
+                            "name": "target-priority",
+                            "type": {
+                                "base": "unsigned",
+                                "minimum": 1,
+                                "maximum": 16
+                            },
+                            "context": 5,
+                            "optional": true
+                        },
+                        {
+                            "name": "operations",
+                            "type": "audit-operation-flags",
+                            "context": 6,
+                            "optional": true
+                        },
+                        {
+                            "name": "successful-actions-only",
+                            "type": "success-filter",
+                            "context": 7
+                        }
+                    ]
+                },
+                "context": 0
+            },
+            {
+                "name": "by-source",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "source-device-identifier",
+                            "type": "object-identifier",
+                            "context": 0
+                        },
+                        {
+                            "name": "source-device-address",
+                            "type": "address",
+                            "context": 1,
+                            "optional": true
+                        },
+                        {
+                            "name": "source-object-identifier",
+                            "type": "object-identifier",
+                            "context": 2,
+                            "optional": true
+                        },
+                        {
+                            "name": "operations",
+                            "type": "audit-operation-flags",
+                            "context": 3,
+                            "optional": true
+                        },
+                        {
+                            "name": "successful-actions-only",
+                            "type": "success-filter",
+                            "context": 4
+                        }
+                    ]
+                },
+                "context": 1
+            }
+        ]
+    }
+}

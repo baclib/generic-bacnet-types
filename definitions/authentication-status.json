@@ -5,16 +5,6 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "disabled",
-                "constant": 2,
-                "description": "Authentication is disabled."
-            },
-            {
-                "name": "in-progress",
-                "constant": 6,
-                "description": "Authentication is in progress."
-            },
-            {
                 "name": "not-ready",
                 "constant": 0,
                 "description": "Authentication is not ready."
@@ -25,9 +15,9 @@
                 "description": "Authentication is ready."
             },
             {
-                "name": "waiting-for-accompaniment",
-                "constant": 4,
-                "description": "Waiting for accompaniment."
+                "name": "disabled",
+                "constant": 2,
+                "description": "Authentication is disabled."
             },
             {
                 "name": "waiting-for-authentication-factor",
@@ -35,21 +25,19 @@
                 "description": "Waiting for authentication factor."
             },
             {
+                "name": "waiting-for-accompaniment",
+                "constant": 4,
+                "description": "Waiting for accompaniment."
+            },
+            {
                 "name": "waiting-for-verification",
                 "constant": 5,
                 "description": "Waiting for verification."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 6
-        },
-        "ranges": [
+            },
             {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 6
+                "name": "in-progress",
+                "constant": 6,
+                "description": "Authentication is in progress."
             }
         ]
     }

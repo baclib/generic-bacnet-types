@@ -5,9 +5,9 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "default-on",
-                "constant": 12,
-                "description": "Default on."
+                "name": "none",
+                "constant": 0,
+                "description": "No lighting operation."
             },
             {
                 "name": "fade-to",
@@ -15,34 +15,9 @@
                 "description": "Fade to a value."
             },
             {
-                "name": "none",
-                "constant": 0,
-                "description": "No lighting operation."
-            },
-            {
                 "name": "ramp-to",
                 "constant": 2,
                 "description": "Ramp to a value."
-            },
-            {
-                "name": "restore-on",
-                "constant": 11,
-                "description": "Restore on."
-            },
-            {
-                "name": "step-down",
-                "constant": 4,
-                "description": "Step down."
-            },
-            {
-                "name": "step-off",
-                "constant": 6,
-                "description": "Step off."
-            },
-            {
-                "name": "step-on",
-                "constant": 5,
-                "description": "Step on."
             },
             {
                 "name": "step-up",
@@ -50,19 +25,19 @@
                 "description": "Step up."
             },
             {
-                "name": "stop",
-                "constant": 10,
-                "description": "Stop operation."
+                "name": "step-down",
+                "constant": 4,
+                "description": "Step down."
             },
             {
-                "name": "toggle-default",
-                "constant": 14,
-                "description": "Toggle default."
+                "name": "step-on",
+                "constant": 5,
+                "description": "Step on."
             },
             {
-                "name": "toggle-restore",
-                "constant": 13,
-                "description": "Toggle restore."
+                "name": "step-off",
+                "constant": 6,
+                "description": "Step off."
             },
             {
                 "name": "warn",
@@ -78,24 +53,37 @@
                 "name": "warn-relinquish",
                 "constant": 9,
                 "description": "Warn relinquish."
-            }
-        ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 255
             },
             {
-                "custom": true,
-                "minimum": 256,
-                "maximum": 65535
+                "name": "stop",
+                "constant": 10,
+                "description": "Stop operation."
+            },
+            {
+                "name": "restore-on",
+                "constant": 11,
+                "description": "Restore on."
+            },
+            {
+                "name": "default-on",
+                "constant": 12,
+                "description": "Default on."
+            },
+            {
+                "name": "toggle-restore",
+                "constant": 13,
+                "description": "Toggle restore."
+            },
+            {
+                "name": "toggle-default",
+                "constant": 14,
+                "description": "Toggle default."
             }
-        ]
+        ],
+        "maximum": 65535,
+        "proprietary": {
+            "from": 256,
+            "to": 65535
+        }
     }
 }

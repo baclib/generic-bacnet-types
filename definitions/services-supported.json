@@ -2,255 +2,247 @@
     "alias": "BACnetServicesSupported",
     "name": "services-supported",
     "type": {
-        "base": "bitstring",
+        "base": "bit-string",
         "bits": [
             {
-                "position": 0,
                 "name": "acknowledge-alarm",
+                "position": 0,
                 "description": "Acknowledge alarm service."
             },
             {
-                "position": 1,
                 "name": "confirmed-cov-notification",
+                "position": 1,
                 "description": "Confirmed COV notification service."
             },
             {
-                "position": 2,
                 "name": "confirmed-event-notification",
+                "position": 2,
                 "description": "Confirmed event notification service."
             },
             {
-                "position": 3,
                 "name": "get-alarm-summary",
+                "position": 3,
                 "description": "Get alarm summary service."
             },
             {
-                "position": 4,
                 "name": "get-enrollment-summary",
+                "position": 4,
                 "description": "Get enrollment summary service."
             },
             {
-                "position": 5,
                 "name": "subscribe-cov",
+                "position": 5,
                 "description": "Subscribe COV service."
             },
             {
-                "position": 6,
                 "name": "atomic-read-file",
+                "position": 6,
                 "description": "Atomic read file service."
             },
             {
-                "position": 7,
                 "name": "atomic-write-file",
+                "position": 7,
                 "description": "Atomic write file service."
             },
             {
-                "position": 8,
                 "name": "add-list-element",
+                "position": 8,
                 "description": "Add list element service."
             },
             {
-                "position": 9,
                 "name": "remove-list-element",
+                "position": 9,
                 "description": "Remove list element service."
             },
             {
-                "position": 10,
                 "name": "create-object",
+                "position": 10,
                 "description": "Create object service."
             },
             {
-                "position": 11,
                 "name": "delete-object",
+                "position": 11,
                 "description": "Delete object service."
             },
             {
-                "position": 12,
                 "name": "read-property",
+                "position": 12,
                 "description": "Read property service."
             },
             {
-                "position": 14,
                 "name": "read-property-multiple",
+                "position": 14,
                 "description": "Read property multiple service."
             },
             {
-                "position": 15,
                 "name": "write-property",
+                "position": 15,
                 "description": "Write property service."
             },
             {
-                "position": 16,
                 "name": "write-property-multiple",
+                "position": 16,
                 "description": "Write property multiple service."
             },
             {
-                "position": 17,
                 "name": "device-communication-control",
+                "position": 17,
                 "description": "Device communication control service."
             },
             {
-                "position": 18,
                 "name": "confirmed-private-transfer",
+                "position": 18,
                 "description": "Confirmed private transfer service."
             },
             {
-                "position": 19,
                 "name": "confirmed-text-message",
+                "position": 19,
                 "description": "Confirmed text message service."
             },
             {
-                "position": 20,
                 "name": "reinitialize-device",
+                "position": 20,
                 "description": "Reinitialize device service."
             },
             {
-                "position": 21,
                 "name": "vt-open",
+                "position": 21,
                 "description": "VT open service."
             },
             {
-                "position": 22,
                 "name": "vt-close",
+                "position": 22,
                 "description": "VT close service."
             },
             {
-                "position": 23,
                 "name": "vt-data",
+                "position": 23,
                 "description": "VT data service."
             },
             {
-                "position": 26,
                 "name": "i-am",
+                "position": 26,
                 "description": "I-Am service."
             },
             {
-                "position": 27,
                 "name": "i-have",
+                "position": 27,
                 "description": "I-Have service."
             },
             {
-                "position": 28,
                 "name": "unconfirmed-cov-notification",
+                "position": 28,
                 "description": "Unconfirmed COV notification service."
             },
             {
-                "position": 29,
                 "name": "unconfirmed-event-notification",
+                "position": 29,
                 "description": "Unconfirmed event notification service."
             },
             {
-                "position": 30,
                 "name": "unconfirmed-private-transfer",
+                "position": 30,
                 "description": "Unconfirmed private transfer service."
             },
             {
-                "position": 31,
                 "name": "unconfirmed-text-message",
+                "position": 31,
                 "description": "Unconfirmed text message service."
             },
             {
-                "position": 32,
                 "name": "time-synchronization",
+                "position": 32,
                 "description": "Time synchronization service."
             },
             {
-                "position": 33,
                 "name": "who-has",
+                "position": 33,
                 "description": "Who-Has service."
             },
             {
-                "position": 34,
                 "name": "who-is",
+                "position": 34,
                 "description": "Who-Is service."
             },
             {
-                "position": 35,
                 "name": "read-range",
+                "position": 35,
                 "description": "Read range service."
             },
             {
-                "position": 36,
                 "name": "utc-time-synchronization",
+                "position": 36,
                 "description": "UTC time synchronization service."
             },
             {
-                "position": 37,
                 "name": "life-safety-operation",
+                "position": 37,
                 "description": "Life safety operation service."
             },
             {
-                "position": 38,
                 "name": "subscribe-cov-property",
+                "position": 38,
                 "description": "Subscribe COV property service."
             },
             {
-                "position": 39,
                 "name": "get-event-information",
+                "position": 39,
                 "description": "Get event information service."
             },
             {
-                "position": 40,
                 "name": "write-group",
+                "position": 40,
                 "description": "Write group service."
             },
             {
-                "position": 41,
                 "name": "subscribe-cov-property-multiple",
+                "position": 41,
                 "description": "Subscribe COV property multiple service."
             },
             {
-                "position": 42,
                 "name": "confirmed-cov-notification-multiple",
+                "position": 42,
                 "description": "Confirmed COV notification multiple service."
             },
             {
-                "position": 43,
                 "name": "unconfirmed-cov-notification-multiple",
+                "position": 43,
                 "description": "Unconfirmed COV notification multiple service."
             },
             {
-                "position": 44,
                 "name": "confirmed-audit-notification",
+                "position": 44,
                 "description": "Confirmed audit notification service."
             },
             {
-                "position": 45,
                 "name": "audit-log-query",
+                "position": 45,
                 "description": "Audit log query service."
             },
             {
-                "position": 46,
                 "name": "unconfirmed-audit-notification",
+                "position": 46,
                 "description": "Unconfirmed audit notification service."
             },
             {
-                "position": 47,
                 "name": "who-am-i",
+                "position": 47,
                 "description": "Who-Am-I service."
             },
             {
-                "position": 48,
                 "name": "you-are",
+                "position": 48,
                 "description": "You-Are service."
             },
             {
-                "position": 49,
                 "name": "auth-request",
+                "position": 49,
                 "description": "Auth request service."
             }
         ],
-        "extensible": false,
-        "range": {
-            "minimum": 34,
-            "maximum": 511
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 511
-            }
-        ]
+        "length": {
+            "minimum": 35,
+            "maximum": 512
+        }
     }
 }

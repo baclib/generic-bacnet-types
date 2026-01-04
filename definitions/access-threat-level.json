@@ -3,9 +3,7 @@
     "name": "access-threat-level",
     "type": {
         "base": "unsigned",
-        "range": {
-            "minimum": 0,
-            "maximum": 100
-        }
+        "minimum": 0,
+        "maximum": 100
     }
 }

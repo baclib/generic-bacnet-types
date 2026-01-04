@@ -2,39 +2,27 @@
     "alias": "BACnetStatusFlags",
     "name": "status-flags",
     "type": {
-        "base": "bitstring",
+        "base": "bit-string",
         "bits": [
             {
-                "position": 0,
                 "name": "in-alarm",
+                "position": 0,
                 "description": "Object is in alarm."
             },
             {
-                "position": 1,
                 "name": "fault",
+                "position": 1,
                 "description": "Object is in fault condition."
             },
             {
-                "position": 2,
                 "name": "overridden",
+                "position": 2,
                 "description": "Object is overridden."
             },
             {
-                "position": 3,
                 "name": "out-of-service",
+                "position": 3,
                 "description": "Object is out of service."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 3,
-            "maximum": 3
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 3,
-                "maximum": 3
             }
         ]
     }

@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetAuthenticationClient",
+    "name": "authentication-client",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "authenticated",
+                "type": "boolean"
+            },
+            {
+                "name": "device",
+                "type": "unsigned-32"
+            }
+        ]
+    }
+}

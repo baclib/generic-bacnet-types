@@ -1,0 +1,112 @@
+{
+    "alias": "BACnetAuditNotification",
+    "name": "audit-notification",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "source-timestamp",
+                "type": "time-stamp",
+                "context": 0,
+                "optional": true
+            },
+            {
+                "name": "target-timestamp",
+                "type": "time-stamp",
+                "context": 1,
+                "optional": true
+            },
+            {
+                "name": "source-device",
+                "type": "recipient",
+                "context": 2
+            },
+            {
+                "name": "source-object",
+                "type": "object-identifier",
+                "context": 3,
+                "optional": true
+            },
+            {
+                "name": "operation",
+                "type": "audit-operation",
+                "context": 4
+            },
+            {
+                "name": "source-comment",
+                "type": "character-string",
+                "context": 5,
+                "optional": true
+            },
+            {
+                "name": "target-comment",
+                "type": "character-string",
+                "context": 6,
+                "optional": true
+            },
+            {
+                "name": "invoke-id",
+                "type": "unsigned-8",
+                "context": 7,
+                "optional": true
+            },
+            {
+                "name": "source-user-id",
+                "type": "unsigned-16",
+                "context": 8,
+                "optional": true
+            },
+            {
+                "name": "source-user-role",
+                "type": "unsigned-8",
+                "context": 9,
+                "optional": true
+            },
+            {
+                "name": "target-device",
+                "type": "recipient",
+                "context": 10
+            },
+            {
+                "name": "target-object",
+                "type": "object-identifier",
+                "context": 11,
+                "optional": true
+            },
+            {
+                "name": "target-property",
+                "type": "property-reference",
+                "context": 12,
+                "optional": true
+            },
+            {
+                "name": "target-priority",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 1,
+                    "maximum": 16
+                },
+                "context": 13,
+                "optional": true
+            },
+            {
+                "name": "target-value",
+                "type": "any",
+                "context": 14,
+                "optional": true
+            },
+            {
+                "name": "current-value",
+                "type": "any",
+                "context": 15,
+                "optional": true
+            },
+            {
+                "name": "result",
+                "type": "error",
+                "context": 16,
+                "optional": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "alias": "BACnetLogData",
+    "name": "log-data",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "log-status",
+                "type": "log-status",
+                "context": 0
+            },
+            {
+                "name": "log-data",
+                "type": {
+                    "base": "choice",
+                    "options": [
+                        {
+                            "name": "boolean-value",
+                            "type": "boolean",
+                            "context": 0
+                        },
+                        {
+                            "name": "real-value",
+                            "type": "real",
+                            "context": 1
+                        },
+                        {
+                            "name": "enumerated-value",
+                            "type": "enumerated",
+                            "context": 2
+                        },
+                        {
+                            "name": "unsigned-value",
+                            "type": "unsigned",
+                            "context": 3
+                        },
+                        {
+                            "name": "integer-value",
+                            "type": "integer",
+                            "context": 4
+                        },
+                        {
+                            "name": "bitstring-value",
+                            "type": "bit-string",
+                            "context": 5
+                        },
+                        {
+                            "name": "null-value",
+                            "type": "null",
+                            "context": 6
+                        },
+                        {
+                            "name": "failure",
+                            "type": "error",
+                            "context": 7
+                        },
+                        {
+                            "name": "any-value",
+                            "type": "any",
+                            "context": 8
+                        }
+                    ]
+                },
+                "context": 1
+            },
+            {
+                "name": "time-change",
+                "type": "real",
+                "context": 2
+            }
+        ]
+    }
+}

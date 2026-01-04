@@ -1,0 +1,28 @@
+{
+    "alias": "BACnetAssignedLandingCalls",
+    "name": "assigned-landing-calls",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "landing-calls",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "floor-number",
+                            "type": "unsigned-8",
+                            "context": 0
+                        },
+                        {
+                            "name": "direction",
+                            "type": "lift-car-direction",
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 0
+            }
+        ]
+    }
+}

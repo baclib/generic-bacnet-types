@@ -1,0 +1,18 @@
+{
+    "alias": "BACnetOptionalAny",
+    "name": "optional-any",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "null",
+                "type": "null"
+            },
+            {
+                "name": "any",
+                "type": "any",
+                "context": 0
+            }
+        ]
+    }
+}

@@ -10,26 +10,14 @@
                 "description": "Door is secured."
             },
             {
-                "name": "unknown",
-                "constant": 2,
-                "description": "Door secured status is unknown."
-            },
-            {
                 "name": "unsecured",
                 "constant": 1,
                 "description": "Door is unsecured."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 2
-        },
-        "ranges": [
+            },
             {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 2
+                "name": "unknown",
+                "constant": 2,
+                "description": "Door secured status is unknown."
             }
         ]
     }

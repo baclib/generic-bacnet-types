@@ -1,0 +1,5 @@
+{
+    "alias": "CreateObject-ACK",
+    "name": "create-object-ack",
+    "type": "object-identifier"
+}

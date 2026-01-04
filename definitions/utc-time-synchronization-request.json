@@ -1,0 +1,13 @@
+{
+    "alias": "UTCTimeSynchronization-Request",
+    "name": "utc-time-synchronization-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "time",
+                "type": "date-time"
+            }
+        ]
+    }
+}

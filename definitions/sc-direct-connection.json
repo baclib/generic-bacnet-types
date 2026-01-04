@@ -1,0 +1,65 @@
+{
+    "alias": "BACnetSCDirectConnection",
+    "name": "sc-direct-connection",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "uri",
+                "type": "character-string",
+                "context": 0
+            },
+            {
+                "name": "connection-state",
+                "type": "sc-connection-state",
+                "context": 1
+            },
+            {
+                "name": "connect-timestamp",
+                "type": "date-time",
+                "context": 2
+            },
+            {
+                "name": "disconnect-timestamp",
+                "type": "date-time",
+                "context": 3
+            },
+            {
+                "name": "peer-address",
+                "type": "host-n-port",
+                "context": 4,
+                "optional": true
+            },
+            {
+                "name": "peer-vmac",
+                "type": {
+                    "base": "octet-string",
+                    "length": 6
+                },
+                "context": 5,
+                "optional": true
+            },
+            {
+                "name": "peer-uuid",
+                "type": {
+                    "base": "octet-string",
+                    "length": 16
+                },
+                "context": 6,
+                "optional": true
+            },
+            {
+                "name": "error",
+                "type": "error",
+                "context": 7,
+                "optional": true
+            },
+            {
+                "name": "error-details",
+                "type": "character-string",
+                "context": 8,
+                "optional": true
+            }
+        ]
+    }
+}

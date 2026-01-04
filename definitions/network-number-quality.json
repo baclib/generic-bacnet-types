@@ -5,9 +5,9 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "configured",
-                "constant": 3,
-                "description": "Network number is configured."
+                "name": "unknown",
+                "constant": 0,
+                "description": "Network number quality is unknown."
             },
             {
                 "name": "learned",
@@ -20,21 +20,9 @@
                 "description": "Network number is learned and configured."
             },
             {
-                "name": "unknown",
-                "constant": 0,
-                "description": "Network number quality is unknown."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 3
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 3
+                "name": "configured",
+                "constant": 3,
+                "description": "Network number is configured."
             }
         ]
     }

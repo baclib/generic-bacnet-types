@@ -5,6 +5,21 @@
         "base": "enumerated",
         "values": [
             {
+                "name": "unknown",
+                "constant": 0,
+                "description": "Escalator mode is unknown."
+            },
+            {
+                "name": "stop",
+                "constant": 1,
+                "description": "Escalator is stopped."
+            },
+            {
+                "name": "up",
+                "constant": 2,
+                "description": "Escalator is moving up."
+            },
+            {
                 "name": "down",
                 "constant": 3,
                 "description": "Escalator is moving down."
@@ -18,39 +33,12 @@
                 "name": "out-of-service",
                 "constant": 5,
                 "description": "Escalator is out of service."
-            },
-            {
-                "name": "stop",
-                "constant": 1,
-                "description": "Escalator is stopped."
-            },
-            {
-                "name": "unknown",
-                "constant": 0,
-                "description": "Escalator mode is unknown."
-            },
-            {
-                "name": "up",
-                "constant": 2,
-                "description": "Escalator is moving up."
             }
         ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 1023
-            },
-            {
-                "custom": true,
-                "minimum": 1024,
-                "maximum": 65535
-            }
-        ]
+        "maximum": 65535,
+        "proprietary": {
+            "from": 1024,
+            "to": 65535
+        }
     }
 }

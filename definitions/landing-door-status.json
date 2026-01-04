@@ -1,0 +1,28 @@
+{
+    "alias": "BACnetLandingDoorStatus",
+    "name": "landing-door-status",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "landing-doors",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "floor-number",
+                            "type": "unsigned-8",
+                            "context": 0
+                        },
+                        {
+                            "name": "door-status",
+                            "type": "door-status",
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 0
+            }
+        ]
+    }
+}

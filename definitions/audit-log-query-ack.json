@@ -1,0 +1,27 @@
+{
+    "alias": "AuditLogQuery-ACK",
+    "name": "audit-log-query-ack",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "audit-log",
+                "type": "object-identifier",
+                "context": 0
+            },
+            {
+                "name": "records",
+                "type": {
+                    "base": "audit-log-record-result",
+                    "series": true
+                },
+                "context": 1
+            },
+            {
+                "name": "no-more-items",
+                "type": "boolean",
+                "context": 2
+            }
+        ]
+    }
+}

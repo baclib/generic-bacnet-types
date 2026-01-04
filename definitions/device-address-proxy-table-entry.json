@@ -1,0 +1,24 @@
+{
+    "alias": "BACnetDeviceAddressProxyTableEntry",
+    "name": "device-address-proxy-table-entry",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "address",
+                "type": "address",
+                "context": 0
+            },
+            {
+                "name": "i-am",
+                "type": "i-am-request",
+                "context": 1
+            },
+            {
+                "name": "last-i-am-time",
+                "type": "date-time",
+                "context": 2
+            }
+        ]
+    }
+}

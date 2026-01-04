@@ -10,9 +10,14 @@
                 "description": "Door is closed."
             },
             {
-                "name": "closing",
-                "constant": 6,
-                "description": "Door is closing."
+                "name": "opened",
+                "constant": 1,
+                "description": "Door is opened."
+            },
+            {
+                "name": "unknown",
+                "constant": 2,
+                "description": "Door status is unknown."
             },
             {
                 "name": "door-fault",
@@ -20,9 +25,9 @@
                 "description": "Door fault detected."
             },
             {
-                "name": "limited-opened",
-                "constant": 9,
-                "description": "Door is limited opened."
+                "name": "unused",
+                "constant": 4,
+                "description": "Door status is unused."
             },
             {
                 "name": "none",
@@ -30,9 +35,9 @@
                 "description": "No door status."
             },
             {
-                "name": "opened",
-                "constant": 1,
-                "description": "Door is opened."
+                "name": "closing",
+                "constant": 6,
+                "description": "Door is closing."
             },
             {
                 "name": "opening",
@@ -45,32 +50,15 @@
                 "description": "Door is safety locked."
             },
             {
-                "name": "unknown",
-                "constant": 2,
-                "description": "Door status is unknown."
-            },
-            {
-                "name": "unused",
-                "constant": 4,
-                "description": "Door status is unused."
+                "name": "limited-opened",
+                "constant": 9,
+                "description": "Door is limited opened."
             }
         ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 1023
-            },
-            {
-                "custom": true,
-                "minimum": 1024,
-                "maximum": 65535
-            }
-        ]
+        "maximum": 65535,
+        "proprietary": {
+            "from": 1024,
+            "to": 65535
+        }
     }
 }

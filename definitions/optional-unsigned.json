@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetOptionalUnsigned",
+    "name": "optional-unsigned",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "null",
+                "type": "null"
+            },
+            {
+                "name": "unsigned",
+                "type": "unsigned"
+            }
+        ]
+    }
+}

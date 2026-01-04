@@ -1,0 +1,76 @@
+{
+    "alias": "BACnetChannelValue",
+    "name": "channel-value",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "null",
+                "type": "null"
+            },
+            {
+                "name": "real",
+                "type": "real"
+            },
+            {
+                "name": "enumerated",
+                "type": "enumerated"
+            },
+            {
+                "name": "unsigned",
+                "type": "unsigned"
+            },
+            {
+                "name": "boolean",
+                "type": "boolean"
+            },
+            {
+                "name": "integer",
+                "type": "integer"
+            },
+            {
+                "name": "double",
+                "type": "double"
+            },
+            {
+                "name": "time",
+                "type": "time"
+            },
+            {
+                "name": "characterstring",
+                "type": "character-string"
+            },
+            {
+                "name": "octetstring",
+                "type": "octet-string"
+            },
+            {
+                "name": "bitstring",
+                "type": "bit-string"
+            },
+            {
+                "name": "date",
+                "type": "date"
+            },
+            {
+                "name": "objectidentifier",
+                "type": "object-identifier"
+            },
+            {
+                "name": "lighting-command",
+                "type": "lighting-command",
+                "context": 0
+            },
+            {
+                "name": "xycolor",
+                "type": "xy-color",
+                "context": 1
+            },
+            {
+                "name": "color-command",
+                "type": "color-command",
+                "context": 2
+            }
+        ]
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "alias": "ConfirmedCOVNotificationMultiple-Request",
+    "name": "confirmed-cov-notification-multiple-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "subscriber-process-identifier",
+                "type": "unsigned-32",
+                "context": 0
+            },
+            {
+                "name": "initiating-device-identifier",
+                "type": "object-identifier",
+                "context": 1
+            },
+            {
+                "name": "time-remaining",
+                "type": "unsigned",
+                "context": 2
+            },
+            {
+                "name": "timestamp",
+                "type": "date-time",
+                "context": 3,
+                "optional": true
+            },
+            {
+                "name": "list-of-cov-notifications",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "monitored-object-identifier",
+                            "type": "object-identifier",
+                            "context": 0
+                        },
+                        {
+                            "name": "list-of-values",
+                            "type": {
+                                "base": "sequence",
+                                "fields": [
+                                    {
+                                        "name": "property-identifier",
+                                        "type": "property-identifier",
+                                        "context": 0
+                                    },
+                                    {
+                                        "name": "property-array-index",
+                                        "type": "unsigned",
+                                        "context": 1,
+                                        "optional": true
+                                    },
+                                    {
+                                        "name": "property-value",
+                                        "type": "any",
+                                        "context": 2
+                                    },
+                                    {
+                                        "name": "time-of-change",
+                                        "type": "time",
+                                        "context": 3,
+                                        "optional": true
+                                    }
+                                ]
+                            },
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 4
+            }
+        ]
+    }
+}

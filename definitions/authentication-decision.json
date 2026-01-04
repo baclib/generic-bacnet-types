@@ -19,18 +19,6 @@
                 "constant": 2,
                 "description": "Authentication denied due to non-relay."
             }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 2
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 2
-            }
         ]
     }
 }

@@ -1,0 +1,35 @@
+{
+    "alias": "BACnetAuthenticationEvent",
+    "name": "authentication-event",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "timestamp",
+                "type": "date-time",
+                "context": 0
+            },
+            {
+                "name": "peer",
+                "type": "authentication-peer",
+                "context": 1
+            },
+            {
+                "name": "client",
+                "type": "authentication-client",
+                "context": 2
+            },
+            {
+                "name": "decision",
+                "type": "authentication-decision",
+                "context": 3
+            },
+            {
+                "name": "decision-details",
+                "type": "character-string",
+                "context": 4,
+                "optional": true
+            }
+        ]
+    }
+}

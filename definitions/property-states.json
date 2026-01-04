@@ -1,0 +1,318 @@
+{
+    "alias": "BACnetPropertyStates",
+    "name": "property-states",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "boolean-value",
+                "type": "boolean",
+                "context": 0
+            },
+            {
+                "name": "binary-value",
+                "type": "binary-pv",
+                "context": 1
+            },
+            {
+                "name": "event-type",
+                "type": "event-type",
+                "context": 2
+            },
+            {
+                "name": "polarity",
+                "type": "polarity",
+                "context": 3
+            },
+            {
+                "name": "program-change",
+                "type": "program-request",
+                "context": 4
+            },
+            {
+                "name": "program-state",
+                "type": "program-state",
+                "context": 5
+            },
+            {
+                "name": "reason-for-halt",
+                "type": "program-error",
+                "context": 6
+            },
+            {
+                "name": "reliability",
+                "type": "reliability",
+                "context": 7
+            },
+            {
+                "name": "state",
+                "type": "event-state",
+                "context": 8
+            },
+            {
+                "name": "system-status",
+                "type": "device-status",
+                "context": 9
+            },
+            {
+                "name": "units",
+                "type": "engineering-units",
+                "context": 10
+            },
+            {
+                "name": "unsigned-value",
+                "type": "unsigned",
+                "context": 11
+            },
+            {
+                "name": "life-safety-mode",
+                "type": "life-safety-mode",
+                "context": 12
+            },
+            {
+                "name": "life-safety-state",
+                "type": "life-safety-state",
+                "context": 13
+            },
+            {
+                "name": "restart-reason",
+                "type": "restart-reason",
+                "context": 14
+            },
+            {
+                "name": "door-alarm-state",
+                "type": "door-alarm-state",
+                "context": 15
+            },
+            {
+                "name": "action",
+                "type": "action",
+                "context": 16
+            },
+            {
+                "name": "door-secured-status",
+                "type": "door-secured-status",
+                "context": 17
+            },
+            {
+                "name": "door-status",
+                "type": "door-status",
+                "context": 18
+            },
+            {
+                "name": "door-value",
+                "type": "door-value",
+                "context": 19
+            },
+            {
+                "name": "file-access-method",
+                "type": "file-access-method",
+                "context": 20
+            },
+            {
+                "name": "lock-status",
+                "type": "lock-status",
+                "context": 21
+            },
+            {
+                "name": "life-safety-operation",
+                "type": "life-safety-operation",
+                "context": 22
+            },
+            {
+                "name": "maintenance",
+                "type": "maintenance",
+                "context": 23
+            },
+            {
+                "name": "node-type",
+                "type": "node-type",
+                "context": 24
+            },
+            {
+                "name": "notify-type",
+                "type": "notify-type",
+                "context": 25
+            },
+            {
+                "name": "shed-state",
+                "type": "shed-state",
+                "context": 27
+            },
+            {
+                "name": "silenced-state",
+                "type": "silenced-state",
+                "context": 28
+            },
+            {
+                "name": "access-event",
+                "type": "access-event",
+                "context": 30
+            },
+            {
+                "name": "zone-occupancy-state",
+                "type": "access-zone-occupancy-state",
+                "context": 31
+            },
+            {
+                "name": "access-credential-disable-reason",
+                "type": "access-credential-disable-reason",
+                "context": 32
+            },
+            {
+                "name": "access-credential-disable",
+                "type": "access-credential-disable",
+                "context": 33
+            },
+            {
+                "name": "authentication-status",
+                "type": "authentication-status",
+                "context": 34
+            },
+            {
+                "name": "backup-state",
+                "type": "backup-state",
+                "context": 36
+            },
+            {
+                "name": "write-status",
+                "type": "write-status",
+                "context": 37
+            },
+            {
+                "name": "lighting-in-progress",
+                "type": "lighting-in-progress",
+                "context": 38
+            },
+            {
+                "name": "lighting-operation",
+                "type": "lighting-operation",
+                "context": 39
+            },
+            {
+                "name": "lighting-transition",
+                "type": "lighting-transition",
+                "context": 40
+            },
+            {
+                "name": "integer-value",
+                "type": "integer",
+                "context": 41
+            },
+            {
+                "name": "binary-lighting-value",
+                "type": "binary-lighting-pv",
+                "context": 42
+            },
+            {
+                "name": "timer-state",
+                "type": "timer-state",
+                "context": 43
+            },
+            {
+                "name": "timer-transition",
+                "type": "timer-transition",
+                "context": 44
+            },
+            {
+                "name": "bacnet-ip-mode",
+                "type": "ip-mode",
+                "context": 45
+            },
+            {
+                "name": "network-port-command",
+                "type": "network-port-command",
+                "context": 46
+            },
+            {
+                "name": "network-type",
+                "type": "network-type",
+                "context": 47
+            },
+            {
+                "name": "network-number-quality",
+                "type": "network-number-quality",
+                "context": 48
+            },
+            {
+                "name": "escalator-operation-direction",
+                "type": "escalator-operation-direction",
+                "context": 49
+            },
+            {
+                "name": "escalator-fault",
+                "type": "escalator-fault",
+                "context": 50
+            },
+            {
+                "name": "escalator-mode",
+                "type": "escalator-mode",
+                "context": 51
+            },
+            {
+                "name": "lift-car-direction",
+                "type": "lift-car-direction",
+                "context": 52
+            },
+            {
+                "name": "lift-car-door-command",
+                "type": "lift-car-door-command",
+                "context": 53
+            },
+            {
+                "name": "lift-car-drive-status",
+                "type": "lift-car-drive-status",
+                "context": 54
+            },
+            {
+                "name": "lift-car-mode",
+                "type": "lift-car-mode",
+                "context": 55
+            },
+            {
+                "name": "lift-group-mode",
+                "type": "lift-group-mode",
+                "context": 56
+            },
+            {
+                "name": "lift-fault",
+                "type": "lift-fault",
+                "context": 57
+            },
+            {
+                "name": "protocol-level",
+                "type": "protocol-level",
+                "context": 58
+            },
+            {
+                "name": "audit-level",
+                "type": "audit-level",
+                "context": 59
+            },
+            {
+                "name": "audit-operation",
+                "type": "audit-operation",
+                "context": 60
+            },
+            {
+                "name": "extended-value",
+                "type": "unsigned-32",
+                "context": 63
+            },
+            {
+                "name": "sc-connection-state",
+                "type": "sc-connection-state",
+                "context": 258
+            },
+            {
+                "name": "sc-hub-connector-state",
+                "type": "sc-hub-connector-state",
+                "context": 259
+            }
+        ],
+        "proprietary": {
+            "from": 1,
+            "to": 0
+        }
+    }
+}

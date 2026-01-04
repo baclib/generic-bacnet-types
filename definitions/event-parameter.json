@@ -1,0 +1,582 @@
+{
+    "alias": "BACnetEventParameter",
+    "name": "event-parameter",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "change-of-bitstring",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "time-delay",
+                            "type": "unsigned",
+                            "context": 0
+                        },
+                        {
+                            "name": "bitmask",
+                            "type": "bit-string",
+                            "context": 1
+                        },
+                        {
+                            "name": "list-of-bitstring-values",
+                            "type": {
+                                "base": "bit-string",
+                                "series": true
+                            },
+                            "context": 2
+                        }
+                    ]
+                },
+                "context": 0
+            },
+            {
+                "name": "change-of-state",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "time-delay",
+                            "type": "unsigned",
+                            "context": 0
+                        },
+                        {
+                            "name": "list-of-values",
+                            "type": {
+                                "base": "property-states",
+                                "series": true
+                            },
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 1
+            },
+            {
+                "name": "change-of-value",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "time-delay",
+                            "type": "unsigned",
+                            "context": 0
+                        },
+                        {
+                            "name": "cov-criteria",
+                            "type": {
+                                "base": "choice",
+                                "options": [
+                                    {
+                                        "name": "bitmask",
+                                        "type": "bit-string",
+                                        "context": 0
+                                    },
+                                    {
+                                        "name": "referenced-property-increment",
+                                        "type": "real",
+                                        "context": 1
+                                    }
+                                ]
+                            },
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 2
+            },
+            {
+                "name": "command-failure",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "time-delay",
+                            "type": "unsigned",
+                            "context": 0
+                        },
+                        {
+                            "name": "feedback-property-reference",
+                            "type": "device-object-property-reference",
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 3
+            },
+            {
+                "name": "floating-limit",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "time-delay",
+                            "type": "unsigned",
+                            "context": 0
+                        },
+                        {
+                            "name": "setpoint-reference",
+                            "type": "device-object-property-reference",
+                            "context": 1
+                        },
+                        {
+                            "name": "low-diff-limit",
+                            "type": "real",
+                            "context": 2
+                        },
+                        {
+                            "name": "high-diff-limit",
+                            "type": "real",
+                            "context": 3
+                        },
+                        {
+                            "name": "deadband",
+                            "type": "real",
+                            "context": 4
+                        }
+                    ]
+                },
+                "context": 4
+            },
+            {
+                "name": "out-of-range",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "time-delay",
+                            "type": "unsigned",
+                            "context": 0
+                        },
+                        {
+                            "name": "low-limit",
+                            "type": "real",
+                            "context": 1
+                        },
+                        {
+                            "name": "high-limit",
+                            "type": "real",
+                            "context": 2
+                        },
+                        {
+                            "name": "deadband",
+                            "type": "real",
+                            "context": 3
+                        }
+                    ]
+                },
+                "context": 5
+            },
+            {
+                "name": "change-of-life-safety",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "time-delay",
+                            "type": "unsigned",
+                            "context": 0
+                        },
+                        {
+                            "name": "list-of-life-safety-alarm-values",
+                            "type": {
+                                "base": "life-safety-state",
+                                "series": true
+                            },
+                            "context": 1
+                        },
+                        {
+                            "name": "list-of-alarm-values",
+                            "type": {
+                                "base": "life-safety-state",
+                                "series": true
+                            },
+                            "context": 2
+                        },
+                        {
+                            "name": "mode-property-reference",
+                            "type": "device-object-property-reference",
+                            "context": 3
+                        }
+                    ]
+                },
+                "context": 8
+            },
+            {
+                "name": "extended",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "vendor-id",
+                            "type": "unsigned-16",
+                            "context": 0
+                        },
+                        {
+                            "name": "extended-event-type",
+                            "type": "unsigned",
+                            "context": 1
+                        },
+                        {
+                            "name": "parameters",
+                            "type": {
+                                "base": "choice",
+                                "options": [
+                                    {
+                                        "name": "null",
+                                        "type": "null"
+                                    },
+                                    {
+                                        "name": "real",
+                                        "type": "real"
+                                    },
+                                    {
+                                        "name": "unsigned",
+                                        "type": "unsigned"
+                                    },
+                                    {
+                                        "name": "boolean",
+                                        "type": "boolean"
+                                    },
+                                    {
+                                        "name": "integer",
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "name": "double",
+                                        "type": "double"
+                                    },
+                                    {
+                                        "name": "octetstring",
+                                        "type": "octet-string"
+                                    },
+                                    {
+                                        "name": "characterstring",
+                                        "type": "character-string"
+                                    },
+                                    {
+                                        "name": "bitstring",
+                                        "type": "bit-string"
+                                    },
+                                    {
+                                        "name": "enumerated",
+                                        "type": "enumerated"
+                                    },
+                                    {
+                                        "name": "date",
+                                        "type": "date-pattern"
+                                    },
+                                    {
+                                        "name": "time",
+                                        "type": "time-pattern"
+                                    },
+                                    {
+                                        "name": "objectidentifier",
+                                        "type": "object-identifier"
+                                    },
+                                    {
+                                        "name": "reference",
+                                        "type": "device-object-property-reference",
+                                        "context": 0
+                                    }
+                                ]
+                            },
+                            "context": 2
+                        }
+                    ]
+                },
+                "context": 9
+            },
+            {
+                "name": "buffer-ready",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "notification-threshold",
+                            "type": "unsigned",
+                            "context": 0
+                        },
+                        {
+                            "name": "previous-notification-count",
+                            "type": "unsigned-32",
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 10
+            },
+            {
+                "name": "unsigned-range",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "time-delay",
+                            "type": "unsigned",
+                            "context": 0
+                        },
+                        {
+                            "name": "low-limit",
+                            "type": "unsigned",
+                            "context": 1
+                        },
+                        {
+                            "name": "high-limit",
+                            "type": "unsigned",
+                            "context": 2
+                        }
+                    ]
+                },
+                "context": 11
+            },
+            {
+                "name": "access-event",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "list-of-access-events",
+                            "type": {
+                                "base": "access-event",
+                                "series": true
+                            },
+                            "context": 0
+                        },
+                        {
+                            "name": "access-event-time-reference",
+                            "type": "device-object-property-reference",
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 13
+            },
+            {
+                "name": "double-out-of-range",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "time-delay",
+                            "type": "unsigned",
+                            "context": 0
+                        },
+                        {
+                            "name": "low-limit",
+                            "type": "double",
+                            "context": 1
+                        },
+                        {
+                            "name": "high-limit",
+                            "type": "double",
+                            "context": 2
+                        },
+                        {
+                            "name": "deadband",
+                            "type": "double",
+                            "context": 3
+                        }
+                    ]
+                },
+                "context": 14
+            },
+            {
+                "name": "signed-out-of-range",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "time-delay",
+                            "type": "unsigned",
+                            "context": 0
+                        },
+                        {
+                            "name": "low-limit",
+                            "type": "integer",
+                            "context": 1
+                        },
+                        {
+                            "name": "high-limit",
+                            "type": "integer",
+                            "context": 2
+                        },
+                        {
+                            "name": "deadband",
+                            "type": "unsigned",
+                            "context": 3
+                        }
+                    ]
+                },
+                "context": 15
+            },
+            {
+                "name": "unsigned-out-of-range",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "time-delay",
+                            "type": "unsigned",
+                            "context": 0
+                        },
+                        {
+                            "name": "low-limit",
+                            "type": "unsigned",
+                            "context": 1
+                        },
+                        {
+                            "name": "high-limit",
+                            "type": "unsigned",
+                            "context": 2
+                        },
+                        {
+                            "name": "deadband",
+                            "type": "unsigned",
+                            "context": 3
+                        }
+                    ]
+                },
+                "context": 16
+            },
+            {
+                "name": "change-of-characterstring",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "time-delay",
+                            "type": "unsigned",
+                            "context": 0
+                        },
+                        {
+                            "name": "list-of-alarm-values",
+                            "type": {
+                                "base": "character-string",
+                                "series": true
+                            },
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 17
+            },
+            {
+                "name": "change-of-status-flags",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "time-delay",
+                            "type": "unsigned",
+                            "context": 0
+                        },
+                        {
+                            "name": "selected-flags",
+                            "type": "status-flags",
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 18
+            },
+            {
+                "name": "none",
+                "type": "null",
+                "context": 20
+            },
+            {
+                "name": "change-of-discrete-value",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "new-value",
+                            "type": {
+                                "base": "choice",
+                                "options": [
+                                    {
+                                        "name": "boolean",
+                                        "type": "boolean"
+                                    },
+                                    {
+                                        "name": "unsigned",
+                                        "type": "unsigned"
+                                    },
+                                    {
+                                        "name": "integer",
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "name": "enumerated",
+                                        "type": "enumerated"
+                                    },
+                                    {
+                                        "name": "characterstring",
+                                        "type": "character-string"
+                                    },
+                                    {
+                                        "name": "octetstring",
+                                        "type": "octet-string"
+                                    },
+                                    {
+                                        "name": "datepattern",
+                                        "type": "date"
+                                    },
+                                    {
+                                        "name": "timepattern",
+                                        "type": "time"
+                                    },
+                                    {
+                                        "name": "objectidentifier",
+                                        "type": "object-identifier"
+                                    },
+                                    {
+                                        "name": "datetime",
+                                        "type": "date-time",
+                                        "context": 0
+                                    }
+                                ]
+                            },
+                            "context": 0
+                        },
+                        {
+                            "name": "status-flags",
+                            "type": "status-flags",
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 21
+            },
+            {
+                "name": "change-of-timer",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "time-delay",
+                            "type": "unsigned",
+                            "context": 0
+                        },
+                        {
+                            "name": "alarm-values",
+                            "type": {
+                                "base": "timer-state",
+                                "series": true
+                            },
+                            "context": 1
+                        },
+                        {
+                            "name": "update-time-reference",
+                            "type": "device-object-property-reference",
+                            "context": 2
+                        }
+                    ]
+                },
+                "context": 22
+            }
+        ]
+    }
+}

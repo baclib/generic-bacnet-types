@@ -1,0 +1,29 @@
+{
+    "alias": "BACnetGroupChannelValue",
+    "name": "group-channel-value",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "channel",
+                "type": "unsigned-16",
+                "context": 0
+            },
+            {
+                "name": "value",
+                "type": "channel-value",
+                "context": 1
+            },
+            {
+                "name": "overriding-priority",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 1,
+                    "maximum": 16
+                },
+                "context": 2,
+                "optional": true
+            }
+        ]
+    }
+}

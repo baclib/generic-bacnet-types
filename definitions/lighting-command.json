@@ -1,0 +1,64 @@
+{
+    "alias": "BACnetLightingCommand",
+    "name": "lighting-command",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "operation",
+                "type": "lighting-operation",
+                "context": 0
+            },
+            {
+                "name": "target-level",
+                "type": {
+                    "base": "real",
+                    "minimum": 0,
+                    "maximum": 100
+                },
+                "context": 1,
+                "optional": true
+            },
+            {
+                "name": "ramp-rate",
+                "type": {
+                    "base": "real",
+                    "minimum": 0.1,
+                    "maximum": 100
+                },
+                "context": 2,
+                "optional": true
+            },
+            {
+                "name": "step-increment",
+                "type": {
+                    "base": "real",
+                    "minimum": 0.1,
+                    "maximum": 100
+                },
+                "context": 3,
+                "optional": true
+            },
+            {
+                "name": "fade-time",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 100,
+                    "maximum": 86400000
+                },
+                "context": 4,
+                "optional": true
+            },
+            {
+                "name": "priority",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 1,
+                    "maximum": 16
+                },
+                "context": 5,
+                "optional": true
+            }
+        ]
+    }
+}

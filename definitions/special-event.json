@@ -1,5 +1,5 @@
 {
-    "alias": "BAClibSpecialEvent",
+    "alias": "BACnetSpecialEvent",
     "name": "special-event",
     "type": {
         "base": "sequence",
@@ -16,25 +16,28 @@
                         },
                         {
                             "name": "calendar-reference",
-                            "type": "objectid",
+                            "type": "object-identifier",
                             "context": 1
                         }
                     ]
                 }
             },
             {
-                "alias": "list-of-time-values",
-                "name": "time-values",
-                "context": 2,
+                "name": "list-of-time-values",
                 "type": {
                     "base": "time-value",
                     "series": true
-                }
+                },
+                "context": 2
             },
             {
                 "name": "event-priority",
-                "context": 3,
-                "type": "command-priority"
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 1,
+                    "maximum": 16
+                },
+                "context": 3
             }
         ]
     }

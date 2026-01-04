@@ -1,0 +1,28 @@
+{
+    "alias": "BACnetTimeStamp",
+    "name": "time-stamp",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "time",
+                "type": "time",
+                "context": 0
+            },
+            {
+                "name": "sequence-number",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 0,
+                    "maximum": 65535
+                },
+                "context": 1
+            },
+            {
+                "name": "datetime",
+                "type": "date-time",
+                "context": 2
+            }
+        ]
+    }
+}

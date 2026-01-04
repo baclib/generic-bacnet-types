@@ -1,0 +1,42 @@
+{
+    "alias": "BACnetAuthorizationEvent",
+    "name": "authorization-event",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "timestamp",
+                "type": "date-time",
+                "context": 0
+            },
+            {
+                "name": "address",
+                "type": "address",
+                "context": 1
+            },
+            {
+                "name": "client",
+                "type": "authentication-client",
+                "context": 2,
+                "optional": true
+            },
+            {
+                "name": "token",
+                "type": "access-token",
+                "context": 3,
+                "optional": true
+            },
+            {
+                "name": "decision",
+                "type": "authorization-decision",
+                "context": 4
+            },
+            {
+                "name": "decision-details",
+                "type": "character-string",
+                "context": 5,
+                "optional": true
+            }
+        ]
+    }
+}

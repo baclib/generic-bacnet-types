@@ -1,0 +1,19 @@
+{
+    "alias": "BACnetAssignedAccessRights",
+    "name": "assigned-access-rights",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "assigned-access-rights",
+                "type": "device-object-reference",
+                "context": 0
+            },
+            {
+                "name": "enable",
+                "type": "boolean",
+                "context": 1
+            }
+        ]
+    }
+}

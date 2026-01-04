@@ -1,0 +1,62 @@
+{
+    "alias": "AtomicReadFile-ACK",
+    "name": "atomic-read-file-ack",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "end-of-file",
+                "type": "boolean"
+            },
+            {
+                "name": "access-method",
+                "type": {
+                    "base": "choice",
+                    "options": [
+                        {
+                            "name": "stream-access",
+                            "type": {
+                                "base": "sequence",
+                                "fields": [
+                                    {
+                                        "name": "file-start-position",
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "name": "file-data",
+                                        "type": "octet-string"
+                                    }
+                                ]
+                            },
+                            "context": 0
+                        },
+                        {
+                            "name": "record-access",
+                            "type": {
+                                "base": "sequence",
+                                "fields": [
+                                    {
+                                        "name": "file-start-record",
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "name": "returned-record-count",
+                                        "type": "unsigned"
+                                    },
+                                    {
+                                        "name": "file-record-data",
+                                        "type": {
+                                            "base": "octet-string",
+                                            "series": true
+                                        }
+                                    }
+                                ]
+                            },
+                            "context": 1
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

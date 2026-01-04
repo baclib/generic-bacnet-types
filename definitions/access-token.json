@@ -1,0 +1,64 @@
+{
+    "alias": "BACnetAccessToken",
+    "name": "access-token",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "issuer",
+                "type": "unsigned-32",
+                "context": 0
+            },
+            {
+                "name": "issued",
+                "type": "date-time",
+                "context": 1
+            },
+            {
+                "name": "audience",
+                "type": {
+                    "base": "integer-32",
+                    "series": true
+                },
+                "context": 2
+            },
+            {
+                "name": "not-before",
+                "type": "date-time",
+                "context": 3,
+                "optional": true
+            },
+            {
+                "name": "not-after",
+                "type": "date-time",
+                "context": 4,
+                "optional": true
+            },
+            {
+                "name": "client",
+                "type": "unsigned-32",
+                "context": 5
+            },
+            {
+                "name": "constraint",
+                "type": "authorization-constraint",
+                "context": 6
+            },
+            {
+                "name": "scope",
+                "type": "authorization-scope",
+                "context": 7
+            },
+            {
+                "name": "key-id",
+                "type": "unsigned-8",
+                "context": 8
+            },
+            {
+                "name": "signature",
+                "type": "octet-string",
+                "context": 9
+            }
+        ]
+    }
+}

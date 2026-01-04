@@ -1,0 +1,38 @@
+{
+    "alias": "BACnetLandingCallStatus",
+    "name": "landing-call-status",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "floor-number",
+                "type": "unsigned-8",
+                "context": 0
+            },
+            {
+                "name": "command",
+                "type": {
+                    "base": "choice",
+                    "options": [
+                        {
+                            "name": "direction",
+                            "type": "lift-car-direction",
+                            "context": 1
+                        },
+                        {
+                            "name": "destination",
+                            "type": "unsigned-8",
+                            "context": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "floor-text",
+                "type": "character-string",
+                "context": 3,
+                "optional": true
+            }
+        ]
+    }
+}

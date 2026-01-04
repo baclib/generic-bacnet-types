@@ -1,72 +1,96 @@
 {
-    "alias": "BACnetGetEnrollmentSummaryRequest",
+    "alias": "GetEnrollmentSummary-Request",
     "name": "get-enrollment-summary-request",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "acknowledgment-filter",
-                "context": 0,
                 "type": {
                     "base": "enumerated",
                     "values": [
-                        { "name": "all", "constant": 0 },
-                        { "name": "acked", "constant": 1 },
-                        { "name": "not-acked", "constant": 2 }
+                        {
+                            "name": "all",
+                            "constant": 0
+                        },
+                        {
+                            "name": "acked",
+                            "constant": 1
+                        },
+                        {
+                            "name": "not-acked",
+                            "constant": 2
+                        }
                     ]
-                }
+                },
+                "context": 0
             },
             {
                 "name": "enrollment-filter",
-                "context": 1,
                 "type": "recipient-process",
+                "context": 1,
                 "optional": true
             },
             {
                 "name": "event-state-filter",
-                "context": 2,
                 "type": {
                     "base": "enumerated",
                     "values": [
-                        { "name": "offnormal", "constant": 0 },
-                        { "name": "fault", "constant": 1 },
-                        { "name": "normal", "constant": 2 },
-                        { "name": "all", "constant": 3 },
-                        { "name": "active", "constant": 4 }
+                        {
+                            "name": "offnormal",
+                            "constant": 0
+                        },
+                        {
+                            "name": "fault",
+                            "constant": 1
+                        },
+                        {
+                            "name": "normal",
+                            "constant": 2
+                        },
+                        {
+                            "name": "all",
+                            "constant": 3
+                        },
+                        {
+                            "name": "active",
+                            "constant": 4
+                        }
                     ]
                 },
+                "context": 2,
                 "optional": true
             },
             {
                 "name": "event-type-filter",
-                "context": 3,
                 "type": "event-type",
+                "context": 3,
                 "optional": true
             },
             {
                 "name": "priority-filter",
-                "context": 4,
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "min-priority",
-                            "context": 0,
-                            "type": "unsigned8"
+                            "type": "unsigned-8",
+                            "context": 0
                         },
                         {
                             "name": "max-priority",
-                            "context": 1,
-                            "type": "unsigned8"
+                            "type": "unsigned-8",
+                            "context": 1
                         }
                     ]
                 },
+                "context": 4,
                 "optional": true
             },
             {
                 "name": "notification-class-filter",
-                "context": 5,
                 "type": "unsigned",
+                "context": 5,
                 "optional": true
             }
         ]

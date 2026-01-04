@@ -1,0 +1,42 @@
+{
+    "alias": "SubscribeCOVProperty-Request",
+    "name": "subscribe-cov-property-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "subscriber-process-identifier",
+                "type": "unsigned-32",
+                "context": 0
+            },
+            {
+                "name": "monitored-object-identifier",
+                "type": "object-identifier",
+                "context": 1
+            },
+            {
+                "name": "issue-confirmed-notifications",
+                "type": "boolean",
+                "context": 2,
+                "optional": true
+            },
+            {
+                "name": "lifetime",
+                "type": "unsigned",
+                "context": 3,
+                "optional": true
+            },
+            {
+                "name": "monitored-property-identifier",
+                "type": "property-reference",
+                "context": 4
+            },
+            {
+                "name": "cov-increment",
+                "type": "real",
+                "context": 5,
+                "optional": true
+            }
+        ]
+    }
+}

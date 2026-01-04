@@ -1,0 +1,36 @@
+{
+    "alias": "BACnetSCHubConnection",
+    "name": "sc-hub-connection",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "connection-state",
+                "type": "sc-connection-state",
+                "context": 0
+            },
+            {
+                "name": "connect-timestamp",
+                "type": "date-time",
+                "context": 1
+            },
+            {
+                "name": "disconnect-timestamp",
+                "type": "date-time",
+                "context": 2
+            },
+            {
+                "name": "error",
+                "type": "error",
+                "context": 3,
+                "optional": true
+            },
+            {
+                "name": "error-details",
+                "type": "character-string",
+                "context": 4,
+                "optional": true
+            }
+        ]
+    }
+}

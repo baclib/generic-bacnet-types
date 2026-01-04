@@ -1,0 +1,35 @@
+{
+    "alias": "BACnetPropertyValue",
+    "name": "property-value",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "property-identifier",
+                "type": "property-identifier",
+                "context": 0
+            },
+            {
+                "name": "property-array-index",
+                "type": "unsigned",
+                "context": 1,
+                "optional": true
+            },
+            {
+                "name": "property-value",
+                "type": "any",
+                "context": 2
+            },
+            {
+                "name": "priority",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 1,
+                    "maximum": 16
+                },
+                "context": 3,
+                "optional": true
+            }
+        ]
+    }
+}

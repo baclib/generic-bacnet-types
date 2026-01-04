@@ -2,34 +2,22 @@
     "alias": "BACnetResultFlags",
     "name": "result-flags",
     "type": {
-        "base": "bitstring",
+        "base": "bit-string",
         "bits": [
             {
-                "position": 0,
                 "name": "first-item",
+                "position": 0,
                 "description": "This is the first item."
             },
             {
-                "position": 1,
                 "name": "last-item",
+                "position": 1,
                 "description": "This is the last item."
             },
             {
-                "position": 2,
                 "name": "more-items",
+                "position": 2,
                 "description": "There are more items available."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 2,
-            "maximum": 2
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 2,
-                "maximum": 2
             }
         ]
     }

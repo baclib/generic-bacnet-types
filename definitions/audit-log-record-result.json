@@ -1,0 +1,19 @@
+{
+    "alias": "BACnetAuditLogRecordResult",
+    "name": "audit-log-record-result",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "sequence-number",
+                "type": "unsigned-64",
+                "context": 0
+            },
+            {
+                "name": "log-record",
+                "type": "audit-log-record",
+                "context": 1
+            }
+        ]
+    }
+}

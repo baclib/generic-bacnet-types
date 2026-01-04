@@ -1,0 +1,37 @@
+{
+    "alias": "BACnetDestination",
+    "name": "destination",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "valid-days",
+                "type": "days-of-week"
+            },
+            {
+                "name": "from-time",
+                "type": "time"
+            },
+            {
+                "name": "to-time",
+                "type": "time"
+            },
+            {
+                "name": "recipient",
+                "type": "recipient"
+            },
+            {
+                "name": "process-identifier",
+                "type": "unsigned-32"
+            },
+            {
+                "name": "issue-confirmed-notifications",
+                "type": "boolean"
+            },
+            {
+                "name": "transitions",
+                "type": "event-transition-bits"
+            }
+        ]
+    }
+}

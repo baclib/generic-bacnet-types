@@ -1,0 +1,19 @@
+{
+    "alias": "AtomicWriteFile-ACK",
+    "name": "atomic-write-file-ack",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "file-start-position",
+                "type": "integer",
+                "context": 0
+            },
+            {
+                "name": "file-start-record",
+                "type": "integer",
+                "context": 1
+            }
+        ]
+    }
+}

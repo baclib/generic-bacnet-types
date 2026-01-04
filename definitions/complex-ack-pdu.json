@@ -1,0 +1,76 @@
+{
+    "alias": "BACnet-ComplexACK-PDU",
+    "name": "complex-ack-pdu",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "pdu-type",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 0,
+                    "maximum": 15
+                },
+                "context": 0
+            },
+            {
+                "name": "segmented-message",
+                "type": "boolean",
+                "context": 1
+            },
+            {
+                "name": "more-follows",
+                "type": "boolean",
+                "context": 2
+            },
+            {
+                "name": "reserved",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 0,
+                    "maximum": 3
+                },
+                "context": 3
+            },
+            {
+                "name": "invoke-id",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 0,
+                    "maximum": 255
+                },
+                "context": 4
+            },
+            {
+                "name": "sequence-number",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 0,
+                    "maximum": 255
+                },
+                "context": 5,
+                "optional": true
+            },
+            {
+                "name": "proposed-window-size",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 1,
+                    "maximum": 127
+                },
+                "context": 6,
+                "optional": true
+            },
+            {
+                "name": "service-ack-choice",
+                "type": "confirmed-service-choice",
+                "context": 7
+            },
+            {
+                "name": "service-ack",
+                "type": "confirmed-service-ack",
+                "context": 8
+            }
+        ]
+    }
+}

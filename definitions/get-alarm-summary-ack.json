@@ -1,0 +1,21 @@
+{
+    "alias": "GetAlarmSummary-ACK",
+    "name": "get-alarm-summary-ack",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "object-identifier",
+                "type": "object-identifier"
+            },
+            {
+                "name": "alarm-state",
+                "type": "event-state"
+            },
+            {
+                "name": "acknowledged-transitions",
+                "type": "event-transition-bits"
+            }
+        ]
+    }
+}

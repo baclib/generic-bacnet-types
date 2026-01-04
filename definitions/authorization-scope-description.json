@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetAuthorizationScopeDescription",
+    "name": "authorization-scope-description",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "name",
+                "type": "character-string"
+            },
+            {
+                "name": "description",
+                "type": "character-string"
+            }
+        ]
+    }
+}

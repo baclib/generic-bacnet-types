@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetOptionalPriorityFilter",
+    "name": "optional-priority-filter",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "null",
+                "type": "null"
+            },
+            {
+                "name": "filter",
+                "type": "priority-filter"
+            }
+        ]
+    }
+}

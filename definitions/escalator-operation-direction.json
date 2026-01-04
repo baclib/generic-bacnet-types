@@ -5,24 +5,14 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "down-rated-speed",
-                "constant": 4,
-                "description": "Escalator is moving down at rated speed."
-            },
-            {
-                "name": "down-reduced-speed",
-                "constant": 5,
-                "description": "Escalator is moving down at reduced speed."
+                "name": "unknown",
+                "constant": 0,
+                "description": "Escalator direction is unknown."
             },
             {
                 "name": "stopped",
                 "constant": 1,
                 "description": "Escalator is stopped."
-            },
-            {
-                "name": "unknown",
-                "constant": 0,
-                "description": "Escalator direction is unknown."
             },
             {
                 "name": "up-rated-speed",
@@ -33,24 +23,22 @@
                 "name": "up-reduced-speed",
                 "constant": 3,
                 "description": "Escalator is moving up at reduced speed."
-            }
-        ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 1023
             },
             {
-                "custom": true,
-                "minimum": 1024,
-                "maximum": 65535
+                "name": "down-rated-speed",
+                "constant": 4,
+                "description": "Escalator is moving down at rated speed."
+            },
+            {
+                "name": "down-reduced-speed",
+                "constant": 5,
+                "description": "Escalator is moving down at reduced speed."
             }
-        ]
+        ],
+        "maximum": 65535,
+        "proprietary": {
+            "from": 1024,
+            "to": 65535
+        }
     }
 }

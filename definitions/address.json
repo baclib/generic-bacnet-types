@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetAddress",
+    "name": "address",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "network-number",
+                "type": "unsigned-16"
+            },
+            {
+                "name": "mac-address",
+                "type": "octet-string"
+            }
+        ]
+    }
+}

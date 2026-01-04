@@ -1,0 +1,19 @@
+{
+    "alias": "BACnetHostNPort",
+    "name": "host-n-port",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "host",
+                "type": "host-address",
+                "context": 0
+            },
+            {
+                "name": "port",
+                "type": "unsigned-16",
+                "context": 1
+            }
+        ]
+    }
+}

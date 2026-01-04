@@ -1,0 +1,30 @@
+{
+    "alias": "LifeSafetyOperation-Request",
+    "name": "life-safety-operation-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "requesting-process-identifier",
+                "type": "unsigned-32",
+                "context": 0
+            },
+            {
+                "name": "requesting-source",
+                "type": "character-string",
+                "context": 1
+            },
+            {
+                "name": "request",
+                "type": "life-safety-operation",
+                "context": 2
+            },
+            {
+                "name": "object-identifier",
+                "type": "object-identifier",
+                "context": 3,
+                "optional": true
+            }
+        ]
+    }
+}

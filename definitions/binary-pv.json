@@ -5,26 +5,14 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "active",
-                "constant": 1,
-                "description": "The value is ACTIVE."
-            },
-            {
                 "name": "inactive",
                 "constant": 0,
                 "description": "The value is INACTIVE."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 1
-        },
-        "ranges": [
+            },
             {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 1
+                "name": "active",
+                "constant": 1,
+                "description": "The value is ACTIVE."
             }
         ]
     }

@@ -1,0 +1,19 @@
+{
+    "alias": "CreateObject-Error",
+    "name": "create-object-error",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "error-type",
+                "type": "error",
+                "context": 0
+            },
+            {
+                "name": "first-failed-element-number",
+                "type": "unsigned",
+                "context": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetOptionalDoorValue",
+    "name": "optional-door-value",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "null",
+                "type": "null"
+            },
+            {
+                "name": "door-value",
+                "type": "door-value"
+            }
+        ]
+    }
+}

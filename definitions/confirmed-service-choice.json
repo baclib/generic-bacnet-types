@@ -10,74 +10,14 @@
                 "description": "Acknowledge alarm service."
             },
             {
-                "name": "add-list-element",
-                "constant": 8,
-                "description": "Add list element service."
-            },
-            {
-                "name": "atomic-read-file",
-                "constant": 6,
-                "description": "Atomic read file service."
-            },
-            {
-                "name": "atomic-write-file",
-                "constant": 7,
-                "description": "Atomic write file service."
-            },
-            {
-                "name": "audit-log-query",
-                "constant": 33,
-                "description": "Audit log query service."
-            },
-            {
-                "name": "auth-request",
-                "constant": 34,
-                "description": "Authentication request service."
-            },
-            {
-                "name": "confirmed-audit-notification",
-                "constant": 32,
-                "description": "Confirmed audit notification service."
-            },
-            {
                 "name": "confirmed-cov-notification",
                 "constant": 1,
                 "description": "Confirmed COV notification service."
             },
             {
-                "name": "confirmed-cov-notification-multiple",
-                "constant": 31,
-                "description": "Confirmed COV notification multiple service."
-            },
-            {
                 "name": "confirmed-event-notification",
                 "constant": 2,
                 "description": "Confirmed event notification service."
-            },
-            {
-                "name": "confirmed-private-transfer",
-                "constant": 18,
-                "description": "Confirmed private transfer service."
-            },
-            {
-                "name": "confirmed-text-message",
-                "constant": 19,
-                "description": "Confirmed text message service."
-            },
-            {
-                "name": "create-object",
-                "constant": 10,
-                "description": "Create object service."
-            },
-            {
-                "name": "delete-object",
-                "constant": 11,
-                "description": "Delete object service."
-            },
-            {
-                "name": "device-communication-control",
-                "constant": 17,
-                "description": "Device communication control service."
             },
             {
                 "name": "get-alarm-summary",
@@ -90,14 +30,39 @@
                 "description": "Get enrollment summary service."
             },
             {
-                "name": "get-event-information",
-                "constant": 29,
-                "description": "Get event information service."
+                "name": "subscribe-cov",
+                "constant": 5,
+                "description": "Subscribe COV service."
             },
             {
-                "name": "life-safety-operation",
-                "constant": 27,
-                "description": "Life safety operation service."
+                "name": "atomic-read-file",
+                "constant": 6,
+                "description": "Atomic read file service."
+            },
+            {
+                "name": "atomic-write-file",
+                "constant": 7,
+                "description": "Atomic write file service."
+            },
+            {
+                "name": "add-list-element",
+                "constant": 8,
+                "description": "Add list element service."
+            },
+            {
+                "name": "remove-list-element",
+                "constant": 9,
+                "description": "Remove list element service."
+            },
+            {
+                "name": "create-object",
+                "constant": 10,
+                "description": "Create object service."
+            },
+            {
+                "name": "delete-object",
+                "constant": 11,
+                "description": "Delete object service."
             },
             {
                 "name": "read-property",
@@ -110,9 +75,29 @@
                 "description": "Read property multiple service."
             },
             {
-                "name": "read-range",
-                "constant": 26,
-                "description": "Read range service."
+                "name": "write-property",
+                "constant": 15,
+                "description": "Write property service."
+            },
+            {
+                "name": "write-property-multiple",
+                "constant": 16,
+                "description": "Write property multiple service."
+            },
+            {
+                "name": "device-communication-control",
+                "constant": 17,
+                "description": "Device communication control service."
+            },
+            {
+                "name": "confirmed-private-transfer",
+                "constant": 18,
+                "description": "Confirmed private transfer service."
+            },
+            {
+                "name": "confirmed-text-message",
+                "constant": 19,
+                "description": "Confirmed text message service."
             },
             {
                 "name": "reinitialize-device",
@@ -120,24 +105,9 @@
                 "description": "Reinitialize device service."
             },
             {
-                "name": "remove-list-element",
-                "constant": 9,
-                "description": "Remove list element service."
-            },
-            {
-                "name": "subscribe-cov",
-                "constant": 5,
-                "description": "Subscribe COV service."
-            },
-            {
-                "name": "subscribe-cov-property",
-                "constant": 28,
-                "description": "Subscribe COV property service."
-            },
-            {
-                "name": "subscribe-cov-property-multiple",
-                "constant": 30,
-                "description": "Subscribe COV property multiple service."
+                "name": "vt-open",
+                "constant": 21,
+                "description": "VT open service."
             },
             {
                 "name": "vt-close",
@@ -150,31 +120,49 @@
                 "description": "VT data service."
             },
             {
-                "name": "vt-open",
-                "constant": 21,
-                "description": "VT open service."
+                "name": "read-range",
+                "constant": 26,
+                "description": "Read range service."
             },
             {
-                "name": "write-property",
-                "constant": 15,
-                "description": "Write property service."
+                "name": "life-safety-operation",
+                "constant": 27,
+                "description": "Life safety operation service."
             },
             {
-                "name": "write-property-multiple",
-                "constant": 16,
-                "description": "Write property multiple service."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 34
-        },
-        "ranges": [
+                "name": "subscribe-cov-property",
+                "constant": 28,
+                "description": "Subscribe COV property service."
+            },
             {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 34
+                "name": "get-event-information",
+                "constant": 29,
+                "description": "Get event information service."
+            },
+            {
+                "name": "subscribe-cov-property-multiple",
+                "constant": 30,
+                "description": "Subscribe COV property multiple service."
+            },
+            {
+                "name": "confirmed-cov-notification-multiple",
+                "constant": 31,
+                "description": "Confirmed COV notification multiple service."
+            },
+            {
+                "name": "confirmed-audit-notification",
+                "constant": 32,
+                "description": "Confirmed audit notification service."
+            },
+            {
+                "name": "audit-log-query",
+                "constant": 33,
+                "description": "Audit log query service."
+            },
+            {
+                "name": "auth-request",
+                "constant": 34,
+                "description": "Authentication request service."
             }
         ]
     }

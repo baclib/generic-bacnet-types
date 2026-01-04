@@ -10,21 +10,6 @@
                 "description": "No operation."
             },
             {
-                "name": "reset",
-                "constant": 4,
-                "description": "Reset operation."
-            },
-            {
-                "name": "reset-alarm",
-                "constant": 5,
-                "description": "Reset alarm operation."
-            },
-            {
-                "name": "reset-fault",
-                "constant": 6,
-                "description": "Reset fault operation."
-            },
-            {
                 "name": "silence",
                 "constant": 1,
                 "description": "Silence operation."
@@ -38,6 +23,21 @@
                 "name": "silence-visual",
                 "constant": 3,
                 "description": "Silence visual operation."
+            },
+            {
+                "name": "reset",
+                "constant": 4,
+                "description": "Reset operation."
+            },
+            {
+                "name": "reset-alarm",
+                "constant": 5,
+                "description": "Reset alarm operation."
+            },
+            {
+                "name": "reset-fault",
+                "constant": 6,
+                "description": "Reset fault operation."
             },
             {
                 "name": "unsilence",
@@ -55,22 +55,10 @@
                 "description": "Unsilence visual operation."
             }
         ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 63
-            },
-            {
-                "custom": true,
-                "minimum": 64,
-                "maximum": 65535
-            }
-        ]
+        "maximum": 65535,
+        "proprietary": {
+            "from": 64,
+            "to": 65535
+        }
     }
 }

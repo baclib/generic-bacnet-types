@@ -1,0 +1,79 @@
+{
+    "alias": "BACnet-Confirmed-Service-ACK",
+    "name": "confirmed-service-ack",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "get-alarm-summary",
+                "type": "get-alarm-summary-ack",
+                "context": 3
+            },
+            {
+                "name": "get-enrollment-summary",
+                "type": "get-enrollment-summary-ack",
+                "context": 4
+            },
+            {
+                "name": "get-event-information",
+                "type": "get-event-information-ack",
+                "context": 29
+            },
+            {
+                "name": "atomic-read-file",
+                "type": "atomic-read-file-ack",
+                "context": 6
+            },
+            {
+                "name": "atomic-write-file",
+                "type": "atomic-write-file-ack",
+                "context": 7
+            },
+            {
+                "name": "create-object",
+                "type": "create-object-ack",
+                "context": 10
+            },
+            {
+                "name": "read-property",
+                "type": "read-property-ack",
+                "context": 12
+            },
+            {
+                "name": "read-property-multiple",
+                "type": "read-property-multiple-ack",
+                "context": 14
+            },
+            {
+                "name": "read-range",
+                "type": "read-range-ack",
+                "context": 26
+            },
+            {
+                "name": "audit-log-query",
+                "type": "audit-log-query-ack",
+                "context": 33
+            },
+            {
+                "name": "confirmed-private-transfer",
+                "type": "confirmed-private-transfer-ack",
+                "context": 18
+            },
+            {
+                "name": "auth-request",
+                "type": "auth-request-ack",
+                "context": 34
+            },
+            {
+                "name": "vt-open",
+                "type": "vt-open-ack",
+                "context": 21
+            },
+            {
+                "name": "vt-data",
+                "type": "vt-data-ack",
+                "context": 23
+            }
+        ]
+    }
+}

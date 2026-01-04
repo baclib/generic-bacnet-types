@@ -1,0 +1,21 @@
+{
+    "alias": "BACnetStageLimitValue",
+    "name": "stage-limit-value",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "limit",
+                "type": "real"
+            },
+            {
+                "name": "values",
+                "type": "bit-string"
+            },
+            {
+                "name": "deadband",
+                "type": "real"
+            }
+        ]
+    }
+}

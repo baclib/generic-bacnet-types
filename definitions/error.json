@@ -1,0 +1,914 @@
+{
+    "alias": "Error",
+    "name": "error",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "error-class",
+                "type": {
+                    "base": "enumerated",
+                    "values": [
+                        {
+                            "name": "device",
+                            "constant": 0
+                        },
+                        {
+                            "name": "object",
+                            "constant": 1
+                        },
+                        {
+                            "name": "property",
+                            "constant": 2
+                        },
+                        {
+                            "name": "resources",
+                            "constant": 3
+                        },
+                        {
+                            "name": "security",
+                            "constant": 4
+                        },
+                        {
+                            "name": "services",
+                            "constant": 5
+                        },
+                        {
+                            "name": "vt",
+                            "constant": 6
+                        },
+                        {
+                            "name": "communication",
+                            "constant": 7
+                        }
+                    ],
+                    "proprietary": {
+                        "from": 1,
+                        "to": 0
+                    }
+                }
+            },
+            {
+                "name": "error-code",
+                "type": {
+                    "base": "enumerated",
+                    "values": [
+                        {
+                            "name": "other",
+                            "constant": 0
+                        },
+                        {
+                            "name": "configuration-in-progress",
+                            "constant": 2
+                        },
+                        {
+                            "name": "device-busy",
+                            "constant": 3
+                        },
+                        {
+                            "name": "dynamic-creation-not-supported",
+                            "constant": 4
+                        },
+                        {
+                            "name": "file-access-denied",
+                            "constant": 5
+                        },
+                        {
+                            "name": "inconsistent-parameters",
+                            "constant": 7
+                        },
+                        {
+                            "name": "inconsistent-selection-criterion",
+                            "constant": 8
+                        },
+                        {
+                            "name": "invalid-data-type",
+                            "constant": 9
+                        },
+                        {
+                            "name": "invalid-file-access-method",
+                            "constant": 10
+                        },
+                        {
+                            "name": "invalid-file-start-position",
+                            "constant": 11
+                        },
+                        {
+                            "name": "invalid-parameter-data-type",
+                            "constant": 13
+                        },
+                        {
+                            "name": "invalid-timestamp",
+                            "constant": 14
+                        },
+                        {
+                            "name": "missing-required-parameter",
+                            "constant": 16
+                        },
+                        {
+                            "name": "no-objects-of-specified-type",
+                            "constant": 17
+                        },
+                        {
+                            "name": "no-space-for-object",
+                            "constant": 18
+                        },
+                        {
+                            "name": "no-space-to-add-list-element",
+                            "constant": 19
+                        },
+                        {
+                            "name": "no-space-to-write-property",
+                            "constant": 20
+                        },
+                        {
+                            "name": "no-vt-sessions-available",
+                            "constant": 21
+                        },
+                        {
+                            "name": "property-is-not-a-list",
+                            "constant": 22
+                        },
+                        {
+                            "name": "object-deletion-not-permitted",
+                            "constant": 23
+                        },
+                        {
+                            "name": "object-identifier-already-exists",
+                            "constant": 24
+                        },
+                        {
+                            "name": "operational-problem",
+                            "constant": 25
+                        },
+                        {
+                            "name": "password-failure",
+                            "constant": 26
+                        },
+                        {
+                            "name": "read-access-denied",
+                            "constant": 27
+                        },
+                        {
+                            "name": "service-request-denied",
+                            "constant": 29
+                        },
+                        {
+                            "name": "timeout",
+                            "constant": 30
+                        },
+                        {
+                            "name": "unknown-object",
+                            "constant": 31
+                        },
+                        {
+                            "name": "unknown-property",
+                            "constant": 32
+                        },
+                        {
+                            "name": "unknown-vt-class",
+                            "constant": 34
+                        },
+                        {
+                            "name": "unknown-vt-session",
+                            "constant": 35
+                        },
+                        {
+                            "name": "unsupported-object-type",
+                            "constant": 36
+                        },
+                        {
+                            "name": "value-out-of-range",
+                            "constant": 37
+                        },
+                        {
+                            "name": "vt-session-already-closed",
+                            "constant": 38
+                        },
+                        {
+                            "name": "vt-session-termination-failure",
+                            "constant": 39
+                        },
+                        {
+                            "name": "write-access-denied",
+                            "constant": 40
+                        },
+                        {
+                            "name": "character-set-not-supported",
+                            "constant": 41
+                        },
+                        {
+                            "name": "invalid-array-index",
+                            "constant": 42
+                        },
+                        {
+                            "name": "cov-subscription-failed",
+                            "constant": 43
+                        },
+                        {
+                            "name": "not-cov-property",
+                            "constant": 44
+                        },
+                        {
+                            "name": "optional-functionality-not-supported",
+                            "constant": 45
+                        },
+                        {
+                            "name": "invalid-configuration-data",
+                            "constant": 46
+                        },
+                        {
+                            "name": "datatype-not-supported",
+                            "constant": 47
+                        },
+                        {
+                            "name": "duplicate-name",
+                            "constant": 48
+                        },
+                        {
+                            "name": "duplicate-object-id",
+                            "constant": 49
+                        },
+                        {
+                            "name": "property-is-not-an-array",
+                            "constant": 50
+                        },
+                        {
+                            "name": "abort-buffer-overflow",
+                            "constant": 51
+                        },
+                        {
+                            "name": "abort-invalid-apdu-in-this-state",
+                            "constant": 52
+                        },
+                        {
+                            "name": "abort-preempted-by-higher-priority-task",
+                            "constant": 53
+                        },
+                        {
+                            "name": "abort-segmentation-not-supported",
+                            "constant": 54
+                        },
+                        {
+                            "name": "abort-proprietary",
+                            "constant": 55
+                        },
+                        {
+                            "name": "abort-other",
+                            "constant": 56
+                        },
+                        {
+                            "name": "invalid-tag",
+                            "constant": 57
+                        },
+                        {
+                            "name": "network-down",
+                            "constant": 58
+                        },
+                        {
+                            "name": "reject-buffer-overflow",
+                            "constant": 59
+                        },
+                        {
+                            "name": "reject-inconsistent-parameters",
+                            "constant": 60
+                        },
+                        {
+                            "name": "reject-invalid-parameter-data-type",
+                            "constant": 61
+                        },
+                        {
+                            "name": "reject-invalid-tag",
+                            "constant": 62
+                        },
+                        {
+                            "name": "reject-missing-required-parameter",
+                            "constant": 63
+                        },
+                        {
+                            "name": "reject-parameter-out-of-range",
+                            "constant": 64
+                        },
+                        {
+                            "name": "reject-too-many-arguments",
+                            "constant": 65
+                        },
+                        {
+                            "name": "reject-undefined-enumeration",
+                            "constant": 66
+                        },
+                        {
+                            "name": "reject-unrecognized-service",
+                            "constant": 67
+                        },
+                        {
+                            "name": "reject-proprietary",
+                            "constant": 68
+                        },
+                        {
+                            "name": "reject-other",
+                            "constant": 69
+                        },
+                        {
+                            "name": "unknown-device",
+                            "constant": 70
+                        },
+                        {
+                            "name": "unknown-route",
+                            "constant": 71
+                        },
+                        {
+                            "name": "value-not-initialized",
+                            "constant": 72
+                        },
+                        {
+                            "name": "invalid-event-state",
+                            "constant": 73
+                        },
+                        {
+                            "name": "no-alarm-configured",
+                            "constant": 74
+                        },
+                        {
+                            "name": "log-buffer-full",
+                            "constant": 75
+                        },
+                        {
+                            "name": "logged-value-purged",
+                            "constant": 76
+                        },
+                        {
+                            "name": "no-property-specified",
+                            "constant": 77
+                        },
+                        {
+                            "name": "not-configured-for-triggered-logging",
+                            "constant": 78
+                        },
+                        {
+                            "name": "unknown-subscription",
+                            "constant": 79
+                        },
+                        {
+                            "name": "parameter-out-of-range",
+                            "constant": 80
+                        },
+                        {
+                            "name": "list-element-not-found",
+                            "constant": 81
+                        },
+                        {
+                            "name": "busy",
+                            "constant": 82
+                        },
+                        {
+                            "name": "communication-disabled",
+                            "constant": 83
+                        },
+                        {
+                            "name": "success",
+                            "constant": 84
+                        },
+                        {
+                            "name": "access-denied",
+                            "constant": 85
+                        },
+                        {
+                            "name": "bad-destination-address",
+                            "constant": 86
+                        },
+                        {
+                            "name": "bad-destination-device-id",
+                            "constant": 87
+                        },
+                        {
+                            "name": "bad-signature",
+                            "constant": 88
+                        },
+                        {
+                            "name": "bad-source-address",
+                            "constant": 89
+                        },
+                        {
+                            "name": "duplicate-message",
+                            "constant": 95
+                        },
+                        {
+                            "name": "encryption-not-configured",
+                            "constant": 96
+                        },
+                        {
+                            "name": "encryption-required",
+                            "constant": 97
+                        },
+                        {
+                            "name": "malformed-message",
+                            "constant": 101
+                        },
+                        {
+                            "name": "security-not-configured",
+                            "constant": 103
+                        },
+                        {
+                            "name": "source-security-required",
+                            "constant": 104
+                        },
+                        {
+                            "name": "unknown-authentication-type",
+                            "constant": 106
+                        },
+                        {
+                            "name": "not-router-to-dnet",
+                            "constant": 110
+                        },
+                        {
+                            "name": "router-busy",
+                            "constant": 111
+                        },
+                        {
+                            "name": "unknown-network-message",
+                            "constant": 112
+                        },
+                        {
+                            "name": "message-too-long",
+                            "constant": 113
+                        },
+                        {
+                            "name": "security-error",
+                            "constant": 114
+                        },
+                        {
+                            "name": "addressing-error",
+                            "constant": 115
+                        },
+                        {
+                            "name": "write-bdt-failed",
+                            "constant": 116
+                        },
+                        {
+                            "name": "read-bdt-failed",
+                            "constant": 117
+                        },
+                        {
+                            "name": "register-foreign-device-failed",
+                            "constant": 118
+                        },
+                        {
+                            "name": "read-fdt-failed",
+                            "constant": 119
+                        },
+                        {
+                            "name": "delete-fdt-entry-failed",
+                            "constant": 120
+                        },
+                        {
+                            "name": "distribute-broadcast-failed",
+                            "constant": 121
+                        },
+                        {
+                            "name": "unknown-file-size",
+                            "constant": 122
+                        },
+                        {
+                            "name": "abort-apdu-too-long",
+                            "constant": 123
+                        },
+                        {
+                            "name": "abort-application-exceeded-reply-time",
+                            "constant": 124
+                        },
+                        {
+                            "name": "abort-out-of-resources",
+                            "constant": 125
+                        },
+                        {
+                            "name": "abort-tsm-timeout",
+                            "constant": 126
+                        },
+                        {
+                            "name": "abort-window-size-out-of-range",
+                            "constant": 127
+                        },
+                        {
+                            "name": "file-full",
+                            "constant": 128
+                        },
+                        {
+                            "name": "inconsistent-configuration",
+                            "constant": 129
+                        },
+                        {
+                            "name": "inconsistent-object-type",
+                            "constant": 130
+                        },
+                        {
+                            "name": "internal-error",
+                            "constant": 131
+                        },
+                        {
+                            "name": "not-configured",
+                            "constant": 132
+                        },
+                        {
+                            "name": "out-of-memory",
+                            "constant": 133
+                        },
+                        {
+                            "name": "value-too-long",
+                            "constant": 134
+                        },
+                        {
+                            "name": "abort-insufficient-security",
+                            "constant": 135
+                        },
+                        {
+                            "name": "abort-security-error",
+                            "constant": 136
+                        },
+                        {
+                            "name": "duplicate-entry",
+                            "constant": 137
+                        },
+                        {
+                            "name": "invalid-value-in-this-state",
+                            "constant": 138
+                        },
+                        {
+                            "name": "invalid-operation-in-this-state",
+                            "constant": 139
+                        },
+                        {
+                            "name": "list-item-not-numbered",
+                            "constant": 140
+                        },
+                        {
+                            "name": "list-item-not-timestamped",
+                            "constant": 141
+                        },
+                        {
+                            "name": "invalid-data-encoding",
+                            "constant": 142
+                        },
+                        {
+                            "name": "bvlc-function-unknown",
+                            "constant": 143
+                        },
+                        {
+                            "name": "bvlc-proprietary-function-unknown",
+                            "constant": 144
+                        },
+                        {
+                            "name": "header-encoding-error",
+                            "constant": 145
+                        },
+                        {
+                            "name": "header-not-understood",
+                            "constant": 146
+                        },
+                        {
+                            "name": "message-incomplete",
+                            "constant": 147
+                        },
+                        {
+                            "name": "not-a-bacnet-sc-hub",
+                            "constant": 148
+                        },
+                        {
+                            "name": "payload-expected",
+                            "constant": 149
+                        },
+                        {
+                            "name": "unexpected-data",
+                            "constant": 150
+                        },
+                        {
+                            "name": "node-duplicate-vmac",
+                            "constant": 151
+                        },
+                        {
+                            "name": "http-unexpected-response-code",
+                            "constant": 152
+                        },
+                        {
+                            "name": "http-no-upgrade",
+                            "constant": 153
+                        },
+                        {
+                            "name": "http-resource-not-local",
+                            "constant": 154
+                        },
+                        {
+                            "name": "http-proxy-authentication-failed",
+                            "constant": 155
+                        },
+                        {
+                            "name": "http-response-timeout",
+                            "constant": 156
+                        },
+                        {
+                            "name": "http-response-syntax-error",
+                            "constant": 157
+                        },
+                        {
+                            "name": "http-response-value-error",
+                            "constant": 158
+                        },
+                        {
+                            "name": "http-response-missing-header",
+                            "constant": 159
+                        },
+                        {
+                            "name": "http-websocket-header-error",
+                            "constant": 160
+                        },
+                        {
+                            "name": "http-upgrade-required",
+                            "constant": 161
+                        },
+                        {
+                            "name": "http-upgrade-error",
+                            "constant": 162
+                        },
+                        {
+                            "name": "http-temporary-unavailable",
+                            "constant": 163
+                        },
+                        {
+                            "name": "http-not-a-server",
+                            "constant": 164
+                        },
+                        {
+                            "name": "http-error",
+                            "constant": 165
+                        },
+                        {
+                            "name": "websocket-scheme-not-supported",
+                            "constant": 166
+                        },
+                        {
+                            "name": "websocket-unknown-control-message",
+                            "constant": 167
+                        },
+                        {
+                            "name": "websocket-close-error",
+                            "constant": 168
+                        },
+                        {
+                            "name": "websocket-closed-by-peer",
+                            "constant": 169
+                        },
+                        {
+                            "name": "websocket-endpoint-leaves",
+                            "constant": 170
+                        },
+                        {
+                            "name": "websocket-protocol-error",
+                            "constant": 171
+                        },
+                        {
+                            "name": "websocket-data-not-accepted",
+                            "constant": 172
+                        },
+                        {
+                            "name": "websocket-closed-abnormally",
+                            "constant": 173
+                        },
+                        {
+                            "name": "websocket-data-inconsistent",
+                            "constant": 174
+                        },
+                        {
+                            "name": "websocket-data-against-policy",
+                            "constant": 175
+                        },
+                        {
+                            "name": "websocket-frame-too-long",
+                            "constant": 176
+                        },
+                        {
+                            "name": "websocket-extension-missing",
+                            "constant": 177
+                        },
+                        {
+                            "name": "websocket-request-unavailable",
+                            "constant": 178
+                        },
+                        {
+                            "name": "websocket-error",
+                            "constant": 179
+                        },
+                        {
+                            "name": "tls-client-certificate-error",
+                            "constant": 180
+                        },
+                        {
+                            "name": "tls-server-certificate-error",
+                            "constant": 181
+                        },
+                        {
+                            "name": "tls-client-authentication-failed",
+                            "constant": 182
+                        },
+                        {
+                            "name": "tls-server-authentication-failed",
+                            "constant": 183
+                        },
+                        {
+                            "name": "tls-client-certificate-expired",
+                            "constant": 184
+                        },
+                        {
+                            "name": "tls-server-certificate-expired",
+                            "constant": 185
+                        },
+                        {
+                            "name": "tls-client-certificate-revoked",
+                            "constant": 186
+                        },
+                        {
+                            "name": "tls-server-certificate-revoked",
+                            "constant": 187
+                        },
+                        {
+                            "name": "tls-error",
+                            "constant": 188
+                        },
+                        {
+                            "name": "dns-unavailable",
+                            "constant": 189
+                        },
+                        {
+                            "name": "dns-name-resolution-failed",
+                            "constant": 190
+                        },
+                        {
+                            "name": "dns-resolver-failure",
+                            "constant": 191
+                        },
+                        {
+                            "name": "dns-error",
+                            "constant": 192
+                        },
+                        {
+                            "name": "tcp-connect-timeout",
+                            "constant": 193
+                        },
+                        {
+                            "name": "tcp-connection-refused",
+                            "constant": 194
+                        },
+                        {
+                            "name": "tcp-closed-by-local",
+                            "constant": 195
+                        },
+                        {
+                            "name": "tcp-closed-other",
+                            "constant": 196
+                        },
+                        {
+                            "name": "tcp-error",
+                            "constant": 197
+                        },
+                        {
+                            "name": "ip-address-not-reachable",
+                            "constant": 198
+                        },
+                        {
+                            "name": "ip-error",
+                            "constant": 199
+                        },
+                        {
+                            "name": "certificate-expired",
+                            "constant": 200
+                        },
+                        {
+                            "name": "certificate-invalid",
+                            "constant": 201
+                        },
+                        {
+                            "name": "certificate-malformed",
+                            "constant": 202
+                        },
+                        {
+                            "name": "certificate-revoked",
+                            "constant": 203
+                        },
+                        {
+                            "name": "unknown-certificate-key",
+                            "constant": 204
+                        },
+                        {
+                            "name": "referenced-port-in-error",
+                            "constant": 205
+                        },
+                        {
+                            "name": "not-enabled",
+                            "constant": 206
+                        },
+                        {
+                            "name": "adjust-scope-required",
+                            "constant": 207
+                        },
+                        {
+                            "name": "auth-scope-required",
+                            "constant": 208
+                        },
+                        {
+                            "name": "bind-scope-required",
+                            "constant": 209
+                        },
+                        {
+                            "name": "config-scope-required",
+                            "constant": 210
+                        },
+                        {
+                            "name": "control-scope-required",
+                            "constant": 211
+                        },
+                        {
+                            "name": "extended-scope-required",
+                            "constant": 212
+                        },
+                        {
+                            "name": "incorrect-client",
+                            "constant": 213
+                        },
+                        {
+                            "name": "install-scope-required",
+                            "constant": 214
+                        },
+                        {
+                            "name": "insufficient-scope",
+                            "constant": 215
+                        },
+                        {
+                            "name": "no-default-scope",
+                            "constant": 215
+                        },
+                        {
+                            "name": "no-policy",
+                            "constant": 216
+                        },
+                        {
+                            "name": "no-default-scope",
+                            "constant": 216
+                        },
+                        {
+                            "name": "revoked-token",
+                            "constant": 218
+                        },
+                        {
+                            "name": "override-scope-required",
+                            "constant": 219
+                        },
+                        {
+                            "name": "inactive-token",
+                            "constant": 220
+                        },
+                        {
+                            "name": "unknown-audience",
+                            "constant": 221
+                        },
+                        {
+                            "name": "unknown-client",
+                            "constant": 222
+                        },
+                        {
+                            "name": "unknown-scope",
+                            "constant": 223
+                        },
+                        {
+                            "name": "view-scope-required",
+                            "constant": 224
+                        },
+                        {
+                            "name": "incorrect-audience",
+                            "constant": 225
+                        },
+                        {
+                            "name": "incorrect-client-origin",
+                            "constant": 226
+                        },
+                        {
+                            "name": "invalid-array-size",
+                            "constant": 227
+                        },
+                        {
+                            "name": "incorrect-issuer",
+                            "constant": 228
+                        },
+                        {
+                            "name": "invalid-token",
+                            "constant": 229
+                        }
+                    ],
+                    "maximum": 65535,
+                    "proprietary": {
+                        "from": 256,
+                        "to": 65535
+                    }
+                }
+            }
+        ]
+    }
+}

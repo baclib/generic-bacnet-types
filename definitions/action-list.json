@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetActionList",
+    "name": "action-list",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "action",
+                "type": {
+                    "base": "action-command",
+                    "series": true
+                },
+                "context": 0
+            }
+        ]
+    }
+}

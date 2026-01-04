@@ -2,34 +2,22 @@
     "alias": "BACnetLogStatus",
     "name": "log-status",
     "type": {
-        "base": "bitstring",
+        "base": "bit-string",
         "bits": [
             {
-                "position": 0,
                 "name": "log-disabled",
+                "position": 0,
                 "description": "Log is disabled."
             },
             {
-                "position": 1,
                 "name": "buffer-purged",
+                "position": 1,
                 "description": "Log buffer has been purged."
             },
             {
-                "position": 2,
                 "name": "log-interrupted",
+                "position": 2,
                 "description": "Log was interrupted."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 2,
-            "maximum": 2
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 2,
-                "maximum": 2
             }
         ]
     }

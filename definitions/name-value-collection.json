@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetNameValueCollection",
+    "name": "name-value-collection",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "members",
+                "type": {
+                    "base": "name-value",
+                    "series": true
+                },
+                "context": 0
+            }
+        ]
+    }
+}

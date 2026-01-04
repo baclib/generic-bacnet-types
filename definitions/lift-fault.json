@@ -5,44 +5,14 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "call-button-stuck",
-                "constant": 9,
-                "description": "Call button stuck."
-            },
-            {
-                "name": "car-stopped-outside-landing-zone",
-                "constant": 8,
-                "description": "Car stopped outside landing zone."
-            },
-            {
                 "name": "controller-fault",
                 "constant": 0,
                 "description": "Controller fault detected."
             },
             {
-                "name": "controller-supply-fault",
-                "constant": 11,
-                "description": "Controller supply fault detected."
-            },
-            {
-                "name": "door-closing-fault",
-                "constant": 6,
-                "description": "Door closing fault detected."
-            },
-            {
-                "name": "door-opening-fault",
-                "constant": 7,
-                "description": "Door opening fault detected."
-            },
-            {
                 "name": "drive-and-motor-fault",
                 "constant": 1,
                 "description": "Drive and motor fault detected."
-            },
-            {
-                "name": "drive-temperature-exceeded",
-                "constant": 15,
-                "description": "Drive temperature exceeded."
             },
             {
                 "name": "governor-and-safety-gear-fault",
@@ -55,24 +25,9 @@
                 "description": "Lift shaft device fault detected."
             },
             {
-                "name": "load-measurement-fault",
-                "constant": 16,
-                "description": "Load measurement fault detected."
-            },
-            {
-                "name": "position-lost",
-                "constant": 14,
-                "description": "Position lost."
-            },
-            {
                 "name": "power-supply-fault",
                 "constant": 4,
                 "description": "Power supply fault detected."
-            },
-            {
-                "name": "runtime-limit-exceeded",
-                "constant": 13,
-                "description": "Runtime limit exceeded."
             },
             {
                 "name": "safety-interlock-fault",
@@ -80,32 +35,65 @@
                 "description": "Safety interlock fault detected."
             },
             {
-                "name": "self-test-failure",
-                "constant": 12,
-                "description": "Self-test failure detected."
+                "name": "door-closing-fault",
+                "constant": 6,
+                "description": "Door closing fault detected."
+            },
+            {
+                "name": "door-opening-fault",
+                "constant": 7,
+                "description": "Door opening fault detected."
+            },
+            {
+                "name": "car-stopped-outside-landing-zone",
+                "constant": 8,
+                "description": "Car stopped outside landing zone."
+            },
+            {
+                "name": "call-button-stuck",
+                "constant": 9,
+                "description": "Call button stuck."
             },
             {
                 "name": "start-failure",
                 "constant": 10,
                 "description": "Start failure detected."
-            }
-        ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 1023
             },
             {
-                "custom": true,
-                "minimum": 1024,
-                "maximum": 65535
+                "name": "controller-supply-fault",
+                "constant": 11,
+                "description": "Controller supply fault detected."
+            },
+            {
+                "name": "self-test-failure",
+                "constant": 12,
+                "description": "Self-test failure detected."
+            },
+            {
+                "name": "runtime-limit-exceeded",
+                "constant": 13,
+                "description": "Runtime limit exceeded."
+            },
+            {
+                "name": "position-lost",
+                "constant": 14,
+                "description": "Position lost."
+            },
+            {
+                "name": "drive-temperature-exceeded",
+                "constant": 15,
+                "description": "Drive temperature exceeded."
+            },
+            {
+                "name": "load-measurement-fault",
+                "constant": 16,
+                "description": "Load measurement fault detected."
             }
-        ]
+        ],
+        "maximum": 65535,
+        "proprietary": {
+            "from": 1024,
+            "to": 65535
+        }
     }
 }

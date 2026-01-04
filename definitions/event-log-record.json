@@ -1,0 +1,38 @@
+{
+    "alias": "BACnetEventLogRecord",
+    "name": "event-log-record",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "timestamp",
+                "type": "date-time",
+                "context": 0
+            },
+            {
+                "name": "log-datum",
+                "type": {
+                    "base": "choice",
+                    "options": [
+                        {
+                            "name": "log-status",
+                            "type": "log-status",
+                            "context": 0
+                        },
+                        {
+                            "name": "notification",
+                            "type": "confirmed-event-notification-request",
+                            "context": 1
+                        },
+                        {
+                            "name": "time-change",
+                            "type": "real",
+                            "context": 2
+                        }
+                    ]
+                },
+                "context": 1
+            }
+        ]
+    }
+}

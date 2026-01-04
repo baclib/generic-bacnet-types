@@ -5,9 +5,49 @@
         "base": "enumerated",
         "values": [
             {
+                "name": "unknown",
+                "constant": 0,
+                "description": "Mode is unknown."
+            },
+            {
+                "name": "normal",
+                "constant": 1,
+                "description": "Normal mode."
+            },
+            {
+                "name": "vip",
+                "constant": 2,
+                "description": "VIP mode."
+            },
+            {
+                "name": "homing",
+                "constant": 3,
+                "description": "Homing mode."
+            },
+            {
+                "name": "parking",
+                "constant": 4,
+                "description": "Parking mode."
+            },
+            {
                 "name": "attendant-control",
                 "constant": 5,
                 "description": "Attendant control mode."
+            },
+            {
+                "name": "firefighter-control",
+                "constant": 6,
+                "description": "Firefighter control mode."
+            },
+            {
+                "name": "emergency-power",
+                "constant": 7,
+                "description": "Emergency power mode."
+            },
+            {
+                "name": "inspection",
+                "constant": 8,
+                "description": "Inspection mode."
             },
             {
                 "name": "cabinet-recall",
@@ -20,39 +60,9 @@
                 "description": "Earthquake operation mode."
             },
             {
-                "name": "emergency-power",
-                "constant": 7,
-                "description": "Emergency power mode."
-            },
-            {
                 "name": "fire-operation",
                 "constant": 11,
                 "description": "Fire operation mode."
-            },
-            {
-                "name": "firefighter-control",
-                "constant": 6,
-                "description": "Firefighter control mode."
-            },
-            {
-                "name": "homing",
-                "constant": 3,
-                "description": "Homing mode."
-            },
-            {
-                "name": "inspection",
-                "constant": 8,
-                "description": "Inspection mode."
-            },
-            {
-                "name": "normal",
-                "constant": 1,
-                "description": "Normal mode."
-            },
-            {
-                "name": "occupant-evacuation",
-                "constant": 13,
-                "description": "Occupant evacuation mode."
             },
             {
                 "name": "out-of-service",
@@ -60,37 +70,15 @@
                 "description": "Out of service mode."
             },
             {
-                "name": "parking",
-                "constant": 4,
-                "description": "Parking mode."
-            },
-            {
-                "name": "unknown",
-                "constant": 0,
-                "description": "Mode is unknown."
-            },
-            {
-                "name": "vip",
-                "constant": 2,
-                "description": "VIP mode."
+                "name": "occupant-evacuation",
+                "constant": 13,
+                "description": "Occupant evacuation mode."
             }
         ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 1023
-            },
-            {
-                "custom": true,
-                "minimum": 1024,
-                "maximum": 65535
-            }
-        ]
+        "maximum": 65535,
+        "proprietary": {
+            "from": 1024,
+            "to": 65535
+        }
     }
 }

@@ -5,14 +5,39 @@
         "base": "enumerated",
         "values": [
             {
+                "name": "allow-by-token",
+                "constant": 0,
+                "description": "Authorization allowed by token."
+            },
+            {
                 "name": "allow-by-local-policy",
                 "constant": 1,
                 "description": "Authorization allowed by local policy."
             },
             {
-                "name": "allow-by-token",
-                "constant": 0,
-                "description": "Authorization allowed by token."
+                "name": "deny-no-token-or-policy",
+                "constant": 2,
+                "description": "Authorization denied: no token or policy."
+            },
+            {
+                "name": "deny-not-before",
+                "constant": 3,
+                "description": "Authorization denied: not before time."
+            },
+            {
+                "name": "deny-not-after",
+                "constant": 4,
+                "description": "Authorization denied: not after time."
+            },
+            {
+                "name": "deny-target-device",
+                "constant": 5,
+                "description": "Authorization denied: target device."
+            },
+            {
+                "name": "deny-target-group",
+                "constant": 6,
+                "description": "Authorization denied: target group."
             },
             {
                 "name": "deny-client-device",
@@ -25,29 +50,14 @@
                 "description": "Authorization denied: client method."
             },
             {
+                "name": "deny-scope",
+                "constant": 9,
+                "description": "Authorization denied: scope."
+            },
+            {
                 "name": "deny-issuer",
                 "constant": 10,
                 "description": "Authorization denied: issuer."
-            },
-            {
-                "name": "deny-no-token-or-policy",
-                "constant": 2,
-                "description": "Authorization denied: no token or policy."
-            },
-            {
-                "name": "deny-not-after",
-                "constant": 4,
-                "description": "Authorization denied: not after time."
-            },
-            {
-                "name": "deny-not-before",
-                "constant": 3,
-                "description": "Authorization denied: not before time."
-            },
-            {
-                "name": "deny-other",
-                "constant": 13,
-                "description": "Authorization denied: other reason."
             },
             {
                 "name": "deny-revoked",
@@ -55,36 +65,14 @@
                 "description": "Authorization denied: revoked."
             },
             {
-                "name": "deny-scope",
-                "constant": 9,
-                "description": "Authorization denied: scope."
-            },
-            {
                 "name": "deny-signature",
                 "constant": 12,
                 "description": "Authorization denied: signature."
             },
             {
-                "name": "deny-target-device",
-                "constant": 5,
-                "description": "Authorization denied: target device."
-            },
-            {
-                "name": "deny-target-group",
-                "constant": 6,
-                "description": "Authorization denied: target group."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 13
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 13
+                "name": "deny-other",
+                "constant": 13,
+                "description": "Authorization denied: other reason."
             }
         ]
     }

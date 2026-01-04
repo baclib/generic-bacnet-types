@@ -5,14 +5,54 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "activation-failure",
-                "constant": 17,
-                "description": "Activation failure detected."
+                "name": "no-fault-detected",
+                "constant": 0,
+                "description": "No fault detected."
             },
             {
-                "name": "communication-failure",
-                "constant": 12,
-                "description": "Communication failure detected."
+                "name": "no-sensor",
+                "constant": 1,
+                "description": "No sensor present."
+            },
+            {
+                "name": "over-range",
+                "constant": 2,
+                "description": "Value is over range."
+            },
+            {
+                "name": "under-range",
+                "constant": 3,
+                "description": "Value is under range."
+            },
+            {
+                "name": "open-loop",
+                "constant": 4,
+                "description": "Open loop detected."
+            },
+            {
+                "name": "shorted-loop",
+                "constant": 5,
+                "description": "Shorted loop detected."
+            },
+            {
+                "name": "no-output",
+                "constant": 6,
+                "description": "No output detected."
+            },
+            {
+                "name": "unreliable-other",
+                "constant": 7,
+                "description": "Other unreliable condition."
+            },
+            {
+                "name": "process-error",
+                "constant": 8,
+                "description": "Process error detected."
+            },
+            {
+                "name": "multi-state-fault",
+                "constant": 9,
+                "description": "Multi-state fault detected."
             },
             {
                 "name": "configuration-error",
@@ -20,14 +60,9 @@
                 "description": "Configuration error detected."
             },
             {
-                "name": "faults-listed",
-                "constant": 23,
-                "description": "Faults listed."
-            },
-            {
-                "name": "lamp-failure",
-                "constant": 16,
-                "description": "Lamp failure detected."
+                "name": "communication-failure",
+                "constant": 12,
+                "description": "Communication failure detected."
             },
             {
                 "name": "member-fault",
@@ -40,54 +75,19 @@
                 "description": "Monitored object fault detected."
             },
             {
-                "name": "multi-state-fault",
-                "constant": 9,
-                "description": "Multi-state fault detected."
+                "name": "tripped",
+                "constant": 15,
+                "description": "Tripped condition detected."
             },
             {
-                "name": "multi-state-out-of-range",
-                "constant": 25,
-                "description": "Multi-state out of range."
+                "name": "lamp-failure",
+                "constant": 16,
+                "description": "Lamp failure detected."
             },
             {
-                "name": "no-fault-detected",
-                "constant": 0,
-                "description": "No fault detected."
-            },
-            {
-                "name": "no-output",
-                "constant": 6,
-                "description": "No output detected."
-            },
-            {
-                "name": "no-sensor",
-                "constant": 1,
-                "description": "No sensor present."
-            },
-            {
-                "name": "open-loop",
-                "constant": 4,
-                "description": "Open loop detected."
-            },
-            {
-                "name": "over-range",
-                "constant": 2,
-                "description": "Value is over range."
-            },
-            {
-                "name": "process-error",
-                "constant": 8,
-                "description": "Process error detected."
-            },
-            {
-                "name": "proprietary-command-failure",
-                "constant": 22,
-                "description": "Proprietary command failure detected."
-            },
-            {
-                "name": "referenced-object-fault",
-                "constant": 24,
-                "description": "Referenced object fault detected."
+                "name": "activation-failure",
+                "constant": 17,
+                "description": "Activation failure detected."
             },
             {
                 "name": "renew-dhcp-failure",
@@ -110,42 +110,30 @@
                 "description": "Restart failure detected."
             },
             {
-                "name": "shorted-loop",
-                "constant": 5,
-                "description": "Shorted loop detected."
+                "name": "proprietary-command-failure",
+                "constant": 22,
+                "description": "Proprietary command failure detected."
             },
             {
-                "name": "tripped",
-                "constant": 15,
-                "description": "Tripped condition detected."
+                "name": "faults-listed",
+                "constant": 23,
+                "description": "Faults listed."
             },
             {
-                "name": "under-range",
-                "constant": 3,
-                "description": "Value is under range."
+                "name": "referenced-object-fault",
+                "constant": 24,
+                "description": "Referenced object fault detected."
             },
             {
-                "name": "unreliable-other",
-                "constant": 7,
-                "description": "Other unreliable condition."
+                "name": "multi-state-out-of-range",
+                "constant": 25,
+                "description": "Multi-state out of range."
             }
         ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 63
-            },
-            {
-                "custom": true,
-                "minimum": 64,
-                "maximum": 65535
-            }
-        ]
+        "maximum": 65535,
+        "proprietary": {
+            "from": 64,
+            "to": 65535
+        }
     }
 }

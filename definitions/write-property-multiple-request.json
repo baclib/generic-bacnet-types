@@ -1,0 +1,16 @@
+{
+    "alias": "WritePropertyMultiple-Request",
+    "name": "write-property-multiple-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "list-of-write-access-specifications",
+                "type": {
+                    "base": "write-access-specification",
+                    "series": true
+                }
+            }
+        ]
+    }
+}

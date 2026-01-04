@@ -1,0 +1,68 @@
+{
+    "alias": "BACnetAuthorizationStatus",
+    "name": "authorization-status",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "posture",
+                "type": "authorization-posture",
+                "context": 0
+            },
+            {
+                "name": "error",
+                "type": "error",
+                "context": 1,
+                "optional": true
+            },
+            {
+                "name": "error-source",
+                "type": "object-property-reference",
+                "context": 2,
+                "optional": true
+            },
+            {
+                "name": "error-details",
+                "type": "character-string",
+                "context": 3,
+                "optional": true
+            },
+            {
+                "name": "authentication-success",
+                "type": {
+                    "base": "authentication-event",
+                    "series": true
+                },
+                "context": 4,
+                "optional": true
+            },
+            {
+                "name": "authentication-failure",
+                "type": {
+                    "base": "authentication-event",
+                    "series": true
+                },
+                "context": 5,
+                "optional": true
+            },
+            {
+                "name": "authorization-success",
+                "type": {
+                    "base": "authorization-event",
+                    "series": true
+                },
+                "context": 6,
+                "optional": true
+            },
+            {
+                "name": "authorization-failure",
+                "type": {
+                    "base": "authorization-event",
+                    "series": true
+                },
+                "context": 7,
+                "optional": true
+            }
+        ]
+    }
+}

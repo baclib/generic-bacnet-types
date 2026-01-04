@@ -10,26 +10,14 @@
                 "description": "Include all results, both successes and failures."
             },
             {
-                "name": "failures-only",
-                "constant": 2,
-                "description": "Include only failed results."
-            },
-            {
                 "name": "successes-only",
                 "constant": 1,
                 "description": "Include only successful results."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 2
-        },
-        "ranges": [
+            },
             {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 2
+                "name": "failures-only",
+                "constant": 2,
+                "description": "Include only failed results."
             }
         ]
     }

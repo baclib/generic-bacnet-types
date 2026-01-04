@@ -1,0 +1,46 @@
+{
+    "alias": "BACnet-Abort-PDU",
+    "name": "abort-pdu",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "pdu-type",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 0,
+                    "maximum": 15
+                },
+                "context": 0
+            },
+            {
+                "name": "reserved",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 0,
+                    "maximum": 7
+                },
+                "context": 1
+            },
+            {
+                "name": "server",
+                "type": "boolean",
+                "context": 2
+            },
+            {
+                "name": "original-invoke-id",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 0,
+                    "maximum": 255
+                },
+                "context": 3
+            },
+            {
+                "name": "abort-reason",
+                "type": "abort-reason",
+                "context": 4
+            }
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "alias": "BACnetLogMultipleRecord",
+    "name": "log-multiple-record",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "timestamp",
+                "type": "date-time",
+                "context": 0
+            },
+            {
+                "name": "log-data",
+                "type": "log-data",
+                "context": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetDailySchedule",
+    "name": "daily-schedule",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "day-schedule",
+                "type": {
+                    "base": "time-value",
+                    "series": true
+                },
+                "context": 0
+            }
+        ]
+    }
+}

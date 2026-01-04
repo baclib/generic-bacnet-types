@@ -1,0 +1,41 @@
+{
+    "alias": "BACnet-Reject-PDU",
+    "name": "reject-pdu",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "pdu-type",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 0,
+                    "maximum": 15
+                },
+                "context": 0
+            },
+            {
+                "name": "reserved",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 0,
+                    "maximum": 15
+                },
+                "context": 1
+            },
+            {
+                "name": "original-invoke-id",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 0,
+                    "maximum": 255
+                },
+                "context": 2
+            },
+            {
+                "name": "reject-reason",
+                "type": "reject-reason",
+                "context": 3
+            }
+        ]
+    }
+}

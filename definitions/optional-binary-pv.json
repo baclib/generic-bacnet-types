@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetOptionalBinaryPV",
+    "name": "optional-binary-pv",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "null",
+                "type": "null"
+            },
+            {
+                "name": "binary-pv",
+                "type": "binary-pv"
+            }
+        ]
+    }
+}

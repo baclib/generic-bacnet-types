@@ -1,0 +1,17 @@
+{
+    "alias": "ConfirmedAuditNotification-Request",
+    "name": "confirmed-audit-notification-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "notifications",
+                "type": {
+                    "base": "audit-notification",
+                    "series": true
+                },
+                "context": 0
+            }
+        ]
+    }
+}

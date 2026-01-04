@@ -5,34 +5,9 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "adjusted-by",
-                "constant": 9,
-                "description": "Adjusted by relationship."
-            },
-            {
-                "name": "adjusts",
-                "constant": 8,
-                "description": "Adjusts relationship."
-            },
-            {
-                "name": "commanded-by",
-                "constant": 7,
-                "description": "Commanded by relationship."
-            },
-            {
-                "name": "commands",
-                "constant": 6,
-                "description": "Commands relationship."
-            },
-            {
-                "name": "contained-by",
-                "constant": 3,
-                "description": "Contained by relationship."
-            },
-            {
-                "name": "contains",
-                "constant": 2,
-                "description": "Contains relationship."
+                "name": "unknown",
+                "constant": 0,
+                "description": "Relationship is unknown."
             },
             {
                 "name": "default",
@@ -40,109 +15,19 @@
                 "description": "Default relationship."
             },
             {
-                "name": "egress",
-                "constant": 11,
-                "description": "Egress relationship."
+                "name": "contains",
+                "constant": 2,
+                "description": "Contains relationship."
             },
             {
-                "name": "ingress",
-                "constant": 10,
-                "description": "Ingress relationship."
+                "name": "contained-by",
+                "constant": 3,
+                "description": "Contained by relationship."
             },
             {
-                "name": "receives-air",
-                "constant": 13,
-                "description": "Receives air relationship."
-            },
-            {
-                "name": "receives-cool-air",
-                "constant": 17,
-                "description": "Receives cool air relationship."
-            },
-            {
-                "name": "receives-cool-water",
-                "constant": 27,
-                "description": "Receives cool water relationship."
-            },
-            {
-                "name": "receives-gas",
-                "constant": 21,
-                "description": "Receives gas relationship."
-            },
-            {
-                "name": "receives-hot-air",
-                "constant": 15,
-                "description": "Receives hot air relationship."
-            },
-            {
-                "name": "receives-hot-water",
-                "constant": 25,
-                "description": "Receives hot water relationship."
-            },
-            {
-                "name": "receives-power",
-                "constant": 19,
-                "description": "Receives power relationship."
-            },
-            {
-                "name": "receives-steam",
-                "constant": 29,
-                "description": "Receives steam relationship."
-            },
-            {
-                "name": "receives-water",
-                "constant": 23,
-                "description": "Receives water relationship."
-            },
-            {
-                "name": "supplies-air",
-                "constant": 12,
-                "description": "Supplies air relationship."
-            },
-            {
-                "name": "supplies-cool-air",
-                "constant": 16,
-                "description": "Supplies cool air relationship."
-            },
-            {
-                "name": "supplies-cool-water",
-                "constant": 26,
-                "description": "Supplies cool water relationship."
-            },
-            {
-                "name": "supplies-gas",
-                "constant": 20,
-                "description": "Supplies gas relationship."
-            },
-            {
-                "name": "supplies-hot-air",
-                "constant": 14,
-                "description": "Supplies hot air relationship."
-            },
-            {
-                "name": "supplies-hot-water",
-                "constant": 24,
-                "description": "Supplies hot water relationship."
-            },
-            {
-                "name": "supplies-power",
-                "constant": 18,
-                "description": "Supplies power relationship."
-            },
-            {
-                "name": "supplies-steam",
-                "constant": 28,
-                "description": "Supplies steam relationship."
-            },
-            {
-                "name": "supplies-water",
-                "constant": 22,
-                "description": "Supplies water relationship."
-            },
-            {
-                "name": "unknown",
-                "constant": 0,
-                "description": "Relationship is unknown."
+                "name": "uses",
+                "constant": 4,
+                "description": "Uses relationship."
             },
             {
                 "name": "used-by",
@@ -150,27 +35,130 @@
                 "description": "Used by relationship."
             },
             {
-                "name": "uses",
-                "constant": 4,
-                "description": "Uses relationship."
-            }
-        ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 1023
+                "name": "commands",
+                "constant": 6,
+                "description": "Commands relationship."
             },
             {
-                "custom": true,
-                "minimum": 1024,
-                "maximum": 65535
+                "name": "commanded-by",
+                "constant": 7,
+                "description": "Commanded by relationship."
+            },
+            {
+                "name": "adjusts",
+                "constant": 8,
+                "description": "Adjusts relationship."
+            },
+            {
+                "name": "adjusted-by",
+                "constant": 9,
+                "description": "Adjusted by relationship."
+            },
+            {
+                "name": "ingress",
+                "constant": 10,
+                "description": "Ingress relationship."
+            },
+            {
+                "name": "egress",
+                "constant": 11,
+                "description": "Egress relationship."
+            },
+            {
+                "name": "supplies-air",
+                "constant": 12,
+                "description": "Supplies air relationship."
+            },
+            {
+                "name": "receives-air",
+                "constant": 13,
+                "description": "Receives air relationship."
+            },
+            {
+                "name": "supplies-hot-air",
+                "constant": 14,
+                "description": "Supplies hot air relationship."
+            },
+            {
+                "name": "receives-hot-air",
+                "constant": 15,
+                "description": "Receives hot air relationship."
+            },
+            {
+                "name": "supplies-cool-air",
+                "constant": 16,
+                "description": "Supplies cool air relationship."
+            },
+            {
+                "name": "receives-cool-air",
+                "constant": 17,
+                "description": "Receives cool air relationship."
+            },
+            {
+                "name": "supplies-power",
+                "constant": 18,
+                "description": "Supplies power relationship."
+            },
+            {
+                "name": "receives-power",
+                "constant": 19,
+                "description": "Receives power relationship."
+            },
+            {
+                "name": "supplies-gas",
+                "constant": 20,
+                "description": "Supplies gas relationship."
+            },
+            {
+                "name": "receives-gas",
+                "constant": 21,
+                "description": "Receives gas relationship."
+            },
+            {
+                "name": "supplies-water",
+                "constant": 22,
+                "description": "Supplies water relationship."
+            },
+            {
+                "name": "receives-water",
+                "constant": 23,
+                "description": "Receives water relationship."
+            },
+            {
+                "name": "supplies-hot-water",
+                "constant": 24,
+                "description": "Supplies hot water relationship."
+            },
+            {
+                "name": "receives-hot-water",
+                "constant": 25,
+                "description": "Receives hot water relationship."
+            },
+            {
+                "name": "supplies-cool-water",
+                "constant": 26,
+                "description": "Supplies cool water relationship."
+            },
+            {
+                "name": "receives-cool-water",
+                "constant": 27,
+                "description": "Receives cool water relationship."
+            },
+            {
+                "name": "supplies-steam",
+                "constant": 28,
+                "description": "Supplies steam relationship."
+            },
+            {
+                "name": "receives-steam",
+                "constant": 29,
+                "description": "Receives steam relationship."
             }
-        ]
+        ],
+        "maximum": 65535,
+        "proprietary": {
+            "from": 1024,
+            "to": 65535
+        }
     }
 }

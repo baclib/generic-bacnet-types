@@ -5,6 +5,11 @@
         "base": "enumerated",
         "values": [
             {
+                "name": "none",
+                "constant": 0,
+                "description": "No fault."
+            },
+            {
                 "name": "fault-characterstring",
                 "constant": 1,
                 "description": "Fault in characterstring."
@@ -20,16 +25,6 @@
                 "description": "Life safety fault."
             },
             {
-                "name": "fault-listed",
-                "constant": 7,
-                "description": "Listed fault."
-            },
-            {
-                "name": "fault-out-of-range",
-                "constant": 6,
-                "description": "Out of range fault."
-            },
-            {
                 "name": "fault-state",
                 "constant": 4,
                 "description": "State fault."
@@ -40,21 +35,14 @@
                 "description": "Status flags fault."
             },
             {
-                "name": "none",
-                "constant": 0,
-                "description": "No fault."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 0,
-            "maximum": 7
-        },
-        "ranges": [
+                "name": "fault-out-of-range",
+                "constant": 6,
+                "description": "Out of range fault."
+            },
             {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 7
+                "name": "fault-listed",
+                "constant": 7,
+                "description": "Listed fault."
             }
         ]
     }

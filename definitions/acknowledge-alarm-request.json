@@ -1,0 +1,39 @@
+{
+    "alias": "AcknowledgeAlarm-Request",
+    "name": "acknowledge-alarm-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "acknowledging-process-identifier",
+                "type": "unsigned-32",
+                "context": 0
+            },
+            {
+                "name": "event-object-identifier",
+                "type": "object-identifier",
+                "context": 1
+            },
+            {
+                "name": "event-state-acknowledged",
+                "type": "event-state",
+                "context": 2
+            },
+            {
+                "name": "timestamp",
+                "type": "time-stamp",
+                "context": 3
+            },
+            {
+                "name": "acknowledgment-source",
+                "type": "character-string",
+                "context": 4
+            },
+            {
+                "name": "time-of-acknowledgment",
+                "type": "time-stamp",
+                "context": 5
+            }
+        ]
+    }
+}

@@ -5,104 +5,9 @@
         "base": "enumerated",
         "values": [
             {
-                "name": "abnormal",
-                "constant": 16,
-                "description": "Abnormal state."
-            },
-            {
-                "name": "active",
-                "constant": 7,
-                "description": "Active state."
-            },
-            {
-                "name": "alarm",
-                "constant": 2,
-                "description": "Alarm state."
-            },
-            {
-                "name": "blocked",
-                "constant": 19,
-                "description": "Blocked state."
-            },
-            {
-                "name": "delayed",
-                "constant": 18,
-                "description": "Delayed state."
-            },
-            {
-                "name": "duress",
-                "constant": 14,
-                "description": "Duress state."
-            },
-            {
-                "name": "emergency-power",
-                "constant": 17,
-                "description": "Emergency power state."
-            },
-            {
-                "name": "fault",
-                "constant": 3,
-                "description": "Fault state."
-            },
-            {
-                "name": "fault-alarm",
-                "constant": 5,
-                "description": "Fault alarm state."
-            },
-            {
-                "name": "fault-pre-alarm",
-                "constant": 4,
-                "description": "Fault pre-alarm state."
-            },
-            {
-                "name": "general-alarm",
-                "constant": 21,
-                "description": "General alarm state."
-            },
-            {
-                "name": "holdup",
-                "constant": 13,
-                "description": "Holdup state."
-            },
-            {
-                "name": "local-alarm",
-                "constant": 20,
-                "description": "Local alarm state."
-            },
-            {
-                "name": "non-default-mode",
-                "constant": 24,
-                "description": "Non-default mode state."
-            },
-            {
-                "name": "not-ready",
-                "constant": 6,
-                "description": "Not ready state."
-            },
-            {
-                "name": "oeo-alarm",
-                "constant": 26,
-                "description": "OEO alarm state."
-            },
-            {
-                "name": "oeo-evacuate",
-                "constant": 28,
-                "description": "OEO evacuate state."
-            },
-            {
-                "name": "oeo-phase1-recall",
-                "constant": 27,
-                "description": "OEO phase 1 recall state."
-            },
-            {
-                "name": "oeo-unaffected",
-                "constant": 29,
-                "description": "OEO unaffected state."
-            },
-            {
-                "name": "oeo-unavailable",
-                "constant": 25,
-                "description": "OEO unavailable state."
+                "name": "quiet",
+                "constant": 0,
+                "description": "Quiet state."
             },
             {
                 "name": "pre-alarm",
@@ -110,14 +15,34 @@
                 "description": "Pre-alarm state."
             },
             {
-                "name": "quiet",
-                "constant": 0,
-                "description": "Quiet state."
+                "name": "alarm",
+                "constant": 2,
+                "description": "Alarm state."
             },
             {
-                "name": "supervisory",
-                "constant": 22,
-                "description": "Supervisory state."
+                "name": "fault",
+                "constant": 3,
+                "description": "Fault state."
+            },
+            {
+                "name": "fault-pre-alarm",
+                "constant": 4,
+                "description": "Fault pre-alarm state."
+            },
+            {
+                "name": "fault-alarm",
+                "constant": 5,
+                "description": "Fault alarm state."
+            },
+            {
+                "name": "not-ready",
+                "constant": 6,
+                "description": "Not ready state."
+            },
+            {
+                "name": "active",
+                "constant": 7,
+                "description": "Active state."
             },
             {
                 "name": "tamper",
@@ -125,19 +50,14 @@
                 "description": "Tamper state."
             },
             {
-                "name": "tamper-alarm",
-                "constant": 15,
-                "description": "Tamper alarm state."
+                "name": "test-alarm",
+                "constant": 9,
+                "description": "Test alarm state."
             },
             {
                 "name": "test-active",
                 "constant": 10,
                 "description": "Test active state."
-            },
-            {
-                "name": "test-alarm",
-                "constant": 9,
-                "description": "Test alarm state."
             },
             {
                 "name": "test-fault",
@@ -150,24 +70,89 @@
                 "description": "Test fault alarm state."
             },
             {
-                "name": "test-oeo-alarm",
-                "constant": 31,
-                "description": "Test OEO alarm state."
+                "name": "holdup",
+                "constant": 13,
+                "description": "Holdup state."
             },
             {
-                "name": "test-oeo-evacuate",
-                "constant": 33,
-                "description": "Test OEO evacuate state."
+                "name": "duress",
+                "constant": 14,
+                "description": "Duress state."
             },
             {
-                "name": "test-oeo-phase1-recall",
-                "constant": 32,
-                "description": "Test OEO phase 1 recall state."
+                "name": "tamper-alarm",
+                "constant": 15,
+                "description": "Tamper alarm state."
             },
             {
-                "name": "test-oeo-unaffected",
-                "constant": 34,
-                "description": "Test OEO unaffected state."
+                "name": "abnormal",
+                "constant": 16,
+                "description": "Abnormal state."
+            },
+            {
+                "name": "emergency-power",
+                "constant": 17,
+                "description": "Emergency power state."
+            },
+            {
+                "name": "delayed",
+                "constant": 18,
+                "description": "Delayed state."
+            },
+            {
+                "name": "blocked",
+                "constant": 19,
+                "description": "Blocked state."
+            },
+            {
+                "name": "local-alarm",
+                "constant": 20,
+                "description": "Local alarm state."
+            },
+            {
+                "name": "general-alarm",
+                "constant": 21,
+                "description": "General alarm state."
+            },
+            {
+                "name": "supervisory",
+                "constant": 22,
+                "description": "Supervisory state."
+            },
+            {
+                "name": "test-supervisory",
+                "constant": 23,
+                "description": "Test supervisory state."
+            },
+            {
+                "name": "non-default-mode",
+                "constant": 24,
+                "description": "Non-default mode state."
+            },
+            {
+                "name": "oeo-unavailable",
+                "constant": 25,
+                "description": "OEO unavailable state."
+            },
+            {
+                "name": "oeo-alarm",
+                "constant": 26,
+                "description": "OEO alarm state."
+            },
+            {
+                "name": "oeo-phase1-recall",
+                "constant": 27,
+                "description": "OEO phase 1 recall state."
+            },
+            {
+                "name": "oeo-evacuate",
+                "constant": 28,
+                "description": "OEO evacuate state."
+            },
+            {
+                "name": "oeo-unaffected",
+                "constant": 29,
+                "description": "OEO unaffected state."
             },
             {
                 "name": "test-oeo-unavailable",
@@ -175,27 +160,30 @@
                 "description": "Test OEO unavailable state."
             },
             {
-                "name": "test-supervisory",
-                "constant": 23,
-                "description": "Test supervisory state."
-            }
-        ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 255
+                "name": "test-oeo-alarm",
+                "constant": 31,
+                "description": "Test OEO alarm state."
             },
             {
-                "custom": true,
-                "minimum": 256,
-                "maximum": 65535
+                "name": "test-oeo-phase1-recall",
+                "constant": 32,
+                "description": "Test OEO phase 1 recall state."
+            },
+            {
+                "name": "test-oeo-evacuate",
+                "constant": 33,
+                "description": "Test OEO evacuate state."
+            },
+            {
+                "name": "test-oeo-unaffected",
+                "constant": 34,
+                "description": "Test OEO unaffected state."
             }
-        ]
+        ],
+        "maximum": 65535,
+        "proprietary": {
+            "from": 256,
+            "to": 65535
+        }
     }
 }

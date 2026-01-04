@@ -1,0 +1,49 @@
+{
+    "alias": "BACnetAuthorizationConstraint",
+    "name": "authorization-constraint",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "origin",
+                "type": {
+                    "base": "enumerated",
+                    "values": [
+                        {
+                            "name": "direct-connect",
+                            "constant": 0
+                        },
+                        {
+                            "name": "same-network",
+                            "constant": 1
+                        },
+                        {
+                            "name": "any-network",
+                            "constant": 2
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "authentication",
+                "type": {
+                    "base": "enumerated",
+                    "values": [
+                        {
+                            "name": "certified",
+                            "constant": 0
+                        },
+                        {
+                            "name": "secure-path",
+                            "constant": 1
+                        },
+                        {
+                            "name": "any-method",
+                            "constant": 2
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

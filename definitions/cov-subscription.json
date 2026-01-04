@@ -1,0 +1,35 @@
+{
+    "alias": "BACnetCOVSubscription",
+    "name": "cov-subscription",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "recipient",
+                "type": "recipient-process",
+                "context": 0
+            },
+            {
+                "name": "monitored-property-reference",
+                "type": "object-property-reference",
+                "context": 1
+            },
+            {
+                "name": "issue-confirmed-notifications",
+                "type": "boolean",
+                "context": 2
+            },
+            {
+                "name": "time-remaining",
+                "type": "unsigned",
+                "context": 3
+            },
+            {
+                "name": "cov-increment",
+                "type": "real",
+                "context": 4,
+                "optional": true
+            }
+        ]
+    }
+}

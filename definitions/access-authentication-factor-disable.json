@@ -5,19 +5,14 @@
         "base": "enumerated",
         "values": [
             {
+                "name": "none",
+                "constant": 0,
+                "description": "Specifies that no disablement is present."
+            },
+            {
                 "name": "disabled",
                 "constant": 1,
                 "description": "Specifies that the authentication factor is disabled."
-            },
-            {
-                "name": "disabled-damaged",
-                "constant": 4,
-                "description": "Specifies that the authentication factor is disabled due to being damaged."
-            },
-            {
-                "name": "disabled-destroyed",
-                "constant": 5,
-                "description": "Specifies that the authentication factor is disabled due to being destroyed."
             },
             {
                 "name": "disabled-lost",
@@ -30,27 +25,20 @@
                 "description": "Specifies that the authentication factor is disabled due to being stolen."
             },
             {
-                "name": "none",
-                "constant": 0,
-                "description": "Specifies that no disablement is present."
-            }
-        ],
-        "extensible": true,
-        "range": {
-            "minimum": 0,
-            "maximum": 65535
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 0,
-                "maximum": 63
+                "name": "disabled-damaged",
+                "constant": 4,
+                "description": "Specifies that the authentication factor is disabled due to being damaged."
             },
             {
-                "custom": true,
-                "minimum": 64,
-                "maximum": 65535
+                "name": "disabled-destroyed",
+                "constant": 5,
+                "description": "Specifies that the authentication factor is disabled due to being destroyed."
             }
-        ]
+        ],
+        "maximum": 65535,
+        "proprietary": {
+            "from": 64,
+            "to": 65535
+        }
     }
 }

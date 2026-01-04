@@ -6,12 +6,12 @@
         "fields": [
             {
                 "name": "device-identifier",
-                "type": "objectid",
+                "type": "object-identifier",
                 "context": 0
             },
             {
                 "name": "object-identifier",
-                "type": "objectid",
+                "type": "object-identifier",
                 "context": 1
             },
             {
@@ -23,8 +23,7 @@
                 "name": "property-array-index",
                 "type": "unsigned",
                 "context": 3,
-                "optional": true,
-                "description": "Used only with array datatype; if omitted with an array then the entire array is referenced."
+                "optional": true
             },
             {
                 "name": "property-value",

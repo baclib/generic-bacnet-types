@@ -1,0 +1,24 @@
+{
+    "alias": "BACnetHostAddress",
+    "name": "host-address",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "none",
+                "type": "null",
+                "context": 0
+            },
+            {
+                "name": "ip-address",
+                "type": "octet-string",
+                "context": 1
+            },
+            {
+                "name": "name",
+                "type": "character-string",
+                "context": 2
+            }
+        ]
+    }
+}

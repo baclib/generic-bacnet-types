@@ -1,0 +1,31 @@
+{
+    "alias": "You-Are-Request",
+    "name": "you-are-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "vendor-id",
+                "type": "unsigned-16"
+            },
+            {
+                "name": "model-name",
+                "type": "character-string"
+            },
+            {
+                "name": "serial-number",
+                "type": "character-string"
+            },
+            {
+                "name": "device-identifier",
+                "type": "object-identifier",
+                "optional": true
+            },
+            {
+                "name": "device-mac-address",
+                "type": "octet-string",
+                "optional": true
+            }
+        ]
+    }
+}

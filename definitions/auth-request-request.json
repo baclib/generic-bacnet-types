@@ -1,0 +1,36 @@
+{
+    "alias": "AuthRequest-Request",
+    "name": "auth-request-request",
+    "type": {
+        "base": "choice",
+        "options": [
+            {
+                "name": "token-request",
+                "type": {
+                    "base": "sequence",
+                    "fields": [
+                        {
+                            "name": "client",
+                            "type": "unsigned-32",
+                            "context": 0
+                        },
+                        {
+                            "name": "audience",
+                            "type": {
+                                "base": "integer-32",
+                                "series": true
+                            },
+                            "context": 1
+                        },
+                        {
+                            "name": "scope",
+                            "type": "authorization-scope",
+                            "context": 2
+                        }
+                    ]
+                },
+                "context": 0
+            }
+        ]
+    }
+}

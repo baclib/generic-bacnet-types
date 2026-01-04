@@ -1,0 +1,56 @@
+{
+    "alias": "UnconfirmedTextMessage-Request",
+    "name": "unconfirmed-text-message-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "text-message-source-device",
+                "type": "object-identifier",
+                "context": 0
+            },
+            {
+                "name": "message-class",
+                "type": {
+                    "base": "choice",
+                    "options": [
+                        {
+                            "name": "numeric",
+                            "type": "unsigned",
+                            "context": 0
+                        },
+                        {
+                            "name": "character",
+                            "type": "character-string",
+                            "context": 1
+                        }
+                    ]
+                },
+                "context": 1,
+                "optional": true
+            },
+            {
+                "name": "message-priority",
+                "type": {
+                    "base": "enumerated",
+                    "values": [
+                        {
+                            "name": "normal",
+                            "constant": 0
+                        },
+                        {
+                            "name": "urgent",
+                            "constant": 1
+                        }
+                    ]
+                },
+                "context": 2
+            },
+            {
+                "name": "message",
+                "type": "character-string",
+                "context": 3
+            }
+        ]
+    }
+}

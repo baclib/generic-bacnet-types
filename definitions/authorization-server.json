@@ -1,0 +1,26 @@
+{
+    "alias": "BACnetAuthorizationServer",
+    "name": "authorization-server",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "auth-server",
+                "type": "unsigned-32",
+                "context": 0
+            },
+            {
+                "name": "signing-key-1",
+                "type": "octet-string",
+                "context": 1,
+                "optional": true
+            },
+            {
+                "name": "signing-key-2",
+                "type": "octet-string",
+                "context": 2,
+                "optional": true
+            }
+        ]
+    }
+}

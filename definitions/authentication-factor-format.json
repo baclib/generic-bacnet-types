@@ -1,0 +1,26 @@
+{
+    "alias": "BACnetAuthenticationFactorFormat",
+    "name": "authentication-factor-format",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "format-type",
+                "type": "authentication-factor-type",
+                "context": 0
+            },
+            {
+                "name": "vendor-id",
+                "type": "unsigned-16",
+                "context": 1,
+                "optional": true
+            },
+            {
+                "name": "vendor-format",
+                "type": "unsigned-16",
+                "context": 2,
+                "optional": true
+            }
+        ]
+    }
+}

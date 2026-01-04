@@ -1,0 +1,41 @@
+{
+    "alias": "BACnet-SimpleACK-PDU",
+    "name": "simple-ack-pdu",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "pdu-type",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 0,
+                    "maximum": 15
+                },
+                "context": 0
+            },
+            {
+                "name": "reserved",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 0,
+                    "maximum": 15
+                },
+                "context": 1
+            },
+            {
+                "name": "invoke-id",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 0,
+                    "maximum": 255
+                },
+                "context": 2
+            },
+            {
+                "name": "service-ack-choice",
+                "type": "confirmed-service-choice",
+                "context": 3
+            }
+        ]
+    }
+}

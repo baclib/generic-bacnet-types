@@ -2,54 +2,42 @@
     "alias": "BACnetDaysOfWeek",
     "name": "days-of-week",
     "type": {
-        "base": "bitstring",
+        "base": "bit-string",
         "bits": [
             {
-                "position": 0,
                 "name": "monday",
+                "position": 0,
                 "description": "Monday."
             },
             {
-                "position": 1,
                 "name": "tuesday",
+                "position": 1,
                 "description": "Tuesday."
             },
             {
-                "position": 2,
                 "name": "wednesday",
+                "position": 2,
                 "description": "Wednesday."
             },
             {
-                "position": 3,
                 "name": "thursday",
+                "position": 3,
                 "description": "Thursday."
             },
             {
-                "position": 4,
                 "name": "friday",
+                "position": 4,
                 "description": "Friday."
             },
             {
-                "position": 5,
                 "name": "saturday",
+                "position": 5,
                 "description": "Saturday."
             },
             {
-                "position": 6,
                 "name": "sunday",
+                "position": 6,
                 "description": "Sunday."
-            }
-        ],
-        "extensible": false,
-        "range": {
-            "minimum": 6,
-            "maximum": 6
-        },
-        "ranges": [
-            {
-                "custom": false,
-                "minimum": 6,
-                "maximum": 6
             }
         ]
     }

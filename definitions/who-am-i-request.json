@@ -1,0 +1,21 @@
+{
+    "alias": "Who-Am-I-Request",
+    "name": "who-am-i-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "vendor-id",
+                "type": "unsigned-16"
+            },
+            {
+                "name": "model-name",
+                "type": "character-string"
+            },
+            {
+                "name": "serial-number",
+                "type": "character-string"
+            }
+        ]
+    }
+}

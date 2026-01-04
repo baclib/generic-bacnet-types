@@ -17,7 +17,7 @@
                         {
                             "name": "list-of-fault-values",
                             "type": {
-                                "base": "charstring",
+                                "base": "character-string",
                                 "series": true
                             },
                             "context": 0
@@ -33,7 +33,7 @@
                     "fields": [
                         {
                             "name": "vendor-id",
-                            "type": "unsigned16",
+                            "type": "unsigned-16",
                             "context": 0
                         },
                         {
@@ -52,7 +52,7 @@
                                     },
                                     {
                                         "name": "real",
-                                        "type": "float"
+                                        "type": "real"
                                     },
                                     {
                                         "name": "unsigned",
@@ -64,7 +64,7 @@
                                     },
                                     {
                                         "name": "integer",
-                                        "type": "signed"
+                                        "type": "integer"
                                     },
                                     {
                                         "name": "double",
@@ -72,15 +72,15 @@
                                     },
                                     {
                                         "name": "octetstring",
-                                        "type": "octetstring"
+                                        "type": "octet-string"
                                     },
                                     {
                                         "name": "characterstring",
-                                        "type": "charstring"
+                                        "type": "character-string"
                                     },
                                     {
                                         "name": "bitstring",
-                                        "type": "bitstring"
+                                        "type": "bit-string"
                                     },
                                     {
                                         "name": "enumerated",
@@ -96,7 +96,7 @@
                                     },
                                     {
                                         "name": "objectidentifier",
-                                        "type": "objectid"
+                                        "type": "object-identifier"
                                     },
                                     {
                                         "name": "reference",
@@ -176,7 +176,7 @@
                                 "options": [
                                     {
                                         "name": "real",
-                                        "type": "float"
+                                        "type": "real"
                                     },
                                     {
                                         "name": "unsigned",
@@ -188,7 +188,7 @@
                                     },
                                     {
                                         "name": "integer",
-                                        "type": "signed"
+                                        "type": "integer"
                                     }
                                 ]
                             },
@@ -201,7 +201,7 @@
                                 "options": [
                                     {
                                         "name": "real",
-                                        "type": "float"
+                                        "type": "real"
                                     },
                                     {
                                         "name": "unsigned",
@@ -213,7 +213,7 @@
                                     },
                                     {
                                         "name": "integer",
-                                        "type": "signed"
+                                        "type": "integer"
                                     }
                                 ]
                             },
