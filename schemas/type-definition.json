@@ -20,11 +20,37 @@
         "traits": {
             "$ref": "./type-traits.json",
             "description": "The traits of the type."
+        },
+        "predefined": {
+            "type": "boolean",
+            "const": true,
+            "description": "Indicates if the type is predefined. Mutually exclusive with 'traits'."
         }
     },
     "required": [
-        "name",
-        "traits"
+        "name"
+    ],
+    "oneOf": [
+        {
+            "required": [
+                "traits"
+            ],
+            "not": {
+                "required": [
+                    "predefined"
+                ]
+            }
+        },
+        {
+            "required": [
+                "predefined"
+            ],
+            "not": {
+                "required": [
+                    "traits"
+                ]
+            }
+        }
     ],
     "additionalProperties": false
 }
