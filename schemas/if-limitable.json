@@ -17,7 +17,7 @@
             "then": {
                 "properties": {
                     "range": {
-                        "$ref": "./non-negative-integer-range.json"
+                        "$ref": "./reuse-non-negative-integer-range.json"
                     }
                 }
             }
@@ -80,7 +80,7 @@
             "then": {
                 "properties": {
                     "length": {
-                        "$ref": "./fixed-length-or-range.json"
+                        "$ref": "./reuse-non-negative-integer-length.json"
                     }
                 }
             }

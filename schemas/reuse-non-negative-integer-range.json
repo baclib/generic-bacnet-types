@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://baclib.github.io/non-negative-integer-range.json",
-    "title": "Non-negative Integer Range",
+    "$id": "https://baclib.github.io/reuse-non-negative-integer-range.json",
+    "title": "Reuse Non-negative Integer Range",
     "description": "Specifies a non-negative integer range with minimum and/or maximum values.",
     "properties": {
         "minimum": {

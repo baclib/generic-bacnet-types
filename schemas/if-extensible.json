@@ -20,7 +20,7 @@
                 "description": "Indicates whether the enumerated type is extensible, allowing for additional values beyond those explicitly defined."
             },
             "range": {
-                "$ref": "./non-negative-integer-range.json"
+                "$ref": "./reuse-non-negative-integer-range.json"
             },
             "ranges": {
                 "type": "array",

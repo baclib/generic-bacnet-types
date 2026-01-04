@@ -14,7 +14,7 @@
                     "type": "boolean"
                 },
                 {
-                    "$ref": "./fixed-length-or-range.json"
+                    "$ref": "./reuse-non-negative-integer-length.json"
                 }
             ]
         }
