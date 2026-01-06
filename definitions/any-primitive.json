@@ -35,7 +35,7 @@
             },
             {
                 "name": "character-string",
-                "type": "character-string",
+                "type": "character-string"
             },
             {
                 "name": "bit-string",
