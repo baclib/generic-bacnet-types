@@ -30,6 +30,7 @@
                 "name": "list-of-cov-subscription-specifications",
                 "type": {
                     "base": "sequence",
+                    "series": true,
                     "fields": [
                         {
                             "name": "monitored-object-identifier",
@@ -40,6 +41,7 @@
                             "name": "list-of-cov-references",
                             "type": {
                                 "base": "sequence",
+                                "series": true,
                                 "fields": [
                                     {
                                         "name": "monitored-property",

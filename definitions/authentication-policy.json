@@ -8,6 +8,7 @@
                 "name": "policy",
                 "type": {
                     "base": "sequence",
+                    "series": true,
                     "fields": [
                         {
                             "name": "credential-data-input",

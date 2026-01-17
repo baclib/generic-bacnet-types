@@ -3,6 +3,7 @@
     "name": "get-alarm-summary-ack",
     "type": {
         "base": "sequence",
+        "series": true,
         "fields": [
             {
                 "name": "object-identifier",

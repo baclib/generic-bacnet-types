@@ -13,6 +13,7 @@
                 "name": "log-data",
                 "type": {
                     "base": "choice",
+                    "series": true,
                     "options": [
                         {
                             "name": "boolean-value",

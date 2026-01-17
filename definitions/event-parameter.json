@@ -222,6 +222,7 @@
                             "name": "parameters",
                             "type": {
                                 "base": "choice",
+                                "series": true,
                                 "options": [
                                     {
                                         "name": "null",

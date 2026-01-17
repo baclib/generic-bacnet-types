@@ -8,6 +8,7 @@
                 "name": "landing-doors",
                 "type": {
                     "base": "sequence",
+                    "series": true,
                     "fields": [
                         {
                             "name": "floor-number",

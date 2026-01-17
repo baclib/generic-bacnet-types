@@ -8,6 +8,7 @@
                 "name": "list-of-event-summaries",
                 "type": {
                     "base": "sequence",
+                    "series": true,
                     "fields": [
                         {
                             "name": "object-identifier",
