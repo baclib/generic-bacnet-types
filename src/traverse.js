@@ -133,6 +133,10 @@ function traverseTraits(context, transformer) {
             // recursively traverse them
             if (item.type?.base) {
                 const nestedContext = {
+
+                    thisName: item.name,
+                    thisAlias: item.alias,
+
                     traits: item.type,
                     level: level + 1,
                     fullname: itemContext.fullname,
@@ -178,6 +182,9 @@ function traverseTraits(context, transformer) {
  * @returns {Promise<Object>} Processing result with counts: { totalCount, processedCount, errorCount }
  */
 export async function traverseDefinitions(transformer, options = {}) {
+
+    await transformer.start?.();
+
     let totalCount = definitions.length;
     let processedCount = 0;
     let errorCount = 0;
@@ -187,6 +194,10 @@ export async function traverseDefinitions(transformer, options = {}) {
         try {
             // Create initial context for this definition
             const context = {
+
+                thisName: definition.name,                                 // Short name of the definition
+                thisAlias: definition.alias,                               // Alias of the definition
+
                 definition,                                                 // The definition object
                 fullname: definition.name,                                  // Fully qualified name
                 isPrimitive: Object.hasOwn(definition, 'primitive'),        // Is this a primitive type?

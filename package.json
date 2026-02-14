@@ -5,6 +5,7 @@
     "type": "module",
     "main": "src/index.js",
     "scripts": {
+        "transform": "node src/transform.js",
         "test": "node test/run-tests.js"
     },
     "keywords": [
@@ -20,6 +21,9 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/baclib/generic-bacnet-types.git"
+    },
+    "dependencies": {
+        "handlebars": "^4.7.8"
     },
     "bugs": {
         "url": "https://github.com/baclib/generic-bacnet-types/issues"
