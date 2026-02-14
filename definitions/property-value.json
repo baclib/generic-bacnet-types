@@ -5,18 +5,21 @@
         "base": "sequence",
         "fields": [
             {
-                "name": "property-identifier",
+                "alias": "property-identifier",
+                "name": "identifier",
                 "type": "property-identifier",
                 "context": 0
             },
             {
-                "name": "property-array-index",
+                "alias": "property-array-index",
+                "name": "index",
                 "type": "unsigned",
                 "context": 1,
                 "optional": true
             },
             {
-                "name": "property-value",
+                "alias": "property-value",
+                "name": "value",
                 "type": "any",
                 "context": 2
             },

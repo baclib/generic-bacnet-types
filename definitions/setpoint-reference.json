@@ -5,7 +5,8 @@
         "base": "sequence",
         "fields": [
             {
-                "name": "setpoint-reference",
+                "alias": "setpoint-reference",
+                "name": "reference",
                 "type": "object-property-reference",
                 "context": 0,
                 "optional": true

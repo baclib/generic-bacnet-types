@@ -5,12 +5,14 @@
         "base": "choice",
         "options": [
             {
-                "name": "log-status",
+                "alias": "log-status",
+                "name": "status",
                 "type": "log-status",
                 "context": 0
             },
             {
-                "name": "log-data",
+                "alias": "log-data",
+                "name": "series",
                 "type": {
                     "base": "choice",
                     "series": true,

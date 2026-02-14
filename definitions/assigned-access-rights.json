@@ -5,7 +5,8 @@
         "base": "sequence",
         "fields": [
             {
-                "name": "assigned-access-rights",
+                "alias": "assigned-access-rights",
+                "name": "reference",
                 "type": "device-object-reference",
                 "context": 0
             },
