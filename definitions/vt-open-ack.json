@@ -1,0 +1,13 @@
+{
+    "alias": "VT-Open-ACK",
+    "name": "vt-open-ack",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "remote-vt-session-identifier",
+                "type": "unsigned-8"
+            }
+        ]
+    }
+}

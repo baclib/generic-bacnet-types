@@ -1,0 +1,17 @@
+{
+    "alias": "VT-Open-Request",
+    "name": "vt-open-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "vt-class",
+                "type": "vt-class"
+            },
+            {
+                "name": "local-vt-session-identifier",
+                "type": "unsigned-8"
+            }
+        ]
+    }
+}

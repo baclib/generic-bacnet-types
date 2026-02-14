@@ -1,0 +1,25 @@
+{
+    "alias": "VT-Data-Request",
+    "name": "vt-data-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "vt-session-identifier",
+                "type": "unsigned-8"
+            },
+            {
+                "name": "vt-new-data",
+                "type": "octet-string"
+            },
+            {
+                "name": "vt-data-flag",
+                "type": {
+                    "base": "unsigned",
+                    "minimum": 0,
+                    "maximum": 1
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "alias": "VT-Close-Request",
+    "name": "vt-close-request",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "list-of-remote-vt-session-identifiers",
+                "type": {
+                    "base": "unsigned-8",
+                    "series": true
+                }
+            }
+        ]
+    }
+}

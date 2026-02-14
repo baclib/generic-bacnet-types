@@ -1,0 +1,23 @@
+{
+    "alias": "VTClose-Error",
+    "name": "vt-close-error",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "error-type",
+                "type": "error",
+                "context": 0
+            },
+            {
+                "name": "list-of-vt-session-identifiers",
+                "type": {
+                    "base": "unsigned-8",
+                    "series": true
+                },
+                "context": 1,
+                "optional": true
+            }
+        ]
+    }
+}

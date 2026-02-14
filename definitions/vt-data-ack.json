@@ -1,0 +1,20 @@
+{
+    "alias": "VT-Data-ACK",
+    "name": "vt-data-ack",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "all-new-data-accepted",
+                "type": "boolean",
+                "context": 0
+            },
+            {
+                "name": "accepted-octet-count",
+                "type": "unsigned",
+                "context": 1,
+                "optional": true
+            }
+        ]
+    }
+}
