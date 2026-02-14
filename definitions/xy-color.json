@@ -1,0 +1,17 @@
+{
+    "alias": "BACnetxyColor",
+    "name": "xy-color",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "x-coordinate",
+                "type": "real"
+            },
+            {
+                "name": "y-coordinate",
+                "type": "real"
+            }
+        ]
+    }
+}

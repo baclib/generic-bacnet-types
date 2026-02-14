@@ -1,0 +1,53 @@
+{
+    "alias": "ReadAccessResult",
+    "name": "read-access-result",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "object-identifier",
+                "type": "object-identifier",
+                "context": 0
+            },
+            {
+                "name": "list-of-results",
+                "type": {
+                    "base": "sequence",
+                    "series": true,
+                    "fields": [
+                        {
+                            "name": "property-identifier",
+                            "type": "property-identifier",
+                            "context": 2
+                        },
+                        {
+                            "name": "property-array-index",
+                            "type": "unsigned",
+                            "context": 3,
+                            "optional": true
+                        },
+                        {
+                            "name": "read-result",
+                            "type": {
+                                "base": "choice",
+                                "options": [
+                                    {
+                                        "name": "property-value",
+                                        "type": "any",
+                                        "context": 4
+                                    },
+                                    {
+                                        "name": "property-access-error",
+                                        "type": "error",
+                                        "context": 5
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "context": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "alias": "BACnetWriteStatus",
+    "name": "write-status",
+    "type": {
+        "base": "enumerated",
+        "values": [
+            {
+                "name": "idle",
+                "constant": 0
+            },
+            {
+                "name": "in-progress",
+                "constant": 1
+            },
+            {
+                "name": "successful",
+                "constant": 2
+            },
+            {
+                "name": "failed",
+                "constant": 3
+            }
+        ]
+    }
+}

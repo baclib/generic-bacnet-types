@@ -1,0 +1,22 @@
+{
+    "alias": "WriteAccessSpecification",
+    "name": "write-access-specification",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "object-identifier",
+                "type": "object-identifier",
+                "context": 0
+            },
+            {
+                "name": "list-of-properties",
+                "type": {
+                    "base": "property-value",
+                    "series": true
+                },
+                "context": 1
+            }
+        ]
+    }
+}

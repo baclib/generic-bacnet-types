@@ -1,0 +1,22 @@
+{
+    "alias": "ReadAccessSpecification",
+    "name": "read-access-specification",
+    "type": {
+        "base": "sequence",
+        "fields": [
+            {
+                "name": "object-identifier",
+                "type": "object-identifier",
+                "context": 0
+            },
+            {
+                "name": "list-of-property-references",
+                "type": {
+                    "base": "property-reference",
+                    "series": true
+                },
+                "context": 1
+            }
+        ]
+    }
+}
