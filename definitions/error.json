@@ -843,15 +843,11 @@
                         },
                         {
                             "name": "no-default-scope",
-                            "constant": 215
+                            "constant": 216
                         },
                         {
                             "name": "no-policy",
-                            "constant": 216
-                        },
-                        {
-                            "name": "no-default-scope",
-                            "constant": 216
+                            "constant": 217
                         },
                         {
                             "name": "revoked-token",
