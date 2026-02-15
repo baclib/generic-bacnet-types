@@ -1,6 +1,7 @@
 {
     "alias": "CreateObject-Request",
     "name": "create-object-request",
+    "description": "Request parameters for the CreateObject service, used to create a new BACnet object on a device.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -12,16 +13,19 @@
                         {
                             "name": "object-type",
                             "type": "object-type",
-                            "context": 0
+                            "context": 0,
+                            "description": "Specifies the type of object to create, letting the device assign the instance number."
                         },
                         {
                             "name": "object-identifier",
                             "type": "object-identifier",
-                            "context": 1
+                            "context": 1,
+                            "description": "Specifies the complete object identifier including both type and instance number."
                         }
                     ]
                 },
-                "context": 0
+                "context": 0,
+                "description": "Specifies the object to be created, either by type alone or by complete identifier."
             },
             {
                 "name": "list-of-initial-values",
@@ -30,7 +34,8 @@
                     "series": true
                 },
                 "context": 1,
-                "optional": true
+                "optional": true,
+                "description": "An optional list of initial property values to be set when the object is created."
             }
         ]
     }

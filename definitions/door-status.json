@@ -1,6 +1,7 @@
 {
     "alias": "BACnetDoorStatus",
     "name": "door-status",
+    "description": "Enumeration defining the operational status of a door.",
     "type": {
         "base": "enumerated",
         "values": [

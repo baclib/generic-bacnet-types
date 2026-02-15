@@ -1,16 +1,19 @@
 {
     "alias": "BACnetDateTimePattern",
     "name": "date-time-pattern",
+    "description": "Represents a date and time pattern that can include wildcards for matching recurring schedules.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "date",
-                "type": "date-pattern"
+                "type": "date-pattern",
+                "description": "The date pattern component, which may include wildcards."
             },
             {
                 "name": "time",
-                "type": "time-pattern"
+                "type": "time-pattern",
+                "description": "The time pattern component, which may include wildcards."
             }
         ]
     }

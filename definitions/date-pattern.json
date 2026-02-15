@@ -1,5 +1,6 @@
 {
     "alias": "DatePattern",
     "name": "date-pattern",
+    "description": "BACnet primitive date pattern type that supports wildcards for recurring date matching.",
     "primitive": 10
 }

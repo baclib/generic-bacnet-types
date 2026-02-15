@@ -1,5 +1,6 @@
 {
     "alias": "Double",
     "name": "double",
+    "description": "BACnet primitive double-precision floating-point data type.",
     "primitive": 5
 }

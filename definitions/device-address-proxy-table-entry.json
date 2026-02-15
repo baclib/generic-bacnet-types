@@ -1,23 +1,27 @@
 {
     "alias": "BACnetDeviceAddressProxyTableEntry",
     "name": "device-address-proxy-table-entry",
+    "description": "Represents an entry in the device address proxy table, containing network address information and the last I-Am message received from a device.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "address",
                 "type": "address",
-                "context": 0
+                "context": 0,
+                "description": "The network address of the BACnet device."
             },
             {
                 "name": "i-am",
                 "type": "i-am-request",
-                "context": 1
+                "context": 1,
+                "description": "The last I-Am message received from this device."
             },
             {
                 "name": "last-i-am-time",
                 "type": "date-time",
-                "context": 2
+                "context": 2,
+                "description": "The date and time when the last I-Am message was received."
             }
         ]
     }

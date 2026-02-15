@@ -1,5 +1,6 @@
 {
     "alias": "Date",
     "name": "date",
+    "description": "BACnet date type representing a specific calendar date.",
     "type": "date-pattern"
 }

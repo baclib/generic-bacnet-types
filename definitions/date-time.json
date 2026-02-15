@@ -1,16 +1,19 @@
 {
     "alias": "BACnetDateTime",
     "name": "date-time",
+    "description": "Represents a specific date and time combination in BACnet.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "date",
-                "type": "date"
+                "type": "date",
+                "description": "The date component."
             },
             {
                 "name": "time",
-                "type": "time"
+                "type": "time",
+                "description": "The time component."
             }
         ]
     }

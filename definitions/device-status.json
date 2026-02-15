@@ -1,6 +1,7 @@
 {
     "alias": "BACnetDeviceStatus",
     "name": "device-status",
+    "description": "Enumeration defining the operational status of a BACnet device.",
     "type": {
         "base": "enumerated",
         "values": [

@@ -1,6 +1,7 @@
 {
     "alias": "BACnetDaysOfWeek",
     "name": "days-of-week",
+    "description": "A bit string representing selected days of the week for scheduling purposes.",
     "type": {
         "base": "bit-string",
         "bits": [

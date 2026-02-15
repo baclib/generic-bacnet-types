@@ -1,12 +1,14 @@
 {
     "alias": "DeleteObject-Request",
     "name": "delete-object-request",
+    "description": "Request parameters for the DeleteObject service, used to delete a BACnet object from a device.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "object-identifier",
-                "type": "object-identifier"
+                "type": "object-identifier",
+                "description": "The identifier of the object to be deleted."
             }
         ]
     }

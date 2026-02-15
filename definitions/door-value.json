@@ -1,6 +1,7 @@
 {
     "alias": "BACnetDoorValue",
     "name": "door-value",
+    "description": "Enumeration defining commands for door lock and unlock operations.",
     "type": {
         "base": "enumerated",
         "values": [

@@ -1,6 +1,7 @@
 {
     "alias": "BACnetDoorAlarmState",
     "name": "door-alarm-state",
+    "description": "Enumeration defining the alarm state of a door, indicating normal operation or various alarm conditions.",
     "type": {
         "base": "enumerated",
         "values": [

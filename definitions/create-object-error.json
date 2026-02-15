@@ -1,18 +1,21 @@
 {
     "alias": "CreateObject-Error",
     "name": "create-object-error",
+    "description": "Error response for the CreateObject service, indicating which initial property value caused a failure.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "error-type",
                 "type": "error",
-                "context": 0
+                "context": 0,
+                "description": "The error class and code describing the failure."
             },
             {
                 "name": "first-failed-element-number",
                 "type": "unsigned",
-                "context": 1
+                "context": 1,
+                "description": "The index of the first property value in the list-of-initial-values that caused an error."
             }
         ]
     }

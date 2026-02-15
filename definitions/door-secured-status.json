@@ -1,6 +1,7 @@
 {
     "alias": "BACnetDoorSecuredStatus",
     "name": "door-secured-status",
+    "description": "Enumeration defining whether a door is secured or unsecured.",
     "type": {
         "base": "enumerated",
         "values": [

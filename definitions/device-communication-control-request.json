@@ -1,6 +1,7 @@
 {
     "alias": "DeviceCommunicationControl-Request",
     "name": "device-communication-control-request",
+    "description": "Request parameters for the DeviceCommunicationControl service, used to enable or disable network communication for a BACnet device.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -8,7 +9,8 @@
                 "name": "time-duration",
                 "type": "unsigned-16",
                 "context": 0,
-                "optional": true
+                "optional": true,
+                "description": "The duration in minutes for which the communication control should remain in effect. Optional."
             },
             {
                 "name": "enable-disable",
@@ -17,15 +19,18 @@
                     "values": [
                         {
                             "name": "enable",
-                            "constant": 0
+                            "constant": 0,
+                            "description": "Enable communications."
                         },
                         {
                             "name": "disable-initiation",
-                            "constant": 2
+                            "constant": 2,
+                            "description": "Disable initiation of communication requests."
                         }
                     ]
                 },
-                "context": 1
+                "context": 1,
+                "description": "Indicates whether to enable or disable communication."
             },
             {
                 "name": "password",
@@ -37,7 +42,8 @@
                     }
                 },
                 "context": 2,
-                "optional": true
+                "optional": true,
+                "description": "An optional password for authentication. Maximum length of 20 characters."
             }
         ]
     }

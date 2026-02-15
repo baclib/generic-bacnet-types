@@ -1,34 +1,40 @@
 {
     "alias": "BACnetCOVSubscription",
     "name": "cov-subscription",
+    "description": "Represents a Change of Value (COV) subscription for monitoring property changes in BACnet objects.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "recipient",
                 "type": "recipient-process",
-                "context": 0
+                "context": 0,
+                "description": "The recipient process that will receive COV notifications."
             },
             {
                 "name": "monitored-property-reference",
                 "type": "object-property-reference",
-                "context": 1
+                "context": 1,
+                "description": "Reference to the property being monitored for changes."
             },
             {
                 "name": "issue-confirmed-notifications",
                 "type": "boolean",
-                "context": 2
+                "context": 2,
+                "description": "Indicates whether confirmed notifications should be issued to the recipient."
             },
             {
                 "name": "time-remaining",
                 "type": "unsigned",
-                "context": 3
+                "context": 3,
+                "description": "The remaining time in seconds before this subscription expires."
             },
             {
                 "name": "cov-increment",
                 "type": "real",
                 "context": 4,
-                "optional": true
+                "optional": true,
+                "description": "The minimum change in value required to trigger a notification. Optional."
             }
         ]
     }
