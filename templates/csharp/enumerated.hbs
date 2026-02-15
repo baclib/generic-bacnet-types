@@ -1,0 +1,16 @@
+/// <summary>
+/// Represents the enumeration {{bacnetName}} as defined in ANSI/ASHRAE 135-2024 Clause 21.
+/// </summary>
+public enum {{className}} : {{enumBase}}
+{
+{{#each items}}
+    {{#if description}}
+    /// <summary>
+    /// {{description}}
+    /// </summary>
+    {{/if}}
+    {{name}} = {{constant}}{{#unless @last}},
+    {{/unless}}
+
+{{/each}}
+}

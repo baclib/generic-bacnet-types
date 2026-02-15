@@ -1,7 +1,0 @@
-/// <summary>
-/// Represents the enumeration {{BACNET_NAME}} as defined in ANSI/ASHRAE 135-2024 Clause 20.6.
-/// </summary>
-public enum {{ENUM_NAME}} : {{BASE_TYPE}}
-{
-{{ITEMS}}
-}

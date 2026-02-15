@@ -1,0 +1,70 @@
+/// <summary>
+/// Returns a value-type enumerator suitable for pattern-based foreach iteration.
+/// Use this when iterating the struct directly to avoid allocations/boxing.
+/// </summary>
+public Enumerator GetEnumerator() => new(this);
+
+/// <summary>
+/// Value-type enumerator used by the public pattern-based <see cref="GetEnumerator"/> method.
+/// </summary>
+/// <remarks>
+/// The enumerator is a struct so direct iteration over a <see cref="{{typeName}}"/> value does not allocate.
+/// As is standard .NET practice, no range checks are performed in <see cref="Current"/>. The consumer must
+/// call <see cref="MoveNext"/> and only access <see cref="Current"/> when it is valid.
+/// </remarks>
+public struct Enumerator
+{
+    /// <summary>
+    /// Copy of the parent <see cref="{{typeName}}"/> instance being enumerated.
+    /// </summary>
+    private readonly {{typeName}} _bits;
+
+    /// <summary>
+    /// Current enumerator index. Starts at -1 before the first element; incremented by <see cref="MoveNext"/>.
+    /// Valid indices are 0..(<see cref="{{typeName}}.Count"/> - 1).
+    /// </summary>
+    private int _index;
+
+    /// <summary>
+    /// Initializes a new <see cref="Enumerator"/> for the specified <paramref name="bits"/>.
+    /// </summary>
+    /// <param name="bits">The parent <see cref="{{typeName}}"/> instance to enumerate.</param>
+    /// <remarks>
+    /// The constructor sets the internal index to -1 so enumeration starts before the first element.
+    /// </remarks>
+    internal Enumerator({{typeName}} bits)
+    {
+        _bits = bits;
+        _index = -1;
+    }
+
+    /// <summary>
+    /// Advances the enumerator to the next bit.
+    /// </summary>
+    /// <returns><see langword="true"/> if the enumerator advanced to a valid bit; otherwise <see langword="false"/>.</returns>
+    public bool MoveNext()
+    {
+        _index++;
+        return _index < _bits.Count;
+    }
+
+    /// <summary>
+    /// Gets the current bit value.
+    /// </summary>
+    public readonly bool Current => _bits[_index];
+}
+
+/// <summary>
+/// Interface implementation for <see cref="IEnumerable{Boolean}"/>.
+/// Enumerating via the interface will allocate (iterator state machine) and may box the struct.
+/// </summary>
+IEnumerator<bool> IEnumerable<bool>.GetEnumerator()
+{
+    for (int i = 0; i < Count; i++)
+    {
+        yield return this[i];
+    }
+}
+
+/// <inheritdoc/>
+IEnumerator IEnumerable.GetEnumerator() => ((IEnumerable<bool>)this).GetEnumerator();

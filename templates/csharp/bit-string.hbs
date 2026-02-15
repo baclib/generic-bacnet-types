@@ -1,0 +1,58 @@
+/// <summary>
+/// Represents the bit string {{bacnetName}} as defined in ANSI/ASHRAE 135-2024 Clause 20.6.
+/// </summary>
+public readonly record struct {{className}}
+{
+    /// <summary>
+    /// Gets the underlying {{baseBits}}-bit unsigned integer containing the bits in system-native format.
+    /// </summary>
+    public {{flagBase}} Flags { get; }
+
+/*
+    /// <summary>
+    /// Fixed number of bits for this type
+    /// </summary>
+    public const int FixCount = {{length}};
+
+    /// <summary>
+    /// Initializes a new instance of <see cref="{{typeName}}"/>.
+    /// </summary>
+    /// <param name="flags">
+    /// The underlying {{baseBits}}-bit unsigned integer containing the bits in system-native format.
+    /// Only the lower bits up to <see cref="FixCount"/> are used. The remaining bits are always set to zero.
+    /// </param>
+    public {{typeName}}({{flagBase}} flags)
+    {
+        Flags = ({{flagBase}})(flags & {{flagsMask}});
+    }
+
+    {{#each bits}}
+    /// <summary>
+    /// {{description}}
+    /// </summary>
+    public bool {{bitName}} => this[{{position}}];
+
+    {{/each}}
+    /// <summary>
+    /// Gets the boolean value of the bit at the specified <paramref name="index"/>.
+    /// </summary>
+    /// <param name="index">The zero-based bit index.</param>
+    /// <returns><see langword="true"/> if the bit is set; otherwise <see langword="false"/>.</returns>
+    /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="index"/> is less than 0 or greater than <see cref="FixCount"/>.</exception>
+    public bool this[int index]
+    {
+        get
+        {
+            ArgumentOutOfRangeException.ThrowIfNegative(index);
+            ArgumentOutOfRangeException.ThrowIfGreaterThanOrEqual(index, FixCount);
+
+            return Flags.GetBit(index);
+        }
+    }
+
+    /// <summary>
+    /// Gets the number of bits used by this instance, which is always equal to <see cref="FixCount"/>.
+    /// </summary>
+    public int Count => FixCount;
+    */
+}

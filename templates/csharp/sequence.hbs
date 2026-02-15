@@ -1,0 +1,19 @@
+/// <summary>
+/// Represents the sequence {{bacnetName}} as defined in ANSI/ASHRAE 135-2024 Clause 21.
+/// </summary>
+public partial record class {{className}}
+{
+{{#each items}}
+    {{#if description}}
+    /// <summary>
+    /// {{description}}
+    /// </summary>
+    {{/if}}
+    {{#if optional}}
+    public {{type}}? {{name}} { get; init; }
+    {{else}}
+    public required {{type}} {{name}} { get; init; }
+    {{/if}}{{#unless @last}}
+    {{/unless}}
+{{/each}}
+}
