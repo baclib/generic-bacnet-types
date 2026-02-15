@@ -1,6 +1,7 @@
 {
     "alias": "BACnetEventState",
     "name": "event-state",
+    "description": "Represents BACnet Event State enumeration, which indicates the current operational state of an event-detecting object.",
     "type": {
         "base": "enumerated",
         "values": [

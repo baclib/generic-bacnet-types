@@ -1,6 +1,7 @@
 {
     "alias": "BACnetEventTransitionBits",
     "name": "event-transition-bits",
+    "description": "Represents BACnet Event Transition Bits, which indicate the event state transitions that are being monitored, enabled, or acknowledged in event detection.",
     "type": {
         "base": "bit-string",
         "bits": [

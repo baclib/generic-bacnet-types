@@ -1,6 +1,7 @@
 {
     "alias": "Enumerated8",
     "name": "enumerated-8",
+    "description": "An 8-bit enumerated value with range from 0 to 255.",
     "type": {
         "base": "enumerated",
         "minimum": 0,

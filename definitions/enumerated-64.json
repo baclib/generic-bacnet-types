@@ -1,6 +1,7 @@
 {
     "alias": "Enumerated64",
     "name": "enumerated-64",
+    "description": "A 64-bit enumerated value with range from 0 to 18446744073709551615.",
     "type": {
         "base": "enumerated",
         "minimum": 0,

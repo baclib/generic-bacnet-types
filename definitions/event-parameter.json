@@ -1,23 +1,27 @@
 {
     "alias": "BACnetEventParameter",
     "name": "event-parameter",
+    "description": "Represents BACnet Event Parameter, which defines the parameters for event detection algorithms in BACnet objects. Each choice option corresponds to a specific event type and contains the criteria for detecting and triggering that event condition.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "change-of-bitstring",
+                "description": "Event parameters for change-of-bitstring detection, triggered when a bit string value changes according to the specified criteria.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "time-delay",
                             "type": "unsigned",
-                            "context": 0
+                            "context": 0,
+                            "description": "The minimum time in seconds that the condition must persist before triggering the event."
                         },
                         {
                             "name": "bitmask",
                             "type": "bit-string",
-                            "context": 1
+                            "context": 1,
+                            "description": "A bit mask indicating which bits in the monitored value are significant for comparison."
                         },
                         {
                             "name": "list-of-bitstring-values",
@@ -25,7 +29,8 @@
                                 "base": "bit-string",
                                 "series": true
                             },
-                            "context": 2
+                            "context": 2,
+                            "description": "A list of bit string values that trigger the event when matched."
                         }
                     ]
                 },
@@ -33,13 +38,15 @@
             },
             {
                 "name": "change-of-state",
+                "description": "Event parameters for change-of-state detection, triggered when a state property changes to one of the specified values.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "time-delay",
                             "type": "unsigned",
-                            "context": 0
+                            "context": 0,
+                            "description": "The minimum time in seconds that the condition must persist before triggering the event."
                         },
                         {
                             "name": "list-of-values",
@@ -47,7 +54,8 @@
                                 "base": "property-states",
                                 "series": true
                             },
-                            "context": 1
+                            "context": 1,
+                            "description": "A list of property state values that trigger the event when matched."
                         }
                     ]
                 },
@@ -55,13 +63,15 @@
             },
             {
                 "name": "change-of-value",
+                "description": "Event parameters for change-of-value detection, triggered when a value changes significantly based on the specified criteria.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "time-delay",
                             "type": "unsigned",
-                            "context": 0
+                            "context": 0,
+                            "description": "The minimum time in seconds that the condition must persist before triggering the event."
                         },
                         {
                             "name": "cov-criteria",
@@ -71,16 +81,19 @@
                                     {
                                         "name": "bitmask",
                                         "type": "bit-string",
-                                        "context": 0
+                                        "context": 0,
+                                        "description": "A bit mask for detecting changes in specific bits."
                                     },
                                     {
                                         "name": "referenced-property-increment",
                                         "type": "real",
-                                        "context": 1
+                                        "context": 1,
+                                        "description": "The minimum change in value required to trigger the event."
                                     }
                                 ]
                             },
-                            "context": 1
+                            "context": 1,
+                            "description": "The criteria defining what constitutes a significant change of value."
                         }
                     ]
                 },
@@ -88,18 +101,21 @@
             },
             {
                 "name": "command-failure",
+                "description": "Event parameters for command-failure detection, triggered when a command does not achieve the expected result.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "time-delay",
                             "type": "unsigned",
-                            "context": 0
+                            "context": 0,
+                            "description": "The minimum time in seconds that the condition must persist before triggering the event."
                         },
                         {
                             "name": "feedback-property-reference",
                             "type": "device-object-property-reference",
-                            "context": 1
+                            "context": 1,
+                            "description": "Reference to the property that provides feedback on the command result."
                         }
                     ]
                 },
@@ -107,33 +123,39 @@
             },
             {
                 "name": "floating-limit",
+                "description": "Event parameters for floating-limit detection, triggered when a value deviates from a setpoint by more than the specified limits.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "time-delay",
                             "type": "unsigned",
-                            "context": 0
+                            "context": 0,
+                            "description": "The minimum time in seconds that the condition must persist before triggering the event."
                         },
                         {
                             "name": "setpoint-reference",
                             "type": "device-object-property-reference",
-                            "context": 1
+                            "context": 1,
+                            "description": "Reference to the property containing the setpoint value."
                         },
                         {
                             "name": "low-diff-limit",
                             "type": "real",
-                            "context": 2
+                            "context": 2,
+                            "description": "The maximum allowed negative deviation from the setpoint."
                         },
                         {
                             "name": "high-diff-limit",
                             "type": "real",
-                            "context": 3
+                            "context": 3,
+                            "description": "The maximum allowed positive deviation from the setpoint."
                         },
                         {
                             "name": "deadband",
                             "type": "real",
-                            "context": 4
+                            "context": 4,
+                            "description": "The deadband value to prevent rapid toggling of the event state."
                         }
                     ]
                 },
@@ -141,28 +163,33 @@
             },
             {
                 "name": "out-of-range",
+                "description": "Event parameters for out-of-range detection, triggered when a real value exceeds the specified low or high limits.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "time-delay",
                             "type": "unsigned",
-                            "context": 0
+                            "context": 0,
+                            "description": "The minimum time in seconds that the condition must persist before triggering the event."
                         },
                         {
                             "name": "low-limit",
                             "type": "real",
-                            "context": 1
+                            "context": 1,
+                            "description": "The low limit threshold value."
                         },
                         {
                             "name": "high-limit",
                             "type": "real",
-                            "context": 2
+                            "context": 2,
+                            "description": "The high limit threshold value."
                         },
                         {
                             "name": "deadband",
                             "type": "real",
-                            "context": 3
+                            "context": 3,
+                            "description": "The deadband value to prevent rapid toggling of the event state."
                         }
                     ]
                 },
@@ -170,13 +197,15 @@
             },
             {
                 "name": "change-of-life-safety",
+                "description": "Event parameters for change-of-life-safety detection, triggered when a life safety value changes to one of the specified alarm values or modes.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "time-delay",
                             "type": "unsigned",
-                            "context": 0
+                            "context": 0,
+                            "description": "The minimum time in seconds that the condition must persist before triggering the event."
                         },
                         {
                             "name": "list-of-life-safety-alarm-values",
@@ -184,7 +213,8 @@
                                 "base": "life-safety-state",
                                 "series": true
                             },
-                            "context": 1
+                            "context": 1,
+                            "description": "A list of life safety state values that trigger the event when matched."
                         },
                         {
                             "name": "list-of-alarm-values",
@@ -192,12 +222,14 @@
                                 "base": "life-safety-state",
                                 "series": true
                             },
-                            "context": 2
+                            "context": 2,
+                            "description": "An additional list of alarm values for event detection."
                         },
                         {
                             "name": "mode-property-reference",
                             "type": "device-object-property-reference",
-                            "context": 3
+                            "context": 3,
+                            "description": "Reference to the property containing the life safety mode."
                         }
                     ]
                 },
@@ -205,18 +237,21 @@
             },
             {
                 "name": "extended",
+                "description": "Event parameters for vendor-specific extended event types, allowing proprietary event detection using vendor-defined parameters.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "vendor-id",
                             "type": "unsigned-16",
-                            "context": 0
+                            "context": 0,
+                            "description": "The vendor identification code indicating the provider of the extended event type."
                         },
                         {
                             "name": "extended-event-type",
                             "type": "unsigned",
-                            "context": 1
+                            "context": 1,
+                            "description": "The vendor-specific event type identifier."
                         },
                         {
                             "name": "parameters",
@@ -226,64 +261,79 @@
                                 "options": [
                                     {
                                         "name": "null",
-                                        "type": "null"
+                                        "type": "null",
+                                        "description": "No parameter value."
                                     },
                                     {
                                         "name": "real",
-                                        "type": "real"
+                                        "type": "real",
+                                        "description": "A real (floating-point) parameter value."
                                     },
                                     {
                                         "name": "unsigned",
-                                        "type": "unsigned"
+                                        "type": "unsigned",
+                                        "description": "An unsigned integer parameter value."
                                     },
                                     {
                                         "name": "boolean",
-                                        "type": "boolean"
+                                        "type": "boolean",
+                                        "description": "A boolean parameter value."
                                     },
                                     {
                                         "name": "integer",
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "description": "A signed integer parameter value."
                                     },
                                     {
                                         "name": "double",
-                                        "type": "double"
+                                        "type": "double",
+                                        "description": "A double-precision floating-point parameter value."
                                     },
                                     {
                                         "name": "octetstring",
-                                        "type": "octet-string"
+                                        "type": "octet-string",
+                                        "description": "An octet string parameter value."
                                     },
                                     {
                                         "name": "characterstring",
-                                        "type": "character-string"
+                                        "type": "character-string",
+                                        "description": "A character string parameter value."
                                     },
                                     {
                                         "name": "bitstring",
-                                        "type": "bit-string"
+                                        "type": "bit-string",
+                                        "description": "A bit string parameter value."
                                     },
                                     {
                                         "name": "enumerated",
-                                        "type": "enumerated"
+                                        "type": "enumerated",
+                                        "description": "An enumerated parameter value."
                                     },
                                     {
                                         "name": "date",
-                                        "type": "date-pattern"
+                                        "type": "date-pattern",
+                                        "description": "A date pattern parameter value."
                                     },
                                     {
                                         "name": "time",
-                                        "type": "time-pattern"
+                                        "type": "time-pattern",
+                                        "description": "A time pattern parameter value."
                                     },
                                     {
                                         "name": "objectidentifier",
-                                        "type": "object-identifier"
+                                        "type": "object-identifier",
+                                        "description": "An object identifier parameter value."
                                     },
                                     {
                                         "name": "reference",
                                         "type": "device-object-property-reference",
-                                        "context": 0
+                                        "context": 0,
+                                        "description": "A device object property reference parameter value."
                                     }
                                 ]
                             },
-                            "context": 2
+                            "context": 2,
+                            "description": "A list of vendor-specific parameter values for the extended event type."
                         }
                     ]
                 },
@@ -291,18 +341,21 @@
             },
             {
                 "name": "buffer-ready",
+                "description": "Event parameters for buffer-ready detection, triggered when buffer storage reaches the specified notification thresholds or when a previous notification has not been confirmed.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "notification-threshold",
                             "type": "unsigned",
-                            "context": 0
+                            "context": 0,
+                            "description": "The number of log records required to trigger a notification."
                         },
                         {
                             "name": "previous-notification-count",
                             "type": "unsigned-32",
-                            "context": 1
+                            "context": 1,
+                            "description": "The count from the previous notification for detecting unconfirmed buffers."
                         }
                     ]
                 },
@@ -310,23 +363,27 @@
             },
             {
                 "name": "unsigned-range",
+                "description": "Event parameters for unsigned-range detection, triggered when an unsigned integer value exceeds the specified low or high limits.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "time-delay",
                             "type": "unsigned",
-                            "context": 0
+                            "context": 0,
+                            "description": "The minimum time in seconds that the condition must persist before triggering the event."
                         },
                         {
                             "name": "low-limit",
                             "type": "unsigned",
-                            "context": 1
+                            "context": 1,
+                            "description": "The low limit threshold value."
                         },
                         {
                             "name": "high-limit",
                             "type": "unsigned",
-                            "context": 2
+                            "context": 2,
+                            "description": "The high limit threshold value."
                         }
                     ]
                 },
@@ -334,6 +391,7 @@
             },
             {
                 "name": "access-event",
+                "description": "Event parameters for access-event detection, triggered when physical access events occur that match the specified criteria.",
                 "type": {
                     "base": "sequence",
                     "fields": [
@@ -343,12 +401,14 @@
                                 "base": "access-event",
                                 "series": true
                             },
-                            "context": 0
+                            "context": 0,
+                            "description": "A list of access event types that trigger the event when matched."
                         },
                         {
                             "name": "access-event-time-reference",
                             "type": "device-object-property-reference",
-                            "context": 1
+                            "context": 1,
+                            "description": "Reference to the property containing the time of the access event."
                         }
                     ]
                 },
@@ -356,28 +416,33 @@
             },
             {
                 "name": "double-out-of-range",
+                "description": "Event parameters for double-out-of-range detection, triggered when a double-precision floating-point value exceeds the specified low or high limits.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "time-delay",
                             "type": "unsigned",
-                            "context": 0
+                            "context": 0,
+                            "description": "The minimum time in seconds that the condition must persist before triggering the event."
                         },
                         {
                             "name": "low-limit",
                             "type": "double",
-                            "context": 1
+                            "context": 1,
+                            "description": "The low limit threshold value."
                         },
                         {
                             "name": "high-limit",
                             "type": "double",
-                            "context": 2
+                            "context": 2,
+                            "description": "The high limit threshold value."
                         },
                         {
                             "name": "deadband",
                             "type": "double",
-                            "context": 3
+                            "context": 3,
+                            "description": "The deadband value to prevent rapid toggling of the event state."
                         }
                     ]
                 },
@@ -385,28 +450,33 @@
             },
             {
                 "name": "signed-out-of-range",
+                "description": "Event parameters for signed-out-of-range detection, triggered when a signed integer value exceeds the specified low or high limits.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "time-delay",
                             "type": "unsigned",
-                            "context": 0
+                            "context": 0,
+                            "description": "The minimum time in seconds that the condition must persist before triggering the event."
                         },
                         {
                             "name": "low-limit",
                             "type": "integer",
-                            "context": 1
+                            "context": 1,
+                            "description": "The low limit threshold value."
                         },
                         {
                             "name": "high-limit",
                             "type": "integer",
-                            "context": 2
+                            "context": 2,
+                            "description": "The high limit threshold value."
                         },
                         {
                             "name": "deadband",
                             "type": "unsigned",
-                            "context": 3
+                            "context": 3,
+                            "description": "The deadband value to prevent rapid toggling of the event state."
                         }
                     ]
                 },
@@ -414,28 +484,33 @@
             },
             {
                 "name": "unsigned-out-of-range",
+                "description": "Event parameters for unsigned-out-of-range detection, triggered when an unsigned integer value exceeds the specified low or high limits.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "time-delay",
                             "type": "unsigned",
-                            "context": 0
+                            "context": 0,
+                            "description": "The minimum time in seconds that the condition must persist before triggering the event."
                         },
                         {
                             "name": "low-limit",
                             "type": "unsigned",
-                            "context": 1
+                            "context": 1,
+                            "description": "The low limit threshold value."
                         },
                         {
                             "name": "high-limit",
                             "type": "unsigned",
-                            "context": 2
+                            "context": 2,
+                            "description": "The high limit threshold value."
                         },
                         {
                             "name": "deadband",
                             "type": "unsigned",
-                            "context": 3
+                            "context": 3,
+                            "description": "The deadband value to prevent rapid toggling of the event state."
                         }
                     ]
                 },
@@ -443,13 +518,15 @@
             },
             {
                 "name": "change-of-characterstring",
+                "description": "Event parameters for change-of-characterstring detection, triggered when a character string value changes to one of the specified alarm values.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "time-delay",
                             "type": "unsigned",
-                            "context": 0
+                            "context": 0,
+                            "description": "The minimum time in seconds that the condition must persist before triggering the event."
                         },
                         {
                             "name": "list-of-alarm-values",
@@ -457,7 +534,8 @@
                                 "base": "character-string",
                                 "series": true
                             },
-                            "context": 1
+                            "context": 1,
+                            "description": "A list of character string values that trigger the event when matched."
                         }
                     ]
                 },
@@ -465,18 +543,21 @@
             },
             {
                 "name": "change-of-status-flags",
+                "description": "Event parameters for change-of-status-flags detection, triggered when the specified status flags change state.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "time-delay",
                             "type": "unsigned",
-                            "context": 0
+                            "context": 0,
+                            "description": "The minimum time in seconds that the condition must persist before triggering the event."
                         },
                         {
                             "name": "selected-flags",
                             "type": "status-flags",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status flags to monitor for changes."
                         }
                     ]
                 },
@@ -484,11 +565,13 @@
             },
             {
                 "name": "none",
+                "description": "Indicates no event parameters are defined.",
                 "type": "null",
                 "context": 20
             },
             {
                 "name": "change-of-discrete-value",
+                "description": "Event parameters for change-of-discrete-value detection, triggered when a discrete-valued property changes to a new value.",
                 "type": {
                     "base": "sequence",
                     "fields": [
@@ -499,53 +582,65 @@
                                 "options": [
                                     {
                                         "name": "boolean",
-                                        "type": "boolean"
+                                        "type": "boolean",
+                                        "description": "A boolean discrete value."
                                     },
                                     {
                                         "name": "unsigned",
-                                        "type": "unsigned"
+                                        "type": "unsigned",
+                                        "description": "An unsigned integer discrete value."
                                     },
                                     {
                                         "name": "integer",
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "description": "A signed integer discrete value."
                                     },
                                     {
                                         "name": "enumerated",
-                                        "type": "enumerated"
+                                        "type": "enumerated",
+                                        "description": "An enumerated discrete value."
                                     },
                                     {
                                         "name": "characterstring",
-                                        "type": "character-string"
+                                        "type": "character-string",
+                                        "description": "A character string discrete value."
                                     },
                                     {
                                         "name": "octetstring",
-                                        "type": "octet-string"
+                                        "type": "octet-string",
+                                        "description": "An octet string discrete value."
                                     },
                                     {
                                         "name": "datepattern",
-                                        "type": "date"
+                                        "type": "date",
+                                        "description": "A date pattern discrete value."
                                     },
                                     {
                                         "name": "timepattern",
-                                        "type": "time"
+                                        "type": "time",
+                                        "description": "A time pattern discrete value."
                                     },
                                     {
                                         "name": "objectidentifier",
-                                        "type": "object-identifier"
+                                        "type": "object-identifier",
+                                        "description": "An object identifier discrete value."
                                     },
                                     {
                                         "name": "datetime",
                                         "type": "date-time",
-                                        "context": 0
+                                        "context": 0,
+                                        "description": "A date and time discrete value."
                                     }
                                 ]
                             },
-                            "context": 0
+                            "context": 0,
+                            "description": "The new value that triggers the event."
                         },
                         {
                             "name": "status-flags",
                             "type": "status-flags",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status flags associated with the discrete value."
                         }
                     ]
                 },
@@ -553,13 +648,15 @@
             },
             {
                 "name": "change-of-timer",
+                "description": "Event parameters for change-of-timer detection, triggered when a timer state changes to one of the specified alarm values.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "time-delay",
                             "type": "unsigned",
-                            "context": 0
+                            "context": 0,
+                            "description": "The minimum time in seconds that the condition must persist before triggering the event."
                         },
                         {
                             "name": "alarm-values",
@@ -567,12 +664,14 @@
                                 "base": "timer-state",
                                 "series": true
                             },
-                            "context": 1
+                            "context": 1,
+                            "description": "A list of timer state values that trigger the event when matched."
                         },
                         {
                             "name": "update-time-reference",
                             "type": "device-object-property-reference",
-                            "context": 2
+                            "context": 2,
+                            "description": "Reference to the property containing the timer update time."
                         }
                     ]
                 },

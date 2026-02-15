@@ -1,6 +1,7 @@
 {
     "alias": "BACnetEscalatorOperationDirection",
     "name": "escalator-operation-direction",
+    "description": "Enumeration defining the operational direction and speed of an escalator.",
     "type": {
         "base": "enumerated",
         "values": [

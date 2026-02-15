@@ -1,6 +1,7 @@
 {
     "alias": "BACnetEscalatorMode",
     "name": "escalator-mode",
+    "description": "Enumeration defining the operational mode of an escalator.",
     "type": {
         "base": "enumerated",
         "values": [

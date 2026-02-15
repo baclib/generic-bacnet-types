@@ -1,6 +1,7 @@
 {
     "alias": "BACnet-Error-PDU",
     "name": "error-pdu",
+    "description": "Represents a BACnet Error Protocol Data Unit (PDU) returned in response to a confirmed service request that resulted in an error.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -11,7 +12,8 @@
                     "minimum": 0,
                     "maximum": 15
                 },
-                "context": 0
+                "context": 0,
+                "description": "The PDU type identifier (5 for BACnet-Error-PDU)."
             },
             {
                 "name": "reserved",
@@ -20,7 +22,8 @@
                     "minimum": 0,
                     "maximum": 15
                 },
-                "context": 1
+                "context": 1,
+                "description": "Reserved field, must be zero."
             },
             {
                 "name": "original-invoke-id",
@@ -29,17 +32,20 @@
                     "minimum": 0,
                     "maximum": 255
                 },
-                "context": 2
+                "context": 2,
+                "description": "The invoke ID from the original confirmed service request that caused this error."
             },
             {
                 "name": "error-choice",
                 "type": "confirmed-service-choice",
-                "context": 3
+                "context": 3,
+                "description": "The confirmed service type that resulted in the error."
             },
             {
                 "name": "error",
                 "type": "error",
-                "context": 4
+                "context": 4,
+                "description": "The error information containing error class and error code."
             }
         ]
     }

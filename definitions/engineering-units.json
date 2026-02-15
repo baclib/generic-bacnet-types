@@ -1,6 +1,7 @@
 {
     "alias": "BACnetEngineeringUnits",
     "name": "engineering-units",
+    "description": "Enumeration defining standardized engineering units for measurement values in BACnet.",
     "type": {
         "base": "enumerated",
         "values": [

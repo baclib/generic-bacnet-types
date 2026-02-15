@@ -1,5 +1,6 @@
 {
     "alias": "Enumerated",
     "name": "enumerated",
+    "description": "BACnet primitive enumerated data type for representing discrete enumerated values.",
     "primitive": 9
 }

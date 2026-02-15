@@ -1,13 +1,15 @@
 {
     "alias": "BACnetEventLogRecord",
     "name": "event-log-record",
+    "description": "Represents a single record in an event log, containing a timestamp and associated event data.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "timestamp",
                 "type": "date-time",
-                "context": 0
+                "context": 0,
+                "description": "The date and time when the event log record was created."
             },
             {
                 "name": "log-datum",
@@ -17,21 +19,25 @@
                         {
                             "name": "log-status",
                             "type": "log-status",
-                            "context": 0
+                            "context": 0,
+                            "description": "A log status indicator."
                         },
                         {
                             "name": "notification",
                             "type": "confirmed-event-notification-request",
-                            "context": 1
+                            "context": 1,
+                            "description": "A confirmed event notification."
                         },
                         {
                             "name": "time-change",
                             "type": "real",
-                            "context": 2
+                            "context": 2,
+                            "description": "A time change value in seconds."
                         }
                     ]
                 },
-                "context": 1
+                "context": 1,
+                "description": "The data associated with this log record."
             }
         ]
     }

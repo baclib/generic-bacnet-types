@@ -1,11 +1,13 @@
 {
     "alias": "Error",
     "name": "error",
+    "description": "Represents a BACnet error containing an error class and error code to describe service failures.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "error-class",
+                "description": "The class or category of the error.",
                 "type": {
                     "base": "enumerated",
                     "values": [
@@ -50,6 +52,7 @@
             },
             {
                 "name": "error-code",
+                "description": "The specific error code providing detailed information about the failure.",
                 "type": {
                     "base": "enumerated",
                     "values": [

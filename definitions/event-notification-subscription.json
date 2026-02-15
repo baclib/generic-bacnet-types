@@ -1,28 +1,33 @@
 {
     "alias": "BACnetEventNotificationSubscription",
     "name": "event-notification-subscription",
+    "description": "Defines a subscription for event notifications in BACnet, specifying the recipient and notification preferences.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "recipient",
                 "type": "recipient",
-                "context": 0
+                "context": 0,
+                "description": "The recipient to receive event notifications."
             },
             {
                 "name": "process-identifier",
                 "type": "unsigned-32",
-                "context": 1
+                "context": 1,
+                "description": "A unique identifier for the subscribing process."
             },
             {
                 "name": "issue-confirmed-notifications",
                 "type": "boolean",
-                "context": 2
+                "context": 2,
+                "description": "Indicates whether confirmed event notifications should be issued to the recipient."
             },
             {
                 "name": "time-remaining",
                 "type": "unsigned",
-                "context": 3
+                "context": 3,
+                "description": "The remaining time in seconds before this subscription expires."
             }
         ]
     }

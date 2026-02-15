@@ -1,6 +1,7 @@
 {
     "alias": "BACnetEventType",
     "name": "event-type",
+    "description": "Represents BACnet Event Type enumeration, which specifies the type of event algorithm being used for event detection and notification in BACnet objects.",
     "type": {
         "base": "enumerated",
         "values": [

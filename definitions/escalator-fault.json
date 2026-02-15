@@ -1,6 +1,7 @@
 {
     "alias": "BACnetEscalatorFault",
     "name": "escalator-fault",
+    "description": "Enumeration defining the various fault conditions that can occur in an escalator system.",
     "type": {
         "base": "enumerated",
         "values": [

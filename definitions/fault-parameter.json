@@ -1,16 +1,19 @@
 {
     "alias": "BACnetFaultParameter",
     "name": "fault-parameter",
+    "description": "Represents BACnet Fault Parameter, which defines the parameters for fault detection algorithms in BACnet objects. Each choice option corresponds to a specific fault type and contains the criteria for detecting that fault condition.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "none",
                 "type": "null",
-                "context": 0
+                "context": 0,
+                "description": "No fault parameter specified."
             },
             {
                 "name": "fault-characterstring",
+                "description": "Fault parameters for character string value monitoring, triggered when a string matches one of the specified fault values.",
                 "type": {
                     "base": "sequence",
                     "fields": [
@@ -20,7 +23,8 @@
                                 "base": "character-string",
                                 "series": true
                             },
-                            "context": 0
+                            "context": 0,
+                            "description": "A list of character string values that indicate a fault condition."
                         }
                     ]
                 },
@@ -28,18 +32,21 @@
             },
             {
                 "name": "fault-extended",
+                "description": "Fault parameters for vendor-specific extended fault detection, allowing custom fault algorithms beyond standard BACnet fault types.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "vendor-id",
                             "type": "unsigned-16",
-                            "context": 0
+                            "context": 0,
+                            "description": "The vendor identifier for the vendor-specific fault type."
                         },
                         {
                             "name": "extended-fault-type",
                             "type": "unsigned",
-                            "context": 1
+                            "context": 1,
+                            "description": "The vendor-specific fault type identifier."
                         },
                         {
                             "name": "parameters",
@@ -49,64 +56,79 @@
                                 "options": [
                                     {
                                         "name": "null",
-                                        "type": "null"
+                                        "type": "null",
+                                        "description": "No parameter value."
                                     },
                                     {
                                         "name": "real",
-                                        "type": "real"
+                                        "type": "real",
+                                        "description": "A real number parameter."
                                     },
                                     {
                                         "name": "unsigned",
-                                        "type": "unsigned"
+                                        "type": "unsigned",
+                                        "description": "An unsigned integer parameter."
                                     },
                                     {
                                         "name": "boolean",
-                                        "type": "boolean"
+                                        "type": "boolean",
+                                        "description": "A boolean parameter."
                                     },
                                     {
                                         "name": "integer",
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "description": "A signed integer parameter."
                                     },
                                     {
                                         "name": "double",
-                                        "type": "double"
+                                        "type": "double",
+                                        "description": "A double-precision floating-point parameter."
                                     },
                                     {
                                         "name": "octetstring",
-                                        "type": "octet-string"
+                                        "type": "octet-string",
+                                        "description": "An octet string parameter."
                                     },
                                     {
                                         "name": "characterstring",
-                                        "type": "character-string"
+                                        "type": "character-string",
+                                        "description": "A character string parameter."
                                     },
                                     {
                                         "name": "bitstring",
-                                        "type": "bit-string"
+                                        "type": "bit-string",
+                                        "description": "A bit string parameter."
                                     },
                                     {
                                         "name": "enumerated",
-                                        "type": "enumerated"
+                                        "type": "enumerated",
+                                        "description": "An enumerated value parameter."
                                     },
                                     {
                                         "name": "date",
-                                        "type": "date"
+                                        "type": "date",
+                                        "description": "A date parameter."
                                     },
                                     {
                                         "name": "time",
-                                        "type": "time"
+                                        "type": "time",
+                                        "description": "A time parameter."
                                     },
                                     {
                                         "name": "objectidentifier",
-                                        "type": "object-identifier"
+                                        "type": "object-identifier",
+                                        "description": "A BACnet object identifier parameter."
                                     },
                                     {
                                         "name": "reference",
                                         "type": "device-object-property-reference",
-                                        "context": 0
+                                        "context": 0,
+                                        "description": "A device object property reference parameter."
                                     }
                                 ]
                             },
-                            "context": 2
+                            "context": 2,
+                            "description": "A series of parameters for the extended fault type, which can be of various data types."
                         }
                     ]
                 },
@@ -114,6 +136,7 @@
             },
             {
                 "name": "fault-life-safety",
+                "description": "Fault parameters for life safety state monitoring, triggered when a life safety object enters one of the specified fault states.",
                 "type": {
                     "base": "sequence",
                     "fields": [
@@ -123,12 +146,14 @@
                                 "base": "life-safety-state",
                                 "series": true
                             },
-                            "context": 0
+                            "context": 0,
+                            "description": "A list of life safety states that indicate a fault condition."
                         },
                         {
                             "name": "mode-property-reference",
                             "type": "device-object-property-reference",
-                            "context": 1
+                            "context": 1,
+                            "description": "Reference to the mode property that affects fault detection."
                         }
                     ]
                 },
@@ -136,6 +161,7 @@
             },
             {
                 "name": "fault-state",
+                "description": "Fault parameters for property state monitoring, triggered when a state property matches one of the specified fault states.",
                 "type": {
                     "base": "sequence",
                     "fields": [
@@ -145,7 +171,8 @@
                                 "base": "property-states",
                                 "series": true
                             },
-                            "context": 0
+                            "context": 0,
+                            "description": "A list of property states that indicate a fault condition."
                         }
                     ]
                 },
@@ -153,13 +180,15 @@
             },
             {
                 "name": "fault-status-flags",
+                "description": "Fault parameters for status flags monitoring, triggered when specific status flags are set in a referenced property.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "status-flags-reference",
                             "type": "device-object-property-reference",
-                            "context": 0
+                            "context": 0,
+                            "description": "Reference to the status flags property to be monitored."
                         }
                     ]
                 },
@@ -167,6 +196,7 @@
             },
             {
                 "name": "fault-out-of-range",
+                "description": "Fault parameters for out-of-range monitoring, triggered when a numeric value falls outside the specified normal range.",
                 "type": {
                     "base": "sequence",
                     "fields": [
@@ -177,23 +207,28 @@
                                 "options": [
                                     {
                                         "name": "real",
-                                        "type": "real"
+                                        "type": "real",
+                                        "description": "Minimum normal value as a real number."
                                     },
                                     {
                                         "name": "unsigned",
-                                        "type": "unsigned"
+                                        "type": "unsigned",
+                                        "description": "Minimum normal value as an unsigned integer."
                                     },
                                     {
                                         "name": "double",
-                                        "type": "double"
+                                        "type": "double",
+                                        "description": "Minimum normal value as a double-precision number."
                                     },
                                     {
                                         "name": "integer",
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "description": "Minimum normal value as a signed integer."
                                     }
                                 ]
                             },
-                            "context": 0
+                            "context": 0,
+                            "description": "The minimum value of the normal operating range."
                         },
                         {
                             "name": "max-normal-value",
@@ -202,23 +237,28 @@
                                 "options": [
                                     {
                                         "name": "real",
-                                        "type": "real"
+                                        "type": "real",
+                                        "description": "Maximum normal value as a real number."
                                     },
                                     {
                                         "name": "unsigned",
-                                        "type": "unsigned"
+                                        "type": "unsigned",
+                                        "description": "Maximum normal value as an unsigned integer."
                                     },
                                     {
                                         "name": "double",
-                                        "type": "double"
+                                        "type": "double",
+                                        "description": "Maximum normal value as a double-precision number."
                                     },
                                     {
                                         "name": "integer",
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "description": "Maximum normal value as a signed integer."
                                     }
                                 ]
                             },
-                            "context": 1
+                            "context": 1,
+                            "description": "The maximum value of the normal operating range."
                         }
                     ]
                 },
@@ -226,13 +266,15 @@
             },
             {
                 "name": "fault-listed",
+                "description": "Fault parameters for list monitoring, triggered when a monitored value appears in a referenced fault list.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "fault-list-reference",
                             "type": "device-object-property-reference",
-                            "context": 0
+                            "context": 0,
+                            "description": "Reference to the property containing the list of fault values."
                         }
                     ]
                 },
