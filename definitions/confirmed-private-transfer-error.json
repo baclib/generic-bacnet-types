@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "ConfirmedPrivateTransfer-Error",
     "name": "confirmed-private-transfer-error",
     "description": "Error response for the ConfirmedPrivateTransfer service, indicating a failure in a vendor-specific service.",

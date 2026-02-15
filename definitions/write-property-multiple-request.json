@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "WritePropertyMultiple-Request",
     "name": "write-property-multiple-request",
     "description": "Represents a request to write multiple properties to one or more BACnet objects in a single operation.",

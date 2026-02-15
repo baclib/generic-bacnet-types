@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "Double",
     "name": "double",
     "description": "BACnet primitive double-precision floating-point data type.",

@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnetShedState",
     "name": "shed-state",
     "description": "Enumerates the possible shed states for BACnet load control, indicating the status of a shed request.",

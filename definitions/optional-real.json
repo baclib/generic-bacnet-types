@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnetOptionalReal",
     "name": "optional-real",
     "description": "Represents an optional BACnet real value, allowing either null or a real number.",

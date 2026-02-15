@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnetLogStatus",
     "name": "log-status",
     "description": "Represents BACnet Log Status bit string, which indicates the operational state and condition of a logging object through individual status bits.",

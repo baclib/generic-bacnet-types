@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnetOptionalDateTime",
     "name": "optional-date-time",
     "description": "Represents an optional BACnet date-time value, allowing either null or a date-time value.",

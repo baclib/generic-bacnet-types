@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnetAuditLogRecordResult",
     "name": "audit-log-record-result",
     "description": "A result entry containing a sequence number and the corresponding audit log record.",

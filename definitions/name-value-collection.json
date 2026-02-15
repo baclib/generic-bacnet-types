@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnetNameValueCollection",
     "name": "name-value-collection",
     "description": "Represents a BACnet collection of name-value pairs, grouping multiple pairs together.",

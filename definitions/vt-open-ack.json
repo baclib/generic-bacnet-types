@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "VT-Open-ACK",
     "name": "vt-open-ack",
     "description": "Represents an acknowledgment for a BACnet VT-Open request, providing the remote VT session identifier.",

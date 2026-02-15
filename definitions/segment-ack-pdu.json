@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnet-SegmentACK-PDU",
     "name": "segment-ack-pdu",
     "description": "Represents a BACnet SegmentACK PDU, used to acknowledge receipt of segmented messages.",

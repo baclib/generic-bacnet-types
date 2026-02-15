@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "CommandPriority",
     "name": "command-priority",
     "description": "Represents a command priority level in BACnet, ranging from 1 (highest) to 16 (lowest).",

@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnetOptionalBitString",
     "name": "optional-bit-string",
     "description": "Represents an optional BACnet bit string, allowing either null or a bit-string value.",

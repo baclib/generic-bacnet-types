@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnet-Reject-PDU",
     "name": "reject-pdu",
     "description": "Represents a BACnet Reject PDU, used to reject a confirmed service request and indicate the reason for rejection.",

@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "ReadRange-Request",
     "name": "read-range-request",
     "description": "Represents a BACnet ReadRange request, used to read a range of values from a property of an object.",

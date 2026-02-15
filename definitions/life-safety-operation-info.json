@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnetLifeSafetyOperationInfo",
     "name": "life-safety-operation-info",
     "description": "Represents BACnet Life Safety Operation Info, which contains information about a life safety operation request, including the requesting process and the operation type.",

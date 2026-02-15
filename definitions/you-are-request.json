@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "You-Are-Request",
     "name": "you-are-request",
     "description": "Represents a BACnet 'You-Are' request, used to announce device identity and network information.",

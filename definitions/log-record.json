@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnetLogRecord",
     "name": "log-record",
     "description": "Represents a BACnet Log Record, which contains a single timestamped entry in a trend log, including the logged data value and optional status information.",

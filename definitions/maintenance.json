@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnetMaintenance",
     "name": "maintenance",
     "description": "Represents the BACnet maintenance type, indicating required maintenance actions or status.",

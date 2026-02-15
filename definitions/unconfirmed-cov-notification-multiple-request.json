@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "UnconfirmedCOVNotificationMultiple-Request",
     "name": "unconfirmed-cov-notification-multiple-request",
     "description": "Represents a BACnet unconfirmed COV (Change of Value) notification multiple request, used to report multiple property value changes without requiring acknowledgment.",

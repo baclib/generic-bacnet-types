@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "ReadAccessSpecification",
     "name": "read-access-specification",
     "description": "Represents a BACnet ReadAccessSpecification, specifying an object and a list of properties to read.",

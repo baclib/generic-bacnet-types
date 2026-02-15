@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnetAuthenticationPolicy",
     "name": "authentication-policy",
     "description": "Defines an authentication policy including the required credential inputs, whether order is enforced, and timeout settings.",

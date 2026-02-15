@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "Enumerated64",
     "name": "enumerated-64",
     "description": "A 64-bit enumerated value with range from 0 to 18446744073709551615.",

@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "CreateObject-Request",
     "name": "create-object-request",
     "description": "Request parameters for the CreateObject service, used to create a new BACnet object on a device.",

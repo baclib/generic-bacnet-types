@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnetEventTransitionBits",
     "name": "event-transition-bits",
     "description": "Represents BACnet Event Transition Bits, which indicate the event state transitions that are being monitored, enabled, or acknowledged in event detection.",

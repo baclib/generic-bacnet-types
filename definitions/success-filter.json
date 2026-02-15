@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnetSuccessFilter",
     "name": "success-filter",
     "description": "Enumerates the possible filters for BACnet results, allowing selection of all, only successes, or only failures.",

@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnetAuthenticationClient",
     "name": "authentication-client",
     "description": "Information about a client that is being authenticated, including its authentication state and device identifier.",

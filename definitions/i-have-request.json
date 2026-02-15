@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "I-Have-Request",
     "name": "i-have-request",
     "description": "Represents a BACnet I-Have service request, used by a device to announce that it contains a particular object, typically in response to a Who-Has service request.",

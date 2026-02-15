@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnetSCDirectConnection",
     "name": "sc-direct-connection",
     "description": "Represents a BACnet Secure Connect (SC) direct connection, including URI, connection state, timestamps, peer information, and errors.",

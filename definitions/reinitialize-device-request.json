@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "ReinitializeDevice-Request",
     "name": "reinitialize-device-request",
     "description": "Represents a BACnet ReinitializeDevice request, used to reinitialize a device to a specified state, optionally with a password.",

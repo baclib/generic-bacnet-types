@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnet-Confirmed-Service-ACK",
     "name": "confirmed-service-ack",
     "description": "A choice of confirmed service acknowledgment types representing responses to confirmed service requests.",

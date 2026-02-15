@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "BACnetLiftCarDriveStatus",
     "name": "lift-car-drive-status",
     "description": "Represents BACnet Lift Car Drive Status enumeration, which indicates the current movement state and drive operation of a lift (elevator) car.",

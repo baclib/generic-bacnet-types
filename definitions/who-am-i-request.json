@@ -1,4 +1,8 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026, The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "alias": "Who-Am-I-Request",
     "name": "who-am-i-request",
     "description": "Represents a BACnet Who-Am-I request, used to query device identity information.",
