@@ -1,18 +1,21 @@
 {
     "alias": "BACnetVMACEntry",
     "name": "vmac-entry",
+    "description": "Represents a mapping between a BACnet virtual MAC address and a native MAC address.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "virtual-mac-address",
                 "type": "octet-string",
-                "context": 0
+                "context": 0,
+                "description": "The virtual MAC address used in BACnet networks."
             },
             {
                 "name": "native-mac-address",
                 "type": "octet-string",
-                "context": 1
+                "context": 1,
+                "description": "The native (physical) MAC address corresponding to the virtual MAC address."
             }
         ]
     }

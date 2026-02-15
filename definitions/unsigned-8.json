@@ -1,6 +1,7 @@
 {
     "alias": "Unsigned8",
     "name": "unsigned-8",
+    "description": "Represents an 8-bit unsigned integer.",
     "type": {
         "base": "unsigned",
         "minimum": 0,

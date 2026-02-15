@@ -1,13 +1,15 @@
 {
     "alias": "WriteAccessSpecification",
     "name": "write-access-specification",
+    "description": "Specifies a set of properties to be written for a particular BACnet object.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "object-identifier",
                 "type": "object-identifier",
-                "context": 0
+                "context": 0,
+                "description": "The identifier of the BACnet object to be written."
             },
             {
                 "name": "list-of-properties",
@@ -15,7 +17,8 @@
                     "base": "property-value",
                     "series": true
                 },
-                "context": 1
+                "context": 1,
+                "description": "A list of property values to be written to the object."
             }
         ]
     }

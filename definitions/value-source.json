@@ -1,23 +1,27 @@
 {
     "alias": "BACnetValueSource",
     "name": "value-source",
+    "description": "Represents the source of a value in BACnet, which can be none, a device object reference, or an address.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "none",
                 "type": "null",
-                "context": 0
+                "context": 0,
+                "description": "No value source specified."
             },
             {
                 "name": "object",
                 "type": "device-object-reference",
-                "context": 1
+                "context": 1,
+                "description": "The value source is a device object reference."
             },
             {
                 "name": "address",
                 "type": "address",
-                "context": 2
+                "context": 2,
+                "description": "The value source is a network address."
             }
         ]
     }

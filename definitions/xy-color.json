@@ -1,16 +1,19 @@
 {
     "alias": "BACnetxyColor",
     "name": "xy-color",
+    "description": "Represents a color in the CIE xy chromaticity space for BACnet lighting and color control.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "x-coordinate",
-                "type": "real"
+                "type": "real",
+                "description": "The x chromaticity coordinate."
             },
             {
                 "name": "y-coordinate",
-                "type": "real"
+                "type": "real",
+                "description": "The y chromaticity coordinate."
             }
         ]
     }

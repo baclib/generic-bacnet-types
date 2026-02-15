@@ -1,19 +1,22 @@
 {
     "alias": "VT-Data-ACK",
     "name": "vt-data-ack",
+    "description": "Represents an acknowledgment for a BACnet VT-Data request, indicating acceptance of new data and the number of octets accepted.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "all-new-data-accepted",
                 "type": "boolean",
-                "context": 0
+                "context": 0,
+                "description": "Indicates if all new data was accepted (true/false)."
             },
             {
                 "name": "accepted-octet-count",
                 "type": "unsigned",
                 "context": 1,
-                "optional": true
+                "optional": true,
+                "description": "The number of octets accepted, if not all data was accepted. Optional."
             }
         ]
     }

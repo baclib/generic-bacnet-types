@@ -1,24 +1,29 @@
 {
     "alias": "BACnetWriteStatus",
     "name": "write-status",
+    "description": "Indicates the status of a write operation in BACnet, such as idle, in progress, successful, or failed.",
     "type": {
         "base": "enumerated",
         "values": [
             {
                 "name": "idle",
-                "constant": 0
+                "constant": 0,
+                "description": "No write operation is currently active."
             },
             {
                 "name": "in-progress",
-                "constant": 1
+                "constant": 1,
+                "description": "A write operation is currently in progress."
             },
             {
                 "name": "successful",
-                "constant": 2
+                "constant": 2,
+                "description": "The write operation completed successfully."
             },
             {
                 "name": "failed",
-                "constant": 3
+                "constant": 3,
+                "description": "The write operation failed."
             }
         ]
     }

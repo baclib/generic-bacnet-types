@@ -1,16 +1,19 @@
 {
     "alias": "VT-Open-Request",
     "name": "vt-open-request",
+    "description": "Represents a BACnet VT-Open request, used to initiate a new virtual terminal session.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "vt-class",
-                "type": "vt-class"
+                "type": "vt-class",
+                "description": "The class of the virtual terminal to be opened."
             },
             {
                 "name": "local-vt-session-identifier",
-                "type": "unsigned-8"
+                "type": "unsigned-8",
+                "description": "The identifier assigned to the local VT session."
             }
         ]
     }

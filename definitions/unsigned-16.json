@@ -1,6 +1,7 @@
 {
     "alias": "Unsigned16",
     "name": "unsigned-16",
+    "description": "Represents a 16-bit unsigned integer.",
     "type": {
         "base": "unsigned",
         "minimum": 0,

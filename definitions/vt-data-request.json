@@ -1,16 +1,19 @@
 {
     "alias": "VT-Data-Request",
     "name": "vt-data-request",
+    "description": "Represents a BACnet VT-Data request, used to send data to a virtual terminal session.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "vt-session-identifier",
-                "type": "unsigned-8"
+                "type": "unsigned-8",
+                "description": "The identifier of the VT session to which data is sent."
             },
             {
                 "name": "vt-new-data",
-                "type": "octet-string"
+                "type": "octet-string",
+                "description": "The new data to be sent to the VT session."
             },
             {
                 "name": "vt-data-flag",
@@ -18,7 +21,8 @@
                     "base": "unsigned",
                     "minimum": 0,
                     "maximum": 1
-                }
+                },
+                "description": "Flag indicating if this is the final block of data (1) or not (0)."
             }
         ]
     }

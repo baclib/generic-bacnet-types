@@ -1,6 +1,7 @@
 {
     "alias": "Unsigned64",
     "name": "unsigned-64",
+    "description": "Represents a 64-bit unsigned integer.",
     "type": {
         "base": "unsigned",
         "minimum": 0,

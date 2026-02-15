@@ -1,6 +1,7 @@
 {
     "alias": "Who-Has-Request",
     "name": "who-has-request",
+    "description": "Represents a BACnet Who-Has request, used to discover devices that contain a specific object by identifier or name, optionally within a device instance range.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -16,7 +17,8 @@
                                 "minimum": 0,
                                 "maximum": 4194303
                             },
-                            "context": 0
+                            "context": 0,
+                            "description": "The lower limit of the device instance range."
                         },
                         {
                             "name": "device-instance-range-high-limit",
@@ -25,11 +27,13 @@
                                 "minimum": 0,
                                 "maximum": 4194303
                             },
-                            "context": 1
+                            "context": 1,
+                            "description": "The upper limit of the device instance range."
                         }
                     ]
                 },
-                "optional": true
+                "optional": true,
+                "description": "Optional range of device instance numbers to limit the search."
             },
             {
                 "name": "object",
@@ -39,15 +43,18 @@
                         {
                             "name": "object-identifier",
                             "type": "object-identifier",
-                            "context": 2
+                            "context": 2,
+                            "description": "The object identifier to search for."
                         },
                         {
                             "name": "object-name",
                             "type": "character-string",
-                            "context": 3
+                            "context": 3,
+                            "description": "The object name to search for."
                         }
                     ]
-                }
+                },
+                "description": "The object to search for, specified by identifier or name."
             }
         ]
     }

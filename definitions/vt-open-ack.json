@@ -1,12 +1,14 @@
 {
     "alias": "VT-Open-ACK",
     "name": "vt-open-ack",
+    "description": "Represents an acknowledgment for a BACnet VT-Open request, providing the remote VT session identifier.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "remote-vt-session-identifier",
-                "type": "unsigned-8"
+                "type": "unsigned-8",
+                "description": "The identifier assigned to the remote VT session."
             }
         ]
     }

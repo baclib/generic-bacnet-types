@@ -1,13 +1,15 @@
 {
     "alias": "WriteGroup-Request",
     "name": "write-group-request",
+    "description": "Represents a request to write a group of values to a set of BACnet group channels, with optional priority and delay.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "group-number",
                 "type": "unsigned-32",
-                "context": 0
+                "context": 0,
+                "description": "The group number identifying the set of channels to write."
             },
             {
                 "name": "write-priority",
@@ -16,7 +18,8 @@
                     "minimum": 1,
                     "maximum": 16
                 },
-                "context": 1
+                "context": 1,
+                "description": "The priority to use for the write operation."
             },
             {
                 "name": "change-list",
@@ -24,13 +27,15 @@
                     "base": "group-channel-value",
                     "series": true
                 },
-                "context": 2
+                "context": 2,
+                "description": "A list of values to be written to the group channels."
             },
             {
                 "name": "inhibit-delay",
                 "type": "boolean",
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "If true, delays the write operation. Optional."
             }
         ]
     }

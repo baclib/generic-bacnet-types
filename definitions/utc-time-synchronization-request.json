@@ -1,12 +1,14 @@
 {
     "alias": "UTCTimeSynchronization-Request",
     "name": "utc-time-synchronization-request",
+    "description": "Represents a BACnet request to synchronize the UTC time on a device.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "time",
-                "type": "date-time"
+                "type": "date-time",
+                "description": "The UTC date and time to which the device should be synchronized."
             }
         ]
     }

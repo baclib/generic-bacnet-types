@@ -1,6 +1,7 @@
 {
     "alias": "BACnetWeekNDay",
     "name": "week-n-day",
+    "description": "Represents a combination of month, week, and day, encoded as a 3-octet string, used for calendar and scheduling purposes.",
     "type": {
         "base": "octet-string",
         "length": 3

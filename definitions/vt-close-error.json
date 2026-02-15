@@ -1,13 +1,15 @@
 {
     "alias": "VTClose-Error",
     "name": "vt-close-error",
+    "description": "Represents an error response to a BACnet VT-Close request, including error type and optional list of session identifiers.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "error-type",
                 "type": "error",
-                "context": 0
+                "context": 0,
+                "description": "The type of error that occurred during VT-Close."
             },
             {
                 "name": "list-of-vt-session-identifiers",
@@ -16,7 +18,8 @@
                     "series": true
                 },
                 "context": 1,
-                "optional": true
+                "optional": true,
+                "description": "Optional list of VT session identifiers related to the error."
             }
         ]
     }

@@ -1,18 +1,21 @@
 {
     "alias": "WritePropertyMultiple-Error",
     "name": "write-property-multiple-error",
+    "description": "Represents an error that occurred during a WritePropertyMultiple operation, including the error type and the first failed write attempt.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "error-type",
                 "type": "error",
-                "context": 0
+                "context": 0,
+                "description": "The type of error that occurred."
             },
             {
                 "name": "first-failed-write-attempt",
                 "type": "object-property-reference",
-                "context": 1
+                "context": 1,
+                "description": "Reference to the first property that failed to be written."
             }
         ]
     }

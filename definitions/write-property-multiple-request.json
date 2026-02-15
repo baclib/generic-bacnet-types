@@ -1,6 +1,7 @@
 {
     "alias": "WritePropertyMultiple-Request",
     "name": "write-property-multiple-request",
+    "description": "Represents a request to write multiple properties to one or more BACnet objects in a single operation.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -9,7 +10,8 @@
                 "type": {
                     "base": "write-access-specification",
                     "series": true
-                }
+                },
+                "description": "A list of write access specifications, each defining properties to write for a specific object."
             }
         ]
     }

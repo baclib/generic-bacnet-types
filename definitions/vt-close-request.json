@@ -1,6 +1,7 @@
 {
     "alias": "VT-Close-Request",
     "name": "vt-close-request",
+    "description": "Represents a BACnet VT-Close request, used to close one or more virtual terminal sessions.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -9,7 +10,8 @@
                 "type": {
                     "base": "unsigned-8",
                     "series": true
-                }
+                },
+                "description": "List of remote VT session identifiers to be closed."
             }
         ]
     }

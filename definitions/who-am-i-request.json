@@ -1,20 +1,24 @@
 {
     "alias": "Who-Am-I-Request",
     "name": "who-am-i-request",
+    "description": "Represents a BACnet Who-Am-I request, used to query device identity information.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "vendor-id",
-                "type": "unsigned-16"
+                "type": "unsigned-16",
+                "description": "The vendor identifier of the device."
             },
             {
                 "name": "model-name",
-                "type": "character-string"
+                "type": "character-string",
+                "description": "The model name of the device."
             },
             {
                 "name": "serial-number",
-                "type": "character-string"
+                "type": "character-string",
+                "description": "The serial number of the device."
             }
         ]
     }

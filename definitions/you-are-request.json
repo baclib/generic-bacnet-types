@@ -1,30 +1,36 @@
 {
     "alias": "You-Are-Request",
     "name": "you-are-request",
+    "description": "Represents a BACnet 'You-Are' request, used to announce device identity and network information.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "vendor-id",
-                "type": "unsigned-16"
+                "type": "unsigned-16",
+                "description": "The vendor identifier of the device."
             },
             {
                 "name": "model-name",
-                "type": "character-string"
+                "type": "character-string",
+                "description": "The model name of the device."
             },
             {
                 "name": "serial-number",
-                "type": "character-string"
+                "type": "character-string",
+                "description": "The serial number of the device."
             },
             {
                 "name": "device-identifier",
                 "type": "object-identifier",
-                "optional": true
+                "optional": true,
+                "description": "The BACnet device identifier. Optional."
             },
             {
                 "name": "device-mac-address",
                 "type": "octet-string",
-                "optional": true
+                "optional": true,
+                "description": "The MAC address of the device. Optional."
             }
         ]
     }

@@ -1,20 +1,24 @@
 {
     "alias": "BACnetVTSession",
     "name": "vt-session",
+    "description": "Represents a BACnet virtual terminal session, including local and remote session identifiers and the remote address.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "local-vt-session-id",
-                "type": "unsigned-8"
+                "type": "unsigned-8",
+                "description": "The identifier for the local VT session."
             },
             {
                 "name": "remote-vt-session-id",
-                "type": "unsigned-8"
+                "type": "unsigned-8",
+                "description": "The identifier for the remote VT session."
             },
             {
                 "name": "remote-vt-address",
-                "type": "address"
+                "type": "address",
+                "description": "The address of the remote VT session."
             }
         ]
     }
