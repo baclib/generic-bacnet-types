@@ -1,6 +1,7 @@
 {
     "alias": "UnconfirmedAuditNotification-Request",
     "name": "unconfirmed-audit-notification-request",
+    "description": "Represents a BACnet unconfirmed audit notification request, used to send audit log entries without requiring acknowledgment.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -10,7 +11,8 @@
                     "base": "audit-notification",
                     "series": true
                 },
-                "context": 0
+                "context": 0,
+                "description": "A list of audit notifications to be sent."
             }
         ]
     }

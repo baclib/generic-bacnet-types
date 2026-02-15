@@ -1,6 +1,7 @@
 {
     "alias": "BACnet-Unconfirmed-Request-PDU",
     "name": "unconfirmed-request-pdu",
+    "description": "Represents a BACnet Unconfirmed Request Protocol Data Unit (PDU), used to send unconfirmed service requests.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -11,7 +12,8 @@
                     "minimum": 0,
                     "maximum": 15
                 },
-                "context": 0
+                "context": 0,
+                "description": "Identifies the type of the PDU."
             },
             {
                 "name": "reserved",
@@ -20,17 +22,20 @@
                     "minimum": 0,
                     "maximum": 15
                 },
-                "context": 1
+                "context": 1,
+                "description": "Reserved for future use; shall be set to zero."
             },
             {
                 "name": "service-choice",
                 "type": "unconfirmed-service-choice",
-                "context": 2
+                "context": 2,
+                "description": "Specifies the unconfirmed service being requested."
             },
             {
                 "name": "service-request",
                 "type": "unconfirmed-service-request",
-                "context": 3
+                "context": 3,
+                "description": "The actual unconfirmed service request data."
             }
         ]
     }

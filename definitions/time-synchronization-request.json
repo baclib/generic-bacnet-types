@@ -1,12 +1,14 @@
 {
     "alias": "TimeSynchronization-Request",
     "name": "time-synchronization-request",
+    "description": "Represents a BACnet time synchronization request, used to synchronize the local time on a device.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "time",
-                "type": "date-time"
+                "type": "date-time",
+                "description": "The date and time to which the device should be synchronized."
             }
         ]
     }

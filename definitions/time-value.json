@@ -1,16 +1,19 @@
 {
     "alias": "BACnetTimeValue",
     "name": "time-value",
+    "description": "Represents a BACnet time-value pair, used for scheduling and control purposes.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "time",
-                "type": "time"
+                "type": "time",
+                "description": "The time at which the value is to be applied."
             },
             {
                 "name": "value",
-                "type": "any"
+                "type": "any",
+                "description": "The value to be applied at the specified time."
             }
         ]
     }

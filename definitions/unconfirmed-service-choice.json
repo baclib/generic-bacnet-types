@@ -1,6 +1,7 @@
 {
     "alias": "BACnetUnconfirmedServiceChoice",
     "name": "unconfirmed-service-choice",
+    "description": "Enumerates the possible BACnet unconfirmed service choices, each corresponding to a specific unconfirmed service.",
     "type": {
         "base": "enumerated",
         "values": [

@@ -1,6 +1,7 @@
 {
     "alias": "BACnetTimerTransition",
     "name": "timer-transition",
+    "description": "Enumerates the possible transitions of a BACnet timer state.",
     "type": {
         "base": "enumerated",
         "values": [

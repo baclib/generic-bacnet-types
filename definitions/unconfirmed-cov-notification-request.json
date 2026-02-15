@@ -1,28 +1,33 @@
 {
     "alias": "UnconfirmedCOVNotification-Request",
     "name": "unconfirmed-cov-notification-request",
+    "description": "Represents a BACnet unconfirmed COV (Change of Value) notification request, used to report property value changes without requiring acknowledgment.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "subscriber-process-identifier",
                 "type": "unsigned-32",
-                "context": 0
+                "context": 0,
+                "description": "The process identifier of the subscriber."
             },
             {
                 "name": "initiating-device-identifier",
                 "type": "object-identifier",
-                "context": 1
+                "context": 1,
+                "description": "The identifier of the device initiating the notification."
             },
             {
                 "name": "monitored-object-identifier",
                 "type": "object-identifier",
-                "context": 2
+                "context": 2,
+                "description": "The identifier of the monitored object."
             },
             {
                 "name": "time-remaining",
                 "type": "unsigned",
-                "context": 3
+                "context": 3,
+                "description": "The time remaining for the subscription, in seconds."
             },
             {
                 "name": "list-of-values",
@@ -30,7 +35,8 @@
                     "base": "property-value",
                     "series": true
                 },
-                "context": 4
+                "context": 4,
+                "description": "A list of property values that have changed for the monitored object."
             }
         ]
     }

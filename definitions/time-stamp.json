@@ -1,13 +1,15 @@
 {
     "alias": "BACnetTimeStamp",
     "name": "time-stamp",
+    "description": "Represents a BACnet timestamp, which can be a time, a sequence number, or a date-time value.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "time",
                 "type": "time",
-                "context": 0
+                "context": 0,
+                "description": "A time value as the timestamp."
             },
             {
                 "name": "sequence-number",
@@ -16,12 +18,14 @@
                     "minimum": 0,
                     "maximum": 65535
                 },
-                "context": 1
+                "context": 1,
+                "description": "A sequence number as the timestamp."
             },
             {
                 "name": "datetime",
                 "type": "date-time",
-                "context": 2
+                "context": 2,
+                "description": "A date and time value as the timestamp."
             }
         ]
     }

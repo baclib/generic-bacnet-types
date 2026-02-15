@@ -1,24 +1,28 @@
 {
     "alias": "UnconfirmedPrivateTransfer-Request",
     "name": "unconfirmed-private-transfer-request",
+    "description": "Represents a BACnet unconfirmed private transfer request, used for proprietary or vendor-specific services without requiring acknowledgment.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "vendor-id",
                 "type": "unsigned-16",
-                "context": 0
+                "context": 0,
+                "description": "The vendor identifier for the proprietary service."
             },
             {
                 "name": "service-number",
                 "type": "unsigned",
-                "context": 1
+                "context": 1,
+                "description": "The service number identifying the proprietary service."
             },
             {
                 "name": "service-parameters",
                 "type": "any",
                 "context": 2,
-                "optional": true
+                "optional": true,
+                "description": "Optional parameters for the proprietary service."
             }
         ]
     }

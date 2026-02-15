@@ -1,5 +1,6 @@
 {
     "alias": "TimePattern",
     "name": "time-pattern",
+    "description": "Represents a BACnet time pattern, used for time values and scheduling.",
     "primitive": 11
 }

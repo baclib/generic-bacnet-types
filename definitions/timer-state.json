@@ -1,6 +1,7 @@
 {
     "alias": "BACnetTimerState",
     "name": "timer-state",
+    "description": "Enumerates the possible states of a BACnet timer (idle, running, expired).",
     "type": {
         "base": "enumerated",
         "values": [

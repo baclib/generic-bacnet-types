@@ -1,83 +1,99 @@
 {
     "alias": "BACnet-Unconfirmed-Service-Request",
     "name": "unconfirmed-service-request",
+    "description": "Represents a BACnet unconfirmed service request, which can be one of several unconfirmed service types.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "i-am",
                 "type": "i-am-request",
-                "context": 0
+                "context": 0,
+                "description": "I-Am service request."
             },
             {
                 "name": "i-have",
                 "type": "i-have-request",
-                "context": 1
+                "context": 1,
+                "description": "I-Have service request."
             },
             {
                 "name": "unconfirmed-cov-notification",
                 "type": "unconfirmed-cov-notification-request",
-                "context": 2
+                "context": 2,
+                "description": "Unconfirmed COV notification request."
             },
             {
                 "name": "unconfirmed-event-notification",
                 "type": "unconfirmed-event-notification-request",
-                "context": 3
+                "context": 3,
+                "description": "Unconfirmed event notification request."
             },
             {
                 "name": "unconfirmed-private-transfer",
                 "type": "unconfirmed-private-transfer-request",
-                "context": 4
+                "context": 4,
+                "description": "Unconfirmed private transfer request."
             },
             {
                 "name": "unconfirmed-text-message",
                 "type": "unconfirmed-text-message-request",
-                "context": 5
+                "context": 5,
+                "description": "Unconfirmed text message request."
             },
             {
                 "name": "time-synchronization",
                 "type": "time-synchronization-request",
-                "context": 6
+                "context": 6,
+                "description": "Time synchronization request."
             },
             {
                 "name": "who-has",
                 "type": "who-has-request",
-                "context": 7
+                "context": 7,
+                "description": "Who-Has service request."
             },
             {
                 "name": "who-is",
                 "type": "who-is-request",
-                "context": 8
+                "context": 8,
+                "description": "Who-Is service request."
             },
             {
                 "name": "utc-time-synchronization",
                 "type": "utc-time-synchronization-request",
-                "context": 9
+                "context": 9,
+                "description": "UTC time synchronization request."
             },
             {
                 "name": "write-group",
                 "type": "write-group-request",
-                "context": 10
+                "context": 10,
+                "description": "Write group request."
             },
             {
                 "name": "unconfirmed-cov-notification-multiple",
                 "type": "unconfirmed-cov-notification-multiple-request",
-                "context": 11
+                "context": 11,
+                "description": "Unconfirmed COV notification multiple request."
             },
             {
                 "name": "unconfirmed-audit-notification",
                 "type": "unconfirmed-audit-notification-request",
-                "context": 12
+                "context": 12,
+                "description": "Unconfirmed audit notification request."
             },
             {
                 "name": "who-am-i",
                 "type": "who-am-i-request",
-                "context": 13
+                "context": 13,
+                "description": "Who-Am-I service request."
             },
             {
                 "name": "you-are",
                 "type": "you-are-request",
-                "context": 14
+                "context": 14,
+                "description": "You-Are service request."
             }
         ]
     }

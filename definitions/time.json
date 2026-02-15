@@ -1,5 +1,6 @@
 {
     "alias": "Time",
     "name": "time",
+    "description": "Represents a BACnet time value, based on the time-pattern type.",
     "type": "time-pattern"
 }
