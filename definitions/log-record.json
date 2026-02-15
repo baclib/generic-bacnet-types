@@ -1,13 +1,15 @@
 {
     "alias": "BACnetLogRecord",
     "name": "log-record",
+    "description": "Represents a BACnet Log Record, which contains a single timestamped entry in a trend log, including the logged data value and optional status information.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "timestamp",
                 "type": "date-time",
-                "context": 0
+                "context": 0,
+                "description": "The date and time when the log entry was recorded."
             },
             {
                 "name": "log-datum",
@@ -17,67 +19,80 @@
                         {
                             "name": "log-status",
                             "type": "log-status",
-                            "context": 0
+                            "context": 0,
+                            "description": "A log status bit string indicating the state of the log."
                         },
                         {
                             "name": "boolean-value",
                             "type": "boolean",
-                            "context": 1
+                            "context": 1,
+                            "description": "A logged boolean value."
                         },
                         {
                             "name": "real-value",
                             "type": "real",
-                            "context": 2
+                            "context": 2,
+                            "description": "A logged real (floating-point) value."
                         },
                         {
                             "name": "enumerated-value",
                             "type": "enumerated",
-                            "context": 3
+                            "context": 3,
+                            "description": "A logged enumerated value."
                         },
                         {
                             "name": "unsigned-value",
                             "type": "unsigned",
-                            "context": 4
+                            "context": 4,
+                            "description": "A logged unsigned integer value."
                         },
                         {
                             "name": "integer-value",
                             "type": "integer",
-                            "context": 5
+                            "context": 5,
+                            "description": "A logged signed integer value."
                         },
                         {
                             "name": "bitstring-value",
                             "type": "bit-string",
-                            "context": 6
+                            "context": 6,
+                            "description": "A logged bit string value."
                         },
                         {
                             "name": "null-value",
                             "type": "null",
-                            "context": 7
+                            "context": 7,
+                            "description": "Indicates no value was logged at this timestamp."
                         },
                         {
                             "name": "failure",
                             "type": "error",
-                            "context": 8
+                            "context": 8,
+                            "description": "An error that occurred during logging."
                         },
                         {
                             "name": "time-change",
                             "type": "real",
-                            "context": 9
+                            "context": 9,
+                            "description": "Indicates a time change event, with the value representing the time adjustment in seconds."
                         },
                         {
                             "name": "any-value",
                             "type": "any",
-                            "context": 10
+                            "context": 10,
+                            "description": "A logged value of any BACnet data type."
                         }
                     ]
                 },
-                "context": 1
+                "context": 1,
+                "description": "The actual data recorded in this log entry, which can be of various types."
             },
             {
                 "name": "status-flags",
                 "type": "status-flags",
                 "context": 2,
-                "optional": true
+                "optional": true,
+                "description": "Optional status flags indicating the state of the logged object at the time of recording."
             }
         ]
     }

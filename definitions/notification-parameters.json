@@ -1,23 +1,27 @@
 {
     "alias": "BACnetNotificationParameters",
     "name": "notification-parameters",
+    "description": "Represents BACnet Notification Parameters, which encapsulate event and alarm notification data for various BACnet event types. This choice structure provides specialized parameter sets for different notification scenarios, enabling comprehensive event reporting across BACnet systems.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "change-of-bitstring",
+                "description": "Notification parameters for a change-of-bitstring event, triggered when a bit string value changes.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "referenced-bitstring",
                             "type": "bit-string",
-                            "context": 0
+                            "context": 0,
+                            "description": "The bit string value that triggered the notification."
                         },
                         {
                             "name": "status-flags",
                             "type": "status-flags",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status flags indicating the state of the object at the time of notification."
                         }
                     ]
                 },
@@ -25,18 +29,21 @@
             },
             {
                 "name": "change-of-state",
+                "description": "Notification parameters for a change-of-state event, triggered when an object transitions to a new state.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "new-state",
                             "type": "property-states",
-                            "context": 0
+                            "context": 0,
+                            "description": "The new state value of the object."
                         },
                         {
                             "name": "status-flags",
                             "type": "status-flags",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status flags indicating the state of the object at the time of notification."
                         }
                     ]
                 },
@@ -44,6 +51,7 @@
             },
             {
                 "name": "change-of-value",
+                "description": "Notification parameters for a change-of-value event, triggered when a monitored value changes significantly.",
                 "type": {
                     "base": "sequence",
                     "fields": [
@@ -55,21 +63,25 @@
                                     {
                                         "name": "changed-bits",
                                         "type": "bit-string",
-                                        "context": 0
+                                        "context": 0,
+                                        "description": "The bits that have changed in a bit string value."
                                     },
                                     {
                                         "name": "changed-value",
                                         "type": "real",
-                                        "context": 1
+                                        "context": 1,
+                                        "description": "The new numeric value that triggered the notification."
                                     }
                                 ]
                             },
-                            "context": 0
+                            "context": 0,
+                            "description": "The new value, either as changed bits or a numeric value."
                         },
                         {
                             "name": "status-flags",
                             "type": "status-flags",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status flags indicating the state of the object at the time of notification."
                         }
                     ]
                 },
@@ -77,23 +89,27 @@
             },
             {
                 "name": "command-failure",
+                "description": "Notification parameters for a command-failure event, triggered when a command does not achieve the expected result.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "command-value",
                             "type": "any",
-                            "context": 0
+                            "context": 0,
+                            "description": "The value of the command that was issued."
                         },
                         {
                             "name": "status-flags",
                             "type": "status-flags",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status flags indicating the state of the object at the time of notification."
                         },
                         {
                             "name": "feedback-value",
                             "type": "any",
-                            "context": 2
+                            "context": 2,
+                            "description": "The actual feedback value received, indicating the command failure."
                         }
                     ]
                 },
@@ -101,28 +117,33 @@
             },
             {
                 "name": "floating-limit",
+                "description": "Notification parameters for a floating-limit event, triggered when a value deviates from a setpoint by more than a specified error limit.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "reference-value",
                             "type": "real",
-                            "context": 0
+                            "context": 0,
+                            "description": "The current reference value being monitored."
                         },
                         {
                             "name": "status-flags",
                             "type": "status-flags",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status flags indicating the state of the object at the time of notification."
                         },
                         {
                             "name": "setpoint-value",
                             "type": "real",
-                            "context": 2
+                            "context": 2,
+                            "description": "The setpoint value from which the reference value has deviated."
                         },
                         {
                             "name": "error-limit",
                             "type": "real",
-                            "context": 3
+                            "context": 3,
+                            "description": "The maximum allowed deviation from the setpoint value."
                         }
                     ]
                 },
@@ -130,28 +151,33 @@
             },
             {
                 "name": "out-of-range",
+                "description": "Notification parameters for an out-of-range event, triggered when a real value exceeds a defined limit.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "exceeding-value",
                             "type": "real",
-                            "context": 0
+                            "context": 0,
+                            "description": "The value that exceeded the limit."
                         },
                         {
                             "name": "status-flags",
                             "type": "status-flags",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status flags indicating the state of the object at the time of notification."
                         },
                         {
                             "name": "deadband",
                             "type": "real",
-                            "context": 2
+                            "context": 2,
+                            "description": "The deadband value used to prevent rapid toggling of the event state."
                         },
                         {
                             "name": "exceeded-limit",
                             "type": "real",
-                            "context": 3
+                            "context": 3,
+                            "description": "The limit value that was exceeded."
                         }
                     ]
                 },
@@ -159,6 +185,7 @@
             },
             {
                 "name": "complex-event-type",
+                "description": "Notification parameters for a complex event type, containing a series of property-value pairs for vendor-specific or advanced event scenarios.",
                 "type": {
                     "base": "property-value",
                     "series": true
@@ -167,28 +194,33 @@
             },
             {
                 "name": "change-of-life-safety",
+                "description": "Notification parameters for a change-of-life-safety event, triggered when a life safety system changes state or mode.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "new-state",
                             "type": "life-safety-state",
-                            "context": 0
+                            "context": 0,
+                            "description": "The new life safety state."
                         },
                         {
                             "name": "new-mode",
                             "type": "life-safety-mode",
-                            "context": 1
+                            "context": 1,
+                            "description": "The new life safety mode."
                         },
                         {
                             "name": "status-flags",
                             "type": "status-flags",
-                            "context": 2
+                            "context": 2,
+                            "description": "The status flags indicating the state of the object at the time of notification."
                         },
                         {
                             "name": "operation-expected",
                             "type": "life-safety-operation",
-                            "context": 3
+                            "context": 3,
+                            "description": "The life safety operation expected to be performed."
                         }
                     ]
                 },
@@ -196,18 +228,21 @@
             },
             {
                 "name": "extended",
+                "description": "Notification parameters for vendor-specific extended events, allowing custom event types beyond the standard BACnet event definitions.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "vendor-id",
                             "type": "unsigned-16",
-                            "context": 0
+                            "context": 0,
+                            "description": "The vendor identifier for the vendor-specific event type."
                         },
                         {
                             "name": "extended-event-type",
                             "type": "unsigned",
-                            "context": 1
+                            "context": 1,
+                            "description": "The vendor-specific event type identifier."
                         },
                         {
                             "name": "parameters",
@@ -217,64 +252,79 @@
                                 "options": [
                                     {
                                         "name": "null",
-                                        "type": "null"
+                                        "type": "null",
+                                        "description": "No parameter value."
                                     },
                                     {
                                         "name": "real",
-                                        "type": "real"
+                                        "type": "real",
+                                        "description": "A real number parameter."
                                     },
                                     {
                                         "name": "unsigned",
-                                        "type": "unsigned"
+                                        "type": "unsigned",
+                                        "description": "An unsigned integer parameter."
                                     },
                                     {
                                         "name": "boolean",
-                                        "type": "boolean"
+                                        "type": "boolean",
+                                        "description": "A boolean parameter."
                                     },
                                     {
                                         "name": "integer",
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "description": "A signed integer parameter."
                                     },
                                     {
                                         "name": "double",
-                                        "type": "double"
+                                        "type": "double",
+                                        "description": "A double-precision floating-point parameter."
                                     },
                                     {
                                         "name": "octetstring",
-                                        "type": "octet-string"
+                                        "type": "octet-string",
+                                        "description": "An octet string parameter."
                                     },
                                     {
                                         "name": "characterstring",
-                                        "type": "character-string"
+                                        "type": "character-string",
+                                        "description": "A character string parameter."
                                     },
                                     {
                                         "name": "bitstring",
-                                        "type": "bit-string"
+                                        "type": "bit-string",
+                                        "description": "A bit string parameter."
                                     },
                                     {
                                         "name": "enumerated",
-                                        "type": "enumerated"
+                                        "type": "enumerated",
+                                        "description": "An enumerated value parameter."
                                     },
                                     {
                                         "name": "date",
-                                        "type": "date"
+                                        "type": "date",
+                                        "description": "A date parameter."
                                     },
                                     {
                                         "name": "time",
-                                        "type": "time"
+                                        "type": "time",
+                                        "description": "A time parameter."
                                     },
                                     {
                                         "name": "objectidentifier",
-                                        "type": "object-identifier"
+                                        "type": "object-identifier",
+                                        "description": "A BACnet object identifier parameter."
                                     },
                                     {
                                         "name": "property-value",
                                         "type": "device-object-property-value",
-                                        "context": 0
+                                        "context": 0,
+                                        "description": "A device object property value parameter."
                                     }
                                 ]
                             },
-                            "context": 2
+                            "context": 2,
+                            "description": "A series of parameters for the extended event, which can be of various data types."
                         }
                     ]
                 },
@@ -282,23 +332,27 @@
             },
             {
                 "name": "buffer-ready",
+                "description": "Notification parameters for a buffer-ready event, triggered when a data buffer reaches a threshold and is ready for retrieval.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "buffer-property",
                             "type": "device-object-property-reference",
-                            "context": 0
+                            "context": 0,
+                            "description": "Reference to the buffer property that is ready."
                         },
                         {
                             "name": "previous-notification",
                             "type": "unsigned-32",
-                            "context": 1
+                            "context": 1,
+                            "description": "The record number of the previous buffer-ready notification."
                         },
                         {
                             "name": "current-notification",
                             "type": "unsigned-32",
-                            "context": 2
+                            "context": 2,
+                            "description": "The record number of the current buffer-ready notification."
                         }
                     ]
                 },
@@ -306,23 +360,27 @@
             },
             {
                 "name": "unsigned-range",
+                "description": "Notification parameters for an unsigned-range event, triggered when an unsigned integer value exceeds a defined limit.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "exceeding-value",
                             "type": "unsigned",
-                            "context": 0
+                            "context": 0,
+                            "description": "The unsigned value that exceeded the limit."
                         },
                         {
                             "name": "status-flags",
                             "type": "status-flags",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status flags indicating the state of the object at the time of notification."
                         },
                         {
                             "name": "exceeded-limit",
                             "type": "unsigned",
-                            "context": 2
+                            "context": 2,
+                            "description": "The limit value that was exceeded."
                         }
                     ]
                 },
@@ -330,39 +388,46 @@
             },
             {
                 "name": "access-event",
+                "description": "Notification parameters for an access-event, triggered by physical access control events such as door access attempts.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "access-event",
                             "type": "access-event",
-                            "context": 0
+                            "context": 0,
+                            "description": "The type of access event that occurred."
                         },
                         {
                             "name": "status-flags",
                             "type": "status-flags",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status flags indicating the state of the object at the time of notification."
                         },
                         {
                             "name": "access-event-tag",
                             "type": "unsigned",
-                            "context": 2
+                            "context": 2,
+                            "description": "A unique tag identifying this access event instance."
                         },
                         {
                             "name": "access-event-time",
                             "type": "time-stamp",
-                            "context": 3
+                            "context": 3,
+                            "description": "The timestamp when the access event occurred."
                         },
                         {
                             "name": "access-credential",
                             "type": "device-object-reference",
-                            "context": 4
+                            "context": 4,
+                            "description": "Reference to the access credential used in the event."
                         },
                         {
                             "name": "authentication-factor",
                             "type": "authentication-factor",
                             "context": 5,
-                            "optional": true
+                            "optional": true,
+                            "description": "Optional authentication factor information associated with the access event."
                         }
                     ]
                 },
@@ -370,28 +435,33 @@
             },
             {
                 "name": "double-out-of-range",
+                "description": "Notification parameters for a double-out-of-range event, triggered when a double-precision value exceeds a defined limit.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "exceeding-value",
                             "type": "double",
-                            "context": 0
+                            "context": 0,
+                            "description": "The double-precision value that exceeded the limit."
                         },
                         {
                             "name": "status-flags",
                             "type": "status-flags",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status flags indicating the state of the object at the time of notification."
                         },
                         {
                             "name": "deadband",
                             "type": "double",
-                            "context": 2
+                            "context": 2,
+                            "description": "The deadband value used to prevent rapid toggling of the event state."
                         },
                         {
                             "name": "exceeded-limit",
                             "type": "double",
-                            "context": 3
+                            "context": 3,
+                            "description": "The limit value that was exceeded."
                         }
                     ]
                 },
@@ -399,28 +469,33 @@
             },
             {
                 "name": "signed-out-of-range",
+                "description": "Notification parameters for a signed-out-of-range event, triggered when a signed integer value exceeds a defined limit.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "exceeding-value",
                             "type": "integer",
-                            "context": 0
+                            "context": 0,
+                            "description": "The signed integer value that exceeded the limit."
                         },
                         {
                             "name": "status-flags",
                             "type": "status-flags",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status flags indicating the state of the object at the time of notification."
                         },
                         {
                             "name": "deadband",
                             "type": "unsigned",
-                            "context": 2
+                            "context": 2,
+                            "description": "The deadband value used to prevent rapid toggling of the event state."
                         },
                         {
                             "name": "exceeded-limit",
                             "type": "integer",
-                            "context": 3
+                            "context": 3,
+                            "description": "The limit value that was exceeded."
                         }
                     ]
                 },
@@ -428,28 +503,33 @@
             },
             {
                 "name": "unsigned-out-of-range",
+                "description": "Notification parameters for an unsigned-out-of-range event, triggered when an unsigned integer value exceeds a defined limit.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "exceeding-value",
                             "type": "unsigned",
-                            "context": 0
+                            "context": 0,
+                            "description": "The unsigned integer value that exceeded the limit."
                         },
                         {
                             "name": "status-flags",
                             "type": "status-flags",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status flags indicating the state of the object at the time of notification."
                         },
                         {
                             "name": "deadband",
                             "type": "unsigned",
-                            "context": 2
+                            "context": 2,
+                            "description": "The deadband value used to prevent rapid toggling of the event state."
                         },
                         {
                             "name": "exceeded-limit",
                             "type": "unsigned",
-                            "context": 3
+                            "context": 3,
+                            "description": "The limit value that was exceeded."
                         }
                     ]
                 },
@@ -457,23 +537,27 @@
             },
             {
                 "name": "change-of-characterstring",
+                "description": "Notification parameters for a change-of-characterstring event, triggered when a character string value changes to a specified alarm value.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "changed-value",
                             "type": "character-string",
-                            "context": 0
+                            "context": 0,
+                            "description": "The new character string value that triggered the notification."
                         },
                         {
                             "name": "status-flags",
                             "type": "status-flags",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status flags indicating the state of the object at the time of notification."
                         },
                         {
                             "name": "alarm-value",
                             "type": "character-string",
-                            "context": 2
+                            "context": 2,
+                            "description": "The alarm value that the changed value matched or triggered."
                         }
                     ]
                 },
@@ -481,6 +565,7 @@
             },
             {
                 "name": "change-of-status-flags",
+                "description": "Notification parameters for a change-of-status-flags event, triggered when object status flags change.",
                 "type": {
                     "base": "sequence",
                     "fields": [
@@ -488,12 +573,14 @@
                             "name": "present-value",
                             "type": "any",
                             "context": 0,
-                            "optional": true
+                            "optional": true,
+                            "description": "Optional present value of the object at the time the status flags changed."
                         },
                         {
                             "name": "referenced-flags",
                             "type": "status-flags",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status flags that have changed."
                         }
                     ]
                 },
@@ -501,18 +588,21 @@
             },
             {
                 "name": "change-of-reliability",
+                "description": "Notification parameters for a change-of-reliability event, triggered when an object's reliability status changes.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "reliability",
                             "type": "reliability",
-                            "context": 0
+                            "context": 0,
+                            "description": "The new reliability value of the object."
                         },
                         {
                             "name": "status-flags",
                             "type": "status-flags",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status flags indicating the state of the object at the time of notification."
                         },
                         {
                             "name": "property-values",
@@ -520,7 +610,8 @@
                                 "base": "property-value",
                                 "series": true
                             },
-                            "context": 2
+                            "context": 2,
+                            "description": "A series of property values providing additional context about the reliability change."
                         }
                     ]
                 },
@@ -528,6 +619,7 @@
             },
             {
                 "name": "change-of-discrete-value",
+                "description": "Notification parameters for a change-of-discrete-value event, triggered when a discrete value changes to a new state.",
                 "type": {
                     "base": "sequence",
                     "fields": [
@@ -538,53 +630,65 @@
                                 "options": [
                                     {
                                         "name": "boolean",
-                                        "type": "boolean"
+                                        "type": "boolean",
+                                        "description": "A boolean discrete value."
                                     },
                                     {
                                         "name": "unsigned",
-                                        "type": "unsigned"
+                                        "type": "unsigned",
+                                        "description": "An unsigned integer discrete value."
                                     },
                                     {
                                         "name": "integer",
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "description": "A signed integer discrete value."
                                     },
                                     {
                                         "name": "enumerated",
-                                        "type": "enumerated"
+                                        "type": "enumerated",
+                                        "description": "An enumerated discrete value."
                                     },
                                     {
                                         "name": "characterstring",
-                                        "type": "character-string"
+                                        "type": "character-string",
+                                        "description": "A character string discrete value."
                                     },
                                     {
                                         "name": "octetstring",
-                                        "type": "octet-string"
+                                        "type": "octet-string",
+                                        "description": "An octet string discrete value."
                                     },
                                     {
                                         "name": "date",
-                                        "type": "date"
+                                        "type": "date",
+                                        "description": "A date discrete value."
                                     },
                                     {
                                         "name": "time",
-                                        "type": "time"
+                                        "type": "time",
+                                        "description": "A time discrete value."
                                     },
                                     {
                                         "name": "objectidentifier",
-                                        "type": "object-identifier"
+                                        "type": "object-identifier",
+                                        "description": "An object identifier discrete value."
                                     },
                                     {
                                         "name": "datetime",
                                         "type": "date-time",
-                                        "context": 0
+                                        "context": 0,
+                                        "description": "A date-time discrete value."
                                     }
                                 ]
                             },
-                            "context": 0
+                            "context": 0,
+                            "description": "The new discrete value that triggered the notification."
                         },
                         {
                             "name": "status-flags",
                             "type": "status-flags",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status flags indicating the state of the object at the time of notification."
                         }
                     ]
                 },
@@ -592,41 +696,48 @@
             },
             {
                 "name": "change-of-timer",
+                "description": "Notification parameters for a change-of-timer event, triggered when a timer object transitions to a new state.",
                 "type": {
                     "base": "sequence",
                     "fields": [
                         {
                             "name": "new-state",
                             "type": "timer-state",
-                            "context": 0
+                            "context": 0,
+                            "description": "The new state of the timer."
                         },
                         {
                             "name": "status-flags",
                             "type": "status-flags",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status flags indicating the state of the object at the time of notification."
                         },
                         {
                             "name": "update-time",
                             "type": "date-time",
-                            "context": 2
+                            "context": 2,
+                            "description": "The date and time when the timer state was updated."
                         },
                         {
                             "name": "last-state-change",
                             "type": "timer-transition",
                             "context": 3,
-                            "optional": true
+                            "optional": true,
+                            "description": "Optional information about the last state transition of the timer."
                         },
                         {
                             "name": "initial-timeout",
                             "type": "unsigned",
                             "context": 4,
-                            "optional": true
+                            "optional": true,
+                            "description": "Optional initial timeout value in seconds."
                         },
                         {
                             "name": "expiration-time",
                             "type": "date-time",
                             "context": 5,
-                            "optional": true
+                            "optional": true,
+                            "description": "Optional date and time when the timer will expire."
                         }
                     ]
                 },

@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLogData",
     "name": "log-data",
+    "description": "Represents BACnet Log Data, which encapsulates the data portion of a log multiple record entry. This can be a log status, a series of data values, or a time change indication.",
     "type": {
         "base": "choice",
         "options": [
@@ -8,7 +9,8 @@
                 "alias": "log-status",
                 "name": "status",
                 "type": "log-status",
-                "context": 0
+                "context": 0,
+                "description": "A log status bit string indicating the operational state of the log."
             },
             {
                 "alias": "log-data",
@@ -20,56 +22,67 @@
                         {
                             "name": "boolean-value",
                             "type": "boolean",
-                            "context": 0
+                            "context": 0,
+                            "description": "A boolean data value."
                         },
                         {
                             "name": "real-value",
                             "type": "real",
-                            "context": 1
+                            "context": 1,
+                            "description": "A real (floating-point) data value."
                         },
                         {
                             "name": "enumerated-value",
                             "type": "enumerated",
-                            "context": 2
+                            "context": 2,
+                            "description": "An enumerated data value."
                         },
                         {
                             "name": "unsigned-value",
                             "type": "unsigned",
-                            "context": 3
+                            "context": 3,
+                            "description": "An unsigned integer data value."
                         },
                         {
                             "name": "integer-value",
                             "type": "integer",
-                            "context": 4
+                            "context": 4,
+                            "description": "A signed integer data value."
                         },
                         {
                             "name": "bitstring-value",
                             "type": "bit-string",
-                            "context": 5
+                            "context": 5,
+                            "description": "A bit string data value."
                         },
                         {
                             "name": "null-value",
                             "type": "null",
-                            "context": 6
+                            "context": 6,
+                            "description": "Indicates no data value was recorded."
                         },
                         {
                             "name": "failure",
                             "type": "error",
-                            "context": 7
+                            "context": 7,
+                            "description": "An error that occurred during data logging."
                         },
                         {
                             "name": "any-value",
                             "type": "any",
-                            "context": 8
+                            "context": 8,
+                            "description": "A data value of any BACnet data type."
                         }
                     ]
                 },
-                "context": 1
+                "context": 1,
+                "description": "A series of logged data values, which can be of various types."
             },
             {
                 "name": "time-change",
                 "type": "real",
-                "context": 2
+                "context": 2,
+                "description": "Indicates a time change event, with the value representing the time adjustment in seconds."
             }
         ]
     }

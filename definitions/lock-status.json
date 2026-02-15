@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLockStatus",
     "name": "lock-status",
+    "description": "Represents BACnet Lock Status enumeration, which indicates the current state of a physical lock mechanism in access control systems.",
     "type": {
         "base": "enumerated",
         "values": [

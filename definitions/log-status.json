@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLogStatus",
     "name": "log-status",
+    "description": "Represents BACnet Log Status bit string, which indicates the operational state and condition of a logging object through individual status bits.",
     "type": {
         "base": "bit-string",
         "bits": [

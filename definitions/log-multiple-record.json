@@ -1,18 +1,21 @@
 {
     "alias": "BACnetLogMultipleRecord",
     "name": "log-multiple-record",
+    "description": "Represents a BACnet Log Multiple Record, which contains a timestamped entry that can hold multiple logged values or a status indicator for trend log buffer objects.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "timestamp",
                 "type": "date-time",
-                "context": 0
+                "context": 0,
+                "description": "The date and time when the log entry was recorded."
             },
             {
                 "name": "log-data",
                 "type": "log-data",
-                "context": 1
+                "context": 1,
+                "description": "The log data, which can be a status indicator, a series of values, or a time change notification."
             }
         ]
     }

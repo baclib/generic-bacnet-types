@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLoggingType",
     "name": "logging-type",
+    "description": "Represents BACnet Logging Type enumeration, which specifies the method by which data is collected and recorded in a trend log object.",
     "type": {
         "base": "enumerated",
         "values": [
