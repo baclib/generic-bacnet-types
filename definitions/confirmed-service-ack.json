@@ -1,79 +1,93 @@
 {
     "alias": "BACnet-Confirmed-Service-ACK",
     "name": "confirmed-service-ack",
-    "description": "A choice of confirmed service acknowledgment types, representing responses to confirmed service requests.",
+    "description": "A choice of confirmed service acknowledgment types representing responses to confirmed service requests.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "get-alarm-summary",
                 "type": "get-alarm-summary-ack",
-                "context": 3
+                "context": 3,
+                "description": "Acknowledgment for Get Alarm Summary."
             },
             {
                 "name": "get-enrollment-summary",
                 "type": "get-enrollment-summary-ack",
-                "context": 4
+                "context": 4,
+                "description": "Acknowledgment for Get Enrollment Summary."
             },
             {
                 "name": "get-event-information",
                 "type": "get-event-information-ack",
-                "context": 29
+                "context": 29,
+                "description": "Acknowledgment for Get Event Information."
             },
             {
                 "name": "atomic-read-file",
                 "type": "atomic-read-file-ack",
-                "context": 6
+                "context": 6,
+                "description": "Acknowledgment for Atomic Read File."
             },
             {
                 "name": "atomic-write-file",
                 "type": "atomic-write-file-ack",
-                "context": 7
+                "context": 7,
+                "description": "Acknowledgment for Atomic Write File."
             },
             {
                 "name": "create-object",
                 "type": "create-object-ack",
-                "context": 10
+                "context": 10,
+                "description": "Acknowledgment for Create Object."
             },
             {
                 "name": "read-property",
                 "type": "read-property-ack",
-                "context": 12
+                "context": 12,
+                "description": "Acknowledgment for Read Property."
             },
             {
                 "name": "read-property-multiple",
                 "type": "read-property-multiple-ack",
-                "context": 14
+                "context": 14,
+                "description": "Acknowledgment for Read Property Multiple."
             },
             {
                 "name": "read-range",
                 "type": "read-range-ack",
-                "context": 26
+                "context": 26,
+                "description": "Acknowledgment for Read Range."
             },
             {
                 "name": "audit-log-query",
                 "type": "audit-log-query-ack",
-                "context": 33
+                "context": 33,
+                "description": "Acknowledgment for Audit Log Query."
             },
             {
                 "name": "confirmed-private-transfer",
                 "type": "confirmed-private-transfer-ack",
-                "context": 18
+                "context": 18,
+                "description": "Acknowledgment for Confirmed Private Transfer."
             },
             {
                 "name": "auth-request",
                 "type": "auth-request-ack",
-                "context": 34
+                "context": 34,
+                "description": "Acknowledgment for Authentication Request."
             },
             {
                 "name": "vt-open",
                 "type": "vt-open-ack",
-                "context": 21
+                "context": 21,
+                "description": "Acknowledgment for VT Open."
             },
             {
                 "name": "vt-data",
                 "type": "vt-data-ack",
-                "context": 23
+                "context": 23,
+                "description": "Acknowledgment for VT Data."
             }
         ]
     }

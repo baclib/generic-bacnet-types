@@ -13,35 +13,43 @@
                     "values": [
                         {
                             "name": "device",
-                            "constant": 0
+                            "constant": 0,
+                            "description": "Device-related error."
                         },
                         {
                             "name": "object",
-                            "constant": 1
+                            "constant": 1,
+                            "description": "Object-related error."
                         },
                         {
                             "name": "property",
-                            "constant": 2
+                            "constant": 2,
+                            "description": "Property-related error."
                         },
                         {
                             "name": "resources",
-                            "constant": 3
+                            "constant": 3,
+                            "description": "Resource-related error."
                         },
                         {
                             "name": "security",
-                            "constant": 4
+                            "constant": 4,
+                            "description": "Security-related error."
                         },
                         {
                             "name": "services",
-                            "constant": 5
+                            "constant": 5,
+                            "description": "Service-related error."
                         },
                         {
                             "name": "vt",
-                            "constant": 6
+                            "constant": 6,
+                            "description": "Virtual terminal (VT) related error."
                         },
                         {
                             "name": "communication",
-                            "constant": 7
+                            "constant": 7,
+                            "description": "Communication-related error."
                         }
                     ],
                     "proprietary": {
@@ -58,847 +66,1058 @@
                     "values": [
                         {
                             "name": "other",
-                            "constant": 0
+                            "constant": 0,
+                            "description": "Other or unspecified error."
                         },
                         {
                             "name": "configuration-in-progress",
-                            "constant": 2
+                            "constant": 2,
+                            "description": "Configuration is in progress."
                         },
                         {
                             "name": "device-busy",
-                            "constant": 3
+                            "constant": 3,
+                            "description": "Device is busy."
                         },
                         {
                             "name": "dynamic-creation-not-supported",
-                            "constant": 4
+                            "constant": 4,
+                            "description": "Dynamic creation is not supported."
                         },
                         {
                             "name": "file-access-denied",
-                            "constant": 5
+                            "constant": 5,
+                            "description": "File access is denied."
                         },
                         {
                             "name": "inconsistent-parameters",
-                            "constant": 7
+                            "constant": 7,
+                            "description": "Parameters are inconsistent."
                         },
                         {
                             "name": "inconsistent-selection-criterion",
-                            "constant": 8
+                            "constant": 8,
+                            "description": "Selection criteria are inconsistent."
                         },
                         {
                             "name": "invalid-data-type",
-                            "constant": 9
+                            "constant": 9,
+                            "description": "Invalid data type."
                         },
                         {
                             "name": "invalid-file-access-method",
-                            "constant": 10
+                            "constant": 10,
+                            "description": "Invalid file access method."
                         },
                         {
                             "name": "invalid-file-start-position",
-                            "constant": 11
+                            "constant": 11,
+                            "description": "Invalid file start position."
                         },
                         {
                             "name": "invalid-parameter-data-type",
-                            "constant": 13
+                            "constant": 13,
+                            "description": "Invalid parameter data type."
                         },
                         {
                             "name": "invalid-timestamp",
-                            "constant": 14
+                            "constant": 14,
+                            "description": "Invalid timestamp."
                         },
                         {
                             "name": "missing-required-parameter",
-                            "constant": 16
+                            "constant": 16,
+                            "description": "Missing required parameter."
                         },
                         {
                             "name": "no-objects-of-specified-type",
-                            "constant": 17
+                            "constant": 17,
+                            "description": "No objects of specified type."
                         },
                         {
                             "name": "no-space-for-object",
-                            "constant": 18
+                            "constant": 18,
+                            "description": "No space for object."
                         },
                         {
                             "name": "no-space-to-add-list-element",
-                            "constant": 19
+                            "constant": 19,
+                            "description": "No space to add list element."
                         },
                         {
                             "name": "no-space-to-write-property",
-                            "constant": 20
+                            "constant": 20,
+                            "description": "No space to write property."
                         },
                         {
                             "name": "no-vt-sessions-available",
-                            "constant": 21
+                            "constant": 21,
+                            "description": "No VT sessions available."
                         },
                         {
                             "name": "property-is-not-a-list",
-                            "constant": 22
+                            "constant": 22,
+                            "description": "Property is not a list."
                         },
                         {
                             "name": "object-deletion-not-permitted",
-                            "constant": 23
+                            "constant": 23,
+                            "description": "Object deletion is not permitted."
                         },
                         {
                             "name": "object-identifier-already-exists",
-                            "constant": 24
+                            "constant": 24,
+                            "description": "Object identifier already exists."
                         },
                         {
                             "name": "operational-problem",
-                            "constant": 25
+                            "constant": 25,
+                            "description": "Operational problem."
                         },
                         {
                             "name": "password-failure",
-                            "constant": 26
+                            "constant": 26,
+                            "description": "Password failure."
                         },
                         {
                             "name": "read-access-denied",
-                            "constant": 27
+                            "constant": 27,
+                            "description": "Read access denied."
                         },
                         {
                             "name": "service-request-denied",
-                            "constant": 29
+                            "constant": 29,
+                            "description": "Service request denied."
                         },
                         {
                             "name": "timeout",
-                            "constant": 30
+                            "constant": 30,
+                            "description": "Operation timed out."
                         },
                         {
                             "name": "unknown-object",
-                            "constant": 31
+                            "constant": 31,
+                            "description": "Unknown object."
                         },
                         {
                             "name": "unknown-property",
-                            "constant": 32
+                            "constant": 32,
+                            "description": "Unknown property."
                         },
                         {
                             "name": "unknown-vt-class",
-                            "constant": 34
+                            "constant": 34,
+                            "description": "Unknown VT class."
                         },
                         {
                             "name": "unknown-vt-session",
-                            "constant": 35
+                            "constant": 35,
+                            "description": "Unknown VT session."
                         },
                         {
                             "name": "unsupported-object-type",
-                            "constant": 36
+                            "constant": 36,
+                            "description": "Unsupported object type."
                         },
                         {
                             "name": "value-out-of-range",
-                            "constant": 37
+                            "constant": 37,
+                            "description": "Value out of range."
                         },
                         {
                             "name": "vt-session-already-closed",
-                            "constant": 38
+                            "constant": 38,
+                            "description": "VT session already closed."
                         },
                         {
                             "name": "vt-session-termination-failure",
-                            "constant": 39
+                            "constant": 39,
+                            "description": "VT session termination failure."
                         },
                         {
                             "name": "write-access-denied",
-                            "constant": 40
+                            "constant": 40,
+                            "description": "Write access denied."
                         },
                         {
                             "name": "character-set-not-supported",
-                            "constant": 41
+                            "constant": 41,
+                            "description": "Character set not supported."
                         },
                         {
                             "name": "invalid-array-index",
-                            "constant": 42
+                            "constant": 42,
+                            "description": "Invalid array index."
                         },
                         {
                             "name": "cov-subscription-failed",
-                            "constant": 43
+                            "constant": 43,
+                            "description": "COV subscription failed."
                         },
                         {
                             "name": "not-cov-property",
-                            "constant": 44
+                            "constant": 44,
+                            "description": "Not a COV property."
                         },
                         {
                             "name": "optional-functionality-not-supported",
-                            "constant": 45
+                            "constant": 45,
+                            "description": "Optional functionality not supported."
                         },
                         {
                             "name": "invalid-configuration-data",
-                            "constant": 46
+                            "constant": 46,
+                            "description": "Invalid configuration data."
                         },
                         {
                             "name": "datatype-not-supported",
-                            "constant": 47
+                            "constant": 47,
+                            "description": "Datatype not supported."
                         },
                         {
                             "name": "duplicate-name",
-                            "constant": 48
+                            "constant": 48,
+                            "description": "Duplicate name."
                         },
                         {
                             "name": "duplicate-object-id",
-                            "constant": 49
+                            "constant": 49,
+                            "description": "Duplicate object identifier."
                         },
                         {
                             "name": "property-is-not-an-array",
-                            "constant": 50
+                            "constant": 50,
+                            "description": "Property is not an array."
                         },
                         {
                             "name": "abort-buffer-overflow",
-                            "constant": 51
+                            "constant": 51,
+                            "description": "Abort: buffer overflow."
                         },
                         {
                             "name": "abort-invalid-apdu-in-this-state",
-                            "constant": 52
+                            "constant": 52,
+                            "description": "Abort: invalid APDU in this state."
                         },
                         {
                             "name": "abort-preempted-by-higher-priority-task",
-                            "constant": 53
+                            "constant": 53,
+                            "description": "Abort: preempted by higher priority task."
                         },
                         {
                             "name": "abort-segmentation-not-supported",
-                            "constant": 54
+                            "constant": 54,
+                            "description": "Abort: segmentation not supported."
                         },
                         {
                             "name": "abort-proprietary",
-                            "constant": 55
+                            "constant": 55,
+                            "description": "Abort: proprietary reason."
                         },
                         {
                             "name": "abort-other",
-                            "constant": 56
+                            "constant": 56,
+                            "description": "Abort: other reason."
                         },
                         {
                             "name": "invalid-tag",
-                            "constant": 57
+                            "constant": 57,
+                            "description": "Invalid tag."
                         },
                         {
                             "name": "network-down",
-                            "constant": 58
+                            "constant": 58,
+                            "description": "Network is down."
                         },
                         {
                             "name": "reject-buffer-overflow",
-                            "constant": 59
+                            "constant": 59,
+                            "description": "Reject: buffer overflow."
                         },
                         {
                             "name": "reject-inconsistent-parameters",
-                            "constant": 60
+                            "constant": 60,
+                            "description": "Reject: inconsistent parameters."
                         },
                         {
                             "name": "reject-invalid-parameter-data-type",
-                            "constant": 61
+                            "constant": 61,
+                            "description": "Reject: invalid parameter data type."
                         },
                         {
                             "name": "reject-invalid-tag",
-                            "constant": 62
+                            "constant": 62,
+                            "description": "Reject: invalid tag."
                         },
                         {
                             "name": "reject-missing-required-parameter",
-                            "constant": 63
+                            "constant": 63,
+                            "description": "Reject: missing required parameter."
                         },
                         {
                             "name": "reject-parameter-out-of-range",
-                            "constant": 64
+                            "constant": 64,
+                            "description": "Reject: parameter out of range."
                         },
                         {
                             "name": "reject-too-many-arguments",
-                            "constant": 65
+                            "constant": 65,
+                            "description": "Reject: too many arguments."
                         },
                         {
                             "name": "reject-undefined-enumeration",
-                            "constant": 66
+                            "constant": 66,
+                            "description": "Reject: undefined enumeration."
                         },
                         {
                             "name": "reject-unrecognized-service",
-                            "constant": 67
+                            "constant": 67,
+                            "description": "Reject: unrecognized service."
                         },
                         {
                             "name": "reject-proprietary",
-                            "constant": 68
+                            "constant": 68,
+                            "description": "Reject: proprietary reason."
                         },
                         {
                             "name": "reject-other",
-                            "constant": 69
+                            "constant": 69,
+                            "description": "Reject: other reason."
                         },
                         {
                             "name": "unknown-device",
-                            "constant": 70
+                            "constant": 70,
+                            "description": "Unknown device."
                         },
                         {
                             "name": "unknown-route",
-                            "constant": 71
+                            "constant": 71,
+                            "description": "Unknown route."
                         },
                         {
                             "name": "value-not-initialized",
-                            "constant": 72
+                            "constant": 72,
+                            "description": "Value not initialized."
                         },
                         {
                             "name": "invalid-event-state",
-                            "constant": 73
+                            "constant": 73,
+                            "description": "Invalid event state."
                         },
                         {
                             "name": "no-alarm-configured",
-                            "constant": 74
+                            "constant": 74,
+                            "description": "No alarm configured."
                         },
                         {
                             "name": "log-buffer-full",
-                            "constant": 75
+                            "constant": 75,
+                            "description": "Log buffer full."
                         },
                         {
                             "name": "logged-value-purged",
-                            "constant": 76
+                            "constant": 76,
+                            "description": "Logged value purged."
                         },
                         {
                             "name": "no-property-specified",
-                            "constant": 77
+                            "constant": 77,
+                            "description": "No property specified."
                         },
                         {
                             "name": "not-configured-for-triggered-logging",
-                            "constant": 78
+                            "constant": 78,
+                            "description": "Not configured for triggered logging."
                         },
                         {
                             "name": "unknown-subscription",
-                            "constant": 79
+                            "constant": 79,
+                            "description": "Unknown subscription."
                         },
                         {
                             "name": "parameter-out-of-range",
-                            "constant": 80
+                            "constant": 80,
+                            "description": "Parameter out of range."
                         },
                         {
                             "name": "list-element-not-found",
-                            "constant": 81
+                            "constant": 81,
+                            "description": "List element not found."
                         },
                         {
                             "name": "busy",
-                            "constant": 82
+                            "constant": 82,
+                            "description": "Device or resource is busy."
                         },
                         {
                             "name": "communication-disabled",
-                            "constant": 83
+                            "constant": 83,
+                            "description": "Communication disabled."
                         },
                         {
                             "name": "success",
-                            "constant": 84
+                            "constant": 84,
+                            "description": "Success (no error)."
                         },
                         {
                             "name": "access-denied",
-                            "constant": 85
+                            "constant": 85,
+                            "description": "Access denied."
                         },
                         {
                             "name": "bad-destination-address",
-                            "constant": 86
+                            "constant": 86,
+                            "description": "Bad destination address."
                         },
                         {
                             "name": "bad-destination-device-id",
-                            "constant": 87
+                            "constant": 87,
+                            "description": "Bad destination device identifier."
                         },
                         {
                             "name": "bad-signature",
-                            "constant": 88
+                            "constant": 88,
+                            "description": "Bad signature."
                         },
                         {
                             "name": "bad-source-address",
-                            "constant": 89
+                            "constant": 89,
+                            "description": "Bad source address."
                         },
                         {
                             "name": "duplicate-message",
-                            "constant": 95
+                            "constant": 95,
+                            "description": "Duplicate message received."
                         },
                         {
                             "name": "encryption-not-configured",
-                            "constant": 96
+                            "constant": 96,
+                            "description": "Encryption not configured."
                         },
                         {
                             "name": "encryption-required",
-                            "constant": 97
+                            "constant": 97,
+                            "description": "Encryption required."
                         },
                         {
                             "name": "malformed-message",
-                            "constant": 101
+                            "constant": 101,
+                            "description": "Malformed message."
                         },
                         {
                             "name": "security-not-configured",
-                            "constant": 103
+                            "constant": 103,
+                            "description": "Security not configured."
                         },
                         {
                             "name": "source-security-required",
-                            "constant": 104
+                            "constant": 104,
+                            "description": "Source security required."
                         },
                         {
                             "name": "unknown-authentication-type",
-                            "constant": 106
+                            "constant": 106,
+                            "description": "Unknown authentication type."
                         },
                         {
                             "name": "not-router-to-dnet",
-                            "constant": 110
+                            "constant": 110,
+                            "description": "Not a router to destination network."
                         },
                         {
                             "name": "router-busy",
-                            "constant": 111
+                            "constant": 111,
+                            "description": "Router is busy."
                         },
                         {
                             "name": "unknown-network-message",
-                            "constant": 112
+                            "constant": 112,
+                            "description": "Unknown network message."
                         },
                         {
                             "name": "message-too-long",
-                            "constant": 113
+                            "constant": 113,
+                            "description": "Message too long."
                         },
                         {
                             "name": "security-error",
-                            "constant": 114
+                            "constant": 114,
+                            "description": "Security error."
                         },
                         {
                             "name": "addressing-error",
-                            "constant": 115
+                            "constant": 115,
+                            "description": "Addressing error."
                         },
                         {
                             "name": "write-bdt-failed",
-                            "constant": 116
+                            "constant": 116,
+                            "description": "Write BDT failed."
                         },
                         {
                             "name": "read-bdt-failed",
-                            "constant": 117
+                            "constant": 117,
+                            "description": "Read BDT failed."
                         },
                         {
                             "name": "register-foreign-device-failed",
-                            "constant": 118
+                            "constant": 118,
+                            "description": "Register foreign device failed."
                         },
                         {
                             "name": "read-fdt-failed",
-                            "constant": 119
+                            "constant": 119,
+                            "description": "Read FDT failed."
                         },
                         {
                             "name": "delete-fdt-entry-failed",
-                            "constant": 120
+                            "constant": 120,
+                            "description": "Delete FDT entry failed."
                         },
                         {
                             "name": "distribute-broadcast-failed",
-                            "constant": 121
+                            "constant": 121,
+                            "description": "Distribute broadcast failed."
                         },
                         {
                             "name": "unknown-file-size",
-                            "constant": 122
+                            "constant": 122,
+                            "description": "Unknown file size."
                         },
                         {
                             "name": "abort-apdu-too-long",
-                            "constant": 123
+                            "constant": 123,
+                            "description": "Abort: APDU too long."
                         },
                         {
                             "name": "abort-application-exceeded-reply-time",
-                            "constant": 124
+                            "constant": 124,
+                            "description": "Abort: application exceeded reply time."
                         },
                         {
                             "name": "abort-out-of-resources",
-                            "constant": 125
+                            "constant": 125,
+                            "description": "Abort: out of resources."
                         },
                         {
                             "name": "abort-tsm-timeout",
-                            "constant": 126
+                            "constant": 126,
+                            "description": "Abort: TSM timeout."
                         },
                         {
                             "name": "abort-window-size-out-of-range",
-                            "constant": 127
+                            "constant": 127,
+                            "description": "Abort: window size out of range."
                         },
                         {
                             "name": "file-full",
-                            "constant": 128
+                            "constant": 128,
+                            "description": "File full."
                         },
                         {
                             "name": "inconsistent-configuration",
-                            "constant": 129
+                            "constant": 129,
+                            "description": "Inconsistent configuration."
                         },
                         {
                             "name": "inconsistent-object-type",
-                            "constant": 130
+                            "constant": 130,
+                            "description": "Inconsistent object type."
                         },
                         {
                             "name": "internal-error",
-                            "constant": 131
+                            "constant": 131,
+                            "description": "Internal error."
                         },
                         {
                             "name": "not-configured",
-                            "constant": 132
+                            "constant": 132,
+                            "description": "Not configured."
                         },
                         {
                             "name": "out-of-memory",
-                            "constant": 133
+                            "constant": 133,
+                            "description": "Out of memory."
                         },
                         {
                             "name": "value-too-long",
-                            "constant": 134
+                            "constant": 134,
+                            "description": "Value too long."
                         },
                         {
                             "name": "abort-insufficient-security",
-                            "constant": 135
+                            "constant": 135,
+                            "description": "Abort: insufficient security."
                         },
                         {
                             "name": "abort-security-error",
-                            "constant": 136
+                            "constant": 136,
+                            "description": "Abort: security error."
                         },
                         {
                             "name": "duplicate-entry",
-                            "constant": 137
+                            "constant": 137,
+                            "description": "Duplicate entry."
                         },
                         {
                             "name": "invalid-value-in-this-state",
-                            "constant": 138
+                            "constant": 138,
+                            "description": "Invalid value in this state."
                         },
                         {
                             "name": "invalid-operation-in-this-state",
-                            "constant": 139
+                            "constant": 139,
+                            "description": "Invalid operation in this state."
                         },
                         {
                             "name": "list-item-not-numbered",
-                            "constant": 140
+                            "constant": 140,
+                            "description": "List item not numbered."
                         },
                         {
                             "name": "list-item-not-timestamped",
-                            "constant": 141
+                            "constant": 141,
+                            "description": "List item not timestamped."
                         },
                         {
                             "name": "invalid-data-encoding",
-                            "constant": 142
+                            "constant": 142,
+                            "description": "Invalid data encoding."
                         },
                         {
                             "name": "bvlc-function-unknown",
-                            "constant": 143
+                            "constant": 143,
+                            "description": "BVLC function unknown."
                         },
                         {
                             "name": "bvlc-proprietary-function-unknown",
-                            "constant": 144
+                            "constant": 144,
+                            "description": "BVLC proprietary function unknown."
                         },
                         {
                             "name": "header-encoding-error",
-                            "constant": 145
+                            "constant": 145,
+                            "description": "Header encoding error."
                         },
                         {
                             "name": "header-not-understood",
-                            "constant": 146
+                            "constant": 146,
+                            "description": "Header not understood."
                         },
                         {
                             "name": "message-incomplete",
-                            "constant": 147
+                            "constant": 147,
+                            "description": "Message incomplete."
                         },
                         {
                             "name": "not-a-bacnet-sc-hub",
-                            "constant": 148
+                            "constant": 148,
+                            "description": "Not a BACnet/SC hub."
                         },
                         {
                             "name": "payload-expected",
-                            "constant": 149
+                            "constant": 149,
+                            "description": "Payload expected."
                         },
                         {
                             "name": "unexpected-data",
-                            "constant": 150
+                            "constant": 150,
+                            "description": "Unexpected data."
                         },
                         {
                             "name": "node-duplicate-vmac",
-                            "constant": 151
+                            "constant": 151,
+                            "description": "Node duplicate VMAC."
                         },
                         {
                             "name": "http-unexpected-response-code",
-                            "constant": 152
+                            "constant": 152,
+                            "description": "HTTP unexpected response code."
                         },
                         {
                             "name": "http-no-upgrade",
-                            "constant": 153
+                            "constant": 153,
+                            "description": "HTTP upgrade not performed."
                         },
                         {
                             "name": "http-resource-not-local",
-                            "constant": 154
+                            "constant": 154,
+                            "description": "HTTP resource not local."
                         },
                         {
                             "name": "http-proxy-authentication-failed",
-                            "constant": 155
+                            "constant": 155,
+                            "description": "HTTP proxy authentication failed."
                         },
                         {
                             "name": "http-response-timeout",
-                            "constant": 156
+                            "constant": 156,
+                            "description": "HTTP response timeout."
                         },
                         {
                             "name": "http-response-syntax-error",
-                            "constant": 157
+                            "constant": 157,
+                            "description": "HTTP response syntax error."
                         },
                         {
                             "name": "http-response-value-error",
-                            "constant": 158
+                            "constant": 158,
+                            "description": "HTTP response value error."
                         },
                         {
                             "name": "http-response-missing-header",
-                            "constant": 159
+                            "constant": 159,
+                            "description": "HTTP response missing header."
                         },
                         {
                             "name": "http-websocket-header-error",
-                            "constant": 160
+                            "constant": 160,
+                            "description": "HTTP WebSocket header error."
                         },
                         {
                             "name": "http-upgrade-required",
-                            "constant": 161
+                            "constant": 161,
+                            "description": "HTTP upgrade required."
                         },
                         {
                             "name": "http-upgrade-error",
-                            "constant": 162
+                            "constant": 162,
+                            "description": "HTTP upgrade error."
                         },
                         {
                             "name": "http-temporary-unavailable",
-                            "constant": 163
+                            "constant": 163,
+                            "description": "HTTP temporarily unavailable."
                         },
                         {
                             "name": "http-not-a-server",
-                            "constant": 164
+                            "constant": 164,
+                            "description": "HTTP endpoint is not a server."
                         },
                         {
                             "name": "http-error",
-                            "constant": 165
+                            "constant": 165,
+                            "description": "HTTP error."
                         },
                         {
                             "name": "websocket-scheme-not-supported",
-                            "constant": 166
+                            "constant": 166,
+                            "description": "WebSocket scheme not supported."
                         },
                         {
                             "name": "websocket-unknown-control-message",
-                            "constant": 167
+                            "constant": 167,
+                            "description": "WebSocket unknown control message."
                         },
                         {
                             "name": "websocket-close-error",
-                            "constant": 168
+                            "constant": 168,
+                            "description": "WebSocket close error."
                         },
                         {
                             "name": "websocket-closed-by-peer",
-                            "constant": 169
+                            "constant": 169,
+                            "description": "WebSocket closed by peer."
                         },
                         {
                             "name": "websocket-endpoint-leaves",
-                            "constant": 170
+                            "constant": 170,
+                            "description": "WebSocket endpoint leaves."
                         },
                         {
                             "name": "websocket-protocol-error",
-                            "constant": 171
+                            "constant": 171,
+                            "description": "WebSocket protocol error."
                         },
                         {
                             "name": "websocket-data-not-accepted",
-                            "constant": 172
+                            "constant": 172,
+                            "description": "WebSocket data not accepted."
                         },
                         {
                             "name": "websocket-closed-abnormally",
-                            "constant": 173
+                            "constant": 173,
+                            "description": "WebSocket closed abnormally."
                         },
                         {
                             "name": "websocket-data-inconsistent",
-                            "constant": 174
+                            "constant": 174,
+                            "description": "WebSocket data inconsistent."
                         },
                         {
                             "name": "websocket-data-against-policy",
-                            "constant": 175
+                            "constant": 175,
+                            "description": "WebSocket data against policy."
                         },
                         {
                             "name": "websocket-frame-too-long",
-                            "constant": 176
+                            "constant": 176,
+                            "description": "WebSocket frame too long."
                         },
                         {
                             "name": "websocket-extension-missing",
-                            "constant": 177
+                            "constant": 177,
+                            "description": "WebSocket extension missing."
                         },
                         {
                             "name": "websocket-request-unavailable",
-                            "constant": 178
+                            "constant": 178,
+                            "description": "WebSocket request unavailable."
                         },
                         {
                             "name": "websocket-error",
-                            "constant": 179
+                            "constant": 179,
+                            "description": "WebSocket error."
                         },
                         {
                             "name": "tls-client-certificate-error",
-                            "constant": 180
+                            "constant": 180,
+                            "description": "TLS client certificate error."
                         },
                         {
                             "name": "tls-server-certificate-error",
-                            "constant": 181
+                            "constant": 181,
+                            "description": "TLS server certificate error."
                         },
                         {
                             "name": "tls-client-authentication-failed",
-                            "constant": 182
+                            "constant": 182,
+                            "description": "TLS client authentication failed."
                         },
                         {
                             "name": "tls-server-authentication-failed",
-                            "constant": 183
+                            "constant": 183,
+                            "description": "TLS server authentication failed."
                         },
                         {
                             "name": "tls-client-certificate-expired",
-                            "constant": 184
+                            "constant": 184,
+                            "description": "TLS client certificate expired."
                         },
                         {
                             "name": "tls-server-certificate-expired",
-                            "constant": 185
+                            "constant": 185,
+                            "description": "TLS server certificate expired."
                         },
                         {
                             "name": "tls-client-certificate-revoked",
-                            "constant": 186
+                            "constant": 186,
+                            "description": "TLS client certificate revoked."
                         },
                         {
                             "name": "tls-server-certificate-revoked",
-                            "constant": 187
+                            "constant": 187,
+                            "description": "TLS server certificate revoked."
                         },
                         {
                             "name": "tls-error",
-                            "constant": 188
+                            "constant": 188,
+                            "description": "TLS error."
                         },
                         {
                             "name": "dns-unavailable",
-                            "constant": 189
+                            "constant": 189,
+                            "description": "DNS unavailable."
                         },
                         {
                             "name": "dns-name-resolution-failed",
-                            "constant": 190
+                            "constant": 190,
+                            "description": "DNS name resolution failed."
                         },
                         {
                             "name": "dns-resolver-failure",
-                            "constant": 191
+                            "constant": 191,
+                            "description": "DNS resolver failure."
                         },
                         {
                             "name": "dns-error",
-                            "constant": 192
+                            "constant": 192,
+                            "description": "DNS error."
                         },
                         {
                             "name": "tcp-connect-timeout",
-                            "constant": 193
+                            "constant": 193,
+                            "description": "TCP connect timeout."
                         },
                         {
                             "name": "tcp-connection-refused",
-                            "constant": 194
+                            "constant": 194,
+                            "description": "TCP connection refused."
                         },
                         {
                             "name": "tcp-closed-by-local",
-                            "constant": 195
+                            "constant": 195,
+                            "description": "TCP closed by local endpoint."
                         },
                         {
                             "name": "tcp-closed-other",
-                            "constant": 196
+                            "constant": 196,
+                            "description": "TCP closed by other endpoint."
                         },
                         {
                             "name": "tcp-error",
-                            "constant": 197
+                            "constant": 197,
+                            "description": "TCP error."
                         },
                         {
                             "name": "ip-address-not-reachable",
-                            "constant": 198
+                            "constant": 198,
+                            "description": "IP address not reachable."
                         },
                         {
                             "name": "ip-error",
-                            "constant": 199
+                            "constant": 199,
+                            "description": "IP error."
                         },
                         {
                             "name": "certificate-expired",
-                            "constant": 200
+                            "constant": 200,
+                            "description": "Certificate expired."
                         },
                         {
                             "name": "certificate-invalid",
-                            "constant": 201
+                            "constant": 201,
+                            "description": "Certificate invalid."
                         },
                         {
                             "name": "certificate-malformed",
-                            "constant": 202
+                            "constant": 202,
+                            "description": "Certificate malformed."
                         },
                         {
                             "name": "certificate-revoked",
-                            "constant": 203
+                            "constant": 203,
+                            "description": "Certificate revoked."
                         },
                         {
                             "name": "unknown-certificate-key",
-                            "constant": 204
+                            "constant": 204,
+                            "description": "Unknown certificate key."
                         },
                         {
                             "name": "referenced-port-in-error",
-                            "constant": 205
+                            "constant": 205,
+                            "description": "Referenced port in error."
                         },
                         {
                             "name": "not-enabled",
-                            "constant": 206
+                            "constant": 206,
+                            "description": "Not enabled."
                         },
                         {
                             "name": "adjust-scope-required",
-                            "constant": 207
+                            "constant": 207,
+                            "description": "Adjust scope required."
                         },
                         {
                             "name": "auth-scope-required",
-                            "constant": 208
+                            "constant": 208,
+                            "description": "Auth scope required."
                         },
                         {
                             "name": "bind-scope-required",
-                            "constant": 209
+                            "constant": 209,
+                            "description": "Bind scope required."
                         },
                         {
                             "name": "config-scope-required",
-                            "constant": 210
+                            "constant": 210,
+                            "description": "Config scope required."
                         },
                         {
                             "name": "control-scope-required",
-                            "constant": 211
+                            "constant": 211,
+                            "description": "Control scope required."
                         },
                         {
                             "name": "extended-scope-required",
-                            "constant": 212
+                            "constant": 212,
+                            "description": "Extended scope required."
                         },
                         {
                             "name": "incorrect-client",
-                            "constant": 213
+                            "constant": 213,
+                            "description": "Incorrect client."
                         },
                         {
                             "name": "install-scope-required",
-                            "constant": 214
+                            "constant": 214,
+                            "description": "Install scope required."
                         },
                         {
                             "name": "insufficient-scope",
-                            "constant": 215
+                            "constant": 215,
+                            "description": "Insufficient scope."
                         },
                         {
                             "name": "no-default-scope",
-                            "constant": 216
+                            "constant": 216,
+                            "description": "No default scope."
                         },
                         {
                             "name": "no-policy",
-                            "constant": 217
+                            "constant": 217,
+                            "description": "No policy."
                         },
                         {
                             "name": "revoked-token",
-                            "constant": 218
+                            "constant": 218,
+                            "description": "Token revoked."
                         },
                         {
                             "name": "override-scope-required",
-                            "constant": 219
+                            "constant": 219,
+                            "description": "Override scope required."
                         },
                         {
                             "name": "inactive-token",
-                            "constant": 220
+                            "constant": 220,
+                            "description": "Token inactive."
                         },
                         {
                             "name": "unknown-audience",
-                            "constant": 221
+                            "constant": 221,
+                            "description": "Unknown audience."
                         },
                         {
                             "name": "unknown-client",
-                            "constant": 222
+                            "constant": 222,
+                            "description": "Unknown client."
                         },
                         {
                             "name": "unknown-scope",
-                            "constant": 223
+                            "constant": 223,
+                            "description": "Unknown scope."
                         },
                         {
                             "name": "view-scope-required",
-                            "constant": 224
+                            "constant": 224,
+                            "description": "View scope required."
                         },
                         {
                             "name": "incorrect-audience",
-                            "constant": 225
+                            "constant": 225,
+                            "description": "Incorrect audience."
                         },
                         {
                             "name": "incorrect-client-origin",
-                            "constant": 226
+                            "constant": 226,
+                            "description": "Incorrect client origin."
                         },
                         {
                             "name": "invalid-array-size",
-                            "constant": 227
+                            "constant": 227,
+                            "description": "Invalid array size."
                         },
                         {
                             "name": "incorrect-issuer",
-                            "constant": 228
+                            "constant": 228,
+                            "description": "Incorrect issuer."
                         },
                         {
                             "name": "invalid-token",
-                            "constant": 229
+                            "constant": 229,
+                            "description": "Invalid token."
                         }
                     ],
                     "maximum": 65535,

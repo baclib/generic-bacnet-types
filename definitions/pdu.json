@@ -8,42 +8,50 @@
             {
                 "name": "confirmed-request-pdu",
                 "type": "confirmed-request-pdu",
-                "context": 0
+                "context": 0,
+                "description": "A confirmed request PDU that expects an acknowledgment."
             },
             {
                 "name": "unconfirmed-request-pdu",
                 "type": "unconfirmed-request-pdu",
-                "context": 1
+                "context": 1,
+                "description": "An unconfirmed request PDU that does not expect an acknowledgment."
             },
             {
                 "name": "simple-ack-pdu",
                 "type": "simple-ack-pdu",
-                "context": 2
+                "context": 2,
+                "description": "A simple acknowledgment PDU for a confirmed request."
             },
             {
                 "name": "complex-ack-pdu",
                 "type": "complex-ack-pdu",
-                "context": 3
+                "context": 3,
+                "description": "A complex acknowledgment PDU that can include response data."
             },
             {
                 "name": "segment-ack-pdu",
                 "type": "segment-ack-pdu",
-                "context": 4
+                "context": 4,
+                "description": "A segment acknowledgment PDU used with segmented messages."
             },
             {
                 "name": "error-pdu",
                 "type": "error-pdu",
-                "context": 5
+                "context": 5,
+                "description": "An error PDU indicating a service error response."
             },
             {
                 "name": "reject-pdu",
                 "type": "reject-pdu",
-                "context": 6
+                "context": 6,
+                "description": "A reject PDU indicating a request was rejected."
             },
             {
                 "name": "abort-pdu",
                 "type": "abort-pdu",
-                "context": 7
+                "context": 7,
+                "description": "An abort PDU indicating a transaction was aborted."
             }
         ]
     }

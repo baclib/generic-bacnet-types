@@ -8,157 +8,188 @@
             {
                 "name": "acknowledge-alarm",
                 "type": "acknowledge-alarm-request",
-                "context": 0
+                "context": 0,
+                "description": "Request to acknowledge an alarm."
             },
             {
                 "name": "confirmed-cov-notification",
                 "type": "confirmed-cov-notification-request",
-                "context": 1
+                "context": 1,
+                "description": "Request for confirmed COV notification."
             },
             {
                 "name": "confirmed-cov-notification-multiple",
                 "type": "confirmed-cov-notification-multiple-request",
-                "context": 31
+                "context": 31,
+                "description": "Request for confirmed COV notification multiple."
             },
             {
                 "name": "confirmed-event-notification",
                 "type": "confirmed-event-notification-request",
-                "context": 2
+                "context": 2,
+                "description": "Request for confirmed event notification."
             },
             {
                 "name": "get-enrollment-summary",
                 "type": "get-enrollment-summary-request",
-                "context": 4
+                "context": 4,
+                "description": "Request for enrollment summary."
             },
             {
                 "name": "get-event-information",
                 "type": "get-event-information-request",
-                "context": 29
+                "context": 29,
+                "description": "Request for event information."
             },
             {
                 "name": "life-safety-operation",
                 "type": "life-safety-operation-request",
-                "context": 27
+                "context": 27,
+                "description": "Request for life safety operation."
             },
             {
                 "name": "subscribe-cov",
                 "type": "subscribe-cov-request",
-                "context": 5
+                "context": 5,
+                "description": "Request to subscribe for COV notifications."
             },
             {
                 "name": "subscribe-cov-property",
                 "type": "subscribe-cov-property-request",
-                "context": 28
+                "context": 28,
+                "description": "Request to subscribe for COV on a specific property."
             },
             {
                 "name": "subscribe-cov-property-multiple",
                 "type": "subscribe-cov-property-multiple-request",
-                "context": 30
+                "context": 30,
+                "description": "Request to subscribe for multiple COV properties."
             },
             {
                 "name": "confirmed-audit-notification",
                 "type": "confirmed-audit-notification-request",
-                "context": 32
+                "context": 32,
+                "description": "Request for confirmed audit notification."
             },
             {
                 "name": "atomic-read-file",
                 "type": "atomic-read-file-request",
-                "context": 6
+                "context": 6,
+                "description": "Request to read a file atomically."
             },
             {
                 "name": "atomic-write-file",
                 "type": "atomic-write-file-request",
-                "context": 7
+                "context": 7,
+                "description": "Request to write a file atomically."
             },
             {
                 "name": "add-list-element",
                 "type": "add-list-element-request",
-                "context": 8
+                "context": 8,
+                "description": "Request to add elements to a list property."
             },
             {
                 "name": "remove-list-element",
                 "type": "remove-list-element-request",
-                "context": 9
+                "context": 9,
+                "description": "Request to remove elements from a list property."
             },
             {
                 "name": "create-object",
                 "type": "create-object-request",
-                "context": 10
+                "context": 10,
+                "description": "Request to create an object."
             },
             {
                 "name": "delete-object",
                 "type": "delete-object-request",
-                "context": 11
+                "context": 11,
+                "description": "Request to delete an object."
             },
             {
                 "name": "read-property",
                 "type": "read-property-request",
-                "context": 12
+                "context": 12,
+                "description": "Request to read a property."
             },
             {
                 "name": "read-property-multiple",
                 "type": "read-property-multiple-request",
-                "context": 14
+                "context": 14,
+                "description": "Request to read multiple properties."
             },
             {
                 "name": "read-range",
                 "type": "read-range-request",
-                "context": 26
+                "context": 26,
+                "description": "Request to read a range from a list or log."
             },
             {
                 "name": "write-property",
                 "type": "write-property-request",
-                "context": 15
+                "context": 15,
+                "description": "Request to write a property."
             },
             {
                 "name": "write-property-multiple",
                 "type": "write-property-multiple-request",
-                "context": 16
+                "context": 16,
+                "description": "Request to write multiple properties."
             },
             {
                 "name": "audit-log-query",
                 "type": "audit-log-query-request",
-                "context": 33
+                "context": 33,
+                "description": "Request to query the audit log."
             },
             {
                 "name": "device-communication-control",
                 "type": "device-communication-control-request",
-                "context": 17
+                "context": 17,
+                "description": "Request to control device communications."
             },
             {
                 "name": "confirmed-private-transfer",
                 "type": "confirmed-private-transfer-request",
-                "context": 18
+                "context": 18,
+                "description": "Request for confirmed private transfer."
             },
             {
                 "name": "confirmed-text-message",
                 "type": "confirmed-text-message-request",
-                "context": 19
+                "context": 19,
+                "description": "Request for a confirmed text message."
             },
             {
                 "name": "reinitialize-device",
                 "type": "reinitialize-device-request",
-                "context": 20
+                "context": 20,
+                "description": "Request to reinitialize a device."
             },
             {
                 "name": "auth-request",
                 "type": "auth-request-request",
-                "context": 34
+                "context": 34,
+                "description": "Request for authentication services."
             },
             {
                 "name": "vt-open",
                 "type": "vt-open-request",
-                "context": 21
+                "context": 21,
+                "description": "Request to open a virtual terminal session."
             },
             {
                 "name": "vt-close",
                 "type": "vt-close-request",
-                "context": 22
+                "context": 22,
+                "description": "Request to close a virtual terminal session."
             },
             {
                 "name": "vt-data",
                 "type": "vt-data-request",
-                "context": 23
+                "context": 23,
+                "description": "Request to transfer virtual terminal data."
             }
         ]
     }
