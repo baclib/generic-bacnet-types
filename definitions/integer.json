@@ -1,5 +1,6 @@
 {
     "alias": "Integer",
     "name": "integer",
+    "description": "Represents a BACnet primitive signed integer data type, which can hold positive or negative whole number values.",
     "primitive": 3
 }

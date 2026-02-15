@@ -1,18 +1,21 @@
 {
     "alias": "BACnetGroupChannelValue",
     "name": "group-channel-value",
+    "description": "Represents a BACnet Group Channel Value, which associates a channel number with a value and optional priority for use in lighting and channel control systems.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "channel",
                 "type": "unsigned-16",
-                "context": 0
+                "context": 0,
+                "description": "The channel number being controlled."
             },
             {
                 "name": "value",
                 "type": "channel-value",
-                "context": 1
+                "context": 1,
+                "description": "The value to be written to the channel."
             },
             {
                 "name": "overriding-priority",
@@ -22,7 +25,8 @@
                     "maximum": 16
                 },
                 "context": 2,
-                "optional": true
+                "optional": true,
+                "description": "Optional priority level for the channel value (1-16, where 1 is highest priority)."
             }
         ]
     }

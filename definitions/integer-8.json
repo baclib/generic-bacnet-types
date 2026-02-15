@@ -1,6 +1,7 @@
 {
     "alias": "Integer8",
     "name": "integer-8",
+    "description": "Represents an 8-bit signed integer data type.",
     "type": {
         "base": "integer",
         "minimum": -128,

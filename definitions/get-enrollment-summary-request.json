@@ -1,6 +1,7 @@
 {
     "alias": "GetEnrollmentSummary-Request",
     "name": "get-enrollment-summary-request",
+    "description": "Represents a BACnet GetEnrollmentSummary service request, used to retrieve a filtered list of event enrollment summaries from a device.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -11,25 +12,30 @@
                     "values": [
                         {
                             "name": "all",
-                            "constant": 0
+                            "constant": 0,
+                            "description": "Include all events regardless of acknowledgment status."
                         },
                         {
                             "name": "acked",
-                            "constant": 1
+                            "constant": 1,
+                            "description": "Include only acknowledged events."
                         },
                         {
                             "name": "not-acked",
-                            "constant": 2
+                            "constant": 2,
+                            "description": "Include only unacknowledged events."
                         }
                     ]
                 },
-                "context": 0
+                "context": 0,
+                "description": "Filter for event acknowledgment status."
             },
             {
                 "name": "enrollment-filter",
                 "type": "recipient-process",
                 "context": 1,
-                "optional": true
+                "optional": true,
+                "description": "Optional filter to match a specific event recipient process."
             },
             {
                 "name": "event-state-filter",
@@ -38,34 +44,41 @@
                     "values": [
                         {
                             "name": "offnormal",
-                            "constant": 0
+                            "constant": 0,
+                            "description": "Include events in offnormal state."
                         },
                         {
                             "name": "fault",
-                            "constant": 1
+                            "constant": 1,
+                            "description": "Include events in fault state."
                         },
                         {
                             "name": "normal",
-                            "constant": 2
+                            "constant": 2,
+                            "description": "Include events in normal state."
                         },
                         {
                             "name": "all",
-                            "constant": 3
+                            "constant": 3,
+                            "description": "Include events in all states."
                         },
                         {
                             "name": "active",
-                            "constant": 4
+                            "constant": 4,
+                            "description": "Include only active events."
                         }
                     ]
                 },
                 "context": 2,
-                "optional": true
+                "optional": true,
+                "description": "Optional filter for event state."
             },
             {
                 "name": "event-type-filter",
                 "type": "event-type",
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "Optional filter to match a specific event type."
             },
             {
                 "name": "priority-filter",
@@ -75,23 +88,27 @@
                         {
                             "name": "min-priority",
                             "type": "unsigned-8",
-                            "context": 0
+                            "context": 0,
+                            "description": "Minimum priority value for the filter range."
                         },
                         {
                             "name": "max-priority",
                             "type": "unsigned-8",
-                            "context": 1
+                            "context": 1,
+                            "description": "Maximum priority value for the filter range."
                         }
                     ]
                 },
                 "context": 4,
-                "optional": true
+                "optional": true,
+                "description": "Optional filter to include events within a priority range."
             },
             {
                 "name": "notification-class-filter",
                 "type": "unsigned",
                 "context": 5,
-                "optional": true
+                "optional": true,
+                "description": "Optional filter to match a specific notification class."
             }
         ]
     }

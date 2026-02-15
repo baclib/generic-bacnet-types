@@ -1,6 +1,7 @@
 {
     "alias": "Integer64",
     "name": "integer-64",
+    "description": "Represents a 64-bit signed integer data type.",
     "type": {
         "base": "integer",
         "minimum": "-9223372036854775808",

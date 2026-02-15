@@ -1,6 +1,7 @@
 {
     "alias": "BACnetFaultType",
     "name": "fault-type",
+    "description": "Represents BACnet Fault Type enumeration, which specifies the type of fault condition detected in an object.",
     "type": {
         "base": "enumerated",
         "values": [

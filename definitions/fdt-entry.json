@@ -1,23 +1,27 @@
 {
     "alias": "BACnetFDTEntry",
     "name": "fdt-entry",
+    "description": "Represents a BACnet Foreign Device Table (FDT) Entry, which contains registration information for a foreign device in a BACnet/IP network, including its address and time-to-live values.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "bacnetip-address",
                 "type": "octet-string",
-                "context": 0
+                "context": 0,
+                "description": "The BACnet/IP address of the foreign device."
             },
             {
                 "name": "time-to-live",
                 "type": "unsigned-16",
-                "context": 1
+                "context": 1,
+                "description": "The configured time-to-live value in seconds for this FDT entry."
             },
             {
                 "name": "remaining-time-to-live",
                 "type": "unsigned-16",
-                "context": 2
+                "context": 2,
+                "description": "The remaining time in seconds before this FDT entry expires."
             }
         ]
     }

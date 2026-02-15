@@ -1,6 +1,7 @@
 {
     "alias": "GetEventInformation-ACK",
     "name": "get-event-information-ack",
+    "description": "Represents a BACnet GetEventInformation service acknowledgment, which returns a list of event summaries containing state, acknowledgment, and notification information for active events.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -13,17 +14,20 @@
                         {
                             "name": "object-identifier",
                             "type": "object-identifier",
-                            "context": 0
+                            "context": 0,
+                            "description": "The object identifier of the event-generating object."
                         },
                         {
                             "name": "event-state",
                             "type": "event-state",
-                            "context": 1
+                            "context": 1,
+                            "description": "The current event state of the object."
                         },
                         {
                             "name": "acknowledged-transitions",
                             "type": "event-transition-bits",
-                            "context": 2
+                            "context": 2,
+                            "description": "Bit flags indicating which event transitions have been acknowledged."
                         },
                         {
                             "name": "event-timestamps",
@@ -31,17 +35,20 @@
                                 "base": "time-stamp",
                                 "series": 3
                             },
-                            "context": 3
+                            "context": 3,
+                            "description": "An array of three timestamps for TO-OFFNORMAL, TO-FAULT, and TO-NORMAL transitions."
                         },
                         {
                             "name": "notify-type",
                             "type": "notify-type",
-                            "context": 4
+                            "context": 4,
+                            "description": "The notification type (alarm or event) for this object."
                         },
                         {
                             "name": "event-enable",
                             "type": "event-transition-bits",
-                            "context": 5
+                            "context": 5,
+                            "description": "Bit flags indicating which event transitions are enabled."
                         },
                         {
                             "name": "event-priorities",
@@ -49,16 +56,19 @@
                                 "base": "unsigned",
                                 "series": 3
                             },
-                            "context": 6
+                            "context": 6,
+                            "description": "An array of three priority values for TO-OFFNORMAL, TO-FAULT, and TO-NORMAL transitions."
                         }
                     ]
                 },
-                "context": 0
+                "context": 0,
+                "description": "A list of event summary entries, one for each active event."
             },
             {
                 "name": "more-events",
                 "type": "boolean",
-                "context": 1
+                "context": 1,
+                "description": "Indicates whether more event information is available (true) or if all events have been returned (false)."
             }
         ]
     }

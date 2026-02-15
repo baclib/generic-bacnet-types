@@ -1,6 +1,7 @@
 {
     "alias": "GetEventInformation-Request",
     "name": "get-event-information-request",
+    "description": "Represents a BACnet GetEventInformation service request, used to retrieve summary information about active events in a device.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -8,7 +9,8 @@
                 "name": "last-received-object-identifier",
                 "type": "object-identifier",
                 "context": 0,
-                "optional": true
+                "optional": true,
+                "description": "Optional object identifier of the last event object received, used for pagination of event information."
             }
         ]
     }

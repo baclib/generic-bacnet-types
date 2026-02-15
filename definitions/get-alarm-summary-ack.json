@@ -1,21 +1,25 @@
 {
     "alias": "GetAlarmSummary-ACK",
     "name": "get-alarm-summary-ack",
+    "description": "Represents a BACnet GetAlarmSummary service acknowledgment, which returns a series of alarm summaries containing object identifiers, alarm states, and acknowledgment status.",
     "type": {
         "base": "sequence",
         "series": true,
         "fields": [
             {
                 "name": "object-identifier",
-                "type": "object-identifier"
+                "type": "object-identifier",
+                "description": "The object identifier of the object in alarm."
             },
             {
                 "name": "alarm-state",
-                "type": "event-state"
+                "type": "event-state",
+                "description": "The current alarm state of the object."
             },
             {
                 "name": "acknowledged-transitions",
-                "type": "event-transition-bits"
+                "type": "event-transition-bits",
+                "description": "Bit flags indicating which alarm transitions have been acknowledged."
             }
         ]
     }

@@ -1,18 +1,21 @@
 {
     "alias": "BACnetHostNPort",
     "name": "host-n-port",
+    "description": "Represents a BACnet Host and Port structure, which specifies a network host address and port number for network communications.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "host",
                 "type": "host-address",
-                "context": 0
+                "context": 0,
+                "description": "The host address, which can be an IP address, a name, or unspecified."
             },
             {
                 "name": "port",
                 "type": "unsigned-16",
-                "context": 1
+                "context": 1,
+                "description": "The port number for the network connection."
             }
         ]
     }

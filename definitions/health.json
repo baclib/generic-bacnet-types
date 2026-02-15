@@ -1,30 +1,35 @@
 {
     "alias": "BACnetHealth",
     "name": "health",
+    "description": "Represents BACnet Health information, which provides diagnostic information about the health status of a BACnet object or property, including timestamp, error details, and optional descriptive information.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "timestamp",
                 "type": "date-time",
-                "context": 0
+                "context": 0,
+                "description": "The date and time when the health status was determined."
             },
             {
                 "name": "result",
                 "type": "error",
-                "context": 1
+                "context": 1,
+                "description": "The error information indicating the health status or any problems detected."
             },
             {
                 "name": "property",
                 "type": "property-identifier",
                 "context": 2,
-                "optional": true
+                "optional": true,
+                "description": "Optional property identifier related to the health status."
             },
             {
                 "name": "details",
                 "type": "character-string",
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "Optional additional details describing the health status or issue."
             }
         ]
     }

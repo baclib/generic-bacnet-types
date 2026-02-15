@@ -1,6 +1,7 @@
 {
     "alias": "BACnetFileAccessMethod",
     "name": "file-access-method",
+    "description": "Represents BACnet File Access Method enumeration, which specifies how file data can be accessed in BACnet file objects.",
     "type": {
         "base": "enumerated",
         "values": [

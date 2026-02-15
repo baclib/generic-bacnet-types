@@ -1,24 +1,29 @@
 {
     "alias": "I-Am-Request",
     "name": "i-am-request",
+    "description": "Represents a BACnet I-Am service request, used by a device to announce its presence on the network and advertise its capabilities.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "i-am-device-identifier",
-                "type": "object-identifier"
+                "type": "object-identifier",
+                "description": "The object identifier of the device making the announcement."
             },
             {
                 "name": "max-apdu-length-accepted",
-                "type": "unsigned"
+                "type": "unsigned",
+                "description": "The maximum APDU length in octets that this device can accept."
             },
             {
                 "name": "segmentation-supported",
-                "type": "segmentation"
+                "type": "segmentation",
+                "description": "The level of segmentation support provided by this device."
             },
             {
                 "name": "vendor-id",
-                "type": "unsigned-16"
+                "type": "unsigned-16",
+                "description": "The vendor identifier assigned to the manufacturer of this device."
             }
         ]
     }

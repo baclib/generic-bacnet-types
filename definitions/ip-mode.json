@@ -1,6 +1,7 @@
 {
     "alias": "BACnetIPMode",
     "name": "ip-mode",
+    "description": "Represents BACnet IP Mode enumeration, which specifies the operational mode of a BACnet/IP device in the network.",
     "type": {
         "base": "enumerated",
         "values": [

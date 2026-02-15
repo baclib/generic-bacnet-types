@@ -1,20 +1,24 @@
 {
     "alias": "I-Have-Request",
     "name": "i-have-request",
+    "description": "Represents a BACnet I-Have service request, used by a device to announce that it contains a particular object, typically in response to a Who-Has service request.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "device-identifier",
-                "type": "object-identifier"
+                "type": "object-identifier",
+                "description": "The object identifier of the device that contains the object."
             },
             {
                 "name": "object-identifier",
-                "type": "object-identifier"
+                "type": "object-identifier",
+                "description": "The object identifier of the object being announced."
             },
             {
                 "name": "object-name",
-                "type": "character-string"
+                "type": "character-string",
+                "description": "The name of the object being announced."
             }
         ]
     }

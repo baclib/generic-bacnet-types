@@ -1,23 +1,27 @@
 {
     "alias": "BACnetHostAddress",
     "name": "host-address",
+    "description": "Represents a BACnet Host Address, which can specify a network host using various addressing methods including IP address, hostname, or no address.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "none",
                 "type": "null",
-                "context": 0
+                "context": 0,
+                "description": "No host address specified."
             },
             {
                 "name": "ip-address",
                 "type": "octet-string",
-                "context": 1
+                "context": 1,
+                "description": "An IP address represented as an octet string (IPv4 or IPv6)."
             },
             {
                 "name": "name",
                 "type": "character-string",
-                "context": 2
+                "context": 2,
+                "description": "A hostname or domain name as a character string."
             }
         ]
     }

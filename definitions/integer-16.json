@@ -1,6 +1,7 @@
 {
     "alias": "Integer16",
     "name": "integer-16",
+    "description": "Represents a 16-bit signed integer data type.",
     "type": {
         "base": "integer",
         "minimum": -32768,
