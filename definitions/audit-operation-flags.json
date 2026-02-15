@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAuditOperationFlags",
     "name": "audit-operation-flags",
+    "description": "Bit flags representing which types of operations should be audited.",
     "type": {
         "base": "bit-string",
         "bits": [

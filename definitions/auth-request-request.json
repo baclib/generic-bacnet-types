@@ -1,6 +1,7 @@
 {
     "alias": "AuthRequest-Request",
     "name": "auth-request-request",
+    "description": "Request message for authentication services.",
     "type": {
         "base": "choice",
         "options": [
@@ -12,7 +13,8 @@
                         {
                             "name": "client",
                             "type": "unsigned-32",
-                            "context": 0
+                            "context": 0,
+                            "description": "The identifier of the client requesting authentication."
                         },
                         {
                             "name": "audience",
@@ -20,16 +22,19 @@
                                 "base": "integer-32",
                                 "series": true
                             },
-                            "context": 1
+                            "context": 1,
+                            "description": "A list of intended audience identifiers for the token."
                         },
                         {
                             "name": "scope",
                             "type": "authorization-scope",
-                            "context": 2
+                            "context": 2,
+                            "description": "The requested authorization scope for the token."
                         }
                     ]
                 },
-                "context": 0
+                "context": 0,
+                "description": "A request for an access token."
             }
         ]
     }

@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAuthorizationPolicy",
     "name": "authorization-policy",
+    "description": "Defines an authorization policy including temporal validity, authorized clients, constraints, and scope of access.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -8,13 +9,15 @@
                 "name": "not-before",
                 "type": "date-time",
                 "context": 0,
-                "optional": true
+                "optional": true,
+                "description": "The policy is not valid before this date and time."
             },
             {
                 "name": "not-after",
                 "type": "date-time",
                 "context": 1,
-                "optional": true
+                "optional": true,
+                "description": "The policy is not valid after this date and time."
             },
             {
                 "name": "clients",
@@ -22,17 +25,20 @@
                     "base": "unsigned-32",
                     "series": true
                 },
-                "context": 2
+                "context": 2,
+                "description": "A list of client identifiers to which this policy applies."
             },
             {
                 "name": "constraint",
                 "type": "authorization-constraint",
-                "context": 3
+                "context": 3,
+                "description": "Constraints on the origin and authentication method for this policy."
             },
             {
                 "name": "scope",
                 "type": "authorization-scope",
-                "context": 4
+                "context": 4,
+                "description": "The scope of access granted by this policy."
             }
         ]
     }

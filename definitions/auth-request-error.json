@@ -1,19 +1,22 @@
 {
     "alias": "AuthRequest-Error",
     "name": "auth-request-error",
+    "description": "Error information returned when an authentication request fails.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "error-type",
                 "type": "error",
-                "context": 0
+                "context": 0,
+                "description": "The error that occurred during the authentication request."
             },
             {
                 "name": "error-details",
                 "type": "character-string",
                 "context": 1,
-                "optional": true
+                "optional": true,
+                "description": "Additional details about the error."
             }
         ]
     }

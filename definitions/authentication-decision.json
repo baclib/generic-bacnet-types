@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAuthenticationDecision",
     "name": "authentication-decision",
+    "description": "Enumerated values describing the decision made during an authentication process.",
     "type": {
         "base": "enumerated",
         "values": [

@@ -1,25 +1,29 @@
 {
     "alias": "BACnetAuthorizationServer",
     "name": "authorization-server",
+    "description": "Information about an authorization server including its identifier and cryptographic signing keys.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "auth-server",
                 "type": "unsigned-32",
-                "context": 0
+                "context": 0,
+                "description": "The identifier of the authorization server."
             },
             {
                 "name": "signing-key-1",
                 "type": "octet-string",
                 "context": 1,
-                "optional": true
+                "optional": true,
+                "description": "The first cryptographic signing key used to verify tokens from this server."
             },
             {
                 "name": "signing-key-2",
                 "type": "octet-string",
                 "context": 2,
-                "optional": true
+                "optional": true,
+                "description": "The second cryptographic signing key, allowing for key rotation."
             }
         ]
     }

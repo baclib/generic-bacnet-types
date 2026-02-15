@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAuditLogQueryParameters",
     "name": "audit-log-query-parameters",
+    "description": "Parameters for querying audit log records, either by target device/object or by source device/object.",
     "type": {
         "base": "choice",
         "options": [
@@ -12,31 +13,36 @@
                         {
                             "name": "target-device-identifier",
                             "type": "object-identifier",
-                            "context": 0
+                            "context": 0,
+                            "description": "The device identifier of the target device."
                         },
                         {
                             "name": "target-device-address",
                             "type": "address",
                             "context": 1,
-                            "optional": true
+                            "optional": true,
+                            "description": "The network address of the target device."
                         },
                         {
                             "name": "target-object-identifier",
                             "type": "object-identifier",
                             "context": 2,
-                            "optional": true
+                            "optional": true,
+                            "description": "The object identifier on the target device."
                         },
                         {
                             "name": "target-property-identifier",
                             "type": "property-identifier",
                             "context": 3,
-                            "optional": true
+                            "optional": true,
+                            "description": "The property identifier on the target object."
                         },
                         {
                             "name": "target-array-index",
                             "type": "unsigned",
                             "context": 4,
-                            "optional": true
+                            "optional": true,
+                            "description": "The array index of the target property."
                         },
                         {
                             "name": "target-priority",
@@ -46,22 +52,26 @@
                                 "maximum": 16
                             },
                             "context": 5,
-                            "optional": true
+                            "optional": true,
+                            "description": "The priority level of the operation (1-16)."
                         },
                         {
                             "name": "operations",
                             "type": "audit-operation-flags",
                             "context": 6,
-                            "optional": true
+                            "optional": true,
+                            "description": "Bit flags specifying which operation types to include."
                         },
                         {
                             "name": "successful-actions-only",
                             "type": "success-filter",
-                            "context": 7
+                            "context": 7,
+                            "description": "Filter for successful or failed operations."
                         }
                     ]
                 },
-                "context": 0
+                "context": 0,
+                "description": "Query audit log records based on the target device and object."
             },
             {
                 "name": "by-source",
@@ -71,34 +81,40 @@
                         {
                             "name": "source-device-identifier",
                             "type": "object-identifier",
-                            "context": 0
+                            "context": 0,
+                            "description": "The device identifier of the source device."
                         },
                         {
                             "name": "source-device-address",
                             "type": "address",
                             "context": 1,
-                            "optional": true
+                            "optional": true,
+                            "description": "The network address of the source device."
                         },
                         {
                             "name": "source-object-identifier",
                             "type": "object-identifier",
                             "context": 2,
-                            "optional": true
+                            "optional": true,
+                            "description": "The object identifier on the source device."
                         },
                         {
                             "name": "operations",
                             "type": "audit-operation-flags",
                             "context": 3,
-                            "optional": true
+                            "optional": true,
+                            "description": "Bit flags specifying which operation types to include."
                         },
                         {
                             "name": "successful-actions-only",
                             "type": "success-filter",
-                            "context": 4
+                            "context": 4,
+                            "description": "Filter for successful or failed operations."
                         }
                     ]
                 },
-                "context": 1
+                "context": 1,
+                "description": "Query audit log records based on the source device and object."
             }
         ]
     }

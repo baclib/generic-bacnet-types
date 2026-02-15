@@ -1,13 +1,15 @@
 {
     "alias": "BACnetAuditLogRecord",
     "name": "audit-log-record",
+    "description": "A record in an audit log containing a timestamp and the log data.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "timestamp",
                 "type": "date-time",
-                "context": 0
+                "context": 0,
+                "description": "The date and time when the audit log record was created."
             },
             {
                 "name": "log-datum",
@@ -17,21 +19,25 @@
                         {
                             "name": "log-status",
                             "type": "log-status",
-                            "context": 0
+                            "context": 0,
+                            "description": "A log status change event."
                         },
                         {
                             "name": "audit-notification",
                             "type": "audit-notification",
-                            "context": 1
+                            "context": 1,
+                            "description": "An audit notification event."
                         },
                         {
                             "name": "time-change",
                             "type": "real",
-                            "context": 2
+                            "context": 2,
+                            "description": "A time change event indicating the magnitude of the time adjustment."
                         }
                     ]
                 },
-                "context": 1
+                "context": 1,
+                "description": "The data content of the audit log record."
             }
         ]
     }

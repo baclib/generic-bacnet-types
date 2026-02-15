@@ -1,41 +1,48 @@
 {
     "alias": "BACnetAuthorizationEvent",
     "name": "authorization-event",
+    "description": "Information about an authorization event, including the timestamp, client details, and authorization decision.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "timestamp",
                 "type": "date-time",
-                "context": 0
+                "context": 0,
+                "description": "The date and time when the authorization event occurred."
             },
             {
                 "name": "address",
                 "type": "address",
-                "context": 1
+                "context": 1,
+                "description": "The network address of the client requesting authorization."
             },
             {
                 "name": "client",
                 "type": "authentication-client",
                 "context": 2,
-                "optional": true
+                "optional": true,
+                "description": "Information about the authenticated client."
             },
             {
                 "name": "token",
                 "type": "access-token",
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "The access token presented for authorization."
             },
             {
                 "name": "decision",
                 "type": "authorization-decision",
-                "context": 4
+                "context": 4,
+                "description": "The authorization decision that was made."
             },
             {
                 "name": "decision-details",
                 "type": "character-string",
                 "context": 5,
-                "optional": true
+                "optional": true,
+                "description": "Additional details about the authorization decision."
             }
         ]
     }

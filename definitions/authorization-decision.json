@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAuthorizationDecision",
     "name": "authorization-decision",
+    "description": "Enumerated values describing the decision made during an authorization process, including the reason for allowing or denying access.",
     "type": {
         "base": "enumerated",
         "values": [

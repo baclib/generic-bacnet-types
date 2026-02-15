@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAuthorizationScope",
     "name": "authorization-scope",
+    "description": "Defines the scope of access permissions granted by an authorization, using standard bit flags and optional extended scope identifiers.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -11,102 +12,127 @@
                     "bits": [
                         {
                             "name": "view",
-                            "position": 0
+                            "position": 0,
+                            "description": "Permission to view or read data."
                         },
                         {
                             "name": "adjust",
-                            "position": 1
+                            "position": 1,
+                            "description": "Permission to adjust or modify operational values."
                         },
                         {
                             "name": "control",
-                            "position": 2
+                            "position": 2,
+                            "description": "Permission to control device operation."
                         },
                         {
                             "name": "override",
-                            "position": 3
+                            "position": 3,
+                            "description": "Permission to override normal operation."
                         },
                         {
                             "name": "config",
-                            "position": 4
+                            "position": 4,
+                            "description": "Permission to configure device settings."
                         },
                         {
                             "name": "bind",
-                            "position": 5
+                            "position": 5,
+                            "description": "Permission to bind or associate objects."
                         },
                         {
                             "name": "install",
-                            "position": 6
+                            "position": 6,
+                            "description": "Permission to install or commission devices."
                         },
                         {
                             "name": "auth",
-                            "position": 7
+                            "position": 7,
+                            "description": "Permission to perform authentication operations."
                         },
                         {
                             "name": "infrastructure",
-                            "position": 8
+                            "position": 8,
+                            "description": "Permission to access infrastructure operations."
                         },
                         {
                             "name": "reserved-9",
-                            "position": 9
+                            "position": 9,
+                            "description": "Reserved for future use."
                         },
                         {
                             "name": "reserved-10",
-                            "position": 10
+                            "position": 10,
+                            "description": "Reserved for future use."
                         },
                         {
                             "name": "reserved-11",
-                            "position": 11
+                            "position": 11,
+                            "description": "Reserved for future use."
                         },
                         {
                             "name": "reserved-12",
-                            "position": 12
+                            "position": 12,
+                            "description": "Reserved for future use."
                         },
                         {
                             "name": "reserved-13",
-                            "position": 13
+                            "position": 13,
+                            "description": "Reserved for future use."
                         },
                         {
                             "name": "reserved-14",
-                            "position": 14
+                            "position": 14,
+                            "description": "Reserved for future use."
                         },
                         {
                             "name": "reserved-15",
-                            "position": 15
+                            "position": 15,
+                            "description": "Reserved for future use."
                         },
                         {
                             "name": "reserved-16",
-                            "position": 16
+                            "position": 16,
+                            "description": "Reserved for future use."
                         },
                         {
                             "name": "reserved-17",
-                            "position": 17
+                            "position": 17,
+                            "description": "Reserved for future use."
                         },
                         {
                             "name": "reserved-18",
-                            "position": 18
+                            "position": 18,
+                            "description": "Reserved for future use."
                         },
                         {
                             "name": "reserved-19",
-                            "position": 19
+                            "position": 19,
+                            "description": "Reserved for future use."
                         },
                         {
                             "name": "reserved-20",
-                            "position": 20
+                            "position": 20,
+                            "description": "Reserved for future use."
                         },
                         {
                             "name": "reserved-21",
-                            "position": 21
+                            "position": 21,
+                            "description": "Reserved for future use."
                         },
                         {
                             "name": "reserved-22",
-                            "position": 22
+                            "position": 22,
+                            "description": "Reserved for future use."
                         },
                         {
                             "name": "reserved-23",
-                            "position": 23
+                            "position": 23,
+                            "description": "Reserved for future use."
                         }
                     ]
-                }
+                },
+                "description": "Standard bit flags defining the scope of access."
             },
             {
                 "name": "extended",
@@ -115,7 +141,8 @@
                     "series": true
                 },
                 "context": 0,
-                "optional": true
+                "optional": true,
+                "description": "Optional list of extended scope identifiers for vendor-specific or custom access scopes."
             }
         ]
     }

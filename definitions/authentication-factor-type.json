@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAuthenticationFactorType",
     "name": "authentication-factor-type",
+    "description": "Enumerated values representing the format type of an authentication factor, such as card formats, biometric formats, or password formats.",
     "type": {
         "base": "enumerated",
         "values": [

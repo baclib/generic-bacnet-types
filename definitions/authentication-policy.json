@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAuthenticationPolicy",
     "name": "authentication-policy",
+    "description": "Defines an authentication policy including the required credential inputs, whether order is enforced, and timeout settings.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -13,26 +14,31 @@
                         {
                             "name": "credential-data-input",
                             "type": "device-object-reference",
-                            "context": 0
+                            "context": 0,
+                            "description": "Reference to the device object that provides credential data input."
                         },
                         {
                             "name": "index",
                             "type": "unsigned",
-                            "context": 1
+                            "context": 1,
+                            "description": "The index or sequence number of this credential input in the policy."
                         }
                     ]
                 },
-                "context": 0
+                "context": 0,
+                "description": "A list of credential data inputs required by this policy."
             },
             {
                 "name": "order-enforced",
                 "type": "boolean",
-                "context": 1
+                "context": 1,
+                "description": "Indicates whether the order of credential presentation must be enforced."
             },
             {
                 "name": "timeout",
                 "type": "unsigned",
-                "context": 2
+                "context": 2,
+                "description": "The timeout period in seconds for completing the authentication process."
             }
         ]
     }

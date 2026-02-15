@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAuditOperation",
     "name": "audit-operation",
+    "description": "Enumerated values representing different types of operations that can be audited in a BACnet system.",
     "type": {
         "base": "enumerated",
         "values": [

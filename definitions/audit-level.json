@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAuditLevel",
     "name": "audit-level",
+    "description": "Enumerated values representing the level or extent of auditing to be performed.",
     "type": {
         "base": "enumerated",
         "values": [

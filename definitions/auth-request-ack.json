@@ -1,13 +1,15 @@
 {
     "alias": "AuthRequest-ACK",
     "name": "auth-request-ack",
+    "description": "Acknowledgment for a successful authentication request.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "token-response",
                 "type": "access-token",
-                "context": 0
+                "context": 0,
+                "description": "The access token returned in response to the authentication request."
             }
         ]
     }

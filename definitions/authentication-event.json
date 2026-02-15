@@ -1,34 +1,40 @@
 {
     "alias": "BACnetAuthenticationEvent",
     "name": "authentication-event",
+    "description": "Information about an authentication event, including the timestamp, peer device, client details, and decision.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "timestamp",
                 "type": "date-time",
-                "context": 0
+                "context": 0,
+                "description": "The date and time when the authentication event occurred."
             },
             {
                 "name": "peer",
                 "type": "authentication-peer",
-                "context": 1
+                "context": 1,
+                "description": "Information about the peer device involved in the authentication."
             },
             {
                 "name": "client",
                 "type": "authentication-client",
-                "context": 2
+                "context": 2,
+                "description": "Information about the client being authenticated."
             },
             {
                 "name": "decision",
                 "type": "authentication-decision",
-                "context": 3
+                "context": 3,
+                "description": "The authentication decision that was made."
             },
             {
                 "name": "decision-details",
                 "type": "character-string",
                 "context": 4,
-                "optional": true
+                "optional": true,
+                "description": "Additional details about the authentication decision."
             }
         ]
     }

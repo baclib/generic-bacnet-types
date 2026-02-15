@@ -1,13 +1,15 @@
 {
     "alias": "AuditLogQuery-ACK",
     "name": "audit-log-query-ack",
+    "description": "Acknowledgment response for an audit log query request containing the matching log records.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "audit-log",
                 "type": "object-identifier",
-                "context": 0
+                "context": 0,
+                "description": "The object identifier of the audit log being queried."
             },
             {
                 "name": "records",
@@ -15,12 +17,14 @@
                     "base": "audit-log-record-result",
                     "series": true
                 },
-                "context": 1
+                "context": 1,
+                "description": "A list of audit log records that match the query criteria."
             },
             {
                 "name": "no-more-items",
                 "type": "boolean",
-                "context": 2
+                "context": 2,
+                "description": "Indicates whether there are no more records available beyond those returned."
             }
         ]
     }

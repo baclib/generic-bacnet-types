@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAuthorizationPosture",
     "name": "authorization-posture",
+    "description": "Enumerated values representing the overall configuration state of the authorization system.",
     "type": {
         "base": "enumerated",
         "values": [

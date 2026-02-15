@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAuthorizationConstraint",
     "name": "authorization-constraint",
+    "description": "Constraints on the network origin and authentication method required for authorization.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -11,18 +12,22 @@
                     "values": [
                         {
                             "name": "direct-connect",
-                            "constant": 0
+                            "constant": 0,
+                            "description": "Client must be directly connected to the device."
                         },
                         {
                             "name": "same-network",
-                            "constant": 1
+                            "constant": 1,
+                            "description": "Client must be on the same network segment."
                         },
                         {
                             "name": "any-network",
-                            "constant": 2
+                            "constant": 2,
+                            "description": "Client can be on any network."
                         }
                     ]
-                }
+                },
+                "description": "The required network origin of the client."
             },
             {
                 "name": "authentication",
@@ -31,18 +36,22 @@
                     "values": [
                         {
                             "name": "certified",
-                            "constant": 0
+                            "constant": 0,
+                            "description": "Client must be authenticated using a certified method."
                         },
                         {
                             "name": "secure-path",
-                            "constant": 1
+                            "constant": 1,
+                            "description": "Client must be authenticated over a secure communication path."
                         },
                         {
                             "name": "any-method",
-                            "constant": 2
+                            "constant": 2,
+                            "description": "Client can use any authentication method."
                         }
                     ]
-                }
+                },
+                "description": "The required authentication method for the client."
             }
         ]
     }

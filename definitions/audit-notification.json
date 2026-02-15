@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAuditNotification",
     "name": "audit-notification",
+    "description": "Detailed information about an audited operation including source, target, operation type, and results.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -8,76 +9,89 @@
                 "name": "source-timestamp",
                 "type": "time-stamp",
                 "context": 0,
-                "optional": true
+                "optional": true,
+                "description": "The timestamp from the source device."
             },
             {
                 "name": "target-timestamp",
                 "type": "time-stamp",
                 "context": 1,
-                "optional": true
+                "optional": true,
+                "description": "The timestamp from the target device."
             },
             {
                 "name": "source-device",
                 "type": "recipient",
-                "context": 2
+                "context": 2,
+                "description": "The device that initiated the operation."
             },
             {
                 "name": "source-object",
                 "type": "object-identifier",
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "The object on the source device that initiated the operation."
             },
             {
                 "name": "operation",
                 "type": "audit-operation",
-                "context": 4
+                "context": 4,
+                "description": "The type of operation that was performed."
             },
             {
                 "name": "source-comment",
                 "type": "character-string",
                 "context": 5,
-                "optional": true
+                "optional": true,
+                "description": "Optional comment from the source device."
             },
             {
                 "name": "target-comment",
                 "type": "character-string",
                 "context": 6,
-                "optional": true
+                "optional": true,
+                "description": "Optional comment from the target device."
             },
             {
                 "name": "invoke-id",
                 "type": "unsigned-8",
                 "context": 7,
-                "optional": true
+                "optional": true,
+                "description": "The invoke ID of the related service request."
             },
             {
                 "name": "source-user-id",
                 "type": "unsigned-16",
                 "context": 8,
-                "optional": true
+                "optional": true,
+                "description": "The user ID on the source device."
             },
             {
                 "name": "source-user-role",
                 "type": "unsigned-8",
                 "context": 9,
-                "optional": true
+                "optional": true,
+                "description": "The user role on the source device."
             },
             {
                 "name": "target-device",
                 "type": "recipient",
-                "context": 10
+                "context": 10,
+                "description": "The device that was the target of the operation."
             },
             {
                 "name": "target-object",
                 "type": "object-identifier",
                 "context": 11,
-                "optional": true
+                "optional": true,
+                "description": "The object on the target device that was affected."
             },
             {
                 "name": "target-property",
                 "type": "property-reference",
                 "context": 12,
-                "optional": true
+                "optional": true,
+                "description": "The property on the target object that was affected."
             },
             {
                 "name": "target-priority",
@@ -87,25 +101,29 @@
                     "maximum": 16
                 },
                 "context": 13,
-                "optional": true
+                "optional": true,
+                "description": "The priority level used for the operation (1-16)."
             },
             {
                 "name": "target-value",
                 "type": "any",
                 "context": 14,
-                "optional": true
+                "optional": true,
+                "description": "The value that was written or requested."
             },
             {
                 "name": "current-value",
                 "type": "any",
                 "context": 15,
-                "optional": true
+                "optional": true,
+                "description": "The current or resulting value."
             },
             {
                 "name": "result",
                 "type": "error",
                 "context": 16,
-                "optional": true
+                "optional": true,
+                "description": "Error information if the operation failed."
             }
         ]
     }

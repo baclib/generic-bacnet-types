@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAuthorizationMode",
     "name": "authorization-mode",
+    "description": "Enumerated values indicating the current operational mode of the authorization system.",
     "type": {
         "base": "enumerated",
         "values": [

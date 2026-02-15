@@ -1,18 +1,21 @@
 {
     "alias": "BACnetAuditLogRecordResult",
     "name": "audit-log-record-result",
+    "description": "A result entry containing a sequence number and the corresponding audit log record.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "sequence-number",
                 "type": "unsigned-64",
-                "context": 0
+                "context": 0,
+                "description": "The sequence number of this audit log record."
             },
             {
                 "name": "log-record",
                 "type": "audit-log-record",
-                "context": 1
+                "context": 1,
+                "description": "The audit log record data."
             }
         ]
     }

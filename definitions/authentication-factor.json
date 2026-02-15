@@ -1,23 +1,27 @@
 {
     "alias": "BACnetAuthenticationFactor",
     "name": "authentication-factor",
+    "description": "An authentication factor containing the format type, class, and actual credential value.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "format-type",
                 "type": "authentication-factor-type",
-                "context": 0
+                "context": 0,
+                "description": "The type of authentication factor format."
             },
             {
                 "name": "format-class",
                 "type": "unsigned",
-                "context": 1
+                "context": 1,
+                "description": "The class or variant within the format type."
             },
             {
                 "name": "value",
                 "type": "octet-string",
-                "context": 2
+                "context": 2,
+                "description": "The actual authentication credential value."
             }
         ]
     }

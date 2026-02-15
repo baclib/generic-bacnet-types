@@ -1,16 +1,19 @@
 {
     "alias": "BACnetAuthorizationScopeDescription",
     "name": "authorization-scope-description",
+    "description": "A description of an authorization scope, including its name and textual description.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "name",
-                "type": "character-string"
+                "type": "character-string",
+                "description": "The name of the authorization scope."
             },
             {
                 "name": "description",
-                "type": "character-string"
+                "type": "character-string",
+                "description": "A textual description of what this authorization scope allows."
             }
         ]
     }

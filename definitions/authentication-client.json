@@ -1,16 +1,19 @@
 {
     "alias": "BACnetAuthenticationClient",
     "name": "authentication-client",
+    "description": "Information about a client that is being authenticated, including its authentication state and device identifier.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "authenticated",
-                "type": "boolean"
+                "type": "boolean",
+                "description": "Indicates whether the client has been successfully authenticated."
             },
             {
                 "name": "device",
-                "type": "unsigned-32"
+                "type": "unsigned-32",
+                "description": "The device identifier of the client."
             }
         ]
     }

@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAuthorizationExemption",
     "name": "authorization-exemption",
+    "description": "Enumerated values representing types of exemptions that can be granted from normal authorization checks.",
     "type": {
         "base": "enumerated",
         "values": [

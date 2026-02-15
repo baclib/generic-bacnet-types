@@ -1,28 +1,34 @@
 {
     "alias": "BACnetAuthenticationPeer",
     "name": "authentication-peer",
+    "description": "Information about a peer device in the authentication infrastructure, including its network location and capabilities.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "host",
-                "type": "host-n-port"
+                "type": "host-n-port",
+                "description": "The network host address and port of the peer device."
             },
             {
                 "name": "device",
-                "type": "unsigned-32"
+                "type": "unsigned-32",
+                "description": "The device identifier of the peer."
             },
             {
                 "name": "auth-aware",
-                "type": "boolean"
+                "type": "boolean",
+                "description": "Indicates whether the peer is authentication-aware."
             },
             {
                 "name": "router",
-                "type": "boolean"
+                "type": "boolean",
+                "description": "Indicates whether the peer functions as a router."
             },
             {
                 "name": "hub",
-                "type": "boolean"
+                "type": "boolean",
+                "description": "Indicates whether the peer functions as a hub."
             }
         ]
     }
