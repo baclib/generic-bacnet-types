@@ -1,6 +1,7 @@
 {
     "alias": "BACnetBackupState",
     "name": "backup-state",
+    "description": "Enumeration defining the operational state of a backup or restore operation.",
     "type": {
         "base": "enumerated",
         "values": [

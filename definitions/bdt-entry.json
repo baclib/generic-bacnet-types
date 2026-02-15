@@ -1,19 +1,22 @@
 {
     "alias": "BACnetBDTEntry",
     "name": "bdt-entry",
+    "description": "An entry in the BACnet Broadcast Distribution Table (BDT) used by BBMD devices to manage broadcast forwarding.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "bbmd-address",
                 "type": "host-n-port",
-                "context": 0
+                "context": 0,
+                "description": "The IP address and UDP port of the BBMD (BACnet Broadcast Management Device)."
             },
             {
                 "name": "broadcast-mask",
                 "type": "octet-string",
                 "context": 1,
-                "optional": true
+                "optional": true,
+                "description": "Optional broadcast mask for the BDT entry."
             }
         ]
     }

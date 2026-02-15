@@ -1,6 +1,7 @@
 {
     "alias": "BACnetBinaryPV",
     "name": "binary-pv",
+    "description": "Enumeration defining binary present values as either inactive or active.",
     "type": {
         "base": "enumerated",
         "values": [

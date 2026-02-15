@@ -1,5 +1,6 @@
 {
     "alias": "CHOICE",
     "name": "choice",
+    "description": "BACnet primitive choice data type for representing a selection from multiple options.",
     "primitive": -2
 }

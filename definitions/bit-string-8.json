@@ -1,6 +1,7 @@
 {
     "alias": "BitString8",
     "name": "bit-string-8",
+    "description": "A bit string with a maximum length of 8 bits.",
     "type": {
         "base": "bit-string",
         "length": {

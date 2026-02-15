@@ -1,25 +1,29 @@
 {
     "alias": "BACnetColorCommand",
     "name": "color-command",
+    "description": "Represents a color command for lighting control, specifying the operation and associated parameters.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "operation",
                 "type": "color-operation",
-                "context": 0
+                "context": 0,
+                "description": "The color operation to be performed."
             },
             {
                 "name": "target-color",
                 "type": "xy-color",
                 "context": 1,
-                "optional": true
+                "optional": true,
+                "description": "The target color in XY color space. Optional."
             },
             {
                 "name": "target-color-temperature",
                 "type": "unsigned",
                 "context": 2,
-                "optional": true
+                "optional": true,
+                "description": "The target correlated color temperature in Kelvin. Optional."
             },
             {
                 "name": "fade-time",
@@ -29,7 +33,8 @@
                     "maximum": 86400000
                 },
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "The fade time in milliseconds, ranging from 100 ms to 86400000 ms (24 hours). Optional."
             },
             {
                 "name": "ramp-rate",
@@ -39,7 +44,8 @@
                     "maximum": 30000
                 },
                 "context": 4,
-                "optional": true
+                "optional": true,
+                "description": "The ramp rate in Kelvin per second, ranging from 1 to 30000. Optional."
             },
             {
                 "name": "step-increment",
@@ -49,7 +55,8 @@
                     "maximum": 30000
                 },
                 "context": 5,
-                "optional": true
+                "optional": true,
+                "description": "The step increment in Kelvin for step operations, ranging from 1 to 30000. Optional."
             }
         ]
     }

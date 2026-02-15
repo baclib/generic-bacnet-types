@@ -1,6 +1,7 @@
 {
     "alias": "BACnetColorOperation",
     "name": "color-operation",
+    "description": "Enumeration defining the various color operations for lighting control.",
     "type": {
         "base": "enumerated",
         "values": [

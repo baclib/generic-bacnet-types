@@ -1,16 +1,19 @@
 {
     "alias": "BACnetClientCOV",
     "name": "client-cov",
+    "description": "Represents a client COV (Change of Value) increment specification, either a specific real value or the default increment.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "real-increment",
-                "type": "real"
+                "type": "real",
+                "description": "A specific real value increment for COV detection."
             },
             {
                 "name": "default-increment",
-                "type": "null"
+                "type": "null",
+                "description": "Use the default increment value."
             }
         ]
     }

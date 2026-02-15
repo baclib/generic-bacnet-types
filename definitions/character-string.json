@@ -1,5 +1,6 @@
 {
     "alias": "CharacterString",
     "name": "character-string",
+    "description": "BACnet primitive character string data type for representing text.",
     "primitive": 7
 }

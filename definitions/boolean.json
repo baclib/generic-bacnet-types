@@ -1,5 +1,6 @@
 {
     "alias": "Boolean",
     "name": "boolean",
+    "description": "BACnet primitive boolean data type for representing true or false values.",
     "primitive": 1
 }

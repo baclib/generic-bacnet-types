@@ -1,6 +1,7 @@
 {
     "alias": "BitString32",
     "name": "bit-string-32",
+    "description": "A bit string with a maximum length of 32 bits.",
     "type": {
         "base": "bit-string",
         "length": {

@@ -1,6 +1,7 @@
 {
     "alias": "BACnetBinaryLightingPV",
     "name": "binary-lighting-pv",
+    "description": "Enumeration defining binary lighting present values for lighting control operations.",
     "type": {
         "base": "enumerated",
         "values": [

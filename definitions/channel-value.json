@@ -1,75 +1,92 @@
 {
     "alias": "BACnetChannelValue",
     "name": "channel-value",
+    "description": "Represents a channel value that can be one of multiple data types for lighting and control channels.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "null",
-                "type": "null"
+                "type": "null",
+                "description": "No value."
             },
             {
                 "name": "real",
-                "type": "real"
+                "type": "real",
+                "description": "A real (floating-point) value."
             },
             {
                 "name": "enumerated",
-                "type": "enumerated"
+                "type": "enumerated",
+                "description": "An enumerated value."
             },
             {
                 "name": "unsigned",
-                "type": "unsigned"
+                "type": "unsigned",
+                "description": "An unsigned integer value."
             },
             {
                 "name": "boolean",
-                "type": "boolean"
+                "type": "boolean",
+                "description": "A boolean value."
             },
             {
                 "name": "integer",
-                "type": "integer"
+                "type": "integer",
+                "description": "A signed integer value."
             },
             {
                 "name": "double",
-                "type": "double"
+                "type": "double",
+                "description": "A double-precision floating-point value."
             },
             {
                 "name": "time",
-                "type": "time"
+                "type": "time",
+                "description": "A time value."
             },
             {
                 "name": "characterstring",
-                "type": "character-string"
+                "type": "character-string",
+                "description": "A character string value."
             },
             {
                 "name": "octetstring",
-                "type": "octet-string"
+                "type": "octet-string",
+                "description": "An octet string value."
             },
             {
                 "name": "bitstring",
-                "type": "bit-string"
+                "type": "bit-string",
+                "description": "A bit string value."
             },
             {
                 "name": "date",
-                "type": "date"
+                "type": "date",
+                "description": "A date value."
             },
             {
                 "name": "objectidentifier",
-                "type": "object-identifier"
+                "type": "object-identifier",
+                "description": "An object identifier value."
             },
             {
                 "name": "lighting-command",
                 "type": "lighting-command",
-                "context": 0
+                "context": 0,
+                "description": "A lighting command value."
             },
             {
                 "name": "xycolor",
                 "type": "xy-color",
-                "context": 1
+                "context": 1,
+                "description": "An XY color space value."
             },
             {
                 "name": "color-command",
                 "type": "color-command",
-                "context": 2
+                "context": 2,
+                "description": "A color command value."
             }
         ]
     }

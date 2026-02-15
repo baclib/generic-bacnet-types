@@ -1,6 +1,7 @@
 {
     "alias": "BACnetColorTransition",
     "name": "color-transition",
+    "description": "Enumeration defining the transition types for color changes in lighting systems.",
     "type": {
         "base": "enumerated",
         "values": [

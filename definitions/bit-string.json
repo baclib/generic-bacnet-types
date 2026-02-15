@@ -1,5 +1,6 @@
 {
     "alias": "BitString",
     "name": "bit-string",
+    "description": "BACnet primitive bit string data type for representing binary sequences.",
     "primitive": 8
 }

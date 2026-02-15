@@ -1,6 +1,7 @@
 {
     "alias": "BACnetColorOperationInProgress",
     "name": "color-operation-in-progress",
+    "description": "Enumeration indicating the current status of a color operation.",
     "type": {
         "base": "enumerated",
         "values": [

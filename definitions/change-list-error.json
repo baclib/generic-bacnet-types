@@ -1,18 +1,21 @@
 {
     "alias": "ChangeList-Error",
     "name": "change-list-error",
+    "description": "Error information returned when a change list operation fails.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "error-type",
                 "type": "error",
-                "context": 0
+                "context": 0,
+                "description": "The error that occurred during the change list operation."
             },
             {
                 "name": "first-failed-element-number",
                 "type": "unsigned",
-                "context": 1
+                "context": 1,
+                "description": "The index of the first element in the change list that failed."
             }
         ]
     }
