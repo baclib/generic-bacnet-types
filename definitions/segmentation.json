@@ -1,6 +1,7 @@
 {
     "alias": "BACnetSegmentation",
     "name": "segmentation",
+    "description": "Enumerates the BACnet segmentation capabilities, indicating support for segmented transmission and/or reception.",
     "type": {
         "base": "enumerated",
         "values": [

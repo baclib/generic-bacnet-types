@@ -1,6 +1,7 @@
 {
     "alias": "BACnetSilencedState",
     "name": "silenced-state",
+    "description": "Enumerates the silenced states for BACnet alarms, indicating which alarm types are silenced.",
     "type": {
         "base": "enumerated",
         "values": [

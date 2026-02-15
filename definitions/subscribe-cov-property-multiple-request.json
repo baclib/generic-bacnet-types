@@ -1,30 +1,35 @@
 {
     "alias": "SubscribeCOVPropertyMultiple-Request",
     "name": "subscribe-cov-property-multiple-request",
+    "description": "Represents a BACnet SubscribeCOVPropertyMultiple request, used to subscribe to change-of-value notifications for multiple properties and objects.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "subscriber-process-identifier",
                 "type": "unsigned-32",
-                "context": 0
+                "context": 0,
+                "description": "The process identifier of the subscriber."
             },
             {
                 "name": "issue-confirmed-notifications",
                 "type": "boolean",
-                "context": 1
+                "context": 1,
+                "description": "Indicates if confirmed notifications should be issued."
             },
             {
                 "name": "lifetime",
                 "type": "unsigned",
                 "context": 2,
-                "optional": true
+                "optional": true,
+                "description": "The duration of the subscription, in seconds. Optional."
             },
             {
                 "name": "max-notification-delay",
                 "type": "unsigned",
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "The maximum delay between notifications, in seconds. Optional."
             },
             {
                 "name": "list-of-cov-subscription-specifications",
@@ -35,7 +40,8 @@
                         {
                             "name": "monitored-object-identifier",
                             "type": "object-identifier",
-                            "context": 0
+                            "context": 0,
+                            "description": "The identifier of the object to be monitored."
                         },
                         {
                             "name": "list-of-cov-references",
@@ -46,26 +52,31 @@
                                     {
                                         "name": "monitored-property",
                                         "type": "property-reference",
-                                        "context": 0
+                                        "context": 0,
+                                        "description": "The property to be monitored for changes."
                                     },
                                     {
                                         "name": "cov-increment",
                                         "type": "real",
                                         "context": 1,
-                                        "optional": true
+                                        "optional": true,
+                                        "description": "The minimum change in value required to trigger a notification. Optional."
                                     },
                                     {
                                         "name": "timestamped",
                                         "type": "boolean",
-                                        "context": 2
+                                        "context": 2,
+                                        "description": "Indicates if the notification should be timestamped."
                                     }
                                 ]
                             },
-                            "context": 1
+                            "context": 1,
+                            "description": "A list of COV references for the monitored object."
                         }
                     ]
                 },
-                "context": 4
+                "context": 4,
+                "description": "A list of COV subscription specifications for multiple objects and properties."
             }
         ]
     }

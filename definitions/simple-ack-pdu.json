@@ -1,6 +1,7 @@
 {
     "alias": "BACnet-SimpleACK-PDU",
     "name": "simple-ack-pdu",
+    "description": "Represents a BACnet SimpleACK PDU, used to acknowledge confirmed service requests.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -11,7 +12,8 @@
                     "minimum": 0,
                     "maximum": 15
                 },
-                "context": 0
+                "context": 0,
+                "description": "The type of the protocol data unit (PDU)."
             },
             {
                 "name": "reserved",
@@ -20,7 +22,8 @@
                     "minimum": 0,
                     "maximum": 15
                 },
-                "context": 1
+                "context": 1,
+                "description": "Reserved for future use."
             },
             {
                 "name": "invoke-id",
@@ -29,12 +32,14 @@
                     "minimum": 0,
                     "maximum": 255
                 },
-                "context": 2
+                "context": 2,
+                "description": "The invoke ID of the original request being acknowledged."
             },
             {
                 "name": "service-ack-choice",
                 "type": "confirmed-service-choice",
-                "context": 3
+                "context": 3,
+                "description": "The service choice being acknowledged."
             }
         ]
     }

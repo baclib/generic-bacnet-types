@@ -1,6 +1,7 @@
 {
     "alias": "BACnetShedState",
     "name": "shed-state",
+    "description": "Enumerates the possible shed states for BACnet load control, indicating the status of a shed request.",
     "type": {
         "base": "enumerated",
         "values": [

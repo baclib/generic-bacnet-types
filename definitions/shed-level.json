@@ -1,23 +1,27 @@
 {
     "alias": "BACnetShedLevel",
     "name": "shed-level",
+    "description": "Represents a BACnet shed level, specifying the amount of load to be reduced as a percent, level, or amount.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "percent",
                 "type": "unsigned",
-                "context": 0
+                "context": 0,
+                "description": "The percent of load to be shed."
             },
             {
                 "name": "level",
                 "type": "unsigned",
-                "context": 1
+                "context": 1,
+                "description": "The discrete level of load to be shed."
             },
             {
                 "name": "amount",
                 "type": "real",
-                "context": 2
+                "context": 2,
+                "description": "The absolute amount of load to be shed."
             }
         ]
     }

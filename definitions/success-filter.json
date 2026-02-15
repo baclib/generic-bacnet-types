@@ -1,6 +1,7 @@
 {
     "alias": "BACnetSuccessFilter",
     "name": "success-filter",
+    "description": "Enumerates the possible filters for BACnet results, allowing selection of all, only successes, or only failures.",
     "type": {
         "base": "enumerated",
         "values": [

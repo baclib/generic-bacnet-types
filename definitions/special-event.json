@@ -1,23 +1,27 @@
 {
     "alias": "BACnetSpecialEvent",
     "name": "special-event",
+    "description": "Represents a BACnet special event, defining a period, a list of time values, and an event priority for scheduling.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "period",
+                "description": "The period during which the special event is active, specified as a calendar entry or reference.",
                 "type": {
                     "base": "choice",
                     "options": [
                         {
                             "name": "calendar-entry",
                             "type": "calendar-entry",
-                            "context": 0
+                            "context": 0,
+                            "description": "A specific calendar entry defining the event period."
                         },
                         {
                             "name": "calendar-reference",
                             "type": "object-identifier",
-                            "context": 1
+                            "context": 1,
+                            "description": "A reference to a calendar object defining the event period."
                         }
                     ]
                 }
@@ -28,7 +32,8 @@
                     "base": "time-value",
                     "series": true
                 },
-                "context": 2
+                "context": 2,
+                "description": "A list of time values associated with the special event."
             },
             {
                 "name": "event-priority",
@@ -37,7 +42,8 @@
                     "minimum": 1,
                     "maximum": 16
                 },
-                "context": 3
+                "context": 3,
+                "description": "The priority of the special event, from 1 (highest) to 16 (lowest)."
             }
         ]
     }

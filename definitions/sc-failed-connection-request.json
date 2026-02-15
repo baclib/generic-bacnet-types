@@ -1,18 +1,21 @@
 {
     "alias": "BACnetSCFailedConnectionRequest",
     "name": "sc-failed-connection-request",
+    "description": "Represents a BACnet Secure Connect (SC) failed connection request, including timestamps, peer information, and error details.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "timestamp",
                 "type": "date-time",
-                "context": 0
+                "context": 0,
+                "description": "Timestamp when the connection attempt failed."
             },
             {
                 "name": "peer-address",
                 "type": "host-n-port",
-                "context": 1
+                "context": 1,
+                "description": "Network address of the peer device."
             },
             {
                 "name": "peer-vmac",
@@ -21,7 +24,8 @@
                     "length": 6
                 },
                 "context": 2,
-                "optional": true
+                "optional": true,
+                "description": "Virtual MAC address of the peer device. Optional."
             },
             {
                 "name": "peer-uuid",
@@ -30,18 +34,21 @@
                     "length": 16
                 },
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "UUID of the peer device. Optional."
             },
             {
                 "name": "error",
                 "type": "error",
-                "context": 4
+                "context": 4,
+                "description": "Error code for the failed connection attempt."
             },
             {
                 "name": "error-details",
                 "type": "character-string",
                 "context": 5,
-                "optional": true
+                "optional": true,
+                "description": "Additional error details if available. Optional."
             }
         ]
     }

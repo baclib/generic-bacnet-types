@@ -1,13 +1,15 @@
 {
     "alias": "SubscribeCOVPropertyMultiple-Error",
     "name": "subscribe-cov-property-multiple-error",
+    "description": "Represents a BACnet SubscribeCOVPropertyMultiple error, indicating the type of error and the first failed subscription.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "error-type",
                 "type": "error",
-                "context": 0
+                "context": 0,
+                "description": "The type of error that occurred."
             },
             {
                 "name": "first-failed-subscription",
@@ -17,21 +19,25 @@
                         {
                             "name": "monitored-object-identifier",
                             "type": "object-identifier",
-                            "context": 0
+                            "context": 0,
+                            "description": "The identifier of the object for the failed subscription."
                         },
                         {
                             "name": "monitored-property-reference",
                             "type": "property-reference",
-                            "context": 1
+                            "context": 1,
+                            "description": "The property reference for the failed subscription."
                         },
                         {
                             "name": "error-type",
                             "type": "error",
-                            "context": 2
+                            "context": 2,
+                            "description": "The error type for the failed subscription."
                         }
                     ]
                 },
-                "context": 1
+                "context": 1,
+                "description": "Details of the first failed subscription, including object, property, and error type."
             }
         ]
     }

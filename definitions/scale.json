@@ -1,18 +1,21 @@
 {
     "alias": "BACnetScale",
     "name": "scale",
+    "description": "Represents a BACnet scale, specifying a scaling factor as either a float or integer value.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "float-scale",
                 "type": "real",
-                "context": 0
+                "context": 0,
+                "description": "A floating-point scaling factor."
             },
             {
                 "name": "integer-scale",
                 "type": "integer",
-                "context": 1
+                "context": 1,
+                "description": "An integer scaling factor."
             }
         ]
     }

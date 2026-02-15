@@ -1,6 +1,7 @@
 {
     "alias": "BACnetSCConnectionState",
     "name": "sc-connection-state",
+    "description": "Enumerates the possible connection states for BACnet Secure Connect (SC) connections.",
     "type": {
         "base": "enumerated",
         "values": [

@@ -1,5 +1,6 @@
 {
     "alias": "SEQUENCE",
     "name": "sequence",
+    "description": "Represents a BACnet ASN.1 SEQUENCE type, used to define ordered collections of fields.",
     "primitive": -3
 }

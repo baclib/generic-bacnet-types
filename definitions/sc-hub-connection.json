@@ -1,35 +1,41 @@
 {
     "alias": "BACnetSCHubConnection",
     "name": "sc-hub-connection",
+    "description": "Represents a BACnet Secure Connect (SC) hub connection, detailing connection state, timestamps, and errors.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "connection-state",
                 "type": "sc-connection-state",
-                "context": 0
+                "context": 0,
+                "description": "The current state of the SC hub connection."
             },
             {
                 "name": "connect-timestamp",
                 "type": "date-time",
-                "context": 1
+                "context": 1,
+                "description": "Timestamp when the connection was established."
             },
             {
                 "name": "disconnect-timestamp",
                 "type": "date-time",
-                "context": 2
+                "context": 2,
+                "description": "Timestamp when the connection was disconnected."
             },
             {
                 "name": "error",
                 "type": "error",
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "Error code if the connection failed. Optional."
             },
             {
                 "name": "error-details",
                 "type": "character-string",
                 "context": 4,
-                "optional": true
+                "optional": true,
+                "description": "Additional error details if available. Optional."
             }
         ]
     }

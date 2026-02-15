@@ -1,20 +1,24 @@
 {
     "alias": "BACnetStageLimitValue",
     "name": "stage-limit-value",
+    "description": "Represents a BACnet stage limit value, used for control and monitoring of staged equipment.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "limit",
-                "type": "real"
+                "type": "real",
+                "description": "The limit value for the stage."
             },
             {
                 "name": "values",
-                "type": "bit-string"
+                "type": "bit-string",
+                "description": "A bit string representing the active stages."
             },
             {
                 "name": "deadband",
-                "type": "real"
+                "type": "real",
+                "description": "The deadband value for the stage."
             }
         ]
     }

@@ -1,6 +1,7 @@
 {
     "alias": "BACnetServicesSupported",
     "name": "services-supported",
+    "description": "Represents the BACnet services supported by a device, as a bit string where each bit indicates support for a specific service.",
     "type": {
         "base": "bit-string",
         "bits": [

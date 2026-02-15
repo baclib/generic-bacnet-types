@@ -1,34 +1,40 @@
 {
     "alias": "BACnetSCDirectConnection",
     "name": "sc-direct-connection",
+    "description": "Represents a BACnet Secure Connect (SC) direct connection, including URI, connection state, timestamps, peer information, and errors.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "uri",
                 "type": "character-string",
-                "context": 0
+                "context": 0,
+                "description": "The URI of the direct connection."
             },
             {
                 "name": "connection-state",
                 "type": "sc-connection-state",
-                "context": 1
+                "context": 1,
+                "description": "The current state of the direct connection."
             },
             {
                 "name": "connect-timestamp",
                 "type": "date-time",
-                "context": 2
+                "context": 2,
+                "description": "Timestamp when the connection was established."
             },
             {
                 "name": "disconnect-timestamp",
                 "type": "date-time",
-                "context": 3
+                "context": 3,
+                "description": "Timestamp when the connection was disconnected."
             },
             {
                 "name": "peer-address",
                 "type": "host-n-port",
                 "context": 4,
-                "optional": true
+                "optional": true,
+                "description": "Network address of the peer device. Optional."
             },
             {
                 "name": "peer-vmac",
@@ -37,7 +43,8 @@
                     "length": 6
                 },
                 "context": 5,
-                "optional": true
+                "optional": true,
+                "description": "Virtual MAC address of the peer device. Optional."
             },
             {
                 "name": "peer-uuid",
@@ -46,19 +53,22 @@
                     "length": 16
                 },
                 "context": 6,
-                "optional": true
+                "optional": true,
+                "description": "UUID of the peer device. Optional."
             },
             {
                 "name": "error",
                 "type": "error",
                 "context": 7,
-                "optional": true
+                "optional": true,
+                "description": "Error code if the connection failed. Optional."
             },
             {
                 "name": "error-details",
                 "type": "character-string",
                 "context": 8,
-                "optional": true
+                "optional": true,
+                "description": "Additional error details if available. Optional."
             }
         ]
     }

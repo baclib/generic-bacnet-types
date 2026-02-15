@@ -1,5 +1,6 @@
 {
     "alias": "String",
     "name": "string",
+    "description": "Represents a UTF-8 character string value.",
     "type": "character-string"
 }

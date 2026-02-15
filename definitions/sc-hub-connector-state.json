@@ -1,6 +1,7 @@
 {
     "alias": "BACnetSCHubConnectorState",
     "name": "sc-hub-connector-state",
+    "description": "Enumerates the connector states for BACnet Secure Connect (SC) hubs, indicating the current hub connection.",
     "type": {
         "base": "enumerated",
         "values": [

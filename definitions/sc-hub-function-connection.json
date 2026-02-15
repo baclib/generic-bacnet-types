@@ -1,28 +1,33 @@
 {
     "alias": "BACnetSCHubFunctionConnection",
     "name": "sc-hub-function-connection",
+    "description": "Represents a BACnet Secure Connect (SC) hub function connection, detailing connection state, timestamps, peer information, and errors.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "connection-state",
                 "type": "sc-connection-state",
-                "context": 0
+                "context": 0,
+                "description": "The current state of the SC hub function connection."
             },
             {
                 "name": "connect-timestamp",
                 "type": "date-time",
-                "context": 1
+                "context": 1,
+                "description": "Timestamp when the connection was established."
             },
             {
                 "name": "disconnect-timestamp",
                 "type": "date-time",
-                "context": 2
+                "context": 2,
+                "description": "Timestamp when the connection was disconnected."
             },
             {
                 "name": "peer-address",
                 "type": "host-n-port",
-                "context": 3
+                "context": 3,
+                "description": "Network address of the peer device."
             },
             {
                 "name": "peer-vmac",
@@ -30,7 +35,8 @@
                     "base": "octet-string",
                     "length": 6
                 },
-                "context": 4
+                "context": 4,
+                "description": "Virtual MAC address of the peer device."
             },
             {
                 "name": "peer-uuid",
@@ -38,19 +44,22 @@
                     "base": "octet-string",
                     "length": 16
                 },
-                "context": 5
+                "context": 5,
+                "description": "UUID of the peer device."
             },
             {
                 "name": "error",
                 "type": "error",
                 "context": 6,
-                "optional": true
+                "optional": true,
+                "description": "Error code if the connection failed. Optional."
             },
             {
                 "name": "error-details",
                 "type": "character-string",
                 "context": 7,
-                "optional": true
+                "optional": true,
+                "description": "Additional error details if available. Optional."
             }
         ]
     }

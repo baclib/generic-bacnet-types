@@ -1,6 +1,7 @@
 {
     "alias": "BACnetSetpointReference",
     "name": "setpoint-reference",
+    "description": "Represents a BACnet setpoint reference, optionally referencing an object property as a setpoint.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -9,7 +10,8 @@
                 "name": "reference",
                 "type": "object-property-reference",
                 "context": 0,
-                "optional": true
+                "optional": true,
+                "description": "An optional reference to the setpoint property of an object."
             }
         ]
     }

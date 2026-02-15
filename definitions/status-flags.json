@@ -1,6 +1,7 @@
 {
     "alias": "BACnetStatusFlags",
     "name": "status-flags",
+    "description": "Represents the BACnet status flags, a bit string indicating alarm, fault, override, and out-of-service states.",
     "type": {
         "base": "bit-string",
         "bits": [

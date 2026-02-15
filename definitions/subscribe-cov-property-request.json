@@ -1,41 +1,48 @@
 {
     "alias": "SubscribeCOVProperty-Request",
     "name": "subscribe-cov-property-request",
+    "description": "Represents a BACnet SubscribeCOVProperty request, used to subscribe to change-of-value notifications for a specific property of an object.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "subscriber-process-identifier",
                 "type": "unsigned-32",
-                "context": 0
+                "context": 0,
+                "description": "The process identifier of the subscriber."
             },
             {
                 "name": "monitored-object-identifier",
                 "type": "object-identifier",
-                "context": 1
+                "context": 1,
+                "description": "The identifier of the object to be monitored."
             },
             {
                 "name": "issue-confirmed-notifications",
                 "type": "boolean",
                 "context": 2,
-                "optional": true
+                "optional": true,
+                "description": "Indicates if confirmed notifications should be issued. Optional."
             },
             {
                 "name": "lifetime",
                 "type": "unsigned",
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "The duration of the subscription, in seconds. Optional."
             },
             {
                 "name": "monitored-property-identifier",
                 "type": "property-reference",
-                "context": 4
+                "context": 4,
+                "description": "The property of the object to be monitored."
             },
             {
                 "name": "cov-increment",
                 "type": "real",
                 "context": 5,
-                "optional": true
+                "optional": true,
+                "description": "The minimum change in value required to trigger a notification. Optional."
             }
         ]
     }
