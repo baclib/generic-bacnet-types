@@ -1,16 +1,19 @@
 {
     "alias": "BACnetOptionalDate",
     "name": "optional-date",
+    "description": "Represents an optional BACnet date value, allowing either null or a date value.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "null",
-                "type": "null"
+                "type": "null",
+                "description": "Indicates the absence of a date value."
             },
             {
                 "name": "date",
-                "type": "date"
+                "type": "date",
+                "description": "Specifies the BACnet date value when present."
             }
         ]
     }

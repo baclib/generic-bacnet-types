@@ -1,16 +1,19 @@
 {
     "alias": "BACnetOptionalDatePattern",
     "name": "optional-date-pattern",
+    "description": "Represents an optional BACnet date pattern, allowing either null or a date-pattern value.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "null",
-                "type": "null"
+                "type": "null",
+                "description": "Indicates the absence of a date pattern value."
             },
             {
                 "name": "datepattern",
-                "type": "date-pattern"
+                "type": "date-pattern",
+                "description": "Specifies the BACnet date pattern value when present."
             }
         ]
     }

@@ -1,18 +1,21 @@
 {
     "alias": "BACnetNameValue",
     "name": "name-value",
+    "description": "Represents a BACnet name-value pair, associating a character string name with a value of any type.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "name",
                 "type": "character-string",
-                "context": 0
+                "context": 0,
+                "description": "The name associated with the value."
             },
             {
                 "name": "value",
                 "type": "any",
-                "optional": true
+                "optional": true,
+                "description": "The value associated with the name. Optional."
             }
         ]
     }

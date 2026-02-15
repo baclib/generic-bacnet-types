@@ -1,16 +1,19 @@
 {
     "alias": "BACnetOptionalBinaryLightingPV",
     "name": "optional-binary-lighting-pv",
+    "description": "Represents an optional BACnet binary lighting PV, allowing either null or a binary-lighting-pv value.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "null",
-                "type": "null"
+                "type": "null",
+                "description": "Indicates the absence of a binary lighting PV value."
             },
             {
                 "name": "binary-lighting-pv",
-                "type": "binary-lighting-pv"
+                "type": "binary-lighting-pv",
+                "description": "Specifies the BACnet binary lighting PV value when present."
             }
         ]
     }

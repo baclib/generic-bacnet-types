@@ -1,5 +1,6 @@
 {
     "alias": "Null",
     "name": "null",
-    "primitive": 0
+    "primitive": 0,
+    "description": "Represents a BACnet null value, indicating the absence of a value."
 }

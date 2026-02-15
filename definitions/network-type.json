@@ -1,6 +1,7 @@
 {
     "alias": "BACnetNetworkType",
     "name": "network-type",
+    "description": "Represents the BACnet network type, specifying the communication protocol or medium used.",
     "type": {
         "base": "enumerated",
         "values": [

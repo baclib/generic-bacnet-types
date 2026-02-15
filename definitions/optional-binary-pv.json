@@ -1,16 +1,19 @@
 {
     "alias": "BACnetOptionalBinaryPV",
     "name": "optional-binary-pv",
+    "description": "Represents an optional BACnet binary PV, allowing either null or a binary-pv value.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "null",
-                "type": "null"
+                "type": "null",
+                "description": "Indicates the absence of a binary PV value."
             },
             {
                 "name": "binary-pv",
-                "type": "binary-pv"
+                "type": "binary-pv",
+                "description": "Specifies the BACnet binary PV value when present."
             }
         ]
     }

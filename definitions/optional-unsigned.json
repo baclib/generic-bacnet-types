@@ -1,16 +1,19 @@
 {
     "alias": "BACnetOptionalUnsigned",
     "name": "optional-unsigned",
+    "description": "Represents an optional unsigned value in BACnet, allowing either a null or an unsigned integer.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "null",
-                "type": "null"
+                "type": "null",
+                "description": "Indicates the absence of an unsigned value."
             },
             {
                 "name": "unsigned",
-                "type": "unsigned"
+                "type": "unsigned",
+                "description": "Specifies the unsigned integer value when present."
             }
         ]
     }

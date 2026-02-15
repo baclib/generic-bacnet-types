@@ -1,16 +1,19 @@
 {
     "alias": "BACnetOptionalInteger",
     "name": "optional-integer",
+    "description": "Represents an optional BACnet integer value, allowing either null or an integer value.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "null",
-                "type": "null"
+                "type": "null",
+                "description": "Indicates the absence of an integer value."
             },
             {
                 "name": "integer",
-                "type": "integer"
+                "type": "integer",
+                "description": "Specifies the BACnet integer value when present."
             }
         ]
     }

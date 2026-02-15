@@ -1,16 +1,19 @@
 {
     "alias": "BACnetOptionalBitString",
     "name": "optional-bit-string",
+    "description": "Represents an optional BACnet bit string, allowing either null or a bit-string value.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "null",
-                "type": "null"
+                "type": "null",
+                "description": "Indicates the absence of a bit string value."
             },
             {
                 "name": "bitstring",
-                "type": "bit-string"
+                "type": "bit-string",
+                "description": "Specifies the BACnet bit string value when present."
             }
         ]
     }

@@ -1,5 +1,6 @@
 {
     "alias": "BACnetObjectIdentifier",
     "name": "object-identifier",
-    "primitive": 12
+    "primitive": 12,
+    "description": "Represents a BACnet object identifier, uniquely identifying objects within a BACnet device."
 }

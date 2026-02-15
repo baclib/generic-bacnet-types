@@ -1,6 +1,7 @@
 {
     "alias": "BACnetMaintenance",
     "name": "maintenance",
+    "description": "Represents the BACnet maintenance type, indicating required maintenance actions or status.",
     "type": {
         "base": "enumerated",
         "values": [

@@ -1,16 +1,19 @@
 {
     "alias": "BACnetOptionalPriorityFilter",
     "name": "optional-priority-filter",
+    "description": "Represents an optional BACnet priority filter, allowing either null or a priority-filter value.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "null",
-                "type": "null"
+                "type": "null",
+                "description": "Indicates the absence of a priority filter value."
             },
             {
                 "name": "filter",
-                "type": "priority-filter"
+                "type": "priority-filter",
+                "description": "Specifies the BACnet priority filter value when present."
             }
         ]
     }

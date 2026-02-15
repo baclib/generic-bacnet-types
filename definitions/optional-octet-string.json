@@ -1,16 +1,19 @@
 {
     "alias": "BACnetOptionalOctetString",
     "name": "optional-octet-string",
+    "description": "Represents an optional BACnet octet string, allowing either null or an octet-string value.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "null",
-                "type": "null"
+                "type": "null",
+                "description": "Indicates the absence of an octet string value."
             },
             {
                 "name": "octetstring",
-                "type": "octet-string"
+                "type": "octet-string",
+                "description": "Specifies the BACnet octet string value when present."
             }
         ]
     }

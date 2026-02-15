@@ -1,16 +1,19 @@
 {
     "alias": "BACnetOptionalReal",
     "name": "optional-real",
+    "description": "Represents an optional BACnet real value, allowing either null or a real number.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "null",
-                "type": "null"
+                "type": "null",
+                "description": "Indicates the absence of a real value."
             },
             {
                 "name": "real",
-                "type": "real"
+                "type": "real",
+                "description": "Specifies the BACnet real number value when present."
             }
         ]
     }

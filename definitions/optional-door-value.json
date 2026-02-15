@@ -1,16 +1,19 @@
 {
     "alias": "BACnetOptionalDoorValue",
     "name": "optional-door-value",
+    "description": "Represents an optional BACnet door value, allowing either null or a door-value.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "null",
-                "type": "null"
+                "type": "null",
+                "description": "Indicates the absence of a door value."
             },
             {
                 "name": "door-value",
-                "type": "door-value"
+                "type": "door-value",
+                "description": "Specifies the BACnet door value when present."
             }
         ]
     }

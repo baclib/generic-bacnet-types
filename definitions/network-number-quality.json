@@ -1,6 +1,7 @@
 {
     "alias": "BACnetNetworkNumberQuality",
     "name": "network-number-quality",
+    "description": "Represents the BACnet network number quality, indicating how the network number was determined.",
     "type": {
         "base": "enumerated",
         "values": [

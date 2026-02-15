@@ -1,6 +1,7 @@
 {
     "alias": "BACnetNodeType",
     "name": "node-type",
+    "description": "Represents the BACnet node type, categorizing nodes such as devices, areas, points, and more.",
     "type": {
         "base": "enumerated",
         "values": [

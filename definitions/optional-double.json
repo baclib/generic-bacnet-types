@@ -1,16 +1,19 @@
 {
     "alias": "BACnetOptionalDouble",
     "name": "optional-double",
+    "description": "Represents an optional BACnet double value, allowing either null or a double value.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "null",
-                "type": "null"
+                "type": "null",
+                "description": "Indicates the absence of a double value."
             },
             {
                 "name": "double",
-                "type": "double"
+                "type": "double",
+                "description": "Specifies the BACnet double value when present."
             }
         ]
     }

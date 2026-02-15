@@ -2,4 +2,5 @@
     "alias": "OctetString",
     "name": "octet-string",
     "primitive": 6
+    , "description": "Represents a BACnet octet string, used for binary data values."
 }

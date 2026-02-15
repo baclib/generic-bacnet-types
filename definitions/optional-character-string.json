@@ -1,16 +1,19 @@
 {
     "alias": "BACnetOptionalCharacterString",
     "name": "optional-character-string",
+    "description": "Represents an optional BACnet character string, allowing either null or a character-string value.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "null",
-                "type": "null"
+                "type": "null",
+                "description": "Indicates the absence of a character string value."
             },
             {
                 "name": "characterstring",
-                "type": "character-string"
+                "type": "character-string",
+                "description": "Specifies the BACnet character string value when present."
             }
         ]
     }

@@ -1,17 +1,20 @@
 {
     "alias": "BACnetOptionalAny",
     "name": "optional-any",
+    "description": "Represents an optional BACnet value of any type, allowing either null or any value.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "null",
-                "type": "null"
+                "type": "null",
+                "description": "Indicates the absence of a value."
             },
             {
                 "name": "any",
                 "type": "any",
-                "context": 0
+                "context": 0,
+                "description": "Specifies a BACnet value of any type when present."
             }
         ]
     }

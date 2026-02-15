@@ -1,6 +1,7 @@
 {
     "alias": "BACnetNetworkPortCommand",
     "name": "network-port-command",
+    "description": "Represents the BACnet network port command, specifying actions for network port management.",
     "type": {
         "base": "enumerated",
         "values": [

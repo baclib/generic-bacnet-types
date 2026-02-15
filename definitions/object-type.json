@@ -1,6 +1,7 @@
 {
     "alias": "BACnetObjectType",
     "name": "object-type",
+    "description": "Represents the BACnet enumerated type for object categories, such as analog input, binary output, etc.",
     "type": {
         "base": "enumerated",
         "values": [

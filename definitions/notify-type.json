@@ -1,6 +1,7 @@
 {
     "alias": "BACnetNotifyType",
     "name": "notify-type",
+    "description": "Represents the BACnet notification type, indicating the kind of notification (alarm, event, acknowledgment).",
     "type": {
         "base": "enumerated",
         "values": [

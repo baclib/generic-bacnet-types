@@ -1,6 +1,7 @@
 {
     "alias": "BACnetNameValueCollection",
     "name": "name-value-collection",
+    "description": "Represents a BACnet collection of name-value pairs, grouping multiple pairs together.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -10,7 +11,8 @@
                     "base": "name-value",
                     "series": true
                 },
-                "context": 0
+                "context": 0,
+                "description": "The collection of name-value pairs."
             }
         ]
     }
