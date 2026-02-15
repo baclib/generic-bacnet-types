@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLandingDoorStatus",
     "name": "landing-door-status",
+    "description": "Represents BACnet Landing Door Status, which contains status information for landing doors at multiple floors in a lift (elevator) system.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -13,16 +14,19 @@
                         {
                             "name": "floor-number",
                             "type": "unsigned-8",
-                            "context": 0
+                            "context": 0,
+                            "description": "The floor number where the landing door is located."
                         },
                         {
                             "name": "door-status",
                             "type": "door-status",
-                            "context": 1
+                            "context": 1,
+                            "description": "The status of the landing door at this floor."
                         }
                     ]
                 },
-                "context": 0
+                "context": 0,
+                "description": "A series of landing door entries, each containing a floor number and the door status at that floor."
             }
         ]
     }

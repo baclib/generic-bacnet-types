@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLightingOperation",
     "name": "lighting-operation",
+    "description": "Represents BACnet Lighting Operation enumeration, which defines the various operations that can be performed on lighting control objects.",
     "type": {
         "base": "enumerated",
         "values": [

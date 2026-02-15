@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLifeSafetyOperation",
     "name": "life-safety-operation",
+    "description": "Represents BACnet Life Safety Operation enumeration, which defines operations that can be performed on life safety systems such as alarms and notification devices.",
     "type": {
         "base": "enumerated",
         "values": [

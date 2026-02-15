@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLiftFault",
     "name": "lift-fault",
+    "description": "Represents BACnet Lift Fault enumeration, which identifies various fault conditions that can occur in lift (elevator) systems.",
     "type": {
         "base": "enumerated",
         "values": [

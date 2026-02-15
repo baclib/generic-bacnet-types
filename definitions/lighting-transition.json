@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLightingTransition",
     "name": "lighting-transition",
+    "description": "Represents BACnet Lighting Transition enumeration, which specifies the type of transition effect used when changing lighting levels.",
     "type": {
         "base": "enumerated",
         "values": [

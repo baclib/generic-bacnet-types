@@ -1,13 +1,15 @@
 {
     "alias": "BACnetLandingCallStatus",
     "name": "landing-call-status",
+    "description": "Represents BACnet Landing Call Status, which contains information about a landing call in a lift (elevator) system, including the floor number, call direction or destination, and optional floor text.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "floor-number",
                 "type": "unsigned-8",
-                "context": 0
+                "context": 0,
+                "description": "The floor number where the landing call was made."
             },
             {
                 "name": "command",
@@ -17,21 +19,25 @@
                         {
                             "name": "direction",
                             "type": "lift-car-direction",
-                            "context": 1
+                            "context": 1,
+                            "description": "The direction requested for the lift car (up or down)."
                         },
                         {
                             "name": "destination",
                             "type": "unsigned-8",
-                            "context": 2
+                            "context": 2,
+                            "description": "The destination floor number for the call."
                         }
                     ]
-                }
+                },
+                "description": "The call command, either a direction or a specific destination floor."
             },
             {
                 "name": "floor-text",
                 "type": "character-string",
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "Optional text description of the floor."
             }
         ]
     }

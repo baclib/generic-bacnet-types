@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLiftGroupMode",
     "name": "lift-group-mode",
+    "description": "Represents BACnet Lift Group Mode enumeration, which specifies the operational mode for a group of lift (elevator) cars working together.",
     "type": {
         "base": "enumerated",
         "values": [

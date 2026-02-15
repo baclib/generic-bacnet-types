@@ -1,18 +1,21 @@
 {
     "alias": "BACnetLifeSafetyOperationInfo",
     "name": "life-safety-operation-info",
+    "description": "Represents BACnet Life Safety Operation Info, which contains information about a life safety operation request, including the requesting process and the operation type.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "requesting-process-identifier",
                 "type": "unsigned-32",
-                "context": 0
+                "context": 0,
+                "description": "The identifier of the process that requested the life safety operation."
             },
             {
                 "name": "request",
                 "type": "life-safety-operation",
-                "context": 1
+                "context": 1,
+                "description": "The life safety operation that was requested."
             }
         ]
     }

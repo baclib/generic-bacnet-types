@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLiftCarDirection",
     "name": "lift-car-direction",
+    "description": "Represents BACnet Lift Car Direction enumeration, which indicates the current or intended direction of travel for a lift (elevator) car.",
     "type": {
         "base": "enumerated",
         "values": [

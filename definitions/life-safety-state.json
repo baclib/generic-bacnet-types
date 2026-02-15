@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLifeSafetyState",
     "name": "life-safety-state",
+    "description": "Represents BACnet Life Safety State enumeration, which indicates the current operational state of life safety systems such as fire alarms, smoke detectors, and emergency evacuation systems.",
     "type": {
         "base": "enumerated",
         "values": [

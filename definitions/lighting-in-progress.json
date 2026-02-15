@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLightingInProgress",
     "name": "lighting-in-progress",
+    "description": "Represents BACnet Lighting In Progress enumeration, which indicates the current state of lighting control operations and whether any transitions are active.",
     "type": {
         "base": "enumerated",
         "values": [

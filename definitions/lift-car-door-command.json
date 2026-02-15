@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLiftCarDoorCommand",
     "name": "lift-car-door-command",
+    "description": "Represents BACnet Lift Car Door Command enumeration, which specifies commands for controlling lift (elevator) car doors.",
     "type": {
         "base": "enumerated",
         "values": [

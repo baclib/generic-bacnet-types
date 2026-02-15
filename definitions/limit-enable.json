@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLimitEnable",
     "name": "limit-enable",
+    "description": "Represents BACnet Limit Enable bit string, which specifies which limit checks (low and/or high) are enabled for monitoring values in BACnet objects.",
     "type": {
         "base": "bit-string",
         "bits": [

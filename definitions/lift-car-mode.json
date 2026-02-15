@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLiftCarMode",
     "name": "lift-car-mode",
+    "description": "Represents BACnet Lift Car Mode enumeration, which specifies the current operational mode of an individual lift (elevator) car.",
     "type": {
         "base": "enumerated",
         "values": [

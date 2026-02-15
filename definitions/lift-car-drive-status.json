@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLiftCarDriveStatus",
     "name": "lift-car-drive-status",
+    "description": "Represents BACnet Lift Car Drive Status enumeration, which indicates the current movement state and drive operation of a lift (elevator) car.",
     "type": {
         "base": "enumerated",
         "values": [

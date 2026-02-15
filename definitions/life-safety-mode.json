@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLifeSafetyMode",
     "name": "life-safety-mode",
+    "description": "Represents BACnet Life Safety Mode enumeration, which specifies the operational mode of life safety systems and devices.",
     "type": {
         "base": "enumerated",
         "values": [

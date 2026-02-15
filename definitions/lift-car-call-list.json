@@ -1,6 +1,7 @@
 {
     "alias": "BACnetLiftCarCallList",
     "name": "lift-car-call-list",
+    "description": "Represents a BACnet Lift Car Call List, which contains a series of floor numbers representing active calls assigned to a lift (elevator) car.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -10,7 +11,8 @@
                     "base": "unsigned-8",
                     "series": true
                 },
-                "context": 0
+                "context": 0,
+                "description": "A series of floor numbers where the lift car has active calls."
             }
         ]
     }
