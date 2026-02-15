@@ -1,6 +1,7 @@
 {
     "alias": "CommandPriority",
     "name": "command-priority",
+    "description": "Represents a command priority level in BACnet, ranging from 1 (highest) to 16 (lowest).",
     "type": {
         "base": "unsigned",
         "minimum": 1,

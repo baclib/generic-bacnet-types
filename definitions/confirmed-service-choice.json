@@ -1,6 +1,7 @@
 {
     "alias": "BACnetConfirmedServiceChoice",
     "name": "confirmed-service-choice",
+    "description": "Enumeration of confirmed service types available in BACnet.",
     "type": {
         "base": "enumerated",
         "values": [

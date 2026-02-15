@@ -1,28 +1,33 @@
 {
     "alias": "ConfirmedCOVNotification-Request",
     "name": "confirmed-cov-notification-request",
+    "description": "Request parameters for the ConfirmedCOVNotification service, used to send Change of Value notifications that require acknowledgment.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "subscriber-process-identifier",
                 "type": "unsigned-32",
-                "context": 0
+                "context": 0,
+                "description": "The process identifier of the subscriber."
             },
             {
                 "name": "initiating-device-identifier",
                 "type": "object-identifier",
-                "context": 1
+                "context": 1,
+                "description": "The identifier of the device initiating the notification."
             },
             {
                 "name": "monitored-object-identifier",
                 "type": "object-identifier",
-                "context": 2
+                "context": 2,
+                "description": "The identifier of the object being monitored."
             },
             {
                 "name": "time-remaining",
                 "type": "unsigned",
-                "context": 3
+                "context": 3,
+                "description": "The remaining time in seconds before the subscription expires."
             },
             {
                 "name": "list-of-values",
@@ -30,7 +35,8 @@
                     "base": "property-value",
                     "series": true
                 },
-                "context": 4
+                "context": 4,
+                "description": "A list of property values that have changed."
             }
         ]
     }

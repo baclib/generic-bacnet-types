@@ -1,6 +1,7 @@
 {
     "alias": "BACnet-Confirmed-Service-ACK",
     "name": "confirmed-service-ack",
+    "description": "A choice of confirmed service acknowledgment types, representing responses to confirmed service requests.",
     "type": {
         "base": "choice",
         "options": [

@@ -1,6 +1,7 @@
 {
     "alias": "BACnet-Confirmed-Service-Request",
     "name": "confirmed-service-request",
+    "description": "A choice of confirmed service request types, representing the various confirmed services available in BACnet.",
     "type": {
         "base": "choice",
         "options": [

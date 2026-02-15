@@ -1,29 +1,34 @@
 {
     "alias": "ConfirmedCOVNotificationMultiple-Request",
     "name": "confirmed-cov-notification-multiple-request",
+    "description": "Request parameters for the ConfirmedCOVNotificationMultiple service, used to send multiple Change of Value notifications in a single message.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "subscriber-process-identifier",
                 "type": "unsigned-32",
-                "context": 0
+                "context": 0,
+                "description": "The process identifier of the subscriber."
             },
             {
                 "name": "initiating-device-identifier",
                 "type": "object-identifier",
-                "context": 1
+                "context": 1,
+                "description": "The identifier of the device initiating the notification."
             },
             {
                 "name": "time-remaining",
                 "type": "unsigned",
-                "context": 2
+                "context": 2,
+                "description": "The remaining time in seconds before the subscription expires."
             },
             {
                 "name": "timestamp",
                 "type": "date-time",
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "Optional timestamp for the notification."
             },
             {
                 "name": "list-of-cov-notifications",
@@ -34,7 +39,8 @@
                         {
                             "name": "monitored-object-identifier",
                             "type": "object-identifier",
-                            "context": 0
+                            "context": 0,
+                            "description": "The identifier of the object being monitored."
                         },
                         {
                             "name": "list-of-values",
@@ -45,32 +51,38 @@
                                     {
                                         "name": "property-identifier",
                                         "type": "property-identifier",
-                                        "context": 0
+                                        "context": 0,
+                                        "description": "The identifier of the property that changed."
                                     },
                                     {
                                         "name": "property-array-index",
                                         "type": "unsigned",
                                         "context": 1,
-                                        "optional": true
+                                        "optional": true,
+                                        "description": "The array index, if the property is an array. Optional."
                                     },
                                     {
                                         "name": "property-value",
                                         "type": "any",
-                                        "context": 2
+                                        "context": 2,
+                                        "description": "The current value of the property."
                                     },
                                     {
                                         "name": "time-of-change",
                                         "type": "time",
                                         "context": 3,
-                                        "optional": true
+                                        "optional": true,
+                                        "description": "Optional time when the property changed."
                                     }
                                 ]
                             },
-                            "context": 1
+                            "context": 1,
+                            "description": "A list of property values that have changed."
                         }
                     ]
                 },
-                "context": 4
+                "context": 4,
+                "description": "A list of COV notifications for multiple objects."
             }
         ]
     }

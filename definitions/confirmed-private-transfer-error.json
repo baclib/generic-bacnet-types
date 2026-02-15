@@ -1,29 +1,34 @@
 {
     "alias": "ConfirmedPrivateTransfer-Error",
     "name": "confirmed-private-transfer-error",
+    "description": "Error response for the ConfirmedPrivateTransfer service, indicating a failure in a vendor-specific service.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "error-type",
                 "type": "error",
-                "context": 0
+                "context": 0,
+                "description": "The error class and code describing the failure."
             },
             {
                 "name": "vendor-id",
                 "type": "unsigned-16",
-                "context": 1
+                "context": 1,
+                "description": "The vendor identification code."
             },
             {
                 "name": "service-number",
                 "type": "unsigned",
-                "context": 2
+                "context": 2,
+                "description": "The vendor-specific service number that failed."
             },
             {
                 "name": "error-parameters",
                 "type": "any",
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "Optional vendor-specific error parameters."
             }
         ]
     }

@@ -1,24 +1,28 @@
 {
     "alias": "ConfirmedPrivateTransfer-ACK",
     "name": "confirmed-private-transfer-ack",
+    "description": "Acknowledgment response for a successful ConfirmedPrivateTransfer service request.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "vendor-id",
                 "type": "unsigned-16",
-                "context": 0
+                "context": 0,
+                "description": "The vendor identification code."
             },
             {
                 "name": "service-number",
                 "type": "unsigned",
-                "context": 1
+                "context": 1,
+                "description": "The vendor-specific service number."
             },
             {
                 "name": "result-block",
                 "type": "any",
                 "context": 2,
-                "optional": true
+                "optional": true,
+                "description": "Optional vendor-specific result data."
             }
         ]
     }

@@ -1,13 +1,15 @@
 {
     "alias": "ConfirmedTextMessage-Request",
     "name": "confirmed-text-message-request",
+    "description": "Request parameters for the ConfirmedTextMessage service, used to send text messages that require acknowledgment.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "text-message-source-device",
                 "type": "object-identifier",
-                "context": 0
+                "context": 0,
+                "description": "The identifier of the device sending the text message."
             },
             {
                 "name": "message-class",
@@ -17,17 +19,20 @@
                         {
                             "name": "numeric",
                             "type": "unsigned",
-                            "context": 0
+                            "context": 0,
+                            "description": "A numeric message class identifier."
                         },
                         {
                             "name": "character",
                             "type": "character-string",
-                            "context": 1
+                            "context": 1,
+                            "description": "A character string message class identifier."
                         }
                     ]
                 },
                 "context": 1,
-                "optional": true
+                "optional": true,
+                "description": "An optional classification for the message."
             },
             {
                 "name": "message-priority",
@@ -36,20 +41,24 @@
                     "values": [
                         {
                             "name": "normal",
-                            "constant": 0
+                            "constant": 0,
+                            "description": "Normal priority message."
                         },
                         {
                             "name": "urgent",
-                            "constant": 1
+                            "constant": 1,
+                            "description": "Urgent priority message."
                         }
                     ]
                 },
-                "context": 2
+                "context": 2,
+                "description": "The priority level of the message."
             },
             {
                 "name": "message",
                 "type": "character-string",
-                "context": 3
+                "context": 3,
+                "description": "The text content of the message."
             }
         ]
     }

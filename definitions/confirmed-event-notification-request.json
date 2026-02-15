@@ -1,77 +1,91 @@
 {
     "alias": "ConfirmedEventNotification-Request",
     "name": "confirmed-event-notification-request",
+    "description": "Request parameters for the ConfirmedEventNotification service, used to send event notifications that require acknowledgment.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "process-identifier",
                 "type": "unsigned-32",
-                "context": 0
+                "context": 0,
+                "description": "The process identifier for this notification."
             },
             {
                 "name": "initiating-device-identifier",
                 "type": "object-identifier",
-                "context": 1
+                "context": 1,
+                "description": "The identifier of the device initiating the notification."
             },
             {
                 "name": "event-object-identifier",
                 "type": "object-identifier",
-                "context": 2
+                "context": 2,
+                "description": "The identifier of the object generating the event."
             },
             {
                 "name": "timestamp",
                 "type": "time-stamp",
-                "context": 3
+                "context": 3,
+                "description": "The timestamp when the event occurred."
             },
             {
                 "name": "notification-class",
                 "type": "unsigned",
-                "context": 4
+                "context": 4,
+                "description": "The notification class for this event."
             },
             {
                 "name": "priority",
                 "type": "unsigned-8",
-                "context": 5
+                "context": 5,
+                "description": "The priority of the event notification."
             },
             {
                 "name": "event-type",
                 "type": "event-type",
-                "context": 6
+                "context": 6,
+                "description": "The type of event being reported."
             },
             {
                 "name": "message-text",
                 "type": "character-string",
                 "context": 7,
-                "optional": true
+                "optional": true,
+                "description": "Optional descriptive text message about the event."
             },
             {
                 "name": "notify-type",
                 "type": "notify-type",
-                "context": 8
+                "context": 8,
+                "description": "The type of notification (alarm or event)."
             },
             {
                 "name": "ack-required",
                 "type": "boolean",
                 "context": 9,
-                "optional": true
+                "optional": true,
+                "description": "Indicates whether acknowledgment is required. Optional."
             },
             {
                 "name": "from-state",
                 "type": "event-state",
                 "context": 10,
-                "optional": true
+                "optional": true,
+                "description": "The previous event state. Optional."
             },
             {
                 "name": "to-state",
                 "type": "event-state",
-                "context": 11
+                "context": 11,
+                "description": "The current event state."
             },
             {
                 "name": "event-values",
                 "type": "notification-parameters",
                 "context": 12,
-                "optional": true
+                "optional": true,
+                "description": "Optional event-specific parameter values."
             }
         ]
     }
