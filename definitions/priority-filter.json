@@ -1,6 +1,7 @@
 {
     "alias": "BACnetPriorityFilter",
     "name": "priority-filter",
+    "description": "Represents a BACnet priority filter, a bit string indicating which priorities are filtered or selected.",
     "type": {
         "base": "bit-string",
         "bits": [

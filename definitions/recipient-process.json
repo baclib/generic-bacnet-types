@@ -1,18 +1,21 @@
 {
     "alias": "BACnetRecipientProcess",
     "name": "recipient-process",
+    "description": "Represents a BACnet recipient process, specifying a recipient and a process identifier for notification or message handling.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "recipient",
                 "type": "recipient",
-                "context": 0
+                "context": 0,
+                "description": "The recipient of the notification or message."
             },
             {
                 "name": "process-identifier",
                 "type": "unsigned-32",
-                "context": 1
+                "context": 1,
+                "description": "The process identifier associated with the recipient."
             }
         ]
     }

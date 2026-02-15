@@ -1,18 +1,21 @@
 {
     "alias": "BACnetPortPermission",
     "name": "port-permission",
+    "description": "Represents a BACnet port permission, specifying port ID and enabled status.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "port-id",
                 "type": "unsigned-8",
-                "context": 0
+                "context": 0,
+                "description": "The identifier of the port."
             },
             {
                 "name": "enabled",
                 "type": "boolean",
-                "context": 1
+                "context": 1,
+                "description": "Indicates if the port is enabled."
             }
         ]
     }

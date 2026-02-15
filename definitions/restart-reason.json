@@ -1,6 +1,7 @@
 {
     "alias": "BACnetRestartReason",
     "name": "restart-reason",
+    "description": "Enumerates BACnet restart reasons, indicating why a device was restarted.",
     "type": {
         "base": "enumerated",
         "values": [

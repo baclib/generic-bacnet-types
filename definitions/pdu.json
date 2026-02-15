@@ -1,6 +1,7 @@
 {
     "alias": "BACnetPDU",
     "name": "pdu",
+    "description": "Represents a BACnet protocol data unit (PDU), specifying the type of PDU used in BACnet communication.",
     "type": {
         "base": "choice",
         "options": [

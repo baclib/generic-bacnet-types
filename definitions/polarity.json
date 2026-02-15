@@ -1,6 +1,7 @@
 {
     "alias": "BACnetPolarity",
     "name": "polarity",
+    "description": "Enumerates BACnet polarity states, indicating normal or reverse polarity for binary objects.",
     "type": {
         "base": "enumerated",
         "values": [

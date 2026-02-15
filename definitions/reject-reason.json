@@ -1,6 +1,7 @@
 {
     "alias": "BACnetRejectReason",
     "name": "reject-reason",
+    "description": "Enumerates BACnet reject reasons, indicating why a request was rejected.",
     "type": {
         "base": "enumerated",
         "values": [

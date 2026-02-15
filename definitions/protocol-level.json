@@ -1,6 +1,7 @@
 {
     "alias": "BACnetProtocolLevel",
     "name": "protocol-level",
+    "description": "Enumerates BACnet protocol levels, indicating the layer of protocol used.",
     "type": {
         "base": "enumerated",
         "values": [

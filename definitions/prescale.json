@@ -1,18 +1,21 @@
 {
     "alias": "BACnetPrescale",
     "name": "prescale",
+    "description": "Represents a BACnet prescale, specifying multiplier and modulo divide values for scaling purposes.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "multiplier",
                 "type": "unsigned",
-                "context": 0
+                "context": 0,
+                "description": "The multiplier value for prescaling."
             },
             {
                 "name": "modulo-divide",
                 "type": "unsigned",
-                "context": 1
+                "context": 1,
+                "description": "The modulo divide value for prescaling."
             }
         ]
     }

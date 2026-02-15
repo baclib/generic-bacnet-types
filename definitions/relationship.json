@@ -1,6 +1,7 @@
 {
     "alias": "BACnetRelationship",
     "name": "relationship",
+    "description": "Enumerates BACnet relationships, describing how objects interact or are associated with each other.",
     "type": {
         "base": "enumerated",
         "values": [

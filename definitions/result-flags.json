@@ -1,6 +1,7 @@
 {
     "alias": "BACnetResultFlags",
     "name": "result-flags",
+    "description": "Represents BACnet result flags, a bit string indicating position and availability of items in a result set.",
     "type": {
         "base": "bit-string",
         "bits": [

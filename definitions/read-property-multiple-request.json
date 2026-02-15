@@ -1,6 +1,7 @@
 {
     "alias": "ReadPropertyMultiple-Request",
     "name": "read-property-multiple-request",
+    "description": "Represents a BACnet ReadPropertyMultiple request, used to read multiple properties from one or more objects.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -9,7 +10,8 @@
                 "type": {
                     "base": "read-access-specification",
                     "series": true
-                }
+                },
+                "description": "A list of access specifications for reading properties from objects."
             }
         ]
     }

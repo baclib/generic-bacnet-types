@@ -1,24 +1,28 @@
 {
     "alias": "ReadRange-Request",
     "name": "read-range-request",
+    "description": "Represents a BACnet ReadRange request, used to read a range of values from a property of an object.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "object-identifier",
                 "type": "object-identifier",
-                "context": 0
+                "context": 0,
+                "description": "The identifier of the object to read from."
             },
             {
                 "name": "property-identifier",
                 "type": "property-identifier",
-                "context": 1
+                "context": 1,
+                "description": "The property identifier specifying the property to read."
             },
             {
                 "name": "property-array-index",
                 "type": "unsigned",
                 "context": 2,
-                "optional": true
+                "optional": true,
+                "description": "Optional array index for the property."
             },
             {
                 "name": "range",
@@ -32,15 +36,18 @@
                                 "fields": [
                                     {
                                         "name": "reference-index",
-                                        "type": "unsigned"
+                                        "type": "unsigned",
+                                        "description": "Reference index for the range."
                                     },
                                     {
                                         "name": "count",
-                                        "type": "integer-16"
+                                        "type": "integer-16",
+                                        "description": "Number of items to read from the reference index."
                                     }
                                 ]
                             },
-                            "context": 3
+                            "context": 3,
+                            "description": "Read range by position."
                         },
                         {
                             "name": "by-sequence-number",
@@ -49,15 +56,18 @@
                                 "fields": [
                                     {
                                         "name": "reference-sequence-number",
-                                        "type": "unsigned"
+                                        "type": "unsigned",
+                                        "description": "Reference sequence number for the range."
                                     },
                                     {
                                         "name": "count",
-                                        "type": "integer-16"
+                                        "type": "integer-16",
+                                        "description": "Number of items to read from the reference sequence number."
                                     }
                                 ]
                             },
-                            "context": 6
+                            "context": 6,
+                            "description": "Read range by sequence number."
                         },
                         {
                             "name": "by-time",
@@ -66,19 +76,23 @@
                                 "fields": [
                                     {
                                         "name": "reference-time",
-                                        "type": "date-time"
+                                        "type": "date-time",
+                                        "description": "Reference time for the range."
                                     },
                                     {
                                         "name": "count",
-                                        "type": "integer-16"
+                                        "type": "integer-16",
+                                        "description": "Number of items to read from the reference time."
                                     }
                                 ]
                             },
-                            "context": 7
+                            "context": 7,
+                            "description": "Read range by time."
                         }
                     ]
                 },
-                "optional": true
+                "optional": true,
+                "description": "Optional range specification for reading values."
             }
         ]
     }

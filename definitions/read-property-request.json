@@ -1,24 +1,28 @@
 {
     "alias": "ReadProperty-Request",
     "name": "read-property-request",
+    "description": "Represents a BACnet ReadProperty request, used to read a property value from an object.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "object-identifier",
                 "type": "object-identifier",
-                "context": 0
+                "context": 0,
+                "description": "The identifier of the object to read from."
             },
             {
                 "name": "property-identifier",
                 "type": "property-identifier",
-                "context": 1
+                "context": 1,
+                "description": "The property identifier specifying the property to read."
             },
             {
                 "name": "property-array-index",
                 "type": "unsigned",
                 "context": 2,
-                "optional": true
+                "optional": true,
+                "description": "Optional array index for the property."
             }
         ]
     }

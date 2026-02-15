@@ -1,6 +1,7 @@
 {
     "alias": "BACnetProgramError",
     "name": "program-error",
+    "description": "Enumerates BACnet program errors, indicating the error condition of a program object.",
     "type": {
         "base": "enumerated",
         "values": [

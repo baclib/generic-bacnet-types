@@ -1,18 +1,21 @@
 {
     "alias": "BACnetRouterEntry",
     "name": "router-entry",
+    "description": "Represents a BACnet router entry, detailing network number, MAC address, status, and optional performance index.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "network-number",
                 "type": "unsigned-16",
-                "context": 0
+                "context": 0,
+                "description": "The BACnet network number for the router entry."
             },
             {
                 "name": "mac-address",
                 "type": "octet-string",
-                "context": 1
+                "context": 1,
+                "description": "The MAC address associated with the router entry."
             },
             {
                 "name": "status",
@@ -21,25 +24,30 @@
                     "values": [
                         {
                             "name": "available",
-                            "constant": 0
+                            "constant": 0,
+                            "description": "Router is available."
                         },
                         {
                             "name": "busy",
-                            "constant": 1
+                            "constant": 1,
+                            "description": "Router is busy."
                         },
                         {
                             "name": "disconnected",
-                            "constant": 2
+                            "constant": 2,
+                            "description": "Router is disconnected."
                         }
                     ]
                 },
-                "context": 2
+                "context": 2,
+                "description": "The current status of the router entry."
             },
             {
                 "name": "performance-index",
                 "type": "unsigned-8",
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "Optional performance index for the router entry."
             }
         ]
     }

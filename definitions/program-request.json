@@ -1,6 +1,7 @@
 {
     "alias": "BACnetProgramRequest",
     "name": "program-request",
+    "description": "Enumerates BACnet program requests, specifying actions to be performed on a program object.",
     "type": {
         "base": "enumerated",
         "values": [

@@ -1,6 +1,7 @@
 {
     "alias": "ReinitializeDevice-Request",
     "name": "reinitialize-device-request",
+    "description": "Represents a BACnet ReinitializeDevice request, used to reinitialize a device to a specified state, optionally with a password.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -11,39 +12,48 @@
                     "values": [
                         {
                             "name": "coldstart",
-                            "constant": 0
+                            "constant": 0,
+                            "description": "Device will perform a coldstart."
                         },
                         {
                             "name": "warmstart",
-                            "constant": 1
+                            "constant": 1,
+                            "description": "Device will perform a warmstart."
                         },
                         {
                             "name": "start-backup",
-                            "constant": 2
+                            "constant": 2,
+                            "description": "Device will start backup operation."
                         },
                         {
                             "name": "end-backup",
-                            "constant": 3
+                            "constant": 3,
+                            "description": "Device will end backup operation."
                         },
                         {
                             "name": "start-restore",
-                            "constant": 4
+                            "constant": 4,
+                            "description": "Device will start restore operation."
                         },
                         {
                             "name": "end-restore",
-                            "constant": 5
+                            "constant": 5,
+                            "description": "Device will end restore operation."
                         },
                         {
                             "name": "abort-restore",
-                            "constant": 6
+                            "constant": 6,
+                            "description": "Device will abort restore operation."
                         },
                         {
                             "name": "activate-changes",
-                            "constant": 7
+                            "constant": 7,
+                            "description": "Device will activate configuration changes."
                         }
                     ]
                 },
-                "context": 0
+                "context": 0,
+                "description": "The state to which the device should be reinitialized."
             },
             {
                 "name": "password",
@@ -55,7 +65,8 @@
                     }
                 },
                 "context": 1,
-                "optional": true
+                "optional": true,
+                "description": "Optional password required for reinitialization."
             }
         ]
     }

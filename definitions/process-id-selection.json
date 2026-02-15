@@ -1,16 +1,19 @@
 {
     "alias": "BACnetProcessIdSelection",
     "name": "process-id-selection",
+    "description": "Represents a BACnet process ID selection, specifying either a process identifier or a null value.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "process-identifier",
-                "type": "unsigned-32"
+                "type": "unsigned-32",
+                "description": "A specific process identifier."
             },
             {
                 "name": "null-value",
-                "type": "null"
+                "type": "null",
+                "description": "Indicates no process identifier is selected."
             }
         ]
     }

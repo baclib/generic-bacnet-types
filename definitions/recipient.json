@@ -1,18 +1,21 @@
 {
     "alias": "BACnetRecipient",
     "name": "recipient",
+    "description": "Represents a BACnet recipient, specifying either a device or an address as the recipient of a notification or message.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "device",
                 "type": "object-identifier",
-                "context": 0
+                "context": 0,
+                "description": "The recipient is a BACnet device identified by object-identifier."
             },
             {
                 "name": "address",
                 "type": "address",
-                "context": 1
+                "context": 1,
+                "description": "The recipient is specified by a BACnet address."
             }
         ]
     }

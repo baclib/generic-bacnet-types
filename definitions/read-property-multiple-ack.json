@@ -1,6 +1,7 @@
 {
     "alias": "ReadPropertyMultiple-ACK",
     "name": "read-property-multiple-ack",
+    "description": "Represents a BACnet ReadPropertyMultiple ACK, used to acknowledge a ReadPropertyMultiple request and provide the results.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -9,7 +10,8 @@
                 "type": {
                     "base": "read-access-result",
                     "series": true
-                }
+                },
+                "description": "A list of access results for the properties read from objects."
             }
         ]
     }

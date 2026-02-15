@@ -1,29 +1,34 @@
 {
     "alias": "RemoveListElement-Request",
     "name": "remove-list-element-request",
+    "description": "Represents a BACnet RemoveListElement request, used to remove elements from a property list of an object.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "object-identifier",
                 "type": "object-identifier",
-                "context": 0
+                "context": 0,
+                "description": "The identifier of the object from which elements are to be removed."
             },
             {
                 "name": "property-identifier",
                 "type": "property-identifier",
-                "context": 1
+                "context": 1,
+                "description": "The property identifier specifying the list."
             },
             {
                 "name": "property-array-index",
                 "type": "unsigned",
                 "context": 2,
-                "optional": true
+                "optional": true,
+                "description": "Optional array index for the property list."
             },
             {
                 "name": "list-of-elements",
                 "type": "any",
-                "context": 3
+                "context": 3,
+                "description": "The elements to be removed from the list."
             }
         ]
     }

@@ -1,6 +1,7 @@
 {
     "alias": "BACnetReliability",
     "name": "reliability",
+    "description": "Enumerates BACnet reliability states, indicating the reliability or fault condition of an object or value.",
     "type": {
         "base": "enumerated",
         "values": [

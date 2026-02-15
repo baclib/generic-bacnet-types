@@ -1,5 +1,6 @@
 {
     "alias": "Real",
     "name": "real",
+    "description": "Represents a BACnet real (floating-point) value.",
     "primitive": 4
 }

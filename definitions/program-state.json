@@ -1,6 +1,7 @@
 {
     "alias": "BACnetProgramState",
     "name": "program-state",
+    "description": "Enumerates BACnet program states, indicating the current state of a program object.",
     "type": {
         "base": "enumerated",
         "values": [

@@ -1,6 +1,7 @@
 {
     "alias": "BACnetPropertyIdentifier",
     "name": "property-identifier",
+    "description": "Enumerates all BACnet property identifiers, each representing a specific property of a BACnet object.",
     "type": {
         "base": "enumerated",
         "values": [

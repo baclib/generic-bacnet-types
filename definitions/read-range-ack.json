@@ -1,34 +1,40 @@
 {
     "alias": "ReadRange-ACK",
     "name": "read-range-ack",
+    "description": "Represents a BACnet ReadRange ACK, used to acknowledge a ReadRange request and provide the result data.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "object-identifier",
                 "type": "object-identifier",
-                "context": 0
+                "context": 0,
+                "description": "The identifier of the object being read."
             },
             {
                 "name": "property-identifier",
                 "type": "property-identifier",
-                "context": 1
+                "context": 1,
+                "description": "The property identifier specifying the property being read."
             },
             {
                 "name": "property-array-index",
                 "type": "unsigned",
                 "context": 2,
-                "optional": true
+                "optional": true,
+                "description": "Optional array index for the property."
             },
             {
                 "name": "result-flags",
                 "type": "result-flags",
-                "context": 3
+                "context": 3,
+                "description": "Flags indicating the position and availability of items in the result set."
             },
             {
                 "name": "item-count",
                 "type": "unsigned",
-                "context": 4
+                "context": 4,
+                "description": "The number of items returned in the result."
             },
             {
                 "name": "item-data",
@@ -36,13 +42,15 @@
                     "base": "any",
                     "series": true
                 },
-                "context": 5
+                "context": 5,
+                "description": "The data items returned in the result."
             },
             {
                 "name": "first-sequence-number",
                 "type": "unsigned-32",
                 "context": 6,
-                "optional": true
+                "optional": true,
+                "description": "Optional sequence number of the first item in the result."
             }
         ]
     }
