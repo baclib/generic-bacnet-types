@@ -1,12 +1,14 @@
 {
     "alias": "AtomicReadFile-ACK",
     "name": "atomic-read-file-ack",
+    "description": "Acknowledgment response for a successful atomic read file operation containing the file data.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "end-of-file",
-                "type": "boolean"
+                "type": "boolean",
+                "description": "Indicates whether the end of the file has been reached."
             },
             {
                 "name": "access-method",
@@ -20,15 +22,18 @@
                                 "fields": [
                                     {
                                         "name": "file-start-position",
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "description": "The starting byte position of the returned data."
                                     },
                                     {
                                         "name": "file-data",
-                                        "type": "octet-string"
+                                        "type": "octet-string",
+                                        "description": "The data read from the file."
                                     }
                                 ]
                             },
-                            "context": 0
+                            "context": 0,
+                            "description": "Data read from the file as a stream of bytes."
                         },
                         {
                             "name": "record-access",
@@ -37,25 +42,30 @@
                                 "fields": [
                                     {
                                         "name": "file-start-record",
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "description": "The starting record number of the returned data."
                                     },
                                     {
                                         "name": "returned-record-count",
-                                        "type": "unsigned"
+                                        "type": "unsigned",
+                                        "description": "The number of records returned."
                                     },
                                     {
                                         "name": "file-record-data",
                                         "type": {
                                             "base": "octet-string",
                                             "series": true
-                                        }
+                                        },
+                                        "description": "A list of records read from the file."
                                     }
                                 ]
                             },
-                            "context": 1
+                            "context": 1,
+                            "description": "Data read from the file as a series of records."
                         }
                     ]
-                }
+                },
+                "description": "The access method and data that was read."
             }
         ]
     }

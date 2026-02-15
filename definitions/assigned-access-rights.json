@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAssignedAccessRights",
     "name": "assigned-access-rights",
+    "description": "Specifies access rights assigned to a credential or user with an enable flag.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -8,12 +9,14 @@
                 "alias": "assigned-access-rights",
                 "name": "reference",
                 "type": "device-object-reference",
-                "context": 0
+                "context": 0,
+                "description": "Reference to the access rights object."
             },
             {
                 "name": "enable",
                 "type": "boolean",
-                "context": 1
+                "context": 1,
+                "description": "Indicates whether these access rights are enabled."
             }
         ]
     }

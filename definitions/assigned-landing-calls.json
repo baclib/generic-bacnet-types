@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAssignedLandingCalls",
     "name": "assigned-landing-calls",
+    "description": "A list of landing calls assigned to a lift or elevator, specifying floor numbers and directions.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -13,16 +14,19 @@
                         {
                             "name": "floor-number",
                             "type": "unsigned-8",
-                            "context": 0
+                            "context": 0,
+                            "description": "The floor number of the landing call."
                         },
                         {
                             "name": "direction",
                             "type": "lift-car-direction",
-                            "context": 1
+                            "context": 1,
+                            "description": "The direction of travel for the landing call."
                         }
                     ]
                 },
-                "context": 0
+                "context": 0,
+                "description": "A list of landing calls with floor and direction."
             }
         ]
     }

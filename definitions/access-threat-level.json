@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAccessThreatLevel",
     "name": "access-threat-level",
+    "description": "A numeric threat level value from 0 to 100 used by access control policies.",
     "type": {
         "base": "unsigned",
         "minimum": 0,

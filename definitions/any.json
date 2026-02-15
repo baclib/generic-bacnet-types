@@ -1,5 +1,6 @@
 {
     "alias": "ANY",
     "name": "any",
+    "description": "Represents any BACnet data type, used when the specific type is not known in advance.",
     "primitive": -1
 }

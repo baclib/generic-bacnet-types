@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAccessZoneOccupancyState",
     "name": "access-zone-occupancy-state",
+    "description": "Enumerated values representing the occupancy state of an access zone relative to its limits.",
     "type": {
         "base": "enumerated",
         "values": [

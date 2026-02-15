@@ -1,23 +1,27 @@
 {
     "alias": "BACnetAccumulatorRecord",
     "name": "accumulator-record",
+    "description": "A record of accumulator values at a specific time, including present value and status.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "timestamp",
                 "type": "date-time",
-                "context": 0
+                "context": 0,
+                "description": "The date and time of the accumulator record."
             },
             {
                 "name": "present-value",
                 "type": "unsigned",
-                "context": 1
+                "context": 1,
+                "description": "The present value at the time of the record."
             },
             {
                 "name": "accumulated-value",
                 "type": "unsigned",
-                "context": 2
+                "context": 2,
+                "description": "The accumulated total value at the time of the record."
             },
             {
                 "name": "accumulator-status",
@@ -26,27 +30,33 @@
                     "values": [
                         {
                             "name": "normal",
-                            "constant": 0
+                            "constant": 0,
+                            "description": "Accumulator is operating normally."
                         },
                         {
                             "name": "starting",
-                            "constant": 1
+                            "constant": 1,
+                            "description": "Accumulator is starting or initializing."
                         },
                         {
                             "name": "recovered",
-                            "constant": 2
+                            "constant": 2,
+                            "description": "Accumulator has recovered from a previous issue."
                         },
                         {
                             "name": "abnormal",
-                            "constant": 3
+                            "constant": 3,
+                            "description": "Accumulator is in an abnormal state."
                         },
                         {
                             "name": "failed",
-                            "constant": 4
+                            "constant": 4,
+                            "description": "Accumulator has failed."
                         }
                     ]
                 },
-                "context": 3
+                "context": 3,
+                "description": "The operational status of the accumulator."
             }
         ]
     }

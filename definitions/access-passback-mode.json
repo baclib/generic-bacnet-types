@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAccessPassbackMode",
     "name": "access-passback-mode",
+    "description": "Enumerated values representing the passback enforcement mode for access control.",
     "type": {
         "base": "enumerated",
         "values": [

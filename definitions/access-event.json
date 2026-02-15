@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAccessEvent",
     "name": "access-event",
+    "description": "Enumerated values representing different types of access control events, including granted, denied, and status events.",
     "type": {
         "base": "enumerated",
         "values": [

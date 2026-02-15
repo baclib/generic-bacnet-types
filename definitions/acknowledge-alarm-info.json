@@ -1,18 +1,21 @@
 {
     "alias": "BACnetAcknowledgeAlarmInfo",
     "name": "acknowledge-alarm-info",
+    "description": "Information about an alarm acknowledgment including the event state and timestamp.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "event-state-acknowledged",
                 "type": "event-state",
-                "context": 0
+                "context": 0,
+                "description": "The event state that was acknowledged."
             },
             {
                 "name": "timestamp",
                 "type": "time-stamp",
-                "context": 1
+                "context": 1,
+                "description": "The timestamp of the acknowledged event."
             }
         ]
     }

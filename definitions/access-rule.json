@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAccessRule",
     "name": "access-rule",
+    "description": "Defines access rules based on time range, location, and enablement status.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -11,21 +12,25 @@
                     "values": [
                         {
                             "name": "specified",
-                            "constant": 0
+                            "constant": 0,
+                            "description": "Use the specified time range reference."
                         },
                         {
                             "name": "always",
-                            "constant": 1
+                            "constant": 1,
+                            "description": "Always valid; no time range restriction."
                         }
                     ]
                 },
-                "context": 0
+                "context": 0,
+                "description": "Specifies how the time range is determined."
             },
             {
                 "name": "time-range",
                 "type": "device-object-property-reference",
                 "context": 1,
-                "optional": true
+                "optional": true,
+                "description": "Reference to the time range object/property when specified."
             },
             {
                 "name": "location-specifier",
@@ -34,26 +39,31 @@
                     "values": [
                         {
                             "name": "specified",
-                            "constant": 0
+                            "constant": 0,
+                            "description": "Use the specified location reference."
                         },
                         {
                             "name": "all",
-                            "constant": 1
+                            "constant": 1,
+                            "description": "All locations are permitted."
                         }
                     ]
                 },
-                "context": 2
+                "context": 2,
+                "description": "Specifies how the location is determined."
             },
             {
                 "name": "location",
                 "type": "device-object-reference",
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "Reference to the location object when specified."
             },
             {
                 "name": "enable",
                 "type": "boolean",
-                "context": 4
+                "context": 4,
+                "description": "Indicates whether this access rule is enabled."
             }
         ]
     }

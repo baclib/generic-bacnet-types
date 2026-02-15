@@ -1,16 +1,19 @@
 {
     "alias": "BACnetAddressBinding",
     "name": "address-binding",
+    "description": "Associates a BACnet device identifier with its network address.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "device-identifier",
-                "type": "object-identifier"
+                "type": "object-identifier",
+                "description": "The object identifier of the device."
             },
             {
                 "name": "device-address",
-                "type": "address"
+                "type": "address",
+                "description": "The network address of the device."
             }
         ]
     }

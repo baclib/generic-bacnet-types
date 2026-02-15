@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAction",
     "name": "action",
+    "description": "Enumerated values representing the action type for control operations.",
     "type": {
         "base": "enumerated",
         "values": [

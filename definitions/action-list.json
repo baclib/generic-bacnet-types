@@ -1,6 +1,7 @@
 {
     "alias": "BACnetActionList",
     "name": "action-list",
+    "description": "A list of action commands to be executed.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -10,7 +11,8 @@
                     "base": "action-command",
                     "series": true
                 },
-                "context": 0
+                "context": 0,
+                "description": "A list of action commands."
             }
         ]
     }

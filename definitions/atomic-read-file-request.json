@@ -1,12 +1,14 @@
 {
     "alias": "AtomicReadFile-Request",
     "name": "atomic-read-file-request",
+    "description": "Request to read data from a file object atomically, using either stream or record access methods.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "file-identifier",
-                "type": "object-identifier"
+                "type": "object-identifier",
+                "description": "The object identifier of the file to read from."
             },
             {
                 "name": "access-method",
@@ -20,15 +22,18 @@
                                 "fields": [
                                     {
                                         "name": "file-start-position",
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "description": "The starting byte position in the file."
                                     },
                                     {
                                         "name": "requested-octet-count",
-                                        "type": "unsigned"
+                                        "type": "unsigned",
+                                        "description": "The number of bytes to read."
                                     }
                                 ]
                             },
-                            "context": 0
+                            "context": 0,
+                            "description": "Read data from the file as a stream of bytes."
                         },
                         {
                             "name": "record-access",
@@ -37,18 +42,22 @@
                                 "fields": [
                                     {
                                         "name": "file-start-record",
-                                        "type": "integer"
+                                        "type": "integer",
+                                        "description": "The starting record number in the file."
                                     },
                                     {
                                         "name": "requested-record-count",
-                                        "type": "unsigned"
+                                        "type": "unsigned",
+                                        "description": "The number of records to read."
                                     }
                                 ]
                             },
-                            "context": 1
+                            "context": 1,
+                            "description": "Read data from the file as a series of records."
                         }
                     ]
-                }
+                },
+                "description": "The access method specifying what data to read."
             }
         ]
     }

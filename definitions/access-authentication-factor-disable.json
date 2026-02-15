@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAccessAuthenticationFactorDisable",
     "name": "access-authentication-factor-disable",
+    "description": "Enumerated values indicating whether an authentication factor is disabled and why.",
     "type": {
         "base": "enumerated",
         "values": [

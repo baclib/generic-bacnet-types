@@ -1,6 +1,7 @@
 {
     "alias": "BACnetAbortReason",
     "name": "abort-reason",
+    "description": "Enumerated values indicating the reason for aborting a BACnet transaction.",
     "type": {
         "base": "enumerated",
         "values": [

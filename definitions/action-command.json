@@ -1,6 +1,7 @@
 {
     "alias": "BACnetActionCommand",
     "name": "action-command",
+    "description": "A command to write a value to a property, with options for priority, delay, and error handling.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -8,28 +9,33 @@
                 "name": "device-identifier",
                 "type": "object-identifier",
                 "context": 0,
-                "optional": true
+                "optional": true,
+                "description": "The optional device identifier (if different from the local device)."
             },
             {
                 "name": "object-identifier",
                 "type": "object-identifier",
-                "context": 1
+                "context": 1,
+                "description": "The object identifier containing the property to write."
             },
             {
                 "name": "property-identifier",
                 "type": "property-identifier",
-                "context": 2
+                "context": 2,
+                "description": "The property identifier to write to."
             },
             {
                 "name": "property-array-index",
                 "type": "unsigned",
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "Optional array index if the property is an array."
             },
             {
                 "name": "property-value",
                 "type": "any",
-                "context": 4
+                "context": 4,
+                "description": "The value to write to the property."
             },
             {
                 "name": "priority",
@@ -39,23 +45,27 @@
                     "maximum": 16
                 },
                 "context": 5,
-                "optional": true
+                "optional": true,
+                "description": "Optional priority level for the write operation (1-16)."
             },
             {
                 "name": "post-delay",
                 "type": "unsigned",
                 "context": 6,
-                "optional": true
+                "optional": true,
+                "description": "Optional delay in seconds after executing this command before the next."
             },
             {
                 "name": "quit-on-failure",
                 "type": "boolean",
-                "context": 7
+                "context": 7,
+                "description": "Indicates whether to stop executing subsequent commands if this one fails."
             },
             {
                 "name": "write-successful",
                 "type": "boolean",
-                "context": 8
+                "context": 8,
+                "description": "Indicates whether the write operation was successful."
             }
         ]
     }

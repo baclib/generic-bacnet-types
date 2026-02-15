@@ -1,38 +1,45 @@
 {
     "alias": "AcknowledgeAlarm-Request",
     "name": "acknowledge-alarm-request",
+    "description": "Request to acknowledge an alarm or event.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "acknowledging-process-identifier",
                 "type": "unsigned-32",
-                "context": 0
+                "context": 0,
+                "description": "The identifier of the process acknowledging the alarm."
             },
             {
                 "name": "event-object-identifier",
                 "type": "object-identifier",
-                "context": 1
+                "context": 1,
+                "description": "The object identifier of the event being acknowledged."
             },
             {
                 "name": "event-state-acknowledged",
                 "type": "event-state",
-                "context": 2
+                "context": 2,
+                "description": "The event state being acknowledged."
             },
             {
                 "name": "timestamp",
                 "type": "time-stamp",
-                "context": 3
+                "context": 3,
+                "description": "The timestamp of the event being acknowledged."
             },
             {
                 "name": "acknowledgment-source",
                 "type": "character-string",
-                "context": 4
+                "context": 4,
+                "description": "A text string identifying the source of the acknowledgment."
             },
             {
                 "name": "time-of-acknowledgment",
                 "type": "time-stamp",
-                "context": 5
+                "context": 5,
+                "description": "The timestamp when the acknowledgment was made."
             }
         ]
     }

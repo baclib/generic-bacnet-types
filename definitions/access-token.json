@@ -1,18 +1,21 @@
 {
     "alias": "BACnetAccessToken",
     "name": "access-token",
+    "description": "A signed access token describing client authorization, scope, constraints, and validity period.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "issuer",
                 "type": "unsigned-32",
-                "context": 0
+                "context": 0,
+                "description": "The identifier of the token issuer."
             },
             {
                 "name": "issued",
                 "type": "date-time",
-                "context": 1
+                "context": 1,
+                "description": "The date and time the token was issued."
             },
             {
                 "name": "audience",
@@ -20,44 +23,52 @@
                     "base": "integer-32",
                     "series": true
                 },
-                "context": 2
+                "context": 2,
+                "description": "A list of audience identifiers for which the token is valid."
             },
             {
                 "name": "not-before",
                 "type": "date-time",
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "The token is not valid before this date and time."
             },
             {
                 "name": "not-after",
                 "type": "date-time",
                 "context": 4,
-                "optional": true
+                "optional": true,
+                "description": "The token is not valid after this date and time."
             },
             {
                 "name": "client",
                 "type": "unsigned-32",
-                "context": 5
+                "context": 5,
+                "description": "The identifier of the client to which the token applies."
             },
             {
                 "name": "constraint",
                 "type": "authorization-constraint",
-                "context": 6
+                "context": 6,
+                "description": "Constraints on origin and authentication requirements for using the token."
             },
             {
                 "name": "scope",
                 "type": "authorization-scope",
-                "context": 7
+                "context": 7,
+                "description": "The authorization scope granted by the token."
             },
             {
                 "name": "key-id",
                 "type": "unsigned-8",
-                "context": 8
+                "context": 8,
+                "description": "Identifier of the signing key used to create the token."
             },
             {
                 "name": "signature",
                 "type": "octet-string",
-                "context": 9
+                "context": 9,
+                "description": "The cryptographic signature of the token."
             }
         ]
     }

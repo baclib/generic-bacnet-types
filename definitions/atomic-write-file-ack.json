@@ -1,18 +1,21 @@
 {
     "alias": "AtomicWriteFile-ACK",
     "name": "atomic-write-file-ack",
+    "description": "Acknowledgment response for a successful atomic write file operation.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "file-start-position",
                 "type": "integer",
-                "context": 0
+                "context": 0,
+                "description": "The starting byte position where data was written (for stream access)."
             },
             {
                 "name": "file-start-record",
                 "type": "integer",
-                "context": 1
+                "context": 1,
+                "description": "The starting record number where data was written (for record access)."
             }
         ]
     }

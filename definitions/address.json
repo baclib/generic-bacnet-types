@@ -1,16 +1,19 @@
 {
     "alias": "BACnetAddress",
     "name": "address",
+    "description": "A BACnet network address consisting of a network number and MAC address.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "network-number",
-                "type": "unsigned-16"
+                "type": "unsigned-16",
+                "description": "The BACnet network number (0 for the local network)."
             },
             {
                 "name": "mac-address",
-                "type": "octet-string"
+                "type": "octet-string",
+                "description": "The MAC address on the specified network."
             }
         ]
     }
