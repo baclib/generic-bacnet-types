@@ -1,6 +1,7 @@
 {
     "alias": "BACnet-Abort-PDU",
     "name": "abort-pdu",
+    "description": "Represents a BACnet Abort PDU, used to indicate that a transaction is being aborted and to provide the reason.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -11,7 +12,8 @@
                     "minimum": 0,
                     "maximum": 15
                 },
-                "context": 0
+                "context": 0,
+                "description": "Identifies the type of the PDU, which shall be always 7."
             },
             {
                 "name": "reserved",
@@ -20,12 +22,14 @@
                     "minimum": 0,
                     "maximum": 7
                 },
-                "context": 1
+                "context": 1,
+                "description": "Reserved for future use; shall be set to zero."
             },
             {
                 "name": "server",
                 "type": "boolean",
-                "context": 2
+                "context": 2,
+                "description": "Indicates whether the abort was initiated by the server (true) or client (false)."
             },
             {
                 "name": "original-invoke-id",
@@ -34,12 +38,14 @@
                     "minimum": 0,
                     "maximum": 255
                 },
-                "context": 3
+                "context": 3,
+                "description": "The invoke ID of the original request being aborted."
             },
             {
                 "name": "abort-reason",
                 "type": "abort-reason",
-                "context": 4
+                "context": 4,
+                "description": "Specifies the reason for aborting the transaction."
             }
         ]
     }

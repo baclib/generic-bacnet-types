@@ -1,24 +1,28 @@
 {
     "alias": "BACnetObjectPropertyReference",
     "name": "object-property-reference",
+    "description": "Represents a reference to a specific property of a BACnet object, optionally including the array index for precise identification.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "object-identifier",
                 "type": "object-identifier",
-                "context": 0
+                "context": 0,
+                "description": "The identifier of the BACnet object containing the property."
             },
             {
                 "name": "property-identifier",
                 "type": "property-identifier",
-                "context": 1
+                "context": 1,
+                "description": "The identifier of the property within the object."
             },
             {
                 "name": "property-array-index",
                 "type": "unsigned",
                 "context": 2,
-                "optional": true
+                "optional": true,
+                "description": "The index within an array property, if applicable. Optional."
             }
         ]
     }

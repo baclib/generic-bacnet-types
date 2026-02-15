@@ -1,23 +1,27 @@
 {
     "alias": "BACnetCalendarEntry",
     "name": "calendar-entry",
+    "description": "Represents a BACnet Calendar Entry, which can specify a single date, a date range, or a single combination of month, week, and day for scheduling purposes.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "date",
                 "type": "date-pattern",
-                "context": 0
+                "context": 0,
+                "description": "A specific date or date pattern."
             },
             {
                 "name": "date-range",
                 "type": "date-range",
-                "context": 1
+                "context": 1,
+                "description": "A range defined by a start date and an end date."
             },
             {
                 "name": "weeknday",
                 "type": "week-n-day",
-                "context": 2
+                "context": 2,
+                "description": "A combination of month, week, and day."
             }
         ]
     }

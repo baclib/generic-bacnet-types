@@ -1,36 +1,44 @@
 {
     "alias": "BACnetDestination",
     "name": "destination",
+    "description": "Represents a BACnet Destination, which defines the conditions and recipient for event notifications in BACnet alarm and event systems.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "valid-days",
-                "type": "days-of-week"
+                "type": "days-of-week",
+                "description": "Specifies the days of the week when notifications are valid."
             },
             {
                 "name": "from-time",
-                "type": "time"
+                "type": "time",
+                "description": "The start time of the period during which notifications may be sent."
             },
             {
                 "name": "to-time",
-                "type": "time"
+                "type": "time",
+                "description": "The end time of the period during which notifications may be sent."
             },
             {
                 "name": "recipient",
-                "type": "recipient"
+                "type": "recipient",
+                "description": "The recipient of the notification, which may be a device or an address."
             },
             {
                 "name": "process-identifier",
-                "type": "unsigned-32"
+                "type": "unsigned-32",
+                "description": "The process identifier for the recipient, used to distinguish between multiple processes on the same device."
             },
             {
                 "name": "issue-confirmed-notifications",
-                "type": "boolean"
+                "type": "boolean",
+                "description": "Indicates whether confirmed notifications should be issued (true) or unconfirmed (false)."
             },
             {
                 "name": "transitions",
-                "type": "event-transition-bits"
+                "type": "event-transition-bits",
+                "description": "Specifies which event transitions (to-offnormal, to-fault, to-normal) will trigger notifications."
             }
         ]
     }

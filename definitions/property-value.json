@@ -1,6 +1,7 @@
 {
     "alias": "BACnetPropertyValue",
     "name": "property-value",
+    "description": "Represents a value of a BACnet property, including property identifier, optional array index, value, and optional priority.",
     "type": {
         "base": "sequence",
         "fields": [
@@ -8,20 +9,23 @@
                 "alias": "property-identifier",
                 "name": "identifier",
                 "type": "property-identifier",
-                "context": 0
+                "context": 0,
+                "description": "The identifier of the property whose value is given."
             },
             {
                 "alias": "property-array-index",
                 "name": "index",
                 "type": "unsigned",
                 "context": 1,
-                "optional": true
+                "optional": true,
+                "description": "The index within an array property, if applicable. Optional."
             },
             {
                 "alias": "property-value",
                 "name": "value",
                 "type": "any",
-                "context": 2
+                "context": 2,
+                "description": "The value of the specified property."
             },
             {
                 "name": "priority",
@@ -31,7 +35,8 @@
                     "maximum": 16
                 },
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "The priority of the value, if applicable. Optional."
             }
         ]
     }

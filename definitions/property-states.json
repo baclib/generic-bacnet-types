@@ -1,313 +1,375 @@
 {
     "alias": "BACnetPropertyStates",
     "name": "property-states",
+    "description": "Represents the possible states or values for a BACnet property, covering a wide range of property types and states.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "boolean-value",
                 "type": "boolean",
-                "context": 0
+                "context": 0,
+                "description": "A boolean property state (true/false)."
             },
             {
                 "name": "binary-value",
                 "type": "binary-pv",
-                "context": 1
+                "context": 1,
+                "description": "A binary present value property state."
             },
             {
                 "name": "event-type",
                 "type": "event-type",
-                "context": 2
+                "context": 2,
+                "description": "The type of event for the property."
             },
             {
                 "name": "polarity",
                 "type": "polarity",
-                "context": 3
+                "context": 3,
+                "description": "The polarity state of the property."
             },
             {
                 "name": "program-change",
                 "type": "program-request",
-                "context": 4
+                "context": 4,
+                "description": "A program change request state."
             },
             {
                 "name": "program-state",
                 "type": "program-state",
-                "context": 5
+                "context": 5,
+                "description": "The state of a program."
             },
             {
                 "name": "reason-for-halt",
                 "type": "program-error",
-                "context": 6
+                "context": 6,
+                "description": "The reason for a program halt."
             },
             {
                 "name": "reliability",
                 "type": "reliability",
-                "context": 7
+                "context": 7,
+                "description": "The reliability state of the property."
             },
             {
                 "name": "state",
                 "type": "event-state",
-                "context": 8
+                "context": 8,
+                "description": "The event state of the property."
             },
             {
                 "name": "system-status",
                 "type": "device-status",
-                "context": 9
+                "context": 9,
+                "description": "The system status of the device."
             },
             {
                 "name": "units",
                 "type": "engineering-units",
-                "context": 10
+                "context": 10,
+                "description": "The engineering units of the property."
             },
             {
                 "name": "unsigned-value",
                 "type": "unsigned",
-                "context": 11
+                "context": 11,
+                "description": "An unsigned integer value."
             },
             {
                 "name": "life-safety-mode",
                 "type": "life-safety-mode",
-                "context": 12
+                "context": 12,
+                "description": "The life safety mode state."
             },
             {
                 "name": "life-safety-state",
                 "type": "life-safety-state",
-                "context": 13
+                "context": 13,
+                "description": "The life safety state."
             },
             {
                 "name": "restart-reason",
                 "type": "restart-reason",
-                "context": 14
+                "context": 14,
+                "description": "The reason for device restart."
             },
             {
                 "name": "door-alarm-state",
                 "type": "door-alarm-state",
-                "context": 15
+                "context": 15,
+                "description": "The alarm state of a door."
             },
             {
                 "name": "action",
                 "type": "action",
-                "context": 16
+                "context": 16,
+                "description": "An action state."
             },
             {
                 "name": "door-secured-status",
                 "type": "door-secured-status",
-                "context": 17
+                "context": 17,
+                "description": "The secured status of a door."
             },
             {
                 "name": "door-status",
                 "type": "door-status",
-                "context": 18
+                "context": 18,
+                "description": "The status of a door."
             },
             {
                 "name": "door-value",
                 "type": "door-value",
-                "context": 19
+                "context": 19,
+                "description": "The value state of a door."
             },
             {
                 "name": "file-access-method",
                 "type": "file-access-method",
-                "context": 20
+                "context": 20,
+                "description": "The file access method state."
             },
             {
                 "name": "lock-status",
                 "type": "lock-status",
-                "context": 21
+                "context": 21,
+                "description": "The lock status state."
             },
             {
                 "name": "life-safety-operation",
                 "type": "life-safety-operation",
-                "context": 22
+                "context": 22,
+                "description": "The life safety operation state."
             },
             {
                 "name": "maintenance",
                 "type": "maintenance",
-                "context": 23
+                "context": 23,
+                "description": "The maintenance state."
             },
             {
                 "name": "node-type",
                 "type": "node-type",
-                "context": 24
+                "context": 24,
+                "description": "The node type state."
             },
             {
                 "name": "notify-type",
                 "type": "notify-type",
-                "context": 25
+                "context": 25,
+                "description": "The notification type state."
             },
             {
                 "name": "shed-state",
                 "type": "shed-state",
-                "context": 27
+                "context": 27,
+                "description": "The shed state."
             },
             {
                 "name": "silenced-state",
                 "type": "silenced-state",
-                "context": 28
+                "context": 28,
+                "description": "The silenced state."
             },
             {
                 "name": "access-event",
                 "type": "access-event",
-                "context": 30
+                "context": 30,
+                "description": "The access event state."
             },
             {
                 "name": "zone-occupancy-state",
                 "type": "access-zone-occupancy-state",
-                "context": 31
+                "context": 31,
+                "description": "The occupancy state of an access zone."
             },
             {
                 "name": "access-credential-disable-reason",
                 "type": "access-credential-disable-reason",
-                "context": 32
+                "context": 32,
+                "description": "The reason for disabling an access credential."
             },
             {
                 "name": "access-credential-disable",
                 "type": "access-credential-disable",
-                "context": 33
+                "context": 33,
+                "description": "The disable state of an access credential."
             },
             {
                 "name": "authentication-status",
                 "type": "authentication-status",
-                "context": 34
+                "context": 34,
+                "description": "The authentication status state."
             },
             {
                 "name": "backup-state",
                 "type": "backup-state",
-                "context": 36
+                "context": 36,
+                "description": "The backup state."
             },
             {
                 "name": "write-status",
                 "type": "write-status",
-                "context": 37
+                "context": 37,
+                "description": "The write status state."
             },
             {
                 "name": "lighting-in-progress",
                 "type": "lighting-in-progress",
-                "context": 38
+                "context": 38,
+                "description": "The lighting in progress state."
             },
             {
                 "name": "lighting-operation",
                 "type": "lighting-operation",
-                "context": 39
+                "context": 39,
+                "description": "The lighting operation state."
             },
             {
                 "name": "lighting-transition",
                 "type": "lighting-transition",
-                "context": 40
+                "context": 40,
+                "description": "The lighting transition state."
             },
             {
                 "name": "integer-value",
                 "type": "integer",
-                "context": 41
+                "context": 41,
+                "description": "An integer value state."
             },
             {
                 "name": "binary-lighting-value",
                 "type": "binary-lighting-pv",
-                "context": 42
+                "context": 42,
+                "description": "A binary lighting present value state."
             },
             {
                 "name": "timer-state",
                 "type": "timer-state",
-                "context": 43
+                "context": 43,
+                "description": "The timer state."
             },
             {
                 "name": "timer-transition",
                 "type": "timer-transition",
-                "context": 44
+                "context": 44,
+                "description": "The timer transition state."
             },
             {
                 "name": "bacnet-ip-mode",
                 "type": "ip-mode",
-                "context": 45
+                "context": 45,
+                "description": "The BACnet/IP mode state."
             },
             {
                 "name": "network-port-command",
                 "type": "network-port-command",
-                "context": 46
+                "context": 46,
+                "description": "The network port command state."
             },
             {
                 "name": "network-type",
                 "type": "network-type",
-                "context": 47
+                "context": 47,
+                "description": "The network type state."
             },
             {
                 "name": "network-number-quality",
                 "type": "network-number-quality",
-                "context": 48
+                "context": 48,
+                "description": "The network number quality state."
             },
             {
                 "name": "escalator-operation-direction",
                 "type": "escalator-operation-direction",
-                "context": 49
+                "context": 49,
+                "description": "The operation direction of an escalator."
             },
             {
                 "name": "escalator-fault",
                 "type": "escalator-fault",
-                "context": 50
+                "context": 50,
+                "description": "The fault state of an escalator."
             },
             {
                 "name": "escalator-mode",
                 "type": "escalator-mode",
-                "context": 51
+                "context": 51,
+                "description": "The mode state of an escalator."
             },
             {
                 "name": "lift-car-direction",
                 "type": "lift-car-direction",
-                "context": 52
+                "context": 52,
+                "description": "The direction state of a lift car."
             },
             {
                 "name": "lift-car-door-command",
                 "type": "lift-car-door-command",
-                "context": 53
+                "context": 53,
+                "description": "The door command state of a lift car."
             },
             {
                 "name": "lift-car-drive-status",
                 "type": "lift-car-drive-status",
-                "context": 54
+                "context": 54,
+                "description": "The drive status of a lift car."
             },
             {
                 "name": "lift-car-mode",
                 "type": "lift-car-mode",
-                "context": 55
+                "context": 55,
+                "description": "The mode state of a lift car."
             },
             {
                 "name": "lift-group-mode",
                 "type": "lift-group-mode",
-                "context": 56
+                "context": 56,
+                "description": "The mode state of a lift group."
             },
             {
                 "name": "lift-fault",
                 "type": "lift-fault",
-                "context": 57
+                "context": 57,
+                "description": "The fault state of a lift."
             },
             {
                 "name": "protocol-level",
                 "type": "protocol-level",
-                "context": 58
+                "context": 58,
+                "description": "The protocol level state."
             },
             {
                 "name": "audit-level",
                 "type": "audit-level",
-                "context": 59
+                "context": 59,
+                "description": "The audit level state."
             },
             {
                 "name": "audit-operation",
                 "type": "audit-operation",
-                "context": 60
+                "context": 60,
+                "description": "The audit operation state."
             },
             {
                 "name": "extended-value",
                 "type": "unsigned-32",
-                "context": 63
+                "context": 63,
+                "description": "An extended unsigned integer value."
             },
             {
                 "name": "sc-connection-state",
                 "type": "sc-connection-state",
-                "context": 258
+                "context": 258,
+                "description": "The state of a secure connection."
             },
             {
                 "name": "sc-hub-connector-state",
                 "type": "sc-hub-connector-state",
-                "context": 259
+                "context": 259,
+                "description": "The state of a secure hub connector."
             }
         ],
         "proprietary": {

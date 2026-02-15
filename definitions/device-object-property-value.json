@@ -1,34 +1,40 @@
 {
     "alias": "BACnetDeviceObjectPropertyValue",
     "name": "device-object-property-value",
+    "description": "Represents a value of a specific property of a BACnet object, including device, object, property, and value information.",
     "type": {
         "base": "sequence",
         "fields": [
             {
                 "name": "device-identifier",
                 "type": "object-identifier",
-                "context": 0
+                "context": 0,
+                "description": "The identifier of the BACnet device containing the object."
             },
             {
                 "name": "object-identifier",
                 "type": "object-identifier",
-                "context": 1
+                "context": 1,
+                "description": "The identifier of the BACnet object containing the property."
             },
             {
                 "name": "property-identifier",
                 "type": "property-identifier",
-                "context": 2
+                "context": 2,
+                "description": "The identifier of the property whose value is given."
             },
             {
                 "name": "property-array-index",
                 "type": "unsigned",
                 "context": 3,
-                "optional": true
+                "optional": true,
+                "description": "The index within an array property, if applicable. Optional."
             },
             {
                 "name": "property-value",
                 "type": "any",
-                "context": 4
+                "context": 4,
+                "description": "The value of the specified property."
             }
         ]
     }

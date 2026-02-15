@@ -1,20 +1,24 @@
 {
     "alias": "BACnetObjectSelector",
     "name": "object-selector",
+    "description": "Represents a selector for BACnet objects, allowing selection by none, by object identifier, or by object type.",
     "type": {
         "base": "choice",
         "options": [
             {
                 "name": "none",
-                "type": "null"
+                "type": "null",
+                "description": "No object is selected."
             },
             {
                 "name": "object",
-                "type": "object-identifier"
+                "type": "object-identifier",
+                "description": "Selects a specific object by its identifier."
             },
             {
                 "name": "object-type",
-                "type": "object-type"
+                "type": "object-type",
+                "description": "Selects all objects of a given type."
             }
         ]
     }
