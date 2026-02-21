@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Version>0.0.0-dev</Version>
+    <PackageId>Baclib.Bacnet.Types</PackageId>
+    <Authors>The BAClib Initiative</Authors>
+    <Company>The BAClib Initiative</Company>
+    <Description>A modern .NET library providing robust, reusable BACnet data types.</Description>
+    <PackageProjectUrl>https://github.com/baclib/dotnet-bacnet-types</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/baclib/dotnet-bacnet-types</RepositoryUrl>
+    <PackageLicenseExpression>EPL-2.0</PackageLicenseExpression>
+    <PackageTags>bacnet;building-automation</PackageTags>
+    <Copyright>Copyright 2024-2026, The BAClib Initiative and Contributors</Copyright>
+    <RepositoryType>git</RepositoryType>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+</Project>
