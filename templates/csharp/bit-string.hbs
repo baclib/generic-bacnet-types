@@ -1,5 +1,5 @@
 /// <summary>
-/// Represents the bit string {{bacnetName}} as defined in ANSI/ASHRAE 135-2024 Clause 20.6.
+/// Represents the bit string {{bacnetName}} as defined in ANSI/ASHRAE 135-2024 Clause 21.
 /// </summary>
 public readonly record struct {{className}}
 {
@@ -8,12 +8,24 @@ public readonly record struct {{className}}
     /// </summary>
     public {{flagBase}} Flags { get; }
 
-/*
+    {{#if hasRange}}
+    /// <summary>
+    /// The minimum allowed length for an instance of <see cref="{{className}}"/>.
+    /// </summary>
+    public const int MinLength = {{minimum}};
+
+    /// <summary>
+    /// The maximum allowed length for an instance of <see cref="{{className}}"/>.
+    /// </summary>
+    public const int MaxLength = {{maximum}};
+    {{else}}
     /// <summary>
     /// Fixed number of bits for this type
     /// </summary>
     public const int FixCount = {{length}};
+    {{/if}}
 
+/*
     /// <summary>
     /// Initializes a new instance of <see cref="{{typeName}}"/>.
     /// </summary>

@@ -191,23 +191,17 @@ export class CsharpTransformer extends BaseTransformer {
 
         fileObject.items = context.userContext;
 
-        /*
         if (fileObject.baseType === 'bit-string') {
-
-            try {
-                const def = Number.isInteger(context.traits.maximum) ? context.traits.maximum : Math.max(...fileObject.items.map(item => item.constant));
+            fileObject.hasRange = Object.hasOwn(context.traits, 'length');
+            if (fileObject.hasRange) {
+                fileObject.minimum = context.traits.length.minimum;
+                fileObject.maximum = context.traits.length.maximum;
             }
-            catch (error) {
-                console.log(fileObject);
+            else {
+                fileObject.length = Math.max(...fileObject.items.map(item => item.position)) + 1;
             }
-
-            const maximum = Number.isInteger(context.traits.maximum) ? context.traits.maximum : Math.max(...fileObject.items.map(item => item.constant));
-
-            const def = JSON.parse(JSON.stringify(context.definition));
-            def.type.bits = '...';
-            //console.log(JSON.stringify(def, null, 4), "\n")
+            console.log('Bit string', fileObject);
         }
-        */
 
         if (fileObject.baseType === 'enumerated') {
             const maximum = Number.isInteger(context.traits.maximum) ? context.traits.maximum : Math.max(...fileObject.items.map(item => item.constant));
