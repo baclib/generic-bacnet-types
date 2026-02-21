@@ -1,9 +1,46 @@
-
-
 /// <summary>
-/// TODO
+/// Represents the length constrained CharacterString {{bacnetName}} as defined in ANSI/ASHRAE 135-2024 Clause 21.
 /// </summary>
-public class {{className}}
+public readonly record struct {{className}}
 {
-    // TODO: CHARACTER STRING
+    /// <summary>
+    /// The minimum allowed length for an instance of <see cref="{{className}}"/>.
+    /// </summary>
+    public const int MinValue = {{length.minimum}};
+
+    /// <summary>
+    /// The maximum allowed length for an instance of <see cref="{{className}}"/>.
+    /// </summary>
+    public const int MaxValue = {{length.maximum}};
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="{{className}}"/> struct with the specified length constrained value.
+    /// </summary>
+    ///<param name="value">The length constrained value to be assigned to this instance.</param>
+    public {{className}}(CharacterString value)
+    {
+        if (value.Length < MinValue || value.Length > MaxValue)
+        {
+            throw new ArgumentOutOfRangeException(nameof(value), $"The length of the value must be between {MinValue} and {MaxValue} characters.");
+        }
+
+        Value = value;
+    }
+
+    /// <summary>
+    /// The length constrained value of this <see cref="{{className}}"/> instance.
+    /// </summary>
+    public CharacterString Value { get; }
+
+    /// <summary>
+    /// Implicitly converts an instance of <see cref="{{className}}"/> to a <see cref="CharacterString"/> by returning the underlying value.
+    /// </summary>
+    /// <param name="instance">The instance of <see cref="{{className}}"/> to be converted.</param>
+    public static implicit operator CharacterString({{className}} instance) => instance.Value;
+
+    /// <summary>
+    /// Explicitly converts a <see cref="CharacterString"/> to an instance of <see cref="{{className}}"/> by invoking the constructor to enforce length constraints.
+    /// </summary>
+    /// <param name="value">The length constrained value to be assigned to the new instance.</param>
+    public static explicit operator {{className}}(CharacterString value) => new(value);
 }

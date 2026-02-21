@@ -1,14 +1,12 @@
 // SPDX-FileCopyrightText: Copyright 2024-2026, The BAClib Initiative and Contributors
 // SPDX-License-Identifier: EPL-2.0
 
-import { writeFileSync } from 'fs';
+import { existsSync, writeFileSync } from 'fs';
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { BaseTransformer } from './base-transformer.js';
 import { TemplateEngine } from '../template-engine.js';
-import { TypeMapper } from '../type-mapper.js';
-import { type } from 'os';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -38,6 +36,10 @@ export class CsharpTransformer extends BaseTransformer {
         this.directory = this.joinRelativePath('..', '..', 'local-working-files', 'csharp');
         this.templatesDir = path.join(__dirname, '..', '..', 'templates', 'csharp');
 
+
+        this.predefinedTypesDir = path.join(__dirname, '..', 'csharp');
+
+
         // Initialize template engine
         this.typeMapper = null;
         this.templateEngine = null;
@@ -46,16 +48,8 @@ export class CsharpTransformer extends BaseTransformer {
     }
 
     async start() {
-
         await this.ensureDirectory(this.directory);
-
-        // Load mappings and initialize template engine
-        const mappingsPath = path.join(this.templatesDir, 'mappings.json');
-        const mappingsContent = await fs.readFile(mappingsPath, 'utf-8');
-        const mappings = JSON.parse(mappingsContent);
-
-        this.typeMapper = new TypeMapper('csharp', mappings);
-        this.templateEngine = new TemplateEngine(this.typeMapper);
+        this.templateEngine = new TemplateEngine();
     }
 
     getFileObject(context) {
@@ -146,8 +140,6 @@ export class CsharpTransformer extends BaseTransformer {
 
     mapToNative(className) {
         switch (className) {
-            case 'Boolean': return 'bool';
-            case 'Unsigned': return 'uint';
             case 'Integer': return 'int';
             case 'Real': return 'float';
             case 'Double': return 'double';
@@ -157,10 +149,6 @@ export class CsharpTransformer extends BaseTransformer {
     }
 
     startDefinition(context) {
-        if (context.fullname == 'authorization-scope') {
-            console.log(context);
-        }
-
         if (!context.traits) {
             const fileObject = this.getFileObject(context);
             const nativeName = this.mapToNative(fileObject.className);
@@ -207,7 +195,7 @@ export class CsharpTransformer extends BaseTransformer {
         if (fileObject.baseType === 'bit-string') {
 
             try {
-                const ddd = Number.isInteger(context.traits.maximum) ? context.traits.maximum : Math.max(...fileObject.items.map(item => item.constant));
+                const def = Number.isInteger(context.traits.maximum) ? context.traits.maximum : Math.max(...fileObject.items.map(item => item.constant));
             }
             catch (error) {
                 console.log(fileObject);
@@ -224,7 +212,7 @@ export class CsharpTransformer extends BaseTransformer {
         if (fileObject.baseType === 'enumerated') {
             const maximum = Number.isInteger(context.traits.maximum) ? context.traits.maximum : Math.max(...fileObject.items.map(item => item.constant));
             if (maximum < 256) {
-                 fileObject.enumBase = 'byte';
+                fileObject.enumBase = 'byte';
             } else if (maximum < 65536) {
                 fileObject.enumBase = 'ushort';
             } else {
@@ -259,31 +247,25 @@ export class CsharpTransformer extends BaseTransformer {
         context.userContext.push(itemData);
     }
 
-
-
-
-
-
-    renderWithTemplate(fileObject) {
-
-        const templatePath = path.join(this.templatesDir, 'levels.hbs');
-        this.templateEngine.render(templatePath, fileObject).then(content => {
-            writeFileSync(path.join(this.directory, fileObject.fileName), content);
-        });
-    }
-
-
     async afterProcessing(result) {
-
-
-
-        for (const fileObject of this.fileObjects) {
-            this.renderWithTemplate(fileObject);
+        const predefinedFiles = await fs.readdir(this.predefinedTypesDir);
+        for (const file of predefinedFiles) {
+            if (file.startsWith('Baclib.Bacnet.Types.') || file.endsWith('.cs')) {
+                const srcPath = path.join(this.predefinedTypesDir, file);
+                const destPath = path.join(this.directory, file);
+                await fs.copyFile(srcPath, destPath);
+            }
         }
-
-        // write this array to a JSON file for inspection
-        const outputPath = path.join(this.directory, 'all-definitions.json');
-        await fs.writeFile(outputPath, JSON.stringify(this.fileObjects, null, 4), 'utf-8');
-
+        const templatePath = path.join(this.templatesDir, 'levels.hbs');
+        for (const fileObject of this.fileObjects) {
+            const predefinedPath = path.join(this.predefinedTypesDir, fileObject.fileName);
+            if (existsSync(predefinedPath)) {
+                continue;
+            }
+            //console.log('Processing', fileObject.fileName);
+            this.templateEngine.render(templatePath, fileObject).then(content => {
+                writeFileSync(path.join(this.directory, fileObject.fileName), content);
+            });
+        }
     }
 }
