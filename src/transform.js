@@ -14,14 +14,18 @@ const __dirname = path.dirname(__filename);
  */
 
 import { traverseDefinitions } from './traverse.js';
-import { CsharpTransformer } from './transformers/csharp-transformer.js';
+import { MarkdownTransformer } from './markdown-transformer.js';
+
+const outputDir = path.join(__dirname, '..', 'local-working-files');
+
+// Ensure the output directory exists
+await fs.mkdir(outputDir, { recursive: true });
 
 // Create transformer instance with options
-const transformer = new CsharpTransformer({
+const transformer = new MarkdownTransformer({
     indentSize: 4,
     maxPadding: 48,
-    outputPath: 'definitions-output.md',
-    directory: path.join(__dirname, '..', 'local-working-files', 'csharp-output'),
+    outputPath: path.join(outputDir, 'definitions-output.md')
 });
 
 // Traverse all definitions using the markdown transformer

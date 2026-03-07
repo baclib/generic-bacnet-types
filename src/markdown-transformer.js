@@ -282,10 +282,10 @@ export class MarkdownTransformer {
         
         // Write the complete accumulated output to file
         await fs.writeFile(this.outputPath, this.output, 'utf8');
-        console.log(`Output written to: ${this.outputPath}`);
-        
+
         // Output to console for immediate inspection
         console.log(this.output);
+        console.log(`Output written to: ${this.outputPath}`);
     }
 
     /**

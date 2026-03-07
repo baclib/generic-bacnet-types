@@ -45,7 +45,7 @@ As a volunteer-driven project developed in contributors' free time, progress fol
 
 ## License
 
-Copyright 2024-2025, The BAClib Initiative and Contributors
+Copyright 2024-2026, The BAClib Initiative and Contributors
 
 All project files are provided under the terms of the [Eclipse Public License - v 2.0](https://www.eclipse.org/legal/epl-2.0/).
 

@@ -1,12 +1,18 @@
 {
     "name": "@baclib/generic-bacnet-types",
-    "version": "0.1.0",
-    "description": "A project for maintaining BACnet data types in a generic way, with tools to generate source code for different programming languages.",
+    "version": "1.0.0",
+    "description": "A project for maintaining BACnet data types in a generic way, with tools to help generate source code for different programming languages.",
     "type": "module",
     "main": "src/index.js",
+    "files": [
+        "definitions/",
+        "src/",
+        "LICENSE",
+        "NOTICE",
+        "README.md"
+    ],
     "scripts": {
-        "transform": "node src/transform.js",
-        "test": "node test/run-tests.js"
+        "transform": "node src/transform.js"
     },
     "keywords": [
         "bacnet",
@@ -29,7 +35,7 @@
         "url": "https://github.com/baclib/generic-bacnet-types/issues"
     },
     "homepage": "https://github.com/baclib/generic-bacnet-types#readme",
-    "devDependencies": {
-        "ajv": "^8.17.1"
+    "engines": {
+        "node": ">=22"
     }
 }
