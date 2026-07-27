@@ -17,7 +17,7 @@
             },
             {
                 "name": "value",
-                "type": "any",
+                "type": "any-primitive",
                 "optional": true,
                 "description": "The value associated with the name. Optional."
             }

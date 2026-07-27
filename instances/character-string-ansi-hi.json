@@ -1,0 +1,12 @@
+{
+    "root": "BAClib",
+    "type": "character-string",
+    "data": [
+        "# application-tagged Character String (tag 7, total length 3)",
+        "73",
+        "# encoding: ANSI X3.4 (0)",
+        "00",
+        "# payload: \"Hi\"",
+        "4869"
+    ]
+}

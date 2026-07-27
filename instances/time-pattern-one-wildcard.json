@@ -1,0 +1,16 @@
+{
+    "root": "BAClib",
+    "type": "time-pattern",
+    "data": [
+        "# application-tagged Time pattern (tag 11, length 4)",
+        "B4",
+        "# hour: 14",
+        "0E",
+        "# minute: 35",
+        "23",
+        "# second: 12",
+        "0C",
+        "# wildcard hundredths",
+        "FF"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "root": "BAClib",
+    "type": "double",
+    "data": [
+        "# application-tagged Double (tag 5, extended length follows)",
+        "55",
+        "# extended length: 8 bytes",
+        "08",
+        "# IEEE-754 double value 1.0",
+        "3FF0000000000000"
+    ]
+}

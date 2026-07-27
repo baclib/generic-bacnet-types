@@ -16,7 +16,7 @@
             },
             {
                 "name": "value",
-                "type": "any",
+                "type": "any-primitive",
                 "description": "The value to be applied at the specified time."
             }
         ]

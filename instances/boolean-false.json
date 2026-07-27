@@ -1,0 +1,8 @@
+{
+    "root": "BAClib",
+    "type": "boolean",
+    "data": [
+        "# application-tagged Boolean FALSE (tag 1, value encoded in LVT=0)",
+        "10"
+    ]
+}

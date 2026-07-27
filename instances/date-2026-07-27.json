@@ -1,0 +1,16 @@
+{
+    "root": "BAClib",
+    "type": "date",
+    "data": [
+        "# application-tagged Date (tag 10, length 4)",
+        "A4",
+        "# year offset from 1900: 126 => 2026",
+        "7E",
+        "# month: July",
+        "07",
+        "# day of month: 27",
+        "1B",
+        "# day of week: Monday (1)",
+        "01"
+    ]
+}

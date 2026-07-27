@@ -1,0 +1,10 @@
+{
+    "root": "BAClib",
+    "type": "integer",
+    "data": [
+        "# application-tagged Signed Integer (tag 3, length 1)",
+        "31",
+        "# value: -1 (two's complement)",
+        "FF"
+    ]
+}

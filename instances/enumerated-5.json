@@ -1,0 +1,10 @@
+{
+    "root": "BAClib",
+    "type": "enumerated",
+    "data": [
+        "# application-tagged Enumerated (tag 9, length 1)",
+        "91",
+        "# value: 5",
+        "05"
+    ]
+}

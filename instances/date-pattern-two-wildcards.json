@@ -1,0 +1,16 @@
+{
+    "root": "BAClib",
+    "type": "date-pattern",
+    "data": [
+        "# application-tagged Date pattern (tag 10, length 4)",
+        "A4",
+        "# year offset from 1900: 126 => 2026",
+        "7E",
+        "# month: July",
+        "07",
+        "# wildcard day of month",
+        "FF",
+        "# wildcard day of week",
+        "FF"
+    ]
+}

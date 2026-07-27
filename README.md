@@ -40,6 +40,7 @@ This project provides and maintains BACnet data types in a generic, language-agn
 ### Documentation
 
 - Detailed structure and schema rules for definition files: [docs/definitions-structure.md](docs/definitions-structure.md)
+- Compact format spec for instance files and parsing behavior: [docs/instances-structure.md](docs/instances-structure.md)
 
 ## The BAClib Initiative
 

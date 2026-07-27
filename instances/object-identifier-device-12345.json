@@ -1,0 +1,10 @@
+{
+    "root": "BAClib",
+    "type": "object-identifier",
+    "data": [
+        "# application-tagged Object Identifier (tag 12, length 4)",
+        "C4",
+        "# object-type=8 (device), instance=12345",
+        "02003039"
+    ]
+}

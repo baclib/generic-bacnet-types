@@ -1,0 +1,10 @@
+{
+    "root": "BAClib",
+    "type": "unsigned",
+    "data": [
+        "# application-tagged Unsigned (tag 2, length 1)",
+        "21",
+        "# value: 42",
+        "2A"
+    ]
+}
