@@ -12,7 +12,9 @@
         "README.md"
     ],
     "scripts": {
-        "transform": "node src/transform.js"
+        "transform": "node src/transform.js",
+        "validate:definitions": "node test/validate-definitions.js",
+        "resolve:numeric": "node src/resolve-numeric-base-type.js"
     },
     "keywords": [
         "bacnet",
@@ -30,6 +32,9 @@
     },
     "dependencies": {
         "handlebars": "^4.7.8"
+    },
+    "devDependencies": {
+        "ajv": "^8.20.0"
     },
     "bugs": {
         "url": "https://github.com/baclib/generic-bacnet-types/issues"

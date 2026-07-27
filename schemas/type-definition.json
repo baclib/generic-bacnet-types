@@ -5,6 +5,10 @@
     "description": "This schema defines a top-level BAClib data type. Types defined here can be referenced and reused in other schemas.",
     "type": "object",
     "properties": {
+        "metadata": {
+            "type": "object",
+            "description": "Optional metadata about the definition, such as licensing or provenance information."
+        },
         "alias": {
             "type": "string",
             "description": "An optional alternative name for the type."
@@ -28,6 +32,18 @@
     },
     "required": [
         "name"
+    ],
+    "oneOf": [
+        {
+            "required": [
+                "type"
+            ]
+        },
+        {
+            "required": [
+                "primitive"
+            ]
+        }
     ],
     "additionalProperties": false
 }

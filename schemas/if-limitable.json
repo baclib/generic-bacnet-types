@@ -18,8 +18,29 @@
             },
             "then": {
                 "properties": {
-                    "range": {
-                        "$ref": "./reuse-non-negative-integer-range.json"
+                    "minimum": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "minimum": 0
+                            },
+                            {
+                                "type": "string",
+                                "pattern": "^[0-9]+$"
+                            }
+                        ]
+                    },
+                    "maximum": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "minimum": 0
+                            },
+                            {
+                                "type": "string",
+                                "pattern": "^[0-9]+$"
+                            }
+                        ]
                     }
                 }
             }
@@ -28,20 +49,35 @@
             "if": {
                 "properties": {
                     "base": {
-                        "const": "signed"
+                        "const": "integer"
                     }
                 }
             },
             "then": {
                 "properties": {
                     "minimum": {
-                        "type": "integer"
+                        "anyOf": [
+                            {
+                                "type": "integer"
+                            },
+                            {
+                                "type": "string",
+                                "pattern": "^-?[0-9]+$"
+                            }
+                        ]
                     },
                     "maximum": {
-                        "type": "integer"
+                        "anyOf": [
+                            {
+                                "type": "integer"
+                            },
+                            {
+                                "type": "string",
+                                "pattern": "^-?[0-9]+$"
+                            }
+                        ]
                     }
-                },
-                "$ref": "#/$defs/any-of-properties"
+                }
             }
         },
         {
@@ -49,7 +85,7 @@
                 "properties": {
                     "base": {
                         "enum": [
-                            "float",
+                            "real",
                             "double"
                         ]
                     }
@@ -63,8 +99,7 @@
                     "maximum": {
                         "type": "number"
                     }
-                },
-                "$ref": "#/$defs/any-of-properties"
+                }
             }
         },
         {
@@ -72,9 +107,9 @@
                 "properties": {
                     "base": {
                         "enum": [
-                            "octetstring",
-                            "charstring",
-                            "bitstring"
+                            "octet-string",
+                            "character-string",
+                            "bit-string"
                         ]
                     }
                 }
@@ -87,30 +122,5 @@
                 }
             }
         }
-    ],
-    "$defs": {
-        "any-of-properties": {
-            "type": "object",
-            "anyOf": [
-                {
-                    "type": "object",
-                    "properties": {
-                        "minimum": true
-                    },
-                    "required": [
-                        "minimum"
-                    ]
-                },
-                {
-                    "type": "object",
-                    "properties": {
-                        "maximum": true
-                    },
-                    "required": [
-                        "maximum"
-                    ]
-                }
-            ]
-        }
-    }
+    ]
 }

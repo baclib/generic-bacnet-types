@@ -7,7 +7,7 @@
     "if": {
         "properties": {
             "base": {
-                "const": "bitstring"
+                "const": "bit-string"
             }
         }
     },

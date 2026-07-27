@@ -37,6 +37,10 @@ This project provides and maintains BACnet data types in a generic, language-agn
 2. **Run generators** (planned) to produce code or documentation for your target language or platform.
 3. **Integrate** the generated types into your BACnet application or tooling.
 
+### Documentation
+
+- Detailed structure and schema rules for definition files: [docs/definitions-structure.md](docs/definitions-structure.md)
+
 ## The BAClib Initiative
 
 The BAClib Initiative is a primarily recreational effort dedicated to building automation and control, providing free, libre, and open source software for everyone. Drawing on decades of experience with BACnet protocols and implementations, this initiative aims to create modern, well-designed tools and libraries that benefit the entire building automation community.

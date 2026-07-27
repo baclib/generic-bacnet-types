@@ -43,5 +43,6 @@
         {
             "$ref": "./if-sequence.json"
         }
-    ]
+    ],
+    "unevaluatedProperties": false
 }

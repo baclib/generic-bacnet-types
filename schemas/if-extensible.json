@@ -8,7 +8,7 @@
         "properties": {
             "base": {
                 "enum": [
-                    "bitstring",
+                    "bit-string",
                     "enumerated",
                     "choice"
                 ]
@@ -97,9 +97,17 @@
                 ]
             },
             "maximum": {
-                "type": "integer",
-                "minimum": 0,
-                "description": "The maximum value allowed for this type."
+                "description": "The maximum value allowed for this type.",
+                "anyOf": [
+                    {
+                        "type": "integer",
+                        "minimum": 0
+                    },
+                    {
+                        "type": "string",
+                        "pattern": "^[0-9]+$"
+                    }
+                ]
             }
         }
     }
