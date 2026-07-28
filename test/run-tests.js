@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: Copyright 2024-2026, The BAClib Initiative and Contributors
+// SPDX-FileCopyrightText: Copyright 2024-2026 The BAClib Initiative and Contributors
 // SPDX-License-Identifier: EPL-2.0
 
 import fs from 'node:fs/promises';
@@ -68,6 +68,15 @@ async function runTests(type, validate) {
     }
 }
 
+function stripMetadata(value) {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) {
+        return value;
+    }
+
+    const { metadata, ...rest } = value;
+    return rest;
+}
+
 async function runTestsForDefinitions(directoryPath) {
     const schemaId = "https://baclib.github.io/type-definition.json";
     const validate = ajv.getSchema(schemaId);
@@ -83,7 +92,7 @@ async function runTestsForDefinitions(directoryPath) {
         const data = JSON.parse(fileContent);
 
         test(`definition ${fileName} should be valid`, () => {
-            const valid = validate(data);
+            const valid = validate(stripMetadata(data));
             if (!valid) {
                 console.error(validate.errors);
                 throw new Error(`Definition ${fileName} is invalid.`);

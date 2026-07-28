@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: Copyright 2024-2026, The BAClib Initiative and Contributors
+// SPDX-FileCopyrightText: Copyright 2024-2026 The BAClib Initiative and Contributors
 // SPDX-License-Identifier: EPL-2.0
 
 import fs from 'node:fs/promises';
@@ -30,6 +30,15 @@ function formatError(error) {
     return `${pathPart} [${keywordPart}] ${messagePart}`;
 }
 
+function stripMetadata(value) {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) {
+        return value;
+    }
+
+    const { metadata, ...rest } = value;
+    return rest;
+}
+
 async function validateDefinitions(directoryPath) {
     const schemaId = 'https://baclib.github.io/type-definition.json';
     const validate = ajv.getSchema(schemaId);
@@ -48,7 +57,7 @@ async function validateDefinitions(directoryPath) {
         const filePath = path.join(directoryPath, fileName);
         const fileText = await fs.readFile(filePath, 'utf-8');
         const data = JSON.parse(fileText);
-        const valid = validate(data);
+        const valid = validate(stripMetadata(data));
 
         if (valid) {
             validCount += 1;

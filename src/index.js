@@ -2,3 +2,4 @@
 // SPDX-License-Identifier: EPL-2.0
 
 export { parseInstanceText, parseInstanceFile } from './instance-text.js';
+export { parseExampleText, parseExampleFile } from './example-parser.js';

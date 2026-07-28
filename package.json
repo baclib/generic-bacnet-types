@@ -14,6 +14,7 @@
     "scripts": {
         "transform": "node src/transform.js",
         "validate:definitions": "node test/validate-definitions.js",
+        "validate:samples": "node test/validate-samples.js",
         "resolve:numeric": "node src/resolve-numeric-base-type.js"
     },
     "keywords": [
