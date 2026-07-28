@@ -1,0 +1,106 @@
+{
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026 The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
+    "root": "BAClib",
+    "type": "octet-string",
+    "asdu": [
+        {
+            "name": "application-tagged-valid-empty",
+            "good": true,
+            "data": [
+                [ "60", "Application Tag 6, Length = 0" ],
+                [ "", "Octet String Value = empty" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-deadbeef",
+            "good": true,
+            "data": [
+                [ "64", "Application Tag 6, Length = 4" ],
+                [ "DE AD BE EF", "Octet String Value = DEADBEEF" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-8-byte",
+            "good": true,
+            "data": [
+                [ "65 08", "Application Tag 6, Length = 8" ],
+                [ "00 11 22 33 44 55 66 77", "Octet String Value = 0011223344556677" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "64", "Application Tag 6, Length = 4" ],
+                [ "DE AD BE", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-empty",
+            "good": true,
+            "data": [
+                [ "88", "Context Tag 8, Length = 0" ],
+                [ "", "Octet String Value = empty" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-deadbeef",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "DE AD BE EF", "Octet String Value = DEADBEEF" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-8-byte",
+            "good": true,
+            "data": [
+                [ "8D 08", "Context Tag 8, Length = 8" ],
+                [ "00 11 22 33 44 55 66 77", "Octet String Value = 0011223344556677" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "DE AD BE", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-empty",
+            "good": true,
+            "data": [
+                [ "F8 2A", "Context Tag 42, Length = 0" ],
+                [ "", "Octet String Value = empty" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-deadbeef",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "DE AD BE EF", "Octet String Value = DEADBEEF" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-8-byte",
+            "good": true,
+            "data": [
+                [ "FD 2A 08", "Context Tag 42, Length = 8" ],
+                [ "00 11 22 33 44 55 66 77", "Octet String Value = 0011223344556677" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "DE AD BE", "Invalid data: missing 1 byte" ]
+            ]
+        }
+    ]
+}

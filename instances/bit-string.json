@@ -1,0 +1,130 @@
+{
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026 The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
+    "root": "BAClib",
+    "type": "bit-string",
+    "asdu": [
+        {
+            "name": "application-tagged-valid-empty",
+            "good": true,
+            "data": [
+                [ "81", "Application Tag 8, Length = 1" ],
+                [ "00", "Bit String Value = empty (unused bits = 0)" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-8-bits",
+            "good": true,
+            "data": [
+                [ "82", "Application Tag 8, Length = 2" ],
+                [ "00 AC", "Bit String Value = 10101100 (unused bits = 0)" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-10-bits",
+            "good": true,
+            "data": [
+                [ "83", "Application Tag 8, Length = 3" ],
+                [ "06 AC C0", "Bit String Value = 1010110011 (unused bits = 6)" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "83", "Application Tag 8, Length = 3" ],
+                [ "06 AC", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-unused-bits",
+            "good": false,
+            "data": [
+                [ "82", "Application Tag 8, Length = 2" ],
+                [ "08 AC", "Invalid data: unused bits must be in range 0..7" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-empty",
+            "good": true,
+            "data": [
+                [ "89", "Context Tag 8, Length = 1" ],
+                [ "00", "Bit String Value = empty (unused bits = 0)" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-8-bits",
+            "good": true,
+            "data": [
+                [ "8A", "Context Tag 8, Length = 2" ],
+                [ "00 AC", "Bit String Value = 10101100 (unused bits = 0)" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-10-bits",
+            "good": true,
+            "data": [
+                [ "8B", "Context Tag 8, Length = 3" ],
+                [ "06 AC C0", "Bit String Value = 1010110011 (unused bits = 6)" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "8B", "Context Tag 8, Length = 3" ],
+                [ "06 AC", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-unused-bits",
+            "good": false,
+            "data": [
+                [ "8A", "Context Tag 8, Length = 2" ],
+                [ "08 AC", "Invalid data: unused bits must be in range 0..7" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-empty",
+            "good": true,
+            "data": [
+                [ "F9 2A", "Context Tag 42, Length = 1" ],
+                [ "00", "Bit String Value = empty (unused bits = 0)" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-8-bits",
+            "good": true,
+            "data": [
+                [ "FA 2A", "Context Tag 42, Length = 2" ],
+                [ "00 AC", "Bit String Value = 10101100 (unused bits = 0)" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-10-bits",
+            "good": true,
+            "data": [
+                [ "FB 2A", "Context Tag 42, Length = 3" ],
+                [ "06 AC C0", "Bit String Value = 1010110011 (unused bits = 6)" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "FB 2A", "Context Tag 42, Length = 3" ],
+                [ "06 AC", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-unused-bits",
+            "good": false,
+            "data": [
+                [ "FA 2A", "Context Tag 42, Length = 2" ],
+                [ "08 AC", "Invalid data: unused bits must be in range 0..7" ]
+            ]
+        }
+    ]
+}

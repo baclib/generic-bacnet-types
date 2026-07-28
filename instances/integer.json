@@ -1,0 +1,234 @@
+{
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026 The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
+    "root": "BAClib",
+    "type": "integer",
+    "asdu": [
+        {
+            "name": "application-tagged-valid-1-byte",
+            "good": true,
+            "data": [
+                [ "31", "Application Tag 3, Length = 1" ],
+                [ "FF", "Integer Value = -1" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-2-byte",
+            "good": true,
+            "data": [
+                [ "32", "Application Tag 3, Length = 2" ],
+                [ "01 02", "Integer Value = 258" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-3-byte",
+            "good": true,
+            "data": [
+                [ "33", "Application Tag 3, Length = 3" ],
+                [ "80 00 00", "Integer Value = -8388608" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-4-byte",
+            "good": true,
+            "data": [
+                [ "34", "Application Tag 3, Length = 4" ],
+                [ "01 02 03 04", "Integer Value = 16909060" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-5-byte",
+            "good": true,
+            "data": [
+                [ "35 05", "Application Tag 3, Length = 5" ],
+                [ "80 00 00 00 00", "Integer Value = -549755813888" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-6-byte",
+            "good": true,
+            "data": [
+                [ "35 06", "Application Tag 3, Length = 6" ],
+                [ "01 02 03 04 05 06", "Integer Value = 1108152157446" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-7-byte",
+            "good": true,
+            "data": [
+                [ "35 07", "Application Tag 3, Length = 7" ],
+                [ "01 02 03 04 05 06 07", "Integer Value = 283686952306183" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-8-byte",
+            "good": true,
+            "data": [
+                [ "35 08", "Application Tag 3, Length = 8" ],
+                [ "80 00 00 00 00 00 00 00", "Integer Value = -9223372036854775808" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "33", "Application Tag 3, Length = 3" ],
+                [ "01 02", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-leading-ff-negative",
+            "good": false,
+            "data": [
+                [ "32", "Application Tag 3, Length = 2" ],
+                [ "FF 80", "Invalid data: non-minimal integer encoding with leading 0xFF" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-1-byte",
+            "good": true,
+            "data": [
+                [ "89", "Context Tag 8, Length = 1" ],
+                [ "FF", "Integer Value = -1" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-2-byte",
+            "good": true,
+            "data": [
+                [ "8A", "Context Tag 8, Length = 2" ],
+                [ "01 02", "Integer Value = 258" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-3-byte",
+            "good": true,
+            "data": [
+                [ "8B", "Context Tag 8, Length = 3" ],
+                [ "80 00 00", "Integer Value = -8388608" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-4-byte",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "01 02 03 04", "Integer Value = 16909060" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-5-byte",
+            "good": true,
+            "data": [
+                [ "8D 05", "Context Tag 8, Length = 5" ],
+                [ "80 00 00 00 00", "Integer Value = -549755813888" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-6-byte",
+            "good": true,
+            "data": [
+                [ "8D 06", "Context Tag 8, Length = 6" ],
+                [ "01 02 03 04 05 06", "Integer Value = 1108152157446" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-7-byte",
+            "good": true,
+            "data": [
+                [ "8D 07", "Context Tag 8, Length = 7" ],
+                [ "01 02 03 04 05 06 07", "Integer Value = 283686952306183" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-8-byte",
+            "good": true,
+            "data": [
+                [ "8D 08", "Context Tag 8, Length = 8" ],
+                [ "80 00 00 00 00 00 00 00", "Integer Value = -9223372036854775808" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "01 02 03", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-1-byte",
+            "good": true,
+            "data": [
+                [ "F9 2A", "Context Tag 42, Length = 1" ],
+                [ "FF", "Integer Value = -1" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-2-byte",
+            "good": true,
+            "data": [
+                [ "FA 2A", "Context Tag 42, Length = 2" ],
+                [ "01 02", "Integer Value = 258" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-3-byte",
+            "good": true,
+            "data": [
+                [ "FB 2A", "Context Tag 42, Length = 3" ],
+                [ "80 00 00", "Integer Value = -8388608" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-4-byte",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "01 02 03 04", "Integer Value = 16909060" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-5-byte",
+            "good": true,
+            "data": [
+                [ "FD 2A 05", "Context Tag 42, Length = 5" ],
+                [ "80 00 00 00 00", "Integer Value = -549755813888" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-6-byte",
+            "good": true,
+            "data": [
+                [ "FD 2A 06", "Context Tag 42, Length = 6" ],
+                [ "01 02 03 04 05 06", "Integer Value = 1108152157446" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-7-byte",
+            "good": true,
+            "data": [
+                [ "FD 2A 07", "Context Tag 42, Length = 7" ],
+                [ "01 02 03 04 05 06 07", "Integer Value = 283686952306183" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-8-byte",
+            "good": true,
+            "data": [
+                [ "FD 2A 08", "Context Tag 42, Length = 8" ],
+                [ "80 00 00 00 00 00 00 00", "Integer Value = -9223372036854775808" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "FD 2A 08", "Context Tag 42, Length = 8" ],
+                [ "01 02 03 04 05 06 07", "Invalid data: missing 1 byte" ]
+            ]
+        }
+    ]
+}

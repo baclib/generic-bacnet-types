@@ -1,0 +1,226 @@
+{
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026 The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
+    "root": "BAClib",
+    "type": "enumerated",
+    "asdu": [
+        {
+            "name": "application-tagged-valid-1-byte",
+            "good": true,
+            "data": [
+                [ "91", "Application Tag 9, Length = 1" ],
+                [ "2A", "Enumerated Value = 42" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-2-byte",
+            "good": true,
+            "data": [
+                [ "92", "Application Tag 9, Length = 2" ],
+                [ "01 00", "Enumerated Value = 256" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-3-byte",
+            "good": true,
+            "data": [
+                [ "93", "Application Tag 9, Length = 3" ],
+                [ "01 00 00", "Enumerated Value = 65536" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-4-byte",
+            "good": true,
+            "data": [
+                [ "94", "Application Tag 9, Length = 4" ],
+                [ "01 00 00 00", "Enumerated Value = 16777216" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-5-byte",
+            "good": true,
+            "data": [
+                [ "95 05", "Application Tag 9, Length = 5" ],
+                [ "01 00 00 00 00", "Enumerated Value = 4294967296" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-6-byte",
+            "good": true,
+            "data": [
+                [ "95 06", "Application Tag 9, Length = 6" ],
+                [ "01 00 00 00 00 00", "Enumerated Value = 1099511627776" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-7-byte",
+            "good": true,
+            "data": [
+                [ "95 07", "Application Tag 9, Length = 7" ],
+                [ "01 00 00 00 00 00 00", "Enumerated Value = 281474976710656" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-8-byte",
+            "good": true,
+            "data": [
+                [ "95 08", "Application Tag 9, Length = 8" ],
+                [ "01 00 00 00 00 00 00 00", "Enumerated Value = 72057594037927936" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "93", "Application Tag 9, Length = 3" ],
+                [ "01 00", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-1-byte",
+            "good": true,
+            "data": [
+                [ "89", "Context Tag 8, Length = 1" ],
+                [ "2A", "Enumerated Value = 42" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-2-byte",
+            "good": true,
+            "data": [
+                [ "8A", "Context Tag 8, Length = 2" ],
+                [ "01 00", "Enumerated Value = 256" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-3-byte",
+            "good": true,
+            "data": [
+                [ "8B", "Context Tag 8, Length = 3" ],
+                [ "01 00 00", "Enumerated Value = 65536" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-4-byte",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "01 00 00 00", "Enumerated Value = 16777216" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-5-byte",
+            "good": true,
+            "data": [
+                [ "8D 05", "Context Tag 8, Length = 5" ],
+                [ "01 00 00 00 00", "Enumerated Value = 4294967296" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-6-byte",
+            "good": true,
+            "data": [
+                [ "8D 06", "Context Tag 8, Length = 6" ],
+                [ "01 00 00 00 00 00", "Enumerated Value = 1099511627776" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-7-byte",
+            "good": true,
+            "data": [
+                [ "8D 07", "Context Tag 8, Length = 7" ],
+                [ "01 00 00 00 00 00 00", "Enumerated Value = 281474976710656" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-8-byte",
+            "good": true,
+            "data": [
+                [ "8D 08", "Context Tag 8, Length = 8" ],
+                [ "01 00 00 00 00 00 00 00", "Enumerated Value = 72057594037927936" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "01 00 00", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-1-byte",
+            "good": true,
+            "data": [
+                [ "F9 2A", "Context Tag 42, Length = 1" ],
+                [ "2A", "Enumerated Value = 42" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-2-byte",
+            "good": true,
+            "data": [
+                [ "FA 2A", "Context Tag 42, Length = 2" ],
+                [ "01 00", "Enumerated Value = 256" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-3-byte",
+            "good": true,
+            "data": [
+                [ "FB 2A", "Context Tag 42, Length = 3" ],
+                [ "01 00 00", "Enumerated Value = 65536" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-4-byte",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "01 00 00 00", "Enumerated Value = 16777216" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-5-byte",
+            "good": true,
+            "data": [
+                [ "FD 2A 05", "Context Tag 42, Length = 5" ],
+                [ "01 00 00 00 00", "Enumerated Value = 4294967296" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-6-byte",
+            "good": true,
+            "data": [
+                [ "FD 2A 06", "Context Tag 42, Length = 6" ],
+                [ "01 00 00 00 00 00", "Enumerated Value = 1099511627776" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-7-byte",
+            "good": true,
+            "data": [
+                [ "FD 2A 07", "Context Tag 42, Length = 7" ],
+                [ "01 00 00 00 00 00 00", "Enumerated Value = 281474976710656" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-8-byte",
+            "good": true,
+            "data": [
+                [ "FD 2A 08", "Context Tag 42, Length = 8" ],
+                [ "01 00 00 00 00 00 00 00", "Enumerated Value = 72057594037927936" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "FD 2A 08", "Context Tag 42, Length = 8" ],
+                [ "01 00 00 00 00 00 00", "Invalid data: missing 1 byte" ]
+            ]
+        }
+    ]
+}

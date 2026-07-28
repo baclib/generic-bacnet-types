@@ -1,0 +1,130 @@
+{
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026 The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
+    "root": "BAClib",
+    "type": "character-string",
+    "asdu": [
+        {
+            "name": "application-tagged-valid-utf8-empty",
+            "good": true,
+            "data": [
+                [ "71", "Application Tag 7, Length = 1" ],
+                [ "00", "Character Set UTF-8, empty string" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-utf8-hi",
+            "good": true,
+            "data": [
+                [ "73", "Application Tag 7, Length = 3" ],
+                [ "00 48 69", "Character Set UTF-8, text = Hi" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-utf8-francais",
+            "good": true,
+            "data": [
+                [ "75 0A", "Application Tag 7, Length = 10" ],
+                [ "00 46 72 61 6E C3 A7 61 69 73", "Character Set UTF-8, text = Français" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-utf8-bacnet-string",
+            "good": true,
+            "data": [
+                [ "75 16", "Application Tag 7, Length = 22" ],
+                [ "00 54 68 65 20 42 41 43 6C 69 62 20 49 6E 69 74 69 61 74 69 76 65", "Character Set UTF-8, text = The BAClib Initiative" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-dbcs-codepage-850",
+            "good": true,
+            "data": [
+                [ "75 1B", "Application Tag 7, Length = 27" ],
+                [ "01 03 52 54 68 69 73 20 69 73 20 61 20 42 41 43 6E 65 74 20 53 74 72 69 6E 67 21", "Character Set DBCS, code page 850" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-ucs2-hi",
+            "good": true,
+            "data": [
+                [ "75 05", "Application Tag 7, Length = 5" ],
+                [ "04 00 48 00 69", "Character Set UCS-2, text = Hi" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-ucs2-bacnet",
+            "good": true,
+            "data": [
+                [ "75 2B", "Application Tag 7, Length = 43" ],
+                [ "04 00 54 00 68 00 65 00 20 00 42 00 41 00 43 00 6C 00 69 00 62 00 20 00 49 00 6E 00 69 00 74 00 69 00 61 00 74 00 69 00 76 00 65", "Character Set UCS-2, text = The BAClib Initiative" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-ucs4-hi",
+            "good": true,
+            "data": [
+                [ "75 09", "Application Tag 7, Length = 9" ],
+                [ "03 00 00 00 48 00 00 00 69", "Character Set UCS-4, text = Hi" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-iso8859-1-gruss",
+            "good": true,
+            "data": [
+                [ "75 05", "Application Tag 7, Length = 5" ],
+                [ "05 47 72 FC DF", "Character Set ISO 8859-1, text = Grüß" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-reserved-charset",
+            "good": false,
+            "data": [
+                [ "73", "Application Tag 7, Length = 3" ],
+                [ "06 48 69", "Invalid data: reserved character set 0x06" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-truncated-utf8",
+            "good": false,
+            "data": [
+                [ "75 0A", "Application Tag 7, Length = 10" ],
+                [ "00 46 72 61 6E C3 A7 61 69", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-truncated-dbcs-codepage",
+            "good": false,
+            "data": [
+                [ "75 1B", "Application Tag 7, Length = 27" ],
+                [ "01 03 52 54 68 69 73 20 69 73 20 61 20 42 41 43 6E 65 74 20 53 74 72 69 6E 67", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-truncated-ucs2",
+            "good": false,
+            "data": [
+                [ "75 05", "Application Tag 7, Length = 5" ],
+                [ "04 00 48 00", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-truncated-ucs4",
+            "good": false,
+            "data": [
+                [ "75 09", "Application Tag 7, Length = 9" ],
+                [ "03 00 00 00 48 00 00 00", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-invalid-length-zero",
+            "good": false,
+            "data": [
+                [ "70", "Application Tag 7, Length = 0" ],
+                [ "", "Invalid data: missing charset octet" ]
+            ]
+        }
+    ]
+}

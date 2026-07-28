@@ -1,0 +1,274 @@
+{
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026 The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
+    "root": "BAClib",
+    "type": "week-n-day",
+    "asdu": [
+        {
+            "name": "application-tagged-valid-july-week-3-monday",
+            "good": true,
+            "data": [
+                [ "63", "Application Tag 6, Length = 3" ],
+                [ "07 03 01", "Week-N-Day = July, week 3, Monday" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-any-month-any-week-any-day",
+            "good": true,
+            "data": [
+                [ "63", "Application Tag 6, Length = 3" ],
+                [ "FF FF FF", "Week-N-Day = any month, any week, any day" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-odd-months-last-7-days-sunday",
+            "good": true,
+            "data": [
+                [ "63", "Application Tag 6, Length = 3" ],
+                [ "0D 06 07", "Week-N-Day = odd months, last 7 days, Sunday" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-even-months-week-8-friday",
+            "good": true,
+            "data": [
+                [ "63", "Application Tag 6, Length = 3" ],
+                [ "0E 08 05", "Week-N-Day = even months, week prior to last 14 days, Friday" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-december-any-week-wednesday",
+            "good": true,
+            "data": [
+                [ "63", "Application Tag 6, Length = 3" ],
+                [ "0C FF 03", "Week-N-Day = December, any week, Wednesday" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-january-week-5-any-day",
+            "good": true,
+            "data": [
+                [ "63", "Application Tag 6, Length = 3" ],
+                [ "01 05 FF", "Week-N-Day = January, week 5, any day" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-november-week-9-tuesday",
+            "good": true,
+            "data": [
+                [ "63", "Application Tag 6, Length = 3" ],
+                [ "0B 09 02", "Week-N-Day = November, week 9, Tuesday" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-invalid-month",
+            "good": false,
+            "data": [
+                [ "63", "Application Tag 6, Length = 3" ],
+                [ "00 03 01", "Invalid data: month must be 1..14 or FF" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-invalid-week",
+            "good": false,
+            "data": [
+                [ "63", "Application Tag 6, Length = 3" ],
+                [ "07 0A 01", "Invalid data: week-of-month must be 1..9 or FF" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-invalid-day",
+            "good": false,
+            "data": [
+                [ "63", "Application Tag 6, Length = 3" ],
+                [ "07 03 08", "Invalid data: day-of-week must be 1..7 or FF" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "63", "Application Tag 6, Length = 3" ],
+                [ "07 03", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-july-week-3-monday",
+            "good": true,
+            "data": [
+                [ "8B", "Context Tag 8, Length = 3" ],
+                [ "07 03 01", "Week-N-Day = July, week 3, Monday" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-any-month-any-week-any-day",
+            "good": true,
+            "data": [
+                [ "8B", "Context Tag 8, Length = 3" ],
+                [ "FF FF FF", "Week-N-Day = any month, any week, any day" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-odd-months-last-7-days-sunday",
+            "good": true,
+            "data": [
+                [ "8B", "Context Tag 8, Length = 3" ],
+                [ "0D 06 07", "Week-N-Day = odd months, last 7 days, Sunday" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-even-months-week-8-friday",
+            "good": true,
+            "data": [
+                [ "8B", "Context Tag 8, Length = 3" ],
+                [ "0E 08 05", "Week-N-Day = even months, week prior to last 14 days, Friday" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-december-any-week-wednesday",
+            "good": true,
+            "data": [
+                [ "8B", "Context Tag 8, Length = 3" ],
+                [ "0C FF 03", "Week-N-Day = December, any week, Wednesday" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-january-week-5-any-day",
+            "good": true,
+            "data": [
+                [ "8B", "Context Tag 8, Length = 3" ],
+                [ "01 05 FF", "Week-N-Day = January, week 5, any day" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-november-week-9-tuesday",
+            "good": true,
+            "data": [
+                [ "8B", "Context Tag 8, Length = 3" ],
+                [ "0B 09 02", "Week-N-Day = November, week 9, Tuesday" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-invalid-month",
+            "good": false,
+            "data": [
+                [ "8B", "Context Tag 8, Length = 3" ],
+                [ "00 03 01", "Invalid data: month must be 1..14 or FF" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-invalid-week",
+            "good": false,
+            "data": [
+                [ "8B", "Context Tag 8, Length = 3" ],
+                [ "07 0A 01", "Invalid data: week-of-month must be 1..9 or FF" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-invalid-day",
+            "good": false,
+            "data": [
+                [ "8B", "Context Tag 8, Length = 3" ],
+                [ "07 03 08", "Invalid data: day-of-week must be 1..7 or FF" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "8B", "Context Tag 8, Length = 3" ],
+                [ "07 03", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-july-week-3-monday",
+            "good": true,
+            "data": [
+                [ "FB 2A", "Context Tag 42, Length = 3" ],
+                [ "07 03 01", "Week-N-Day = July, week 3, Monday" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-any-month-any-week-any-day",
+            "good": true,
+            "data": [
+                [ "FB 2A", "Context Tag 42, Length = 3" ],
+                [ "FF FF FF", "Week-N-Day = any month, any week, any day" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-odd-months-last-7-days-sunday",
+            "good": true,
+            "data": [
+                [ "FB 2A", "Context Tag 42, Length = 3" ],
+                [ "0D 06 07", "Week-N-Day = odd months, last 7 days, Sunday" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-even-months-week-8-friday",
+            "good": true,
+            "data": [
+                [ "FB 2A", "Context Tag 42, Length = 3" ],
+                [ "0E 08 05", "Week-N-Day = even months, week prior to last 14 days, Friday" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-december-any-week-wednesday",
+            "good": true,
+            "data": [
+                [ "FB 2A", "Context Tag 42, Length = 3" ],
+                [ "0C FF 03", "Week-N-Day = December, any week, Wednesday" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-january-week-5-any-day",
+            "good": true,
+            "data": [
+                [ "FB 2A", "Context Tag 42, Length = 3" ],
+                [ "01 05 FF", "Week-N-Day = January, week 5, any day" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-november-week-9-tuesday",
+            "good": true,
+            "data": [
+                [ "FB 2A", "Context Tag 42, Length = 3" ],
+                [ "0B 09 02", "Week-N-Day = November, week 9, Tuesday" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-invalid-month",
+            "good": false,
+            "data": [
+                [ "FB 2A", "Context Tag 42, Length = 3" ],
+                [ "00 03 01", "Invalid data: month must be 1..14 or FF" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-invalid-week",
+            "good": false,
+            "data": [
+                [ "FB 2A", "Context Tag 42, Length = 3" ],
+                [ "07 0A 01", "Invalid data: week-of-month must be 1..9 or FF" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-invalid-day",
+            "good": false,
+            "data": [
+                [ "FB 2A", "Context Tag 42, Length = 3" ],
+                [ "07 03 08", "Invalid data: day-of-week must be 1..7 or FF" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "FB 2A", "Context Tag 42, Length = 3" ],
+                [ "07 03", "Invalid data: missing 1 byte" ]
+            ]
+        }
+    ]
+}

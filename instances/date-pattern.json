@@ -1,0 +1,346 @@
+{
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026 The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
+    "root": "BAClib",
+    "type": "date-pattern",
+    "asdu": [
+        {
+            "name": "application-tagged-valid-exact-2026-07-27",
+            "good": true,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7E 07 1B 01", "Date Pattern = 2026-07-27 (Monday)" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-year-wildcard",
+            "good": true,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "FF 07 1B 01", "Date Pattern = any year, 07-27 (Monday)" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-month-wildcard",
+            "good": true,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7E FF 1B FF", "Date Pattern = 2026, any month, day 27, any weekday" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-all-wildcard",
+            "good": true,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "FF FF FF FF", "Date Pattern = all wildcard" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-odd-months",
+            "good": true,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7E 0D 1B FF", "Date Pattern = 2026, odd months, day 27, any weekday" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-even-months",
+            "good": true,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7E 0E 1B FF", "Date Pattern = 2026, even months, day 27, any weekday" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-last-day-of-month",
+            "good": true,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7E 07 20 FF", "Date Pattern = 2026-07, last day of month" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-odd-days-of-month",
+            "good": true,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7E 07 21 FF", "Date Pattern = 2026-07, odd days of month" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-even-days-of-month",
+            "good": true,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7E 07 22 FF", "Date Pattern = 2026-07, even days of month" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-leap-day",
+            "good": true,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7C 02 1D 04", "Date Pattern = 2024-02-29 (Thursday)" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-invalid-month",
+            "good": false,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7E 0D 1B 01", "Invalid data: month must be 1..12 or FF" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-invalid-day-of-week",
+            "good": false,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7E 07 1B 08", "Invalid data: day-of-week must be 1..7 or FF" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-invalid-calendar-day",
+            "good": false,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7D 04 1F 04", "Invalid data: 2025-04-31 does not exist" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7E 07 1B", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-exact-2026-07-27",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7E 07 1B 01", "Date Pattern = 2026-07-27 (Monday)" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-year-wildcard",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "FF 07 1B 01", "Date Pattern = any year, 07-27 (Monday)" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-month-wildcard",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7E FF 1B FF", "Date Pattern = 2026, any month, day 27, any weekday" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-all-wildcard",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "FF FF FF FF", "Date Pattern = all wildcard" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-odd-months",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7E 0D 1B FF", "Date Pattern = 2026, odd months, day 27, any weekday" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-even-months",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7E 0E 1B FF", "Date Pattern = 2026, even months, day 27, any weekday" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-last-day-of-month",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7E 07 20 FF", "Date Pattern = 2026-07, last day of month" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-odd-days-of-month",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7E 07 21 FF", "Date Pattern = 2026-07, odd days of month" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-even-days-of-month",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7E 07 22 FF", "Date Pattern = 2026-07, even days of month" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-leap-day",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7C 02 1D 04", "Date Pattern = 2024-02-29 (Thursday)" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-invalid-month",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7E 0D 1B 01", "Invalid data: month must be 1..12 or FF" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-invalid-day-of-week",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7E 07 1B 08", "Invalid data: day-of-week must be 1..7 or FF" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-invalid-calendar-day",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7D 04 1F 04", "Invalid data: 2025-04-31 does not exist" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7E 07 1B", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-exact-2026-07-27",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7E 07 1B 01", "Date Pattern = 2026-07-27 (Monday)" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-year-wildcard",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "FF 07 1B 01", "Date Pattern = any year, 07-27 (Monday)" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-month-wildcard",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7E FF 1B FF", "Date Pattern = 2026, any month, day 27, any weekday" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-all-wildcard",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "FF FF FF FF", "Date Pattern = all wildcard" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-odd-months",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7E 0D 1B FF", "Date Pattern = 2026, odd months, day 27, any weekday" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-even-months",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7E 0E 1B FF", "Date Pattern = 2026, even months, day 27, any weekday" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-last-day-of-month",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7E 07 20 FF", "Date Pattern = 2026-07, last day of month" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-odd-days-of-month",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7E 07 21 FF", "Date Pattern = 2026-07, odd days of month" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-even-days-of-month",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7E 07 22 FF", "Date Pattern = 2026-07, even days of month" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-leap-day",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7C 02 1D 04", "Date Pattern = 2024-02-29 (Thursday)" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-invalid-month",
+            "good": false,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7E 0D 1B 01", "Invalid data: month must be 1..12 or FF" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-invalid-day-of-week",
+            "good": false,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7E 07 1B 08", "Invalid data: day-of-week must be 1..7 or FF" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-invalid-calendar-day",
+            "good": false,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7D 04 1F 04", "Invalid data: 2025-04-31 does not exist" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7E 07 1B", "Invalid data: missing 1 byte" ]
+            ]
+        }
+    ]
+}

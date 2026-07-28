@@ -1,0 +1,130 @@
+{
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026 The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
+    "root": "BAClib",
+    "type": "real",
+    "asdu": [
+        {
+            "name": "application-tagged-valid-plus-one",
+            "good": true,
+            "data": [
+                [ "44", "Application Tag 4, Length = 4" ],
+                [ "3F 80 00 00", "Real Value = 1.0" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-minus-one",
+            "good": true,
+            "data": [
+                [ "44", "Application Tag 4, Length = 4" ],
+                [ "BF 80 00 00", "Real Value = -1.0" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-plus-infinity",
+            "good": true,
+            "data": [
+                [ "44", "Application Tag 4, Length = 4" ],
+                [ "7F 80 00 00", "Real Value = +Infinity" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-minus-infinity",
+            "good": true,
+            "data": [
+                [ "44", "Application Tag 4, Length = 4" ],
+                [ "FF 80 00 00", "Real Value = -Infinity" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "44", "Application Tag 4, Length = 4" ],
+                [ "3F 80 00", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-plus-one",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "3F 80 00 00", "Real Value = 1.0" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-minus-one",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "BF 80 00 00", "Real Value = -1.0" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-plus-infinity",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7F 80 00 00", "Real Value = +Infinity" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-minus-infinity",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "FF 80 00 00", "Real Value = -Infinity" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "3F 80 00", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-plus-one",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "3F 80 00 00", "Real Value = 1.0" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-minus-one",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "BF 80 00 00", "Real Value = -1.0" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-plus-infinity",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7F 80 00 00", "Real Value = +Infinity" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-minus-infinity",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "FF 80 00 00", "Real Value = -Infinity" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "3F 80 00", "Invalid data: missing 1 byte" ]
+            ]
+        }
+    ]
+}

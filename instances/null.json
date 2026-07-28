@@ -1,8 +1,55 @@
 {
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026 The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
     "root": "BAClib",
     "type": "null",
-    "data": [
-        "# application-tagged Null (tag 0, length/value 0)",
-        "00"
+    "asdu": [
+        {
+            "name": "application-tagged-valid",
+            "good": true,
+            "data": [
+                [ "00", "Application Tag 0, Length = 0" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong",
+            "good": false,
+            "data": [
+                [ "01", "Application Tag 0, Length = 1" ],
+                [ "FF", "Invalid data"]
+            ]
+        },
+        {
+            "name": "context-tagged-valid",
+            "good": true,
+            "data": [
+                [ "88", "Context Tag 8, Length = 0" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong",
+            "good": false,
+            "data": [
+                [ "89", "Context Tag 8, Length = 1" ],
+                [ "FF", "Invalid data"]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid",
+            "good": true,
+            "data": [
+                [ "F8 2A", "Context Tag 42, Length = 0" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong",
+            "good": false,
+            "data": [
+                [ "FD 2A 12", "Context Tag 42, Length = 18" ],
+                [ "01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18", "Invalid data" ]
+            ]
+        }
     ]
 }

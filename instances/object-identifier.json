@@ -1,0 +1,130 @@
+{
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026 The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
+    "root": "BAClib",
+    "type": "object-identifier",
+    "asdu": [
+        {
+            "name": "application-tagged-valid-device-12345",
+            "good": true,
+            "data": [
+                [ "C4", "Application Tag 12, Length = 4" ],
+                [ "02 00 30 39", "Object Identifier: object-type = 8 (device), instance = 12345" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-analog-input-1",
+            "good": true,
+            "data": [
+                [ "C4", "Application Tag 12, Length = 4" ],
+                [ "00 00 00 01", "Object Identifier: object-type = 0 (analog-input), instance = 1" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-binary-output-4000",
+            "good": true,
+            "data": [
+                [ "C4", "Application Tag 12, Length = 4" ],
+                [ "01 00 0F A0", "Object Identifier: object-type = 4 (binary-output), instance = 4000" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-max-values",
+            "good": true,
+            "data": [
+                [ "C4", "Application Tag 12, Length = 4" ],
+                [ "FF FF FF FF", "Object Identifier: object-type = 1023, instance = 4194303" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "C4", "Application Tag 12, Length = 4" ],
+                [ "02 00 30", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-device-12345",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "02 00 30 39", "Object Identifier: object-type = 8 (device), instance = 12345" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-analog-input-1",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "00 00 00 01", "Object Identifier: object-type = 0 (analog-input), instance = 1" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-binary-output-4000",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "01 00 0F A0", "Object Identifier: object-type = 4 (binary-output), instance = 4000" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-max-values",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "FF FF FF FF", "Object Identifier: object-type = 1023, instance = 4194303" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "02 00 30", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-device-12345",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "02 00 30 39", "Object Identifier: object-type = 8 (device), instance = 12345" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-analog-input-1",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "00 00 00 01", "Object Identifier: object-type = 0 (analog-input), instance = 1" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-binary-output-4000",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "01 00 0F A0", "Object Identifier: object-type = 4 (binary-output), instance = 4000" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-max-values",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "FF FF FF FF", "Object Identifier: object-type = 1023, instance = 4194303" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "02 00 30", "Invalid data: missing 1 byte" ]
+            ]
+        }
+    ]
+}

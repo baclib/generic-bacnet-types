@@ -1,0 +1,202 @@
+{
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026 The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
+    "root": "BAClib",
+    "type": "date",
+    "asdu": [
+        {
+            "name": "application-tagged-valid-2026-07-27",
+            "good": true,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7E 07 1B 01", "Date Value = 2026-07-27 (Monday)" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-2024-02-29",
+            "good": true,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7C 02 1D 04", "Date Value = 2024-02-29 (Thursday)" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-all-wildcard",
+            "good": true,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "FF FF FF FF", "Date Value = all wildcard (special exception)" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-partial-wildcard",
+            "good": false,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7E 07 FF 01", "Invalid data: partial wildcard is not allowed for date" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-invalid-calendar-date",
+            "good": false,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7D 04 1F 04", "Invalid data: 2025-04-31 does not exist" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-invalid-month",
+            "good": false,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7E 0D 01 03", "Invalid data: month must be 1..12" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-invalid-day-of-week",
+            "good": false,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7E 07 1B 08", "Invalid data: day-of-week must be 1..7" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "A4", "Application Tag 10, Length = 4" ],
+                [ "7E 07 1B", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-2026-07-27",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7E 07 1B 01", "Date Value = 2026-07-27 (Monday)" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-2024-02-29",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7C 02 1D 04", "Date Value = 2024-02-29 (Thursday)" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-all-wildcard",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "FF FF FF FF", "Date Value = all wildcard (special exception)" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-partial-wildcard",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7E 07 FF 01", "Invalid data: partial wildcard is not allowed for date" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-invalid-calendar-date",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7D 04 1F 04", "Invalid data: 2025-04-31 does not exist" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-invalid-month",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7E 0D 01 03", "Invalid data: month must be 1..12" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-invalid-day-of-week",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7E 07 1B 08", "Invalid data: day-of-week must be 1..7" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "7E 07 1B", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-2026-07-27",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7E 07 1B 01", "Date Value = 2026-07-27 (Monday)" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-2024-02-29",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7C 02 1D 04", "Date Value = 2024-02-29 (Thursday)" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-all-wildcard",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "FF FF FF FF", "Date Value = all wildcard (special exception)" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-partial-wildcard",
+            "good": false,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7E 07 FF 01", "Invalid data: partial wildcard is not allowed for date" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-invalid-calendar-date",
+            "good": false,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7D 04 1F 04", "Invalid data: 2025-04-31 does not exist" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-invalid-month",
+            "good": false,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7E 0D 01 03", "Invalid data: month must be 1..12" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-invalid-day-of-week",
+            "good": false,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7E 07 1B 08", "Invalid data: day-of-week must be 1..7" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "7E 07 1B", "Invalid data: missing 1 byte" ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,250 @@
+{
+    "metadata": {
+        "SPDX-FileCopyrightText": "Copyright 2024-2026 The BAClib Initiative and Contributors",
+        "SPDX-License-Identifier": "EPL-2.0"
+    },
+    "root": "BAClib",
+    "type": "time",
+    "asdu": [
+        {
+            "name": "application-tagged-valid-00-00-00-00",
+            "good": true,
+            "data": [
+                [ "B4", "Application Tag 11, Length = 4" ],
+                [ "00 00 00 00", "Time Value = 00:00:00.00" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-14-35-12-50",
+            "good": true,
+            "data": [
+                [ "B4", "Application Tag 11, Length = 4" ],
+                [ "0E 23 0C 32", "Time Value = 14:35:12.50" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-23-59-59-99",
+            "good": true,
+            "data": [
+                [ "B4", "Application Tag 11, Length = 4" ],
+                [ "17 3B 3B 63", "Time Value = 23:59:59.99" ]
+            ]
+        },
+        {
+            "name": "application-tagged-valid-all-wildcard",
+            "good": true,
+            "data": [
+                [ "B4", "Application Tag 11, Length = 4" ],
+                [ "FF FF FF FF", "Time Value = all wildcard (special exception)" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-partial-wildcard",
+            "good": false,
+            "data": [
+                [ "B4", "Application Tag 11, Length = 4" ],
+                [ "0E 23 FF 32", "Invalid data: partial wildcard is not allowed for time" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-hour-24",
+            "good": false,
+            "data": [
+                [ "B4", "Application Tag 11, Length = 4" ],
+                [ "18 00 00 00", "Invalid data: hour must be 0..23" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-minute-60",
+            "good": false,
+            "data": [
+                [ "B4", "Application Tag 11, Length = 4" ],
+                [ "17 3C 00 00", "Invalid data: minute must be 0..59" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-second-60",
+            "good": false,
+            "data": [
+                [ "B4", "Application Tag 11, Length = 4" ],
+                [ "17 3B 3C 00", "Invalid data: second must be 0..59" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-hundredths-100",
+            "good": false,
+            "data": [
+                [ "B4", "Application Tag 11, Length = 4" ],
+                [ "17 3B 3B 64", "Invalid data: hundredths must be 0..99" ]
+            ]
+        },
+        {
+            "name": "application-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "B4", "Application Tag 11, Length = 4" ],
+                [ "0E 23 0C", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-00-00-00-00",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "00 00 00 00", "Time Value = 00:00:00.00" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-14-35-12-50",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "0E 23 0C 32", "Time Value = 14:35:12.50" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-23-59-59-99",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "17 3B 3B 63", "Time Value = 23:59:59.99" ]
+            ]
+        },
+        {
+            "name": "context-tagged-valid-all-wildcard",
+            "good": true,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "FF FF FF FF", "Time Value = all wildcard (special exception)" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-partial-wildcard",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "0E 23 FF 32", "Invalid data: partial wildcard is not allowed for time" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-hour-24",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "18 00 00 00", "Invalid data: hour must be 0..23" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-minute-60",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "17 3C 00 00", "Invalid data: minute must be 0..59" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-second-60",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "17 3B 3C 00", "Invalid data: second must be 0..59" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-hundredths-100",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "17 3B 3B 64", "Invalid data: hundredths must be 0..99" ]
+            ]
+        },
+        {
+            "name": "context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "8C", "Context Tag 8, Length = 4" ],
+                [ "0E 23 0C", "Invalid data: missing 1 byte" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-00-00-00-00",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "00 00 00 00", "Time Value = 00:00:00.00" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-14-35-12-50",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "0E 23 0C 32", "Time Value = 14:35:12.50" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-23-59-59-99",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "17 3B 3B 63", "Time Value = 23:59:59.99" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-valid-all-wildcard",
+            "good": true,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "FF FF FF FF", "Time Value = all wildcard (special exception)" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-partial-wildcard",
+            "good": false,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "0E 23 FF 32", "Invalid data: partial wildcard is not allowed for time" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-hour-24",
+            "good": false,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "18 00 00 00", "Invalid data: hour must be 0..23" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-minute-60",
+            "good": false,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "17 3C 00 00", "Invalid data: minute must be 0..59" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-second-60",
+            "good": false,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "17 3B 3C 00", "Invalid data: second must be 0..59" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-hundredths-100",
+            "good": false,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "17 3B 3B 64", "Invalid data: hundredths must be 0..99" ]
+            ]
+        },
+        {
+            "name": "extended-context-tagged-wrong-truncated",
+            "good": false,
+            "data": [
+                [ "FC 2A", "Context Tag 42, Length = 4" ],
+                [ "0E 23 0C", "Invalid data: missing 1 byte" ]
+            ]
+        }
+    ]
+}
